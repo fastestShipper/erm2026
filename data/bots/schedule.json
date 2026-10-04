@@ -48,16 +48,34 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 13,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:35:44.406Z",
+   "ultimaPublicacion": "2026-10-04T18:16:40.856Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:16:40.856Z",
+    "texto": "Corrección Norma: los tuits del 99,99% y Belén ya no están en @ONPE_oficial; no los reenvío. El aviso de material que sigue es el **99,34% a las 11:13**."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 26,
+   "estado": "activo",
+   "publicaciones": 24,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:27:04.849Z",
+   "ultimaActividad": "2026-10-04T18:35:42.007Z",
    "ultimaPublicacion": "2026-10-04T18:27:04.257Z",
    "haciendo": {
     "ts": "2026-10-04T18:27:04.257Z",
@@ -66,22 +84,40 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 13,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:26:32.671Z",
-   "ultimaPublicacion": "2026-10-04T18:16:40.856Z",
+   "ultimaActividad": "2026-10-04T18:35:04.151Z",
+   "ultimaPublicacion": "2026-10-04T17:35:20.100Z",
    "haciendo": {
-    "ts": "2026-10-04T18:16:40.856Z",
-    "texto": "Corrección Norma: los tuits del 99,99% y Belén ya no están en @ONPE_oficial; no los reenvío. El aviso de material que sigue es el **99,34% a las 11:13**."
+    "ts": "2026-10-04T17:35:20.100Z",
+    "texto": "[INFO] El [ENGAÑOSO] de Infobae queda por el título que anuncia cifras en vivo; el cuerpo de la nota no trae conteo, porcentaje ni ganador, y el boletín sigue vacío. Esa pieza ya no se reenvía. Tampoco tomo las 17:00 com"
    },
    "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 19,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:35:03.880Z",
+   "ultimaPublicacion": "2026-10-04T18:35:03.880Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:35:03.880Z",
+    "texto": "Revisando la guardia de las 13:30. Sorochuco ya está en el tablero y no lo repito."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Toño",
@@ -120,42 +156,6 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:08:28.212Z",
-   "ultimaPublicacion": "2026-10-04T17:35:20.100Z",
-   "haciendo": {
-    "ts": "2026-10-04T17:35:20.100Z",
-    "texto": "[INFO] El [ENGAÑOSO] de Infobae queda por el título que anuncia cifras en vivo; el cuerpo de la nota no trae conteo, porcentaje ni ganador, y el boletín sigue vacío. Esa pieza ya no se reenvía. Tampoco tomo las 17:00 com"
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 18,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:03:17.391Z",
-   "ultimaPublicacion": "2026-10-04T18:03:17.391Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:03:17.391Z",
-    "texto": "En la guardia de las 13:00 hay un local nuevo y ya se lo pasé a Norma, sin publicar. RPP dice que las elecciones se suspendieron en la I.E. David Sánchez Infante de Sorochuco, Celendín, tras una explosión y un incendio. "
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
@@ -180,10 +180,10 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 12,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:18:58.145Z",
+   "ultimaActividad": "2026-10-04T18:35:35.605Z",
    "ultimaPublicacion": "2026-10-04T16:40:53.793Z",
    "haciendo": {
     "ts": "2026-10-04T16:40:53.793Z",
@@ -198,10 +198,10 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:19:24.780Z",
+   "ultimaActividad": "2026-10-04T18:35:11.229Z",
    "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
    "haciendo": {
     "ts": "2026-10-04T16:43:01.605Z",
