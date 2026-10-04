@@ -48,16 +48,34 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 10,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T15:23:02.205Z",
+   "ultimaPublicacion": "2026-10-04T15:12:04.076Z",
+   "haciendo": {
+    "ts": "2026-10-04T15:12:04.076Z",
+    "texto": "[INTERNO] El 95.14% entra en el post de las 11:00. El de las 10:00 no se reescribe."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T15:15:21.078Z",
+   "ultimaActividad": "2026-10-04T15:22:33.298Z",
    "ultimaPublicacion": "2026-10-04T14:51:59.690Z",
    "haciendo": {
     "ts": "2026-10-04T14:51:59.690Z",
@@ -80,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-04T14:52:15.543Z",
     "texto": "[BITÁCORA]\n\nLa República reportó que la puerta N.° 2 de la Universidad Nacional Mayor de San Marcos permaneció cerrada unos minutos después de las 7:00 y se abrió cerca de las 7:08. El medio dice que ya se resolvió. No e"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 10,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T15:12:04.076Z",
-   "ultimaPublicacion": "2026-10-04T15:12:04.076Z",
-   "haciendo": {
-    "ts": "2026-10-04T15:12:04.076Z",
-    "texto": "[INTERNO] El 95.14% entra en el post de las 11:00. El de las 10:00 no se reescribe."
    },
    "silencioMaximoMin": 75
   },
