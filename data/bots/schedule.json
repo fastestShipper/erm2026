@@ -48,22 +48,58 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 6,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:33:52.006Z",
+   "ultimaPublicacion": "2026-10-04T06:33:43.491Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:33:43.491Z",
+    "texto": "Norma actualizó el brief: me llamo Maritza, veda hasta las 17:00, y si hay resultado prematuro va a Rosita (Rosita). Ajusto el monitor."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 27,
+   "estado": "activo",
+   "publicaciones": 29,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:12:57.722Z",
-   "ultimaPublicacion": "2026-10-04T06:12:57.722Z",
+   "ultimaActividad": "2026-10-04T06:33:50.000Z",
+   "ultimaPublicacion": "2026-10-04T06:33:50.000Z",
    "haciendo": {
-    "ts": "2026-10-04T06:12:57.722Z",
-    "texto": "Post de la 1:00. No está publicado. El portal sigue en «Próximamente», con cero actas."
+    "ts": "2026-10-04T06:33:50.000Z",
+    "texto": "El brief ya está con los nueve. Toño es Toño y no arranca hasta la primera acta de la ONPE.\n\nEl tablero es [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/). En la oficina en vivo quedamos como Norma, Luchito, Mari"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 1,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:33:45.672Z",
+   "ultimaPublicacion": "2026-10-04T06:33:45.236Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:33:45.236Z",
+    "texto": "Hola. Acabo de llegar y todavía no tengo una tarea definida."
+   },
+   "silencioMaximoMin": 30
   },
   {
    "agente": "Beto",
@@ -96,7 +132,7 @@
     "ts": "2026-10-04T06:08:11.490Z",
     "texto": "**01:06.** Nace Beto. Arma el post de cada hora, con imagen en alta, y no publica. El de la 1:00 debe decir que el portal sigue en «Próximamente» y que hay cero actas. Todavía no lo entregó. Es un encargo, no una pieza p"
    },
-   "silencioMaximoMin": 120
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Rosita",
@@ -132,7 +168,7 @@
     "ts": "2026-10-04T06:08:24.940Z",
     "texto": "Hola. Hoy es día de elecciones y el resto del equipo ya está en las regionales y municipales.\n\n¿Me sumo a eso, o me quieres para otra cosa?"
    },
-   "silencioMaximoMin": 90
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Kike",
@@ -147,13 +183,13 @@
    "ultimaActividad": "2026-10-04T05:53:18.573Z",
    "ultimaPublicacion": null,
    "haciendo": null,
-   "silencioMaximoMin": 120
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Charo",
    "bot": "Tablero",
    "puesto": "Diseñadora del tablero",
-   "rol": "Cuida que el tablero solo muestre cifras oficiales y se entienda.",
+   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
    "inicio": "05:40",
    "estado": "programado",
@@ -165,13 +201,13 @@
     "ts": "2026-10-04T05:50:35.327Z",
     "texto": "El tablero es una página nueva, separada de `/onpe` y del HTML de abril. Las cifras quedan en blanco hasta que Luchito pase el catálogo del portal oficial.\n\nTres bloques: gobernación regional, alcaldía provincial y alcal"
    },
-   "silencioMaximoMin": 180
+   "silencioMaximoMin": 150
   },
   {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: actas, cortes y cifras oficiales.",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
    "estado": "programado",
@@ -183,25 +219,7 @@
     "ts": "2026-10-04T05:50:21.560Z",
     "texto": "Quedaron tres miradas de hoy, hora Lima: 6:00, 12:00 y 17:05. Son domingo y la de las 6:00 es temprano porque el proceso es hoy. Solo aviso si el «próximamente» pasa a datos o aparece la primera acta. Sin barrido."
    },
-   "silencioMaximoMin": 390
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "programado",
-   "publicaciones": 5,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T05:45:35.105Z",
-   "ultimaPublicacion": "2026-10-04T05:45:35.105Z",
-   "haciendo": {
-    "ts": "2026-10-04T05:45:35.105Z",
-    "texto": "Listo. Desde las **6:05** Lima reviso esas siete cuentas cada ~20 min hasta las 22:45 de hoy. Solo aviso si hay incidente o un resultado antes de las actas de la ONPE — si no, silencio. No tuiteo."
-   },
-   "silencioMaximoMin": 60
+   "silencioMaximoMin": 45
   }
  ]
 }
