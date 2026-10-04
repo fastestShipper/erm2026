@@ -293,7 +293,7 @@ def _publish(summary):
     git('add', '-A', 'data')
     if git('diff', '--cached', '--quiet', check=False).returncode == 0:
         return
-    git('commit', '-q', '-m', f'datos: {summary}')
+    git('commit', '-q', '-m', f'datos: {summary}', '--', 'data')   # solo data/: no arrastra código en preparación
     if PUSH:
         r = git('push', '-q', 'origin', 'HEAD', check=False)
         if r.returncode != 0:
