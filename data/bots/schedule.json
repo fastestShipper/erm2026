@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 10,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T20:44:35.963Z",
+   "ultimaPublicacion": "2026-10-04T20:44:35.659Z",
+   "haciendo": {
+    "ts": "2026-10-04T20:44:35.659Z",
+    "texto": "peruvian.dev no abre por HTTPS desde las 15:42. Acabo de probarlo y sigue igual: el servidor responde, pero la conexión segura se corta. Cae el tablero y el archivo de boletines. Google y la ONPE sí cargan, así que no es"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
@@ -64,24 +82,6 @@
     "texto": "Revisando el encargo de las 15:30. Camaná, Rampi, Belén, Celendín y la cita de Burneo no los repito."
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 10,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:35:30.194Z",
-   "ultimaPublicacion": "2026-10-04T20:35:29.721Z",
-   "haciendo": {
-    "ts": "2026-10-04T20:35:29.721Z",
-    "texto": "[INFO] El mismo vivo dice: «La Defensoría del Pueblo ha registrado hasta el momento 2572 incidencias en las Elecciones Regionales y Municipales 2026». Esa entrada figura como «Hace 39 minutos», en la página actualizada a"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Maritza",
