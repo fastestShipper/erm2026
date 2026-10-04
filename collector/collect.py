@@ -274,11 +274,20 @@ def git(*args, check=True):
     key = os.environ.get('ERM_DEPLOY_KEY')
     if key:
         env['GIT_SSH_COMMAND'] = f'ssh -i {key} -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new'
+    # stdin=DEVNULL: desde el Programador de tareas no hay consola y heredar stdin falla (WinError 6)
     return subprocess.run(['git', '-C', ROOT, *args], env=env, check=check,
-                          capture_output=True, text=True)
+                          capture_output=True, text=True, stdin=subprocess.DEVNULL)
 
 
 def publish(summary):
+    """Sube los datos al repositorio. Si git falla, se anota y se sigue: nunca debe tumbar el tablero."""
+    try:
+        _publish(summary)
+    except Exception as e:
+        log('git falló (los datos del sitio no se ven afectados):', repr(e)[:200])
+
+
+def _publish(summary):
     if not os.path.isdir(os.path.join(ROOT, '.git')):
         return
     git('add', '-A', 'data')

@@ -11,6 +11,8 @@ if ! mkdir "$LOCK" 2>/dev/null; then
   if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +15 2>/dev/null)" ]; then rmdir "$LOCK"; mkdir "$LOCK"; else exit 0; fi
 fi
 trap 'rmdir "$LOCK"' EXIT
+exec </dev/null                 # sin consola (Programador de tareas): stdin válido para todos los procesos
+export PYTHONIOENCODING=utf-8
 exec >>"$LOG" 2>&1
 echo "---- $(date -Is)"
 # Ruta a lima: IP pública o, si falla, Tailscale (cualquiera de las dos puede estar bloqueada)
