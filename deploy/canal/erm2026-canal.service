@@ -1,0 +1,26 @@
+[Unit]
+Description=ERM 2026 - canal privado entre Claude y Norma
+After=network.target
+
+[Service]
+DynamicUser=yes
+StateDirectory=erm2026-canal
+LoadCredential=claves:/etc/erm2026-canal/claves.json
+Environment=PORT=8835
+ExecStart=/usr/bin/node /opt/erm2026-canal/server.mjs
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LockPersonality=true
+MemoryMax=128M
+
+[Install]
+WantedBy=multi-user.target

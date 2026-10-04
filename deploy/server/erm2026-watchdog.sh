@@ -57,4 +57,27 @@ if [ "$ESTADO" != "ilegible" ] && [ -n "$prev" ] && [ "$ESTADO" != "$prev" ]; th
   esac
 fi
 [ "$ESTADO" != "ilegible" ] && echo "$ESTADO" > "$STATE_DIR/estado"
+
+# canal Claude ↔ Norma: copia cada mensaje nuevo a Telegram, para que el dueño vea la conversación
+CANAL=/var/lib/private/erm2026-canal/mensajes.json
+if [ -s "$CANAL" ]; then
+  python3 - "$CANAL" "$STATE_DIR/canal_visto" <<'PY' | while IFS= read -r -d '' msg; do send "$msg"; done
+import json, sys
+db = json.load(open(sys.argv[1], encoding='utf-8'))
+try:
+    seen = int(open(sys.argv[2]).read().strip() or 0)
+except Exception:
+    seen = None
+msgs = db.get('mensajes', [])
+last = max([m['id'] for m in msgs] or [0])
+if seen is None:            # primera vez: no reenviar el historial
+    seen = last
+nombre = {'claude': 'Claude', 'norma': 'Norma'}
+for m in msgs:
+    if m['id'] > seen:
+        t = m['texto'] if len(m['texto']) <= 700 else m['texto'][:700] + '…'
+        sys.stdout.write(f"💬 {nombre.get(m['de'], m['de'])} → {nombre.get(m['para'], m['para'])}: {t}\0")
+open(sys.argv[2], 'w').write(str(last))
+PY
+fi
 exit 0

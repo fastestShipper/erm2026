@@ -56,6 +56,8 @@ const PLAN = [
 ];
 
 const PRIVATE_RE = /eureka|lone ?star|del ?huerto|fuego ?inka|control ?a\b|controla|nuna|pulsegest|cobro|factura|invoice|deposit|US\$|S\/\s?\d|cliente|\bdeals?\b|crm|gmail|google cloud|ewald|mahr|zpw|password|contraseña|token/i;
+// Canal privado entre Norma y Claude (dataonpe/canal, con clave): nunca se publica, ni el mensaje ni la clave.
+const CANAL_RE = /dataonpe\/canal|\/canal\/|clave=|\bclaude\b/i;
 const ELECTION_RE = /onpe|jne|elecci|mesa|acta|voto|erm|regional|municipal|gobernador|alcald|desinfo|verific|squad|equipo|portal|tablero|pulso|padr[oó]n|resultados|personer|bitácora|post|medios|cronista|jornada/i;
 // Qué es cada mensaje. Los mensajes para el público empiezan con una etiqueta ([DATO ONPE], [CONFIRMADO],
 // [FALSO]…), que se quita del texto y se muestra como rótulo. Todo lo demás es trabajo interno del equipo
@@ -143,14 +145,15 @@ function build() {
       .replace(/\/workspace\/\S+/g, '[archivo interno]')
       .replace(/grokbot:\/\/\S+?\)/g, ')')
       .replace(/\[([^\]]+)\]\(\)/g, '$1')
-      .replace(/\bsquad\b/gi, 'equipo');
+      .replace(/\bsquad\b/gi, 'equipo')
+      .replace(/clave=[^\s&)"']+/gi, 'clave=[oculta]');
     for (const [re, name] of renames) s = s.replace(re, name);
     return s.replace(/(\p{L}+) \(\1\)/gu, '$1');   // «Norma (Norma)» → «Norma»
   };
   const retenidos = { veda: 0, nunca: 0 };
   const publicText = (c, a) => {
     if (typeof c !== 'string' || !c.trim()) return null;
-    if (PRIVATE_RE.test(c) || GREETING_RE.test(c.trim())) return null;
+    if (PRIVATE_RE.test(c) || CANAL_RE.test(c) || GREETING_RE.test(c.trim())) return null;
     if (a.electionOnly && !ELECTION_RE.test(c)) return null;
     const motivo = retener(c, now);
     if (motivo) { retenidos[motivo]++; return null; }

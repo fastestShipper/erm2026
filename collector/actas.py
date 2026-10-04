@@ -44,6 +44,7 @@ MESAS = os.environ.get('ERM_MESAS_DIR', os.path.join(ROOT, 'local', 'mesas'))
 STATE = os.path.join(ROOT, 'local', 'actas-state.json')
 CHANGED = os.path.join(ROOT, 'local', 'mesas-changed.txt')
 BACKOFF = os.path.join(ROOT, 'local', 'onpe-backoff.json')   # pausa compartida con collect.py si la ONPE bloquea
+COLA_URL = os.environ.get('ERM_COLA_URL', 'https://peruvian.dev/dataonpe/api/v1/cola')   # mesas pedidas por la API
 PORTAL = os.environ.get('ERM_PORTAL', 'https://resultadoelectoral.onpe.gob.pe')
 BASE = os.environ.get('ERM_BASE', PORTAL + '/presentacion-backend')
 DELAY = float(os.environ.get('ERM_ACTAS_DELAY', '1.0'))   # lento a propósito: no arriesgar el corte nacional
@@ -269,9 +270,25 @@ def process(code, data, st, eleccion_names, anomalies, changed_shards):
     return True
 
 
-def next_codes(st):
-    """Orden de visita: 1) números sin explorar, 2) mesas sin contabilizar (cada 20 min),
-    3) mesas contabilizadas (cada 4 h, para detectar cambios)."""
+def requested_codes():
+    """Mesas que pidieron los agentes o el público por la API (/api/v1/mesa/NNNNNN): van primero.
+    La cola vive en el servidor; si no responde, se sigue con el recorrido normal."""
+    try:
+        req = urllib.request.Request(COLA_URL, headers={'User-Agent': 'erm2026-actas'})
+        with urllib.request.urlopen(req, timeout=10) as r:
+            j = json.loads(r.read().decode('utf-8'))
+        codes = (j.get('data') or {}).get('pedidas') or j.get('pedidas') or []
+        return [c for c in codes if isinstance(c, str) and re.fullmatch(r'\d{6}', c)][:60]
+    except Exception as e:  # la cola es un extra: nunca detiene el recorrido
+        log('cola de pedidos no disponible:', e)
+        return []
+
+
+def next_codes(st, asked=()):
+    """Orden de visita: 0) mesas pedidas por la API, 1) números sin explorar, 2) mesas sin
+    contabilizar (cada 20 min), 3) mesas contabilizadas (cada 4 h, para detectar cambios)."""
+    for code in asked:
+        yield code, False
     now = time.time()
     pending = sorted((m['t'], c) for c, m in st['mesas'].items() if not m['final'] and now - m['t'] > 1200)
     stale = sorted((m['t'], c) for c, m in st['mesas'].items() if m['final'] and now - m['t'] > 4 * 3600)
@@ -314,7 +331,10 @@ def main():
 
     blocked = None
     try:
-        for code, exploring in next_codes(st):
+        asked = requested_codes()
+        if asked:
+            log(f'{len(asked)} mesas pedidas por la API van primero')
+        for code, exploring in next_codes(st, asked):
             if time.time() - t0 > BUDGET:
                 break
             j = get(f'actas/buscar/mesa?codigoMesa={code}')
