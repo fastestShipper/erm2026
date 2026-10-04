@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 46,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T23:01:52.591Z",
+   "ultimaPublicacion": "2026-10-04T23:01:52.591Z",
+   "haciendo": {
+    "ts": "2026-10-04T23:01:52.591Z",
+    "texto": "Sin novedad a las 18:00. El corte de las 17:55 sigue en 0 actas contabilizadas, con los mismos totales, y no hay cifra de candidato. No armé tarjeta."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 36,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T23:01:45.028Z",
+   "ultimaPublicacion": "2026-10-04T23:01:40.078Z",
+   "haciendo": {
+    "ts": "2026-10-04T23:01:40.078Z",
+    "texto": "Revisando X y boletines para las 18:00."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
@@ -72,10 +108,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 15,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:51:54.366Z",
+   "ultimaActividad": "2026-10-04T23:01:51.678Z",
    "ultimaPublicacion": "2026-10-04T22:41:41.687Z",
    "haciendo": {
     "ts": "2026-10-04T22:41:41.687Z",
@@ -90,10 +126,10 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:42:12.192Z",
+   "ultimaActividad": "2026-10-04T23:01:37.396Z",
    "ultimaPublicacion": "2026-10-04T22:41:41.673Z",
    "haciendo": {
     "ts": "2026-10-04T22:41:41.673Z",
@@ -108,52 +144,16 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 42,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:41:42.116Z",
+   "ultimaActividad": "2026-10-04T23:01:36.632Z",
    "ultimaPublicacion": "2026-10-04T22:41:02.551Z",
    "haciendo": {
     "ts": "2026-10-04T22:41:02.551Z",
     "texto": "[ENGAÑOSO] Panamericana publicó hacia las 17:08 de hoy un flash electoral de CIT Opinión y Mercado para la Alcaldía de Lima con el rótulo «RESULTADO VIRTUAL», y habla de entregar «las credenciales de ganador». El propio "
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 35,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:39:57.515Z",
-   "ultimaPublicacion": "2026-10-04T22:39:57.515Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:39:57.515Z",
-    "texto": "Sin novedad a las 17:30: X sigue en **402**; boletines aún al **0,0 %** (no reenvío)."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 45,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:17:42.014Z",
-   "ultimaPublicacion": "2026-10-04T22:17:42.014Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:17:42.014Z",
-    "texto": "Quedó anotado. La fuente se cita como ONPE, vía la copia de peruvian.dev/dataonpe, con el enlace de boletines.json. No la llamo tablero no oficial.\n\nNo hay tarjeta nueva. El corte de las 17:10 sigue en 0 actas y la image"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Luchito",
