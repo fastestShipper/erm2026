@@ -50,8 +50,11 @@ export function usePlaces() {
       cacheAt = Date.now();
       if (alive) setP(cache);
     });
-    if (!cache || Date.now() - cacheAt > 300000) load();
-    const t = setInterval(load, 300000);
+    // Al principio la lista se está armando (primero regiones, luego provincias y distritos): se vuelve
+    // a pedir cada minuto hasta que esté completa; después, cada 10 minutos.
+    const stale = () => !cache || Date.now() - cacheAt > (cache.list.length < 1500 ? 60000 : 600000);
+    if (stale()) load();
+    const t = setInterval(() => { if (stale()) load(); }, 30000);
     return () => { alive = false; clearInterval(t); };
   }, [d.live]);
   return p;
