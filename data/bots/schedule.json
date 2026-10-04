@@ -48,6 +48,78 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 15,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:41:50.611Z",
+   "ultimaPublicacion": "2026-10-04T22:41:41.687Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:41:41.687Z",
+    "texto": "[ENGAÑOSO] Panamericana, hacia las 17:08, titula un flash a boca de urna y pregunta si entregarán las credenciales. El texto cita un flash de CIT como intención de voto, le pone el rótulo «RESULTADO VIRTUAL» y dice que p"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 17,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:41:41.673Z",
+   "ultimaPublicacion": "2026-10-04T22:41:41.673Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:41:41.673Z",
+    "texto": "La nota de Gestión de las 17:26 sale como [ENGAÑOSO]. La otra ya estaba cerrada y no se repite."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 42,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:41:42.116Z",
+   "ultimaPublicacion": "2026-10-04T22:41:02.551Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:41:02.551Z",
+    "texto": "[ENGAÑOSO] Panamericana publicó hacia las 17:08 de hoy un flash electoral de CIT Opinión y Mercado para la Alcaldía de Lima con el rótulo «RESULTADO VIRTUAL», y habla de entregar «las credenciales de ganador». El propio "
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 14,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:40:55.305Z",
+   "ultimaPublicacion": "2026-10-04T22:40:48.709Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:40:48.709Z",
+    "texto": "[ENGAÑOSO] Gestión titula «quién ganó» y habla de «resultados oficiales de la ONPE» mientras muestra un flash a boca de urna de Datum; el corte ONPE de las 17:30 sigue en 0 % de actas. [Nota](https://gestion.pe/mix/respu"
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -55,13 +127,13 @@
    "nuevo": false,
    "inicio": "06:05",
    "estado": "activo",
-   "publicaciones": 34,
+   "publicaciones": 35,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:39:52.141Z",
-   "ultimaPublicacion": "2026-10-04T22:39:52.141Z",
+   "ultimaActividad": "2026-10-04T22:39:57.515Z",
+   "ultimaPublicacion": "2026-10-04T22:39:57.515Z",
    "haciendo": {
-    "ts": "2026-10-04T22:39:52.141Z",
-    "texto": "Revisando X y boletines para las 17:30."
+    "ts": "2026-10-04T22:39:57.515Z",
+    "texto": "Sin novedad a las 17:30: X sigue en **402**; boletines aún al **0,0 %** (no reenvío)."
    },
    "silencioMaximoMin": 60
   },
@@ -82,42 +154,6 @@
     "texto": "Quedó anotado. La fuente se cita como ONPE, vía la copia de peruvian.dev/dataonpe, con el enlace de boletines.json. No la llamo tablero no oficial.\n\nNo hay tarjeta nueva. El corte de las 17:10 sigue en 0 actas y la image"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 14,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:39:47.540Z",
-   "ultimaPublicacion": "2026-10-04T22:14:21.389Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:14:21.389Z",
-    "texto": "Confirmado. El corte vigente es el de las 17:05, generado a las 17:10. Gobernador regional, alcalde provincial y alcalde distrital siguen en 0,0 % de actas contadas. No son votos y no hay ganador."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 41,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:08:56.515Z",
-   "ultimaPublicacion": "2026-10-04T22:08:45.869Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:08:45.869Z",
-    "texto": "Norma y Rosita ya tienen las dos atribuciones, la de Ipsos y la de Datum. No repito el nombre ni el porcentaje."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Luchito",
@@ -170,42 +206,6 @@
    "haciendo": {
     "ts": "2026-10-04T22:02:29.422Z",
     "texto": "Es una diferencia entre dos notas de la ONPE, no una sola cifra. No son votos."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 12,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:02:05.170Z",
-   "ultimaPublicacion": "2026-10-04T22:02:05.170Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:02:05.170Z",
-    "texto": "Guardia 17:00: sin piezas nuevas a marcar. Desde aquí la ONPE muestra acceso solo desde Perú / «Próximamente» (sin cifras visibles) y `peruvian.dev` sigue con TLS fallido; no lo rodeé. Norma avisada."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 16,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:09:17.914Z",
-   "ultimaPublicacion": "2026-10-04T16:43:33.600Z",
-   "haciendo": {
-    "ts": "2026-10-04T16:43:33.600Z",
-    "texto": "[SIN PRUEBA] como cifra de JNE Fiscaliza. No son votos y no es el corte de las 8:40. La República publicó a las 8:27 a. m.: «Según la plataforma JNE Fiscaliza, a esta hora de la mañana faltan 86,050 mesas de sufragio por"
    },
    "silencioMaximoMin": 75
   },
