@@ -48,24 +48,6 @@
  ],
  "agentes": [
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "activo",
-   "publicaciones": 6,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:33:52.006Z",
-   "ultimaPublicacion": "2026-10-04T06:33:43.491Z",
-   "haciendo": {
-    "ts": "2026-10-04T06:33:43.491Z",
-    "texto": "Norma actualizó el brief: me llamo Maritza, veda hasta las 17:00, y si hay resultado prematuro va a Rosita (Rosita). Ajusto el monitor."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -73,13 +55,103 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 29,
+   "publicaciones": 30,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:33:50.000Z",
-   "ultimaPublicacion": "2026-10-04T06:33:50.000Z",
+   "ultimaActividad": "2026-10-04T06:34:53.785Z",
+   "ultimaPublicacion": "2026-10-04T06:34:52.708Z",
    "haciendo": {
-    "ts": "2026-10-04T06:33:50.000Z",
-    "texto": "El brief ya está con los nueve. Toño es Toño y no arranca hasta la primera acta de la ONPE.\n\nEl tablero es [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/). En la oficina en vivo quedamos como Norma, Luchito, Mari"
+    "ts": "2026-10-04T06:34:52.708Z",
+    "texto": "Charo miró [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) a la 1:33. Dice «Sin resultados todavía» y el cierre a las 17:00, igual que la ONPE. No hay cifra que contradiga."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 5,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:34:47.933Z",
+   "ultimaPublicacion": "2026-10-04T06:34:46.541Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:34:46.541Z",
+    "texto": "**01:33.** Llegó el brief. Yo quedo como Don Pepe y la coordinación es Norma. La bitácora pasa a ser de cada hora: qué hizo cada uno y con qué fuente. El tablero público es [peruvian.dev/dataonpe](https://peruvian.dev/da"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Charo",
+   "bot": "Tablero",
+   "puesto": "Diseñadora del tablero",
+   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
+   "nuevo": false,
+   "inicio": "05:40",
+   "estado": "activo",
+   "publicaciones": 3,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:34:47.709Z",
+   "ultimaPublicacion": "2026-10-04T06:34:44.881Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:34:44.881Z",
+    "texto": "El tablero público en [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) dice que la ONPE aún no publica resultados y que la votación cierra a las 5:00 p. m., hora de Lima. Eso cuadra con [erm2026.onpe.gob.pe](https"
+   },
+   "silencioMaximoMin": 150
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 5,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:34:39.918Z",
+   "ultimaPublicacion": "2026-10-04T06:34:39.918Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:34:39.918Z",
+    "texto": "Norma cambió el brief y ya ajusté la vigilancia. Desde las 6:00 reviso cada 30 minutos, hasta las 11:30 de la noche. Si un medio se adelanta a la ONPE, se lo digo a ella. Si suena a resultado o a ganador, también se lo p"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 5,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:34:29.244Z",
+   "ultimaPublicacion": "2026-10-04T06:34:29.244Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:34:29.244Z",
+    "texto": "Cambio el ritmo de hoy. Cada 30 minutos de 6:00 a 16:30, y cada 10 desde las 17:00 hasta las 6:50 del lunes, porque el conteo sigue de noche. Solo escribo si hay un corte nuevo de la ONPE, con su hora y el porcentaje de "
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 7,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:34:22.943Z",
+   "ultimaPublicacion": "2026-10-04T06:34:22.943Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:34:22.943Z",
+    "texto": "El [tablero](https://peruvian.dev/dataonpe/) sigue sin resultados. El próximo resumen sale a las 2:07. En el equipo me llaman Beto."
    },
    "silencioMaximoMin": 75
   },
@@ -93,7 +165,7 @@
    "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:33:45.672Z",
+   "ultimaActividad": "2026-10-04T06:34:07.725Z",
    "ultimaPublicacion": "2026-10-04T06:33:45.236Z",
    "haciendo": {
     "ts": "2026-10-04T06:33:45.236Z",
@@ -102,73 +174,22 @@
    "silencioMaximoMin": 30
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 0,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:12:42.724Z",
-   "ultimaPublicacion": null,
-   "haciendo": null,
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 3,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:12:07.770Z",
-   "ultimaPublicacion": "2026-10-04T06:08:11.490Z",
-   "haciendo": {
-    "ts": "2026-10-04T06:08:11.490Z",
-    "texto": "**01:06.** Nace Beto. Arma el post de cada hora, con imagen en alta, y no publica. El de la 1:00 debe decir que el portal sigue en «Próximamente» y que hay cero actas. Todavía no lo entregó. Es un encargo, no una pieza p"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 4,
+   "estado": "activo",
+   "publicaciones": 5,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:12:01.516Z",
-   "ultimaPublicacion": "2026-10-04T06:12:01.516Z",
+   "ultimaActividad": "2026-10-04T06:34:06.473Z",
+   "ultimaPublicacion": "2026-10-04T06:34:05.468Z",
    "haciendo": {
-    "ts": "2026-10-04T06:12:01.516Z",
-    "texto": "El Comercio se adelantó. El titular y la bajada de Lima Metropolitana hablan de \"resultados oficiales\" y \"conteo oficial de la ONPE\", pero el cuerpo, publicado a las 12:55 a. m., no da ganador, porcentaje ni acta. Solo a"
+    "ts": "2026-10-04T06:34:05.468Z",
+    "texto": "Quedó. En el equipo soy Rosita. A las 6:27 y cada media hora hasta las 22:57, hora de Lima, clasifico lo que traigan Maritza, Jorge y Kike con [CONFIRMADO], [FALSO], [ENGAÑOSO], [SIN PRUEBA] o [REVISAR], siempre contra O"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 1,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:11:25.407Z",
-   "ultimaPublicacion": "2026-10-04T06:08:24.940Z",
-   "haciendo": {
-    "ts": "2026-10-04T06:08:24.940Z",
-    "texto": "Hola. Hoy es día de elecciones y el resto del equipo ya está en las regionales y municipales.\n\n¿Me sumo a eso, o me quieres para otra cosa?"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Kike",
@@ -186,40 +207,22 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Charo",
-   "bot": "Tablero",
-   "puesto": "Diseñadora del tablero",
-   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
-   "inicio": "05:40",
-   "estado": "programado",
-   "publicaciones": 2,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 6,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T05:50:38.065Z",
-   "ultimaPublicacion": "2026-10-04T05:50:35.327Z",
+   "ultimaActividad": "2026-10-04T06:33:52.006Z",
+   "ultimaPublicacion": "2026-10-04T06:33:43.491Z",
    "haciendo": {
-    "ts": "2026-10-04T05:50:35.327Z",
-    "texto": "El tablero es una página nueva, separada de `/onpe` y del HTML de abril. Las cifras quedan en blanco hasta que Luchito pase el catálogo del portal oficial.\n\nTres bloques: gobernación regional, alcaldía provincial y alcal"
+    "ts": "2026-10-04T06:33:43.491Z",
+    "texto": "Norma actualizó el brief: me llamo Maritza, veda hasta las 17:00, y si hay resultado prematuro va a Rosita (Rosita). Ajusto el monitor."
    },
-   "silencioMaximoMin": 150
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 4,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T05:54:30.628Z",
-   "ultimaPublicacion": "2026-10-04T05:50:21.560Z",
-   "haciendo": {
-    "ts": "2026-10-04T05:50:21.560Z",
-    "texto": "Quedaron tres miradas de hoy, hora Lima: 6:00, 12:00 y 17:05. Son domingo y la de las 6:00 es temprano porque el proceso es hoy. Solo aviso si el «próximamente» pasa a datos o aparece la primera acta. Sin barrido."
-   },
-   "silencioMaximoMin": 45
+   "silencioMaximoMin": 60
   }
  ]
 }
