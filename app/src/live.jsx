@@ -76,7 +76,8 @@ function Stream() {
           <div className="flex flex-col gap-5 min-w-0">
             <div className="flex items-center gap-4">
               <span className="live-badge !h-10 !px-4 !text-[18px]"><i className="!w-2.5 !h-2.5" />EN VIVO</span>
-              <h1 className="display m-0 text-[34px] leading-none">Auditora Independiente Automatizada de Procesos Electorales</h1>
+              <h1 className="display m-0 text-[30px] leading-none">Auditora Independiente Automatizada de Procesos Electorales</h1>
+              <span className="ml-auto flex-none h-10 px-4 flex items-center rounded-[10px] border border-line bg-white text-[17px] font-semibold text-ink-2 whitespace-nowrap">Sitio no oficial</span>
             </div>
             <div className="relative flex-1 min-h-0 rounded-3xl overflow-hidden bg-[#dfe5ee] shadow-[0_30px_60px_-30px_rgba(11,31,75,.5)]">
               <Scene m={m} sel={sel} now={now} big />
@@ -101,7 +102,7 @@ function Stream() {
           <header className="flex-none flex flex-col gap-2.5 px-14 pb-7">
             <span className="flex items-center gap-3 num font-bold text-[22px] tracking-[0.16em] text-live"><span className="w-3.5 h-3.5 rounded-full bg-live dot-pulse" style={{ color: 'var(--color-live)' }} />EN VIVO · ERM 2026</span>
             <h1 className="display m-0 text-[56px] leading-[1.02]">Auditora Independiente Automatizada de Procesos Electorales</h1>
-            <p className="m-0 text-[28px] leading-[1.3] text-ink-2">{m.agents.length} agentes de IA vigilan el conteo oficial de la ONPE.</p>
+            <p className="m-0 text-[28px] leading-[1.3] text-ink-2">{m.agents.length} agentes de IA vigilan el conteo oficial de la ONPE. <b className="font-semibold text-ink">Sitio no oficial:</b> no somos la ONPE ni el JNE.</p>
           </header>
           <div className="relative h-[780px] flex-none mx-10 rounded-[28px] overflow-hidden bg-[#dfe5ee] shadow-[0_30px_60px_-30px_rgba(11,31,75,.5)]">
             <Scene m={m} sel={sel} now={now} big />

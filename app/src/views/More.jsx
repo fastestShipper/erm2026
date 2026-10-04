@@ -1,58 +1,10 @@
 import { useState } from 'react';
-import { Check, Copy, Database, Download, FileText, Lock, ShieldCheck, TrendingUp } from 'lucide-react';
+import { Check, Copy, Database, Download, FileText, ShieldCheck, TrendingUp } from 'lucide-react';
 import { useData } from '../lib/data.jsx';
 import { colorOf, seatAgents, STATE } from '../lib/agents.js';
-import { ago, n, pct, timeLima, title } from '../lib/format.js';
 import { PageHeader, Tag } from '../hud/common.jsx';
 
 const REPO = 'https://github.com/fastestShipper/erm2026';
-
-/* ───────────── Mercados de predicción ───────────── */
-export function Markets() {
-  const d = useData();
-  const ms = d.markets?.mercados || [];
-  return (
-    <>
-      <PageHeader eyebrow="Información de mercado" title="Mercados de predicción">
-        En estos mercados la gente compra y vende contratos sobre quién ganará; el precio se lee como la probabilidad que ese mercado asigna. <b className="text-ink">No son resultados, ni encuestas, ni una recomendación.</b>
-      </PageHeader>
-      {!ms.length ? (
-        <div className="panel p-8 max-w-2xl">
-          <div className="w-11 h-11 rounded-xl grid place-items-center bg-panel-2 border border-line mb-4"><Lock size={20} className="text-warn" /></div>
-          <div className="text-[19px] font-semibold">Disponible después de las 5:00 p. m.</div>
-          <p className="text-ink-2 mt-2">Por la veda electoral (Ley Orgánica de Elecciones, art. 191) no se difunden proyecciones sobre los resultados antes del cierre de la votación. Esta sección se activa sola a las 17:00, hora de Lima.</p>
-        </div>
-      ) : (
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
-          {ms.map((mk) => (
-            <section key={mk.titulo} className="panel p-5">
-              <div className="flex items-start justify-between gap-3">
-                <div className="font-semibold text-[16px] leading-tight">{mk.titulo}</div>
-                <span className="chip num flex-none">US$ {n(Math.round(mk.volumenUSD || 0))}</span>
-              </div>
-              <ul className="mt-3">
-                {mk.opciones.slice(0, 6).map((o, i) => (
-                  <li key={o.nombre} className="py-2.5 border-t border-line first:border-0">
-                    <div className="flex items-center gap-3">
-                      <span className="num text-[12px] text-dim w-4">{i + 1}</span>
-                      <span className="flex-1 min-w-0 truncate text-[14px]">{title(o.nombre)}</span>
-                      <span className="num font-semibold">{pct(o.probabilidad * 100, 1)}</span>
-                    </div>
-                    <div className="flex items-center gap-3 mt-1.5 ml-7">
-                      <div className="bar flex-1"><i style={{ width: `${Math.min(100, o.probabilidad * 100)}%` }} /></div>
-                      <span className={`num text-[11.5px] w-[70px] text-right ${o.cambio24h > 0 ? 'text-ok' : o.cambio24h < 0 ? 'text-alert' : 'text-dim'}`}>{o.cambio24h ? `${o.cambio24h > 0 ? '▲' : '▼'} ${Math.abs(o.cambio24h * 100).toFixed(1)} pts` : '='}</span>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </section>
-          ))}
-        </div>
-      )}
-      {ms.length > 0 && <p className="text-[12.5px] text-dim mt-4">Actualizado {ago(Date.parse(d.markets.actualizado))}. Las probabilidades cambian en cualquier momento y no anticipan el resultado oficial.</p>}
-    </>
-  );
-}
 
 /* ───────────── Datos abiertos ───────────── */
 export function DataView() {
@@ -150,7 +102,7 @@ export function About() {
           </div>
         )}
       </section>
-      <p className="text-[12.5px] text-dim mt-6">Fuente oficial: resultadoelectoral.onpe.gob.pe · Hojas de vida: votoinformado.jne.gob.pe · Sitio no oficial, sin afiliación con la ONPE, el JNE ni ninguna organización política. Código MIT · Datos CC BY 4.0.</p>
+      <p className="text-[12.5px] text-dim mt-6">Fuente oficial: resultadoelectoral.onpe.gob.pe · Hojas de vida: votoinformado.jne.gob.pe · Sitio no oficial, sin afiliación con la ONPE, el JNE ni ninguna organización política. No somos observadores electorales acreditados. Código MIT · Datos CC BY 4.0.</p>
     </>
   );
 }

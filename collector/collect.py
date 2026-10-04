@@ -313,8 +313,7 @@ def ensure_placeholders():
                        ('checks.json', {'total': 0, 'items': []}),
                        ('hallazgos.json', {'items': []}),
                        ('actas/resumen.json', {'mesasEncontradas': 0, 'actasLeidas': 0, 'actasContabilizadas': 0, 'avisos': {'alerta': 0, 'revisar': 0}}),
-                       ('actas/anomalias.json', {'total': 0, 'items': []}),
-                       ('mercados.json', {'mercados': [], 'nota': 'Disponible después del cierre de la votación (veda electoral).'})):
+                       ('actas/anomalias.json', {'total': 0, 'items': []})):
         if empty is not None and not os.path.exists(os.path.join(DATA, rel)):
             write_json(rel, empty)
 

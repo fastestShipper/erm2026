@@ -11,10 +11,13 @@
 // sitio siempre dice que son agentes de IA.
 // Privacidad: se descartan mensajes con temas privados (PRIVATE_RE), se borran correos,
 // teléfonos y rutas internas, y nunca se exporta el nombre del dueño de la cuenta.
+// Veda electoral: hasta el cierre de la votación se retienen los mensajes que mencionan candidatos,
+// organizaciones políticas, encuestas o tendencias (ver veda.mjs). Se publican solos a las 17:00.
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
 import { execFileSync } from 'node:child_process';
+import { retener, VEDA_FIN } from './veda.mjs';
 
 const DRY = process.argv.includes('--dry');
 const PERSIST = path.join(os.homedir(), 'AppData', 'Roaming', 'Grok Bot', 'sand-client-persistence');
@@ -123,10 +126,13 @@ function build() {
     for (const [re, name] of renames) s = s.replace(re, name);
     return s;
   };
+  const retenidos = { veda: 0, nunca: 0 };
   const publicText = (c, a) => {
     if (typeof c !== 'string' || !c.trim()) return null;
     if (PRIVATE_RE.test(c) || GREETING_RE.test(c.trim())) return null;
     if (a.electionOnly && !ELECTION_RE.test(c)) return null;
+    const motivo = retener(c, now);
+    if (motivo) { retenidos[motivo]++; return null; }
     return redact(c).slice(0, 4000);
   };
 
@@ -166,7 +172,12 @@ function build() {
   }
   feed.sort((x, y) => y.ts.localeCompare(x.ts));
   return {
-    feed: { nota: 'Mensajes de agentes de IA. Son trabajo en curso: verifica siempre contra la fuente oficial que citan.', items: feed.slice(0, 800) },
+    feed: {
+      nota: 'Mensajes de agentes de IA. Son trabajo en curso: verifica siempre contra la fuente oficial que citan.',
+      // durante la veda: cuántos mensajes esperan al cierre de la votación para publicarse
+      veda: now < VEDA_FIN ? { hasta: new Date(VEDA_FIN).toISOString(), retenidos: retenidos.veda } : undefined,
+      items: feed.slice(0, 800),
+    },
     schedule: { dia: DAY, plan: PLAN, agentes: agents },
   };
 }
@@ -189,6 +200,7 @@ function alert(schedule) {
 const { feed, schedule } = build();
 if (DRY) {
   console.log(schedule.agentes.map((a) => `${a.agente.padEnd(9)} ${a.bot.padEnd(12)} ${a.estado.padEnd(16)} pub=${a.publicaciones} tareas=${a.tareas} quiet=${a._quiet}`).join('\n'));
+  console.log('en espera por veda:', feed.veda?.retenidos ?? 0);
   console.log(feed.items.slice(0, 12).map((x) => `${x.ts} ${x.agente} [${x.tipo}]: ${x.texto.slice(0, 140).replace(/\n/g, ' ')}`).join('\n'));
   process.exit(0);
 }
@@ -202,4 +214,4 @@ const writeIfChanged = (f, obj) => {
 writeIfChanged('feed.json', feed);
 writeIfChanged('schedule.json', schedule);
 if (process.env.ERM_ALERT === '1') alert(schedule);
-console.log(new Date().toISOString(), 'ok', feed.items.length, 'mensajes;', schedule.agentes.map((a) => `${a.agente}=${a.estado}`).join(' '));
+console.log(new Date().toISOString(), 'ok', feed.items.length, 'mensajes;', feed.veda ? `${feed.veda.retenidos} en espera por veda;` : '', schedule.agentes.map((a) => `${a.agente}=${a.estado}`).join(' '));

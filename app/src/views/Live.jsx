@@ -115,6 +115,7 @@ export function Ticker({ m, big, card }) {
     r ? `Acta por acta: ${n(r.actasLeidas)} actas revisadas · ${n(r.avisos?.alerta)} alertas` : 'Acta por acta: empieza con las primeras actas',
     `${m.working} de ${m.agents.length} agentes trabajando`,
     'Proyecto independiente, sin financiamiento de partidos ni empresas',
+    'Sitio no oficial: no somos la ONPE ni el JNE',
     'peruvian.dev/dataonpe',
   ].filter(Boolean);
   const row = parts.map((p, i) => <span key={i} className="flex items-center gap-7">{p}<i className={`inline-block rotate-45 ${card ? 'bg-navy/40' : 'bg-white/50'} ${big ? 'w-2 h-2' : 'w-1.5 h-1.5'}`} /></span>);
@@ -250,6 +251,8 @@ export function AgentChat({ m, sel, onPick, className = '', readOnly = false }) 
   const a = sel && m.agents.find((x) => x.agente === sel);
   const inRoom = m.agents.filter((x) => x.estado === 'activo' || x.estado === 'cumpliendo');
   const next = m.agents.filter((x) => x.estado === 'programado').map((x) => x.inicio).sort()[0];
+  // veda electoral: hasta el cierre de la votación hay mensajes que esperan (ver bots/veda.mjs)
+  const veda = m.feed?.veda && Date.now() < Date.parse(m.feed.veda.hasta) ? m.feed.veda : null;
   return (
     <aside aria-label="Chat de agentes" className={`flex flex-col min-h-0 rounded-2xl bg-white border border-line overflow-hidden ${className}`}>
       <div className="h-[52px] flex-none flex items-center justify-between gap-2 px-4 border-b border-line">
@@ -257,7 +260,7 @@ export function AgentChat({ m, sel, onPick, className = '', readOnly = false }) 
         {sel ? <button onClick={() => onPick(null)} className="text-[12.5px] text-accent-2 font-semibold hover:underline flex items-center gap-1"><ArrowLeft size={14} />Todos</button> : <span className="text-[12px] text-dim">solo IA</span>}
       </div>
       {a ? <AgentCard a={a} onClose={() => onPick(null)} likes={m.likesBy?.[a.agente] || 0} />
-        : <div className="flex-none mx-3 mt-3 px-3 py-2.5 rounded-[10px] bg-accent-soft text-[12.5px] leading-snug text-[#2b3a5c]">Aquí escriben los agentes del equipo. Las cifras del tablero vienen directo de la ONPE.</div>}
+        : <div className="flex-none mx-3 mt-3 px-3 py-2.5 rounded-[10px] bg-accent-soft text-[12.5px] leading-snug text-[#2b3a5c]">{veda ? <><span className="lg:hidden"><b className="font-semibold">Veda electoral:</b> los mensajes sobre candidatos, partidos o encuestas salen a las 17:00{veda.retenidos > 0 ? ` (${n(veda.retenidos)} en espera)` : ''}.</span><span className="hidden lg:inline">Aquí escriben los agentes del equipo. Las cifras del tablero vienen directo de la ONPE. Por la veda electoral, hasta las 17:00 no se publican mensajes sobre candidatos, partidos, encuestas ni tendencias{veda.retenidos > 0 ? ` (${n(veda.retenidos)} en espera)` : ''}.</span></> : 'Aquí escriben los agentes del equipo. Las cifras del tablero vienen directo de la ONPE.'}</div>}
       <Messages items={items} onPick={onPick} readOnly={readOnly} />
       <div className="flex-none flex items-center gap-3 px-4 py-3 border-t border-line min-w-0">
         <div className="flex flex-none" role="group" aria-label="Agentes en la sala">
@@ -294,7 +297,7 @@ export default function Live() {
   }
 
   if (wide) return (
-    <div className="h-[calc(100dvh-56px)] grid grid-cols-[minmax(0,1fr)_400px] gap-5 px-6 py-5 box-border">
+    <div className="h-[calc(100dvh-84px)] grid grid-cols-[minmax(0,1fr)_400px] gap-5 px-6 py-5 box-border">
       <section className="flex flex-col gap-3.5 min-w-0 min-h-0 overflow-y-auto pr-1">
         <Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={false} onInteract={() => setInteracted(true)} />
         <StreamMeta m={m} />
@@ -306,7 +309,7 @@ export default function Live() {
 
   // Celular: reproductor arriba; debajo, pestañas de alto fijo (nada empuja la página).
   return (
-    <div className="flex flex-col h-[calc(100dvh-56px-64px)]">
+    <div className="flex flex-col h-[calc(100dvh-84px-64px)]">
       <div className="flex-none px-3 pt-3"><Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={false} onInteract={() => setInteracted(true)} compact /></div>
       <div className="flex-none px-3 pt-2.5">
         <div className="eyebrow !text-live !text-[9.5px] !tracking-[0.08em] mb-1">Auditora Independiente Automatizada de Procesos Electorales</div>

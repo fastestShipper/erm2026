@@ -8,7 +8,6 @@ const SOURCES = {
   schedule:  { path: 'data/bots/schedule.json', every: 30 },
   feed:      { path: 'data/bots/feed.json', every: 30 },
   actas:     { path: 'data/actas/resumen.json', every: 60 },
-  markets:   { path: 'data/mercados.json', every: 120 },
   anomalias: { path: 'data/actas/anomalias.json', every: 120 },
   config:    { path: 'config.json', every: 600 },
 };

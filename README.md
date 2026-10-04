@@ -81,6 +81,12 @@ Un equipo de bots de IA sigue la jornada: el portal de la ONPE, las cuentas ofic
 
 Lo que publican los bots es trabajo en curso hecho por IA: **verifica siempre contra la fuente oficial que citan**. Las cifras del dashboard no vienen de los bots, sino directamente de la ONPE.
 
+### Veda electoral
+
+Hasta el cierre de la votación (17:00, hora de Lima) no se publica ningún mensaje de los bots que mencione candidatos, organizaciones políticas, encuestas, proyecciones, tendencias o cifras de votos. El filtro está en [`bots/veda.mjs`](bots/veda.mjs) y tiene sus pruebas en `bots/veda.test.mjs`. Los mensajes no se borran: quedan en espera y se publican solos al cierre, con su hora original. `feed.json` dice cuántos hay en espera.
+
+Base: Ley Orgánica de Elecciones (arts. 190 y 191) y Reglamento sobre Encuestas Electorales del JNE (Res. 0107-2025-JNE). Este proyecto no hace ni difunde encuestas, proyecciones ni conteos rápidos, antes o después del cierre.
+
 ## Correr el colector tú mismo
 
 ```bash

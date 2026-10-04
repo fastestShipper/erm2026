@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState } from 'react';
-import { ChartColumn, Database, Ellipsis, Eye, Info, Radio, Search, ShieldCheck, TrendingUp, X } from 'lucide-react';
+import { ChartColumn, Database, Ellipsis, Eye, Info, Radio, Search, ShieldCheck, X } from 'lucide-react';
 import { useData, useRoute, useViewers } from './lib/data.jsx';
 import { n } from './lib/format.js';
 
@@ -7,7 +7,6 @@ const Live = lazy(() => import('./views/Live.jsx'));
 const Results = lazy(() => import('./views/Results.jsx'));
 const Audit = lazy(() => import('./views/Audit.jsx'));
 const SearchView = lazy(() => import('./views/Search.jsx'));
-const Markets = lazy(() => import('./views/More.jsx').then((m) => ({ default: m.Markets })));
 const DataView = lazy(() => import('./views/More.jsx').then((m) => ({ default: m.DataView })));
 const About = lazy(() => import('./views/More.jsx').then((m) => ({ default: m.About })));
 
@@ -16,7 +15,6 @@ const NAV = [
   { id: 'resultados', label: 'Resultados', icon: ChartColumn, view: Results },
   { id: 'auditoria', label: 'Auditoría', icon: ShieldCheck, view: Audit },
   { id: 'buscar', label: 'Buscar', icon: Search, view: SearchView },
-  { id: 'mercados', label: 'Mercados', icon: TrendingUp, view: Markets },
   { id: 'datos', label: 'Datos', icon: Database, view: DataView },
   { id: 'proyecto', label: 'Proyecto', icon: Info, view: About },
 ];
@@ -47,6 +45,17 @@ function Brand({ compact }) {
   );
 }
 
+/** Aviso fijo en todas las pantallas: quien llega tiene que saber de entrada que esto no es la ONPE ni el JNE. */
+function Unofficial() {
+  return (
+    <div className="h-7 border-b border-line bg-bg-2 text-[12px] leading-none text-ink-2 flex items-center justify-center gap-1.5 px-4 whitespace-nowrap overflow-hidden" role="note">
+      <Info size={13} className="flex-none text-dim" />
+      <span className="md:hidden"><b className="font-semibold text-ink">Sitio no oficial:</b> no somos la ONPE ni el JNE.</span>
+      <span className="hidden md:inline"><b className="font-semibold text-ink">Sitio no oficial.</b> Iniciativa ciudadana independiente: no somos la ONPE ni el JNE.<span className="hidden lg:inline"> Los resultados oficiales son los que publica la ONPE.</span></span>
+    </div>
+  );
+}
+
 export default function App() {
   // ?escena: solo la sala 3D, sin barra ni paneles (capturas para diseño y prensa)
   if (new URLSearchParams(location.search).has('escena')) return <Suspense fallback={null}><Live /></Suspense>;
@@ -57,7 +66,8 @@ export default function App() {
   return (
     <div className="app-shell">
       {/* barra superior */}
-      <header className="sticky top-0 z-40 h-14 border-b border-line bg-white">
+      <div className="sticky top-0 z-40">
+      <header className="h-14 border-b border-line bg-white">
         <div className="h-full px-4 lg:px-6 flex items-center gap-5">
           <div className="lg:hidden flex-1 min-w-0"><Brand compact /></div>
           <div className="hidden lg:block min-[87.5rem]:hidden flex-none"><Brand compact /></div>
@@ -73,6 +83,8 @@ export default function App() {
           <StatusPill />
         </div>
       </header>
+      <Unofficial />
+      </div>
 
       <main className={cur.full ? 'flex-1' : 'flex-1 w-full max-w-[1240px] mx-auto px-4 lg:px-6 pt-6 lg:pt-10 pb-28 lg:pb-16'}>
         <Suspense fallback={<div className="p-10"><div className="skeleton h-8 w-64" /><div className="skeleton h-40 mt-6" /></div>}>
