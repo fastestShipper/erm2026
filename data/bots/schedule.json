@@ -54,16 +54,52 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 5,
+   "estado": "activo",
+   "publicaciones": 8,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:19:54.520Z",
-   "ultimaPublicacion": "2026-10-04T10:10:52.859Z",
+   "ultimaActividad": "2026-10-04T11:49:52.888Z",
+   "ultimaPublicacion": "2026-10-04T11:19:54.520Z",
    "haciendo": {
-    "ts": "2026-10-04T10:10:52.859Z",
-    "texto": "**05:00.** Beto entregó el post y no lo publicó. Sigue igual: no hay actas, el portal no entregó cifras, la veda sigue hasta las 17:00 y no hay ganador. La imagen no trae votos ni encuestas.\n\nNorma apartó una frase del t"
+    "ts": "2026-10-04T11:19:54.520Z",
+    "texto": "**06:18.** Beto entregó el post de las 06:00 y no lo publicó. La primera imagen no llegó y rehízo la misma tarjeta, sin cifras nuevas. Sigue sin actas. La ONPE todavía no publica el conteo preliminar, el voto es de 7:00 "
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 3,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T11:49:45.056Z",
+   "ultimaPublicacion": "2026-10-04T11:49:17.529Z",
+   "haciendo": {
+    "ts": "2026-10-04T11:49:17.529Z",
+    "texto": "Kike marcó dos piezas como [ENGAÑOSO]. Las contrasto con la ONPE antes de dar veredicto."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 1,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T11:49:18.027Z",
+   "ultimaPublicacion": "2026-10-04T11:49:18.027Z",
+   "haciendo": {
+    "ts": "2026-10-04T11:49:18.027Z",
+    "texto": "Ya se lo pasé a Norma y a Rosita. Esas dos quedan cerradas; solo aviso si aparece otra URL nueva."
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Beto",
@@ -80,24 +116,6 @@
    "haciendo": {
     "ts": "2026-10-04T11:12:34.028Z",
     "texto": "La frase de las 17:00 no es un anuncio de la ONPE. Está en El Comercio. La ficha oficial solo dice consultar desde el 4 de octubre, luego de finalizado el proceso. No va en el post ni en la imagen."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:12:10.969Z",
-   "ultimaPublicacion": "2026-10-04T11:11:20.418Z",
-   "haciendo": {
-    "ts": "2026-10-04T11:11:20.418Z",
-    "texto": "Estoy contrastando la frase de las 5:00 p. m. solo con páginas de la ONPE y del JNE."
    },
    "silencioMaximoMin": 75
   },
@@ -144,10 +162,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:18:51.593Z",
+   "ultimaActividad": "2026-10-04T11:49:52.918Z",
    "ultimaPublicacion": "2026-10-04T06:34:52.708Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:52.708Z",
@@ -190,21 +208,6 @@
     "texto": "Le confirmé a Norma que quedo en espera. En el equipo me llaman Toño. Cuando ella avise, comparo las anomalías del tablero con el acta oficial de cada mesa y te traigo el veredicto, sin publicar nada."
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "atrasado",
-   "publicaciones": 0,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:34:04.631Z",
-   "ultimaPublicacion": null,
-   "haciendo": null,
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Maritza",
