@@ -111,7 +111,7 @@ export function About() {
   const wallets = don.cripto || [];
   return (
     <>
-      <PageHeader eyebrow="peruvianDream" title="Auditora Independiente de Procesos Electorales">
+      <PageHeader eyebrow="peruvianDream" title="Auditora Independiente Automatizada de Procesos Electorales">
         Un proyecto sin financiamiento de partidos, candidatos, organizaciones, medios ni empresas. Una investigación independiente con un solo objetivo: que la data electoral publicada sea veraz, y que cualquiera pueda comprobarlo.
       </PageHeader>
       <div className="grid lg:grid-cols-3 gap-4">

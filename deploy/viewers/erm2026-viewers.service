@@ -1,10 +1,11 @@
 [Unit]
-Description=ERM 2026 - contador de personas viendo el sitio
+Description=ERM 2026 - publico en vivo (personas viendo y reacciones)
 After=network.target
 
 [Service]
 DynamicUser=yes
-Environment=PORT=8833
+StateDirectory=erm2026-viewers
+Environment=PORT=8833 FEED_PATH=/srv/erm2026/data/bots/feed.json
 ExecStart=/usr/bin/node /opt/erm2026-viewers/server.mjs
 Restart=always
 RestartSec=3
@@ -18,7 +19,7 @@ ProtectKernelModules=true
 ProtectControlGroups=true
 RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
 LockPersonality=true
-MemoryMax=256M
+MemoryMax=384M
 
 [Install]
 WantedBy=multi-user.target

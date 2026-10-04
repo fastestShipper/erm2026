@@ -7,6 +7,7 @@ import { resolve } from 'node:path';
 // ERM_DATA_ORIGIN=http://localhost:5100, al servidor local con datos de prueba.
 const origin = process.env.ERM_DATA_ORIGIN || 'https://peruvian.dev';
 const prefix = '/dataonpe';
+const apiOrigin = process.env.ERM_API_ORIGIN || origin;   // p. ej. el servicio de público corriendo en local
 
 export default defineConfig({
   base: './',
@@ -22,7 +23,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/data': { target: origin, changeOrigin: true, rewrite: (p) => prefix + p },
-      '/api': { target: origin, changeOrigin: true, rewrite: (p) => prefix + p },
+      '/api': { target: apiOrigin, changeOrigin: true, rewrite: (p) => prefix + p },
     },
   },
 });

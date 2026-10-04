@@ -7,7 +7,8 @@
     "dev": "vite --port 5176",
     "build": "vite build",
     "preview": "vite preview --port 5174",
-    "dev:mock": "node dev-mock.mjs"
+    "dev:mock": "node dev-mock.mjs",
+    "dev:real": "node dev-real.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.9",

@@ -141,7 +141,7 @@ useGLTF.preload(ROBOT_URL, false, false);
 
 const DESK_Y = 0.98;
 
-function Workstation({ agent, index, total, screenTex, selected, onSelect, compact, latestMsg, focusMode, portal }) {
+function Workstation({ agent, index, total, screenTex, selected, onSelect, compact, latestMsg, focusMode, portal, likes = 0 }) {
   const pose = useMemo(() => deskPose(index, total), [index, total]);
   const look = lookOf(agent.agente, index);
   const ring = useRef();
@@ -168,6 +168,18 @@ function Workstation({ agent, index, total, screenTex, selected, onSelect, compa
     const t = setTimeout(() => setBubble(null), 9000);
     return () => clearTimeout(t);
   }, [latestMsg, index]);
+
+  // cuando el público reacciona a un mensaje de este agente, sube un «+N ♥» junto a su cabeza
+  const [pop, setPop] = useState(null);
+  const prevLikes = useRef(null);
+  useEffect(() => {
+    const before = prevLikes.current;
+    prevLikes.current = likes;
+    if (before === null || likes <= before) return;
+    setPop({ n: likes - before, k: Date.now() });
+    const t = setTimeout(() => setPop(null), 1900);
+    return () => clearTimeout(t);
+  }, [likes]);
 
   useFrame(({ clock }, delta) => {
     const t = clock.elapsedTime + index;
@@ -238,6 +250,11 @@ function Workstation({ agent, index, total, screenTex, selected, onSelect, compa
       {bubble && (
         <Html portal={portal} position={[0.55, 2.25, -0.52]} distanceFactor={focusMode ? 5.5 : compact ? 12 : 10} zIndexRange={[40, 0]} style={{ transform: 'translateY(-50%)' }}>
           <div className="speech">{bubble}</div>
+        </Html>
+      )}
+      {pop && (
+        <Html portal={portal} position={[-0.75, 2.3, -0.52]} center distanceFactor={focusMode ? 5.5 : compact ? 12 : 10} zIndexRange={[45, 0]}>
+          <div key={pop.k} className="like-pop">+{pop.n} ♥</div>
         </Html>
       )}
       {!awake && (
@@ -395,7 +412,7 @@ function drawWall(g, w, h, info) {
   for (let x = 0; x < w; x += 48) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, h); g.stroke(); }
   for (let y = 0; y < h; y += 48) { g.beginPath(); g.moveTo(0, y); g.lineTo(w, y); g.stroke(); }
   g.fillStyle = 'rgba(34,211,238,0.9)'; g.font = '600 30px "Geist Mono", monospace';
-  g.fillText('AUDITORA INDEPENDIENTE DE PROCESOS ELECTORALES · ERM 2026', 56, 70);
+  g.fillText('AUDITORA INDEPENDIENTE AUTOMATIZADA DE PROCESOS ELECTORALES · ERM 2026', 56, 70);
   g.fillStyle = info.statusColor; g.font = '800 92px Archivo, sans-serif';
   g.fillText(info.status, 56, 200);
   g.fillStyle = '#aab6c6'; g.font = '500 34px Archivo, sans-serif';
@@ -537,7 +554,7 @@ function CameraRig({ focus, autoRotate }) {
 
 /* ───────────────────────── escena completa ───────────────────────── */
 
-function Scene({ agents, feed, latest, election, status, actas, geo, selected, onSelect, autoRotate, lowPower, anomalyDeps, compact, portal }) {
+function Scene({ agents, feed, latest, election, status, actas, geo, selected, onSelect, autoRotate, lowPower, anomalyDeps, compact, portal, likesBy }) {
   const screenTex = useMemo(() => makeScreenTexture(), []);
   const seatedList = useMemo(() => seatAgents(agents), [agents]);
   const poses = useMemo(() => Object.fromEntries(seatedList.map((a, i) => [a.agente, deskPose(i, seatedList.length)])), [seatedList]);
@@ -584,7 +601,7 @@ function Scene({ agents, feed, latest, election, status, actas, geo, selected, o
       <VideoWall info={wallInfo} />
 
       {seatedList.map((a, i) => (
-        <Workstation key={a.agente} agent={a} index={i} total={seatedList.length} screenTex={screenTex} selected={selected === a.agente} onSelect={onSelect} compact={compact} latestMsg={latestBy[a.agente]} focusMode={!!selected} portal={portal} />
+        <Workstation key={a.agente} agent={a} index={i} total={seatedList.length} screenTex={screenTex} selected={selected === a.agente} onSelect={onSelect} compact={compact} latestMsg={latestBy[a.agente]} focusMode={!!selected} portal={portal} likes={likesBy?.[a.agente] || 0} />
       ))}
       <Packets feed={feedColored} poses={poses} />
       <CameraRig focus={focus} autoRotate={autoRotate} />

@@ -42,7 +42,7 @@ function Brand({ compact }) {
     <a href="#en-vivo" className="flex items-center gap-2.5 min-w-0 text-navy">
       <span className="w-[30px] h-[30px] rounded-lg grid place-items-center bg-navy flex-none"><span className="w-[9px] h-[9px] rounded-full bg-live" /></span>
       <span className="display text-[17px] !font-extrabold flex-none" style={{ fontStretch: '85%' }}>peruvianDream</span>
-      {!compact && <span className="text-[13px] text-dim font-medium truncate">Auditora Independiente de Procesos Electorales</span>}
+      {!compact && <span className="text-[13px] text-dim font-medium truncate">Auditora Independiente Automatizada de Procesos Electorales</span>}
     </a>
   );
 }
@@ -60,8 +60,8 @@ export default function App() {
       <header className="sticky top-0 z-40 h-14 border-b border-line bg-white">
         <div className="h-full px-4 lg:px-6 flex items-center gap-5">
           <div className="lg:hidden flex-1 min-w-0"><Brand compact /></div>
-          <div className="hidden lg:block xl:hidden flex-none"><Brand compact /></div>
-          <div className="hidden xl:block flex-none min-w-0 max-w-[460px]"><Brand /></div>
+          <div className="hidden lg:block min-[87.5rem]:hidden flex-none"><Brand compact /></div>
+          <div className="hidden min-[87.5rem]:block flex-none min-w-0 max-w-[560px]"><Brand /></div>
           <nav className="hidden lg:flex items-center gap-0.5 ml-auto" aria-label="Secciones">
             {NAV.map(({ id, label, icon: I }) => (
               <a key={id} href={`#${id}`} aria-current={route === id ? 'page' : undefined} title={label}

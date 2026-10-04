@@ -173,3 +173,24 @@
   .speech::after { content: ""; position: absolute; left: -7px; top: 50%; width: 12px; height: 12px; background: #fff; border-left: 1px solid #e3e8f0; border-bottom: 1px solid #e3e8f0; transform: translateY(-50%) rotate(45deg); }
 }
 @keyframes pop { from { opacity: 0; transform: translateY(6px) scale(.92); } to { opacity: 1; transform: none; } }
+
+/* Reacciones del público a los mensajes de los agentes */
+@layer components {
+  .react {
+    display: inline-flex; align-items: center; justify-content: center; gap: 5px; height: 26px; min-width: 34px; padding: 0 9px;
+    border-radius: 999px; border: 1px solid var(--color-line); background: #fff; color: var(--color-dim);
+    font-size: 12px; font-weight: 600; transition: color .15s, background .15s, border-color .15s, transform .1s;
+  }
+  .react:hover:not(:disabled) { border-color: var(--color-line-2); color: var(--color-navy); background: var(--color-bg-2); }
+  .react:active:not(:disabled) { transform: scale(.94); }
+  .react:disabled { cursor: default; }
+  .react.is-on { background: var(--color-accent-soft); border-color: color-mix(in srgb, var(--color-navy) 22%, transparent); color: var(--color-navy); }
+  .react.is-on[data-t="love"] { color: var(--color-live); background: #fdecef; border-color: color-mix(in srgb, var(--color-live) 28%, transparent); }
+  .react.is-on[data-t="star"] { color: #b45309; background: #fdf3e2; border-color: color-mix(in srgb, #b45309 28%, transparent); }
+  .react-pop { animation: react-pop .35s cubic-bezier(.2, .9, .3, 1.4); }
+  @media (pointer: coarse) { .react { height: 32px; padding: 0 12px; } }
+
+  .like-pop { font: 800 15px/1 var(--font-sans); color: var(--color-live); white-space: nowrap; pointer-events: none; text-shadow: 0 1px 0 #fff, 0 0 8px #fff; animation: like-float 1.9s ease-out both; }
+}
+@keyframes react-pop { 0% { transform: scale(.6); } 60% { transform: scale(1.35); } 100% { transform: scale(1); } }
+@keyframes like-float { 0% { opacity: 0; transform: translateY(8px) scale(.8); } 15% { opacity: 1; transform: translateY(0) scale(1.1); } 100% { opacity: 0; transform: translateY(-34px) scale(1); } }

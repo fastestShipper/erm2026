@@ -1,4 +1,4 @@
-# ERM 2026 · Datos abiertos
+# Auditora Independiente Automatizada de Procesos Electorales · ERM 2026
 
 Conteo de votos de las **Elecciones Regionales y Municipales 2026 del Perú** (domingo 4 de octubre de 2026), tomado de la ONPE, con verificaciones automáticas y todo en formato abierto.
 

@@ -1,41 +1,136 @@
-// Contador de personas con la página abierta (ERM 2026). Node ≥ 20, sin dependencias.
-//   POST /ping?s=ID  →  { viendo }
-// No lee cuerpos, no escribe en disco y no guarda IPs: solo un id aleatorio de sesión, en memoria.
+// Público en vivo (ERM 2026): cuántas personas miran y sus reacciones a los mensajes de los agentes.
+// Node ≥ 20, sin dependencias.
+//
+//   POST /ping?s=VID                      →  { viendo, r: { <idMensaje>: [meGusta, meEncanta, importante] } }
+//   POST /react?m=<idMensaje>&r=<tipo>&s=VID&on=1|0  →  { ok, c: [..] }
+//
+// No lee cuerpos. No guarda IPs ni datos personales: el VID es un id aleatorio del navegador y la IP
+// solo se usa en memoria, con hash y sal al azar, para frenar abusos. En disco quedan únicamente los contadores.
 import http from 'node:http';
+import fs from 'node:fs';
+import path from 'node:path';
+import crypto from 'node:crypto';
 
 const PORT = +(process.env.PORT || 8833);
 const SITE = process.env.SITE_ORIGIN || 'https://peruvian.dev';
-const TTL_MS = 75e3;        // un visitante cuenta mientras avise cada 30 s
-const MAX = 200000;         // tope de memoria
+const FEED = process.env.FEED_PATH || '/srv/erm2026/data/bots/feed.json';
+const STATE = process.env.STATE_DIRECTORY ? path.join(process.env.STATE_DIRECTORY.split(':')[0], 'reacciones.json') : null;
+const DEV = process.env.ALLOW_ANY_ORIGIN === '1';     // solo para pruebas locales
 
-const viewers = new Map();  // id de sesión → último aviso
-function ping(rawUrl) {
-  const id = (new URL(rawUrl, 'http://x').searchParams.get('s') || '').replace(/[^a-z0-9]/gi, '').slice(0, 16);
-  if (id && (viewers.has(id) || viewers.size < MAX)) viewers.set(id, Date.now());
-}
-// La limpieza corre aparte, cada 15 s: un aviso nunca recorre el mapa.
+const TYPES = ['like', 'love', 'star'];               // Me gusta, Me encanta, Importante
+const TTL_MS = 75e3;            // un visitante cuenta mientras avise
+const MAX_VIEWERS = 200000;
+const MAX_SEEN = 400000;        // tope de memoria para «quién ya reaccionó a qué»
+const PER_IP = 150;             // reacciones de un mismo tipo a un mismo mensaje desde una misma IP (CGNAT incluido)
+
+/* ───────── visitantes ───────── */
+const viewers = new Map();      // VID → último aviso
+const cleanVid = (v) => { const s = String(v || '').replace(/[^a-z0-9]/gi, '').slice(0, 16); return s.length >= 6 ? s : ''; };
+function touch(vid) { if (vid && (viewers.has(vid) || viewers.size < MAX_VIEWERS)) viewers.set(vid, Date.now()); }
 setInterval(() => { const now = Date.now(); for (const [k, t] of viewers) if (now - t > TTL_MS) viewers.delete(k); }, 15e3).unref();
 
-// Solo cuentan los avisos que vienen de nuestra propia página (otro sitio no puede inflar el número con etiquetas o fetch).
+/* ───────── mensajes válidos: solo se puede reaccionar a lo que está publicado ───────── */
+let valid = new Set();
+function loadFeed() {
+  fs.readFile(FEED, 'utf8', (err, txt) => {
+    if (err) return;
+    try {
+      const ids = new Set();
+      for (const x of JSON.parse(txt).items || []) { const t = Date.parse(x.ts); if (t) ids.add(String(t)); }
+      if (ids.size) { valid = ids; dirtySnapshot = true; }
+    } catch { /* archivo a medio escribir: se reintenta */ }
+  });
+}
+loadFeed();
+setInterval(loadFeed, 20e3).unref();
+
+/* ───────── contadores ───────── */
+const counts = new Map();       // idMensaje → [n, n, n]
+if (STATE) {
+  try { for (const [k, v] of Object.entries(JSON.parse(fs.readFileSync(STATE, 'utf8')))) if (/^\d{13}$/.test(k) && Array.isArray(v)) counts.set(k, TYPES.map((_, i) => Math.max(0, v[i] | 0))); } catch { /* primera vez */ }
+}
+let dirtyDisk = false, dirtySnapshot = true, snapshot = '{}';
+function buildSnapshot() {
+  if (!dirtySnapshot) return snapshot;
+  const o = {};
+  for (const [k, v] of counts) if (valid.has(k) && (v[0] || v[1] || v[2])) o[k] = v;
+  snapshot = JSON.stringify(o);
+  dirtySnapshot = false;
+  return snapshot;
+}
+if (STATE) {
+  setInterval(() => {
+    if (!dirtyDisk) return;
+    dirtyDisk = false;
+    const tmp = STATE + '.tmp';
+    fs.writeFile(tmp, JSON.stringify(Object.fromEntries(counts)), (e) => { if (!e) fs.rename(tmp, STATE, () => {}); });
+  }, 10e3).unref();
+}
+
+/* ───────── anti-abuso (solo en memoria) ───────── */
+const SALT = crypto.randomBytes(16);
+const ipKey = (req) => {
+  let ip = String(req.headers['x-real-ip'] || req.socket.remoteAddress || '');
+  if (ip.includes(':') && !ip.startsWith('::ffff:')) ip = ip.split(':').slice(0, 4).join(':');   // IPv6: por /64
+  return crypto.createHmac('sha256', SALT).update(ip).digest('base64url').slice(0, 10);
+};
+const seen = new Map();         // `${vid}|${id}|${tipo}` → true (orden de inserción = antigüedad)
+const perIp = new Map();        // `${ip}|${id}|${tipo}` → cantidad
+function remember(map, key, val) { map.set(key, val); if (map.size > MAX_SEEN) map.delete(map.keys().next().value); }
+
+function react(req, q) {
+  const id = String(q.get('m') || '');
+  const t = TYPES.indexOf(String(q.get('r') || ''));
+  const vid = cleanVid(q.get('s'));
+  if (!/^\d{13}$/.test(id) || !valid.has(id) || t < 0 || !vid) return { ok: false };
+  const on = q.get('on') !== '0';
+  const key = `${vid}|${id}|${t}`;
+  const c = counts.get(id) || [0, 0, 0];
+  if (on) {
+    if (!seen.has(key)) {
+      const ik = `${ipKey(req)}|${id}|${t}`;
+      const used = perIp.get(ik) || 0;
+      if (used >= PER_IP) return { ok: true, c };            // tope por red: se acepta sin sumar
+      remember(perIp, ik, used + 1);
+      remember(seen, key, true);
+      c[t] += 1;
+    }
+  } else if (seen.delete(key)) {
+    c[t] = Math.max(0, c[t] - 1);
+  }
+  counts.set(id, c);
+  dirtyDisk = dirtySnapshot = true;
+  return { ok: true, c };   // reaccionar no cuenta como visitante: eso solo lo decide /ping
+}
+
+/* ───────── HTTP ───────── */
 function sameSite(req) {
+  if (DEV) return true;
   const sfs = req.headers['sec-fetch-site'];
   if (sfs) return sfs === 'same-origin';
   const origin = req.headers.origin;
   return !origin || origin === SITE;
 }
-
-const json = (res, code, obj) => { res.writeHead(code, { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' }); res.end(JSON.stringify(obj)); };
+const HEAD = { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store' };
 
 const server = http.createServer((req, res) => {
-  req.resume();             // se descarta cualquier cuerpo
-  const p = req.url.split('?')[0].replace(/^\/dataonpe\/api/, '');
-  if (p !== '/ping') return json(res, 404, { error: 'no encontrado' });
-  if (req.method !== 'POST') return json(res, 405, { error: 'solo POST' });
-  if (sameSite(req)) ping(req.url);
-  json(res, 200, { viendo: viewers.size });
+  req.resume();                 // se descarta cualquier cuerpo
+  const u = new URL(req.url, 'http://x');
+  const p = u.pathname.replace(/^\/dataonpe\/api/, '');
+  if (p !== '/ping' && p !== '/react') { res.writeHead(404, HEAD); return res.end('{"error":"no encontrado"}'); }
+  if (req.method !== 'POST') { res.writeHead(405, HEAD); return res.end('{"error":"solo POST"}'); }
+  const own = sameSite(req);
+  if (p === '/ping') {
+    if (own) touch(cleanVid(u.searchParams.get('s')));
+    res.writeHead(200, HEAD);
+    return res.end(`{"viendo":${viewers.size},"r":${buildSnapshot()}}`);
+  }
+  // Los errores de validación responden 200 con ok:false: una respuesta 4xx repetida puede disparar al firewall.
+  res.writeHead(200, HEAD);
+  res.end(JSON.stringify(own ? react(req, u.searchParams) : { ok: false }));
 });
 server.requestTimeout = 5000;
 server.headersTimeout = 5000;
 server.keepAliveTimeout = 5000;
 server.maxHeadersCount = 60;
-server.listen(PORT, '127.0.0.1', () => console.log('viewers en 127.0.0.1:' + PORT));
+server.listen(PORT, '127.0.0.1', () => console.log(`público en 127.0.0.1:${PORT} · feed ${FEED} · estado ${STATE || '(solo memoria)'}`));

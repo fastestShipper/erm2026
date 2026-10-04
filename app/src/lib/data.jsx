@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useMemo, useRef, useState } from 'react';
+import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 
 // Todo lo que muestra el sitio sale de estos archivos públicos (los mismos del repositorio).
 const SOURCES = {
@@ -54,7 +54,80 @@ export function DataProvider({ children }) {
     const live = d.status?.estado === 'en-vivo' && (d.latest?.elecciones?.length || 0) > 0;
     return { ...d, live };
   }, [d]);
-  return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
+  const audience = useAudienceState();
+  return <Ctx.Provider value={value}><AudienceCtx.Provider value={audience}>{children}</AudienceCtx.Provider></Ctx.Provider>;
+}
+
+/* ───────── público en vivo: personas viendo y reacciones a los mensajes ───────── */
+export const REACTIONS = ['like', 'love', 'star'];             // Me gusta, Me encanta, Importante
+export const msgId = (x) => String(Date.parse(x.ts));          // id de un mensaje del feed
+
+const store = {
+  get(k, fallback) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : fallback; } catch { return fallback; } },
+  set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* sin almacenamiento */ } },
+};
+// Id aleatorio del navegador (no identifica a la persona): evita contar dos veces la misma reacción.
+function viewerId() {
+  let v = store.get('erm-vid', null);
+  if (typeof v !== 'string' || v.length < 8) {
+    v = (Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2)).slice(0, 14);
+    store.set('erm-vid', v);
+  }
+  return v;
+}
+
+const AudienceCtx = createContext({ viewers: null, reactions: {}, mine: {}, react: () => {} });
+export const useAudience = () => useContext(AudienceCtx);
+
+function useAudienceState() {
+  const vid = useRef(null);
+  if (vid.current === null) vid.current = viewerId();
+  const [viewers, setViewers] = useState(null);
+  const [reactions, setReactions] = useState({});
+  const [mine, setMine] = useState(() => store.get('erm-mine', {}));
+  const mineRef = useRef(mine);
+  const pending = useRef(new Set());       // mensajes con un envío en curso: el sondeo no pisa su valor
+
+  useEffect(() => {
+    const ping = () => fetch(`api/ping?s=${vid.current}`, { method: 'POST', cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => {
+        if (!j) return;
+        setViewers(j.viendo);
+        if (j.r) setReactions((prev) => { const next = { ...j.r }; for (const id of pending.current) if (prev[id]) next[id] = prev[id]; return next; });
+      })
+      .catch(() => {});
+    ping();
+    const t = setInterval(ping, 15000);
+    return () => clearInterval(t);
+  }, []);
+
+  const react = useCallback((id, type) => {
+    const i = REACTIONS.indexOf(type);
+    if (i < 0) return;
+    const apply = (on) => {
+      const cur = mineRef.current[id] || [];
+      const list = on ? [...new Set([...cur, type])] : cur.filter((x) => x !== type);
+      const next = { ...mineRef.current, [id]: list };
+      if (!list.length) delete next[id];
+      const keys = Object.keys(next);
+      if (keys.length > 400) for (const k of keys.sort().slice(0, keys.length - 400)) delete next[k];
+      mineRef.current = next;
+      setMine(next);
+      store.set('erm-mine', next);
+      setReactions((r) => { const c = [...(r[id] || [0, 0, 0])]; c[i] = Math.max(0, c[i] + (on ? 1 : -1)); return { ...r, [id]: c }; });
+    };
+    const on = !(mineRef.current[id] || []).includes(type);
+    apply(on);                               // se ve al instante; si el envío falla, se deshace
+    pending.current.add(id);
+    fetch(`api/react?m=${id}&r=${type}&s=${vid.current}&on=${on ? 1 : 0}`, { method: 'POST', cache: 'no-store' })
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => { if (j?.ok && Array.isArray(j.c)) setReactions((r) => ({ ...r, [id]: j.c })); else apply(!on); })
+      .catch(() => apply(!on))
+      .finally(() => pending.current.delete(id));
+  }, []);
+
+  return useMemo(() => ({ viewers, reactions, mine, react }), [viewers, reactions, mine, react]);
 }
 
 export const useData = () => useContext(Ctx);
@@ -66,23 +139,8 @@ export function useNow(ms = 1000) {
   return now;
 }
 
-/** Cuántas personas tienen la página abierta (id aleatorio de sesión; sin datos personales). */
-export function useViewers() {
-  const [v, setV] = useState(null);
-  useEffect(() => {
-    let sid = null;
-    try { sid = sessionStorage.getItem('erm-sid'); } catch { /* sin storage */ }
-    if (!sid) {
-      sid = Math.random().toString(36).slice(2, 12);
-      try { sessionStorage.setItem('erm-sid', sid); } catch { /* sin storage */ }
-    }
-    const ping = () => fetch(`api/ping?s=${sid}`, { method: 'POST', cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)).then((j) => j && setV(j.viendo)).catch(() => {});
-    ping();
-    const t = setInterval(ping, 30000);
-    return () => clearInterval(t);
-  }, []);
-  return v;
-}
+/** Cuántas personas tienen la página abierta. */
+export const useViewers = () => useContext(AudienceCtx).viewers;
 
 /** Hash de la URL → pestaña. */
 export function useRoute(views, fallback) {

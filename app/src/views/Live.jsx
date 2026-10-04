@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, ChartColumn, Database, MessageSquare, Radio, Users, X } from 'lucide-react';
-import { useData, useMedia, useNow, useViewers } from '../lib/data.jsx';
+import { ArrowLeft, ChartColumn, Database, Heart, MessageSquare, Radio, Star, ThumbsUp, Users, X } from 'lucide-react';
+import { msgId, useAudience, useData, useMedia, useNow, useViewers } from '../lib/data.jsx';
 import { colorOf, seatAgents, STATE } from '../lib/agents.js';
 import { CLOSE_MS, TEAM_START_MS, ago, hms, n, norm, pct, plain, timeLima } from '../lib/format.js';
 import { RichText, Tag } from '../hud/common.jsx';
@@ -25,7 +25,39 @@ export function useLiveModel() {
   }, [d.latest, d.anomalias]);
   const working = agents.filter((a) => a.estado === 'activo' || a.estado === 'cumpliendo').length;
   const actas = d.actas?.actualizado ? d.actas : null;
-  return { ...d, actas, agents, election, anomalyDeps, working };
+  // reacciones del público sumadas por agente (para su ficha y para la sala 3D)
+  const { reactions } = useAudience();
+  const likesBy = useMemo(() => {
+    const o = {};
+    for (const x of d.feed?.items || []) { const c = reactions[msgId(x)]; if (c) o[x.agente] = (o[x.agente] || 0) + c[0] + c[1] + c[2]; }
+    return o;
+  }, [d.feed, reactions]);
+  return { ...d, actas, agents, election, anomalyDeps, working, likesBy };
+}
+
+/* ───────── reacciones del público ───────── */
+const REACTS = [['like', ThumbsUp, 'Me gusta'], ['love', Heart, 'Me encanta'], ['star', Star, 'Importante']];
+
+function Reactions({ id, readOnly }) {
+  const { reactions, mine, react } = useAudience();
+  const c = reactions[id] || [0, 0, 0];
+  const my = mine[id] || [];
+  if (readOnly && !(c[0] || c[1] || c[2])) return null;
+  return (
+    <div className="flex items-center gap-1 mt-1.5" role="group" aria-label="Reacciones">
+      {REACTS.map(([t, I, label], i) => {
+        const on = my.includes(t);
+        if (readOnly && !c[i]) return null;
+        return (
+          <button key={t} type="button" disabled={readOnly} data-t={t} aria-pressed={on} title={label}
+            aria-label={c[i] ? `${label}: ${n(c[i])}` : label} onClick={() => react(id, t)} className={`react ${on ? 'is-on' : ''}`}>
+            <I key={on ? 'on' : 'off'} size={13} fill={on ? 'currentColor' : 'none'} className={on ? 'react-pop' : ''} />
+            {c[i] > 0 && <span className="num">{n(c[i])}</span>}
+          </button>
+        );
+      })}
+    </div>
+  );
 }
 
 /** Recorta un mensaje sin dejar marcas de formato a medias (**negrita**, `código`, [enlace](url)). */
@@ -99,7 +131,7 @@ function Player({ m, now, sel, onSelect, autoRotate, onInteract, compact }) {
     <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-[#dfe5ee] shadow-[0_24px_50px_-28px_rgba(11,31,75,.45)]" onPointerDown={onInteract}>
       <Suspense fallback={<div className="absolute inset-0 grid place-items-center text-dim text-[13px]">Encendiendo la sala…</div>}>
         <Office agents={m.agents} feed={m.feed} latest={m.latest} status={m.status} actas={m.actas} anomalyDeps={m.anomalyDeps}
-          selected={sel} onSelect={onSelect} autoRotate={autoRotate} compact={compact} />
+          selected={sel} onSelect={onSelect} autoRotate={autoRotate} compact={compact} likesBy={m.likesBy} />
       </Suspense>
       <div className={`absolute flex gap-2 pointer-events-none ${compact ? 'left-2.5 top-2.5' : 'left-4 top-4'}`}>
         <span className="live-badge !h-7 !px-2.5 !text-[12px]"><i />EN VIVO</span>
@@ -121,6 +153,7 @@ function StreamMeta({ m }) {
   const viewers = useViewers();
   return (
     <div className="flex flex-col gap-1.5">
+      <div className="eyebrow !text-live">Auditora Independiente Automatizada de Procesos Electorales</div>
       <h1 className="display m-0 text-[24px] xl:text-[28px] leading-[1.1]">Elecciones Regionales y Municipales 2026: auditoría en vivo</h1>
       <div className="flex items-center gap-x-3.5 gap-y-2 flex-wrap text-[13.5px] text-dim">
         <span><b className="num text-ink-2">{viewers ? n(viewers) : '—'}</b> viendo ahora</span>
@@ -160,7 +193,7 @@ function Kpis({ m, now }) {
 
 /* ───────── chat de agentes (a la derecha) ───────── */
 
-function Messages({ items, onPick }) {
+function Messages({ items, onPick, readOnly }) {
   const box = useRef(null);
   const stick = useRef(true);
   useEffect(() => { const el = box.current; if (el && stick.current) el.scrollTop = el.scrollHeight; }, [items]);
@@ -181,6 +214,7 @@ function Messages({ items, onPick }) {
             <div className={`mt-0.5 text-[13.5px] leading-[1.45] ${x.tipo === 'recibe' ? 'text-ink-2 italic' : 'text-ink'}`}>
               <RichText text={clip(x.texto, 420)} />
             </div>
+            <Reactions id={msgId(x)} readOnly={readOnly} />
           </div>
         </li>
       ))}
@@ -188,7 +222,7 @@ function Messages({ items, onPick }) {
   );
 }
 
-function AgentCard({ a, onClose }) {
+function AgentCard({ a, onClose, likes }) {
   const st = STATE[a.estado] || { label: a.estado, tone: 'dim' };
   return (
     <div className="mx-3 mt-3 p-3.5 rounded-xl border border-line bg-bg-2 rise">
@@ -205,12 +239,13 @@ function AgentCard({ a, onClose }) {
         <Tag tone={st.tone}>{st.label}</Tag>
         <span className="chip">Turno desde {a.inicio}</span>
         <span className="chip">{a.ultimaActividad ? `Activo ${ago(Date.parse(a.ultimaActividad))}` : 'Sin actividad'}</span>
+        {likes > 0 && <span className="chip !text-live"><Heart size={12} fill="currentColor" /> <span className="num">{n(likes)}</span> {likes === 1 ? 'reacción' : 'reacciones'}</span>}
       </div>
     </div>
   );
 }
 
-export function AgentChat({ m, sel, onPick, className = '' }) {
+export function AgentChat({ m, sel, onPick, className = '', readOnly = false }) {
   const items = useMemo(() => (m.feed?.items || []).filter((x) => !sel || x.agente === sel).slice(0, 120).reverse(), [m.feed, sel]);
   const a = sel && m.agents.find((x) => x.agente === sel);
   const inRoom = m.agents.filter((x) => x.estado === 'activo' || x.estado === 'cumpliendo');
@@ -221,9 +256,9 @@ export function AgentChat({ m, sel, onPick, className = '' }) {
         <span className="display text-[16px] !font-bold !tracking-normal flex items-center gap-2"><MessageSquare size={16} />Chat de agentes en vivo</span>
         {sel ? <button onClick={() => onPick(null)} className="text-[12.5px] text-accent-2 font-semibold hover:underline flex items-center gap-1"><ArrowLeft size={14} />Todos</button> : <span className="text-[12px] text-dim">solo IA</span>}
       </div>
-      {a ? <AgentCard a={a} onClose={() => onPick(null)} />
+      {a ? <AgentCard a={a} onClose={() => onPick(null)} likes={m.likesBy?.[a.agente] || 0} />
         : <div className="flex-none mx-3 mt-3 px-3 py-2.5 rounded-[10px] bg-accent-soft text-[12.5px] leading-snug text-[#2b3a5c]">Aquí escriben los agentes del equipo. Las cifras del tablero vienen directo de la ONPE.</div>}
-      <Messages items={items} onPick={onPick} />
+      <Messages items={items} onPick={onPick} readOnly={readOnly} />
       <div className="flex-none flex items-center gap-3 px-4 py-3 border-t border-line min-w-0">
         <div className="flex flex-none" role="group" aria-label="Agentes en la sala">
           {m.agents.map((x, i) => (
@@ -274,6 +309,7 @@ export default function Live() {
     <div className="flex flex-col h-[calc(100dvh-56px-64px)]">
       <div className="flex-none px-3 pt-3"><Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={false} onInteract={() => setInteracted(true)} compact /></div>
       <div className="flex-none px-3 pt-2.5">
+        <div className="eyebrow !text-live !text-[9.5px] !tracking-[0.08em] mb-1">Auditora Independiente Automatizada de Procesos Electorales</div>
         <h1 className="display m-0 text-[19px] leading-[1.15]">ERM 2026: auditoría en vivo</h1>
       </div>
       <div className="flex-1 min-h-0 flex flex-col px-3 pt-2.5 pb-3 gap-2.5">
