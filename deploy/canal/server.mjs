@@ -105,14 +105,14 @@ function leerBoca(texto) {
   return { boca: b };
 }
 
-function guardarBoca(texto) {
+function guardarBoca(texto, de) {
   const r = leerBoca(texto);
   if (r.error) return r;
   const b = r.boca;
   // una misma encuestadora y estudio para el mismo lugar y cargo: la nueva reemplaza a la anterior
   const clave = [b.tipo, sinTildes(b.lugar), sinTildes(b.encuestadora), b.estudio].join('|');
   const previa = db.bocas.findIndex((x) => x.clave === clave && !x.borrada);
-  const item = { id: ++db.ultimaBoca, clave, recibido: new Date().toISOString(), ...b };
+  const item = { id: ++db.ultimaBoca, clave, recibido: new Date().toISOString(), ...b, por: de };
   if (previa >= 0) db.bocas[previa].borrada = true;
   db.bocas.push(item);
   if (db.bocas.length > 2000) db.bocas = db.bocas.slice(-2000);
@@ -131,7 +131,7 @@ function enviar(de, texto) {
   if (db.mensajes.length > KEEP) db.mensajes = db.mensajes.slice(-KEEP);
   dirty = true;
   const out = { ok: true, enviado: { id: m.id, para: m.para, ts: m.ts } };
-  if (de === 'norma' && /^\s*\[BOCA DE URNA\]/i.test(t)) out.bocaUrna = guardarBoca(t);
+  if ((de === 'norma' || de === 'claude') && /^\s*\[BOCA DE URNA\]/i.test(t)) out.bocaUrna = guardarBoca(t, de);
   return out;
 }
 
