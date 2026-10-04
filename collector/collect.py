@@ -587,6 +587,7 @@ def main():
     try:
         if not os.path.exists(os.path.join(DATA, 'ambitos', 'indice.json')):
             write_places_index(latest, ambitos)
+        write_contest_summary(latest, ambitos)      # los gobernadores cambian con cada corte
         view = {**ambitos, '_lideres': crawl.setdefault('_lideres', {}), '_cambios': crawl.setdefault('_cambios', [])}
         boletin(latest, view, checks + lower)
     except Exception as e:  # el boletín es un extra: nunca detiene la publicación de resultados
@@ -854,11 +855,46 @@ def lower_main():
                                                          **{k: v for k, v in lower_summary(st, e['nivel']).items() if k in ('pendientes', 'total')}},
                    indent=None)
     write_places_index(latest, crawl)
+    write_contest_summary(latest, crawl)
     write_json(AMBITOS_STATE, crawl, indent=None)
     write_json('manifest-ambitos.json', manifest)
     write_json('checks-ambitos.json', {'actualizado': now_iso(), 'porAmbito': by_scope}, indent=None)
     log('ámbitos:', visited, 'lugares consultados;',
         ', '.join(f'{e.get("menu") or e["nombre"]}: {lower_summary(crawl.get(str(e["id"])), e["nivel"])["pendientes"]} sin visitar' for e in els))
+
+
+def write_contest_summary(latest, crawl):
+    """Resumen liviano de todas las contiendas con datos (para el panel «Resultados de la noche»):
+    cargo, lugar, % de actas, los tres primeros y si el primer lugar todavía puede cambiar."""
+    def top(parts):
+        orgs = [p for p in parts or [] if not p.get('especial') and p.get('votos')]
+        return [[nice(p.get('candidato') or '') if p.get('candidato') else '', nice(p.get('partido') or ''),
+                 p.get('pctValidos')] for p in orgs[:3]]
+
+    def fila(tipo, ubigeo, lugar, ruta, tot, parts, c, visto=None):
+        tot = tot or {}
+        return [tipo, ubigeo, lugar, ruta, tot.get('actasContabilizadas'), tot.get('fechaActualizacion'), top(parts),
+                None if not c or 'puedeCambiar' not in c else bool(c['puedeCambiar']), visto]
+
+    filas, pendientes = [], 0
+    for e in latest.get('elecciones', []):
+        tipo = e.get('tipo')
+        if tipo == 'gobernador':
+            for d in e.get('departamentos', []):
+                filas.append(fila('gobernador', d['ubigeo'], nice(d['nombre']), nice(d['nombre']), d.get('totales'),
+                                  d.get('participantes'), d.get('contienda')))
+        elif tipo in ('provincial', 'distrital'):
+            st = crawl.get(str(e['id'])) or {}
+            store = (st.get('distritos') if tipo == 'distrital' else st.get('provincias')) or {}
+            pendientes += max(0, len(st.get('todos') or []) - len(store))
+            for code, v in store.items():
+                names = [x.strip() for x in v['nombre'].split(' / ')]
+                lugar = nice(names[-1])
+                ruta = ', '.join(nice(x) for x in reversed(names))      # «Chaclacayo, Lima, Lima»
+                filas.append(fila(tipo, code, lugar, ruta, v.get('totales'), v.get('participantes'), v.get('contienda'), v.get('visto')))
+    write_json('ambitos/contiendas.json', {'actualizado': now_iso(), 'pendientes': pendientes,
+                                          'campos': ['tipo', 'ubigeo', 'lugar', 'ruta', 'actasPct', 'corte', 'top', 'puedeCambiar', 'visto'],
+                                          'filas': filas}, indent=None)
 
 
 def write_places_index(latest, crawl):

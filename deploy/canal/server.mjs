@@ -34,7 +34,7 @@ const quien = (clave) => {
 };
 
 /* ───────── mensajes (en disco, escritura atómica) ───────── */
-let db = { ultimo: 0, mensajes: [], leido: {} };
+let db = { ultimo: 0, mensajes: [], leido: {}, bocas: [], ultimaBoca: 0 };
 try { db = { ...db, ...JSON.parse(fs.readFileSync(STATE, 'utf8')) }; } catch { /* primera vez */ }
 let dirty = false;
 const save = () => {
@@ -56,6 +56,72 @@ const permitido = (p) => {
   v.push(now); ventana.set(p, v); return true;
 };
 
+/* ───────── bocas de urna y conteos rápidos (los manda Norma con un formato fijo) ─────────
+[BOCA DE URNA]
+Contienda: Alcalde provincial de Lima
+Lugar: Lima
+Tipo: provincial            (gobernador | provincial | distrital)
+Ubigeo: 140100              (opcional)
+Encuestadora: Ipsos
+Medio: América TV
+Hora: 17:00
+Estudio: boca de urna       (o conteo rápido)
+Registro JNE: ...
+Muestra: 4500
+Margen: 2.0
+Enlace: https://...
+- Nombre del candidato | Organización | 30.2
+*/
+const sinTildes = (x) => String(x || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+const CAMPOS = { contienda: 'contienda', lugar: 'lugar', tipo: 'tipo', ubigeo: 'ubigeo', encuestadora: 'encuestadora', medio: 'medio',
+  hora: 'hora', estudio: 'estudio', 'registro jne': 'registro', registro: 'registro', muestra: 'muestra', margen: 'margen',
+  'margen de error': 'margen', enlace: 'enlace', fuente: 'enlace', 'nivel de confianza': 'confianza', confianza: 'confianza' };
+const corto = (v, n = 160) => String(v || '').trim().slice(0, n);
+
+function leerBoca(texto) {
+  const b = { filas: [] };
+  for (const linea of texto.split('\n').slice(1)) {
+    const l = linea.trim();
+    if (!l) continue;
+    if (/^[-•*]/.test(l)) {
+      const partes = l.replace(/^[-•*]\s*/, '').split('|').map((x) => x.trim());
+      const pct = parseFloat(String(partes[partes.length - 1] || '').replace('%', '').replace(',', '.'));
+      if (partes.length >= 2 && Number.isFinite(pct) && pct >= 0 && pct <= 100) {
+        b.filas.push({ candidato: corto(partes.length >= 3 ? partes[0] : partes[0], 90), partido: corto(partes.length >= 3 ? partes[1] : '', 90), pct });
+      }
+      continue;
+    }
+    const m = l.match(/^([^:]{2,30}):\s*(.+)$/);
+    if (m && CAMPOS[sinTildes(m[1])]) b[CAMPOS[sinTildes(m[1])]] = corto(m[2], 300);
+  }
+  const tipo = sinTildes(b.tipo);
+  b.tipo = /gobern|region/.test(tipo) ? 'gobernador' : /distr/.test(tipo) ? 'distrital' : /provin/.test(tipo) ? 'provincial' : 'otra';
+  b.estudio = /conteo/.test(sinTildes(b.estudio)) ? 'conteo rápido' : 'boca de urna';
+  if (b.ubigeo && !/^\d{6}$/.test(b.ubigeo)) delete b.ubigeo;
+  if (b.enlace && !/^https:\/\/\S+$/.test(b.enlace)) delete b.enlace;
+  if (!b.lugar || !b.encuestadora || !b.filas.length) return { error: 'Faltan datos: hacen falta al menos Lugar, Encuestadora y una fila «- Candidato | Organización | %».' };
+  b.filas.sort((x, y) => y.pct - x.pct);
+  b.filas = b.filas.slice(0, 12);
+  return { boca: b };
+}
+
+function guardarBoca(texto) {
+  const r = leerBoca(texto);
+  if (r.error) return r;
+  const b = r.boca;
+  // una misma encuestadora y estudio para el mismo lugar y cargo: la nueva reemplaza a la anterior
+  const clave = [b.tipo, sinTildes(b.lugar), sinTildes(b.encuestadora), b.estudio].join('|');
+  const previa = db.bocas.findIndex((x) => x.clave === clave && !x.borrada);
+  const item = { id: ++db.ultimaBoca, clave, recibido: new Date().toISOString(), ...b };
+  if (previa >= 0) db.bocas[previa].borrada = true;
+  db.bocas.push(item);
+  if (db.bocas.length > 2000) db.bocas = db.bocas.slice(-2000);
+  dirty = true;
+  return { id: item.id, lugar: item.lugar, tipo: item.tipo, filas: item.filas.length, reemplaza: previa >= 0 };
+}
+
+const publicas = () => db.bocas.filter((x) => !x.borrada).map(({ clave, borrada, ...x }) => x);
+
 function enviar(de, texto) {
   const t = limpiar(texto);
   if (!t) return { ok: false, error: 'El mensaje está vacío.' };
@@ -64,7 +130,9 @@ function enviar(de, texto) {
   db.mensajes.push(m);
   if (db.mensajes.length > KEEP) db.mensajes = db.mensajes.slice(-KEEP);
   dirty = true;
-  return { ok: true, enviado: { id: m.id, para: m.para, ts: m.ts } };
+  const out = { ok: true, enviado: { id: m.id, para: m.para, ts: m.ts } };
+  if (de === 'norma' && /^\s*\[BOCA DE URNA\]/i.test(t)) out.bocaUrna = guardarBoca(t);
+  return out;
 }
 
 function leer(p, desde) {
@@ -81,6 +149,7 @@ const AYUDA = {
   leer: 'GET /dataonpe/canal/leer?clave=TU_CLAVE  → mensajes nuevos para ti (después de leerlos ya no vuelven a salir; usa &desde=0 para ver todo).',
   enviar: 'GET /dataonpe/canal/enviar?clave=TU_CLAVE&texto=MENSAJE (texto con %20 en los espacios) o POST con el texto en el cuerpo.',
   historial: 'GET /dataonpe/canal/historial?clave=TU_CLAVE&limite=20',
+  bocaUrna: 'Para publicar una boca de urna en el tablero, envía un mensaje que empiece con [BOCA DE URNA] y líneas «Campo: valor» (Contienda, Lugar, Tipo, Encuestadora, Medio, Hora, Estudio, Registro JNE, Muestra, Margen, Enlace) y una línea por candidato: «- Candidato | Organización | 30.2».',
 };
 
 /* ───────── HTTP ───────── */
@@ -92,12 +161,20 @@ const server = http.createServer((req, res) => {
   const ruta = u.pathname.replace(/^\/dataonpe/, '').replace(/^\/canal/, '').replace(/\/+$/, '') || '/';
   const q = u.searchParams;
   if (ruta === '/') { req.resume(); return reply(res, AYUDA); }
+  // bocas de urna publicadas: públicas, sin clave (las lee el tablero)
+  if (ruta === '/bocaurna' && req.method === 'GET') { req.resume(); return reply(res, { ok: true, nota: 'Estimaciones de encuestadoras difundidas por medios después del cierre. No son resultados oficiales.', items: publicas() }); }
   const p = quien(q.get('clave'));
   if (!p) { req.resume(); return reply(res, { ok: false, error: 'Clave no válida.' }); }
 
   if (ruta === '/leer' && req.method === 'GET') {
     const d = q.has('desde') ? parseInt(q.get('desde'), 10) : undefined;
     return reply(res, leer(p, Number.isNaN(d) ? undefined : d));
+  }
+  if (ruta === '/bocaurna/borrar' && req.method === 'GET' && p === 'claude') {
+    const id = parseInt(q.get('id'), 10);
+    const b = db.bocas.find((x) => x.id === id);
+    if (b) { b.borrada = true; dirty = true; }
+    return reply(res, { ok: !!b });
   }
   if (ruta === '/historial' && req.method === 'GET') {
     const n = Math.min(100, Math.max(1, parseInt(q.get('limite') || '20', 10) || 20));

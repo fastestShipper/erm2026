@@ -24,6 +24,7 @@ export default defineConfig({
     proxy: {
       '/data': { target: origin, changeOrigin: true, rewrite: (p) => prefix + p },
       '/api': { target: apiOrigin, changeOrigin: true, rewrite: (p) => prefix + p },
+      '/canal': { target: origin, changeOrigin: true, rewrite: (p) => prefix + p },
     },
   },
 });

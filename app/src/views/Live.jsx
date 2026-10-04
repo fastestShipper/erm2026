@@ -5,7 +5,8 @@ import { colorOf, seatAgents, STATE } from '../lib/agents.js';
 import { CLOSE_MS, TEAM_START_MS, ago, hms, n, norm, pct, plain, timeLima } from '../lib/format.js';
 import { setZone, usePlaces, useZone, useZoneRaces } from '../lib/zona.js';
 import { RichText, Tag } from '../hud/common.jsx';
-import { RaceMini, ZonePicker } from '../hud/race.jsx';
+import { RaceMini } from '../hud/race.jsx';
+import { NightResults } from '../hud/night.jsx';
 
 const Office = lazy(() => import('../office/Office.jsx'));
 
@@ -253,18 +254,13 @@ function CutCard({ m, now }) {
         <a href="#resultados" className="btn-pill !bg-navy !border-navy !text-white hover:!bg-[#13295e]"><ChartColumn size={15} />Ver resultados</a>
       </div>
       <Kpis m={m} now={now} flat />
-      {zone && races.length > 0 ? (
+      {zone && races.length > 0 && (
         <div>
           <div className="flex items-center justify-between gap-2 mb-2">
             <span className="eyebrow flex items-center gap-1.5"><MapPin size={12} />Tu zona</span>
             <button type="button" className="text-[12.5px] text-dim hover:underline" onClick={() => setZone(null)}>Cambiar</button>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2.5">{races.map((r) => <RaceMini key={r.tipo} race={r} />)}</div>
-        </div>
-      ) : (
-        <div className="rounded-xl bg-accent-soft p-3.5">
-          <div className="text-[13.5px] font-semibold text-[#2b3a5c] mb-2 flex items-center gap-1.5"><MapPin size={14} />¿Quién va primero donde tú votas?</div>
-          <ZonePicker places={places} zone={null} onPick={setZone} compact />
         </div>
       )}
     </section>
@@ -451,7 +447,7 @@ export default function Live() {
   if (wide) return (
     <div className="h-[calc(100dvh-var(--hdr))] grid grid-cols-[minmax(0,1fr)_400px] gap-5 px-6 py-5 box-border">
       <section className="flex flex-col gap-3.5 min-w-0 min-h-0 overflow-y-auto pr-1">
-        {m.live && <CutCard m={m} now={now} />}
+        {m.live && <><CutCard m={m} now={now} /><NightResults /></>}
         <Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={false} />
         <StreamMeta m={m} />
         {!m.live && <Kpis m={m} now={now} />}
@@ -477,7 +473,7 @@ export default function Live() {
           {curTab === 'chat' && <AgentChat m={m} sel={sel} onPick={pick} className="h-full" />}
           {curTab === 'ahora' && (
             <div className="h-full overflow-y-auto flex flex-col gap-2.5">
-              {m.live ? <CutCard m={m} now={now} /> : <><LowerThird m={m} /><Kpis m={m} now={now} /></>}
+              {m.live ? <><CutCard m={m} now={now} /><NightResults /></> : <><LowerThird m={m} /><Kpis m={m} now={now} /></>}
               {m.boletin && <BulletinPin b={m.boletin} className="flex-none" />}
               {!m.live && <div className="flex gap-2"><a href="#resultados" className="btn-pill flex-1 !bg-navy !border-navy !text-white"><ChartColumn size={15} />Ver resultados</a><a href="#acerca/datos" className="btn-pill flex-1"><Database size={15} />Datos</a></div>}
             </div>
