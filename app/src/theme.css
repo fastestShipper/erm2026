@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./fonts.css";
 
 /* ───────────── Tokens: tema claro, un acento azul, rojo solo para alertas y EN VIVO ───────────── */
 @theme {
@@ -147,6 +148,10 @@
   .nametag span { font-size: 10.5px; color: var(--color-dim); font-weight: 500; }
   .nametag.is-late { border-color: color-mix(in srgb, var(--color-alert) 60%, transparent); }
   .holo-sign { font: 600 10px/1 var(--font-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--color-accent); padding: 4px 7px; border: 1px dashed color-mix(in srgb, var(--color-accent) 45%, transparent); border-radius: 5px; background: rgba(255, 255, 255, .85); white-space: nowrap; }
+
+  /* Capa de etiquetas sobre la escena 3D: no intercepta el arrastre; solo sus botones reciben clics */
+  .office-overlay { position: absolute; inset: 0; overflow: hidden; pointer-events: none; }
+  .office-overlay .nametag { pointer-events: auto; }
 
   .app-shell { min-height: 100%; display: flex; flex-direction: column; overflow-x: clip; }
 }

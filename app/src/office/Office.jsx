@@ -43,7 +43,7 @@ const OFF_COLOR = '#aab3c2';        // robot «apagado» (aún no entra a su tur
 
 function Robot({ color, estado, gesture, seed }) {
   const group = useRef();
-  const { scene, animations } = useGLTF(ROBOT_URL);
+  const { scene, animations } = useGLTF(ROBOT_URL, false, false);   // sin Draco ni Meshopt: nada de decodificadores externos ni WASM
   const awake = estado === 'activo' || estado === 'cumpliendo' || estado === 'atrasado';
 
   // copia independiente (con su propio esqueleto) y materiales propios para pintarla
@@ -135,13 +135,13 @@ function Robot({ color, estado, gesture, seed }) {
     </group>
   );
 }
-useGLTF.preload(ROBOT_URL);
+useGLTF.preload(ROBOT_URL, false, false);
 
 /* ───────────────────────── puesto de trabajo (escritorio alto) ───────────────────────── */
 
 const DESK_Y = 0.98;
 
-function Workstation({ agent, index, total, screenTex, selected, onSelect, compact, latestMsg, focusMode }) {
+function Workstation({ agent, index, total, screenTex, selected, onSelect, compact, latestMsg, focusMode, portal }) {
   const pose = useMemo(() => deskPose(index, total), [index, total]);
   const look = lookOf(agent.agente, index);
   const ring = useRef();
@@ -228,7 +228,7 @@ function Workstation({ agent, index, total, screenTex, selected, onSelect, compa
       </group>
 
       {/* etiqueta con nombre y puesto */}
-      <Html position={[0, compact ? 2.95 : 2.8, -0.52]} center distanceFactor={focusMode ? 5.5 : compact ? 12 : 10} zIndexRange={[30, 0]}>
+      <Html portal={portal} position={[0, compact ? 2.95 : 2.8, -0.52]} center distanceFactor={focusMode ? 5.5 : compact ? 12 : 10} zIndexRange={[30, 0]}>
         <button className={`nametag ${selected ? 'is-selected' : ''} ${late ? 'is-late' : ''}`} onClick={(e) => { e.stopPropagation(); onSelect?.(agent.agente); }}>
           <b><i className="dot" style={{ background: late ? ALERT : on ? '#059669' : '#a3afc0' }} />{agent.agente}</b>
           <span>{agent.puesto}</span>
@@ -236,12 +236,12 @@ function Workstation({ agent, index, total, screenTex, selected, onSelect, compa
       </Html>
       {/* globo con lo que acaba de publicar */}
       {bubble && (
-        <Html position={[0.55, 2.25, -0.52]} distanceFactor={focusMode ? 5.5 : compact ? 12 : 10} zIndexRange={[40, 0]} style={{ transform: 'translateY(-50%)' }}>
+        <Html portal={portal} position={[0.55, 2.25, -0.52]} distanceFactor={focusMode ? 5.5 : compact ? 12 : 10} zIndexRange={[40, 0]} style={{ transform: 'translateY(-50%)' }}>
           <div className="speech">{bubble}</div>
         </Html>
       )}
       {!awake && (
-        <Html position={[0, DESK_Y + 0.25, 0.1]} center distanceFactor={focusMode ? 5 : 7.5} zIndexRange={[20, 0]}>
+        <Html portal={portal} position={[0, DESK_Y + 0.25, 0.1]} center distanceFactor={focusMode ? 5 : 7.5} zIndexRange={[20, 0]}>
           <div className="holo-sign">{agent.estado === 'programado' ? `Entra ${agent.inicio}` : 'Fuera de turno'}</div>
         </Html>
       )}
@@ -396,9 +396,9 @@ function drawWall(g, w, h, info) {
   for (let y = 0; y < h; y += 48) { g.beginPath(); g.moveTo(0, y); g.lineTo(w, y); g.stroke(); }
   g.fillStyle = 'rgba(34,211,238,0.9)'; g.font = '600 30px "Geist Mono", monospace';
   g.fillText('AUDITORA INDEPENDIENTE DE PROCESOS ELECTORALES · ERM 2026', 56, 70);
-  g.fillStyle = info.statusColor; g.font = '800 92px Geist, sans-serif';
+  g.fillStyle = info.statusColor; g.font = '800 92px Archivo, sans-serif';
   g.fillText(info.status, 56, 200);
-  g.fillStyle = '#aab6c6'; g.font = '500 34px Geist, sans-serif';
+  g.fillStyle = '#aab6c6'; g.font = '500 34px Archivo, sans-serif';
   g.fillText(info.sub, 58, 258);
   // KPIs
   info.kpis.forEach(([label, value], i) => {
@@ -537,7 +537,7 @@ function CameraRig({ focus, autoRotate }) {
 
 /* ───────────────────────── escena completa ───────────────────────── */
 
-function Scene({ agents, feed, latest, election, status, actas, geo, selected, onSelect, autoRotate, lowPower, anomalyDeps, compact }) {
+function Scene({ agents, feed, latest, election, status, actas, geo, selected, onSelect, autoRotate, lowPower, anomalyDeps, compact, portal }) {
   const screenTex = useMemo(() => makeScreenTexture(), []);
   const seatedList = useMemo(() => seatAgents(agents), [agents]);
   const poses = useMemo(() => Object.fromEntries(seatedList.map((a, i) => [a.agente, deskPose(i, seatedList.length)])), [seatedList]);
@@ -584,7 +584,7 @@ function Scene({ agents, feed, latest, election, status, actas, geo, selected, o
       <VideoWall info={wallInfo} />
 
       {seatedList.map((a, i) => (
-        <Workstation key={a.agente} agent={a} index={i} total={seatedList.length} screenTex={screenTex} selected={selected === a.agente} onSelect={onSelect} compact={compact} latestMsg={latestBy[a.agente]} focusMode={!!selected} />
+        <Workstation key={a.agente} agent={a} index={i} total={seatedList.length} screenTex={screenTex} selected={selected === a.agente} onSelect={onSelect} compact={compact} latestMsg={latestBy[a.agente]} focusMode={!!selected} portal={portal} />
       ))}
       <Packets feed={feedColored} poses={poses} />
       <CameraRig focus={focus} autoRotate={autoRotate} />
@@ -598,7 +598,11 @@ export default function Office(props) {
   const [geo, setGeo] = useState(null);
   const lowPower = useMemo(() => typeof window !== 'undefined' && (matchMedia('(max-width: 760px)').matches || (navigator.hardwareConcurrency || 8) <= 4), []);
   useEffect(() => { fetch('geo/peru.json').then((r) => r.json()).then(setGeo).catch(() => {}); }, []);
+  // Las etiquetas HTML (nombres, carteles, globos) van en una capa propia y estable sobre el canvas.
+  // Sin esto, drei cambia de contenedor al conectar los eventos y la primera etiqueta queda vacía.
+  const overlay = useRef(null);
   return (
+    <>
     <Canvas
       shadows={!lowPower}
       dpr={lowPower ? [1, 1.25] : [1, 1.75]}
@@ -608,8 +612,10 @@ export default function Office(props) {
       style={{ position: 'absolute', inset: 0 }}
     >
       <Suspense fallback={null}>
-        <Scene {...props} geo={geo} lowPower={lowPower} />
+        <Scene {...props} geo={geo} lowPower={lowPower} portal={overlay} />
       </Suspense>
     </Canvas>
+    <div ref={overlay} className="office-overlay" />
+    </>
   );
 }
