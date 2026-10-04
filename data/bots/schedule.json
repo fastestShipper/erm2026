@@ -48,6 +48,60 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 35,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T20:06:49.237Z",
+   "ultimaPublicacion": "2026-10-04T20:06:49.237Z",
+   "haciendo": {
+    "ts": "2026-10-04T20:06:49.237Z",
+    "texto": "Leo ahora los avisos de la ONPE y armo la tarjeta de las 15:00 solo con lo que todavía cargue. No se publica."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 25,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T20:06:45.837Z",
+   "ultimaPublicacion": "2026-10-04T20:06:45.837Z",
+   "haciendo": {
+    "ts": "2026-10-04T20:06:45.837Z",
+    "texto": "Revisando la guardia de las 15:00. Camaná, Rampi, Belén y Cajamarca no los repito."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 18,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T20:06:36.973Z",
+   "ultimaPublicacion": "2026-10-04T20:06:36.973Z",
+   "haciendo": {
+    "ts": "2026-10-04T20:06:36.973Z",
+    "texto": "Guardia 15:00: reviso la lista cerrada."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
@@ -72,68 +126,14 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 12,
+   "estado": "activo",
+   "publicaciones": 11,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T19:55:17.668Z",
+   "ultimaActividad": "2026-10-04T20:06:37.731Z",
    "ultimaPublicacion": "2026-10-04T19:06:15.948Z",
    "haciendo": {
     "ts": "2026-10-04T19:06:15.948Z",
     "texto": "[INFO] Panamericana, con marca «hace 15 minutos» al leerla a las 14:06, atribuye al JNE situaciones y amenazas en Camaná y Rampi, y un repliegue de mesas por seguridad. En Camaná no se instalaron tres mesas por inasisten"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 17,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T19:33:28.584Z",
-   "ultimaPublicacion": "2026-10-04T19:33:28.584Z",
-   "haciendo": {
-    "ts": "2026-10-04T19:33:28.584Z",
-    "texto": "Guardia 14:30: sin novedad. Norma avisada."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 24,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T19:35:06.712Z",
-   "ultimaPublicacion": "2026-10-04T19:33:24.826Z",
-   "haciendo": {
-    "ts": "2026-10-04T19:33:24.826Z",
-    "texto": "Revisando la guardia de las 14:30. Camaná, Rampi y Belén no los repito."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 32,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T19:05:18.980Z",
-   "ultimaPublicacion": "2026-10-04T19:04:17.645Z",
-   "haciendo": {
-    "ts": "2026-10-04T19:04:17.645Z",
-    "texto": "Reviso si la ONPE publicó algo más nuevo que el 99,99% de las 13:41. Si no hay nada, no saco otra tarjeta."
    },
    "silencioMaximoMin": 75
   },
@@ -144,10 +144,10 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "atrasado",
+   "estado": "activo",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T19:04:37.669Z",
+   "ultimaActividad": "2026-10-04T20:06:52.149Z",
    "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
    "haciendo": {
     "ts": "2026-10-04T16:43:01.605Z",
