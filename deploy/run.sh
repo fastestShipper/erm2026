@@ -13,6 +13,9 @@ fi
 trap 'rmdir "$LOCK"' EXIT
 exec >>"$LOG" 2>&1
 echo "---- $(date -Is)"
+# Ruta a lima: IP pública o, si falla, Tailscale (cualquiera de las dos puede estar bloqueada)
+LIMA_OPT=""
+if ! timeout 15 ssh -o ConnectTimeout=8 -o BatchMode=yes lima true 2>/dev/null; then LIMA_OPT="-o HostName=100.96.13.90"; fi
 PY="${ERM_PY:-/c/Users/shitc/AppData/Local/hermes/tools/python-3.14.7+20260901-win32-x64/python.exe}"
 export ERM_ROOT="$(cygpath -w "$ROOT")" ERM_INBOX="$(cygpath -w "$ROOT/local/inbox")"
 ERM_OUT="$(cygpath -w "$ROOT/data/bots")" ERM_REMOTE=none ERM_ALERT=1 timeout 120 node "$ROOT/bots/export_grok.mjs" || echo "bots: fallo $?"
@@ -21,14 +24,14 @@ timeout 900 "$PY" "$ROOT/collector/collect.py" || echo "colector: fallo $?"
 # Fragmentos de «Busca tu mesa» (muchos y pesados): solo se suben los que cambiaron, a una carpeta aparte
 if [ -s "$ROOT/local/mesas-changed.txt" ]; then
   mv "$ROOT/local/mesas-changed.txt" "$ROOT/local/mesas-sending.txt"
-  sort -u "$ROOT/local/mesas-sending.txt" | tar -C "$ROOT/local/mesas" -czf - -T - | timeout 300 ssh -o ConnectTimeout=15 -o BatchMode=yes -o HostName=100.96.13.90 lima 'mkdir -p /srv/erm2026-mesas && tar -xzf - -C /srv/erm2026-mesas'     && rm -f "$ROOT/local/mesas-sending.txt" || { cat "$ROOT/local/mesas-sending.txt" >> "$ROOT/local/mesas-changed.txt"; rm -f "$ROOT/local/mesas-sending.txt"; echo "sync mesas: fallo"; }
+  sort -u "$ROOT/local/mesas-sending.txt" | tar -C "$ROOT/local/mesas" -czf - -T - | timeout 300 ssh -o ConnectTimeout=15 -o BatchMode=yes $LIMA_OPT lima 'mkdir -p /srv/erm2026-mesas && tar -xzf - -C /srv/erm2026-mesas'     && rm -f "$ROOT/local/mesas-sending.txt" || { cat "$ROOT/local/mesas-sending.txt" >> "$ROOT/local/mesas-changed.txt"; rm -f "$ROOT/local/mesas-sending.txt"; echo "sync mesas: fallo"; }
 fi
-tar -C "$ROOT" -czf - web data | timeout 120 ssh -o ConnectTimeout=15 -o BatchMode=yes -o HostName=100.96.13.90 lima \
+tar -C "$ROOT" -czf - web data | timeout 120 ssh -o ConnectTimeout=15 -o BatchMode=yes $LIMA_OPT lima \
   'mkdir -p /srv/erm2026.new && tar -xzf - -C /srv/erm2026.new && rm -rf /srv/erm2026.old && { [ -d /srv/erm2026 ] && mv /srv/erm2026 /srv/erm2026.old; mv /srv/erm2026.new /srv/erm2026; }' \
   || echo "sync: fallo $?"
 
 # Aviso por Telegram cuando llegan evidencias nuevas
-N=$(timeout 30 ssh -o BatchMode=yes -o HostName=100.96.13.90 lima 'find /var/lib/erm2026-intake -name meta.json 2>/dev/null | wc -l' 2>/dev/null | tail -1)
+N=$(timeout 30 ssh -o BatchMode=yes $LIMA_OPT lima 'find /var/lib/erm2026-intake -name meta.json 2>/dev/null | wc -l' 2>/dev/null | tail -1)
 P=$(cat "$ROOT/local/intake-count" 2>/dev/null || echo 0)
 if [ -n "$N" ] && [ "$N" -gt "$P" ] 2>/dev/null; then
   hermes send -t telegram "ERM 2026: $((N-P)) evidencia(s) nueva(s) en la bandeja (total $N)." >/dev/null 2>&1 || true
