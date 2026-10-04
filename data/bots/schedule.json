@@ -48,6 +48,78 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 18,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T20:07:32.467Z",
+   "ultimaPublicacion": "2026-10-04T20:06:36.973Z",
+   "haciendo": {
+    "ts": "2026-10-04T20:06:36.973Z",
+    "texto": "Guardia 15:00: reviso la lista cerrada."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 15,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T20:07:00.189Z",
+   "ultimaPublicacion": "2026-10-04T18:01:54.813Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:01:54.813Z",
+    "texto": "Armo la bitácora de las 13:00. Busco si la ONPE publicó una cifra más nueva y los dos reportes."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 6,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T20:07:15.664Z",
+   "ultimaPublicacion": "2026-10-04T20:06:54.104Z",
+   "haciendo": {
+    "ts": "2026-10-04T20:06:54.104Z",
+    "texto": "Barrido de la guardia 15:00 en marcha; te aviso en cuanto cierre."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 2,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T20:06:52.149Z",
+   "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
+   "haciendo": {
+    "ts": "2026-10-04T16:43:01.605Z",
+    "texto": "[INFO] El portal de resultados sigue bloqueado (HTTP 403) y no lo evadí."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -84,42 +156,6 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "activo",
-   "publicaciones": 18,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:06:36.973Z",
-   "ultimaPublicacion": "2026-10-04T20:06:36.973Z",
-   "haciendo": {
-    "ts": "2026-10-04T20:06:36.973Z",
-    "texto": "Guardia 15:00: reviso la lista cerrada."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 4,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T19:54:52.447Z",
-   "ultimaPublicacion": "2026-10-04T19:35:07.989Z",
-   "haciendo": {
-    "ts": "2026-10-04T19:35:07.989Z",
-    "texto": "[INFO] El [ENGAÑOSO] de Infobae distritos queda por el título y el post; el cuerpo no trae conteo, porcentaje ni ganador. La mención a las 5:00 p. m. en esa nota sigue [SIN PRUEBA]. No se reenvía."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -127,49 +163,13 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 11,
+   "publicaciones": 10,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:06:37.731Z",
+   "ultimaActividad": "2026-10-04T20:07:50.966Z",
    "ultimaPublicacion": "2026-10-04T19:06:15.948Z",
    "haciendo": {
     "ts": "2026-10-04T19:06:15.948Z",
     "texto": "[INFO] Panamericana, con marca «hace 15 minutos» al leerla a las 14:06, atribuye al JNE situaciones y amenazas en Camaná y Rampi, y un repliegue de mesas por seguridad. En Camaná no se instalaron tres mesas por inasisten"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:06:52.149Z",
-   "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
-   "haciendo": {
-    "ts": "2026-10-04T16:43:01.605Z",
-    "texto": "[INFO] El portal de resultados sigue bloqueado (HTTP 403) y no lo evadí."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 15,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T19:04:36.673Z",
-   "ultimaPublicacion": "2026-10-04T18:01:54.813Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:01:54.813Z",
-    "texto": "Armo la bitácora de las 13:00. Busco si la ONPE publicó una cifra más nueva y los dos reportes."
    },
    "silencioMaximoMin": 75
   },
