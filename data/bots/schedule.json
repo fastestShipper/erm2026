@@ -48,22 +48,22 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 8,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 10,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:06:09.359Z",
-   "ultimaPublicacion": "2026-10-04T20:44:35.659Z",
+   "ultimaActividad": "2026-10-04T21:32:37.796Z",
+   "ultimaPublicacion": "2026-10-04T21:32:37.796Z",
    "haciendo": {
-    "ts": "2026-10-04T20:44:35.659Z",
-    "texto": "peruvian.dev no abre por HTTPS desde las 15:42. Acabo de probarlo y sigue igual: el servidor responde, pero la conexión segura se corta. Cae el tablero y el archivo de boletines. Google y la ONPE sí cargan, así que no es"
+    "ts": "2026-10-04T21:32:37.796Z",
+    "texto": "Desde mi lado, `peruvian.dev` sigue fallando por TLS (curl HTTP 000); no lo rodeé. La lectura por otro camino vio `boletines.json` con `items` vacío. Norma ya tiene el aviso de la guardia 16:30."
    },
-   "silencioMaximoMin": 75
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Jorge",
@@ -72,16 +72,52 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 29,
+   "estado": "activo",
+   "publicaciones": 30,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:06:09.333Z",
-   "ultimaPublicacion": "2026-10-04T21:05:50.247Z",
+   "ultimaActividad": "2026-10-04T21:32:09.945Z",
+   "ultimaPublicacion": "2026-10-04T21:32:09.945Z",
    "haciendo": {
-    "ts": "2026-10-04T21:05:50.247Z",
-    "texto": "Ese [INFO] ya está publicado y Norma tiene el enlace. La ONPE sigue sin cifras. El reporte de Reniec de unos 38 mil casos, en esa misma nota, no lo publiqué: no es un conteo de votos."
+    "ts": "2026-10-04T21:32:09.945Z",
+    "texto": "Revisando la de las 16:30. Cajay y los 38 mil casos no los repito."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 28,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T21:32:08.176Z",
+   "ultimaPublicacion": "2026-10-04T21:32:08.176Z",
+   "haciendo": {
+    "ts": "2026-10-04T21:32:08.176Z",
+    "texto": "Sigue el **402** en X; no leí posts. A Norma: sin novedad a las 16:30. `boletines.json` vacío."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 8,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T21:32:49.642Z",
+   "ultimaPublicacion": "2026-10-04T20:44:35.659Z",
+   "haciendo": {
+    "ts": "2026-10-04T20:44:35.659Z",
+    "texto": "peruvian.dev no abre por HTTPS desde las 15:42. Acabo de probarlo y sigue igual: el servidor responde, pero la conexión segura se corta. Cae el tablero y el archivo de boletines. Google y la ONPE sí cargan, así que no es"
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Beto",
@@ -118,42 +154,6 @@
     "texto": "Es una diferencia entre dos avisos de la ONPE, no una sola cifra. No son votos."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 26,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:01:45.711Z",
-   "ultimaPublicacion": "2026-10-04T21:01:45.711Z",
-   "haciendo": {
-    "ts": "2026-10-04T21:01:45.711Z",
-    "texto": "Bloqueo en X: **créditos agotados** (402). Se lo avisé a Norma; no evado. Última ventana limpia ~15:48, sin avisos ONPE ni incidentes nuevos."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 9,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:02:02.891Z",
-   "ultimaPublicacion": "2026-10-04T20:49:56.105Z",
-   "haciendo": {
-    "ts": "2026-10-04T20:49:56.105Z",
-    "texto": "La API de X se quedó sin créditos (saldo 0). Hasta que los recarguen, las guardias de las 16:00, 16:45, 17:00 y 17:45 no van a poder barrer X; solo búsqueda web. Justo desde las 17:00 es cuando más piezas suelen salir."
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Luchito",
