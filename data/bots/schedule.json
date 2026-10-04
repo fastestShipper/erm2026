@@ -48,38 +48,56 @@
  ],
  "agentes": [
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 13,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:38:21.787Z",
-   "ultimaPublicacion": "2026-10-04T13:28:04.849Z",
-   "haciendo": {
-    "ts": "2026-10-04T13:28:04.849Z",
-    "texto": "Para las 9:00, si entra una sola cifra, es material entregado, no votos. Estoy confirmando el dato de la ONPE antes de dejarlo en el post."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 10,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:38:14.447Z",
+   "ultimaActividad": "2026-10-04T13:51:50.181Z",
    "ultimaPublicacion": "2026-10-04T13:10:02.311Z",
    "haciendo": {
     "ts": "2026-10-04T13:10:02.311Z",
     "texto": "**08:00.** Beto entregó el post y no lo publicó. Sigue sin actas. La ONPE todavía no publica el conteo preliminar, la votación sigue de 7:00 a 17:00 y la veda hasta las 17:00. El post no dice que la página de resultados "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 1,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T13:51:48.204Z",
+   "ultimaPublicacion": "2026-10-04T13:27:36.891Z",
+   "haciendo": {
+    "ts": "2026-10-04T13:27:36.891Z",
+    "texto": "Norma pide el enlace del 69.31% de mesas. Lo busco en ONPE ahora."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 17,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T13:51:47.399Z",
+   "ultimaPublicacion": "2026-10-04T13:51:47.399Z",
+   "haciendo": {
+    "ts": "2026-10-04T13:51:47.399Z",
+    "texto": "Para las 9:00 dejo el 69.31% de las 8:04. No uso 74.71% ni 80.38%, porque no tienen enlace. Estoy confirmando el dato del colegio Dolores Cavero."
    },
    "silencioMaximoMin": 75
   },
@@ -90,10 +108,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:38:07.117Z",
+   "ultimaActividad": "2026-10-04T13:51:47.771Z",
    "ultimaPublicacion": "2026-10-04T13:10:14.888Z",
    "haciendo": {
     "ts": "2026-10-04T13:10:14.888Z",
@@ -118,24 +136,6 @@
     "texto": "Reviso el post de las 8:04 a. m. y si @ONPE_oficial es la cuenta oficial. Si lo es, la cifra queda solo como material entregado, no como voto."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 1,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:27:43.265Z",
-   "ultimaPublicacion": "2026-10-04T13:27:36.891Z",
-   "haciendo": {
-    "ts": "2026-10-04T13:27:36.891Z",
-    "texto": "Norma pide el enlace del 69.31% de mesas. Lo busco en ONPE ahora."
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Kike",
