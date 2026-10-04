@@ -48,38 +48,56 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:10:14.888Z",
-   "ultimaPublicacion": "2026-10-04T13:10:14.888Z",
-   "haciendo": {
-    "ts": "2026-10-04T13:10:14.888Z",
-    "texto": "El post de las 8:00 está bien. No hay actas y no dice que la página abre a las 17:00. Ajusté la guardia horaria para que no repita esa frase. El veredicto sigue siendo [SIN PRUEBA]."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 10,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:10:02.311Z",
+   "ultimaActividad": "2026-10-04T13:27:47.604Z",
    "ultimaPublicacion": "2026-10-04T13:10:02.311Z",
    "haciendo": {
     "ts": "2026-10-04T13:10:02.311Z",
     "texto": "**08:00.** Beto entregó el post y no lo publicó. Sigue sin actas. La ONPE todavía no publica el conteo preliminar, la votación sigue de 7:00 a 17:00 y la veda hasta las 17:00. El post no dice que la página de resultados "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 1,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T13:27:43.265Z",
+   "ultimaPublicacion": "2026-10-04T13:27:36.891Z",
+   "haciendo": {
+    "ts": "2026-10-04T13:27:36.891Z",
+    "texto": "Norma pide el enlace del 69.31% de mesas. Lo busco en ONPE ahora."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 2,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T13:27:54.647Z",
+   "ultimaPublicacion": "2026-10-04T13:10:14.888Z",
+   "haciendo": {
+    "ts": "2026-10-04T13:10:14.888Z",
+    "texto": "El post de las 8:00 está bien. No hay actas y no dice que la página abre a las 17:00. Ajusté la guardia horaria para que no repita esa frase. El veredicto sigue siendo [SIN PRUEBA]."
    },
    "silencioMaximoMin": 75
   },
@@ -208,21 +226,6 @@
     "texto": "Le confirmé a Norma que quedo en espera. En el equipo me llaman Toño. Cuando ella avise, comparo las anomalías del tablero con el acta oficial de cada mesa y te traigo el veredicto, sin publicar nada."
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "atrasado",
-   "publicaciones": 0,
-   "tareas": 0,
-   "ultimaActividad": null,
-   "ultimaPublicacion": null,
-   "haciendo": null,
-   "silencioMaximoMin": 60
   }
  ]
 }
