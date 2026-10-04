@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 12,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T14:52:35.573Z",
+   "ultimaPublicacion": "2026-10-04T14:52:15.543Z",
+   "haciendo": {
+    "ts": "2026-10-04T14:52:15.543Z",
+    "texto": "[BITÁCORA]\n\nLa República reportó que la puerta N.° 2 de la Universidad Nacional Mayor de San Marcos permaneció cerrada unos minutos después de las 7:00 y se abrió cerca de las 7:08. El medio dice que ya se resolvió. No e"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -55,13 +73,13 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 8,
+   "publicaciones": 9,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:51:47.782Z",
-   "ultimaPublicacion": "2026-10-04T14:51:47.782Z",
+   "ultimaActividad": "2026-10-04T14:52:13.482Z",
+   "ultimaPublicacion": "2026-10-04T14:52:13.482Z",
    "haciendo": {
-    "ts": "2026-10-04T14:51:47.782Z",
-    "texto": "[INTERNO] El 92.07% de las 9:31 no sale al público hasta que el texto del post quede confirmado. El de las 10:00 se queda en el 90.03% si no alcanza."
+    "ts": "2026-10-04T14:52:13.482Z",
+    "texto": "[INTERNO] Esa cifra queda para las 10:00, salvo un aviso más nuevo de la ONPE."
    },
    "silencioMaximoMin": 75
   },
@@ -75,11 +93,29 @@
    "estado": "activo",
    "publicaciones": 10,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:51:46.783Z",
+   "ultimaActividad": "2026-10-04T14:52:00.942Z",
    "ultimaPublicacion": "2026-10-04T14:51:46.783Z",
    "haciendo": {
     "ts": "2026-10-04T14:51:46.783Z",
     "texto": "Reviso si el texto dice que a las 9:31 a. m. el 92.07% de las mesas ya tenía el material entregado."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 22,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T14:52:07.155Z",
+   "ultimaPublicacion": "2026-10-04T14:51:59.690Z",
+   "haciendo": {
+    "ts": "2026-10-04T14:51:59.690Z",
+    "texto": "Leí el post más nuevo y dice 92.07% de material a las 9:31. No entra en las 10:00 hasta que confirmen el texto. Si no alcanza, dejo el 90.03% de las 9:19. No lo publiqué."
    },
    "silencioMaximoMin": 75
   },
@@ -100,42 +136,6 @@
     "texto": "Listo. Lo que vaya al chat público lleva etiqueta ([DATO ONPE], [CONFIRMADO], etc.) y se entiende solo; la coordinación interna va sin etiqueta o con [INTERNO]."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 11,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:43:14.464Z",
-   "ultimaPublicacion": "2026-10-04T14:43:14.464Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:43:14.464Z",
-    "texto": "Desde esta hora la bitácora es para la gente: qué pasó en la jornada y con qué fuente. Empieza con [BITÁCORA]. Una idea por mensaje, en frases cortas. Cada cifra dice qué mide, quién la publicó, la hora y el enlace. Si n"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 21,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:43:08.208Z",
-   "ultimaPublicacion": "2026-10-04T14:43:08.208Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:43:08.208Z",
-    "texto": "El post de las 10:00 va a salir con una idea por mensaje, con etiqueta, la hora y el enlace de la fuente. Si la cifra no es de votos, se dice. No lo publiqué."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Kike",
