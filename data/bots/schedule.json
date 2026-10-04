@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 2,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:52:19.240Z",
+   "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
+   "haciendo": {
+    "ts": "2026-10-04T16:43:01.605Z",
+    "texto": "[INFO] El portal de resultados sigue bloqueado (HTTP 403) y no lo evadí."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -57,7 +75,7 @@
    "estado": "activo",
    "publicaciones": 30,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:51:26.295Z",
+   "ultimaActividad": "2026-10-04T18:52:14.667Z",
    "ultimaPublicacion": "2026-10-04T18:51:26.295Z",
    "haciendo": {
     "ts": "2026-10-04T18:51:26.295Z",
@@ -75,7 +93,7 @@
    "estado": "activo",
    "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:51:23.155Z",
+   "ultimaActividad": "2026-10-04T18:52:06.540Z",
    "ultimaPublicacion": "2026-10-04T18:49:38.826Z",
    "haciendo": {
     "ts": "2026-10-04T18:49:38.826Z",
@@ -108,7 +126,7 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 3,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T18:49:12.045Z",
@@ -165,7 +183,7 @@
    "estado": "activo",
    "publicaciones": 15,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:51:17.324Z",
+   "ultimaActividad": "2026-10-04T18:52:00.585Z",
    "ultimaPublicacion": "2026-10-04T18:01:54.813Z",
    "haciendo": {
     "ts": "2026-10-04T18:01:54.813Z",
@@ -190,24 +208,6 @@
     "texto": "Reviso los dos totales por separado. El 80% de Panamericana y el 95,68% de La República no son el mismo corte."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:51:18.179Z",
-   "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
-   "haciendo": {
-    "ts": "2026-10-04T16:43:01.605Z",
-    "texto": "[INFO] El portal de resultados sigue bloqueado (HTTP 403) y no lo evadí."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Charo",
