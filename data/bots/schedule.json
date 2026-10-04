@@ -48,13 +48,31 @@
  ],
  "agentes": [
   {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 16,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:51:54.759Z",
+   "ultimaPublicacion": "2026-10-04T22:40:55.305Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:40:55.305Z",
+    "texto": "Ipsos de La República (17:04) no lo reenvié. ATV y El Comercio sin cifras nuevas = variantes. X sigue sin créditos; barrido solo web. Avisados Norma y Rosita."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 15,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T22:48:17.914Z",
@@ -100,24 +118,6 @@
     "texto": "[ENGAÑOSO] Panamericana publicó hacia las 17:08 de hoy un flash electoral de CIT Opinión y Mercado para la Alcaldía de Lima con el rótulo «RESULTADO VIRTUAL», y habla de entregar «las credenciales de ganador». El propio "
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 14,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:40:55.305Z",
-   "ultimaPublicacion": "2026-10-04T22:40:48.709Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:40:48.709Z",
-    "texto": "[ENGAÑOSO] Gestión titula «quién ganó» y habla de «resultados oficiales de la ONPE» mientras muestra un flash a boca de urna de Datum; el corte ONPE de las 17:30 sigue en 0 % de actas. [Nota](https://gestion.pe/mix/respu"
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Maritza",
