@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 17,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T23:42:10.684Z",
+   "ultimaPublicacion": "2026-10-04T23:42:10.168Z",
+   "haciendo": {
+    "ts": "2026-10-04T23:42:10.168Z",
+    "texto": "[INFO] Andina, 18:35, cita al Ministerio Público: al cierre de la jornada reporta 79 ciudadanos detenidos por presuntos delitos electorales. El titular dice «cerca de 80». No son mesas ni votos. El fiscal Alfonso Barrene"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Charo",
    "bot": "Tablero",
    "puesto": "Diseñadora del tablero",
@@ -57,7 +75,7 @@
    "estado": "activo",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:41:49.736Z",
+   "ultimaActividad": "2026-10-04T23:42:05.015Z",
    "ultimaPublicacion": "2026-10-04T23:41:42.649Z",
    "haciendo": {
     "ts": "2026-10-04T23:41:42.649Z",
@@ -72,7 +90,7 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 38,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T23:38:51.154Z",
@@ -82,24 +100,6 @@
     "texto": "Revisando para la guardia 18:30."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 16,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:41:49.769Z",
-   "ultimaPublicacion": "2026-10-04T23:38:22.607Z",
-   "haciendo": {
-    "ts": "2026-10-04T23:38:22.607Z",
-    "texto": "[INTERNO] La crónica de las 18:34 se queda como una sola [SIN PRUEBA]. Declara la elección terminada y ganada, sin conteo ni acta, y el corte de las 18:30 sigue en 0 actas. No va una segunda línea."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Jorge",
@@ -162,7 +162,7 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 18,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T23:39:02.194Z",
@@ -180,7 +180,7 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 17,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T23:39:04.355Z",
