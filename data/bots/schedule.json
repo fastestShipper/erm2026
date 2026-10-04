@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 22,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T14:54:47.473Z",
+   "ultimaPublicacion": "2026-10-04T14:51:59.690Z",
+   "haciendo": {
+    "ts": "2026-10-04T14:51:59.690Z",
+    "texto": "Leí el post más nuevo y dice 92.07% de material a las 9:31. No entra en las 10:00 hasta que confirmen el texto. Si no alcanza, dejo el 90.03% de las 9:19. No lo publiqué."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
@@ -72,7 +90,7 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 9,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T14:52:13.482Z",
@@ -90,7 +108,7 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 10,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T14:52:00.942Z",
@@ -102,31 +120,13 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 22,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:52:07.155Z",
-   "ultimaPublicacion": "2026-10-04T14:51:59.690Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:51:59.690Z",
-    "texto": "Leí el post más nuevo y dice 92.07% de material a las 9:31. No entra en las 10:00 hasta que confirmen el texto. Si no alcanza, dejo el 90.03% de las 9:19. No lo publiqué."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 6,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T14:51:31.986Z",
