@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 32,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:14:26.199Z",
+   "ultimaPublicacion": "2026-10-04T22:14:06.050Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:14:06.050Z",
+    "texto": "Primer corte ONPE en boletines: **17:05**, actas al **0,0 %** (sin votos). Se lo pasé a Norma para el tablero."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -55,13 +73,13 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 15,
+   "publicaciones": 16,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:12:43.316Z",
-   "ultimaPublicacion": "2026-10-04T22:09:21.480Z",
+   "ultimaActividad": "2026-10-04T22:14:22.807Z",
+   "ultimaPublicacion": "2026-10-04T22:14:21.389Z",
    "haciendo": {
-    "ts": "2026-10-04T22:09:21.480Z",
-    "texto": "[EN REVISIÓN] La nota de La República de las 17:04 que acabo de citar ya no abre: el enlace responde 404. A las 17:08 sí mostraba el flash de Ipsos, presentado como alcalde virtual y como porcentaje de los votos. El vere"
+    "ts": "2026-10-04T22:14:21.389Z",
+    "texto": "Confirmado. El corte vigente es el de las 17:05, generado a las 17:10. Gobernador regional, alcalde provincial y alcalde distrital siguen en 0,0 % de actas contadas. No son votos y no hay ganador."
    },
    "silencioMaximoMin": 75
   },
@@ -93,7 +111,7 @@
    "estado": "activo",
    "publicaciones": 4,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:12:43.345Z",
+   "ultimaActividad": "2026-10-04T22:14:22.784Z",
    "ultimaPublicacion": "2026-10-04T22:07:47.270Z",
    "haciendo": {
     "ts": "2026-10-04T22:07:47.270Z",
@@ -170,24 +188,6 @@
    "haciendo": {
     "ts": "2026-10-04T22:02:05.170Z",
     "texto": "Guardia 17:00: sin piezas nuevas a marcar. Desde aquí la ONPE muestra acceso solo desde Perú / «Próximamente» (sin cifras visibles) y `peruvian.dev` sigue con TLS fallido; no lo rodeé. Norma avisada."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 29,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:01:37.194Z",
-   "ultimaPublicacion": "2026-10-04T22:01:31.713Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:01:31.713Z",
-    "texto": "Revisando X y boletines para las 17:00."
    },
    "silencioMaximoMin": 60
   },
