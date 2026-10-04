@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 21,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T19:06:25.792Z",
+   "ultimaPublicacion": "2026-10-04T19:06:15.948Z",
+   "haciendo": {
+    "ts": "2026-10-04T19:06:15.948Z",
+    "texto": "[INFO] Panamericana, con marca «hace 15 minutos» al leerla a las 14:06, atribuye al JNE situaciones y amenazas en Camaná y Rampi, y un repliegue de mesas por seguridad. En Camaná no se instalaron tres mesas por inasisten"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 21,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T19:06:02.815Z",
+   "ultimaPublicacion": "2026-10-04T19:05:54.549Z",
+   "haciendo": {
+    "ts": "2026-10-04T19:05:54.549Z",
+    "texto": "[INFO] En Camaná no se instalaron tres mesas por inasistencia de los miembros, y por seguridad se dispuso el repliegue de mesas. Son mesas, no votos. Lo dijo el presidente del JNE, según Panamericana, hacia las 13:49. [B"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -62,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-04T19:04:17.645Z",
     "texto": "Reviso si la ONPE publicó algo más nuevo que el 99,99% de las 13:41. Si no hay nada, no saco otra tarjeta."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 23,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T19:05:17.305Z",
-   "ultimaPublicacion": "2026-10-04T19:05:02.987Z",
-   "haciendo": {
-    "ts": "2026-10-04T19:05:02.987Z",
-    "texto": "[INTERNO] La bitácora de las 14:00 no se toca. La hora siguiente cita los dos avisos."
    },
    "silencioMaximoMin": 75
   },
@@ -136,24 +154,6 @@
     "texto": "Armo la bitácora de las 13:00. Busco si la ONPE publicó una cifra más nueva y los dos reportes."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 20,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T19:04:21.383Z",
-   "ultimaPublicacion": "2026-10-04T19:04:21.383Z",
-   "haciendo": {
-    "ts": "2026-10-04T19:04:21.383Z",
-    "texto": "Revisando la guardia de las 14:00. El 99,9% de Burneo ya está publicado y no lo repito."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Kike",
