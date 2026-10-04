@@ -1,7 +1,9 @@
 // Público en vivo (ERM 2026): cuántas personas miran y sus reacciones a los mensajes de los agentes.
 // Node ≥ 20, sin dependencias.
 //
-//   POST /ping?s=VID                      →  { viendo, r: { <idMensaje>: [meGusta, meEncanta, importante] } }
+//   POST /ping?s=VID[&z=<nivel>-<ubigeo>]  →  { viendo, r: { <idMensaje>: [meGusta, meEncanta, importante] } }
+//        z es el lugar que la persona está mirando en «Mi zona»: solo se usa para contar cuántos miran cada
+//        lugar (zonas.json), y así el colector refresca primero los más consultados.
 //   POST /react?m=<idMensaje>&r=<tipo>&s=VID&on=1|0  →  { ok, c: [..] }
 //
 // No lee cuerpos. No guarda IPs ni datos personales: el VID es un id aleatorio del navegador y la IP
@@ -15,6 +17,7 @@ const PORT = +(process.env.PORT || 8833);
 const SITE = process.env.SITE_ORIGIN || 'https://peruvian.dev';
 const FEED = process.env.FEED_PATH || '/srv/erm2026/data/bots/feed.json';
 const STATE = process.env.STATE_DIRECTORY ? path.join(process.env.STATE_DIRECTORY.split(':')[0], 'reacciones.json') : null;
+const ZONES = STATE ? path.join(path.dirname(STATE), 'zonas.json') : null;
 const DEV = process.env.ALLOW_ANY_ORIGIN === '1';     // solo para pruebas locales
 
 const TYPES = ['like', 'love', 'star'];               // Me gusta, Me encanta, Importante
@@ -26,8 +29,28 @@ const PER_IP = 150;             // reacciones de un mismo tipo a un mismo mensaj
 /* ───────── visitantes ───────── */
 const viewers = new Map();      // VID → último aviso
 const cleanVid = (v) => { const s = String(v || '').replace(/[^a-z0-9]/gi, '').slice(0, 16); return s.length >= 6 ? s : ''; };
-function touch(vid) { if (vid && (viewers.has(vid) || viewers.size < MAX_VIEWERS)) viewers.set(vid, Date.now()); }
-setInterval(() => { const now = Date.now(); for (const [k, t] of viewers) if (now - t > TTL_MS) viewers.delete(k); }, 15e3).unref();
+const zones = new Map();        // VID → lugar que está mirando (nivel-ubigeo)
+const ZONE_RE = /^[123]-[0-9A-Za-z]{1,8}$/;
+function touch(vid, zone) {
+  if (!vid || !(viewers.has(vid) || viewers.size < MAX_VIEWERS)) return;
+  viewers.set(vid, Date.now());
+  if (zone && ZONE_RE.test(zone)) zones.set(vid, zone); else zones.delete(vid);
+}
+setInterval(() => { const now = Date.now(); for (const [k, t] of viewers) if (now - t > TTL_MS) { viewers.delete(k); zones.delete(k); } }, 15e3).unref();
+// cada 20 s: cuántas personas miran cada lugar (los 400 más consultados). No se guarda quién.
+if (ZONES) {
+  let lastZones = '';
+  setInterval(() => {
+    const n = new Map();
+    for (const z of zones.values()) n.set(z, (n.get(z) || 0) + 1);
+    const top = Object.fromEntries([...n].sort((a, b) => b[1] - a[1]).slice(0, 400));
+    const body = JSON.stringify(top);
+    if (body === lastZones) return;
+    lastZones = body;
+    const tmp = ZONES + '.tmp';
+    fs.writeFile(tmp, JSON.stringify({ actualizado: new Date().toISOString(), zonas: top }), (e) => { if (!e) fs.rename(tmp, ZONES, () => {}); });
+  }, 20e3).unref();
+}
 
 /* ───────── mensajes válidos: solo se puede reaccionar a lo que está publicado ───────── */
 let valid = new Set();
@@ -121,7 +144,7 @@ const server = http.createServer((req, res) => {
   if (req.method !== 'POST') { res.writeHead(405, HEAD); return res.end('{"error":"solo POST"}'); }
   const own = sameSite(req);
   if (p === '/ping') {
-    if (own) touch(cleanVid(u.searchParams.get('s')));
+    if (own) touch(cleanVid(u.searchParams.get('s')), u.searchParams.get('z'));
     res.writeHead(200, HEAD);
     return res.end(`{"viendo":${viewers.size},"r":${buildSnapshot()}}`);
   }

@@ -1,6 +1,6 @@
 // «Mi zona»: el lugar que elige cada visitante (región, provincia o distrito) y los datos de sus contiendas.
 import { useEffect, useMemo, useState, useSyncExternalStore } from 'react';
-import { getJson, useData } from './data.jsx';
+import { getJson, useData, wanted } from './data.jsx';
 import { n, norm, pct, timeLima, title } from './format.js';
 
 const KEY = 'erm-zona';
@@ -82,6 +82,8 @@ export function useZoneRaces(zone, places) {
   const d = useData();
   const place = (zone && places?.byId[zone]) || null;
   const els = d.latest?.elecciones || [];
+  // se avisa qué lugar se está mirando: el colector refresca primero los más consultados
+  useEffect(() => { wanted.zone = place ? place.id : null; }, [place]);
   const eDist = els.find((e) => tipoDe(e) === 'distrital');
   const eProv = els.find((e) => tipoDe(e) === 'provincial');
   const eGob = els.find((e) => tipoDe(e) === 'gobernador');

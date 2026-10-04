@@ -280,7 +280,7 @@ export default function Results() {
             {place && (
               <div className="flex items-center gap-2 flex-wrap mt-3 text-[13px]">
                 <span className="chip"><MapPin size={12} />{place.ruta}</span>
-                {saved === zone ? <span className="text-dim flex items-center gap-1"><Star size={12} fill="currentColor" className="text-warn" />Es tu zona: la recordamos en este navegador.</span>
+                {saved === zone ? <span className="text-dim flex items-center gap-1"><Star size={12} fill="currentColor" className="text-warn" />Es tu zona: la recordamos en este navegador y actualizamos antes los lugares más consultados.</span>
                   : <button type="button" className="text-accent-2 font-semibold hover:underline" onClick={() => setZone(zone)}>Guardar como mi zona</button>}
                 {saved && <button type="button" className="text-dim hover:underline ml-auto" onClick={() => { setZone(null); location.hash = '#resultados'; }}>Olvidar mi zona</button>}
               </div>

@@ -76,6 +76,9 @@ function viewerId() {
   return v;
 }
 
+/** Lugar que esta persona está mirando en «Mi zona». Va en el aviso periódico (solo se cuenta cuántos miran cada lugar). */
+export const wanted = { zone: null };
+
 const AudienceCtx = createContext({ viewers: null, reactions: {}, mine: {}, react: () => {} });
 export const useAudience = () => useContext(AudienceCtx);
 
@@ -89,7 +92,7 @@ function useAudienceState() {
   const pending = useRef(new Set());       // mensajes con un envío en curso: el sondeo no pisa su valor
 
   useEffect(() => {
-    const ping = () => fetch(`api/ping?s=${vid.current}`, { method: 'POST', cache: 'no-store' })
+    const ping = () => fetch(`api/ping?s=${vid.current}${wanted.zone ? `&z=${wanted.zone.replace(':', '-')}` : ''}`, { method: 'POST', cache: 'no-store' })
       .then((r) => (r.ok ? r.json() : null))
       .then((j) => {
         if (!j) return;

@@ -574,27 +574,40 @@ def note_block(reason):
     log(f'la ONPE rechazó consultas ({reason}); los recorridos largos esperan {minutes} min')
 
 
-def list_scopes(eid, lvl, deps):
-    """Lista de ámbitos de una elección: provincias (alcalde provincial) o distritos (alcalde distrital)."""
-    out = []
+def list_scopes(eid, lvl, deps, st, deadline):
+    """Arma la lista de lugares de una elección: provincias (alcalde provincial) o distritos (alcalde
+    distrital). Son unos 220 pedidos, así que se hace por departamentos: si la corrida se queda sin
+    tiempo, la siguiente continúa donde quedó. Devuelve True cuando la lista está completa."""
+    part = st.setdefault('listando', {'hechos': [], 'lugares': []})
     for d in deps:
+        if d['ubigeo'] in part['hechos']:
+            continue
+        if time.time() > deadline:
+            return False
+        found = []
         provs = data_of(get(f'ubigeos/provincias?idEleccion={eid}&idAmbitoGeografico=1&idUbigeoDepartamento={d["ubigeo"]}')) or []
         for pv in provs:
             pc = pv.get('ubigeo') or pv.get('idUbigeo')
             if not pc:
                 continue
             if lvl == 2:
-                out.append([d['ubigeo'], pc, None, f'{d["nombre"]} / {pv.get("nombre")}'])
+                found.append([d['ubigeo'], pc, None, f'{d["nombre"]} / {pv.get("nombre")}'])
                 continue
             ds = data_of(get(f'ubigeos/distritos?idEleccion={eid}&idAmbitoGeografico=1&idUbigeoProvincia={pc}')) or []
             for di in ds:
                 dc = di.get('ubigeo') or di.get('idUbigeo')
                 if dc:
-                    out.append([d['ubigeo'], pc, dc, f'{d["nombre"]} / {pv.get("nombre")} / {di.get("nombre")}'])
-    return out
+                    found.append([d['ubigeo'], pc, dc, f'{d["nombre"]} / {pv.get("nombre")} / {di.get("nombre")}'])
+        part['lugares'].extend(found)
+        part['hechos'].append(d['ubigeo'])
+    st['todos'] = part['lugares']
+    st['listado'] = time.time()
+    st['cola'] = [list(x) for x in st['todos']]
+    st.pop('listando', None)
+    return True
 
 
-def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, on_checks, budget, deadline):
+def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, on_checks, budget, deadline, wanted=()):
     """Una tanda del recorrido de provincias (alcalde provincial) o distritos (alcalde distrital).
 
     La lista de lugares se arma una vez y se recorre en ronda: todos los lugares se refrescan, y un
@@ -640,12 +653,18 @@ def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, on_checks, budget, dead
         return n
 
     try:
-        if not st['todos'] or time.time() - st['listado'] > 6 * 3600:
-            st['todos'] = list_scopes(eid, lvl, deps)
-            st['listado'] = time.time()
-            st['cola'] = [list(x) for x in st['todos']]
+        if not st['todos'] or time.time() - st['listado'] > 12 * 3600:
+            list_scopes(eid, lvl, deps, st, deadline)   # mientras se rearma, se sigue con la lista anterior
         if not st['todos']:
             return 0
+        # 0) los lugares que el público está mirando ahora, si llevan más de 90 s sin consultarse
+        by_code = {code_of(x): x for x in st['todos']}
+        asked = [by_code[c] for c in wanted if c in by_code and _age(store.get(c)) > 90]
+
+        def next_asked():
+            return asked.pop(0) if asked else None
+
+        done_asked = run(next_asked, max(1, budget // 4))
         # 1) los lugares con más actas, en ronda (un tercio de la tanda)
         big = sorted((x for x in st['todos'] if code_of(x) in store),
                      key=lambda x: -((store[code_of(x)].get('totales') or {}).get('totalActas') or 0))[:40]
@@ -664,8 +683,9 @@ def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, on_checks, budget, dead
             return st['cola'].pop(0)
 
         scopes = max(1, budget // 2)
-        done = run(next_big, scopes // 3) if len(store) >= len(st['todos']) * 0.5 else 0
-        done += run(next_all, scopes - done)
+        done = done_asked
+        done += run(next_big, scopes // 3) if len(store) >= len(st['todos']) * 0.5 else 0
+        done += run(next_all, max(0, scopes - done))
     except Blocked as e:
         note_block(e)
         done = len(seen)
@@ -678,6 +698,35 @@ def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, on_checks, budget, dead
         write_json(f'ambitos/eleccion-{eid}/{dep}.json',
                    {'eleccion': nombre, 'nivel': lvl, key: {c: v for c, v in store.items() if v.get('dep') == dep}}, indent=None)
     return done
+
+
+def _age(entry):
+    """Segundos desde que se consultó un lugar (infinito si nunca)."""
+    try:
+        return time.time() - datetime.fromisoformat(entry['visto']).timestamp()
+    except (TypeError, KeyError, ValueError):
+        return float('inf')
+
+
+def wanted_codes(crawl, els):
+    """Lugares que el público está mirando (local/zonas.json, lo deja deploy/run-ambitos.sh), por elección.
+    Quien mira un distrito ve también la elección de su provincia: se pide también esa provincia."""
+    try:
+        with open(os.path.join(ROOT, 'local', 'zonas.json'), encoding='utf-8') as f:
+            z = json.load(f)
+        if time.time() - datetime.fromisoformat(z['actualizado'].replace('Z', '+00:00')).timestamp() > 900:
+            return {}
+        zonas = sorted((z.get('zonas') or {}).items(), key=lambda kv: -kv[1])
+    except (OSError, ValueError, KeyError, AttributeError):
+        return {}
+    dist = [k.split('-', 1)[1] for k, _ in zonas if k.startswith('3-')]
+    prov = [k.split('-', 1)[1] for k, _ in zonas if k.startswith('2-')]
+    prov_of = {}
+    for e in els:
+        if e['nivel'] == 3:
+            prov_of = {x[2]: x[1] for x in (crawl.get(str(e['id'])) or {}).get('todos') or []}
+    prov += [prov_of[d] for d in dist if d in prov_of and prov_of[d] not in prov]
+    return {e['id']: (dist if e['nivel'] == 3 else prov) for e in els}
 
 
 def lower_summary(st, lvl):
@@ -723,12 +772,13 @@ def lower_main():
 
     deadline = time.time() + LOWER_SECONDS
     visited = 0
+    asked = wanted_codes(crawl, els)
     while time.time() < deadline and not backoff_active():
         n = 0
         for e in els:
             # los distritos son diez veces más que las provincias: se llevan tres cuartos de cada vuelta
             n += crawl_lower(e['id'], e['nombre'], e['nivel'], e['departamentos'], manifest, crawl, on_checks,
-                             60 if e['nivel'] == 3 else 20, deadline)
+                             60 if e['nivel'] == 3 else 20, deadline, asked.get(e['id'], ()))
         visited += n
         if n == 0:
             break
