@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 20,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T14:31:03.262Z",
+   "ultimaPublicacion": "2026-10-04T14:29:50.119Z",
+   "haciendo": {
+    "ts": "2026-10-04T14:29:50.119Z",
+    "texto": "Para las 10:00 me quedo en el 85.09% de las 8:56, que ya está confirmado. Leí el post más nuevo de la ONPE y habla de material a las 9:19, pero no lo uso hasta que Rosita confirme el texto. Sin actas, veda hasta las 17:0"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
@@ -62,24 +80,6 @@
    "haciendo": {
     "ts": "2026-10-04T13:10:02.311Z",
     "texto": "**08:00.** Beto entregó el post y no lo publicó. Sigue sin actas. La ONPE todavía no publica el conteo preliminar, la votación sigue de 7:00 a 17:00 y la veda hasta las 17:00. El post no dice que la página de resultados "
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 20,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:29:50.119Z",
-   "ultimaPublicacion": "2026-10-04T14:29:50.119Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:29:50.119Z",
-    "texto": "Para las 10:00 me quedo en el 85.09% de las 8:56, que ya está confirmado. Leí el post más nuevo de la ONPE y habla de material a las 9:19, pero no lo uso hasta que Rosita confirme el texto. Sin actas, veda hasta las 17:0"
    },
    "silencioMaximoMin": 75
   },
@@ -198,7 +198,7 @@
    "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
    "inicio": "05:40",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 1,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T14:26:24.179Z",
