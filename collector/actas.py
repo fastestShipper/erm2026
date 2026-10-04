@@ -43,7 +43,7 @@ OUT = os.path.join(DATA, 'actas')
 MESAS = os.environ.get('ERM_MESAS_DIR', os.path.join(ROOT, 'local', 'mesas'))
 STATE = os.path.join(ROOT, 'local', 'actas-state.json')
 CHANGED = os.path.join(ROOT, 'local', 'mesas-changed.txt')
-BACKOFF = os.path.join(ROOT, 'local', 'onpe-backoff.json')   # pausa compartida con collect.py si la ONPE bloquea
+BACKOFF = os.path.join(ROOT, 'local', 'actas-backoff.json')   # pausa propia: un bloqueo de la búsqueda de mesas no detiene el corte
 COLA_URL = os.environ.get('ERM_COLA_URL', 'https://peruvian.dev/dataonpe/api/v1/cola')   # mesas pedidas por la API
 PORTAL = os.environ.get('ERM_PORTAL', 'https://resultadoelectoral.onpe.gob.pe')
 BASE = os.environ.get('ERM_BASE', PORTAL + '/presentacion-backend')
@@ -96,6 +96,9 @@ def get(path, accept_json=True):
                 if r.headers.get('x-amzn-waf-action'):
                     raise Blocked('AWS WAF pide ' + r.headers.get('x-amzn-waf-action'))
                 ctype = r.headers.get('content-type', '')
+                # 202 con HTML = la página de verificación anti-bots de la ONPE. No se resuelve ni se evade.
+                if r.status == 202 or (accept_json and 'html' in ctype):
+                    raise Blocked('la ONPE pide verificación anti-bots (HTTP 202) para la búsqueda de mesas')
             time.sleep(DELAY)
             if not accept_json:
                 return body.decode('utf-8', 'replace')
@@ -323,11 +326,7 @@ def main():
     t0 = time.time()
     resumen_prev = read_json(os.path.join(OUT, 'resumen.json'), {})
 
-    if not os.path.exists(os.path.join(OUT, 'endpoints.json')):
-        try:
-            discover_endpoints()
-        except Blocked as e:
-            log('bloqueado al leer el portal:', e)
+    # (el descubrimiento de rutas leyendo el código del portal queda desactivado: el portal pide verificación anti-bots)
 
     blocked = None
     try:
