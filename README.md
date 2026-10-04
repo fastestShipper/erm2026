@@ -118,6 +118,7 @@ Pruebas: `node --test bots/veda.test.mjs` y `python3 -m unittest discover -s col
 ## Créditos
 
 - Personajes 3D: «RobotExpressive», de Tomás Laulhé (Quaternius), con cambios de Don McCurdy. Dominio público (CC0 1.0).
+- Mapa de regiones: geoBoundaries (gbOpen, PER ADM1), dominio público, a partir de Wikimedia Commons. Simplificado para este sitio.
 
 ## Licencias
 
