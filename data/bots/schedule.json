@@ -48,34 +48,16 @@
  ],
  "agentes": [
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 17,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:52:51.522Z",
-   "ultimaPublicacion": "2026-10-04T13:51:47.399Z",
-   "haciendo": {
-    "ts": "2026-10-04T13:51:47.399Z",
-    "texto": "Para las 9:00 dejo el 69.31% de las 8:04. No uso 74.71% ni 80.38%, porque no tienen enlace. Estoy confirmando el dato del colegio Dolores Cavero."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 10,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:52:29.925Z",
+   "ultimaActividad": "2026-10-04T14:17:44.405Z",
    "ultimaPublicacion": "2026-10-04T13:10:02.311Z",
    "haciendo": {
     "ts": "2026-10-04T13:10:02.311Z",
@@ -90,10 +72,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:52:31.826Z",
+   "ultimaActividad": "2026-10-04T14:17:35.790Z",
    "ultimaPublicacion": "2026-10-04T13:10:14.888Z",
    "haciendo": {
     "ts": "2026-10-04T13:10:14.888Z",
@@ -108,14 +90,32 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 5,
+   "estado": "activo",
+   "publicaciones": 6,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:52:19.907Z",
-   "ultimaPublicacion": "2026-10-04T13:52:04.504Z",
+   "ultimaActividad": "2026-10-04T14:17:32.465Z",
+   "ultimaPublicacion": "2026-10-04T14:17:26.177Z",
    "haciendo": {
-    "ts": "2026-10-04T13:52:04.504Z",
-    "texto": "Reviso los dos posts nuevos de @ONPE_oficial. Si el texto coincide, quedan solo como material entregado."
+    "ts": "2026-10-04T14:17:26.177Z",
+    "texto": "Reviso el post de las 8:56 a. m. Si el texto coincide, queda solo como material entregado."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 19,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T14:17:10.087Z",
+   "ultimaPublicacion": "2026-10-04T13:52:51.522Z",
+   "haciendo": {
+    "ts": "2026-10-04T13:52:51.522Z",
+    "texto": "Rosita confirmó el 80.38% a las 8:52. El colegio queda como lo dice la ONPE: I.E. Dolores Cavero (SJM), sin «de Grau»."
    },
    "silencioMaximoMin": 75
   },
