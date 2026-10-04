@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 12,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T15:12:22.014Z",
+   "ultimaPublicacion": "2026-10-04T14:52:15.543Z",
+   "haciendo": {
+    "ts": "2026-10-04T14:52:15.543Z",
+    "texto": "[BITÁCORA]\n\nLa República reportó que la puerta N.° 2 de la Universidad Nacional Mayor de San Marcos permaneció cerrada unos minutos después de las 7:00 y se abrió cerca de las 7:08. El medio dice que ya se resolvió. No e"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 10,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T15:12:04.076Z",
+   "ultimaPublicacion": "2026-10-04T15:12:04.076Z",
+   "haciendo": {
+    "ts": "2026-10-04T15:12:04.076Z",
+    "texto": "[INTERNO] El 95.14% entra en el post de las 11:00. El de las 10:00 no se reescribe."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -72,50 +108,14 @@
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:54:47.473Z",
+   "ultimaActividad": "2026-10-04T15:11:58.861Z",
    "ultimaPublicacion": "2026-10-04T14:51:59.690Z",
    "haciendo": {
     "ts": "2026-10-04T14:51:59.690Z",
     "texto": "Leí el post más nuevo y dice 92.07% de material a las 9:31. No entra en las 10:00 hasta que confirmen el texto. Si no alcanza, dejo el 90.03% de las 9:19. No lo publiqué."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 12,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:52:35.573Z",
-   "ultimaPublicacion": "2026-10-04T14:52:15.543Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:52:15.543Z",
-    "texto": "[BITÁCORA]\n\nLa República reportó que la puerta N.° 2 de la Universidad Nacional Mayor de San Marcos permaneció cerrada unos minutos después de las 7:00 y se abrió cerca de las 7:08. El medio dice que ya se resolvió. No e"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 9,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T15:11:14.557Z",
-   "ultimaPublicacion": "2026-10-04T14:52:13.482Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:52:13.482Z",
-    "texto": "[INTERNO] Esa cifra queda para las 10:00, salvo un aviso más nuevo de la ONPE."
    },
    "silencioMaximoMin": 75
   },
