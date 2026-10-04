@@ -22,7 +22,7 @@ const HERE = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z
 const OUT = process.env.ERM_OUT || path.join(HERE, 'out');
 const STATE = path.join(HERE, 'out', 'alert-state.json');
 const DAY = '2026-10-04';
-const SINCE = Date.parse('2026-10-04T00:30:00-05:00');
+const SINCE = Date.parse('2026-10-04T01:34:00-05:00');   // la bitácora pública empieza con el brief de las 01:34
 const COORD = '5dd0d022-a841-4631-b524-64636e8b5f49';
 
 // Apodo, puesto, qué hace y horario comprometido (lo que cada bot anunció en su bitácora).

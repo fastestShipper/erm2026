@@ -34,7 +34,7 @@ function Scene({ m, sel, now, big }) {
   return (
     <>
       <Suspense fallback={null}>
-        <Office agents={m.agents} feed={m.feed} latest={m.latest} status={m.status} actas={m.actas} anomalyDeps={m.anomalyDeps} selected={sel} autoRotate={!sel} compact fov={H ? 36 : 46} />
+        <Office agents={m.agents} feed={m.feed} latest={m.latest} status={m.status} actas={m.actas} anomalyDeps={m.anomalyDeps} selected={sel} autoRotate={false} compact fov={H ? 36 : 46} />
       </Suspense>
       <div className="absolute left-6 top-6 flex gap-2.5 pointer-events-none">
         <span className={`flex items-center rounded-[10px] bg-navy/85 text-white num font-bold ${big ? 'h-11 px-4 text-[20px]' : 'h-8 px-3 text-[14px]'}`}>AL AIRE {hms(now - TEAM_START_MS)}</span>

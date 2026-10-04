@@ -262,7 +262,7 @@ export default function Live() {
   if (wide) return (
     <div className="h-[calc(100dvh-56px)] grid grid-cols-[minmax(0,1fr)_400px] gap-5 px-6 py-5 box-border">
       <section className="flex flex-col gap-3.5 min-w-0 min-h-0 overflow-y-auto pr-1">
-        <Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={!sel && !interacted} onInteract={() => setInteracted(true)} />
+        <Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={false} onInteract={() => setInteracted(true)} />
         <StreamMeta m={m} />
         <Kpis m={m} now={now} />
       </section>
@@ -273,7 +273,7 @@ export default function Live() {
   // Celular: reproductor arriba; debajo, pestañas de alto fijo (nada empuja la página).
   return (
     <div className="flex flex-col h-[calc(100dvh-56px-64px)]">
-      <div className="flex-none px-3 pt-3"><Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={!sel && !interacted} onInteract={() => setInteracted(true)} compact /></div>
+      <div className="flex-none px-3 pt-3"><Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={false} onInteract={() => setInteracted(true)} compact /></div>
       <div className="flex-none px-3 pt-2.5">
         <h1 className="display m-0 text-[19px] leading-[1.15]">ERM 2026: auditoría en vivo</h1>
       </div>
