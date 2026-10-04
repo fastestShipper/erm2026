@@ -1,39 +1,18 @@
 import { Suspense, useEffect, useMemo, useRef, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { ContactShadows, Grid, Html, MeshReflectorMaterial, OrbitControls, useAnimations, useGLTF } from '@react-three/drei';
+import { Html, OrbitControls, PerformanceMonitor, useAnimations, useGLTF } from '@react-three/drei';
 import { clone as cloneSkinned } from 'three/examples/jsm/utils/SkeletonUtils.js';
 import * as THREE from 'three';
 import { deskPose, lookOf, seatAgents } from '../lib/agents.js';
 import { norm, partyColor, pct, plain, timeLima } from '../lib/format.js';
+import { Desk, DESK_Y } from './Desk.jsx';
+import { CommandTable, Floor, Lights, Surroundings } from './Set.jsx';
+import { SCREEN } from './textures.js';
 
 const ACCENT = '#2563eb';
 const ALERT = '#dc2626';
 const BG = '#eef2f7';
 const ease = (delta, speed = 3) => 1 - Math.exp(-speed * delta);
-
-/* ───────────────────────── texturas procedurales ───────────────────────── */
-
-// Pantalla holográfica: líneas de «código» que se desplazan (una textura compartida; cada pantalla mueve su offset).
-function makeScreenTexture() {
-  const c = document.createElement('canvas');
-  c.width = 256; c.height = 512;
-  const g = c.getContext('2d');
-  g.fillStyle = 'rgba(255,255,255,0.55)'; g.fillRect(0, 0, 256, 512);
-  for (let y = 8; y < 512; y += 14) {
-    let x = 10 + (y % 3) * 12;
-    while (x < 236) {
-      const w = 8 + Math.random() * 46;
-      g.fillStyle = Math.random() < 0.15 ? 'rgba(15,23,42,0.85)' : `rgba(29,78,216,${0.3 + Math.random() * 0.45})`;
-      g.fillRect(x, y, Math.min(w, 246 - x), 4);
-      x += w + 6;
-      if (Math.random() < 0.18) break;
-    }
-  }
-  const t = new THREE.CanvasTexture(c);
-  t.wrapS = t.wrapT = THREE.RepeatWrapping;
-  t.colorSpace = THREE.SRGBColorSpace;
-  return t;
-}
 
 /* ───────────────────────── personaje: robot animado (CC0, Tomás Laulhé / Quaternius) ───────────────────────── */
 
@@ -54,8 +33,8 @@ function Robot({ color, estado, gesture, seed }) {
       if (!o.isMesh) return;
       o.castShadow = true;
       o.material = o.material.clone();
-      o.material.metalness = 0.05;
-      o.material.roughness = 0.45;
+      o.material.metalness = 0.08;
+      o.material.roughness = 0.38;
       if (o.morphTargetDictionary && 'Sad' in o.morphTargetDictionary) heads.push(o);
     });
     const box = new THREE.Box3().setFromObject(scene);
@@ -139,14 +118,10 @@ useGLTF.preload(ROBOT_URL, false, false);
 
 /* ───────────────────────── puesto de trabajo (escritorio alto) ───────────────────────── */
 
-const DESK_Y = 0.98;
-
-function Workstation({ agent, index, total, screenTex, selected, onSelect, compact, latestMsg, focusMode, portal, likes = 0 }) {
+function Workstation({ agent, index, total, selected, onSelect, compact, latestMsg, focusMode, portal, likes = 0 }) {
   const pose = useMemo(() => deskPose(index, total), [index, total]);
   const look = lookOf(agent.agente, index);
   const ring = useRef();
-  const screen = useRef();
-  const tex = useMemo(() => { const t = screenTex.clone(); t.needsUpdate = true; t.repeat.set(1, 0.55); return t; }, [screenTex]);
   const late = agent.estado === 'atrasado';
   const on = agent.estado === 'activo' || agent.estado === 'cumpliendo';
   const awake = on || late;
@@ -181,21 +156,14 @@ function Workstation({ agent, index, total, screenTex, selected, onSelect, compa
     return () => clearTimeout(t);
   }, [likes]);
 
-  useFrame(({ clock }, delta) => {
+  useFrame(({ clock }) => {
     const t = clock.elapsedTime + index;
     if (ring.current) {
       const p = agent.estado === 'activo' || late ? 1 + ((t * 0.7) % 1) * 0.35 : 1;
       ring.current.scale.setScalar(p);
       ring.current.material.opacity = agent.estado === 'activo' || late ? 0.9 - ((t * 0.7) % 1) * 0.8 : 0.45;
     }
-    if (on) tex.offset.y -= delta * (agent.estado === 'activo' ? 0.16 : 0.035);
-    if (screen.current) screen.current.material.opacity = on ? 0.92 : late ? 0.45 + Math.sin(t * 6) * 0.25 : 0.12;
   });
-
-  const deskMat = useMemo(() => new THREE.MeshStandardMaterial({ color: '#ffffff', roughness: 0.38, metalness: 0.05 }), []);
-  const legMat = useMemo(() => new THREE.MeshStandardMaterial({ color: '#cbd5e1', roughness: 0.4, metalness: 0.3 }), []);
-  const edgeMat = useMemo(() => new THREE.MeshBasicMaterial({ color: tone, toneMapped: false }), [tone]);
-  const W = lead ? 2.2 : 1.6;
 
   return (
     <group position={[pose.x, 0, pose.z]} rotation={[0, pose.rotY, 0]}>
@@ -213,31 +181,7 @@ function Workstation({ agent, index, total, screenTex, selected, onSelect, compa
         <Robot color={look.color} estado={agent.estado} gesture={gesture} seed={index + 1} />
       </Suspense>
 
-      {/* escritorio alto: tablero, dos patas y travesaño */}
-      <group position={[0, 0, 0.3]}>
-        <mesh material={deskMat} position={[0, DESK_Y, 0]} castShadow receiveShadow><boxGeometry args={[W, 0.05, 0.66]} /></mesh>
-        <mesh material={legMat} position={[-(W / 2 - 0.12), DESK_Y / 2, 0]} castShadow><boxGeometry args={[0.06, DESK_Y, 0.5]} /></mesh>
-        <mesh material={legMat} position={[W / 2 - 0.12, DESK_Y / 2, 0]} castShadow><boxGeometry args={[0.06, DESK_Y, 0.5]} /></mesh>
-        <mesh material={legMat} position={[0, 0.32, 0]}><boxGeometry args={[W - 0.3, 0.04, 0.04]} /></mesh>
-        <mesh material={edgeMat} position={[0, DESK_Y + 0.026, 0.33]}><boxGeometry args={[W, 0.012, 0.012]} /></mesh>
-        {/* teclado y taza */}
-        <mesh position={[0, DESK_Y + 0.035, -0.06]}><boxGeometry args={[0.46, 0.015, 0.15]} /><meshStandardMaterial color="#e2e8f0" roughness={0.5} /></mesh>
-        <mesh position={[-0.55, DESK_Y + 0.075, 0.02]}><cylinderGeometry args={[0.045, 0.04, 0.1, 12]} /><meshStandardMaterial color="#0f172a" roughness={0.4} /></mesh>
-      </group>
-
-      {/* pantalla al costado, girada hacia el agente */}
-      <group position={[0.62, DESK_Y + 0.42, 0.34]} rotation={[-0.06, -0.62, 0]}>
-        <mesh ref={screen}>
-          <planeGeometry args={[0.86, 0.52]} />
-          <meshBasicMaterial map={tex} transparent opacity={0.9} depthWrite={false} side={THREE.DoubleSide} toneMapped={false} />
-        </mesh>
-        {awake && (
-          <lineSegments>
-            <edgesGeometry args={[new THREE.PlaneGeometry(0.86, 0.52)]} />
-            <lineBasicMaterial color={tone} transparent opacity={0.9} toneMapped={false} />
-          </lineSegments>
-        )}
-      </group>
+      <Desk agent={agent} index={index} color={look.color} tone={tone} on={on} late={late} kind={SCREEN[agent.agente]} lead={lead} />
 
       {/* etiqueta con nombre y puesto */}
       <Html portal={portal} position={[0, compact ? 2.95 : 2.8, -0.52]} center distanceFactor={focusMode ? 5.5 : compact ? 12 : 10} zIndexRange={[30, 0]}>
@@ -359,48 +303,6 @@ function Ripple({ position }) {
   );
 }
 
-function CommandTable() {
-  const ring = useRef();
-  useFrame(({ clock }) => { if (ring.current) ring.current.material.opacity = 0.65 + Math.sin(clock.elapsedTime * 1.4) * 0.2; });
-  return (
-    <group>
-      <mesh position={[0, 0.45, 0.2]} receiveShadow castShadow>
-        <cylinderGeometry args={[3.1, 3.25, 0.9, 64]} />
-        <meshStandardMaterial color="#f8fafc" roughness={0.35} metalness={0.05} />
-      </mesh>
-      <mesh ref={ring} position={[0, 0.91, 0.2]} rotation={[-Math.PI / 2, 0, 0]}>
-        <ringGeometry args={[3.0, 3.1, 96]} />
-        <meshBasicMaterial color={ACCENT} transparent opacity={0.7} toneMapped={false} />
-      </mesh>
-      <mesh position={[0, 0.905, 0.2]} rotation={[-Math.PI / 2, 0, 0]}>
-        <circleGeometry args={[3.0, 64]} />
-        <meshBasicMaterial color="#dbeafe" transparent opacity={0.9} toneMapped={false} />
-      </mesh>
-    </group>
-  );
-}
-
-/* ───────────────────────── arquitectura de la sala ───────────────────────── */
-
-function Room() {
-  const strips = [-14, -10.5, 10.5, 14];
-  const halo = useRef();
-  useFrame(({ clock }) => { if (halo.current) halo.current.material.opacity = 0.55 + Math.sin(clock.elapsedTime * 0.9) * 0.15; });
-  return (
-    <group>
-      {/* muro de fondo */}
-      <mesh position={[0, 4, -12.4]}><planeGeometry args={[46, 9]} /><meshStandardMaterial color="#e6ebf2" roughness={0.8} metalness={0.05} /></mesh>
-      {strips.map((x) => (
-        <mesh key={x} position={[x, 3.6, -12.3]}><planeGeometry args={[0.07, 6.4]} /><meshBasicMaterial color="#93c5fd" toneMapped={false} /></mesh>
-      ))}
-      <mesh position={[0, 0.9, -12.3]}><planeGeometry args={[46, 0.04]} /><meshBasicMaterial color="#cbd5e1" toneMapped={false} /></mesh>
-      {/* aros de luz en el techo, sobre el holograma */}
-      <mesh ref={halo} position={[0, 7.4, 0.2]} rotation={[Math.PI / 2, 0, 0]}><torusGeometry args={[3.4, 0.035, 8, 96]} /><meshBasicMaterial color="#60a5fa" transparent toneMapped={false} /></mesh>
-      <mesh position={[0, 7.6, 0.2]} rotation={[Math.PI / 2, 0, 0]}><torusGeometry args={[7.6, 0.03, 8, 128]} /><meshBasicMaterial color="#cbd5e1" toneMapped={false} /></mesh>
-    </group>
-  );
-}
-
 /* ───────────────────────── pared de video ───────────────────────── */
 
 function drawWall(g, w, h, info) {
@@ -446,10 +348,9 @@ function VideoWall({ info }) {
     tex.needsUpdate = true;
   });
   return (
-    <group position={[0, 3.3, -10.6]}>
-      <mesh position={[0, 0, -0.06]}><boxGeometry args={[11.6, 3.4, 0.1]} /><meshStandardMaterial color="#cfd8e3" metalness={0.3} roughness={0.35} /></mesh>
-      <mesh><planeGeometry args={[11.2, 3.06]} /><meshBasicMaterial map={tex} toneMapped={false} /></mesh>
-      <mesh position={[0, -1.78, 0]}><boxGeometry args={[11.6, 0.03, 0.03]} /><meshBasicMaterial color={ACCENT} toneMapped={false} /></mesh>
+    <group position={[0, 3.6, -10.6]}>
+      <mesh><planeGeometry args={[11.5, 3.14]} /><meshBasicMaterial map={tex} toneMapped={false} /></mesh>
+      <mesh position={[0, -1.86, 0]}><boxGeometry args={[11.9, 0.03, 0.03]} /><meshBasicMaterial color={ACCENT} toneMapped={false} /></mesh>
     </group>
   );
 }
@@ -546,7 +447,9 @@ function CameraRig({ focus, autoRotate }) {
       minDistance={7}
       maxDistance={24}
       minPolarAngle={0.45}
-      maxPolarAngle={1.28}
+      maxPolarAngle={1.3}
+      minAzimuthAngle={-1.75}
+      maxAzimuthAngle={1.75}
       autoRotateSpeed={0.35}
     />
   );
@@ -555,7 +458,6 @@ function CameraRig({ focus, autoRotate }) {
 /* ───────────────────────── escena completa ───────────────────────── */
 
 function Scene({ agents, feed, latest, election, status, actas, geo, selected, onSelect, autoRotate, lowPower, anomalyDeps, compact, portal, likesBy }) {
-  const screenTex = useMemo(() => makeScreenTexture(), []);
   const seatedList = useMemo(() => seatAgents(agents), [agents]);
   const poses = useMemo(() => Object.fromEntries(seatedList.map((a, i) => [a.agente, deskPose(i, seatedList.length)])), [seatedList]);
   const feedColored = useMemo(() => feed && { ...feed, items: (feed.items || []).map((x) => ({ ...x, color: lookOf(x.agente).color })) }, [feed]);
@@ -581,39 +483,32 @@ function Scene({ agents, feed, latest, election, status, actas, geo, selected, o
     <>
       <color attach="background" args={[BG]} />
       <fog attach="fog" args={[BG, 26, 60]} />
-      <ambientLight intensity={1.1} />
-      <hemisphereLight args={['#ffffff', '#c7d2e0', 1.3]} />
-      <directionalLight position={[6, 14, 9]} intensity={2.2} color="#ffffff" />
-      <directionalLight position={[-8, 9, 6]} intensity={0.8} color="#dbe7ff" />
-      <pointLight position={[0, 3.2, 0.2]} intensity={10} distance={9} color="#60a5fa" />
-
-      <mesh rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
-        <planeGeometry args={[80, 80]} />
-        {lowPower
-          ? <meshStandardMaterial color="#e9edf3" roughness={0.9} metalness={0} />
-          : <MeshReflectorMaterial blur={[300, 80]} resolution={1024} mixBlur={1} mixStrength={2.2} roughness={0.85} depthScale={0.6} minDepthThreshold={0.4} maxDepthThreshold={1.3} color="#e9edf3" metalness={0.08} mirror={0.25} />}
-      </mesh>
-      <Room />
-      <Grid position={[0, 0.002, 0]} args={[60, 60]} cellSize={1} cellThickness={0.6} cellColor="#d6dee9" sectionSize={4} sectionThickness={1} sectionColor="#b8c5d8" fadeDistance={40} fadeStrength={1.4} infiniteGrid />
+      <fog attach="fog" args={[BG, 34, 80]} />
+      <Lights lowPower={lowPower} />
+      <Floor lowPower={lowPower} />
+      <Surroundings live={live} />
 
       <CommandTable />
       <HoloMap geo={geo} latest={latest} election={el?.id} anomalyDeps={anomalyDeps} />
       <VideoWall info={wallInfo} />
 
       {seatedList.map((a, i) => (
-        <Workstation key={a.agente} agent={a} index={i} total={seatedList.length} screenTex={screenTex} selected={selected === a.agente} onSelect={onSelect} compact={compact} latestMsg={latestBy[a.agente]} focusMode={!!selected} portal={portal} likes={likesBy?.[a.agente] || 0} />
+        <Workstation key={a.agente} agent={a} index={i} total={seatedList.length} selected={selected === a.agente} onSelect={onSelect} compact={compact} latestMsg={latestBy[a.agente]} focusMode={!!selected} portal={portal} likes={likesBy?.[a.agente] || 0} />
       ))}
       <Packets feed={feedColored} poses={poses} />
       <CameraRig focus={focus} autoRotate={autoRotate} />
 
-      {!lowPower && <ContactShadows position={[0, 0.01, 0]} scale={34} resolution={1024} blur={2.6} opacity={0.38} far={3.5} color="#0f172a" />}
     </>
   );
 }
 
 export default function Office(props) {
   const [geo, setGeo] = useState(null);
-  const lowPower = useMemo(() => typeof window !== 'undefined' && (matchMedia('(max-width: 760px)').matches || (navigator.hardwareConcurrency || 8) <= 4), []);
+  const weak = useMemo(() => typeof window !== 'undefined' && (matchMedia('(max-width: 760px)').matches || (navigator.hardwareConcurrency || 8) <= 4), []);
+  // Si el equipo no puede con la escena completa (menos de ~22 cuadros por segundo), se apagan solos
+  // los reflejos del piso y las sombras. No vuelve a encenderlos: así no parpadea.
+  const [slow, setSlow] = useState(false);
+  const lowPower = weak || slow;
   useEffect(() => { fetch('geo/peru.json').then((r) => r.json()).then(setGeo).catch(() => {}); }, []);
   // Las etiquetas HTML (nombres, carteles, globos) van en una capa propia y estable sobre el canvas.
   // Sin esto, drei cambia de contenedor al conectar los eventos y la primera etiqueta queda vacía.
@@ -628,6 +523,7 @@ export default function Office(props) {
       onPointerMissed={() => props.onSelect?.(null)}
       style={{ position: 'absolute', inset: 0 }}
     >
+      {!weak && <PerformanceMonitor bounds={() => [22, 60]} flipflops={1} onDecline={() => setSlow(true)} />}
       <Suspense fallback={null}>
         <Scene {...props} geo={geo} lowPower={lowPower} portal={overlay} />
       </Suspense>
