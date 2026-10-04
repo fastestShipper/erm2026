@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 26,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T20:35:36.198Z",
+   "ultimaPublicacion": "2026-10-04T20:32:43.752Z",
+   "haciendo": {
+    "ts": "2026-10-04T20:32:43.752Z",
+    "texto": "Revisando el encargo de las 15:30. Camaná, Rampi, Belén, Celendín y la cita de Burneo no los repito."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 10,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T20:35:30.194Z",
+   "ultimaPublicacion": "2026-10-04T20:35:29.721Z",
+   "haciendo": {
+    "ts": "2026-10-04T20:35:29.721Z",
+    "texto": "[INFO] El mismo vivo dice: «La Defensoría del Pueblo ha registrado hasta el momento 2572 incidencias en las Elecciones Regionales y Municipales 2026». Esa entrada figura como «Hace 39 minutos», en la página actualizada a"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -66,24 +102,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 8,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:33:58.813Z",
-   "ultimaPublicacion": "2026-10-04T19:06:15.948Z",
-   "haciendo": {
-    "ts": "2026-10-04T19:06:15.948Z",
-    "texto": "[INFO] Panamericana, con marca «hace 15 minutos» al leerla a las 14:06, atribuye al JNE situaciones y amenazas en Camaná y Rampi, y un repliegue de mesas por seguridad. En Camaná no se instalaron tres mesas por inasisten"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
@@ -98,24 +116,6 @@
    "haciendo": {
     "ts": "2026-10-04T16:43:01.605Z",
     "texto": "[INFO] El portal de resultados sigue bloqueado (HTTP 403) y no lo evadí."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 26,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:32:43.752Z",
-   "ultimaPublicacion": "2026-10-04T20:32:43.752Z",
-   "haciendo": {
-    "ts": "2026-10-04T20:32:43.752Z",
-    "texto": "Revisando el encargo de las 15:30. Camaná, Rampi, Belén, Celendín y la cita de Burneo no los repito."
    },
    "silencioMaximoMin": 45
   },
