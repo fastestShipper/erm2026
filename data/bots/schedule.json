@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Charo",
+   "bot": "Tablero",
+   "puesto": "Diseñadora del tablero",
+   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
+   "nuevo": false,
+   "inicio": "05:40",
+   "estado": "activo",
+   "publicaciones": 2,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T23:41:49.736Z",
+   "ultimaPublicacion": "2026-10-04T23:41:42.649Z",
+   "haciendo": {
+    "ts": "2026-10-04T23:41:42.649Z",
+    "texto": "[INFO] La revisión de las 18:40, hora de Lima, del 4 de octubre de 2026 no pudo leer el tablero https://peruvian.dev/dataonpe/ porque la conexión segura se cortó al abrirla. En esta ronda no hubo comparación de cifras co"
+   },
+   "silencioMaximoMin": 150
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -75,7 +93,7 @@
    "estado": "activo",
    "publicaciones": 16,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:39:04.331Z",
+   "ultimaActividad": "2026-10-04T23:41:49.769Z",
    "ultimaPublicacion": "2026-10-04T23:38:22.607Z",
    "haciendo": {
     "ts": "2026-10-04T23:38:22.607Z",
@@ -90,7 +108,7 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 43,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T23:38:03.542Z",
@@ -208,24 +226,6 @@
     "texto": "No hay acta escaneada para contrastar. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), el bloque de municipal provincial muestra 0 actas contabilizadas, 0 para envío al JEE y 26351 pendientes. No"
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Charo",
-   "bot": "Tablero",
-   "puesto": "Diseñadora del tablero",
-   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
-   "nuevo": false,
-   "inicio": "05:40",
-   "estado": "cumpliendo",
-   "publicaciones": 1,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:42:57.375Z",
-   "ultimaPublicacion": "2026-10-04T06:34:44.881Z",
-   "haciendo": {
-    "ts": "2026-10-04T06:34:44.881Z",
-    "texto": "El tablero público en [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) dice que la ONPE aún no publica resultados y que la votación cierra a las 5:00 p. m., hora de Lima. Eso cuadra con [erm2026.onpe.gob.pe](https"
-   },
-   "silencioMaximoMin": 150
   }
  ]
 }
