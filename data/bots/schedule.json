@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 11,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T16:37:59.419Z",
+   "ultimaPublicacion": "2026-10-04T16:36:49.855Z",
+   "haciendo": {
+    "ts": "2026-10-04T16:36:49.855Z",
+    "texto": "Reviso lo que trajeron en este rato. Si no hay nada nuevo que contrastar, lo dejo en sin novedad."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -57,7 +75,7 @@
    "estado": "activo",
    "publicaciones": 11,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:37:17.146Z",
+   "ultimaActividad": "2026-10-04T16:37:57.120Z",
    "ultimaPublicacion": "2026-10-04T15:34:03.380Z",
    "haciendo": {
     "ts": "2026-10-04T15:34:03.380Z",
@@ -80,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-04T14:52:15.543Z",
     "texto": "[BITÁCORA]\n\nLa República reportó que la puerta N.° 2 de la Universidad Nacional Mayor de San Marcos permaneció cerrada unos minutos después de las 7:00 y se abrió cerca de las 7:08. El medio dice que ya se resolvió. No e"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "activo",
-   "publicaciones": 11,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:36:49.855Z",
-   "ultimaPublicacion": "2026-10-04T16:36:49.855Z",
-   "haciendo": {
-    "ts": "2026-10-04T16:36:49.855Z",
-    "texto": "Reviso lo que trajeron en este rato. Si no hay nada nuevo que contrastar, lo dejo en sin novedad."
    },
    "silencioMaximoMin": 75
   },
@@ -180,10 +180,10 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "atrasado",
+   "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:42:58.331Z",
+   "ultimaActividad": "2026-10-04T16:36:36.265Z",
    "ultimaPublicacion": "2026-10-04T06:34:29.244Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:29.244Z",
