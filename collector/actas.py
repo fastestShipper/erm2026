@@ -274,6 +274,8 @@ def next_codes(st):
 
 
 def main():
+    if not os.path.exists(os.path.join(OUT, 'anomalias.json')):
+        write_json(os.path.join(OUT, 'anomalias.json'), {'total': 0, 'items': []})
     status = read_json(os.path.join(DATA, 'status.json'), {})
     if status.get('estado') != 'en-vivo' and not FORCE:
         log('la ONPE aún no publica resultados; no hay actas que revisar')

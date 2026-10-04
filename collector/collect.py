@@ -296,8 +296,23 @@ def publish(summary):
 
 # ---------------------------------------------------------------- principal
 
+def ensure_placeholders():
+    """El tablero consulta estos archivos cada minuto. Si no existen, cada visita genera
+    respuestas 404 y el firewall del servidor (CrowdSec) puede confundirlo con un escaneo y
+    bloquear IPs compartidas (CGNAT). Por eso siempre existen, aunque sea vacíos."""
+    for rel, empty in (('latest.json', {'fuente': 'https://resultadoelectoral.onpe.gob.pe', 'elecciones': []}),
+                       ('checks.json', {'total': 0, 'items': []}),
+                       ('hallazgos.json', {'items': []}),
+                       ('actas/resumen.json', {'mesasEncontradas': 0, 'actasLeidas': 0, 'actasContabilizadas': 0, 'avisos': {'alerta': 0, 'revisar': 0}}),
+                       ('actas/anomalias.json', {'total': 0, 'items': []}),
+                       ('mercados.json', {'mercados': [], 'nota': 'Disponible después del cierre de la votación (veda electoral).'})):
+        if empty is not None and not os.path.exists(os.path.join(DATA, rel)):
+            write_json(rel, empty)
+
+
 def main():
     os.makedirs(DATA, exist_ok=True)
+    ensure_placeholders()
     import_bots()
     status = read_json('status.json', {}) or {}
     status['consultado'] = now_iso()
@@ -313,8 +328,8 @@ def main():
         publish('estado del portal')
         return
     except Blocked as e:
-        status.update({'estado': 'bloqueado', 'detalle': 'La ONPE está rechazando consultas automáticas en este momento '
-                       '(protección anti-bot). No la evadimos: el tablero se actualiza cuando vuelva a responder. '
+        status.update({'estado': 'bloqueado', 'detalle': 'El portal de la ONPE está rechazando nuestras consultas en este momento. '
+                       'No usamos trucos para saltar sus protecciones: el tablero se actualiza solo cuando vuelva a responder. '
                        'Mientras tanto, consulta directamente resultadoelectoral.onpe.gob.pe.', 'error': str(e)[:300]})
         write_json('status.json', status)
         log('bloqueado:', e)
