@@ -1,14 +1,16 @@
 #!/usr/bin/env node
-// Exporta la bitácora pública del squad electoral de Grok Bot y revisa que cada bot
-// cumpla su horario. Corre en el PC donde está abierta la app de Grok Bot (Windows),
-// cada 5 minutos, y sube el resultado al servidor por scp.
+// Exporta la actividad pública del equipo electoral de Grok Bot y revisa que cada bot
+// cumpla su horario. Corre en el PC donde está abierta la app de Grok Bot (Windows).
 //
-//   node export_grok.mjs            exporta + sube + avisa por Telegram si alguien se atrasa
-//   node export_grok.mjs --dry      solo imprime, no sube ni avisa
+//   node export_grok.mjs          escribe feed.json y schedule.json en ERM_OUT (o bots/out)
+//   node export_grok.mjs --dry    solo imprime
+//   ERM_ALERT=1                   avisa por Telegram (hermes) si un bot se atrasa
 //
-// Privacidad: solo se exportan los agentes electorales listados en AGENTS. Se borran
-// correos, teléfonos y montos, y se descarta cualquier mensaje que mencione temas
-// privados (PRIVATE_RE). Nunca se exporta el nombre del dueño de la cuenta.
+// El roster se lee de la app: si se suma un bot nuevo al equipo electoral, aparece solo.
+// Cada bot tiene un apodo (Norma, Luchito…) para que se entienda quién hace qué, pero el
+// sitio siempre dice que son agentes de IA.
+// Privacidad: se descartan mensajes con temas privados (PRIVATE_RE), se borran correos,
+// teléfonos y rutas internas, y nunca se exporta el nombre del dueño de la cuenta.
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
@@ -16,33 +18,39 @@ import { execFileSync } from 'node:child_process';
 
 const DRY = process.argv.includes('--dry');
 const PERSIST = path.join(os.homedir(), 'AppData', 'Roaming', 'Grok Bot', 'sand-client-persistence');
-const OUT = process.env.ERM_OUT || path.join(path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Z]:)/, '$1')), 'out');
-const REMOTE = process.env.ERM_REMOTE || 'lima:/srv/erm2026/inbox/bots/';
-const STATE = path.join(OUT, 'alert-state.json');
+const HERE = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1'));
+const OUT = process.env.ERM_OUT || path.join(HERE, 'out');
+const STATE = path.join(HERE, 'out', 'alert-state.json');
 const DAY = '2026-10-04';
 const SINCE = Date.parse('2026-10-04T00:30:00-05:00');
+const COORD = '5dd0d022-a841-4631-b524-64636e8b5f49';
 
-// Rol público y horario comprometido (plan publicado por el coordinador a las 00:41).
-// window = horas Perú en que el bot debe dar señales; maxQuietMin = silencio máximo tolerado.
-const AGENTS = {
-  '1bc377ab-1704-416c-b668-c69327dc72a2': { name: 'Datos ONPE', role: 'Consulta el portal y la API de la ONPE y guarda snapshots.', window: [5.67, 23.99], maxQuietMin: 90 },
-  'f5b8b86c-0716-4d8a-885e-f277a9bbbfe3': { name: 'Pulso X', role: 'Sigue cuentas oficiales verificadas (ONPE, JNE, medios) en X.', window: [6, 23.99], maxQuietMin: 90 },
-  'bf035441-d6bd-4015-8247-addd6008b921': { name: 'Verifica', role: 'Contrasta cada afirmación con la ONPE o el JNE.', window: [7, 23.99], maxQuietMin: 120 },
-  'aaebb43a-e60d-4700-8b2d-aca09a603682': { name: 'Desinfo', role: 'Detecta piezas virales falsas (capturas, audios, actas trucadas).', window: [6, 23.99], maxQuietMin: 120 },
-  '8335ac4a-3667-4e4a-a081-ef28f6afc852': { name: 'Tablero ERM', role: 'Prepara el tablero público, separado de la data de abril.', window: [5.67, 23.99], maxQuietMin: 180 },
-  '5dd0d022-a841-4631-b524-64636e8b5f49': { name: 'Coordinador', role: 'Coordina al squad. Guardia horaria desde las 7:40.', window: [7.67, 23.99], maxQuietMin: 75, electionOnly: true },
+// Apodo, puesto, qué hace y horario comprometido (lo que cada bot anunció en su bitácora).
+// window = horas de Lima en que debe dar señales; maxQuietMin = silencio máximo tolerado.
+const KNOWN = {
+  [COORD]: { apodo: 'Norma', bot: 'Coordinación', puesto: 'Jefa de la oficina', role: 'Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.', window: [0, 24], maxQuietMin: 75 },
+  '1bc377ab-1704-416c-b668-c69327dc72a2': { apodo: 'Luchito', bot: 'Datos ONPE', puesto: 'Analista de datos', role: 'Vigila el portal de la ONPE: actas, cortes y cifras oficiales.', window: [6, 24], maxQuietMin: 390 },
+  'f5b8b86c-0716-4d8a-885e-f277a9bbbfe3': { apodo: 'Maritza', bot: 'Pulso X', puesto: 'Redes sociales', role: 'Sigue en X a la ONPE, al JNE y a los medios nacionales.', window: [6.08, 22.75], maxQuietMin: 60 },
+  'bf035441-d6bd-4015-8247-addd6008b921': { apodo: 'Rosita', bot: 'Verifica', puesto: 'Verificadora', role: 'Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.', window: [6.45, 22.95], maxQuietMin: 75 },
+  'aaebb43a-e60d-4700-8b2d-aca09a603682': { apodo: 'Kike', bot: 'Desinfo', puesto: 'Cazador de bulos', role: 'Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.', window: [6, 24], maxQuietMin: 120 },
+  '8335ac4a-3667-4e4a-a081-ef28f6afc852': { apodo: 'Charo', bot: 'Tablero', puesto: 'Diseñadora del tablero', role: 'Cuida que el tablero solo muestre cifras oficiales y se entienda.', window: [5.67, 24], maxQuietMin: 180 },
+  '0eafb8e0-574d-4e42-9dbe-13a886c7ca53': { apodo: 'Jorge', bot: 'Medios', puesto: 'Monitor de medios', role: 'Mira la televisión, escucha la radio y lee los portales de noticias.', window: [6, 24], maxQuietMin: 90 },
+  '51f59259-fc4a-4f4c-853b-4fd7e49fea10': { apodo: 'Don Pepe', bot: 'Cronista', puesto: 'Cronista', role: 'Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.', window: [1, 24], maxQuietMin: 120 },
+  '08536d58-51e5-4659-b3aa-9e49ad1c4eab': { apodo: 'Beto', bot: 'Poste', puesto: 'Editor gráfico', role: 'Prepara el resumen de cada hora con imagen, solo con datos verificados.', window: [1, 24], maxQuietMin: 75 },
 };
+const SPARE = ['Mari', 'Pocho', 'Yoli', 'Toño', 'Chabuca', 'Lalo'];
 
 const PLAN = [
-  { hora: '05:40', que: 'Arranque: probar el portal, cerrar la lista de cuentas y separar el tablero de la data de abril.', quien: ['Datos ONPE', 'Pulso X', 'Tablero ERM'] },
-  { hora: '06:00', que: 'Instalación de mesas: Pulso X y Desinfo cubren lo que se publica.', quien: ['Pulso X', 'Desinfo'] },
-  { hora: '07:00–17:00', que: 'Verifica y Pulso X siguen incidentes y afirmaciones; Datos ONPE consulta el portal.', quien: ['Verifica', 'Pulso X', 'Datos ONPE'] },
-  { hora: '07:40 c/hora', que: 'Guardia horaria del coordinador.', quien: ['Coordinador'] },
-  { hora: '17:00', que: 'Cierre de locales de votación; empieza el conteo.', quien: ['Datos ONPE', 'Verifica', 'Pulso X', 'Desinfo'] },
+  { hora: '00:40', que: 'Se arma el equipo y se revisa el portal de la ONPE.', quien: ['Norma', 'Luchito'] },
+  { hora: '06:00', que: 'Instalación de mesas: X, medios y desinformación en vigilancia.', quien: ['Maritza', 'Jorge', 'Kike'] },
+  { hora: '07:00–17:00', que: 'Votación: se verifican incidentes y afirmaciones contra fuentes oficiales.', quien: ['Rosita', 'Maritza', 'Jorge', 'Kike'] },
+  { hora: 'Cada hora', que: 'Resumen horario con imagen y guardia de la coordinación.', quien: ['Beto', 'Norma'] },
+  { hora: '17:00 en adelante', que: 'Cierre y conteo: se siguen los cortes oficiales de la ONPE.', quien: ['Luchito', 'Rosita', 'Don Pepe'] },
 ];
 
-const PRIVATE_RE = /eureka|lone ?star|del ?huerto|fuego ?inka|control ?a\b|controla|nuna|pulsegest|cobro|factura|invoice|deposit|US\$|S\/\s?\d|cliente|deal|crm|gmail|google cloud|ewald|mahr|zpw/i;
-const ELECTION_RE = /onpe|jne|elecci|mesa|acta|voto|erm|regional|municipal|gobernador|alcald|desinfo|verific|squad|portal|tablero|pulso|padr[oó]n|resultados|personer/i;
+const PRIVATE_RE = /eureka|lone ?star|del ?huerto|fuego ?inka|control ?a\b|controla|nuna|pulsegest|cobro|factura|invoice|deposit|US\$|S\/\s?\d|cliente|\bdeals?\b|crm|gmail|google cloud|ewald|mahr|zpw|password|contraseña|token/i;
+const ELECTION_RE = /onpe|jne|elecci|mesa|acta|voto|erm|regional|municipal|gobernador|alcald|desinfo|verific|squad|equipo|portal|tablero|pulso|padr[oó]n|resultados|personer|bitácora|post|medios|cronista|jornada/i;
+const GREETING_RE = /^(hey|hola)\b.{0,90}(good to meet|what do you want|qué quieres|en qué me pongo|listo para sumarme|me sumo|quedé listo)/i;
 
 const b32 = (s) => {
   const A = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
@@ -53,67 +61,109 @@ const b32 = (s) => {
   return Buffer.from(out).toString('utf8');
 };
 
-const redact = (t) => t
-  .replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, '[correo]')
-  .replace(/(\+?\d[\d\s-]{7,}\d)/g, '[número]')
-  .replace(/grokbot:\/\/\S+?\)/g, ')')
-  .replace(/\[([^\]]+)\]\(\)/g, '$1');
-
 function load() {
   const transcripts = {};
+  let roster = [];
   for (const f of fs.readdirSync(PERSIST)) {
     if (!f.endsWith('.blob')) continue;
     const key = b32(f.slice(0, -5));
-    const m = key.match(/\.transcript\.replicas\.([0-9a-f-]{36})$/);
-    if (!m || !AGENTS[m[1]]) continue;
-    try { transcripts[m[1]] = JSON.parse(fs.readFileSync(path.join(PERSIST, f), 'utf8')).value.entries || []; } catch { /* blob a medio escribir */ }
+    try {
+      if (key.endsWith('.roster.last-roster')) roster = JSON.parse(fs.readFileSync(path.join(PERSIST, f), 'utf8')).value.rows || [];
+      const m = key.match(/\.transcript\.replicas\.([0-9a-f-]{36})$/);
+      if (m) transcripts[m[1]] = JSON.parse(fs.readFileSync(path.join(PERSIST, f), 'utf8')).value.entries || [];
+    } catch { /* blob a medio escribir: se toma en la próxima vuelta */ }
   }
-  return transcripts;
+  return { roster, transcripts };
 }
 
-function peruHour(ms) {
-  const d = new Date(ms - 5 * 3600e3);
-  return d.getUTCHours() + d.getUTCMinutes() / 60;
+// Equipo electoral: los conocidos + cualquiera nuevo cuya descripción sea de estas elecciones.
+function team(roster) {
+  const out = [];
+  let spare = 0;
+  for (const r of roster) {
+    const k = KNOWN[r.id];
+    if (!k && !(ELECTION_RE.test(r.description || '') && /2026|elecci/i.test(r.description || ''))) continue;
+    out.push({
+      id: r.id,
+      apodo: k?.apodo || SPARE[spare++ % SPARE.length],
+      bot: k?.bot || r.name,
+      puesto: k?.puesto || 'Recién llegado',
+      role: k?.role || 'Se acaba de sumar al equipo. Su tarea se publica cuando empiece a trabajar.',
+      window: k?.window || [0, 24],
+      maxQuietMin: k?.maxQuietMin || 120,
+      rosterActivity: r.lastActivityAt || 0,
+      electionOnly: r.id === COORD,
+      nuevo: !k,
+    });
+  }
+  return out;
 }
+
+const peruHour = (ms) => { const d = new Date(ms - 5 * 3600e3); return d.getUTCHours() + d.getUTCMinutes() / 60; };
+const hhmm = (h) => `${String(Math.floor(h) % 24).padStart(2, '0')}:${String(Math.round((h % 1) * 60)).padStart(2, '0')}`;
 
 function build() {
   const now = Date.now();
-  const tr = load();
+  const { roster, transcripts } = load();
+  const members = team(roster);
+  // Los nombres internos de los bots se reemplazan por sus apodos en los textos públicos.
+  const renames = members.map((m) => [m.id === COORD ? /EL ASESOR/g : new RegExp(`\\b${m.bot.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'g'), m.apodo]);
+  const redact = (t) => {
+    let s = t
+      .replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, '[correo]')
+      .replace(/(\+?\d[\d\s-]{8,}\d)/g, '[número]')
+      .replace(/\/workspace\/\S+/g, '[archivo interno]')
+      .replace(/grokbot:\/\/\S+?\)/g, ')')
+      .replace(/\[([^\]]+)\]\(\)/g, '$1')
+      .replace(/\bsquad\b/gi, 'equipo');
+    for (const [re, name] of renames) s = s.replace(re, name);
+    return s;
+  };
+  const publicText = (c, a) => {
+    if (typeof c !== 'string' || !c.trim()) return null;
+    if (PRIVATE_RE.test(c) || GREETING_RE.test(c.trim())) return null;
+    if (a.electionOnly && !ELECTION_RE.test(c)) return null;
+    return redact(c).slice(0, 4000);
+  };
+
   const feed = [];
-  const schedule = [];
-  for (const [id, a] of Object.entries(AGENTS)) {
-    const entries = (tr[id] || []).filter((e) => (e.timestampMs || 0) >= SINCE);
-    let lastActivity = 0, lastPost = 0, posts = 0;
+  const agents = [];
+  for (const a of members) {
+    const entries = (transcripts[a.id] || []).filter((e) => (e.timestampMs || 0) >= SINCE);
+    let last = a.rosterActivity >= SINCE ? a.rosterActivity : 0, lastPost = 0, posts = 0, work = 0, doing = null;
     for (const e of entries) {
-      lastActivity = Math.max(lastActivity, e.timestampMs || 0);
-      if (e.kind !== 'send-message') continue;
-      const c = e.message?.content;
-      if (typeof c !== 'string' || !c.trim()) continue;          // widgets/botones no son hallazgos
-      if (PRIVATE_RE.test(c)) continue;
-      if (a.electionOnly && !ELECTION_RE.test(c)) continue;
-      if (/^hey|^hola\.? qued|good to meet you|what do you want me/i.test(c.trim())) continue;
-      lastPost = Math.max(lastPost, e.timestampMs);
-      posts++;
-      feed.push({ agente: a.name, ts: new Date(e.timestampMs).toISOString(), texto: redact(c).slice(0, 4000) });
+      last = Math.max(last, e.timestampMs || 0);
+      let tipo = null, c = null;
+      if (e.kind === 'send-message') { tipo = 'publica'; c = e.message?.content; }
+      else if (e.kind === 'message' && e.message?.role === 'assistant') { tipo = 'trabaja'; c = e.message?.content; }
+      else if (e.kind === 'message' && e.message?.role === 'user') { tipo = 'recibe'; c = e.message?.content; }
+      const txt = tipo && publicText(c, a);
+      if (!txt) continue;
+      if (tipo === 'publica') { posts++; lastPost = Math.max(lastPost, e.timestampMs); }
+      if (tipo === 'trabaja') work++;
+      if (tipo !== 'recibe') doing = { ts: e.timestampMs, texto: txt.slice(0, 220) };
+      feed.push({ agente: a.apodo, bot: a.bot, tipo, ts: new Date(e.timestampMs).toISOString(), texto: txt });
     }
     const h = peruHour(now);
-    const inWindow = h >= a.window[0] && h <= a.window[1];
-    const quietMin = lastActivity ? Math.round((now - lastActivity) / 60000) : null;
-    let estado = 'fuera-de-horario';
-    if (inWindow) estado = quietMin !== null && quietMin <= a.maxQuietMin ? 'cumpliendo' : 'atrasado';
-    else if (h < a.window[0]) estado = 'programado';
-    const start = `${String(Math.floor(a.window[0])).padStart(2, '0')}:${String(Math.round((a.window[0] % 1) * 60)).padStart(2, '0')}`;
-    schedule.push({
-      agente: a.name, rol: a.role, inicio: start, estado, publicaciones: posts,
-      ultimaActividad: lastActivity ? new Date(lastActivity).toISOString() : null,
+    const inWindow = h >= a.window[0] && h < a.window[1];
+    const quietMin = last ? Math.round((now - last) / 60000) : null;
+    let estado;
+    if (quietMin !== null && quietMin <= 3) estado = 'activo';               // trabajando en este momento
+    else if (inWindow) estado = quietMin !== null && quietMin <= a.maxQuietMin ? 'cumpliendo' : 'atrasado';
+    else estado = h < a.window[0] ? 'programado' : 'fuera-de-horario';
+    agents.push({
+      agente: a.apodo, bot: a.bot, puesto: a.puesto, rol: a.role, nuevo: a.nuevo, inicio: hhmm(a.window[0]), estado,
+      publicaciones: posts, tareas: work,
+      ultimaActividad: last ? new Date(last).toISOString() : null,
       ultimaPublicacion: lastPost ? new Date(lastPost).toISOString() : null,
-      silencioMin: quietMin, silencioMaximoMin: a.maxQuietMin,
+      haciendo: doing ? { ts: new Date(doing.ts).toISOString(), texto: doing.texto } : null,
+      silencioMaximoMin: a.maxQuietMin, _quiet: quietMin,
     });
   }
   feed.sort((x, y) => y.ts.localeCompare(x.ts));
   return {
-    feed: { actualizado: new Date(now).toISOString(), nota: 'Mensajes publicados por bots de IA. Son trabajo en curso: verifica siempre contra la fuente oficial que citan.', items: feed.slice(0, 500) },
-    schedule: { actualizado: new Date(now).toISOString(), dia: DAY, plan: PLAN, agentes: schedule },
+    feed: { nota: 'Mensajes de agentes de IA. Son trabajo en curso: verifica siempre contra la fuente oficial que citan.', items: feed.slice(0, 800) },
+    schedule: { dia: DAY, plan: PLAN, agentes: agents },
   };
 }
 
@@ -123,23 +173,29 @@ function alert(schedule) {
   const late = schedule.agentes.filter((a) => a.estado === 'atrasado');
   const fresh = late.filter((a) => !st[a.agente] || Date.now() - st[a.agente] > 2 * 3600e3);
   if (!fresh.length) return;
-  const msg = 'ERM 2026 · bots atrasados: ' + fresh.map((a) => `${a.agente} (${a.silencioMin ?? '∞'} min sin actividad)`).join(', ');
+  const msg = 'ERM 2026 · bots atrasados: ' + fresh.map((a) => `${a.agente}/${a.bot} (${a._quiet ?? '∞'} min sin actividad)`).join(', ');
   try {
     execFileSync('hermes', ['send', '-t', 'telegram', msg], { stdio: 'ignore', timeout: 30000 });
     for (const a of fresh) st[a.agente] = Date.now();
+    fs.mkdirSync(path.dirname(STATE), { recursive: true });
     fs.writeFileSync(STATE, JSON.stringify(st));
   } catch (e) { console.error('telegram falló:', e.message); }
 }
 
 const { feed, schedule } = build();
 if (DRY) {
-  console.log(JSON.stringify(schedule, null, 1));
-  console.log(feed.items.slice(0, 15).map((x) => `${x.ts} ${x.agente}: ${x.texto.slice(0, 160)}`).join('\n'));
+  console.log(schedule.agentes.map((a) => `${a.agente.padEnd(9)} ${a.bot.padEnd(12)} ${a.estado.padEnd(16)} pub=${a.publicaciones} tareas=${a.tareas} quiet=${a._quiet}`).join('\n'));
+  console.log(feed.items.slice(0, 12).map((x) => `${x.ts} ${x.agente} [${x.tipo}]: ${x.texto.slice(0, 140).replace(/\n/g, ' ')}`).join('\n'));
   process.exit(0);
 }
 fs.mkdirSync(OUT, { recursive: true });
-fs.writeFileSync(path.join(OUT, 'feed.json'), JSON.stringify(feed, null, 1));
-fs.writeFileSync(path.join(OUT, 'schedule.json'), JSON.stringify(schedule, null, 1));
-if (REMOTE !== 'none') execFileSync('scp', ['-q', '-o', 'ConnectTimeout=15', path.join(OUT, 'feed.json'), path.join(OUT, 'schedule.json'), REMOTE], { stdio: 'inherit', timeout: 60000 });
-if (REMOTE !== 'none') alert(schedule);
+// Solo se reescribe si cambió algo: así el repo no acumula commits vacíos.
+const writeIfChanged = (f, obj) => {
+  const p = path.join(OUT, f), txt = JSON.stringify(obj, (k, v) => (k === '_quiet' ? undefined : v), 1);
+  let old = null; try { old = fs.readFileSync(p, 'utf8'); } catch { /* nuevo */ }
+  if (old !== txt) fs.writeFileSync(p, txt);
+};
+writeIfChanged('feed.json', feed);
+writeIfChanged('schedule.json', schedule);
+if (process.env.ERM_ALERT === '1') alert(schedule);
 console.log(new Date().toISOString(), 'ok', feed.items.length, 'mensajes;', schedule.agentes.map((a) => `${a.agente}=${a.estado}`).join(' '));

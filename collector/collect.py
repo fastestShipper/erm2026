@@ -68,22 +68,44 @@ class NotLive(Exception):
     """El portal responde, pero con la página 'Próximamente' (HTML) en vez de JSON."""
 
 
+class Blocked(Exception):
+    """La ONPE (CloudFront/AWS WAF) rechazó o desafió el pedido. No se intenta evadir."""
+
+
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *a, **k):
+        return None
+
+
+_opener = urllib.request.build_opener(_NoRedirect)
+
+
 def get(path, tries=3):
     url = f'{BASE}/{path}'
     last = None
     for i in range(tries):
         try:
             req = urllib.request.Request(url, headers=HEADERS)
-            with urllib.request.urlopen(req, timeout=25) as r:
+            with _opener.open(req, timeout=25) as r:
                 body = r.read()
                 ctype = r.headers.get('content-type', '')
+                waf = r.headers.get('x-amzn-waf-action')
             time.sleep(DELAY)
+            if waf:
+                raise Blocked(f'{path}: AWS WAF pide {waf}')
             if 'json' not in ctype:
                 raise NotLive(f'{path}: {ctype or "sin content-type"}')
             j = json.loads(body.decode('utf-8'))
             return j
-        except NotLive:
+        except (NotLive, Blocked):
             raise
+        except urllib.error.HTTPError as e:
+            if e.code in (301, 302, 303, 307, 308):
+                raise NotLive(f'{path}: redirige a {e.headers.get("location", "?")}')
+            if e.code in (401, 403, 405, 429) or e.headers.get('x-amzn-waf-action'):
+                raise Blocked(f'{path}: HTTP {e.code}')
+            last = e
+            time.sleep(2 * (i + 1))
         except (urllib.error.URLError, TimeoutError, ValueError, ConnectionError) as e:
             last = e
             time.sleep(2 * (i + 1))
@@ -290,6 +312,14 @@ def main():
         log('esperando:', e)
         publish('estado del portal')
         return
+    except Blocked as e:
+        status.update({'estado': 'bloqueado', 'detalle': 'La ONPE está rechazando consultas automáticas en este momento '
+                       '(protección anti-bot). No la evadimos: el tablero se actualiza cuando vuelva a responder. '
+                       'Mientras tanto, consulta directamente resultadoelectoral.onpe.gob.pe.', 'error': str(e)[:300]})
+        write_json('status.json', status)
+        log('bloqueado:', e)
+        publish('estado del portal')
+        return
     except RuntimeError as e:
         status.update({'estado': 'error', 'detalle': 'No se pudo consultar a la ONPE.', 'error': str(e)[:300]})
         write_json('status.json', status)
@@ -316,13 +346,13 @@ def main():
     write_json('onpe/elecciones.json', el_raw, manifest, f'proceso/{pid}/elecciones')
     try:
         write_json('onpe/fechas.json', get('fecha/listarFecha'), manifest, 'fecha/listarFecha')
-    except (RuntimeError, NotLive):
+    except (RuntimeError, NotLive, Blocked):
         pass
     for path, rel in (('participacion-ciudadana/totales?tipoFiltro=total', 'onpe/participacion-totales.json'),
                       ('mesa/totales?tipoFiltro=eleccion', 'onpe/mesas-totales.json')):
         try:
             write_json(rel, get(path), manifest, path)
-        except (RuntimeError, NotLive):
+        except (RuntimeError, NotLive, Blocked):
             pass
 
     elecciones = [e for e in (data_of(el_raw) or []) if (e.get('idEleccion') or 0) > 0]
@@ -401,7 +431,7 @@ def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, changed, checks):
             q = f'ubigeos/provincias?idEleccion={eid}&idAmbitoGeografico=1&idUbigeoDepartamento={d["ubigeo"]}'
             try:
                 provs = data_of(get(q)) or []
-            except (RuntimeError, NotLive):
+            except (RuntimeError, NotLive, Blocked):
                 continue
             for pv in provs:
                 pc = pv.get('ubigeo') or pv.get('idUbigeo')
@@ -411,7 +441,7 @@ def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, changed, checks):
                 if lvl == 3:
                     try:
                         ds = data_of(get(f'ubigeos/distritos?idEleccion={eid}&idAmbitoGeografico=1&idUbigeoProvincia={pc}')) or []
-                    except (RuntimeError, NotLive):
+                    except (RuntimeError, NotLive, Blocked):
                         ds = []
                     for di in ds:
                         dc = di.get('ubigeo') or di.get('idUbigeo')
@@ -431,7 +461,7 @@ def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, changed, checks):
                 st['distritos'][dist] = {'nombre': label, 'totales': compact_totals(t),
                                          'participantes': compact_participants(p, 6)}
             check_scope(checks, f'{nombre} · {label}', t, p)
-        except (RuntimeError, NotLive) as e:
+        except (RuntimeError, NotLive, Blocked) as e:
             log('lower:', e)
         budget -= 2
     write_json(f'ambitos/eleccion-{eid}.json', {'eleccion': nombre,
