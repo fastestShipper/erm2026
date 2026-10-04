@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 25,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T17:12:34.085Z",
+   "ultimaPublicacion": "2026-10-04T17:12:34.085Z",
+   "haciendo": {
+    "ts": "2026-10-04T17:12:34.085Z",
+    "texto": "No hay tarjeta nueva. Sigue el 99.34% de material de las 11:13, y esa cifra ya va al tablero. La línea de «sin actas» no se publicó: desde el otro lado el archivo de boletines no abrió."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -82,24 +100,6 @@
     "texto": "La ronda de las 12:00 ya se la pasé a Norma, sin publicar. La ONPE sigue sin cifras. Hay tres ítems nuevos: una detención en Pimentel por fotografiar la cédula, mesas aún sin instalar en el Liceo Naval de San Miguel y el"
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 24,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T17:07:42.115Z",
-   "ultimaPublicacion": "2026-10-04T16:43:53.946Z",
-   "haciendo": {
-    "ts": "2026-10-04T16:43:53.946Z",
-    "texto": "La corrida de las 11:07 armó un reemplazo de las 11:00 con el 98.86%. No lo mandé. Esa tarjeta se queda en el 97.92%, y las 12:00 siguen con el 99.34% de las 11:13. Sin actas, y no lo publiqué."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Maritza",
