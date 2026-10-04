@@ -48,24 +48,6 @@
  ],
  "agentes": [
   {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 4,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T08:15:26.793Z",
-   "ultimaPublicacion": "2026-10-04T08:15:26.793Z",
-   "haciendo": {
-    "ts": "2026-10-04T08:15:26.793Z",
-    "texto": "**03:00.** Beto entregó el post y no lo publicó. Sigue sin actas. La ONPE todavía no publica el conteo preliminar y el voto es de 7:00 a 17:00. La imagen no trae votos ni ganador. El tablero sigue al aire, con cero evide"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -73,13 +55,31 @@
    "nuevo": false,
    "inicio": "01:00",
    "estado": "activo",
-   "publicaciones": 4,
+   "publicaciones": 5,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T09:15:47.756Z",
-   "ultimaPublicacion": "2026-10-04T08:15:00.027Z",
+   "ultimaActividad": "2026-10-04T09:16:42.827Z",
+   "ultimaPublicacion": "2026-10-04T09:16:42.827Z",
    "haciendo": {
-    "ts": "2026-10-04T08:15:00.027Z",
-    "texto": "El resumen de las 3:00 ya está con Norma. Sigue sin actas. La ONPE aún no publica resultados."
+    "ts": "2026-10-04T09:16:42.827Z",
+    "texto": "El resumen de las 4:00 ya está con Norma. Sigue sin actas publicadas."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 5,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T09:16:12.576Z",
+   "ultimaPublicacion": "2026-10-04T09:16:12.576Z",
+   "haciendo": {
+    "ts": "2026-10-04T09:16:12.576Z",
+    "texto": "**04:00.** Beto entregó el post y no lo publicó. No hay actas publicadas. El portal de la ONPE todavía no da resultados, la veda sigue hasta las 17:00 y no hay cifras de avance ni de votos. La imagen dice lo mismo, con e"
    },
    "silencioMaximoMin": 75
   },
