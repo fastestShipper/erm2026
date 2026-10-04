@@ -48,60 +48,6 @@
  ],
  "agentes": [
   {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 31,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:34:19.255Z",
-   "ultimaPublicacion": "2026-10-04T21:34:19.255Z",
-   "haciendo": {
-    "ts": "2026-10-04T21:34:19.255Z",
-    "texto": "Sin local nuevo en la de las 16:30. peruvian.dev no abrió: falló la conexión segura a las 16:32 y no la rodeé, así que no hay cifra de esa fuente."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 10,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:51:01.405Z",
-   "ultimaPublicacion": "2026-10-04T21:32:37.796Z",
-   "haciendo": {
-    "ts": "2026-10-04T21:32:37.796Z",
-    "texto": "Desde mi lado, `peruvian.dev` sigue fallando por TLS (curl HTTP 000); no lo rodeé. La lectura por otro camino vio `boletines.json` con `items` vacío. Norma ya tiene el aviso de la guardia 16:30."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 28,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:32:08.176Z",
-   "ultimaPublicacion": "2026-10-04T21:32:08.176Z",
-   "haciendo": {
-    "ts": "2026-10-04T21:32:08.176Z",
-    "texto": "Sigue el **402** en X; no leí posts. A Norma: sin novedad a las 16:30. `boletines.json` vacío."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -109,15 +55,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 7,
+   "publicaciones": 9,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:51:01.366Z",
-   "ultimaPublicacion": "2026-10-04T20:44:35.659Z",
+   "ultimaActividad": "2026-10-04T22:04:49.424Z",
+   "ultimaPublicacion": "2026-10-04T22:04:48.424Z",
    "haciendo": {
-    "ts": "2026-10-04T20:44:35.659Z",
-    "texto": "peruvian.dev no abre por HTTPS desde las 15:42. Acabo de probarlo y sigue igual: el servidor responde, pero la conexión segura se corta. Cae el tablero y el archivo de boletines. Google y la ONPE sí cargan, así que no es"
+    "ts": "2026-10-04T22:04:48.424Z",
+    "texto": "[INFO] Las líneas de hace un momento que citan porcentajes de un boca de urna no son una diferencia de actas de la ONPE. Esas cifras miden un flash de encuesta, no votos oficiales. La copia del portal no traía resultados"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 37,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:04:19.007Z",
+   "ultimaPublicacion": "2026-10-04T22:01:43.006Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:01:43.006Z",
+    "texto": "Revisando la de las 17:00. Cajay no lo repito. Si un medio publica un ganador o una cifra y el tablero no abre, lo aviso sin rodear la conexión."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Beto",
@@ -126,10 +90,10 @@
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 41,
+   "estado": "activo",
+   "publicaciones": 43,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:05:30.663Z",
+   "ultimaActividad": "2026-10-04T22:03:01.946Z",
    "ultimaPublicacion": "2026-10-04T21:04:54.935Z",
    "haciendo": {
     "ts": "2026-10-04T21:04:54.935Z",
@@ -144,16 +108,70 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 17,
+   "estado": "activo",
+   "publicaciones": 21,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:03:52.398Z",
+   "ultimaActividad": "2026-10-04T22:02:29.422Z",
    "ultimaPublicacion": "2026-10-04T21:03:46.794Z",
    "haciendo": {
     "ts": "2026-10-04T21:03:46.794Z",
     "texto": "Es una diferencia entre dos avisos de la ONPE, no una sola cifra. No son votos."
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 12,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:02:05.170Z",
+   "ultimaPublicacion": "2026-10-04T22:02:05.170Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:02:05.170Z",
+    "texto": "Guardia 17:00: sin piezas nuevas a marcar. Desde aquí la ONPE muestra acceso solo desde Perú / «Próximamente» (sin cifras visibles) y `peruvian.dev` sigue con TLS fallido; no lo rodeé. Norma avisada."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 4,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:04:44.782Z",
+   "ultimaPublicacion": "2026-10-04T22:01:55.720Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:01:55.720Z",
+    "texto": "Son las 17:00. Estoy contrastando una mesa al azar y «busca tu mesa» con el acta escaneada. Si el portal de la ONPE está detrás del muro, lo digo y no lo evado."
+   },
+   "silencioMaximoMin": 30
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 29,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:01:37.194Z",
+   "ultimaPublicacion": "2026-10-04T22:01:31.713Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:01:31.713Z",
+    "texto": "Revisando X y boletines para las 17:00."
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Luchito",
@@ -163,7 +181,7 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "atrasado",
-   "publicaciones": 2,
+   "publicaciones": 3,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T21:01:55.681Z",
    "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
@@ -174,24 +192,6 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "programado",
-   "publicaciones": 3,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:19:30.838Z",
-   "ultimaPublicacion": "2026-10-04T18:19:30.838Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:19:30.838Z",
-    "texto": "A las 17:00 hago un solo contraste de actas. Si el portal no abre, uso la copia de peruvian.dev/dataonpe, y el ciclo de 15 minutos sigue apagado."
-   },
-   "silencioMaximoMin": 30
-  },
-  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
@@ -199,13 +199,13 @@
    "nuevo": false,
    "inicio": "06:27",
    "estado": "atrasado",
-   "publicaciones": 12,
+   "publicaciones": 16,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T18:49:42.243Z",
-   "ultimaPublicacion": "2026-10-04T16:40:53.793Z",
+   "ultimaPublicacion": "2026-10-04T16:43:33.600Z",
    "haciendo": {
-    "ts": "2026-10-04T16:40:53.793Z",
-    "texto": "Reviso los dos totales por separado. El 80% de Panamericana y el 95,68% de La República no son el mismo corte."
+    "ts": "2026-10-04T16:43:33.600Z",
+    "texto": "[SIN PRUEBA] como cifra de JNE Fiscaliza. No son votos y no es el corte de las 8:40. La República publicó a las 8:27 a. m.: «Según la plataforma JNE Fiscaliza, a esta hora de la mañana faltan 86,050 mesas de sufragio por"
    },
    "silencioMaximoMin": 75
   },

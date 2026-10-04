@@ -1,4 +1,3263 @@
 {
  "fuente": "https://resultadoelectoral.onpe.gob.pe",
- "elecciones": []
+ "proceso": {
+  "id": 4,
+  "nombre": "ELECCIONES REGIONALES Y MUNICIPALES 2026",
+  "acronimo": "ERM2026",
+  "fechaProceso": "2026-10-04T05:00:00Z"
+ },
+ "elecciones": [
+  {
+   "id": 1,
+   "nombre": "Elecciones Regionales",
+   "menu": "Elecciones Regionales",
+   "nivel": 1,
+   "tipo": "gobernador",
+   "totales": {
+    "actasContabilizadas": 0.0,
+    "contabilizadas": 0,
+    "totalActas": 63584,
+    "participacionCiudadana": 0.0,
+    "actasEnviadasJee": 0.0,
+    "enviadasJee": 0,
+    "actasPendientesJee": 100.0,
+    "pendientesJee": 63584,
+    "totalVotosEmitidos": 0,
+    "totalVotosValidos": 0,
+    "fechaActualizacion": 1791151214377
+   },
+   "participantes": [],
+   "departamentos": [
+    {
+     "ubigeo": "010000",
+     "nombre": "AMAZONAS",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 1263,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 1263,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "JABIER JULON PEREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "FERRY TORRES HUAMAN",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "SANTIAGO JONATHAN SANCA GRANDEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "AMILCAR DIAZ MENDOZA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "MOVIMIENTO REGIONAL AMAZONENSE UNIDOS AL CAMPO",
+       "codPartido": 139,
+       "candidato": "SEGUNDO QUITERIO HERNANDEZ VASQUEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "MOVIMIENTO REGIONAL VICTORIA AMAZONENSE",
+       "codPartido": 140,
+       "candidato": "GRIMALDO VASQUEZ TAN",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "JABIER JULON PEREZ",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "FERRY TORRES HUAMAN",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 1263,
+      "votosMaxFaltan": 378900,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "020000",
+     "nombre": "ÁNCASH",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 3427,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 3427,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "ANTONIO JORGE CASANA ALENCASTRE",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "ELIAS MARCIAL VARAS MELENDEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
+       "codPartido": 102,
+       "candidato": "JUAN DEL CARMEN VASQUEZ CRUZADO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "GIL JAIME CARRION RAMIREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "JHOSEPT AMADO PEREZ MIMBELA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMÓCRATA VERDE",
+       "codPartido": 105,
+       "candidato": "ENRIQUE VALOIS ALEJANDRO OCROSPOMA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "YVAN SEGUNDINO HERNANDEZ CARRASCO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO PAÍS PARA TODOS",
+       "codPartido": 120,
+       "candidato": "VLADIMIR ANTONIO MEZA VILLARREAL",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "JUAN CARLOS MORILLO ULLOA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "BETTO BARRIONUEVO ROMERO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "WALTER SEVERO DURAND CASTRO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "SOCIOS POR ANCASH",
+       "codPartido": 141,
+       "candidato": "SUSY YSABEL APONTE POLO DE TELLO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "ANTONIO JORGE CASANA ALENCASTRE",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "ELIAS MARCIAL VARAS MELENDEZ",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 3427,
+      "votosMaxFaltan": 1028100,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "030000",
+     "nombre": "APURÍMAC",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 1305,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 1305,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "BLAS BARRIENTOS ALTAMIRANO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "GUSTAVO ALEJANDRO GUTIERREZ ORTIZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
+       "codPartido": 103,
+       "candidato": "DAVID DAMIANO VEGA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "ELVYN SAMUEL DIAZ TELLO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PROGRESEMOS",
+       "codPartido": 122,
+       "candidato": "GUIDO CHAHUAYLLA MALDONADO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "BLAS BARRIENTOS ALTAMIRANO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "GUSTAVO ALEJANDRO GUTIERREZ ORTIZ",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 1305,
+      "votosMaxFaltan": 391500,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "040000",
+     "nombre": "AREQUIPA",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 4194,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 4194,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "ELMER CACERES LLICA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "SALVEMOS AL PERÚ",
+       "codPartido": 111,
+       "candidato": "DAVID CESAR ARDILES SARAVIA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "PEDRO EDWIN MARTINEZ TALAVERA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO CÍVICO OBRAS",
+       "codPartido": 117,
+       "candidato": "MIGUEL CORONADO ZARATE FLORES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "COALICIÓN TRANSFORMADORA TIERRA VERDE",
+       "codPartido": 124,
+       "candidato": "MILCO TORRES BARRIONUEVO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "HAROLD EDGARD RODRIGUEZ QUISPE",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "YACKELIN LOURDES HUARSAYA CALIZAYA DE LLACCHUA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "JENRY FEDERICO HUISA CALAPUJA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "HECTOR HUGO HERRERA HERRERA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO APRISTA PERUANO",
+       "codPartido": 112,
+       "candidato": "HUGO EFRAIN AGUILAR GONZALES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "JOSE LUIS ANCALLE GUTIERREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "YO AREQUIPA",
+       "codPartido": 145,
+       "candidato": "BERLY JOSE GONZALES ARIAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "MOVIMIENTO REGIONAL AREQUIPA AVANCEMOS",
+       "codPartido": 144,
+       "candidato": "BENIGNO TEOFILO CORNEJO VALENCIA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AREQUIPA, TRADICIÓN Y FUTURO",
+       "codPartido": 142,
+       "candidato": "CESAR ANGEL HUAMANTUMA ALARCON",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA AREQUIPEÑA",
+       "codPartido": 143,
+       "candidato": "FLORENTINO ALFREDO ZEGARRA TEJADA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "ELMER CACERES LLICA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "SALVEMOS AL PERÚ",
+       "codPartido": 111,
+       "candidato": "DAVID CESAR ARDILES SARAVIA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 4194,
+      "votosMaxFaltan": 1258200,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "050000",
+     "nombre": "AYACUCHO",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 1890,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 1890,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "VISIÓN PERÚ",
+       "codPartido": 127,
+       "candidato": "EDGAR ROJAS TUPPIA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "VIDAL URBANO JONISLLA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "LIBERTAD POPULAR",
+       "codPartido": 115,
+       "candidato": "PABEL NESTOR BELLIDO MIRANDA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "OMAR FLORES YAROS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA CIUDADANA",
+       "codPartido": 132,
+       "candidato": "SANTOS MARTIN HUACHACA CONTRERAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEL BUEN GOBIERNO",
+       "codPartido": 121,
+       "candidato": "ULISES FEDERICO LARREA MORALES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "RENOL SILBIO PICHARDO RAMOS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "APP - TRABAJA AYACUCHO",
+       "codPartido": 169,
+       "candidato": "EDUARDO CESAR HUACOTO DIAZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "VISIÓN PERÚ",
+       "codPartido": 127,
+       "candidato": "EDGAR ROJAS TUPPIA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "VIDAL URBANO JONISLLA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 1890,
+      "votosMaxFaltan": 567000,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "060000",
+     "nombre": "CAJAMARCA",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 4232,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 4232,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "MOISES GONZALEZ CRUZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "JOSE NENIL MEDINA GUERRERO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "SILVIA MARIA MONTEZA FACHO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO TODO CON EL PUEBLO",
+       "codPartido": 131,
+       "candidato": "NORVIL RAFAEL HEREDIA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+       "codPartido": 98,
+       "candidato": "HILARIO PORFIRIO MEDINA VASQUEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "FELICITA MADALEINE TOCTO GUERRERO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "EDISON CARRASCO OLIVERA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "YURI ERNESTO NEYRA GUEVARA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE",
+       "codPartido": 146,
+       "candidato": "REBER JOAQUIN RAMIREZ GAMARRA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "MOISES GONZALEZ CRUZ",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "JOSE NENIL MEDINA GUERRERO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 4232,
+      "votosMaxFaltan": 1269600,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "240000",
+     "nombre": "CALLAO",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 2900,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 2900,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "DANTE JOSE MANDRIOTTI CASTRO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "PEDRO CARMELO SPADARO PHILIPPS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POPULAR CRISTIANO - PPC",
+       "codPartido": 118,
+       "candidato": "JOSE REMIGIO SOSA DULANTO BADIOLA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "CINTHYA ISELA CAMASCA ZAMUDIO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA POPULAR",
+       "codPartido": 97,
+       "candidato": "MIGUEL FRANCISCO CORDANO RODRIGUEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+       "codPartido": 98,
+       "candidato": "ELVIRA RICABELL MADALENGOITIA CAJAL",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEL BUEN GOBIERNO",
+       "codPartido": 121,
+       "candidato": "VICTOR ARMANDO HUARANCCA MEDINA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "ISMAEL ALBERTO PAREDES AVALOS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "DANTE JOSE MANDRIOTTI CASTRO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "PEDRO CARMELO SPADARO PHILIPPS",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 2900,
+      "votosMaxFaltan": 870000,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "070000",
+     "nombre": "CUSCO",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 3934,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 3934,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "LUIS ANGEL ARAGON CARREÑO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO CÍVICO OBRAS",
+       "codPartido": 117,
+       "candidato": "RONAL FUENTES YUNGURI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "COALICIÓN TRANSFORMADORA TIERRA VERDE",
+       "codPartido": 124,
+       "candidato": "VIHULDER ROMERO HUAMANI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMÓCRATA VERDE",
+       "codPartido": 105,
+       "candidato": "T'IKA LUIZAR OBREGON",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PRIN",
+       "codPartido": 108,
+       "candidato": "IVAN VLADIMIR APARICIO ARENAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "WILFREDO PARHUAY HUAMAN",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+       "codPartido": 98,
+       "candidato": "RICARDO YURY CORNEJO SANCHEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "ABEL PAUCARMAYTA TACURI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "HECTOR ACURIO CRUZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PROGRESEMOS",
+       "codPartido": 122,
+       "candidato": "EDY EDWARD CUELLAR MARGHOLT",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "VERONIKA FANNY MENDOZA FRISCH",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE REGIONAL TÚPAC",
+       "codPartido": 148,
+       "candidato": "EDGAR AMERICO OCHOA PEZO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "LUIS ANGEL ARAGON CARREÑO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "PARTIDO CÍVICO OBRAS",
+       "codPartido": 117,
+       "candidato": "RONAL FUENTES YUNGURI",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 3934,
+      "votosMaxFaltan": 1180200,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "080000",
+     "nombre": "HUANCAVELICA",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 1264,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 1264,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "JUAN CARLOS COMUN GAVILAN",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "HECTOR LOLO ANTONIO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "SAMUEL MORAN CARDENAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "BATALLA PERÚ",
+       "codPartido": 125,
+       "candidato": "JULIO CESAR MEZA CCANTO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "INTY DAVID PINTO MENDOZA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "FELIX CRISPIN REYMUNDO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "JUAN CARLOS COMUN GAVILAN",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "HECTOR LOLO ANTONIO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 1264,
+      "votosMaxFaltan": 379200,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "090000",
+     "nombre": "HUÁNUCO",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 2330,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 2330,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "MIGUEL ANGEL MEZA MALPARTIDA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "MADELEINE DEL ROSARIO ALOMIA VALDERRAMA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "LIBERTAD POPULAR",
+       "codPartido": 115,
+       "candidato": "FORTUNATO JUAN RAMOS LAVADO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "ENRIQUE ORLANDO PULGAR LUCAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO PAÍS PARA TODOS",
+       "codPartido": 120,
+       "candidato": "ROSALI LEANDRO TARAZONA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "ANTONIO ROBLES JARA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "ROBINSON AGUIRRE CASIMIRO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "LUIS RAUL PICON QUEDO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "MOVIMIENTO INDEPENDIENTE REGIONAL HUÁNUCO PRIMERO",
+       "codPartido": 149,
+       "candidato": "SERGIO JUNIOR PRINCIPE ILDEFONSO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "MOVIMIENTO POLÍTICO UNIDOS POR EL DESARROLLO DE HUÁNUCO - UDH",
+       "codPartido": 150,
+       "candidato": "ROSENDO LEONCIO SERNA ROMAN",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "MIGUEL ANGEL MEZA MALPARTIDA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "MADELEINE DEL ROSARIO ALOMIA VALDERRAMA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 2330,
+      "votosMaxFaltan": 699000,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "100000",
+     "nombre": "ICA",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 2434,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 2434,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "CESAR ANTONIO CARRANZA FALLA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "ALONSO ALBERTO NAVARRO CABANILLAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "JAVIER HERMOGENES CORNEJO VENTURA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POPULAR CRISTIANO - PPC",
+       "codPartido": 118,
+       "candidato": "VICTOR LEONEL LLACSA SARAVIA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA POPULAR",
+       "codPartido": 97,
+       "candidato": "MIGUEL ANGEL ELIAS AVALOS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PROGRESEMOS",
+       "codPartido": 122,
+       "candidato": "JAVIER GALLEGOS BARRIENTOS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "JUAN ENRIQUE MENDOZA URIBE",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "NOEMI MIRIAN ALDERETE FERNANDEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "JOSE ARTURO GUTIERREZ AURES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "CESAR ANTONIO CARRANZA FALLA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "ALONSO ALBERTO NAVARRO CABANILLAS",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 2434,
+      "votosMaxFaltan": 730200,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "110000",
+     "nombre": "JUNÍN",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 3680,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 3680,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "ARNOLDO DANTE MALLMA AUQUI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "JUAN MAEL PALOMINO ESPINOZA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "JOSE MIGUEL ALVAREZ ROJAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "DIMAS RUDY ALIAGA CASTRO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "ADOLFO AMILCAR ROJAS CRISTOBAL",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA POPULAR",
+       "codPartido": 97,
+       "candidato": "JULIA CAMAVILCA ARZAPALO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "BATALLA PERÚ",
+       "codPartido": 125,
+       "candidato": "CESAR AUGUSTO MEREA TELLO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "FERNANDO POOL ORIHUELA ROJAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "ARNOLDO DANTE MALLMA AUQUI",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "JUAN MAEL PALOMINO ESPINOZA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 3680,
+      "votosMaxFaltan": 1104000,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "120000",
+     "nombre": "LA LIBERTAD",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 5297,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 5297,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "OSCAR RAFAEL BENAVIDES RUIZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "PATRICIA LILIANA BOLAÑOS GRAU",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+       "codPartido": 98,
+       "candidato": "MARLON KENNY ALARCON AZPILCUETA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "DANIEL ENRIQUE SALAVERRY VILLA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
+       "codPartido": 104,
+       "candidato": "ELMO JOSE ANTONIO PALACIOS ALVA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "ALDO CARLOS MARIÑOS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO APRISTA PERUANO",
+       "codPartido": 112,
+       "candidato": "JULIO CESAR MORAN OTINIANO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "ELIAS NICOLAS RODRIGUEZ ZAVALETA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "OSCAR RAFAEL BENAVIDES RUIZ",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "PATRICIA LILIANA BOLAÑOS GRAU",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 5297,
+      "votosMaxFaltan": 1589100,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "130000",
+     "nombre": "LAMBAYEQUE",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 3583,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 3583,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "SAUL DAVID MILIAN CORREA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "HILDA MARLENY PORTERO LOPEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO TODO CON EL PUEBLO",
+       "codPartido": 131,
+       "candidato": "MARCOS ANTONIO CALLIRGOS ALVAREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "RUBEN EDUARDO FERNANDEZ MORALES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FE EN EL PERÚ",
+       "codPartido": 106,
+       "candidato": "ALVARO RENATO CALDERON SEGURA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POPULAR CRISTIANO - PPC",
+       "codPartido": 118,
+       "candidato": "ANTONIO URIARTE GONZALES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "ALEJANDRO RUIZ PAISIG",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA POPULAR",
+       "codPartido": 97,
+       "candidato": "ROLANDO BARBOZA DIAZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+       "codPartido": 98,
+       "candidato": "JUAN MANUEL CARRASCO MILLONES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "JORGE LUIS MONTENEGRO CHAVESTA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "ELIZABETH ASUNCION CALDERON TAVARA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PUEBLO CONSCIENTE",
+       "codPartido": 130,
+       "candidato": "JOSE LUIS ALBERTO RUIZ QUINTANA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "CESAR MARTIN PERALES SAAVEDRA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO APRISTA PERUANO",
+       "codPartido": 112,
+       "candidato": "CARLOS MARIO ZANELLI VASQUEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "JUAN VIDAL RODRIGUEZ TERRONES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "SAUL DAVID MILIAN CORREA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "HILDA MARLENY PORTERO LOPEZ",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 3583,
+      "votosMaxFaltan": 1074900,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "140000",
+     "nombre": "LIMA",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 2881,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 2881,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "RAFAEL GASTON TADEO MILAGROS SANTOS NORMAND",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PRIN",
+       "codPartido": 108,
+       "candidato": "JOSE CARLOS BAUTISTA RUBIO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POPULAR CRISTIANO - PPC",
+       "codPartido": 118,
+       "candidato": "LUISA RUFINA MENESES RIVADENEYRA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "GRACIANO NEMECIO LUME FLORES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA POPULAR",
+       "codPartido": 97,
+       "candidato": "SIHUAR DENIS HEREDIA MAYHUIRE",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "RODOLFO JORGE ARAGON ROSADIO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "CESAR ISMAEL ZAPATA BELLON",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PROGRESEMOS",
+       "codPartido": 122,
+       "candidato": "JOSE JESUS SOSA BECERRA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEL BUEN GOBIERNO",
+       "codPartido": 121,
+       "candidato": "JOSE LUIS SANTA CRUZ ALCALA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "ANDRES EDUARDO TELLO VELAZCO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "JOSE TOMAS ALCANTARA MALASQUEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA RENOVACIÓN POPULAR Y TORO",
+       "codPartido": 153,
+       "candidato": "JAVIER JESUS ALVARADO GONZALES DEL VALLE",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "CONCERTACIÓN PARA EL DESARROLLO REGIONAL - LIMA",
+       "codPartido": 151,
+       "candidato": "CRISPULO EDDIE JARA SALAZAR",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "APP - LA CHOLITA",
+       "codPartido": 152,
+       "candidato": "LUIS EMILIO UENO SAMANAMUD",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "RAFAEL GASTON TADEO MILAGROS SANTOS NORMAND",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "PARTIDO POLÍTICO PRIN",
+       "codPartido": 108,
+       "candidato": "JOSE CARLOS BAUTISTA RUBIO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 2881,
+      "votosMaxFaltan": 864300,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "150000",
+     "nombre": "LORETO",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 2714,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 2714,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "FERNANDO MELENDEZ CELIS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
+       "codPartido": 99,
+       "candidato": "OSCAR ALEXANDER LLAPAPASCA SAMANIEGO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "PERCY FLORES AREVALO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "JORGE LUIS MERA RAMIREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "YONATAN VILLADOMA CONDEZO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA POPULAR",
+       "codPartido": 97,
+       "candidato": "OLMEX AEB ESCALANTE CHOTA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "JOSE MARTIN AREVALO PINEDO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO PAÍS PARA TODOS",
+       "codPartido": 120,
+       "candidato": "WILFREDO MOISES MALPARTIDA GOMEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "ROBERTO TITO CUNIBERTI TERRONES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "GERMAN VLADIMIR CHONG RIOS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "JUAN RAFAEL TORRES BALDEON",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PERÚ MODERNO",
+       "codPartido": 109,
+       "candidato": "TEDY VASQUEZ CARDENAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "FERNANDO MELENDEZ CELIS",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
+       "codPartido": 99,
+       "candidato": "OSCAR ALEXANDER LLAPAPASCA SAMANIEGO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 2714,
+      "votosMaxFaltan": 814200,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "160000",
+     "nombre": "MADRE DE DIOS",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 511,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 511,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "JOSE ABRAHAM CARDOZO MOUZULLY",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "WILBER UCHUPE FLOREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "JULIO ERNESTO MORENO LEVERENZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "CARLOS QUISPE MEDINA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+       "codPartido": 98,
+       "candidato": "YENIFER ZAVALA AREQUE",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "KIMYLSUNG DELGADO PALMA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO PAÍS PARA TODOS",
+       "codPartido": 120,
+       "candidato": "PEDRO WANGER CARI RODRIGUEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "SIMON PEDRO HORNA ALPACA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PROGRESEMOS",
+       "codPartido": 122,
+       "candidato": "EDGAR CLINT LOPEZ CORNEJO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEL BUEN GOBIERNO",
+       "codPartido": 121,
+       "candidato": "MANUEL FELIPE GUEVARA DUAREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "IRIANA VELASQUEZ RUIZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "ERNESTO HUILLCA RICALDE",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA LIBERTAD MADREDIOSENSE",
+       "codPartido": 154,
+       "candidato": "FREDDY ALVARO VRACKO METZGER",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "JOSE ABRAHAM CARDOZO MOUZULLY",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "WILBER UCHUPE FLOREZ",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 511,
+      "votosMaxFaltan": 153300,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "170000",
+     "nombre": "MOQUEGUA",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 572,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 572,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "VICTOR CATUNTA CUAYLA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "ABRAHAM ALEJANDRO CARDENAS ROMERO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POPULAR CRISTIANO - PPC",
+       "codPartido": 118,
+       "candidato": "PEDRO JUAN TITO CALIZAYA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "MILAR GODOFREDO ZENTENO MEJIA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PROGRESEMOS",
+       "codPartido": 122,
+       "candidato": "PERCY HUANCAPAZA CHAMBI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEL BUEN GOBIERNO",
+       "codPartido": 121,
+       "candidato": "HUGO ISAIAS QUISPE MAMANI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "JUAN LUIS HERRERA CHEJO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "LUIS DANTE ZUBIA CORTEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "JORGE LUIS LAMA CORDOVA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "KAUSACHUN",
+       "codPartido": 155,
+       "candidato": "JAIME ALBERTO RODRIGUEZ VILLANUEVA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "VAMOS MOQUEGUA",
+       "codPartido": 156,
+       "candidato": "RODOLFO ORESTE BALDI BURGA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "JUNTOS POR EL PERÚ",
+       "codPartido": 96,
+       "candidato": "VICTOR CATUNTA CUAYLA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "ABRAHAM ALEJANDRO CARDENAS ROMERO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 572,
+      "votosMaxFaltan": 171600,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "180000",
+     "nombre": "PASCO",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 789,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 789,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "ZUMEL TRUJILLO BRAVO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
+       "codPartido": 102,
+       "candidato": "LUCIO ROJAS VITOR",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "LUIS CARLOS SIMEON HURTADO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "HERLESS LAUREANO MAURICIO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMÓCRATA VERDE",
+       "codPartido": 105,
+       "candidato": "EDGAR VELASQUEZ HERRERA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA REGIONAL POR EL PERÚ",
+       "codPartido": 166,
+       "candidato": "MIGUEL ANGEL QUISPE PALOMINO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "BELARMINO BLANCO ALANIA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "JHONNY EDGAR INGA AUCAPIÑA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "LUIS MARIN POMACHAGUA OSORIO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "ZUMEL TRUJILLO BRAVO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "PARTIDO FRENTE DE LA ESPERANZA 2021",
+       "codPartido": 102,
+       "candidato": "LUCIO ROJAS VITOR",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 789,
+      "votosMaxFaltan": 236700,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "190000",
+     "nombre": "PIURA",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 5262,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 5262,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "REYNALDO ADOLFO HILBCK GUZMAN",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "SALVEMOS AL PERÚ",
+       "codPartido": 111,
+       "candidato": "GERARDO JOSE CABRERA CORDOVA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "DAVID ARTURO COLLAZOS MAZA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "JOSE ANTONIO DURAN PEREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POPULAR CRISTIANO - PPC",
+       "codPartido": 118,
+       "candidato": "WERNER ERNESTO WILHELM HERRERA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "VISIÓN PERÚ",
+       "codPartido": 127,
+       "candidato": "MARIA SOLEDAD PEÑA MORALES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ",
+       "codPartido": 107,
+       "candidato": "ANIBAL MARTINEZ JUAREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA POPULAR",
+       "codPartido": 97,
+       "candidato": "MARTIRES LIZANA SANTOS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DE LOS TRABAJADORES Y EMPRENDEDORES PTE PERÚ - COMUNIDAD POLÍTICA INKA PERÚ",
+       "codPartido": 136,
+       "candidato": "FELIX REIMUNDO CASTILLO RAMIREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "PEDRO ENRIQUE ALAMA FARFAN",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO PATRIÓTICO DEL PERÚ",
+       "codPartido": 104,
+       "candidato": "DECIDERIO RUFINO ESCOBAR",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO PAÍS PARA TODOS",
+       "codPartido": 120,
+       "candidato": "ELVIS BONIFAZ LOPEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "SANTIAGO ENRIQUE PAZ LOPEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO APRISTA PERUANO",
+       "codPartido": 112,
+       "candidato": "ADLER DANILO CALLE CASTILLO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "RODDY GUILLERMO LA TORRE GOMEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL",
+       "codPartido": 158,
+       "candidato": "SERVANDO GARCIA CORREA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "REYNALDO ADOLFO HILBCK GUZMAN",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "SALVEMOS AL PERÚ",
+       "codPartido": 111,
+       "candidato": "GERARDO JOSE CABRERA CORDOVA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 5262,
+      "votosMaxFaltan": 1578600,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "200000",
+     "nombre": "PUNO",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 3380,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 3380,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "PARTIDO CÍVICO OBRAS",
+       "codPartido": 117,
+       "candidato": "JESUS MAMANI CHIJCHEAPAZA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "EDGAR HUGO SUPO TIPULA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO PAÍS PARA TODOS",
+       "codPartido": 120,
+       "candidato": "WILBER CUTIPA ALEJO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "EDUARDO QUISPE PANDIA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PROGRESEMOS",
+       "codPartido": 122,
+       "candidato": "JUAN CARLOS AQUINO CONDORI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO PUEBLO CONSCIENTE",
+       "codPartido": 130,
+       "candidato": "JOSE RODRIGO CHALCO MENDOZA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "WILHEM ROGGER LIMACHI VIAMONTE",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "WALTER ENRIQUE MONROY PINTO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ASI - JUNTOS POR EL PERÚ",
+       "codPartido": 160,
+       "candidato": "JHOMAR MARCELINO TONCONI QUISPE",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "PARTIDO CÍVICO OBRAS",
+       "codPartido": 117,
+       "candidato": "JESUS MAMANI CHIJCHEAPAZA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "PARTIDO POLÍTICO PERÚ PRIMERO",
+       "codPartido": 110,
+       "candidato": "EDGAR HUGO SUPO TIPULA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 3380,
+      "votosMaxFaltan": 1014000,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "210000",
+     "nombre": "SAN MARTÍN",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 2525,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 2525,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "JORGE PANDURO RUIZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "MAYKSON CULQUI PANAIFO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "CARLOS JOB GOMEZ TORRES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA POPULAR",
+       "codPartido": 97,
+       "candidato": "DAVID ENRIQUE LANDA TUCTO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
+       "codPartido": 98,
+       "candidato": "MAXIMO OSCAR CABRERA CABRERA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "CHRISTOPHER SANDRO RIVERO UZATEGUI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "UNION REGIONAL",
+       "codPartido": 162,
+       "candidato": "JOSE TOMAS GONZALES REATEGUI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "JORGE PANDURO RUIZ",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "MAYKSON CULQUI PANAIFO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 2525,
+      "votosMaxFaltan": 757500,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "220000",
+     "nombre": "TACNA",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 1034,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 1034,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "SEGUNDO MARIO RUIZ RUBIO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO CÍVICO OBRAS",
+       "codPartido": 117,
+       "candidato": "MARCO ANTONIO HUACOLLO ALVAREZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO TODO CON EL PUEBLO",
+       "codPartido": 131,
+       "candidato": "HILDA MARISOL HERRERA HUAYHUA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "FERNANDO PABLO MARTORELL SOBERO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMÓCRATA UNIDO PERÚ",
+       "codPartido": 103,
+       "candidato": "FIDEL CARITA MONROY",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO PAÍS PARA TODOS",
+       "codPartido": 120,
+       "candidato": "FRANCISCO RAMOS FLORES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "AHORA NACIÓN - AN",
+       "codPartido": 123,
+       "candidato": "WALTER ANCHAPURI ZAPATA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PROGRESEMOS",
+       "codPartido": 122,
+       "candidato": "DAYAN WILSON JIMENEZ SALAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEL BUEN GOBIERNO",
+       "codPartido": 121,
+       "candidato": "BARBARA ESTHER CUADROS QUIHUE",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "WILBER FLORES CACHICATARI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "ANTONIO RIQUELME SOTELO CALDERON",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PERÚ MODERNO",
+       "codPartido": 109,
+       "candidato": "JAIME SERGIO BAUTISTA AQUINO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "MOVIMIENTO INDEPENDIENTE REGIONAL FUERZA TACNA",
+       "codPartido": 163,
+       "candidato": "STEPHEN ALEXANDER UGARTE DAVILA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "UNIDOS POR TACNA",
+       "codPartido": 164,
+       "candidato": "FELIX GERONIMO QUISPE MAMANI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "SEGUNDO MARIO RUIZ RUBIO",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "PARTIDO CÍVICO OBRAS",
+       "codPartido": 117,
+       "candidato": "MARCO ANTONIO HUACOLLO ALVAREZ",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 1034,
+      "votosMaxFaltan": 310200,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "230000",
+     "nombre": "TUMBES",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 621,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 621,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
+       "codPartido": 99,
+       "candidato": "NATALIA NATALI JIMENEZ VELASQUEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "MANUEL ARTURO MERINO DE LAMA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO POLÍTICO TODO CON EL PUEBLO",
+       "codPartido": 131,
+       "candidato": "RAUL SANTOS HERRERA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FE EN EL PERÚ",
+       "codPartido": 106,
+       "candidato": "CARLOS MANUEL ROLANDO FEIJOO RUIZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA REGIONAL POR EL PERÚ",
+       "codPartido": 166,
+       "candidato": "MOISES MARTIN LOPEZ OLIVERA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "BATALLA PERÚ",
+       "codPartido": 125,
+       "candidato": "WILMER FLORENTINO DIOS BENITES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEL BUEN GOBIERNO",
+       "codPartido": 121,
+       "candidato": "EDUARDO ZARATE CORDOVA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "LUIS CONSTANTINO AREVALO GUERRERO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO APRISTA PERUANO",
+       "codPartido": 112,
+       "candidato": "GUILLERMO FELIX IGNACIO ALEGRE MENDOZA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PODEMOS PERÚ",
+       "codPartido": 100,
+       "candidato": "MANUEL DIEGO ENRIQUE DE LAMA HIRSH",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ALIANZA ELECTORAL VENCEREMOS",
+       "codPartido": 135,
+       "candidato": "MIGUEL LUIS CASTILLO SILVA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO MORADO",
+       "codPartido": 101,
+       "candidato": "JOSE EFRAIN MAZA BALLADARES",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACION TUMBESINA",
+       "codPartido": 165,
+       "candidato": "CARLOS JIMY SILVA MENA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE",
+       "codPartido": 99,
+       "candidato": "NATALIA NATALI JIMENEZ VELASQUEZ",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "MANUEL ARTURO MERINO DE LAMA",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 621,
+      "votosMaxFaltan": 186300,
+      "puedeCambiar": true
+     }
+    },
+    {
+     "ubigeo": "250000",
+     "nombre": "UCAYALI",
+     "totales": {
+      "actasContabilizadas": 0.0,
+      "contabilizadas": 0,
+      "totalActas": 1562,
+      "participacionCiudadana": 0.0,
+      "actasEnviadasJee": 0.0,
+      "enviadasJee": 0,
+      "actasPendientesJee": 100.0,
+      "pendientesJee": 1562,
+      "totalVotosEmitidos": 0,
+      "totalVotosValidos": 0,
+      "fechaActualizacion": 1791151214377
+     },
+     "participantes": [
+      {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "GUILLERMO CORNELIO CHINO MORI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "CELIA ISABEL PRADO SEIJAS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "RENOVACIÓN POPULAR PERÚ",
+       "codPartido": 137,
+       "candidato": "ANTONIO MARINO PANDURO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "VISIÓN PERÚ",
+       "codPartido": 127,
+       "candidato": "ADER MARTIN GUERRA RIOS",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "FUERZA POPULAR",
+       "codPartido": 97,
+       "candidato": "FRANCISCO DE ASIS MENDOZA DE SOUZA",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO PAÍS PARA TODOS",
+       "codPartido": 120,
+       "candidato": "VICTOR EDINSON VALDEZ MELENDEZ",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEL BUEN GOBIERNO",
+       "codPartido": 121,
+       "candidato": "JUAN WICMAN HUAYCAMA MURAYARI",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      },
+      {
+       "partido": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+       "codPartido": 94,
+       "candidato": "SANDRO ACOSTA VILLAVICENCIO",
+       "votos": 0,
+       "pctValidos": 0.0,
+       "pctEmitidos": 0.0
+      }
+     ],
+     "contienda": {
+      "primero": {
+       "partido": "ALIANZA PARA EL PROGRESO",
+       "codPartido": 95,
+       "candidato": "GUILLERMO CORNELIO CHINO MORI",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "segundo": {
+       "partido": "ACCIÓN POPULAR",
+       "codPartido": 93,
+       "candidato": "CELIA ISABEL PRADO SEIJAS",
+       "votos": 0,
+       "pctValidos": 0.0
+      },
+      "diferencia": 0,
+      "actasFaltan": 1562,
+      "votosMaxFaltan": 468600,
+      "puedeCambiar": true
+     }
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "nombre": "Elecciones Municipales",
+   "menu": "Elecciones Municipales",
+   "nivel": 1,
+   "tipo": "gobernador",
+   "totales": {
+    "actasContabilizadas": 0.0,
+    "contabilizadas": 0,
+    "totalActas": 89935,
+    "participacionCiudadana": 0.0,
+    "actasEnviadasJee": 0.0,
+    "enviadasJee": 0,
+    "actasPendientesJee": 100.0,
+    "pendientesJee": 89935,
+    "totalVotosEmitidos": 0,
+    "totalVotosValidos": 0,
+    "fechaActualizacion": 1791151214377
+   },
+   "participantes": [],
+   "departamentos": [
+    {
+     "ubigeo": "010000",
+     "nombre": "AMAZONAS",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "020000",
+     "nombre": "ÁNCASH",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "030000",
+     "nombre": "APURÍMAC",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "040000",
+     "nombre": "AREQUIPA",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "050000",
+     "nombre": "AYACUCHO",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "060000",
+     "nombre": "CAJAMARCA",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "240000",
+     "nombre": "CALLAO",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "070000",
+     "nombre": "CUSCO",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "080000",
+     "nombre": "HUANCAVELICA",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "090000",
+     "nombre": "HUÁNUCO",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "100000",
+     "nombre": "ICA",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "110000",
+     "nombre": "JUNÍN",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "120000",
+     "nombre": "LA LIBERTAD",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "130000",
+     "nombre": "LAMBAYEQUE",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "140000",
+     "nombre": "LIMA",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "150000",
+     "nombre": "LORETO",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "160000",
+     "nombre": "MADRE DE DIOS",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "170000",
+     "nombre": "MOQUEGUA",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "180000",
+     "nombre": "PASCO",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "190000",
+     "nombre": "PIURA",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "200000",
+     "nombre": "PUNO",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "210000",
+     "nombre": "SAN MARTÍN",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "220000",
+     "nombre": "TACNA",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "230000",
+     "nombre": "TUMBES",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    },
+    {
+     "ubigeo": "250000",
+     "nombre": "UCAYALI",
+     "totales": {},
+     "participantes": [],
+     "contienda": null
+    }
+   ]
+  }
+ ]
 }

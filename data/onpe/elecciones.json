@@ -1,0 +1,66 @@
+{
+ "data": [
+  {
+   "id": 1,
+   "nombre": "Resumen General",
+   "padre": 0,
+   "hijos": false,
+   "icono": "icon-ico_resumen_general",
+   "orden": 1,
+   "idEleccion": 0,
+   "url": "/main/resumen",
+   "esPrincipal": false,
+   "descripcion": ""
+  },
+  {
+   "id": 10,
+   "nombre": "Elecciones Regionales",
+   "padre": 0,
+   "hijos": false,
+   "icono": "icon-ico-e-regionales",
+   "orden": 10,
+   "idEleccion": 1,
+   "url": "/main/elecciones-regionales",
+   "esPrincipal": false,
+   "descripcion": "Elecciones Regionales"
+  },
+  {
+   "id": 14,
+   "nombre": "Elecciones Municipales",
+   "padre": 0,
+   "hijos": false,
+   "icono": "icon-ico-e-municipales",
+   "orden": 11,
+   "idEleccion": 3,
+   "url": "/main/elecciones-municipales",
+   "esPrincipal": true,
+   "descripcion": "Elecciones Municipales"
+  },
+  {
+   "id": 51,
+   "nombre": "Participación Ciudadana",
+   "padre": 0,
+   "hijos": false,
+   "icono": "icon-ico-participacion2",
+   "orden": 51,
+   "idEleccion": 0,
+   "url": "/main/participacion-ciudadana",
+   "esPrincipal": false,
+   "descripcion": "Participación ciudadana"
+  },
+  {
+   "id": 52,
+   "nombre": "Actas",
+   "padre": 0,
+   "hijos": false,
+   "icono": "icon-ico_menu_actas",
+   "orden": 52,
+   "idEleccion": 0,
+   "url": "/main/actas",
+   "esPrincipal": false,
+   "descripcion": "Actas"
+  }
+ ],
+ "message": "Se ejecutó correctamente la operación",
+ "success": true
+}

@@ -1,0 +1,557 @@
+{
+ "onpe/proceso-activo.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/proceso/proceso-electoral-activo",
+  "cambio": "2026-10-04T17:04:55-05:00",
+  "sha256": "e8bd77106f1150068ed53a4a2cd6448b96651f17fd0d09cbf1166d9199e8fe66"
+ },
+ "onpe/elecciones.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/proceso/4/elecciones",
+  "cambio": "2026-10-04T17:04:55-05:00",
+  "sha256": "4085044f671f2c6d2a035a13ce6c53b0d0e8a940c27459b2b7793f5b8ff26c5a"
+ },
+ "onpe/fechas.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/fecha/listarFecha",
+  "cambio": "2026-10-04T17:04:56-05:00",
+  "sha256": "416c64880c9f3441712cec53e2c899a1fd7c34420fbe1986ce2f6ec7c892dc62"
+ },
+ "onpe/participacion-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/participacion-ciudadana/totales?tipoFiltro=total",
+  "cambio": "2026-10-04T17:04:56-05:00",
+  "sha256": "e965d48f080ee2c09fc771a1f1c95a91be465fe19bc532ee9f3fab31eb2b7533"
+ },
+ "onpe/mesas-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/mesa/totales?tipoFiltro=eleccion",
+  "cambio": "2026-10-04T17:04:57-05:00",
+  "sha256": "57388f876992ea598c606b041a228b2032a22559326286812868461cae51cce8"
+ },
+ "onpe/eleccion-1/nacional-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=eleccion",
+  "cambio": "2026-10-04T17:04:58-05:00",
+  "sha256": "729c5af0bc2be46ddbecfb70d30ed67f513d4ca26521199bd6342995a2290054"
+ },
+ "onpe/eleccion-1/nacional-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=eleccion",
+  "cambio": "2026-10-04T17:04:58-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-1/departamentos-lista.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/ubigeos/departamentos?idEleccion=1&idAmbitoGeografico=1",
+  "cambio": "2026-10-04T17:04:58-05:00",
+  "sha256": "ac30e31a65b6e0fee9f61c9894a562cbd4b25f5ae77c46f86870ef35cbd39d85"
+ },
+ "onpe/eleccion-1/dep-010000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=010000",
+  "cambio": "2026-10-04T17:04:59-05:00",
+  "sha256": "c3f47a836e858a3df02a0a3c332281d1a37fa4ac427035dff95239c4ef62323a"
+ },
+ "onpe/eleccion-1/dep-010000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=010000",
+  "cambio": "2026-10-04T17:04:59-05:00",
+  "sha256": "a7c7ca139facbf3a2914113c97be4b20ab9917ce09b2e0d42463fdfd1291f1d7"
+ },
+ "onpe/eleccion-1/dep-020000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=020000",
+  "cambio": "2026-10-04T17:05:00-05:00",
+  "sha256": "20fd12342da11170f606c3fa810b516212f55f9e05a9dc226049ce7c58c8c456"
+ },
+ "onpe/eleccion-1/dep-020000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=020000",
+  "cambio": "2026-10-04T17:05:00-05:00",
+  "sha256": "1744d57433932259a9d3cc62a1cf9d1d3750183a45d55d10b5b68a948e35e928"
+ },
+ "onpe/eleccion-1/dep-030000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=030000",
+  "cambio": "2026-10-04T17:05:01-05:00",
+  "sha256": "b39635b1dbf3c92dbe83c2edba2cb895dc8f0c424ee9bcde89019b3944157ea8"
+ },
+ "onpe/eleccion-1/dep-030000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=030000",
+  "cambio": "2026-10-04T17:05:01-05:00",
+  "sha256": "1a824e3823fe572915ea8608f4f73b64f3226e831f365bccd819d3e4042f69a6"
+ },
+ "onpe/eleccion-1/dep-040000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=040000",
+  "cambio": "2026-10-04T17:05:02-05:00",
+  "sha256": "8e6f8826a1a03bcc056a3d89fe1c387b1c6f6393e22a7574b7fd8b4795e81a8f"
+ },
+ "onpe/eleccion-1/dep-040000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=040000",
+  "cambio": "2026-10-04T17:05:02-05:00",
+  "sha256": "c99769ac8dab7f93767739edc723f42e1fa863f94f30c5a8a050e63b6f884ff7"
+ },
+ "onpe/eleccion-1/dep-050000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=050000",
+  "cambio": "2026-10-04T17:05:03-05:00",
+  "sha256": "a2ca629bcf32b16bbe69df7383209daf22f7cf3371062c5a543bc80a83dd2822"
+ },
+ "onpe/eleccion-1/dep-050000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=050000",
+  "cambio": "2026-10-04T17:05:03-05:00",
+  "sha256": "def3b9796f96a56a52d494712d9aa6c8a65ae1166edd1d1219cc8775961dd983"
+ },
+ "onpe/eleccion-1/dep-060000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=060000",
+  "cambio": "2026-10-04T17:05:04-05:00",
+  "sha256": "5a97100ff3cf93989b83aa56fca08cc41d2ef41ca690968aab2cc991de8cc5f4"
+ },
+ "onpe/eleccion-1/dep-060000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=060000",
+  "cambio": "2026-10-04T17:05:04-05:00",
+  "sha256": "cc4cb6db809438175473fdc53f67965fa7e73286aef2f145cda70d69a0df2489"
+ },
+ "onpe/eleccion-1/dep-240000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=240000",
+  "cambio": "2026-10-04T17:05:05-05:00",
+  "sha256": "68bc1b87c35f0cfaab35bcad672e2b19f1580255287c4685cfb819b86a3853b1"
+ },
+ "onpe/eleccion-1/dep-240000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=240000",
+  "cambio": "2026-10-04T17:05:05-05:00",
+  "sha256": "cb2e1a47e4a314c7a10c7bcb6c82b8c593b6e581bff4ec05bfa3594ccfbef748"
+ },
+ "onpe/eleccion-1/dep-070000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=070000",
+  "cambio": "2026-10-04T17:05:06-05:00",
+  "sha256": "a37eeaf3fa8ac7bb49e031ac8bfae452d6d6efa96b5522fcf51a1d642fe88dfe"
+ },
+ "onpe/eleccion-1/dep-070000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=070000",
+  "cambio": "2026-10-04T17:05:06-05:00",
+  "sha256": "929b9b6255e47573bf4a98403642e80ee03687ca024362632122b5e6c91ed9de"
+ },
+ "onpe/eleccion-1/dep-080000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=080000",
+  "cambio": "2026-10-04T17:05:07-05:00",
+  "sha256": "878a03b04a81b25d2924d1daead499f28259c4ebfa9035c6336dc1cfb6fa5820"
+ },
+ "onpe/eleccion-1/dep-080000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=080000",
+  "cambio": "2026-10-04T17:05:07-05:00",
+  "sha256": "30a75d640c00302a616938f789d50843150f1b7ea7cd396d75f238e62e27e82a"
+ },
+ "onpe/eleccion-1/dep-090000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=090000",
+  "cambio": "2026-10-04T17:05:07-05:00",
+  "sha256": "b9514999f67f504a5519f8c7f5e5e44ad883b290676e086adacbedf437c5235b"
+ },
+ "onpe/eleccion-1/dep-090000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=090000",
+  "cambio": "2026-10-04T17:05:07-05:00",
+  "sha256": "1a6f1aec30704ef423c81020a94cc2054ac4c56c48d295ada9bfec72d83a3ff7"
+ },
+ "onpe/eleccion-1/dep-100000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=100000",
+  "cambio": "2026-10-04T17:05:08-05:00",
+  "sha256": "f4ffd9600efcfef01fa3eba51a6407e2fffde2c53b2954dd927bc239563a0453"
+ },
+ "onpe/eleccion-1/dep-100000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=100000",
+  "cambio": "2026-10-04T17:05:08-05:00",
+  "sha256": "a2d21bfc39f826bc5c4feb91c306a875153467d2fcf500383efaf771a4a43c55"
+ },
+ "onpe/eleccion-1/dep-110000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=110000",
+  "cambio": "2026-10-04T17:05:09-05:00",
+  "sha256": "11a638965899bb709510375c149f301e8213382964b4c3cfd674ea0999e544d9"
+ },
+ "onpe/eleccion-1/dep-110000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=110000",
+  "cambio": "2026-10-04T17:05:09-05:00",
+  "sha256": "317a7439650c074948031c746f254defbcd7d16ac9dda2f0bb0585cd8e8d8b75"
+ },
+ "onpe/eleccion-1/dep-120000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=120000",
+  "cambio": "2026-10-04T17:05:10-05:00",
+  "sha256": "b7217004b6dfc07652a522bf7fac3e3e216ff62b774c06b93af4033342f5f6b8"
+ },
+ "onpe/eleccion-1/dep-120000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=120000",
+  "cambio": "2026-10-04T17:05:10-05:00",
+  "sha256": "39813d26f6ee4f79137092e56641bd5d72cf97d343193f7e8287a294a4c7ce40"
+ },
+ "onpe/eleccion-1/dep-130000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=130000",
+  "cambio": "2026-10-04T17:05:11-05:00",
+  "sha256": "d37b9e2b224192d8724bc8c0ac82cbfee9f62639431179c23c1d8a14338f60db"
+ },
+ "onpe/eleccion-1/dep-130000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=130000",
+  "cambio": "2026-10-04T17:05:11-05:00",
+  "sha256": "b650d97aa8c82dc6d4898a54aebf3308165ca210b2879a7b93cdbfd1e17e488f"
+ },
+ "onpe/eleccion-1/dep-140000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=140000",
+  "cambio": "2026-10-04T17:05:12-05:00",
+  "sha256": "016b6081233d2648e2b75c98a67d360f80acf75ba6a3277e1ae0f33e1e530905"
+ },
+ "onpe/eleccion-1/dep-140000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=140000",
+  "cambio": "2026-10-04T17:05:12-05:00",
+  "sha256": "eb57805113fc6f04dfd869f639b455599963fe90ee3ea7bad06a21a170bf33ba"
+ },
+ "onpe/eleccion-1/dep-150000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=150000",
+  "cambio": "2026-10-04T17:05:13-05:00",
+  "sha256": "1e6fa48ba5967004120b5e2dd7ebd0ae3e79bc2576c9ab1522a6c6bf3239afb4"
+ },
+ "onpe/eleccion-1/dep-150000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=150000",
+  "cambio": "2026-10-04T17:05:13-05:00",
+  "sha256": "53b7b292c89e87e211c787b30948215f5d7fb87f4706a87cc9b4384c3d0acc73"
+ },
+ "onpe/eleccion-1/dep-160000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=160000",
+  "cambio": "2026-10-04T17:05:14-05:00",
+  "sha256": "f9bc0cefc364880848f001300b9a7ca24c3be5d40b6028cec557bf49d05a0a13"
+ },
+ "onpe/eleccion-1/dep-160000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=160000",
+  "cambio": "2026-10-04T17:05:14-05:00",
+  "sha256": "2edcf42af0589b01d82d4d17675933a6b2d859df6a85e99bdd0e72bd482e739a"
+ },
+ "onpe/eleccion-1/dep-170000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=170000",
+  "cambio": "2026-10-04T17:05:15-05:00",
+  "sha256": "2e8d9d997635284a3e86c968d756b74699c6d1b9cca9ca1d3ff7d85bee7883aa"
+ },
+ "onpe/eleccion-1/dep-170000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=170000",
+  "cambio": "2026-10-04T17:05:15-05:00",
+  "sha256": "a47a6f6ae1be3413e5da1338dd43bc00834221e56c1a2bbbb2bf098770c2f713"
+ },
+ "onpe/eleccion-1/dep-180000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=180000",
+  "cambio": "2026-10-04T17:05:16-05:00",
+  "sha256": "d9c768f1589b3b7a4008b1c274d1194efdf611e5aeaeb3923fa3515be25853a8"
+ },
+ "onpe/eleccion-1/dep-180000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=180000",
+  "cambio": "2026-10-04T17:05:16-05:00",
+  "sha256": "0b694058ad01f61d4f38d683867c210f954688ab5e879da1fa607086acb39f41"
+ },
+ "onpe/eleccion-1/dep-190000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=190000",
+  "cambio": "2026-10-04T17:05:17-05:00",
+  "sha256": "b94ace288e0b63c507d3e87afe6251d29fec2aae6c5f8c4bfcf791af0f87941e"
+ },
+ "onpe/eleccion-1/dep-190000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=190000",
+  "cambio": "2026-10-04T17:05:17-05:00",
+  "sha256": "b295dcfc98d14d30170637cb916cce6b14740becbb20a0a391fff8a3fa6e6a24"
+ },
+ "onpe/eleccion-1/dep-200000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=200000",
+  "cambio": "2026-10-04T17:05:17-05:00",
+  "sha256": "2e1faf64c4de4aab1b9ac0a137f6e9da2ae1cfbdef57ca8045ebbd01ae0fabcd"
+ },
+ "onpe/eleccion-1/dep-200000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=200000",
+  "cambio": "2026-10-04T17:05:17-05:00",
+  "sha256": "e1374e2ecb5c5da487fc56bfe3f635cfda06d9f4c43e2cfee8e2d5133fc8fb70"
+ },
+ "onpe/eleccion-1/dep-210000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=210000",
+  "cambio": "2026-10-04T17:05:18-05:00",
+  "sha256": "9198d420b281997dea95755baeae5b73b7e3c58c7578a4fe8ee8b45ad785cb72"
+ },
+ "onpe/eleccion-1/dep-210000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=210000",
+  "cambio": "2026-10-04T17:05:18-05:00",
+  "sha256": "7de89b12a6a6b47add12fff03fb2771b2941ca2e0c0302f7f02023f53fb868a5"
+ },
+ "onpe/eleccion-1/dep-220000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=220000",
+  "cambio": "2026-10-04T17:05:19-05:00",
+  "sha256": "7cf6996041aea13376cf89e0f39f40ec5d6f85e33cc88f6d23fe850fc1ee97ec"
+ },
+ "onpe/eleccion-1/dep-220000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=220000",
+  "cambio": "2026-10-04T17:05:19-05:00",
+  "sha256": "f077e27beee692a3cbaf4f6df45abd06d16502bf50bfcd35213175a91d785110"
+ },
+ "onpe/eleccion-1/dep-230000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=230000",
+  "cambio": "2026-10-04T17:05:20-05:00",
+  "sha256": "66decba83c48e6de4c3e171b1668d188334466c2b604941df280062a8aaf5b3a"
+ },
+ "onpe/eleccion-1/dep-230000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=230000",
+  "cambio": "2026-10-04T17:05:20-05:00",
+  "sha256": "4588531df4b5e1f581bcec9b1e8d7099f5c38e5435abb29a263ccd9c52c53e60"
+ },
+ "onpe/eleccion-1/dep-250000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=250000",
+  "cambio": "2026-10-04T17:05:21-05:00",
+  "sha256": "28dc7f766dd87c4c97454a3f50eb0783a5206fe9de3d165c7470e3e3191263b6"
+ },
+ "onpe/eleccion-1/dep-250000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=1&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=250000",
+  "cambio": "2026-10-04T17:05:21-05:00",
+  "sha256": "efef742647a41e773a7b937941c69b4860db5a8b110e36c46db34b3543d827c7"
+ },
+ "onpe/eleccion-3/nacional-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=eleccion",
+  "cambio": "2026-10-04T17:05:22-05:00",
+  "sha256": "500f0b35f1903f8f56916915e0e26e37f08d3a5fe104e8460da36fb3a147992b"
+ },
+ "onpe/eleccion-3/nacional-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=eleccion",
+  "cambio": "2026-10-04T17:05:22-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/departamentos-lista.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/ubigeos/departamentos?idEleccion=3&idAmbitoGeografico=1",
+  "cambio": "2026-10-04T17:05:23-05:00",
+  "sha256": "ac30e31a65b6e0fee9f61c9894a562cbd4b25f5ae77c46f86870ef35cbd39d85"
+ },
+ "onpe/eleccion-3/dep-010000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=010000",
+  "cambio": "2026-10-04T17:05:23-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-010000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=010000",
+  "cambio": "2026-10-04T17:05:23-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-020000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=020000",
+  "cambio": "2026-10-04T17:05:24-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-020000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=020000",
+  "cambio": "2026-10-04T17:05:24-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-030000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=030000",
+  "cambio": "2026-10-04T17:05:25-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-030000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=030000",
+  "cambio": "2026-10-04T17:05:25-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-040000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=040000",
+  "cambio": "2026-10-04T17:05:26-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-040000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=040000",
+  "cambio": "2026-10-04T17:05:26-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-050000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=050000",
+  "cambio": "2026-10-04T17:05:27-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-050000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=050000",
+  "cambio": "2026-10-04T17:05:27-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-060000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=060000",
+  "cambio": "2026-10-04T17:05:28-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-060000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=060000",
+  "cambio": "2026-10-04T17:05:28-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-240000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=240000",
+  "cambio": "2026-10-04T17:05:29-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-240000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=240000",
+  "cambio": "2026-10-04T17:05:29-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-070000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=070000",
+  "cambio": "2026-10-04T17:05:30-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-070000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=070000",
+  "cambio": "2026-10-04T17:05:30-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-080000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=080000",
+  "cambio": "2026-10-04T17:05:30-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-080000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=080000",
+  "cambio": "2026-10-04T17:05:30-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-090000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=090000",
+  "cambio": "2026-10-04T17:05:31-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-090000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=090000",
+  "cambio": "2026-10-04T17:05:31-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-100000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=100000",
+  "cambio": "2026-10-04T17:05:32-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-100000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=100000",
+  "cambio": "2026-10-04T17:05:32-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-110000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=110000",
+  "cambio": "2026-10-04T17:05:33-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-110000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=110000",
+  "cambio": "2026-10-04T17:05:33-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-120000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=120000",
+  "cambio": "2026-10-04T17:05:34-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-120000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=120000",
+  "cambio": "2026-10-04T17:05:34-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-130000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=130000",
+  "cambio": "2026-10-04T17:05:35-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-130000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=130000",
+  "cambio": "2026-10-04T17:05:35-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-140000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=140000",
+  "cambio": "2026-10-04T17:05:36-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-140000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=140000",
+  "cambio": "2026-10-04T17:05:36-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-150000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=150000",
+  "cambio": "2026-10-04T17:05:37-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-150000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=150000",
+  "cambio": "2026-10-04T17:05:37-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-160000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=160000",
+  "cambio": "2026-10-04T17:05:38-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-160000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=160000",
+  "cambio": "2026-10-04T17:05:38-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-170000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=170000",
+  "cambio": "2026-10-04T17:05:38-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-170000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=170000",
+  "cambio": "2026-10-04T17:05:38-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-180000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=180000",
+  "cambio": "2026-10-04T17:05:39-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-180000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=180000",
+  "cambio": "2026-10-04T17:05:39-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-190000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=190000",
+  "cambio": "2026-10-04T17:05:40-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-190000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=190000",
+  "cambio": "2026-10-04T17:05:40-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-200000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=200000",
+  "cambio": "2026-10-04T17:05:41-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-200000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=200000",
+  "cambio": "2026-10-04T17:05:41-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-210000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=210000",
+  "cambio": "2026-10-04T17:05:42-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-210000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=210000",
+  "cambio": "2026-10-04T17:05:42-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-220000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=220000",
+  "cambio": "2026-10-04T17:05:43-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-220000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=220000",
+  "cambio": "2026-10-04T17:05:43-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-230000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=230000",
+  "cambio": "2026-10-04T17:05:43-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-230000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=230000",
+  "cambio": "2026-10-04T17:05:43-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-250000-totales.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/totales?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=250000",
+  "cambio": "2026-10-04T17:05:44-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ },
+ "onpe/eleccion-3/dep-250000-participantes.json": {
+  "fuente": "https://resultadoelectoral.onpe.gob.pe/presentacion-backend/resumen-general/participantes?idEleccion=3&tipoFiltro=ubigeo_nivel_01&idAmbitoGeografico=1&idUbigeoDepartamento=250000",
+  "cambio": "2026-10-04T17:05:44-05:00",
+  "sha256": "6dab8f017ebd9c430c65b8b45410032af9f0c384d9cda44a05b3322208b1e81f"
+ }
+}
