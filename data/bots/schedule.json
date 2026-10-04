@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 28,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T21:05:50.247Z",
+   "ultimaPublicacion": "2026-10-04T21:01:40.157Z",
+   "haciendo": {
+    "ts": "2026-10-04T21:01:40.157Z",
+    "texto": "Revisando el encargo de las 16:00. Puno, las 2,572 incidencias, Camaná, Rampi, Belén y Celendín no los repito."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -57,7 +75,7 @@
    "estado": "activo",
    "publicaciones": 36,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:04:43.953Z",
+   "ultimaActividad": "2026-10-04T21:05:30.663Z",
    "ultimaPublicacion": "2026-10-04T21:01:46.980Z",
    "haciendo": {
     "ts": "2026-10-04T21:01:46.980Z",
@@ -90,7 +108,7 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 25,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T21:01:45.711Z",
@@ -102,31 +120,13 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 28,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:01:40.157Z",
-   "ultimaPublicacion": "2026-10-04T21:01:40.157Z",
-   "haciendo": {
-    "ts": "2026-10-04T21:01:40.157Z",
-    "texto": "Revisando el encargo de las 16:00. Puno, las 2,572 incidencias, Camaná, Rampi, Belén y Celendín no los repito."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 9,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T21:02:02.891Z",
@@ -147,7 +147,7 @@
    "estado": "activo",
    "publicaciones": 8,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:04:48.079Z",
+   "ultimaActividad": "2026-10-04T21:05:47.811Z",
    "ultimaPublicacion": "2026-10-04T20:44:35.659Z",
    "haciendo": {
     "ts": "2026-10-04T20:44:35.659Z",
@@ -162,7 +162,7 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 2,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T21:01:55.681Z",
