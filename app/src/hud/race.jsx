@@ -37,7 +37,12 @@ export function ZonePicker({ places, zone, onPick, autoFocus = false, compact = 
       </div>
       {open && q.trim().length >= 2 && (
         <ul id="zona-opciones" role="listbox" className="absolute z-30 left-0 right-0 mt-1.5 rounded-xl border border-line bg-white shadow-[0_18px_40px_-18px_rgba(15,23,42,.35)] overflow-hidden">
-          {res.length === 0 && <li className="px-4 py-3 text-[13.5px] text-dim">No encontramos ese lugar. Prueba con otro nombre.</li>}
+          {res.length === 0 && (
+            <li className="px-4 py-3 text-[13.5px] text-dim">
+              {places.list.some((x) => x.nivel === 3) ? 'No encontramos ese lugar. Prueba con otro nombre.'
+                : 'Todavía estamos armando la lista de distritos con lo que publica la ONPE (unos minutos). Mientras tanto, busca tu provincia o tu región.'}
+            </li>
+          )}
           {res.map((x, i) => (
             <li key={x.id} role="option" aria-selected={i === hi}>
               <button type="button" onClick={() => pick(x)} onMouseEnter={() => setHi(i)} className={`w-full text-left px-4 py-2.5 flex items-center gap-3 ${i === hi ? 'bg-accent-soft' : ''}`}>
