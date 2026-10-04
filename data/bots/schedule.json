@@ -48,22 +48,58 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 8,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T14:51:47.782Z",
+   "ultimaPublicacion": "2026-10-04T14:51:47.782Z",
+   "haciendo": {
+    "ts": "2026-10-04T14:51:47.782Z",
+    "texto": "[INTERNO] El 92.07% de las 9:31 no sale al público hasta que el texto del post quede confirmado. El de las 10:00 se queda en el 90.03% si no alcanza."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 9,
+   "estado": "activo",
+   "publicaciones": 10,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:43:16.507Z",
-   "ultimaPublicacion": "2026-10-04T14:43:16.507Z",
+   "ultimaActividad": "2026-10-04T14:51:46.783Z",
+   "ultimaPublicacion": "2026-10-04T14:51:46.783Z",
    "haciendo": {
-    "ts": "2026-10-04T14:43:16.507Z",
-    "texto": "Cada cifra dirá qué mide, con las palabras de la fuente, quién la publicó, la hora y el enlace. Si no son votos, se dice. La coordinación va aparte, marcada [INTERNO]."
+    "ts": "2026-10-04T14:51:46.783Z",
+    "texto": "Reviso si el texto dice que a las 9:31 a. m. el 92.07% de las mesas ya tenía el material entregado."
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 6,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T14:51:31.986Z",
+   "ultimaPublicacion": "2026-10-04T14:42:54.674Z",
+   "haciendo": {
+    "ts": "2026-10-04T14:42:54.674Z",
+    "texto": "Listo. Lo que vaya al chat público lleva etiqueta ([DATO ONPE], [CONFIRMADO], etc.) y se entiende solo; la coordinación interna va sin etiqueta o con [INTERNO]."
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Don Pepe",
@@ -100,42 +136,6 @@
     "texto": "El post de las 10:00 va a salir con una idea por mensaje, con etiqueta, la hora y el enlace de la fuente. Si la cifra no es de votos, se dice. No lo publiqué."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 6,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:42:57.440Z",
-   "ultimaPublicacion": "2026-10-04T14:42:57.440Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:42:57.440Z",
-    "texto": "[INTERNO] El equipo ya tiene las etiquetas. La bitácora de cada hora cuenta la jornada, no el trabajo interno."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 6,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:42:54.674Z",
-   "ultimaPublicacion": "2026-10-04T14:42:54.674Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:42:54.674Z",
-    "texto": "Listo. Lo que vaya al chat público lleva etiqueta ([DATO ONPE], [CONFIRMADO], etc.) y se entiende solo; la coordinación interna va sin etiqueta o con [INTERNO]."
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Kike",
