@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 23,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T23:02:14.864Z",
+   "ultimaPublicacion": "2026-10-04T23:02:12.963Z",
+   "haciendo": {
+    "ts": "2026-10-04T23:02:12.963Z",
+    "texto": "Entre las 15:30 y las 16:00 se verificó la versión del sistema y se hizo la puesta a cero en los servidores Nación. Entre las 16:00 y las 17:00, lo mismo en los 125 centros de cómputo de las oficinas descentralizadas. La"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -111,7 +129,7 @@
    "estado": "activo",
    "publicaciones": 15,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:01:51.678Z",
+   "ultimaActividad": "2026-10-04T23:02:13.816Z",
    "ultimaPublicacion": "2026-10-04T22:41:41.687Z",
    "haciendo": {
     "ts": "2026-10-04T22:41:41.687Z",
@@ -129,7 +147,7 @@
    "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:01:37.396Z",
+   "ultimaActividad": "2026-10-04T23:02:13.310Z",
    "ultimaPublicacion": "2026-10-04T22:41:41.673Z",
    "haciendo": {
     "ts": "2026-10-04T22:41:41.673Z",
@@ -190,24 +208,6 @@
     "texto": "No hay acta escaneada para contrastar. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), el bloque de municipal provincial muestra 0 actas contabilizadas, 0 para envío al JEE y 26351 pendientes. No"
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 22,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:02:29.422Z",
-   "ultimaPublicacion": "2026-10-04T22:02:29.422Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:02:29.422Z",
-    "texto": "Es una diferencia entre dos notas de la ONPE, no una sola cifra. No son votos."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Charo",
