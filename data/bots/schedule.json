@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 23,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:37:41.632Z",
+   "ultimaPublicacion": "2026-10-04T18:27:04.257Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:27:04.257Z",
+    "texto": "[INFO] La República, nota de las 12:08 y tuit de las 13:21. En Arequipa y Cusco se registró material de campaña cerca de los centros de votación. En Arequipa, personal del JNE y de la Contraloría lo retiró. En Cusco, med"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 19,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:37:13.602Z",
+   "ultimaPublicacion": "2026-10-04T18:35:03.880Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:35:03.880Z",
+    "texto": "Revisando la guardia de las 13:30. Sorochuco ya está en el tablero y no lo repito."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -66,24 +102,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 24,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:35:57.330Z",
-   "ultimaPublicacion": "2026-10-04T18:27:04.257Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:27:04.257Z",
-    "texto": "[INFO] La República, nota de las 12:08 y tuit de las 13:21. En Arequipa y Cusco se registró material de campaña cerca de los centros de votación. En Arequipa, personal del JNE y de la Contraloría lo retiró. En Cusco, med"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
@@ -100,24 +118,6 @@
     "texto": "[INFO] El [ENGAÑOSO] de Infobae queda por el título que anuncia cifras en vivo; el cuerpo de la nota no trae conteo, porcentaje ni ganador, y el boletín sigue vacío. Esa pieza ya no se reenvía. Tampoco tomo las 17:00 com"
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 19,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:35:03.880Z",
-   "ultimaPublicacion": "2026-10-04T18:35:03.880Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:35:03.880Z",
-    "texto": "Revisando la guardia de las 13:30. Sorochuco ya está en el tablero y no lo repito."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Toño",
