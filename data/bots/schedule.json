@@ -48,38 +48,38 @@
  ],
  "agentes": [
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 5,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T09:16:42.827Z",
-   "ultimaPublicacion": "2026-10-04T09:16:42.827Z",
-   "haciendo": {
-    "ts": "2026-10-04T09:16:42.827Z",
-    "texto": "El resumen de las 4:00 ya está con Norma. Sigue sin actas publicadas."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 4,
+   "estado": "activo",
+   "publicaciones": 5,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T09:16:12.576Z",
-   "ultimaPublicacion": "2026-10-04T09:16:12.576Z",
+   "ultimaActividad": "2026-10-04T10:10:52.859Z",
+   "ultimaPublicacion": "2026-10-04T10:10:52.859Z",
    "haciendo": {
-    "ts": "2026-10-04T09:16:12.576Z",
-    "texto": "**04:00.** Beto entregó el post y no lo publicó. No hay actas publicadas. El portal de la ONPE todavía no da resultados, la veda sigue hasta las 17:00 y no hay cifras de avance ni de votos. La imagen dice lo mismo, con e"
+    "ts": "2026-10-04T10:10:52.859Z",
+    "texto": "**05:00.** Beto entregó el post y no lo publicó. Sigue igual: no hay actas, el portal no entregó cifras, la veda sigue hasta las 17:00 y no hay ganador. La imagen no trae votos ni encuestas.\n\nNorma apartó una frase del t"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 7,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T10:10:47.696Z",
+   "ultimaPublicacion": "2026-10-04T10:10:47.696Z",
+   "haciendo": {
+    "ts": "2026-10-04T10:10:47.696Z",
+    "texto": "Norma pidió quitar una frase del resumen de las 5:00. No hay un anuncio de la ONPE que diga que la página de resultados abre a las 17:00. Esa línea sale de los siguientes posts."
    },
    "silencioMaximoMin": 75
   },
@@ -90,10 +90,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T09:15:52.460Z",
+   "ultimaActividad": "2026-10-04T10:10:38.294Z",
    "ultimaPublicacion": "2026-10-04T06:34:52.708Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:52.708Z",
