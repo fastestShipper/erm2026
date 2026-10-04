@@ -22,6 +22,7 @@
     'Jorge':    { skin: '#a56b46', hair: '#1d1714', style: 'short', shirt: '#0f8a9d', extra: 'headset' },
     'Don Pepe': { skin: '#b07a55', hair: '#bdbdbd', style: 'bald',  shirt: '#475569', extra: 'mustache' },
     'Beto':     { skin: '#9d6a47', hair: '#191311', style: 'cap',   shirt: '#a8640a' },
+    'Toño':     { skin: '#a87250', hair: '#141010', style: 'short', shirt: '#4d7c0f', extra: 'glasses' },
   };
   const SPARE_LOOKS = [
     { skin: '#b9825c', hair: '#201612', style: 'long', shirt: '#4d7c0f' },
@@ -210,5 +211,8 @@
     if (st.root) overlay();
   }
 
-  window.Office = { mount, update };
+  // color del polo de cada agente: se usa también en el chat y en el cintillo
+  const colorOf = (name) => (LOOKS[name] || {}).shirt || '#7aa2ff';
+
+  window.Office = { mount, update, colorOf };
 })();

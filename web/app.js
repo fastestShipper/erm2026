@@ -279,14 +279,82 @@
     $('#agents').querySelectorAll('.agent').forEach((b) => b.addEventListener('click', () => openAgent(ag[+b.dataset.i])));
     const ff = $('#feedFilter');
     if (ff.options.length <= 1) ag.forEach((a) => ff.insertAdjacentHTML('beforeend', `<option value="${esc(a.agente)}">${esc(a.agente)} · ${esc(a.puesto)}</option>`));
-    const items = (state.feed?.items || []).filter((x) => !state.feedAgent || x.agente === state.feedAgent);
-    $('#feedNote').textContent = state.feed?.nota || '';
-    const [i0, i1] = pager('feedPager', items.length, 6, renderBots);
-    $('#feed').innerHTML = items.length ? items.slice(i0, i1).map(feedLine).join('') : '<li class="empty">Sin mensajes todavía.</li>';
+    renderChat();
+    renderStream();
     const pl = state.sch?.plan || [];
     $('#plan').innerHTML = pl.map((p) => `<li><span class="h">${esc(p.hora)}</span><span>${esc(p.que)} <span class="muted small">· ${esc(p.quien.join(', '))}</span></span></li>`).join('');
   }
-  $('#feedFilter').addEventListener('change', (ev) => { state.feedAgent = ev.target.value; state.pages.feedPager = 1; renderBots(); });
+  $('#feedFilter').addEventListener('change', (ev) => { state.feedAgent = ev.target.value; state.chatKey = null; renderChat(); });
+
+  /* ---------------- transmisión: chat, cintillo, contador ---------------- */
+  const STREAM_START = Date.parse('2026-10-04T00:38:00-05:00'); // hora en que se armó el equipo
+  const short = (t, max) => { const s = String(t).replace(/\*\*|`/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/\s+/g, ' ').trim(); return s.length > max ? s.slice(0, max - 1) + '…' : s; };
+
+  function renderChat() {
+    const all = (state.feed?.items || []).filter((x) => !state.feedAgent || x.agente === state.feedAgent);
+    const items = all.slice(0, 80).reverse();             // el chat se lee de arriba (antiguo) a abajo (nuevo)
+    const key = `${state.feedAgent}|${all.length}|${all[0]?.ts}`;
+    if (key === state.chatKey) return;
+    state.chatKey = key;
+    const box = $('#chat');
+    const atBottom = box.scrollHeight - box.scrollTop - box.clientHeight < 60;
+    const puesto = Object.fromEntries((state.sch?.agentes || []).map((a) => [a.agente, a.puesto]));
+    box.innerHTML = items.length ? items.map((x) => {
+      const long = x.texto.length > 260;
+      const body = linkify(long ? x.texto.slice(0, 259) + '…' : x.texto);
+      return `<li class="msg ${x.tipo}"><span class="t">${time(Date.parse(x.ts))}</span><b style="color:${Office.colorOf(x.agente)}" title="${esc(puesto[x.agente] || '')}">${esc(x.agente)}</b>${x.tipo === 'recibe' ? '<span class="tag">encargo de Norma</span>' : ''} <span class="body">${body}</span>${long ? ` <button class="link more-msg" data-ts="${esc(x.ts)}">ver todo</button>` : ''}</li>`;
+    }).join('') : '<li class="empty">Sin mensajes todavía.</li>';
+    box.querySelectorAll('.more-msg').forEach((b) => b.addEventListener('click', () => {
+      const x = all.find((y) => y.ts === b.dataset.ts);
+      if (x) { b.previousElementSibling.innerHTML = linkify(x.texto); b.remove(); }
+    }));
+    if (atBottom || !state.chatScrolled) { box.scrollTop = box.scrollHeight; state.chatScrolled = true; }
+  }
+
+  let ltI = 0;
+  function rotateLowerThird() {
+    const pubs = (state.feed?.items || []).filter((x) => x.tipo !== 'recibe').slice(0, 5);
+    const el = $('#lowerThird');
+    if (!pubs.length) { el.innerHTML = ''; return; }
+    const x = pubs[ltI++ % pubs.length];
+    const a = (state.sch?.agentes || []).find((y) => y.agente === x.agente);
+    el.innerHTML = `<div class="lt-name" style="background:${Office.colorOf(x.agente)}">${esc(x.agente)}<small>${esc(a?.puesto || '')} · IA</small></div><div class="lt-text">${esc(short(x.texto, 170))}<span class="lt-time">${ago(Date.parse(x.ts))}</span></div>`;
+  }
+
+  function renderStream() {
+    const s = state.status || {};
+    const ag = state.sch?.agentes || [];
+    const working = ag.filter((a) => a.estado === 'activo' || a.estado === 'cumpliendo').length;
+    const e = isLive() ? current() : null;
+    const r = state.actas;
+    const parts = [
+      s.estado === 'en-vivo' ? 'ONPE: resultados oficiales publicados' : s.estado === 'bloqueado' ? 'ONPE: el portal no responde a consultas automáticas' : 'ONPE: el portal aún no publica resultados',
+      e ? `${esc(e.menu || e.nombre)}: ${pct(e.totales?.actasContabilizadas, 1)} de actas contadas (corte ${time(e.totales?.fechaActualizacion)})` : null,
+      r ? `Acta por acta: ${n(r.actasLeidas)} actas revisadas · ${n(r.avisos?.alerta)} alertas · ${n(r.avisos?.revisar)} para revisar` : null,
+      state.evStats ? `Evidencias ciudadanas: ${n(state.evStats.recibidos)} recibidas · ${n(state.evStats.verificados)} verificadas` : null,
+      `Agentes trabajando: ${working} de ${ag.length}`,
+      'Envía evidencia en la pestaña 7 · Datos abiertos en la pestaña 8',
+    ].filter(Boolean);
+    const txt = parts.map((p) => `<span>${p}</span>`).join('<i>◆</i>');
+    $('#crawl').innerHTML = txt + '<i>◆</i>' + txt;          // duplicado para que el desplazamiento no tenga cortes
+    $('#streamChips').innerHTML = [`${working} de ${ag.length} agentes trabajando`, `${n(state.feed?.items?.length)} mensajes hoy`, 'Datos: ONPE · Repositorio abierto'].map((c) => `<span class="chip">${esc(c)}</span>`).join('');
+  }
+
+  function tickStream() {
+    const ms = Math.max(0, Date.now() - STREAM_START);
+    const h = Math.floor(ms / 3.6e6), m = Math.floor((ms % 3.6e6) / 6e4), s = Math.floor((ms % 6e4) / 1e3);
+    $('#elapsed').textContent = [h, m, s].map((v) => String(v).padStart(2, '0')).join(':');
+    $('#hudClock').textContent = new Date().toLocaleTimeString('es-PE', { timeZone: TZ, hour: '2-digit', minute: '2-digit', second: '2-digit' }) + ' · Lima';
+  }
+
+  // Cuántas personas están mirando: cada visitante avisa cada 30 s con un id aleatorio de sesión (sin datos personales).
+  let sid = null;
+  try { sid = sessionStorage.getItem('erm-sid'); } catch (e) { /* sin storage */ }
+  if (!sid) { sid = Math.random().toString(36).slice(2, 12); try { sessionStorage.setItem('erm-sid', sid); } catch (e) { /* sin storage */ } }
+  async function ping() {
+    const r = await fetch('api/ping?s=' + sid, { method: 'POST', cache: 'no-store' }).then((x) => (x.ok ? x.json() : null)).catch(() => null);
+    $('#viewers').textContent = r && r.viendo ? `👁 ${n(r.viendo)} viendo` : '👁 —';
+  }
 
   function openAgent(a) {
     if (!a) return;
@@ -311,6 +379,53 @@
     const txt = String(x.texto).replace(/\*\*|`/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/\s+/g, ' ');
     $('#ticker').innerHTML = `<span class="live-dot"></span><b>${esc(x.agente)}</b>${a ? ` <span class="muted">(${esc(a.puesto.toLowerCase())})</span>` : ''} · <span class="muted">${ago(Date.parse(x.ts))}</span> — ${esc(txt.length > 150 ? txt.slice(0, 149) + '…' : txt)}`;
   }
+
+  /* ---------------- acta por acta + busca tu mesa ---------------- */
+  const TIPO_ACTA = {
+    'mas-votos-que-electores': 'Más votos que electores', 'suma-partidos': 'Los votos no suman los válidos', 'suma-emitidos': 'Válidos + blancos + nulos ≠ emitidos',
+    'emitidos-asistentes': 'Emitidos ≠ asistentes', 'participacion-100': 'Participación del 100%', concentracion: 'Una organización con casi todos los votos',
+    'cambio-despues-de-contabilizada': 'Cambió después de contabilizada',
+  };
+  async function renderActas() {
+    const r = state.actas;
+    const stats = $('#actasStats');
+    if (!r) {
+      stats.innerHTML = '';
+      $('#actasNote').textContent = 'La revisión acta por acta empieza cuando la ONPE publique las primeras actas.';
+      $('#actasList').innerHTML = ''; $('#actasPager').innerHTML = '';
+      return;
+    }
+    stats.innerHTML = [[r.mesasEncontradas, 'mesas'], [r.actasLeidas, 'actas revisadas'], [r.actasContabilizadas, 'contabilizadas'], [r.avisos?.alerta, 'importantes'], [r.avisos?.revisar, 'para revisar']]
+      .map(([v, l]) => `<div><b class="num">${n(v)}</b><span>${l}</span></div>`).join('');
+    $('#actasNote').textContent = r.bloqueado ? `La ONPE dejó de responder a las consultas (${r.bloqueado}). Seguimos cuando vuelva.`
+      : `${r.exploracionCompleta ? 'Ya recorrimos todos los números de mesa' : `Vamos por la mesa ${n(r.numerosExplorados)}`}; ahora volvemos a las actas que aún no están contabilizadas. Actualizado ${r.actualizado ? ago(Date.parse(r.actualizado)) : '—'}.`;
+    if (!state.anomalias || state.anomaliasAt !== r.actualizado) {
+      state.anomalias = await tryGet('actas/anomalias.json');
+      state.anomaliasAt = r.actualizado;
+    }
+    const f = state.actasFilter || '';
+    const items = (state.anomalias?.items || []).filter((x) => !f || x.severidad === f);
+    const [i0, i1] = pager('actasPager', items.length, 8, renderActas);
+    $('#actasList').innerHTML = items.length ? items.slice(i0, i1).map((x) => `<li class="check"><span class="badge ${esc(x.severidad)}">${x.severidad === 'alerta' ? 'Importante' : 'Revisar'}</span><div><b class="small">Mesa ${esc(x.mesa)} · ${esc(x.eleccion)}</b> <span class="small muted">${esc(title(x.local || ''))}</span><div>${esc(TIPO_ACTA[x.tipo] || x.tipo)}: ${esc(x.detalle)}</div><div class="small muted">Estado del acta: ${esc(x.estadoActa || '—')} · detectado ${ago(Date.parse(x.visto))}</div></div></li>`).join('')
+      : '<li class="check"><span class="badge ok">OK</span><div>Ninguna acta revisada tiene diferencias.</div></li>';
+  }
+  $('#actasFilter').addEventListener('change', (ev) => { state.actasFilter = ev.target.value; state.pages.actasPager = 1; renderActas(); });
+
+  $('#mesaForm').addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const code = $('#mesaInput').value.replace(/\D/g, '').padStart(6, '0');
+    const out = $('#mesaResult');
+    if (!/^\d{6}$/.test(code) || code === '000000') { out.innerHTML = '<p class="small err">Escribe un número de mesa de 6 dígitos.</p>'; return; }
+    out.innerHTML = '<div class="skeleton"></div>';
+    const shard = await tryGet(`actas/mesas/${code.slice(0, 3)}.json`);
+    const m = shard && shard[code];
+    if (!m) { out.innerHTML = `<p class="small muted">Todavía no tenemos la mesa ${code}. ${isLive() ? 'La estamos recorriendo: vuelve a intentar en un rato.' : 'Aparecerá cuando la ONPE publique las actas.'}</p>`; return; }
+    out.innerHTML = `<div class="mesa-head"><b>Mesa ${esc(code)}</b><span class="small muted">${esc(title(m.local || ''))} · consultada ${ago(Date.parse(m.consultado))}</span></div>` + m.actas.map((a) => `
+      <div class="acta"><div class="scopehead"><b>${esc(a.eleccion)}</b><span class="badge ${/contabiliz/i.test(a.estado || '') ? 'ok' : 'info'}">${esc(a.estado || '—')}</span></div>
+        <div class="statrow five small-stats"><div><b class="num">${n(a.electores)}</b><span>electores</span></div><div><b class="num">${n(a.emitidos)}</b><span>emitidos</span></div><div><b class="num">${n(a.validos)}</b><span>válidos</span></div><div><b class="num">${n(a.blancos)}</b><span>blancos</span></div><div><b class="num">${n(a.nulos)}</b><span>nulos</span></div></div>
+        <table class="small"><tbody>${(a.partidos || []).map(([p, v]) => `<tr><td>${esc(title(p))}</td><td class="n num">${n(v)}</td></tr>`).join('')}</tbody></table></div>`).join('')
+      + `<p class="small muted" style="margin:8px 0 0">Fuente: API pública de la ONPE. Compara con la foto del acta de tu mesa.</p>`;
+  });
 
   /* ---------------- 6. mercados de predicción ---------------- */
   function renderMarkets() {
@@ -400,7 +515,8 @@
     state.latest = latest; state.checks = checks; state.sch = sch; state.feed = feed; state.ambitos = {};
     renderStatus();
     if (isLive()) renderResults();
-    renderLower(); renderChart(); renderChecks(); renderBots(); renderDay(); renderTicker();
+    renderLower(); renderChart(); renderChecks(); renderBots(); renderDay(); renderTicker(); rotateLowerThird();
+    tryGet('actas/resumen.json').then((r) => { state.actas = r; renderStream(); renderActas(); });
     tryGet('mercados.json').then((m) => { state.markets = m; renderMarkets(); });
     tryGet('hallazgos.json').then((h) => { state.findings = h; renderFindings(); });
     fetch('api/stats', { cache: 'no-store' }).then((r) => (r.ok ? r.json() : null)).catch(() => null).then((x) => { state.evStats = x; renderEvStats(); });
@@ -412,6 +528,9 @@
     showView();
     renderFiles();
     setInterval(rotateTicker, 6000);
+    tickStream(); setInterval(tickStream, 1000);
+    setInterval(rotateLowerThird, 8000);
+    ping(); setInterval(ping, 30000);
     renderDonate();
     fetch('geo/peru.json').then((r) => r.json()).then((g) => { state.geo = g; if (isLive()) renderMap(current()); });
     renderCountdown();

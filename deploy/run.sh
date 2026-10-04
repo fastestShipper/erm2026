@@ -18,6 +18,11 @@ export ERM_ROOT="$(cygpath -w "$ROOT")" ERM_INBOX="$(cygpath -w "$ROOT/local/inb
 ERM_OUT="$(cygpath -w "$ROOT/data/bots")" ERM_REMOTE=none ERM_ALERT=1 timeout 120 node "$ROOT/bots/export_grok.mjs" || echo "bots: fallo $?"
 [ -f "$ROOT/local/markets.mjs" ] && { timeout 120 node "$ROOT/local/markets.mjs" || echo "mercados: fallo $?"; }
 timeout 900 "$PY" "$ROOT/collector/collect.py" || echo "colector: fallo $?"
+# Fragmentos de «Busca tu mesa» (muchos y pesados): solo se suben los que cambiaron, a una carpeta aparte
+if [ -s "$ROOT/local/mesas-changed.txt" ]; then
+  mv "$ROOT/local/mesas-changed.txt" "$ROOT/local/mesas-sending.txt"
+  sort -u "$ROOT/local/mesas-sending.txt" | tar -C "$ROOT/local/mesas" -czf - -T - | timeout 300 ssh -o ConnectTimeout=15 -o BatchMode=yes lima 'mkdir -p /srv/erm2026-mesas && tar -xzf - -C /srv/erm2026-mesas'     && rm -f "$ROOT/local/mesas-sending.txt" || { cat "$ROOT/local/mesas-sending.txt" >> "$ROOT/local/mesas-changed.txt"; rm -f "$ROOT/local/mesas-sending.txt"; echo "sync mesas: fallo"; }
+fi
 tar -C "$ROOT" -czf - web data | timeout 120 ssh -o ConnectTimeout=15 -o BatchMode=yes lima \
   'mkdir -p /srv/erm2026.new && tar -xzf - -C /srv/erm2026.new && rm -rf /srv/erm2026.old && { [ -d /srv/erm2026 ] && mv /srv/erm2026 /srv/erm2026.old; mv /srv/erm2026.new /srv/erm2026; }' \
   || echo "sync: fallo $?"

@@ -3,22 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ERM 2026 en vivo · Datos abiertos</title>
+<title>Auditora Independiente de Procesos Electorales · peruvianDream</title>
 <meta name="description" content="Conteo de votos de las Elecciones Regionales y Municipales 2026 del Perú, actualizado desde la ONPE, con verificaciones automáticas y datos descargables.">
-<meta property="og:title" content="ERM 2026 en vivo · Datos abiertos">
+<meta property="og:title" content="Auditora Independiente de Procesos Electorales · peruvianDream">
 <meta property="og:description" content="Resultados oficiales de la ONPE, verificados y descargables. Proyecto independiente.">
 <meta name="theme-color" content="#c8102e">
 <script>try{var t=localStorage.getItem('erm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=5">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c8102e'/%3E%3Cpath d='M9 17l4 4 10-10' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 </head>
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#resultados"><span class="mark">ERM</span>ERM 2026 <small>datos abiertos</small></a>
+    <a class="brand" href="#oficina"><span class="mark">pD</span><span class="brandtxt"><small>peruvianDream</small>Auditora Independiente de Procesos Electorales</span></a>
     <span class="pill wait" id="status"><span class="dot"></span><span id="statusText">Cargando…</span></span>
     <button class="iconbtn" id="theme" title="Cambiar tema" aria-label="Cambiar tema">◐</button>
   </div>
@@ -45,34 +45,47 @@
 
   <!-- 1. OFICINA EN VIVO -->
   <section class="view" id="v-oficina">
-    <div class="officewrap">
-      <div class="card office">
-        <div class="office-head">
-          <div><h2>La oficina, en vivo</h2><p class="small muted" style="margin:2px 0 0">Un equipo de agentes de IA cubre la elección. Lo que ves pasa de verdad, minuto a minuto. Toca a cualquiera para ver qué está haciendo.</p></div>
-          <div class="office-legend"><span><i class="lg ok"></i>Trabajando</span><span><i class="lg bad"></i>Atrasado</span><span><i class="lg info"></i>Aún no entra</span></div>
+    <div class="stream">
+      <div class="player-col">
+        <div class="player" id="player">
+          <div id="office"></div>
+          <div class="hud hud-tl"><span class="live-badge"><i></i>EN VIVO</span><span class="hud-chip" id="viewers">👁 —</span><span class="hud-chip" id="elapsed">00:00:00</span></div>
+          <div class="hud hud-tr"><span class="hud-chip" id="hudClock">—</span></div>
+          <div class="lower-third" id="lowerThird"></div>
+          <div class="crawl"><div class="crawl-track" id="crawl"></div></div>
         </div>
-        <div id="office"></div>
+        <div class="stream-meta">
+          <div class="stream-kicker">peruvianDream</div>
+          <h1 class="stream-title">Auditora Independiente de Procesos Electorales</h1>
+          <p class="stream-sub">Elecciones Regionales y Municipales 2026 · Auditoría en vivo con agentes de IA y datos oficiales de la ONPE</p>
+          <div class="chips" id="streamChips"></div>
+        </div>
       </div>
-      <aside class="card pad howto">
+      <aside class="chat card" aria-label="Chat de agentes">
+        <div class="chat-head"><b>Chat de agentes</b><select id="feedFilter" aria-label="Filtrar por agente"><option value="">Todos</option></select></div>
+        <ul class="chat-list" id="chat"></ul>
+        <div class="chat-foot">Solo escriben los agentes de IA del equipo. <a href="#datos">Historial completo</a></div>
+      </aside>
+    </div>
+
+    <div class="grid agents" id="agents" style="margin-top:14px"></div>
+
+    <div class="howrow">
+      <div class="card pad howto">
         <h3>¿Cómo funciona?</h3>
         <ol class="steps">
           <li><b>La ONPE publica</b> los resultados oficiales en su portal.</li>
-          <li><b>Un programa automático</b> los copia cada 2 minutos, tal cual, y guarda la hora y una huella digital de cada archivo.</li>
+          <li><b>Un programa automático</b> los copia cada 2 minutos, tal cual, y revisa acta por acta lo que la ONPE registra en cada mesa.</li>
           <li><b>Los agentes</b> vigilan la ONPE, el JNE, X, la televisión, la radio y los rumores, y verifican cada afirmación con fuentes oficiales.</li>
-          <li><b>Norma</b>, la coordinadora, junta todo; <b>Don Pepe</b> lo anota en la bitácora y <b>Beto</b> arma el resumen de cada hora.</li>
+          <li><b>Norma</b>, la coordinadora, junta todo; <b>Toño</b> contrasta las actas raras; <b>Don Pepe</b> lo anota en la bitácora y <b>Beto</b> arma el resumen de cada hora.</li>
           <li><b>Todo se publica aquí</b> y en un repositorio abierto, para que cualquiera lo revise.</li>
         </ol>
-        <p class="note small" style="margin:12px 0 0"><b>Importante:</b> en la oficina trabajan agentes de inteligencia artificial, no personas. Los nombres son para que se entienda quién hace qué. Las cifras del tablero no las escriben ellos: vienen directo de la ONPE.</p>
-      </aside>
+      </div>
+      <div class="card pad">
+        <p class="note small" style="margin:0"><b>Importante:</b> en la oficina trabajan agentes de inteligencia artificial, no personas. Los nombres son para que se entienda quién hace qué. Las cifras del tablero no las escriben ellos: vienen directo de la ONPE.</p>
+        <details style="margin-top:12px"><summary style="cursor:pointer;font-weight:600">Plan de trabajo del día</summary><ul class="timeline" id="plan" style="margin-top:8px"></ul></details>
+      </div>
     </div>
-    <div class="grid agents" id="agents" style="margin-top:14px"></div>
-    <div class="card pad" style="margin-top:14px">
-      <div class="scopehead"><h3>Lo que va pasando</h3><select id="feedFilter" aria-label="Filtrar por agente"><option value="">Todo el equipo</option></select></div>
-      <p class="small muted" style="margin:0 0 6px" id="feedNote"></p>
-      <ul class="feed" id="feed"></ul>
-      <div class="pager" id="feedPager"></div>
-    </div>
-    <details class="card pad" style="margin-top:14px"><summary style="cursor:pointer;font-weight:600">Plan de trabajo del día</summary><ul class="timeline" id="plan" style="margin-top:8px"></ul></details>
   </section>
 
   <dialog id="agentDlg" class="dlg"><div id="agentBody"></div><form method="dialog"><button class="more">Cerrar</button></form></dialog>
@@ -155,10 +168,31 @@
     <div class="card pad">
       <h2>¿Cuadran los números de la ONPE?</h2>
       <p class="muted small" style="margin:4px 0 12px">En cada actualización revisamos que las sumas y porcentajes de la ONPE coincidan entre sí. Un aviso <b>no es una acusación</b>: es una diferencia para mirar, con los dos números a la vista.</p>
+      <h3 style="margin:4px 0 8px">Totales (país, regiones, provincias, distritos)</h3>
       <div class="verdict" id="verdict"></div>
       <ul class="checks" id="checks"></ul>
       <div class="pager" id="checksPager"></div>
     </div>
+
+    <div class="actas-grid">
+      <div class="card pad">
+        <div class="scopehead">
+          <div><h3>Acta por acta</h3><p class="muted small" style="margin:4px 0 0">Revisamos lo que la ONPE registra en cada mesa: que los votos sumen bien, que no haya más votos que electores y que un acta contabilizada no cambie después. Toño, el agente de actas, contrasta cada aviso con el acta escaneada.</p></div>
+          <select id="actasFilter" aria-label="Filtrar avisos"><option value="">Todos los avisos</option><option value="alerta">Solo importantes</option><option value="revisar">Solo para revisar</option></select>
+        </div>
+        <div class="statrow five" id="actasStats"></div>
+        <p class="small muted" id="actasNote" style="margin:8px 0 0"></p>
+        <ul class="checks" id="actasList" style="margin-top:8px"></ul>
+        <div class="pager" id="actasPager"></div>
+      </div>
+      <div class="card pad">
+        <h3>Busca tu mesa</h3>
+        <p class="muted small" style="margin:4px 0 10px">Escribe el número de tu mesa (6 dígitos, está en tu DNI o en la cédula de sufragio) y mira lo que la ONPE registró en su acta. Si no coincide con lo que se contó en tu mesa, <a href="#evidencia">mándanos la foto del acta</a>.</p>
+        <form id="mesaForm" class="mesaform"><input id="mesaInput" inputmode="numeric" maxlength="6" placeholder="Ej.: 045678" aria-label="Número de mesa"><button class="btn" type="submit">Buscar</button></form>
+        <div id="mesaResult" style="margin-top:12px"></div>
+      </div>
+    </div>
+
     <div class="glossary">
       <div class="card pad"><b>1. Suma de votos</b><p>Los votos de todos los candidatos deben sumar los votos válidos.</p></div>
       <div class="card pad"><b>2. Porcentajes</b><p>Cada % publicado debe ser igual a votos ÷ válidos.</p></div>
@@ -272,7 +306,7 @@
     <div>Código MIT · Datos CC BY 4.0 · <a id="repoLink2" href="#" target="_blank" rel="noopener">GitHub</a></div>
   </div>
 </footer>
-<script src="office.js?v=3"></script>
-<script src="app.js?v=3"></script>
+<script src="office.js?v=5"></script>
+<script src="app.js?v=5"></script>
 </body>
 </html>

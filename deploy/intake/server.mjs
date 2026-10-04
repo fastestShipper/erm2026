@@ -1,6 +1,7 @@
 // Recepción de evidencias y denuncias ciudadanas (ERM 2026). Node ≥ 20, sin dependencias.
 //   POST /evidencia   JSON { tipo, lugar, mesa, descripcion, enlace, contacto, web, archivos:[{nombre,tipo,datos(base64)}] }
 //   GET  /stats       { recibidos, enRevision, verificados }
+//   POST /ping?s=ID   { viendo }  personas con la página abierta (id aleatorio de sesión, sin IP)
 // Todo queda en una bandeja privada (INBOX). Nada se publica sin revisión humana/editorial.
 // No se guarda la IP: solo un hash con sal diaria, para frenar abusos.
 import http from 'node:http';
@@ -49,6 +50,14 @@ function stats() {
   return { recibidos, enRevision: recibidos - revisados, verificados };
 }
 let cache = { t: 0, v: null };
+const viewers = new Map(); // id de sesión -> último aviso
+function ping(url) {
+  const id = (new URL(url, 'http://x').searchParams.get('s') || '').replace(/[^a-z0-9]/gi, '').slice(0, 16);
+  const now = Date.now();
+  if (id && viewers.size < 200000) viewers.set(id, now);
+  for (const [k, t] of viewers) if (now - t > 75e3) viewers.delete(k);
+  return { viendo: viewers.size };
+}
 
 async function readBody(req) {
   return new Promise((ok, ko) => {
@@ -112,6 +121,7 @@ http.createServer(async (req, res) => {
   try {
     const url = req.url.split('?')[0].replace(/^\/dataonpe\/api/, '');
     if (req.method === 'POST' && url === '/evidencia') return await evidencia(req, res);
+    if (url === '/ping' && (req.method === 'POST' || req.method === 'GET')) return send(res, 200, ping(req.url));
     if (req.method === 'GET' && url === '/stats') {
       if (Date.now() - cache.t > 30e3) cache = { t: Date.now(), v: stats() };
       return send(res, 200, cache.v);

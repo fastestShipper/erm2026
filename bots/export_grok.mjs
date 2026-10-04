@@ -29,15 +29,19 @@ const COORD = '5dd0d022-a841-4631-b524-64636e8b5f49';
 // window = horas de Lima en que debe dar señales; maxQuietMin = silencio máximo tolerado.
 const KNOWN = {
   [COORD]: { apodo: 'Norma', bot: 'Coordinación', puesto: 'Jefa de la oficina', role: 'Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.', window: [0, 24], maxQuietMin: 75 },
-  '1bc377ab-1704-416c-b668-c69327dc72a2': { apodo: 'Luchito', bot: 'Datos ONPE', puesto: 'Analista de datos', role: 'Vigila el portal de la ONPE: actas, cortes y cifras oficiales.', window: [6, 24], maxQuietMin: 390 },
+  '1bc377ab-1704-416c-b668-c69327dc72a2': { apodo: 'Luchito', bot: 'Datos ONPE', puesto: 'Analista de datos', role: 'Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.', window: [6, 24], maxQuietMin: 45 },
   'f5b8b86c-0716-4d8a-885e-f277a9bbbfe3': { apodo: 'Maritza', bot: 'Pulso X', puesto: 'Redes sociales', role: 'Sigue en X a la ONPE, al JNE y a los medios nacionales.', window: [6.08, 22.75], maxQuietMin: 60 },
   'bf035441-d6bd-4015-8247-addd6008b921': { apodo: 'Rosita', bot: 'Verifica', puesto: 'Verificadora', role: 'Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.', window: [6.45, 22.95], maxQuietMin: 75 },
-  'aaebb43a-e60d-4700-8b2d-aca09a603682': { apodo: 'Kike', bot: 'Desinfo', puesto: 'Cazador de bulos', role: 'Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.', window: [6, 24], maxQuietMin: 120 },
-  '8335ac4a-3667-4e4a-a081-ef28f6afc852': { apodo: 'Charo', bot: 'Tablero', puesto: 'Diseñadora del tablero', role: 'Cuida que el tablero solo muestre cifras oficiales y se entienda.', window: [5.67, 24], maxQuietMin: 180 },
-  '0eafb8e0-574d-4e42-9dbe-13a886c7ca53': { apodo: 'Jorge', bot: 'Medios', puesto: 'Monitor de medios', role: 'Mira la televisión, escucha la radio y lee los portales de noticias.', window: [6, 24], maxQuietMin: 90 },
-  '51f59259-fc4a-4f4c-853b-4fd7e49fea10': { apodo: 'Don Pepe', bot: 'Cronista', puesto: 'Cronista', role: 'Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.', window: [1, 24], maxQuietMin: 120 },
+  'aaebb43a-e60d-4700-8b2d-aca09a603682': { apodo: 'Kike', bot: 'Desinfo', puesto: 'Cazador de bulos', role: 'Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.', window: [6, 24], maxQuietMin: 60 },
+  '8335ac4a-3667-4e4a-a081-ef28f6afc852': { apodo: 'Charo', bot: 'Tablero', puesto: 'Diseñadora del tablero', role: 'Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.', window: [5.67, 24], maxQuietMin: 150 },
+  '0eafb8e0-574d-4e42-9dbe-13a886c7ca53': { apodo: 'Jorge', bot: 'Medios', puesto: 'Monitor de medios', role: 'Mira la televisión, escucha la radio y lee los portales de noticias.', window: [6, 24], maxQuietMin: 45 },
+  '51f59259-fc4a-4f4c-853b-4fd7e49fea10': { apodo: 'Don Pepe', bot: 'Cronista', puesto: 'Cronista', role: 'Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.', window: [1, 24], maxQuietMin: 75 },
   '08536d58-51e5-4659-b3aa-9e49ad1c4eab': { apodo: 'Beto', bot: 'Poste', puesto: 'Editor gráfico', role: 'Prepara el resumen de cada hora con imagen, solo con datos verificados.', window: [1, 24], maxQuietMin: 75 },
 };
+// Perfiles que se crean por nombre (aún sin id conocido).
+const BY_NAME = [
+  [/acta/i, { apodo: 'Toño', bot: 'Actas', puesto: 'Contrastador de actas', role: 'Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.', window: [17, 24], maxQuietMin: 30 }],
+];
 const SPARE = ['Mari', 'Pocho', 'Yoli', 'Toño', 'Chabuca', 'Lalo'];
 
 const PLAN = [
@@ -81,7 +85,7 @@ function team(roster) {
   const out = [];
   let spare = 0;
   for (const r of roster) {
-    const k = KNOWN[r.id];
+    const k = KNOWN[r.id] || BY_NAME.find(([re]) => re.test(r.name || ''))?.[1];
     if (!k && !(ELECTION_RE.test(r.description || '') && /2026|elecci/i.test(r.description || ''))) continue;
     out.push({
       id: r.id,
