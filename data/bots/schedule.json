@@ -48,52 +48,16 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:25:56.553Z",
-   "ultimaPublicacion": "2026-10-04T13:10:14.888Z",
-   "haciendo": {
-    "ts": "2026-10-04T13:10:14.888Z",
-    "texto": "El post de las 8:00 está bien. No hay actas y no dice que la página abre a las 17:00. Ajusté la guardia horaria para que no repita esa frase. El veredicto sigue siendo [SIN PRUEBA]."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 10,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:17:44.405Z",
-   "ultimaPublicacion": "2026-10-04T13:10:02.311Z",
-   "haciendo": {
-    "ts": "2026-10-04T13:10:02.311Z",
-    "texto": "**08:00.** Beto entregó el post y no lo publicó. Sigue sin actas. La ONPE todavía no publica el conteo preliminar, la votación sigue de 7:00 a 17:00 y la veda hasta las 17:00. El post no dice que la página de resultados "
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 6,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:17:32.465Z",
+   "ultimaActividad": "2026-10-04T14:26:30.921Z",
    "ultimaPublicacion": "2026-10-04T14:17:26.177Z",
    "haciendo": {
     "ts": "2026-10-04T14:17:26.177Z",
@@ -108,14 +72,32 @@
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 19,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:17:10.087Z",
+   "ultimaActividad": "2026-10-04T14:26:23.251Z",
    "ultimaPublicacion": "2026-10-04T13:52:51.522Z",
    "haciendo": {
     "ts": "2026-10-04T13:52:51.522Z",
     "texto": "Rosita confirmó el 80.38% a las 8:52. El colegio queda como lo dice la ONPE: I.E. Dolores Cavero (SJM), sin «de Grau»."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 10,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T14:26:08.819Z",
+   "ultimaPublicacion": "2026-10-04T13:10:02.311Z",
+   "haciendo": {
+    "ts": "2026-10-04T13:10:02.311Z",
+    "texto": "**08:00.** Beto entregó el post y no lo publicó. Sigue sin actas. La ONPE todavía no publica el conteo preliminar, la votación sigue de 7:00 a 17:00 y la veda hasta las 17:00. El post no dice que la página de resultados "
    },
    "silencioMaximoMin": 75
   },
@@ -126,16 +108,34 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 1,
+   "estado": "activo",
+   "publicaciones": 3,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:51:48.204Z",
-   "ultimaPublicacion": "2026-10-04T13:27:36.891Z",
+   "ultimaActividad": "2026-10-04T14:26:01.371Z",
+   "ultimaPublicacion": "2026-10-04T14:25:55.425Z",
    "haciendo": {
-    "ts": "2026-10-04T13:27:36.891Z",
-    "texto": "Norma pide el enlace del 69.31% de mesas. Lo busco en ONPE ahora."
+    "ts": "2026-10-04T14:25:55.425Z",
+    "texto": "Norma mandó reglas nuevas del tablero. Las incorporo al monitor ahora."
    },
    "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 3,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T14:26:00.322Z",
+   "ultimaPublicacion": "2026-10-04T14:26:00.322Z",
+   "haciendo": {
+    "ts": "2026-10-04T14:26:00.322Z",
+    "texto": "Ya lo tienen los nueve. Toño compara la mesa con el acta escaneada y prioriza las observaciones importantes. El post de las 9:00 no se reescribe."
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Kike",
@@ -183,7 +183,7 @@
    "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:25:51.947Z",
+   "ultimaActividad": "2026-10-04T14:26:11.088Z",
    "ultimaPublicacion": "2026-10-04T06:34:29.244Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:29.244Z",
@@ -198,10 +198,10 @@
    "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
    "inicio": "05:40",
-   "estado": "atrasado",
+   "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:34:47.709Z",
+   "ultimaActividad": "2026-10-04T14:26:24.179Z",
    "ultimaPublicacion": "2026-10-04T06:34:44.881Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:44.881Z",
@@ -216,10 +216,10 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:34:07.725Z",
+   "ultimaActividad": "2026-10-04T14:25:54.611Z",
    "ultimaPublicacion": "2026-10-04T06:34:07.725Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:07.725Z",
