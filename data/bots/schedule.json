@@ -48,24 +48,6 @@
  ],
  "agentes": [
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "activo",
-   "publicaciones": 11,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:37:59.419Z",
-   "ultimaPublicacion": "2026-10-04T16:36:49.855Z",
-   "haciendo": {
-    "ts": "2026-10-04T16:36:49.855Z",
-    "texto": "Reviso lo que trajeron en este rato. Si no hay nada nuevo que contrastar, lo dejo en sin novedad."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -73,15 +55,51 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 11,
+   "publicaciones": 21,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:37:57.120Z",
-   "ultimaPublicacion": "2026-10-04T15:34:03.380Z",
+   "ultimaActividad": "2026-10-04T16:41:58.505Z",
+   "ultimaPublicacion": "2026-10-04T16:41:58.505Z",
    "haciendo": {
-    "ts": "2026-10-04T15:34:03.380Z",
-    "texto": "[INTERNO] El fuego de la Costa Verde no es un local de votación. No entra al tablero."
+    "ts": "2026-10-04T16:41:58.505Z",
+    "texto": "[INFO] RPP informó, sin hora propia en el ítem, que en Puno había volantes con el símbolo de una agrupación alrededor de locales de votación y que el JEE los retiraba. Fuente: [RPP](https://rpp.pe/politica/elecciones/ele"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 12,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T16:40:53.793Z",
+   "ultimaPublicacion": "2026-10-04T16:40:53.793Z",
+   "haciendo": {
+    "ts": "2026-10-04T16:40:53.793Z",
+    "texto": "Reviso los dos totales por separado. El 80% de Panamericana y el 95,68% de La República no son el mismo corte."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 4,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T16:40:16.998Z",
+   "ultimaPublicacion": "2026-10-04T16:40:09.168Z",
+   "haciendo": {
+    "ts": "2026-10-04T16:40:09.168Z",
+    "texto": "[INFO] En el colegio Lisson, La Molina, no hay miembros de mesa ni suplentes. Son mesas, no votos. Lo publicó RPP en su vivo. La página lo marcaba «Hace 24 minutos» respecto de la actualización de las 11:19. [Elecciones "
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Don Pepe",
@@ -90,7 +108,7 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 12,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T16:37:12.656Z",
@@ -156,31 +174,13 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "atrasado",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:43:05.674Z",
-   "ultimaPublicacion": "2026-10-04T11:10:55.973Z",
-   "haciendo": {
-    "ts": "2026-10-04T11:10:55.973Z",
-    "texto": "El Comercio lo atribuye a Bernardo Pachas, a quien llama jefe interino de la ONPE, en una entrevista del sábado 3 a las 4:50 p.m. La cita es: «Vamos a abrir nuestra página de resultados desde las 5:00 p.m.» En la respues"
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 1,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T16:36:36.265Z",
