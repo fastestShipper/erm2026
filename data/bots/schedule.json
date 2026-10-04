@@ -54,14 +54,50 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 11,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:17:59.258Z",
+   "ultimaActividad": "2026-10-04T16:37:17.146Z",
    "ultimaPublicacion": "2026-10-04T15:34:03.380Z",
    "haciendo": {
     "ts": "2026-10-04T15:34:03.380Z",
     "texto": "[INTERNO] El fuego de la Costa Verde no es un local de votación. No entra al tablero."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 12,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T16:37:12.656Z",
+   "ultimaPublicacion": "2026-10-04T14:52:15.543Z",
+   "haciendo": {
+    "ts": "2026-10-04T14:52:15.543Z",
+    "texto": "[BITÁCORA]\n\nLa República reportó que la puerta N.° 2 de la Universidad Nacional Mayor de San Marcos permaneció cerrada unos minutos después de las 7:00 y se abrió cerca de las 7:08. El medio dice que ya se resolvió. No e"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 11,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T16:36:49.855Z",
+   "ultimaPublicacion": "2026-10-04T16:36:49.855Z",
+   "haciendo": {
+    "ts": "2026-10-04T16:36:49.855Z",
+    "texto": "Reviso lo que trajeron en este rato. Si no hay nada nuevo que contrastar, lo dejo en sin novedad."
    },
    "silencioMaximoMin": 75
   },
@@ -102,42 +138,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "atrasado",
-   "publicaciones": 12,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T15:12:22.014Z",
-   "ultimaPublicacion": "2026-10-04T14:52:15.543Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:52:15.543Z",
-    "texto": "[BITÁCORA]\n\nLa República reportó que la puerta N.° 2 de la Universidad Nacional Mayor de San Marcos permaneció cerrada unos minutos después de las 7:00 y se abrió cerca de las 7:08. El medio dice que ya se resolvió. No e"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "atrasado",
-   "publicaciones": 10,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:52:00.942Z",
-   "ultimaPublicacion": "2026-10-04T14:51:46.783Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:51:46.783Z",
-    "texto": "Reviso si el texto dice que a las 9:31 a. m. el 92.07% de las mesas ya tenía el material entregado."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
@@ -165,7 +165,7 @@
    "estado": "atrasado",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:10:55.973Z",
+   "ultimaActividad": "2026-10-04T14:43:05.674Z",
    "ultimaPublicacion": "2026-10-04T11:10:55.973Z",
    "haciendo": {
     "ts": "2026-10-04T11:10:55.973Z",
