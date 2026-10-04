@@ -48,13 +48,31 @@
  ],
  "agentes": [
   {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "cumpliendo",
+   "publicaciones": 7,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T07:22:22.562Z",
+   "ultimaPublicacion": "2026-10-04T07:22:22.562Z",
+   "haciendo": {
+    "ts": "2026-10-04T07:22:22.562Z",
+    "texto": "**02:00.** Beto entregó el post y no lo publicó. No hay actas. La ONPE todavía no publica el conteo preliminar. El voto es de 7:00 a 17:00 y el portal está anunciado a partir del cierre. La imagen dice lo mismo, sin voto"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 8,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T07:21:11.845Z",
@@ -72,7 +90,7 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 30,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T07:21:24.958Z",
@@ -80,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-04T06:34:52.708Z",
     "texto": "Charo miró [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) a la 1:33. Dice «Sin resultados todavía» y el cierre a las 17:00, igual que la ONPE. No hay cifra que contradiga."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 6,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:34:47.933Z",
-   "ultimaPublicacion": "2026-10-04T06:34:47.933Z",
-   "haciendo": {
-    "ts": "2026-10-04T06:34:47.933Z",
-    "texto": "**01:11.** Beto entregó el texto de la 1:00 y no lo publicó. Dice que el portal sigue en «Próximamente», con cero actas, mesas a las 6:00 y voto de 7:00 a 17:00. La imagen no llegó y Norma la volvió a pedir.\n\n**01:12.** "
    },
    "silencioMaximoMin": 75
   },
