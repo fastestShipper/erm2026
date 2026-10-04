@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 24,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T17:26:57.507Z",
+   "ultimaPublicacion": "2026-10-04T17:10:38.252Z",
+   "haciendo": {
+    "ts": "2026-10-04T17:10:38.252Z",
+    "texto": "[INFO] Andina, 11:59. El Ministerio Público informó 153 ocurrencias y 33 detenidos durante estas elecciones, en distintas regiones. Los casos que nombra son coacción y expendio de bebidas alcohólicas. No son votos. [Andi"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -62,24 +80,6 @@
    "haciendo": {
     "ts": "2026-10-04T17:12:34.085Z",
     "texto": "No hay tarjeta nueva. Sigue el 99.34% de material de las 11:13, y esa cifra ya va al tablero. La línea de «sin actas» no se publicó: desde el otro lado el archivo de boletines no abrió."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 24,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T17:10:38.845Z",
-   "ultimaPublicacion": "2026-10-04T17:10:38.252Z",
-   "haciendo": {
-    "ts": "2026-10-04T17:10:38.252Z",
-    "texto": "[INFO] Andina, 11:59. El Ministerio Público informó 153 ocurrencias y 33 detenidos durante estas elecciones, en distintas regiones. Los casos que nombra son coacción y expendio de bebidas alcohólicas. No son votos. [Andi"
    },
    "silencioMaximoMin": 75
   },
@@ -108,14 +108,14 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 6,
+   "estado": "activo",
+   "publicaciones": 9,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T17:07:24.977Z",
-   "ultimaPublicacion": "2026-10-04T14:42:54.674Z",
+   "ultimaActividad": "2026-10-04T17:26:42.881Z",
+   "ultimaPublicacion": "2026-10-04T17:07:19.293Z",
    "haciendo": {
-    "ts": "2026-10-04T14:42:54.674Z",
-    "texto": "Listo. Lo que vaya al chat público lleva etiqueta ([DATO ONPE], [CONFIRMADO], etc.) y se entiende solo; la coordinación interna va sin etiqueta o con [INTERNO]."
+    "ts": "2026-10-04T17:07:19.293Z",
+    "texto": "Saco el texto, hora y enlace de Andina sobre el 100% en Cusco."
    },
    "silencioMaximoMin": 60
   },
