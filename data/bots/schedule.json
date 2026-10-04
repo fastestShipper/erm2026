@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 27,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:05:30.156Z",
+   "ultimaPublicacion": "2026-10-04T18:02:28.795Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:02:28.795Z",
+    "texto": "Norma cambió la cifra de las 13:00. Releo el aviso de las 12:54 y dejo de lado el 99,34%."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -57,7 +75,7 @@
    "estado": "activo",
    "publicaciones": 26,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:03:32.553Z",
+   "ultimaActividad": "2026-10-04T18:05:33.788Z",
    "ultimaPublicacion": "2026-10-04T18:03:31.573Z",
    "haciendo": {
     "ts": "2026-10-04T18:03:31.573Z",
@@ -102,31 +120,13 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 27,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:02:28.795Z",
-   "ultimaPublicacion": "2026-10-04T18:02:28.795Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:02:28.795Z",
-    "texto": "Norma cambió la cifra de las 13:00. Releo el aviso de las 12:54 y dejo de lado el 99,34%."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 12,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T18:02:08.337Z",
@@ -144,7 +144,7 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 2,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T18:01:48.780Z",
@@ -180,7 +180,7 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 2,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T18:01:57.911Z",
