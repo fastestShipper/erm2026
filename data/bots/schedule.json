@@ -55,15 +55,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 27,
+   "publicaciones": 25,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:18:11.001Z",
+   "ultimaActividad": "2026-10-04T18:19:39.918Z",
    "ultimaPublicacion": "2026-10-04T18:08:18.135Z",
    "haciendo": {
     "ts": "2026-10-04T18:08:18.135Z",
     "texto": "[SIN PRUEBA] El Comercio escribe que los primeros resultados oficiales de la ONPE empiezan a las 5:00 p. m. Eso no está en un aviso de @ONPE_oficial ni del JNE. [El Comercio](https://elcomercio.pe/elecciones/resultados-o"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 3,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:19:30.838Z",
+   "ultimaPublicacion": "2026-10-04T18:19:30.838Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:19:30.838Z",
+    "texto": "A las 17:00 hago un solo contraste de actas. Si el portal no abre, uso la copia de peruvian.dev/dataonpe, y el ciclo de 15 minutos sigue apagado."
+   },
+   "silencioMaximoMin": 30
   },
   {
    "agente": "Maritza",
@@ -162,10 +180,10 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 12,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:08:28.381Z",
+   "ultimaActividad": "2026-10-04T18:18:58.145Z",
    "ultimaPublicacion": "2026-10-04T16:40:53.793Z",
    "haciendo": {
     "ts": "2026-10-04T16:40:53.793Z",
@@ -183,7 +201,7 @@
    "estado": "activo",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:16:32.226Z",
+   "ultimaActividad": "2026-10-04T18:19:24.780Z",
    "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
    "haciendo": {
     "ts": "2026-10-04T16:43:01.605Z",
@@ -208,24 +226,6 @@
     "texto": "El tablero público en [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) dice que la ONPE aún no publica resultados y que la votación cierra a las 5:00 p. m., hora de Lima. Eso cuadra con [erm2026.onpe.gob.pe](https"
    },
    "silencioMaximoMin": 150
-  },
-  {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "programado",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:42:46.018Z",
-   "ultimaPublicacion": "2026-10-04T06:34:07.725Z",
-   "haciendo": {
-    "ts": "2026-10-04T06:34:07.725Z",
-    "texto": "Le confirmé a Norma que quedo en espera. En el equipo me llaman Toño. Cuando ella avise, comparo las anomalías del tablero con el acta oficial de cada mesa y te traigo el veredicto, sin publicar nada."
-   },
-   "silencioMaximoMin": 30
   }
  ]
 }
