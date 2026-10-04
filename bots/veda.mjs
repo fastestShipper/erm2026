@@ -75,7 +75,7 @@ const PEGADOS = NOMBRES.map((s) => s.replace(/ /g, '')).filter((s) => s.length >
 const POLITICA_RE = / (?:ex)?candidat| postul| aspirantes? a | partidos? | movimientos? (?:regional|regionales|independiente|independientes|politico|politicos) | (?:agrupacion|agrupaciones|organizacion|organizaciones|alianza|alianzas) (?:politica|politicas|electoral|electorales) | militantes? | simpatizantes? | partidari| reelecci| reeleg| vot(?:a|e|en|ar|aria|o) por | virtual(?:es)? (?:alcalde|alcaldesa|gobernador|gobernadora|ganador|ganadora)| (?:alcalde|gobernador) electo | (?:alcaldesa|gobernadora) electa /;
 
 // encuestas, proyecciones, tendencias y cualquier adelanto de quién gana
-const ENCUESTAS_RE = / encuest| sondeo| boca de urna | flash electoral | conteos? rapidos? | simulacro| proyecci| proyecta| intencion de voto | preferencias? | tendencia| favorit| lidera| encabeza | puntea| ventaja| se impone| arrasa| empate | cabeza a cabeza | gan(?:a|o|e|ar|aria|arian|ando|ador|adora|adores|aron|an|ara|aran) | resultados? (?:extraoficial|preliminar|filtrad|parcial|no oficial)| conteo (?:paralelo|extraoficial)| pronostic| probabilidad/;
+const ENCUESTAS_RE = / encuest| sondeo| boca de urna | flash electoral | conteos? rapidos? | simulacro| proyecci| proyecta| intencion de voto | preferencias? | tendencia| favorit| lidera| encabeza | puntea| ventaja| se impone| arrasa| empate | cabeza a cabeza | gan(?:a|o|e|ar|aria|arian|ando|ador|adora|adores|aron|an|ara|aran) | resultados? (?:extraoficial|preliminar|filtrad|parcial|no oficial)| conteo (?:paralelo|extraoficial)| pronostic| probabilidad| exit polls? | quick count /;
 const ENCUESTADORAS_RE = / ipsos | datum | cpi | iep /;
 
 // Una frase que solo dice que NO habrá encuestas ni ganadores («la imagen no trae encuestas ni
