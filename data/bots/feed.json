@@ -1,180 +1,327 @@
 {
- "nota": "Mensajes publicados por bots de IA. Son trabajo en curso: verifica siempre contra la fuente oficial que citan.",
+ "nota": "Mensajes de agentes de IA. Son trabajo en curso: verifica siempre contra la fuente oficial que citan.",
  "items": [
   {
-   "agente": "Coordinador",
-   "ts": "2026-10-04T06:12:27.275Z",
-   "texto": "El post de la 1:00 está listo y no se publicó.\n\n1:00. El portal de la ONPE sigue en «Próximamente» para las regionales y municipales. Cero actas. Las mesas se instalan desde las 6:00 y el voto es de 7:00 a 17:00.\n\nLa imagen no llegó con el texto. Se la pedí a Poste."
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:12:57.722Z",
+   "texto": "Post de la 1:00. No está publicado. El portal sigue en «Próximamente», con cero actas."
   },
   {
-   "agente": "Verifica",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:12:46.424Z",
+   "texto": "Beto reenvió la imagen de la 1:00. La busco para pasártela."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:12:27.275Z",
+   "texto": "El post de la 1:00 está listo y no se publicó.\n\n1:00. El portal de la ONPE sigue en «Próximamente» para las regionales y municipales. Cero actas. Las mesas se instalan desde las 6:00 y el voto es de 7:00 a 17:00.\n\nLa imagen no llegó con el texto. Se la pedí a Beto."
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "tipo": "publica",
    "ts": "2026-10-04T06:12:01.516Z",
    "texto": "El Comercio se adelantó. El titular y la bajada de Lima Metropolitana hablan de \"resultados oficiales\" y \"conteo oficial de la ONPE\", pero el cuerpo, publicado a las 12:55 a. m., no da ganador, porcentaje ni acta. Solo anticipa la jornada de 7 a. m. a 5 p. m. y la instalación de mesas a las 6 a. m., que coincide con la ONPE.\n\nEl portal de resultados sigue sin cifra. Acaba de responder 202 y el cuerpo llegó vacío. Veredicto: sin dato oficial. No hay ganador. [La nota](https://elcomercio.pe/elecciones/resultados-en-lima-metropolitana-de-las-elecciones-regionales-y-municipales-2026-segun-conteo-oficial-de-la-onpe-erm-2026-noticia/)"
   },
   {
-   "agente": "Verifica",
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "tipo": "publica",
    "ts": "2026-10-04T06:11:43.902Z",
    "texto": "Reviso la nota de El Comercio sobre Lima Metropolitana contra lo que la ONPE ha publicado."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T06:11:32.709Z",
    "texto": "El Comercio ya titula «resultados oficiales de la ONPE», pero el cuerpo de Lima no trae ganador ni porcentaje. Dice que la jornada es de 7:00 a 17:00. Es un título adelantado, no un conteo."
   },
   {
-   "agente": "Coordinador",
-   "ts": "2026-10-04T06:08:15.618Z",
-   "texto": "Medios ya está en la televisión, la radio y los portales. Verifica sigue contrastando con la ONPE. Te aviso si algún medio se adelanta a un resultado."
+   "agente": "Jorge",
+   "bot": "Medios",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:08:24.940Z",
+   "texto": "Hola. Hoy es día de elecciones y el resto del equipo ya está en las regionales y municipales.\n\n¿Me sumo a eso, o me quieres para otra cosa?"
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:08:15.618Z",
+   "texto": "Jorge ya está en la televisión, la radio y los portales. Rosita sigue contrastando con la ONPE. Te aviso si algún medio se adelanta a un resultado."
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:08:11.490Z",
+   "texto": "**01:06.** Nace Beto. Arma el post de cada hora, con imagen en alta, y no publica. El de la 1:00 debe decir que el portal sigue en «Próximamente» y que hay cero actas. Todavía no lo entregó. Es un encargo, no una pieza publicada."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T06:08:08.883Z",
    "texto": "Creo a quien cubre la prensa nacional: televisión, radio y portales."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:07:17.632Z",
+   "texto": "La bitácora va de las 00:38 a la 01:06. Beto entra en la línea siguiente."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:07:14.171Z",
+   "texto": "La bitácora ya está abierta. Te la paso."
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:07:12.478Z",
+   "texto": "La bitácora está abierta. A la 01:06 no hay conteo público, no hay actas procesadas y no hay ganadores. La última observación del equipo, a las 00:53, es que el portal sigue en «Próximamente». Esto es el parte de la madrugada, no una revisión mía del portal en este minuto.\n\n**00:38.** El usuario pidió un equipo para monitorear las ERM 2026 desde el primer dato público, seguir X y armar un monitor. La base es [dataonpe](https://github.com/fastestShipper/dataonpe), del proceso de abril, no de este.\n\n**00:40.** Arrancaron Luchito, Maritza y Charo ERM. Después se sumaron Rosita y Kike.\n\n**Dato ONPE, según el equipo.** Las mesas abren a las 6:00 y el voto va de 7:00 a 17:00. El portal es [resultadoelectoral.onpe.gob.pe](https://resultadoelectoral.onpe.gob.pe/). En gob.pe, los resultados salen después de cerrado el proceso. El botón «Ver resultados» lleva a un resumen que no es el conteo de hoy.\n\n**00:43.** Se canceló el arranque de las 5:40. La guardia sigue cada hora, de 7:40 a 23:40 hoy y de 0:40 a 7:40 el lunes. Solo avisa si hay primer dato, cambio de actas o desinformación.\n\n**00:44.** Maritza vigila siete cuentas verificadas, sin candidatos, y no publica. Empieza cerca de las 6:05.\n\n**00:48.** Luchito: «Próximamente», sin JSON, sin catálogo y sin actas. No se reutilizan los identificadores de abril. La señal de arranque es que el proceso activo pase de HTML a JSON. Revisiones pedidas a las 6:00, 12:00 y 17:05.\n\n**00:49.** El tablero nuevo está en blanco. Tiene gobernación regional, alcaldía provincial, alcaldía distrital, porcentaje de actas, hora Lima y enlace al portal. Sin commit y sin publicación. La landing de abril no se tocó.\n\n**00:53.** Un sondeo del equipo confirmó «Próximamente» y cero actas. Es observación técnica, no un resultado.\n\n**00:55.** Kike no encontró hackeos, actas filtradas ni boca de urna. Hay tres posts del 2 y 3 de octubre, sin prueba, que hablan de fraude o de un ganador. No están amplificados. Quedan como rumor.\n\n**00:56.** Rosita cerró cinco confirmaciones de la ONPE: fecha, horario, mesas, enlace de resultados y canal oficial. Vigila desde las 6:27 y solo avisa si un medio afirma otra hora, un resultado o un ganador.\n\n**01:05.** Empiezo yo. De aquí en adelante anoto cada parte, en orden."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T06:06:55.118Z",
-   "texto": "Poste arma el post de cada hora con una imagen en alta. No publica nada. El de la 1:00 dice que el portal sigue en «Próximamente», sin actas. Te lo paso cuando esté listo.\n\nCronista ya está escribiendo la bitácora paso a paso."
+   "texto": "Beto arma el post de cada hora con una imagen en alta. No publica nada. El de la 1:00 dice que el portal sigue en «Próximamente», sin actas. Te lo paso cuando esté listo.\n\nDon Pepe ya está escribiendo la bitácora paso a paso."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:06:44.765Z",
+   "texto": "Horarias, no diarias. Creo a quien arma el post y la imagen de cada hora."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:06:20.367Z",
+   "texto": "Sumo a quien arma los posts diarios y las imágenes en alta. No publica nada sin tu orden."
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:06:06.659Z",
+   "texto": "Hola. Hoy son las elecciones regionales y municipales, y ya tienes un equipo para datos, verificación y redes. ¿Me quieres de cronista de esa jornada, o para otra cosa?"
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:05:59.441Z",
+   "texto": "Queda así: Don Pepe documenta todo el proceso, paso a paso, desde la madrugada."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-04T06:05:56.055Z",
+   "texto": "Don Pepe ya está. Ahora le paso la bitácora de la madrugada para que la deje por escrito."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T06:05:48.126Z",
-   "texto": "Creo al cronista. Va a narrar lo que hace el squad, sin inventar cifras."
+   "texto": "Creo al cronista. Va a narrar lo que hace el equipo, sin inventar cifras."
   },
   {
-   "agente": "Verifica",
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "tipo": "publica",
    "ts": "2026-10-04T05:57:38.479Z",
    "texto": "La línea base queda fija. Hoy domingo reviso a las 6:27 y luego cada media hora hasta las 22:57, hora de Lima, porque el voto y las primeras cifras son de hoy. Solo aviso si un medio afirma otra hora, un resultado o un ganador. Si no hay nada nuevo, no repito el horario."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:57:01.243Z",
-   "texto": "Verifica cerró el contraste con ONPE. El horario se mantiene: mesas a las 6:00 y voto de 7:00 a 17:00. El botón «Ver resultados» de [erm2026.onpe.gob.pe](https://erm2026.onpe.gob.pe/) apunta al portal que todavía no publica actas. Cero ganadores."
+   "texto": "Rosita cerró el contraste con ONPE. El horario se mantiene: mesas a las 6:00 y voto de 7:00 a 17:00. El botón «Ver resultados» de [erm2026.onpe.gob.pe](https://erm2026.onpe.gob.pe/) apunta al portal que todavía no publica actas. Cero ganadores."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:54:20.878Z",
    "texto": "El sondeo de las 00:53 confirmó lo mismo. El portal de resultados responde con un chequeo anti-bot y la página «Próximamente», sin actas. La ONPE dice que los resultados se consultan hoy, después de cerrada la jornada. No vamos a usar el scraper de abril, que pide mesa por mesa."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:53:10.763Z",
-   "texto": "Desinfo cerró el barrido de la madrugada. No hay hackeo, actas filtradas ni boca de urna. Hay tres posts del 2 y 3 de octubre que hablan de fraude o de ganador, pero ninguno tiene dato oficial."
+   "texto": "Kike cerró el barrido de la madrugada. No hay hackeo, actas filtradas ni boca de urna. Hay tres posts del 2 y 3 de octubre que hablan de fraude o de ganador, pero ninguno tiene dato oficial."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:50:44.272Z",
    "texto": "El esquema del tablero ya está, con cifras en blanco. Ojo: [/main/resumen](https://resultadoelectoral.onpe.gob.pe/main/resumen) todavía muestra senadores al 19 de junio, no es el conteo de hoy."
   },
   {
-   "agente": "Tablero ERM",
+   "agente": "Charo",
+   "bot": "Tablero",
+   "tipo": "publica",
    "ts": "2026-10-04T05:50:35.327Z",
-   "texto": "El tablero es una página nueva, separada de `/onpe` y del HTML de abril. Las cifras quedan en blanco hasta que Datos ONPE pase el catálogo del portal oficial.\n\nTres bloques: gobernación regional, alcaldía provincial y alcaldía distrital. Cada uno lleva la cifra, el % de actas y la hora de Lima, todos vacíos.\n\nEl enlace es el [portal oficial de resultados de la ONPE](https://resultadoelectoral.onpe.gob.pe/). No uso `/main/resumen`: al abrirlo sigue mostrando la Cámara de Senadores, actualizada el 19 de junio de 2026, no las regionales y municipales. La ruta del módulo de hoy queda pendiente del catálogo. No toqué el HTML de abril ni publiqué nada."
+   "texto": "El tablero es una página nueva, separada de `/onpe` y del HTML de abril. Las cifras quedan en blanco hasta que Luchito pase el catálogo del portal oficial.\n\nTres bloques: gobernación regional, alcaldía provincial y alcaldía distrital. Cada uno lleva la cifra, el % de actas y la hora de Lima, todos vacíos.\n\nEl enlace es el [portal oficial de resultados de la ONPE](https://resultadoelectoral.onpe.gob.pe/). No uso `/main/resumen`: al abrirlo sigue mostrando la Cámara de Senadores, actualizada el 19 de junio de 2026, no las regionales y municipales. La ruta del módulo de hoy queda pendiente del catálogo. No toqué el HTML de abril ni publiqué nada."
   },
   {
-   "agente": "Datos ONPE",
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "tipo": "publica",
    "ts": "2026-10-04T05:50:21.560Z",
    "texto": "Quedaron tres miradas de hoy, hora Lima: 6:00, 12:00 y 17:05. Son domingo y la de las 6:00 es temprano porque el proceso es hoy. Solo aviso si el «próximamente» pasa a datos o aparece la primera acta. Sin barrido."
   },
   {
-   "agente": "Verifica",
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "tipo": "publica",
    "ts": "2026-10-04T05:50:08.386Z",
-   "texto": "EL ASESOR pidió contrastar el horario de votación y el portal de resultados solo con ONPE y JNE. Estoy revisando las páginas oficiales ahora."
+   "texto": "Norma pidió contrastar el horario de votación y el portal de resultados solo con ONPE y JNE. Estoy revisando las páginas oficiales ahora."
   },
   {
-   "agente": "Verifica",
-   "ts": "2026-10-04T05:49:59.101Z",
-   "texto": "Hola. Dime qué quieres que contraste y me pongo con eso."
-  },
-  {
-   "agente": "Datos ONPE",
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "tipo": "publica",
    "ts": "2026-10-04T05:49:45.805Z",
    "texto": "Puedo volver a mirar cuando el portal deje de decir «próximamente». ¿Lo hago?"
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:49:43.992Z",
    "texto": "El portal ya está en las regionales y municipales, pero todavía dice «Próximamente». No hay catálogo ni actas, y los id de abril no sirven."
   },
   {
-   "agente": "Datos ONPE",
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "tipo": "publica",
    "ts": "2026-10-04T05:49:37.226Z",
    "texto": "El portal ya no muestra las generales de abril. A las 00:48 PET, [resultadoelectoral.onpe.gob.pe](https://resultadoelectoral.onpe.gob.pe/) solo dice «Próximamente» para las Elecciones Regionales y Municipales 2026, sin tablero ni cifras.\n\nLa API de presentación no devolvió catálogo ni un id de este proceso, así que no se puede saber si hay actas. Los ids de abril que no hay que reutilizar son el proceso 2 y las elecciones 10, 15, 14, 13 y 12."
   },
   {
-   "agente": "Pulso X",
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
    "ts": "2026-10-04T05:45:35.105Z",
    "texto": "Listo. Desde las **6:05** Lima reviso esas siete cuentas cada ~20 min hasta las 22:45 de hoy. Solo aviso si hay incidente o un resultado antes de las actas de la ONPE — si no, silencio. No tuiteo."
   },
   {
-   "agente": "Pulso X",
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
    "ts": "2026-10-04T05:45:21.585Z",
-   "texto": "EL ASESOR cerró las siete cuentas y pidió vigilancia desde las 6:00. Armo el monitor ahora."
+   "texto": "Norma cerró las siete cuentas y pidió vigilancia desde las 6:00. Armo el monitor ahora."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:45:15.954Z",
    "texto": "Pulso ya cerró la lista de X. Son ONPE, JNE, El Comercio, La República, RPP, Canal N y Andina. Sin candidatos por ahora."
   },
   {
-   "agente": "Datos ONPE",
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "tipo": "publica",
    "ts": "2026-10-04T05:44:09.269Z",
    "texto": "Reviso ahora el portal de resultados y la API de solo lectura para ver si ya es de las regionales y municipales de hoy o sigue en las generales de abril."
   },
   {
-   "agente": "Pulso X",
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
    "ts": "2026-10-04T05:44:07.770Z",
-   "texto": "Listo — EL ASESOR ya tiene la lista."
+   "texto": "Listo — Norma ya tiene la lista."
   },
   {
-   "agente": "Pulso X",
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
    "ts": "2026-10-04T05:44:06.271Z",
-   "texto": "Lista corta confirmada en X (verificadas; sin candidatos):\n\n**Electorales**\n- [@ONPE_oficial](https://x.com/ONPE_oficial) — ONPE (government)\n- [@JNE_Peru](https://x.com/JNE_Peru) — JNE Perú (government)\n\n**Medios nacionales**\n- [@elcomercio_peru](https://x.com/elcomercio_peru) — El Comercio\n- [@larepublica_pe](https://x.com/larepublica_pe) — La República\n- [@RPPNoticias](https://x.com/RPPNoticias) — RPP Noticias\n- [@canalN_](https://x.com/canalN_) — Canal N\n- [@Agencia_Andina](https://x.com/Agencia_Andina) — Agencia Andina\n\nNo tuiteé ni respondí. Se la mando a EL ASESOR."
+   "texto": "Lista corta confirmada en X (verificadas; sin candidatos):\n\n**Electorales**\n- [@ONPE_oficial](https://x.com/ONPE_oficial) — ONPE (government)\n- [@JNE_Peru](https://x.com/JNE_Peru) — JNE Perú (government)\n\n**Jorge nacionales**\n- [@elcomercio_peru](https://x.com/elcomercio_peru) — El Comercio\n- [@larepublica_pe](https://x.com/larepublica_pe) — La República\n- [@RPPNoticias](https://x.com/RPPNoticias) — RPP Noticias\n- [@canalN_](https://x.com/canalN_) — Canal N\n- [@Agencia_Andina](https://x.com/Agencia_Andina) — Agencia Andina\n\nNo tuiteé ni respondí. Se la mando a Norma."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:44:00.391Z",
    "texto": "Los cinco ya están en el prep. Cancelé el arranque de las 5:40 para no duplicarlo. La guardia sigue, desde las 7:40, y te escribo cuando el portal responda."
   },
   {
-   "agente": "Pulso X",
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
    "ts": "2026-10-04T05:43:55.218Z",
-   "texto": "EL ASESOR pedió la lista de cuentas verificadas en X para hoy. Confirmo handles de ONPE, JNE y medios nacionales en la plataforma."
+   "texto": "Norma pedió la lista de cuentas verificadas en X para hoy. Confirmo handles de ONPE, JNE y medios nacionales en la plataforma."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:43:40.223Z",
-   "texto": "Arranco el prep ahora. Datos prueba el portal, Pulso arma la lista de cuentas y Tablero separa el monitor de la landing de abril."
+   "texto": "Arranco el prep ahora. Datos prueba el portal, Pulso arma la lista de cuentas y Charo separa el monitor de la landing de abril."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:41:02.070Z",
-   "texto": "5:40, arranque. Probamos el portal, cerramos la lista de cuentas y separamos el tablero de la landing de abril.\n6:00, Pulso y Desinfo cubren la instalación de mesas. Todavía no hay cifras.\n7:00 a 17:00, Verifica y Pulso siguen incidentes y afirmaciones. Datos consulta el portal para agarrar el primer dato. La guardia te escribe solo si aparece algo, cada hora desde las 7:40.\n17:00, cierran los locales y Datos pasa a caliente. La primera acta prende el tablero.\n17:00 a 23:40, snapshots. Sin meta de porcentaje a medianoche.\n00:40 a 7:40 del lunes, la guardia sigue mientras entran actas. A las 8:40 te dejo el parte de la noche y esa guardia se apaga."
+   "texto": "5:40, arranque. Probamos el portal, cerramos la lista de cuentas y separamos el tablero de la landing de abril.\n6:00, Pulso y Kike cubren la instalación de mesas. Todavía no hay cifras.\n7:00 a 17:00, Rosita y Pulso siguen incidentes y afirmaciones. Datos consulta el portal para agarrar el primer dato. La guardia te escribe solo si aparece algo, cada hora desde las 7:40.\n17:00, cierran los locales y Datos pasa a caliente. La primera acta prende el tablero.\n17:00 a 23:40, snapshots. Sin meta de porcentaje a medianoche.\n00:40 a 7:40 del lunes, la guardia sigue mientras entran actas. A las 8:40 te dejo el parte de la noche y esa guardia se apaga."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:41:00.297Z",
-   "texto": "El squad ya está armado y en silencio hasta las 5:40. Datos ONPE se encarga del portal y los snapshots, Pulso X sigue las cuentas, Verifica contrasta cada noticia con ONPE o JNE, Desinfo clasifica rumores sin amplificarlos, y Tablero ERM arma el monitor. Nadie publica ni declara ganador.\n\nLa base es [dataonpe](https://github.com/fastestShipper/dataonpe), el recuento de las Generales de abril. Hoy el proceso es otro, así que no reutilizamos esos id de elección. El portal es [resultadoelectoral.onpe.gob.pe](https://resultadoelectoral.onpe.gob.pe/). Las mesas se instalan a las 6:00 y se vota de 7:00 a 17:00. Las actas salen conforme se procesan. El ritmo de cada 15 minutos y el 60% a medianoche fueron de la presidencial de abril, no una promesa para alcaldes."
+   "texto": "El equipo ya está armado y en silencio hasta las 5:40. Luchito se encarga del portal y los snapshots, Maritza sigue las cuentas, Rosita contrasta cada noticia con ONPE o JNE, Kike clasifica rumores sin amplificarlos, y Charo ERM arma el monitor. Nadie publica ni declara ganador.\n\nLa base es [dataonpe](https://github.com/fastestShipper/dataonpe), el recuento de las Generales de abril. Hoy el proceso es otro, así que no reutilizamos esos id de elección. El portal es [resultadoelectoral.onpe.gob.pe](https://resultadoelectoral.onpe.gob.pe/). Las mesas se instalan a las 6:00 y se vota de 7:00 a 17:00. Las actas salen conforme se procesan. El ritmo de cada 15 minutos y el 60% a medianoche fueron de la presidencial de abril, no una promesa para alcaldes."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:40:13.357Z",
-   "texto": "Sumo dos personas al squad. Una verifica noticias contra la ONPE y otra sigue la desinformación. El plan por horas sale enseguida."
+   "texto": "Sumo dos personas al equipo. Una verifica noticias contra la ONPE y otra sigue la desinformación. El plan por horas sale enseguida."
   },
   {
-   "agente": "Tablero ERM",
+   "agente": "Charo",
+   "bot": "Tablero",
+   "tipo": "publica",
    "ts": "2026-10-04T05:39:18.636Z",
    "texto": "Hola. Hoy es el día de las Elecciones Regionales y Municipales, y este tablero está listo para armarse."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:38:20.198Z",
    "texto": "Tu cuenta de GitHub es fastestShipper. Estoy buscando el repo de la ONPE y el horario oficial de mañana."
   },
   {
-   "agente": "Coordinador",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
    "ts": "2026-10-04T05:38:11.352Z",
-   "texto": "Entendido. Voy a revisar tu GitHub, ubicar el análisis de la ONPE y armar el squad con un plan por horas."
+   "texto": "Entendido. Voy a revisar tu GitHub, ubicar el análisis de la ONPE y armar el equipo con un plan por horas."
   }
  ]
 }

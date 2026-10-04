@@ -2,109 +2,206 @@
  "dia": "2026-10-04",
  "plan": [
   {
-   "hora": "05:40",
-   "que": "Arranque: probar el portal, cerrar la lista de cuentas y separar el tablero de la data de abril.",
+   "hora": "00:40",
+   "que": "Se arma el equipo y se revisa el portal de la ONPE.",
    "quien": [
-    "Datos ONPE",
-    "Pulso X",
-    "Tablero ERM"
+    "Norma",
+    "Luchito"
    ]
   },
   {
    "hora": "06:00",
-   "que": "Instalación de mesas: Pulso X y Desinfo cubren lo que se publica.",
+   "que": "Instalación de mesas: X, medios y desinformación en vigilancia.",
    "quien": [
-    "Pulso X",
-    "Desinfo"
+    "Maritza",
+    "Jorge",
+    "Kike"
    ]
   },
   {
    "hora": "07:00–17:00",
-   "que": "Verifica y Pulso X siguen incidentes y afirmaciones; Datos ONPE consulta el portal.",
+   "que": "Votación: se verifican incidentes y afirmaciones contra fuentes oficiales.",
    "quien": [
-    "Verifica",
-    "Pulso X",
-    "Datos ONPE"
+    "Rosita",
+    "Maritza",
+    "Jorge",
+    "Kike"
    ]
   },
   {
-   "hora": "07:40 c/hora",
-   "que": "Guardia horaria del coordinador.",
+   "hora": "Cada hora",
+   "que": "Resumen horario con imagen y guardia de la coordinación.",
    "quien": [
-    "Coordinador"
+    "Beto",
+    "Norma"
    ]
   },
   {
-   "hora": "17:00",
-   "que": "Cierre de locales de votación; empieza el conteo.",
+   "hora": "17:00 en adelante",
+   "que": "Cierre y conteo: se siguen los cortes oficiales de la ONPE.",
    "quien": [
-    "Datos ONPE",
-    "Verifica",
-    "Pulso X",
-    "Desinfo"
+    "Luchito",
+    "Rosita",
+    "Don Pepe"
    ]
   }
  ],
  "agentes": [
   {
-   "agente": "Datos ONPE",
-   "rol": "Consulta el portal y la API de la ONPE y guarda snapshots.",
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 4,
-   "ultimaActividad": "2026-10-04T05:54:30.628Z",
-   "ultimaPublicacion": "2026-10-04T05:50:21.560Z",
-   "silencioMaximoMin": 390
-  },
-  {
-   "agente": "Pulso X",
-   "rol": "Sigue cuentas oficiales verificadas (ONPE, JNE, medios) en X.",
-   "inicio": "06:05",
-   "estado": "programado",
-   "publicaciones": 5,
-   "ultimaActividad": "2026-10-04T05:45:35.105Z",
-   "ultimaPublicacion": "2026-10-04T05:45:35.105Z",
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Verifica",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE.",
-   "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 5,
-   "ultimaActividad": "2026-10-04T06:12:01.516Z",
-   "ultimaPublicacion": "2026-10-04T06:12:01.516Z",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "cumpliendo",
+   "publicaciones": 27,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:12:57.722Z",
+   "ultimaPublicacion": "2026-10-04T06:12:57.722Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:12:57.722Z",
+    "texto": "Post de la 1:00. No está publicado. El portal sigue en «Próximamente», con cero actas."
+   },
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Desinfo",
-   "rol": "Detecta piezas virales falsas (capturas, audios, actas trucadas).",
-   "inicio": "06:00",
-   "estado": "programado",
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "cumpliendo",
    "publicaciones": 0,
-   "ultimaActividad": "2026-10-04T05:53:18.573Z",
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:12:42.724Z",
    "ultimaPublicacion": null,
+   "haciendo": null,
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "cumpliendo",
+   "publicaciones": 3,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:12:07.770Z",
+   "ultimaPublicacion": "2026-10-04T06:08:11.490Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:08:11.490Z",
+    "texto": "**01:06.** Nace Beto. Arma el post de cada hora, con imagen en alta, y no publica. El de la 1:00 debe decir que el portal sigue en «Próximamente» y que hay cero actas. Todavía no lo entregó. Es un encargo, no una pieza p"
+   },
    "silencioMaximoMin": 120
   },
   {
-   "agente": "Tablero ERM",
-   "rol": "Prepara el tablero público, separado de la data de abril.",
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "programado",
+   "publicaciones": 4,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:12:01.516Z",
+   "ultimaPublicacion": "2026-10-04T06:12:01.516Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:12:01.516Z",
+    "texto": "El Comercio se adelantó. El titular y la bajada de Lima Metropolitana hablan de \"resultados oficiales\" y \"conteo oficial de la ONPE\", pero el cuerpo, publicado a las 12:55 a. m., no da ganador, porcentaje ni acta. Solo a"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "programado",
+   "publicaciones": 1,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T06:11:25.407Z",
+   "ultimaPublicacion": "2026-10-04T06:08:24.940Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:08:24.940Z",
+    "texto": "Hola. Hoy es día de elecciones y el resto del equipo ya está en las regionales y municipales.\n\n¿Me sumo a eso, o me quieres para otra cosa?"
+   },
+   "silencioMaximoMin": 90
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "programado",
+   "publicaciones": 0,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T05:53:18.573Z",
+   "ultimaPublicacion": null,
+   "haciendo": null,
+   "silencioMaximoMin": 120
+  },
+  {
+   "agente": "Charo",
+   "bot": "Tablero",
+   "puesto": "Diseñadora del tablero",
+   "rol": "Cuida que el tablero solo muestre cifras oficiales y se entienda.",
+   "nuevo": false,
    "inicio": "05:40",
    "estado": "programado",
    "publicaciones": 2,
+   "tareas": 0,
    "ultimaActividad": "2026-10-04T05:50:38.065Z",
    "ultimaPublicacion": "2026-10-04T05:50:35.327Z",
+   "haciendo": {
+    "ts": "2026-10-04T05:50:35.327Z",
+    "texto": "El tablero es una página nueva, separada de `/onpe` y del HTML de abril. Las cifras quedan en blanco hasta que Luchito pase el catálogo del portal oficial.\n\nTres bloques: gobernación regional, alcaldía provincial y alcal"
+   },
    "silencioMaximoMin": 180
   },
   {
-   "agente": "Coordinador",
-   "rol": "Coordina al squad. Guardia horaria desde las 7:40.",
-   "inicio": "07:40",
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: actas, cortes y cifras oficiales.",
+   "nuevo": false,
+   "inicio": "06:00",
    "estado": "programado",
-   "publicaciones": 19,
-   "ultimaActividad": "2026-10-04T06:12:28.908Z",
-   "ultimaPublicacion": "2026-10-04T06:12:27.275Z",
-   "silencioMaximoMin": 75
+   "publicaciones": 4,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T05:54:30.628Z",
+   "ultimaPublicacion": "2026-10-04T05:50:21.560Z",
+   "haciendo": {
+    "ts": "2026-10-04T05:50:21.560Z",
+    "texto": "Quedaron tres miradas de hoy, hora Lima: 6:00, 12:00 y 17:05. Son domingo y la de las 6:00 es temprano porque el proceso es hoy. Solo aviso si el «próximamente» pasa a datos o aparece la primera acta. Sin barrido."
+   },
+   "silencioMaximoMin": 390
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "programado",
+   "publicaciones": 5,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T05:45:35.105Z",
+   "ultimaPublicacion": "2026-10-04T05:45:35.105Z",
+   "haciendo": {
+    "ts": "2026-10-04T05:45:35.105Z",
+    "texto": "Listo. Desde las **6:05** Lima reviso esas siete cuentas cada ~20 min hasta las 22:45 de hoy. Solo aviso si hay incidente o un resultado antes de las actas de la ONPE — si no, silencio. No tuiteo."
+   },
+   "silencioMaximoMin": 60
   }
  ]
 }
