@@ -30,9 +30,9 @@ function StatusPill() {
   const s = d.status?.estado;
   const [label, short, color] = d.live ? ['Resultados en vivo', 'En vivo', 'var(--color-ok)'] : s === 'bloqueado' ? ['ONPE no responde', 'Sin ONPE', 'var(--color-alert)'] : ['Esperando a la ONPE', 'Esperando', 'var(--color-warn)'];
   return (
-    <div className="flex items-center gap-2">
-      <span className="hidden xl:inline-flex chip"><Eye size={13} /> <span className="num">{v ? n(v) : '—'}</span></span>
-      <span className="inline-flex items-center gap-2 h-8 px-3 rounded-full border border-line-2 text-[12.5px] font-medium whitespace-nowrap" style={{ color }}>
+    <div className="flex items-center gap-2 flex-none">
+      <span className="hidden 2xl:inline-flex items-center gap-1.5 text-[12.5px] text-dim"><Eye size={14} /><span className="num">{v ? n(v) : '—'}</span></span>
+      <span className="inline-flex items-center gap-2 h-8 px-3 rounded-full bg-bg border border-line text-[12.5px] font-semibold whitespace-nowrap" style={{ color }}>
         <i className="dot dot-pulse" style={{ background: color, color }} /><span className="text-ink-2 hidden 2xl:inline">{label}</span><span className="text-ink-2 2xl:hidden">{short}</span>
       </span>
     </div>
@@ -41,20 +41,17 @@ function StatusPill() {
 
 function Brand({ compact }) {
   return (
-    <a href="#en-vivo" className="flex items-center gap-3 min-w-0">
-      <span className="relative w-9 h-9 rounded-xl grid place-items-center bg-panel-2 border border-line-2 flex-none">
-        <span className="w-[18px] h-[18px] rounded-full border-2 border-accent" />
-        <span className="absolute w-[7px] h-[7px] rounded-full bg-live" />
-      </span>
-      <span className="min-w-0 leading-tight">
-        <span className="block eyebrow !text-accent !tracking-[0.18em]">peruvianDream</span>
-        <span className={`block font-semibold tracking-[-0.01em] truncate ${compact ? 'text-[13.5px]' : 'text-[15px]'}`}>{compact ? 'Auditora Electoral Independiente' : 'Auditora Independiente de Procesos Electorales'}</span>
-      </span>
+    <a href="#en-vivo" className="flex items-center gap-2.5 min-w-0 text-navy">
+      <span className="w-[30px] h-[30px] rounded-lg grid place-items-center bg-navy flex-none"><span className="w-[9px] h-[9px] rounded-full bg-live" /></span>
+      <span className="display text-[17px] !font-extrabold flex-none" style={{ fontStretch: '85%' }}>peruvianDream</span>
+      {!compact && <span className="text-[13px] text-dim font-medium truncate">Auditora Independiente de Procesos Electorales</span>}
     </a>
   );
 }
 
 export default function App() {
+  // ?escena: solo la sala 3D, sin barra ni paneles (capturas para diseño y prensa)
+  if (new URLSearchParams(location.search).has('escena')) return <Suspense fallback={null}><Live /></Suspense>;
   const route = useRoute(NAV.map((x) => x.id), 'en-vivo');
   const [more, setMore] = useState(false);
   const cur = NAV.find((x) => x.id === route);
@@ -62,16 +59,16 @@ export default function App() {
   return (
     <div className="app-shell">
       {/* barra superior */}
-      <header className="sticky top-0 z-40 h-14 lg:h-16 border-b border-line bg-white/80 backdrop-blur-xl">
-        <div className="h-full px-4 lg:px-5 flex items-center gap-4">
+      <header className="sticky top-0 z-40 h-14 border-b border-line bg-white">
+        <div className="h-full px-4 lg:px-6 flex items-center gap-5">
           <div className="lg:hidden flex-1 min-w-0"><Brand compact /></div>
-          <div className="hidden lg:block 2xl:hidden flex-none"><Brand compact /></div>
-          <div className="hidden 2xl:block flex-none"><Brand /></div>
-          <nav className="hidden lg:flex items-center gap-0.5 mx-auto" aria-label="Secciones">
+          <div className="hidden lg:block xl:hidden flex-none"><Brand compact /></div>
+          <div className="hidden xl:block flex-none min-w-0 max-w-[460px]"><Brand /></div>
+          <nav className="hidden lg:flex items-center gap-0.5 ml-auto" aria-label="Secciones">
             {NAV.map(({ id, label, icon: I }) => (
-              <a key={id} href={`#${id}`} aria-current={route === id ? 'page' : undefined}
-                title={label} className={`inline-flex items-center gap-2 h-9 px-2.5 2xl:px-3 rounded-lg text-[13.5px] font-medium whitespace-nowrap transition-colors ${route === id ? 'bg-white text-ink shadow-[0_1px_2px_rgba(15,23,42,.06),inset_0_0_0_1px_var(--color-line)]' : 'text-dim hover:text-ink hover:bg-white/60'}`}>
-                <I size={15} className={route === id ? 'text-accent' : ''} /><span className="hidden xl:inline">{label}</span>
+              <a key={id} href={`#${id}`} aria-current={route === id ? 'page' : undefined} title={label}
+                className={`inline-flex items-center gap-1.5 h-[34px] px-3 rounded-full text-[13.5px] whitespace-nowrap transition-colors ${route === id ? 'bg-navy text-white font-semibold' : 'text-ink-2 font-medium hover:bg-bg'}`}>
+                <I size={15} className="xl:hidden" /><span className="hidden xl:inline">{label}</span>
               </a>
             ))}
           </nav>
@@ -91,12 +88,12 @@ export default function App() {
           const { label, icon: I } = NAV.find((x) => x.id === id);
           return (
             <a key={id} href={`#${id}`} className={`flex flex-col items-center justify-center gap-1 text-[11px] font-medium ${route === id ? 'text-ink' : 'text-dim'}`}>
-              <I size={19} className={route === id ? 'text-accent' : ''} />{label}
+              <I size={19} className={route === id ? 'text-live' : ''} />{label}
             </a>
           );
         })}
         <button onClick={() => setMore(true)} className={`flex flex-col items-center justify-center gap-1 text-[11px] font-medium ${MOBILE_MAIN.includes(route) ? 'text-dim' : 'text-ink'}`}>
-          <Ellipsis size={19} className={MOBILE_MAIN.includes(route) ? '' : 'text-accent'} />Más
+          <Ellipsis size={19} className={MOBILE_MAIN.includes(route) ? '' : 'text-live'} />Más
         </button>
       </nav>
       {more && (

@@ -31,8 +31,8 @@ export function PageHeader({ eyebrow, title, children, right }) {
   return (
     <header className="flex flex-wrap items-end justify-between gap-4 mb-6">
       <div className="max-w-3xl">
-        {eyebrow && <div className="eyebrow mb-2">{eyebrow}</div>}
-        <h1 className="text-[28px] md:text-[34px] leading-[1.1] font-bold tracking-[-0.025em]">{title}</h1>
+        {eyebrow && <div className="eyebrow mb-2 !text-live">{eyebrow}</div>}
+        <h1 className="display text-[30px] md:text-[38px] leading-[1.04]">{title}</h1>
         {children && <p className="mt-3 text-[15.5px] text-ink-2 leading-relaxed">{children}</p>}
       </div>
       {right}

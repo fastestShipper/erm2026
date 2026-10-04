@@ -72,17 +72,6 @@ function Avatar({ look, estado, seed }) {
       <mesh ref={handR} material={skin} position={[0.2, 0.8, 0.42]}><sphereGeometry args={[0.055, 10, 10]} /></mesh>
       <group ref={head} position={[0, 1.36, 0]}>
         <mesh material={skin} castShadow><sphereGeometry args={[0.165, 20, 20]} /></mesh>
-        {/* ojos */}
-        <mesh material={dark} position={[-0.055, 0.02, 0.152]}><sphereGeometry args={[0.018, 8, 8]} /></mesh>
-        <mesh material={dark} position={[0.055, 0.02, 0.152]}><sphereGeometry args={[0.018, 8, 8]} /></mesh>
-        {look.glasses && (
-          <group position={[0, 0.02, 0.158]}>
-            <mesh material={dark} position={[-0.056, 0, 0]}><torusGeometry args={[0.036, 0.007, 6, 18]} /></mesh>
-            <mesh material={dark} position={[0.056, 0, 0]}><torusGeometry args={[0.036, 0.007, 6, 18]} /></mesh>
-            <mesh material={dark}><boxGeometry args={[0.04, 0.008, 0.008]} /></mesh>
-          </group>
-        )}
-        {look.mustache && <mesh material={hair} position={[0, -0.055, 0.15]}><boxGeometry args={[0.1, 0.022, 0.03]} /></mesh>}
         {look.hairStyle === 'short' && <mesh material={hair} position={[0, 0.06, -0.015]} scale={[1.04, 0.72, 1.04]}><sphereGeometry args={[0.168, 18, 12, 0, Math.PI * 2, 0, Math.PI / 2]} /></mesh>}
         {look.hairStyle === 'spiky' && (
           <group position={[0, 0.1, 0]}>
@@ -184,21 +173,21 @@ function Workstation({ agent, index, total, screenTex, selected, onSelect, compa
       </group>
 
       {/* pantalla holográfica: deja ver la cara del agente */}
-      <group position={[0, 1.3, 0.42]} rotation={[-0.08, 0, 0]}>
+      <group position={[0.66, 1.16, 0.3]} rotation={[-0.06, -0.62, 0]}>
         <mesh ref={screen}>
-          <planeGeometry args={[1.25, 0.62]} />
+          <planeGeometry args={[0.92, 0.56]} />
           <meshBasicMaterial map={tex} transparent opacity={0.9} depthWrite={false} side={THREE.DoubleSide} toneMapped={false} />
         </mesh>
         {(on || late) && (
           <lineSegments>
-            <edgesGeometry args={[new THREE.PlaneGeometry(1.25, 0.62)]} />
+            <edgesGeometry args={[new THREE.PlaneGeometry(0.92, 0.56)]} />
             <lineBasicMaterial color={tone} transparent opacity={0.9} toneMapped={false} />
           </lineSegments>
         )}
       </group>
 
       {/* etiqueta con nombre y puesto */}
-      <Html position={[0, compact ? 2.25 : 2.12, -0.2]} center distanceFactor={compact ? 10 : 7.5} zIndexRange={[30, 0]}>
+      <Html position={[0, compact ? 2.25 : 2.12, -0.2]} center distanceFactor={compact ? 12 : 10} zIndexRange={[30, 0]}>
         <button className={`nametag ${selected ? 'is-selected' : ''} ${late ? 'is-late' : ''}`} onClick={(e) => { e.stopPropagation(); onSelect?.(agent.agente); }}>
           <b><i className="dot" style={{ background: late ? ALERT : on ? '#059669' : '#a3afc0' }} />{agent.agente}</b>
           <span>{agent.puesto}</span>

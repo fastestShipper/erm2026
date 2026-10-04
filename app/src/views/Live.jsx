@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, Eye, MessageSquare, Users, Radio, MousePointerClick } from 'lucide-react';
+import { ArrowLeft, Camera, Database, MessageSquare, Radio, Users, X } from 'lucide-react';
 import { useData, useMedia, useNow, useViewers } from '../lib/data.jsx';
 import { colorOf, seatAgents, STATE } from '../lib/agents.js';
 import { CLOSE_MS, TEAM_START_MS, ago, hms, n, norm, pct, plain, timeLima } from '../lib/format.js';
@@ -24,180 +24,218 @@ export function useLiveModel() {
     return deps;
   }, [d.latest, d.anomalias]);
   const working = agents.filter((a) => a.estado === 'activo' || a.estado === 'cumpliendo').length;
-  return { ...d, agents, election, anomalyDeps, working };
+  const actas = d.actas?.actualizado ? d.actas : null;
+  return { ...d, actas, agents, election, anomalyDeps, working };
 }
 
-/* ───────── piezas del HUD ───────── */
+/** Recorta un mensaje sin dejar marcas de formato a medias (**negrita**, `código`, [enlace](url)). */
+function clip(t, max) {
+  if (t.length <= max) return t;
+  let s = t.slice(0, max);
+  const cut = Math.max(s.lastIndexOf('. '), s.lastIndexOf('\n'));
+  if (cut > max * 0.5) s = s.slice(0, cut + 1);
+  if ((s.match(/\*\*/g) || []).length % 2) s = s.slice(0, s.lastIndexOf('**'));
+  if ((s.match(/`/g) || []).length % 2) s = s.slice(0, s.lastIndexOf('`'));
+  const open = s.lastIndexOf('['); if (open > s.lastIndexOf(')')) s = s.slice(0, open);
+  return s.trimEnd() + ' …';
+}
 
-export function StatusCard({ m, now, compact }) {
-  const viewers = useViewers();
-  const e = m.election;
-  const t = e?.totales || {};
-  const left = CLOSE_MS - now;
+/** Color de texto legible para el nombre de cada agente (más oscuro que su color de polo). */
+const ink = (name) => `color-mix(in srgb, ${colorOf(name)} 82%, #0b1220)`;
+
+export function Avatar({ name, size = 32, dim = false, ring = false }) {
   return (
-    <div className={`glass corners ${compact ? 'p-3.5' : 'p-4'} w-full`}>
-      <div className="flex items-center gap-2 flex-wrap">
-        <span className="live-badge"><i />EN VIVO</span>
-        <span className="chip num">{hms(now - TEAM_START_MS)}</span>
-        <span className="chip"><Eye size={13} /> <span className="num">{viewers ? n(viewers) : '—'}</span> viendo</span>
+    <span className="rounded-full grid place-items-center font-bold text-white flex-none select-none"
+      style={{ width: size, height: size, fontSize: size * 0.42, background: colorOf(name), opacity: dim ? 0.4 : 1, boxShadow: ring ? '0 0 0 2px #fff' : undefined }}>
+      {name === 'Don Pepe' ? 'P' : name[0]}
+    </span>
+  );
+}
+
+/* ───────── piezas del reproductor ───────── */
+
+export function LowerThird({ m, big }) {
+  const pubs = useMemo(() => (m.feed?.items || []).filter((x) => x.tipo !== 'recibe').slice(0, 6), [m.feed]);
+  const [i, setI] = useState(0);
+  useEffect(() => { const t = setInterval(() => setI((v) => v + 1), 8000); return () => clearInterval(t); }, []);
+  const x = pubs.length ? pubs[i % pubs.length] : null;
+  if (!x) return null;
+  const a = m.agents.find((y) => y.agente === x.agente);
+  return (
+    <div key={x.ts} className={`flex overflow-hidden rise ${big ? 'rounded-[14px] shadow-[0_14px_30px_-14px_rgba(11,31,75,.55)]' : 'rounded-lg shadow-[0_12px_30px_-14px_rgba(11,31,75,.5)]'}`}>
+      <div className={`flex-none flex flex-col justify-center text-white ${big ? 'px-[22px] py-4' : 'px-4 py-2.5'}`} style={{ background: colorOf(x.agente) }}>
+        <b className={`display !text-white leading-tight ${big ? 'text-[32px]' : 'text-[17px]'}`}>{x.agente}</b>
+        <span className={`opacity-90 ${big ? 'text-[19px]' : 'text-[12px]'}`}>{a?.puesto || 'Agente'} · IA</span>
       </div>
-      <div className="mt-3.5 h-[104px]">
-        {m.live ? (
-          <>
-            <div className="eyebrow">{e.menu || e.nombre} · actas contadas</div>
-            <div className="flex items-baseline gap-3 mt-1.5">
-              <span className="num text-[40px] font-semibold leading-none">{pct(t.actasContabilizadas, 1)}</span>
-              <span className="text-[13px] text-dim">corte ONPE {timeLima(t.fechaActualizacion)}</span>
-            </div>
-            <div className="bar mt-3"><i style={{ width: `${Math.min(100, t.actasContabilizadas || 0)}%` }} /></div>
-            <div className="text-[12.5px] text-ink-2 mt-2 num">{n(t.contabilizadas)} de {n(t.totalActas)} actas · participación {pct(t.participacionCiudadana, 1)}</div>
-          </>
-        ) : (
-          <>
-            <div className="eyebrow">{left > 0 ? 'Cierre de la votación en' : 'Esperando el primer corte oficial'}</div>
-            <div className="num text-[40px] font-semibold leading-none mt-1.5">{left > 0 ? hms(left) : '—:—:—'}</div>
-            <div className="text-[12.5px] text-ink-2 mt-3 leading-snug">
-              {m.status?.estado === 'bloqueado' ? 'La ONPE está rechazando nuestras consultas. Seguimos intentando, sin saltar sus protecciones.' : 'Todavía no hay resultados oficiales. Aquí no se muestran estimaciones.'}
-            </div>
-          </>
-        )}
+      <p className={`m-0 flex-1 min-w-0 flex items-center bg-white text-ink ${big ? 'px-[22px] py-4 text-[26px] leading-[1.3]' : 'px-4 py-2.5 text-[14.5px] leading-[1.35]'}`}>
+        <span className={big ? 'line-clamp-3' : 'line-clamp-2'}>{plain(x.texto, 220)}</span>
+      </p>
+    </div>
+  );
+}
+
+export function Ticker({ m, big, card }) {
+  const e = m.election;
+  const r = m.actas;
+  const parts = [
+    m.status?.estado === 'en-vivo' ? 'ONPE: resultados oficiales publicados' : m.status?.estado === 'bloqueado' ? 'ONPE: el portal está rechazando nuestras consultas' : 'ONPE: el portal aún no publica resultados',
+    e && `${e.menu || e.nombre}: ${pct(e.totales?.actasContabilizadas, 1)} de actas contadas (corte ${timeLima(e.totales?.fechaActualizacion)})`,
+    r ? `Acta por acta: ${n(r.actasLeidas)} actas revisadas · ${n(r.avisos?.alerta)} alertas` : 'Acta por acta: empieza con las primeras actas',
+    m.evStats && `Evidencias ciudadanas: ${n(m.evStats.recibidos)} recibidas`,
+    `${m.working} de ${m.agents.length} agentes trabajando`,
+    'Proyecto independiente, sin financiamiento de partidos ni empresas',
+    'peruvian.dev/dataonpe',
+  ].filter(Boolean);
+  const row = parts.map((p, i) => <span key={i} className="flex items-center gap-7">{p}<i className={`inline-block rotate-45 ${card ? 'bg-navy/40' : 'bg-white/50'} ${big ? 'w-2 h-2' : 'w-1.5 h-1.5'}`} /></span>);
+  return (
+    <div className={`flex items-center overflow-hidden ${card ? 'bg-white text-navy border border-line rounded-[14px]' : 'bg-navy text-white'} ${big ? 'h-16 text-[24px]' : 'h-9 text-[14px]'} font-semibold`}>
+      <span className={`flex-none h-full flex items-center bg-live text-white num tracking-[0.14em] font-bold ${big ? 'px-[22px] text-[20px]' : 'px-3.5 text-[11.5px]'}`}>ÚLTIMO</span>
+      <div className="flex-1 overflow-hidden"><div className="crawl-track pl-5">{row}{row}</div></div>
+    </div>
+  );
+}
+
+function Player({ m, now, sel, onSelect, autoRotate, onInteract, compact }) {
+  return (
+    <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-[#dfe5ee] shadow-[0_24px_50px_-28px_rgba(11,31,75,.45)]" onPointerDown={onInteract}>
+      <Suspense fallback={<div className="absolute inset-0 grid place-items-center text-dim text-[13px]">Encendiendo la sala…</div>}>
+        <Office agents={m.agents} feed={m.feed} latest={m.latest} status={m.status} actas={m.actas} anomalyDeps={m.anomalyDeps}
+          selected={sel} onSelect={onSelect} autoRotate={autoRotate} compact={compact} />
+      </Suspense>
+      <div className={`absolute flex gap-2 pointer-events-none ${compact ? 'left-2.5 top-2.5' : 'left-4 top-4'}`}>
+        <span className="live-badge !h-7 !px-2.5 !text-[12px]"><i />EN VIVO</span>
+        <span className="h-7 px-2.5 flex items-center rounded-md bg-navy/85 text-white num text-[12px] font-semibold">AL AIRE {hms(now - TEAM_START_MS)}</span>
+      </div>
+      {!compact && (
+        <div className="absolute right-4 top-4 flex flex-col items-end gap-0.5 px-3 py-2 rounded-lg bg-white/90 pointer-events-none">
+          <span className="num font-bold text-[20px] leading-none text-navy">{timeLima(now)}</span>
+          <span className="num text-[10px] tracking-[0.14em] text-dim">HORA DE LIMA</span>
+        </div>
+      )}
+      {!compact && <div className="absolute left-4 right-4 bottom-[50px] max-w-[720px] pointer-events-none"><LowerThird m={m} /></div>}
+      <div className="absolute inset-x-0 bottom-0 pointer-events-none"><Ticker m={m} /></div>
+    </div>
+  );
+}
+
+function StreamMeta({ m }) {
+  const viewers = useViewers();
+  return (
+    <div className="flex flex-col gap-1.5">
+      <h1 className="display m-0 text-[24px] xl:text-[28px] leading-[1.1]">Elecciones Regionales y Municipales 2026: auditoría en vivo</h1>
+      <div className="flex items-center gap-x-3.5 gap-y-2 flex-wrap text-[13.5px] text-dim">
+        <span><b className="num text-ink-2">{viewers ? n(viewers) : '—'}</b> viendo ahora</span>
+        <span aria-hidden="true">·</span>
+        <span>Al aire desde las 00:38</span>
+        <span aria-hidden="true">·</span>
+        <span>{m.agents.length} agentes de IA · datos oficiales de la ONPE</span>
+        <span className="ml-auto flex gap-2">
+          <a href="#evidencia" className="btn-live"><Camera size={15} />Envía evidencia</a>
+          <a href="#datos" className="btn-pill"><Database size={15} />Datos abiertos</a>
+        </span>
       </div>
     </div>
   );
 }
 
-function MessageList({ items, agents, onPick }) {
+function Kpis({ m, now }) {
+  const left = CLOSE_MS - now;
+  const t = m.election?.totales;
+  const items = [
+    m.live ? ['ACTAS CONTADAS', pct(t?.actasContabilizadas, 1)] : [left > 0 ? 'CIERRE EN' : 'ESPERANDO A LA ONPE', left > 0 ? hms(left) : '—'],
+    ['ACTAS REVISADAS', n(m.actas?.actasLeidas ?? 0)],
+    ['ALERTAS', n(m.actas?.avisos?.alerta ?? 0), m.actas?.avisos?.alerta ? 'text-alert' : ''],
+    ['AGENTES ACTIVOS', `${m.working}/${m.agents.length}`, 'text-ok'],
+  ];
+  return (
+    <div className="grid grid-cols-2 xl:grid-cols-4 gap-3">
+      {items.map(([l, v, c]) => (
+        <div key={l} className="px-3.5 py-3 rounded-xl bg-white border border-line flex flex-col gap-1.5">
+          <span className="num text-[10.5px] tracking-[0.12em] text-dim font-semibold">{l}</span>
+          <span className={`num font-bold text-[24px] leading-none text-navy ${c || ''}`}>{v}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+/* ───────── chat de agentes (a la derecha) ───────── */
+
+function Messages({ items, onPick }) {
   const box = useRef(null);
   const stick = useRef(true);
-  const puesto = useMemo(() => Object.fromEntries(agents.map((a) => [a.agente, a.puesto])), [agents]);
   useEffect(() => { const el = box.current; if (el && stick.current) el.scrollTop = el.scrollHeight; }, [items]);
   return (
-    <ul ref={box} onScroll={(e) => { const el = e.currentTarget; stick.current = el.scrollHeight - el.scrollTop - el.clientHeight < 80; }} className="scroll-y fade-mask-top flex-1 min-h-0 px-4 py-2 space-y-3">
-      {items.length === 0 && <li className="text-dim text-[13px] py-6 text-center">Sin mensajes todavía.</li>}
+    <ul ref={box} onScroll={(e) => { const el = e.currentTarget; stick.current = el.scrollHeight - el.scrollTop - el.clientHeight < 80; }}
+      className="scroll-y fade-mask-top flex-1 min-h-0 px-4 py-3 flex flex-col gap-3.5">
+      {items.length === 0 && <li className="text-dim text-[13px] py-8 text-center">Sin mensajes todavía.</li>}
+      <li className="flex-1" aria-hidden="true" />
       {items.map((x) => (
-        <li key={x.ts + x.agente} className="msg text-[13.5px] leading-[1.5]">
-          <div className="flex items-center gap-2">
-            <button onClick={() => onPick?.(x.agente)} className="font-semibold hover:underline" style={{ color: colorOf(x.agente) }}>{x.agente}</button>
-            <span className="text-[11.5px] text-dim truncate">{puesto[x.agente]}</span>
-            {x.tipo === 'recibe' && <Tag tone="info">encargo</Tag>}
-            <span className="ml-auto num text-[11px] text-dim">{timeLima(Date.parse(x.ts))}</span>
+        <li key={x.ts + x.agente} className="msg grid grid-cols-[32px_minmax(0,1fr)] gap-2.5 items-start">
+          <button onClick={() => onPick?.(x.agente)} aria-label={`Ver a ${x.agente}`} className="self-start mt-0.5"><Avatar name={x.agente} /></button>
+          <div className="min-w-0">
+            <div className="flex items-baseline gap-2">
+              <button onClick={() => onPick?.(x.agente)} className="font-bold text-[13.5px] hover:underline" style={{ color: ink(x.agente) }}>{x.agente}</button>
+              {x.tipo === 'recibe' && <Tag tone="info">encargo de Norma</Tag>}
+              <span className="num text-[11px] text-dim">{timeLima(Date.parse(x.ts))}</span>
+            </div>
+            <div className={`mt-0.5 text-[13.5px] leading-[1.45] ${x.tipo === 'recibe' ? 'text-ink-2 italic' : 'text-ink'}`}>
+              <RichText text={clip(x.texto, 420)} />
+            </div>
           </div>
-          <div className={`mt-0.5 ${x.tipo === 'recibe' ? 'text-ink-2 italic' : 'text-ink'}`}><RichText text={x.texto.length > 420 ? x.texto.slice(0, 419) + '…' : x.texto} /></div>
         </li>
       ))}
     </ul>
   );
 }
 
-export function ChatPanel({ m, onPick, className = '' }) {
-  const [who, setWho] = useState('');
-  const items = useMemo(() => (m.feed?.items || []).filter((x) => !who || x.agente === who).slice(0, 120).reverse(), [m.feed, who]);
-  return (
-    <div className={`glass flex flex-col overflow-hidden ${className}`}>
-      <div className="flex items-center gap-2 px-4 h-12 border-b border-line flex-none">
-        <MessageSquare size={15} className="text-accent" />
-        <span className="font-semibold text-[14px]">Chat de agentes</span>
-        <select value={who} onChange={(e) => setWho(e.target.value)} className="ml-auto h-8 rounded-lg bg-white border border-line-2 text-[12.5px] px-2 text-ink-2" aria-label="Filtrar por agente">
-          <option value="">Todos</option>
-          {m.agents.map((a) => <option key={a.agente} value={a.agente}>{a.agente}</option>)}
-        </select>
-      </div>
-      <MessageList items={items} agents={m.agents} onPick={onPick} />
-      <div className="px-4 py-2.5 border-t border-line text-[11.5px] text-dim flex-none">Solo escriben los agentes de IA del equipo. Verifica siempre la fuente oficial que citan.</div>
-    </div>
-  );
-}
-
-export function AgentPanel({ m, name, onClose, className = '' }) {
-  const a = m.agents.find((x) => x.agente === name);
-  const items = useMemo(() => (m.feed?.items || []).filter((x) => x.agente === name).slice(0, 60).reverse(), [m.feed, name]);
-  if (!a) return null;
+function AgentCard({ a, onClose }) {
   const st = STATE[a.estado] || { label: a.estado, tone: 'dim' };
   return (
-    <div className={`glass flex flex-col overflow-hidden ${className}`}>
-      <div className="flex items-center gap-2 px-3 h-12 border-b border-line flex-none">
-        <button onClick={onClose} className="btn-ghost h-8 px-2.5"><ArrowLeft size={15} /> Volver</button>
+    <div className="mx-3 mt-3 p-3.5 rounded-xl border border-line bg-bg-2 rise">
+      <div className="flex items-center gap-3">
+        <Avatar name={a.agente} size={40} />
+        <div className="min-w-0">
+          <div className="display text-[18px] leading-tight">{a.agente}</div>
+          <div className="text-[12.5px] text-dim">{a.puesto} · agente de IA</div>
+        </div>
+        <button onClick={onClose} className="ml-auto w-8 h-8 grid place-items-center rounded-lg hover:bg-white" aria-label="Cerrar ficha"><X size={16} /></button>
+      </div>
+      <p className="text-[13px] text-ink-2 mt-2.5 leading-relaxed">{a.rol}</p>
+      <div className="flex flex-wrap gap-1.5 mt-2.5">
         <Tag tone={st.tone}>{st.label}</Tag>
+        <span className="chip">Turno desde {a.inicio}</span>
+        <span className="chip">{a.ultimaActividad ? `Activo ${ago(Date.parse(a.ultimaActividad))}` : 'Sin actividad'}</span>
       </div>
-      <div className="px-4 pt-4 pb-3 border-b border-line flex-none">
-        <div className="flex items-center gap-3">
-          <div className="w-11 h-11 rounded-xl grid place-items-center font-bold text-[17px] text-white" style={{ background: colorOf(a.agente) }}>{a.agente[0]}</div>
-          <div className="min-w-0">
-            <div className="font-semibold text-[17px] leading-tight">{a.agente}</div>
-            <div className="text-[12.5px] text-dim">{a.puesto} · agente de IA</div>
-          </div>
-        </div>
-        <p className="text-[13.5px] text-ink-2 mt-3 leading-relaxed">{a.rol}</p>
-        <div className="flex flex-wrap gap-1.5 mt-3">
-          <span className="chip">Turno desde {a.inicio}</span>
-          <span className="chip num">{n(a.publicaciones)} mensajes</span>
-          <span className="chip">{a.ultimaActividad ? `Activo ${ago(Date.parse(a.ultimaActividad))}` : 'Sin actividad'}</span>
-        </div>
+    </div>
+  );
+}
+
+export function AgentChat({ m, sel, onPick, className = '' }) {
+  const items = useMemo(() => (m.feed?.items || []).filter((x) => !sel || x.agente === sel).slice(0, 120).reverse(), [m.feed, sel]);
+  const a = sel && m.agents.find((x) => x.agente === sel);
+  const inRoom = m.agents.filter((x) => x.estado === 'activo' || x.estado === 'cumpliendo');
+  const next = m.agents.filter((x) => x.estado === 'programado').map((x) => x.inicio).sort()[0];
+  return (
+    <aside aria-label="Chat de agentes" className={`flex flex-col min-h-0 rounded-2xl bg-white border border-line overflow-hidden ${className}`}>
+      <div className="h-[52px] flex-none flex items-center justify-between gap-2 px-4 border-b border-line">
+        <span className="display text-[16px] !font-bold !tracking-normal flex items-center gap-2"><MessageSquare size={16} />Chat de agentes en vivo</span>
+        {sel ? <button onClick={() => onPick(null)} className="text-[12.5px] text-accent-2 font-semibold hover:underline flex items-center gap-1"><ArrowLeft size={14} />Todos</button> : <span className="text-[12px] text-dim">solo IA</span>}
       </div>
-      <MessageList items={items} agents={m.agents} />
-    </div>
-  );
-}
-
-export function NowCard({ m, big }) {
-  const pubs = useMemo(() => (m.feed?.items || []).filter((x) => x.tipo !== 'recibe').slice(0, 6), [m.feed]);
-  const [i, setI] = useState(0);
-  useEffect(() => { const t = setInterval(() => setI((v) => v + 1), 8000); return () => clearInterval(t); }, []);
-  const x = pubs.length ? pubs[i % pubs.length] : null;
-  const a = x && m.agents.find((y) => y.agente === x.agente);
-  return (
-    <div className={`glass flex items-stretch overflow-hidden ${big ? 'h-[168px]' : 'h-[88px]'}`}>
-      {x ? (
-        <div key={x.ts} className="flex items-stretch w-full rise">
-          <div className="flex flex-col justify-center px-4 flex-none" style={{ background: `linear-gradient(135deg, ${colorOf(x.agente)}, ${colorOf(x.agente)}cc)` }}>
-            <div className={`font-bold text-white leading-tight ${big ? 'text-[30px]' : 'text-[15px]'}`}>{x.agente}</div>
-            <div className={`text-white/85 font-medium ${big ? 'text-[18px]' : 'text-[11px]'}`}>{a?.puesto || ''}</div>
-          </div>
-          <div className={`flex-1 min-w-0 flex flex-col justify-center ${big ? 'px-6' : 'px-4'}`}>
-            <div className={`text-ink leading-snug ${big ? 'text-[26px] line-clamp-3' : 'text-[13.5px] line-clamp-2'}`}>{plain(x.texto, 240)}</div>
-            <div className={`text-dim mt-1 ${big ? 'text-[18px]' : 'text-[11.5px]'}`}>{ago(Date.parse(x.ts))} · agente de IA</div>
-          </div>
+      {a ? <AgentCard a={a} onClose={() => onPick(null)} />
+        : <div className="flex-none mx-3 mt-3 px-3 py-2.5 rounded-[10px] bg-accent-soft text-[12.5px] leading-snug text-[#2b3a5c]">Aquí escriben los agentes del equipo. Las cifras del tablero vienen directo de la ONPE.</div>}
+      <Messages items={items} onPick={onPick} />
+      <div className="flex-none flex items-center gap-3 px-4 py-3 border-t border-line min-w-0">
+        <div className="flex flex-none" role="group" aria-label="Agentes en la sala">
+          {m.agents.map((x, i) => (
+            <button key={x.agente} onClick={() => onPick(sel === x.agente ? null : x.agente)} title={`${x.agente} · ${x.puesto}`} aria-label={`Ver a ${x.agente}`} className={i ? '-ml-1.5' : ''}>
+              <Avatar name={x.agente} size={24} ring dim={!(x.estado === 'activo' || x.estado === 'cumpliendo')} />
+            </button>
+          ))}
         </div>
-      ) : <div className="flex items-center px-4 text-dim text-[13px]">Esperando el primer mensaje del equipo…</div>}
-    </div>
-  );
-}
-
-export function Crawl({ m, big }) {
-  const e = m.election;
-  const r = m.actas?.actualizado ? m.actas : null;
-  const parts = [
-    m.status?.estado === 'en-vivo' ? 'ONPE: resultados oficiales publicados' : m.status?.estado === 'bloqueado' ? 'ONPE: el portal está rechazando nuestras consultas' : 'ONPE: el portal aún no publica resultados',
-    e && `${e.menu || e.nombre}: ${pct(e.totales?.actasContabilizadas, 1)} de actas contadas (corte ${timeLima(e.totales?.fechaActualizacion)})`,
-    r && `Acta por acta: ${n(r.actasLeidas)} actas revisadas · ${n(r.avisos?.alerta)} alertas · ${n(r.avisos?.revisar)} por revisar`,
-    m.evStats && `Evidencias ciudadanas: ${n(m.evStats.recibidos)} recibidas · ${n(m.evStats.verificados)} verificadas`,
-    `${m.working} de ${m.agents.length} agentes trabajando`,
-    'Proyecto independiente, sin financiamiento de partidos ni empresas',
-    'peruvian.dev/dataonpe',
-  ].filter(Boolean);
-  const row = parts.map((p, i) => <span key={i} className="flex items-center gap-7">{p}<i className="w-1.5 h-1.5 rotate-45 bg-white/60 inline-block" /></span>);
-  return (
-    <div className={`flex items-center overflow-hidden bg-live text-white ${big ? 'h-[64px] text-[24px]' : 'h-9 text-[13px]'} font-semibold`}>
-      <div className={`flex-none h-full flex items-center bg-black num tracking-[0.14em] ${big ? 'px-6 text-[20px]' : 'px-3.5 text-[11px]'}`}>ÚLTIMO</div>
-      <div className="flex-1 overflow-hidden"><div className="crawl-track pl-6">{row}{row}</div></div>
-    </div>
-  );
-}
-
-export function TeamStrip({ m, selected, onPick }) {
-  return (
-    <div className="glass flex items-center gap-1 p-1.5 overflow-x-auto">
-      <Users size={14} className="text-dim mx-1.5 flex-none" />
-      {m.agents.map((a) => {
-        const st = STATE[a.estado] || {};
-        const c = st.tone === 'alert' ? 'var(--color-alert)' : st.tone === 'ok' ? 'var(--color-ok)' : '#a3afc0';
-        return (
-          <button key={a.agente} onClick={() => onPick(selected === a.agente ? null : a.agente)} className={`flex items-center gap-1.5 h-8 px-2.5 rounded-lg text-[12.5px] font-medium whitespace-nowrap transition-colors ${selected === a.agente ? 'bg-accent-soft text-accent' : 'text-ink-2 hover:bg-slate-100'}`}>
-            <i className={`dot ${a.estado === 'activo' ? 'dot-pulse' : ''}`} style={{ background: c, color: c }} />{a.agente}
-          </button>
-        );
-      })}
-    </div>
+        <span className="text-[12px] text-dim ml-auto text-right leading-tight min-w-0"><b className="text-ink-2">{inRoom.length}</b> trabajando<span className="hidden sm:inline">{next ? ` · entran desde ${next}` : ''}</span></span>
+      </div>
+    </aside>
   );
 }
 
@@ -206,71 +244,70 @@ export function TeamStrip({ m, selected, onPick }) {
 export default function Live() {
   const m = useLiveModel();
   const now = useNow(1000);
-  const [sel, setSel] = useState(null);
-  const [tab, setTab] = useState('ahora');
+  const [sel, setSel] = useState(() => (typeof location !== 'undefined' && new URLSearchParams(location.search).get('agente')) || null);
   const [interacted, setInteracted] = useState(false);
+  const [tab, setTab] = useState('chat');
   const wide = useMedia('(min-width: 1024px)');
   const pick = (name) => { setSel(name); setInteracted(true); if (name) setTab('chat'); };
 
-  const office = (
-    <Suspense fallback={<div className="absolute inset-0 grid place-items-center text-dim text-[13px]">Encendiendo la sala…</div>}>
-      <Office agents={m.agents} feed={m.feed} latest={m.latest} status={m.status} actas={m.actas} anomalyDeps={m.anomalyDeps}
-        selected={sel} onSelect={pick} autoRotate={!sel && !interacted} />
-    </Suspense>
-  );
+  // ?escena: solo la sala, sin nada alrededor (capturas para diseño y prensa)
+  if (typeof location !== 'undefined' && new URLSearchParams(location.search).has('escena')) {
+    return (
+      <div className="fixed inset-0">
+        <Suspense fallback={null}><Office agents={m.agents} feed={m.feed} latest={m.latest} status={m.status} actas={m.actas} anomalyDeps={m.anomalyDeps} selected={sel} onSelect={pick} autoRotate={false} /></Suspense>
+      </div>
+    );
+  }
 
-  // Escritorio: la sala ocupa toda la pantalla y los paneles flotan alrededor, con tamaños fijos.
   if (wide) return (
-      <div className="relative h-[calc(100dvh-64px)] overflow-hidden" onPointerDown={() => setInteracted(true)}>
-        {office}
-        <div className="absolute left-5 top-5 w-[360px]"><StatusCard m={m} now={now} /></div>
-        <div className="absolute right-5 top-5 bottom-[60px] w-[390px]">
-          {sel ? <AgentPanel m={m} name={sel} onClose={() => setSel(null)} className="h-full" /> : <ChatPanel m={m} onPick={pick} className="h-full" />}
-        </div>
-        <div className="absolute left-5 bottom-[60px] right-[430px] flex flex-col gap-2.5">
-          <div className="max-w-[760px]"><TeamStrip m={m} selected={sel} onPick={pick} /></div>
-          <div className="max-w-[760px]"><NowCard m={m} /></div>
-        </div>
-        <div className="absolute left-5 top-[190px] text-[11.5px] text-dim flex items-center gap-1.5 pointer-events-none"><MousePointerClick size={13} /> Arrastra para girar · toca a un agente</div>
-        <div className="absolute inset-x-0 bottom-0"><Crawl m={m} /></div>
-      </div>
+    <div className="h-[calc(100dvh-56px)] grid grid-cols-[minmax(0,1fr)_400px] gap-5 px-6 py-5 box-border">
+      <section className="flex flex-col gap-3.5 min-w-0 min-h-0 overflow-y-auto pr-1">
+        <Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={!sel && !interacted} onInteract={() => setInteracted(true)} />
+        <StreamMeta m={m} />
+        <Kpis m={m} now={now} />
+      </section>
+      <AgentChat m={m} sel={sel} onPick={pick} />
+    </div>
   );
 
-  // Celular: escena arriba, panel de alto fijo abajo; nada empuja la página.
+  // Celular: reproductor arriba; debajo, pestañas de alto fijo (nada empuja la página).
   return (
-      <div className="flex flex-col h-[calc(100dvh-56px-64px)]">
-        <div className="relative flex-none h-[52%] overflow-hidden" onPointerDown={() => setInteracted(true)}>
-          {office}
-          <div className="absolute left-3 top-3 flex items-center gap-1.5">
-            <span className="live-badge"><i />EN VIVO</span>
-            <span className="chip num !bg-white/85">{hms(now - TEAM_START_MS)}</span>
-          </div>
-          <div className="absolute inset-x-0 bottom-0"><Crawl m={m} /></div>
+    <div className="flex flex-col h-[calc(100dvh-56px-64px)]">
+      <div className="flex-none px-3 pt-3"><Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={!sel && !interacted} onInteract={() => setInteracted(true)} compact /></div>
+      <div className="flex-none px-3 pt-2.5">
+        <h1 className="display m-0 text-[19px] leading-[1.15]">ERM 2026: auditoría en vivo</h1>
+      </div>
+      <div className="flex-1 min-h-0 flex flex-col px-3 pt-2.5 pb-3 gap-2.5">
+        <div className="seg w-full">
+          {[['chat', 'Chat', MessageSquare], ['ahora', 'Resumen', Radio], ['equipo', 'Equipo', Users]].map(([k, l, I]) => (
+            <button key={k} aria-pressed={tab === k} onClick={() => setTab(k)} className="flex-1 inline-flex items-center justify-center gap-1.5"><I size={14} />{l}</button>
+          ))}
         </div>
-        <div className="flex-1 min-h-0 flex flex-col p-3 gap-2.5">
-          <div className="seg w-full">
-            {[['ahora', 'Ahora', Radio], ['chat', 'Chat', MessageSquare], ['equipo', 'Equipo', Users]].map(([k, l, I]) => (
-              <button key={k} aria-pressed={tab === k} onClick={() => setTab(k)} className="flex-1 inline-flex items-center justify-center gap-1.5"><I size={14} />{l}</button>
-            ))}
-          </div>
-          <div className="flex-1 min-h-0">
-            {tab === 'ahora' && <div className="flex flex-col gap-2.5 h-full overflow-y-auto"><StatusCard m={m} now={now} compact /><NowCard m={m} /></div>}
-            {tab === 'chat' && (sel ? <AgentPanel m={m} name={sel} onClose={() => setSel(null)} className="h-full" /> : <ChatPanel m={m} onPick={pick} className="h-full" />)}
-            {tab === 'equipo' && (
-              <div className="h-full overflow-y-auto grid grid-cols-2 gap-2 content-start">
-                {m.agents.map((a) => {
-                  const st = STATE[a.estado] || {};
-                  return (
-                    <button key={a.agente} onClick={() => pick(a.agente)} className="glass p-3 text-left">
-                      <div className="flex items-center justify-between gap-2"><b className="text-[14px]" style={{ color: colorOf(a.agente) }}>{a.agente}</b><Tag tone={st.tone}>{st.label}</Tag></div>
-                      <div className="text-[12px] text-dim mt-0.5">{a.puesto}</div>
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-          </div>
+        <div className="flex-1 min-h-0">
+          {tab === 'chat' && <AgentChat m={m} sel={sel} onPick={pick} className="h-full" />}
+          {tab === 'ahora' && (
+            <div className="h-full overflow-y-auto flex flex-col gap-2.5">
+              <LowerThird m={m} />
+              <Kpis m={m} now={now} />
+              <div className="flex gap-2"><a href="#evidencia" className="btn-live flex-1"><Camera size={15} />Envía evidencia</a><a href="#datos" className="btn-pill flex-1"><Database size={15} />Datos</a></div>
+            </div>
+          )}
+          {tab === 'equipo' && (
+            <div className="h-full overflow-y-auto grid grid-cols-2 gap-2 content-start">
+              {m.agents.map((a) => {
+                const st = STATE[a.estado] || {};
+                return (
+                  <button key={a.agente} onClick={() => pick(a.agente)} className="text-left p-3 rounded-xl bg-white border border-line">
+                    <div className="flex items-center gap-2"><Avatar name={a.agente} size={28} /><b className="text-[14px]" style={{ color: ink(a.agente) }}>{a.agente}</b></div>
+                    <div className="text-[12px] text-dim mt-1">{a.puesto}</div>
+                    <div className="mt-1.5"><Tag tone={st.tone}>{st.label}</Tag></div>
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
+    </div>
   );
 }

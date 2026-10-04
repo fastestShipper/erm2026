@@ -1,12 +1,12 @@
-// Página para transmitir en vivo (TikTok vertical 1080×1920; con ?h=1, horizontal 1920×1080).
+// Página para transmitir en vivo: TikTok vertical 1080×1920 (con ?h=1, horizontal 1920×1080).
 // Se captura con OBS como «Fuente de navegador». Sin interacción: la cámara recorre la sala sola.
-import { lazy, Suspense, useEffect, useMemo, useState } from 'react';
+// Vertical: arriba (~170 px) y abajo (comentarios del live) quedan libres porque TikTok dibuja ahí su interfaz.
+import { lazy, Suspense, useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './theme.css';
 import { DataProvider, useNow } from './lib/data.jsx';
-import { colorOf } from './lib/agents.js';
-import { CLOSE_MS, TEAM_START_MS, hms, n, pct, plain, timeLima } from './lib/format.js';
-import { useLiveModel, NowCard, Crawl } from './views/Live.jsx';
+import { CLOSE_MS, TEAM_START_MS, hms, pct, timeLima } from './lib/format.js';
+import { useLiveModel, LowerThird, Ticker, AgentChat } from './views/Live.jsx';
 
 const Office = lazy(() => import('./office/Office.jsx'));
 const H = new URLSearchParams(location.search).has('h');
@@ -30,25 +30,29 @@ function useTour(m) {
   return sel;
 }
 
-function Kpi({ label, value, tone }) {
+function Scene({ m, sel, now, big }) {
   return (
-    <div className="glass px-6 py-5 flex-1">
-      <div className="eyebrow !text-[15px]">{label}</div>
-      <div className={`num font-semibold mt-2 ${H ? 'text-[44px]' : 'text-[52px]'} leading-none ${tone === 'alert' ? 'text-alert' : tone === 'ok' ? 'text-ok' : ''}`}>{value}</div>
-    </div>
+    <>
+      <Suspense fallback={null}>
+        <Office agents={m.agents} feed={m.feed} latest={m.latest} status={m.status} actas={m.actas} anomalyDeps={m.anomalyDeps} selected={sel} autoRotate={!sel} compact fov={H ? 36 : 46} />
+      </Suspense>
+      <div className="absolute left-6 top-6 flex gap-2.5 pointer-events-none">
+        <span className={`flex items-center rounded-[10px] bg-navy/85 text-white num font-bold ${big ? 'h-11 px-4 text-[20px]' : 'h-8 px-3 text-[14px]'}`}>AL AIRE {hms(now - TEAM_START_MS)}</span>
+      </div>
+      <div className={`absolute right-6 top-6 flex flex-col items-end gap-1 rounded-xl bg-white/90 pointer-events-none ${big ? 'px-4 py-2.5' : 'px-3 py-2'}`}>
+        <span className={`num font-bold leading-none text-navy ${big ? 'text-[34px]' : 'text-[24px]'}`}>{timeLima(now)}</span>
+        <span className={`num tracking-[0.14em] text-dim font-semibold ${big ? 'text-[14px]' : 'text-[11px]'}`}>HORA DE LIMA</span>
+      </div>
+      <div className="absolute left-6 right-6 bottom-6 pointer-events-none"><LowerThird m={m} big={big} /></div>
+    </>
   );
 }
 
-function MiniChat({ m, count }) {
-  const items = (m.feed?.items || []).filter((x) => x.tipo !== 'recibe').slice(0, count);
+function Kpi({ label, value, cls = '', big }) {
   return (
-    <div className="glass px-6 py-4 flex flex-col gap-3 overflow-hidden h-full">
-      <div className="eyebrow !text-[15px]">Chat de agentes</div>
-      {items.map((x) => (
-        <div key={x.ts} className="text-[23px] leading-[1.3] line-clamp-2 max-h-[60px] overflow-hidden rise">
-          <b style={{ color: colorOf(x.agente) }}>{x.agente}</b> <span className="text-ink-2">{plain(x.texto, 160)}</span>
-        </div>
-      ))}
+    <div className={`rounded-[18px] bg-white border border-line flex flex-col gap-2.5 ${big ? 'px-6 py-5' : 'px-5 py-4'}`}>
+      <span className={`num tracking-[0.12em] text-dim font-semibold ${big ? 'text-[17px]' : 'text-[14px]'}`}>{label}</span>
+      <span className={`num font-bold leading-none text-navy ${cls} ${big ? 'text-[54px]' : 'text-[40px]'}`}>{value}</span>
     </div>
   );
 }
@@ -62,66 +66,56 @@ function Stream() {
     const f = () => setScale(Math.min(innerWidth / W0, innerHeight / H0));
     f(); addEventListener('resize', f); return () => removeEventListener('resize', f);
   }, []);
-  const e = m.election;
   const left = CLOSE_MS - now;
-  const kpis = useMemo(() => [
-    m.live ? ['Actas contadas', pct(e?.totales?.actasContabilizadas, 1)] : [left > 0 ? 'Cierre en' : 'Esperando a la ONPE', left > 0 ? hms(left) : '—'],
-    ['Actas revisadas', n(m.actas?.actasLeidas ?? 0)],
-    ['Alertas', n(m.actas?.avisos?.alerta ?? 0), m.actas?.avisos?.alerta ? 'alert' : undefined],
-    ['Agentes activos', `${m.working}/${m.agents.length}`, 'ok'],
-  ], [m, e, left]);
-
-  const office = (
-    <Suspense fallback={null}>
-      <Office agents={m.agents} feed={m.feed} latest={m.latest} status={m.status} actas={m.actas} anomalyDeps={m.anomalyDeps} selected={sel} autoRotate={!sel} compact fov={H ? 36 : 44} />
-    </Suspense>
-  );
-
-  const header = (
-    <div className="flex items-center gap-5 px-8 h-[150px] flex-none">
-      <span className="relative w-[78px] h-[78px] rounded-2xl grid place-items-center bg-panel-2 border border-line-2 flex-none">
-        <span className="w-[38px] h-[38px] rounded-full border-[4px] border-accent" />
-        <span className="absolute w-[15px] h-[15px] rounded-full bg-live" />
-      </span>
-      <div className="min-w-0 flex-1">
-        <div className="eyebrow !text-[17px] !text-accent !tracking-[0.2em]">peruvianDream · ERM 2026</div>
-        <div className="font-bold text-[38px] leading-[1.05] tracking-[-0.02em] mt-1">Auditora Independiente de Procesos Electorales</div>
-      </div>
-      <div className="flex flex-col items-end gap-2 flex-none">
-        <span className="live-badge !h-[40px] !px-4 !text-[19px]"><i className="!w-[10px] !h-[10px]" />EN VIVO</span>
-        <span className="num text-[26px] text-ink-2">{timeLima(now, { seconds: true })}</span>
-      </div>
-    </div>
-  );
+  const first = m.live ? ['ACTAS CONTADAS', pct(m.election?.totales?.actasContabilizadas, 1)] : [left > 0 ? 'CIERRE DE LA VOTACIÓN EN' : 'ESPERANDO A LA ONPE', left > 0 ? hms(left) : '—'];
 
   return (
     <div style={{ width: W0, height: H0, transform: `scale(${scale})`, transformOrigin: 'top left' }} className="relative overflow-hidden bg-bg flex flex-col">
       {H ? (
-        <>
-          {header}
-          <div className="flex-1 min-h-0 flex gap-5 px-8 pb-5">
-            <div className="relative flex-[2] rounded-3xl overflow-hidden border border-line">{office}
-              <span className="absolute left-5 top-5 chip !h-9 !text-[17px] num !bg-white/85">AL AIRE {hms(now - TEAM_START_MS)}</span>
+        <div className="flex-1 min-h-0 grid grid-cols-[minmax(0,1fr)_520px] gap-6 p-8">
+          <div className="flex flex-col gap-5 min-w-0">
+            <div className="flex items-center gap-4">
+              <span className="live-badge !h-10 !px-4 !text-[18px]"><i className="!w-2.5 !h-2.5" />EN VIVO</span>
+              <h1 className="display m-0 text-[40px] leading-none">Auditora Independiente de Procesos Electorales</h1>
             </div>
-            <div className="flex-1 flex flex-col gap-4 min-w-0">
-              <div className="grid grid-cols-2 gap-4">{kpis.map(([l, v, t]) => <Kpi key={l} label={l} value={v} tone={t} />)}</div>
-              <NowCard m={m} big />
-              <div className="flex-1 min-h-0"><MiniChat m={m} count={3} /></div>
+            <div className="relative flex-1 min-h-0 rounded-3xl overflow-hidden bg-[#dfe5ee] shadow-[0_30px_60px_-30px_rgba(11,31,75,.5)]">
+              <Scene m={m} sel={sel} now={now} big />
+            </div>
+            <Ticker m={m} big card />
+          </div>
+          <div className="flex flex-col gap-4 min-h-0">
+            <div className="grid grid-cols-2 gap-4">
+              <Kpi label={first[0]} value={first[1]} />
+              <Kpi label="AGENTES TRABAJANDO" value={`${m.working} de ${m.agents.length}`} cls="!text-ok" />
+            </div>
+            <AgentChat m={m} sel={null} onPick={() => {}} className="flex-1" />
+            <div className="flex items-center justify-between gap-4 px-6 py-4 rounded-[18px] bg-navy text-white">
+              <span className="text-[20px]">Datos y evidencias en</span>
+              <span className="num font-bold text-[22px]">peruvian.dev/dataonpe</span>
             </div>
           </div>
-          <Crawl m={m} big />
-        </>
+        </div>
       ) : (
         <>
-          {header}
-          <div className="relative h-[930px] flex-none mx-6 rounded-3xl overflow-hidden border border-line">{office}
-            <span className="absolute left-5 top-5 chip !h-10 !text-[19px] num !bg-white/85">AL AIRE {hms(now - TEAM_START_MS)}</span>
+          <div className="h-[170px] flex-none bg-gradient-to-b from-[#e9eef7] to-bg" />
+          <header className="flex-none flex flex-col gap-2.5 px-14 pb-7">
+            <span className="flex items-center gap-3 num font-bold text-[22px] tracking-[0.16em] text-live"><span className="w-3.5 h-3.5 rounded-full bg-live dot-pulse" style={{ color: 'var(--color-live)' }} />EN VIVO · ERM 2026</span>
+            <h1 className="display m-0 text-[64px] leading-none">Auditora Independiente de Procesos Electorales</h1>
+            <p className="m-0 text-[28px] leading-[1.3] text-ink-2">{m.agents.length} agentes de IA vigilan el conteo oficial de la ONPE.</p>
+          </header>
+          <div className="relative h-[780px] flex-none mx-10 rounded-[28px] overflow-hidden bg-[#dfe5ee] shadow-[0_30px_60px_-30px_rgba(11,31,75,.5)]">
+            <Scene m={m} sel={sel} now={now} big />
           </div>
-          <div className="grid grid-cols-2 gap-4 px-6 mt-5">{kpis.map(([l, v, t]) => <Kpi key={l} label={l} value={v} tone={t} />)}</div>
-          <div className="px-6 mt-5"><NowCard m={m} big /></div>
-          <div className="flex-1 min-h-0 px-6 mt-5 mb-5 flex flex-col"><MiniChat m={m} count={2} /></div>
-          <div className="text-center text-[25px] text-ink-2 pb-4">Mira todo y envía evidencia en <b className="text-ink">peruvian.dev/dataonpe</b></div>
-          <Crawl m={m} big />
+          <div className="flex-none grid grid-cols-2 gap-4 mx-10 mt-6">
+            <Kpi label={first[0]} value={first[1]} big />
+            <Kpi label="AGENTES TRABAJANDO" value={`${m.working} de ${m.agents.length}`} cls="!text-ok" big />
+          </div>
+          <div className="flex-none mx-10 mt-4 flex items-center justify-between gap-4 px-6 py-5 rounded-[18px] bg-navy text-white">
+            <span className="text-[26px] leading-tight">Revisa los datos y envía evidencia</span>
+            <span className="num font-bold text-[28px]">peruvian.dev/dataonpe</span>
+          </div>
+          <div className="flex-none mx-10 mt-4"><Ticker m={m} big card /></div>
+          <div className="flex-1 bg-gradient-to-b from-bg to-[#e9eef7]" />
         </>
       )}
     </div>
