@@ -48,22 +48,22 @@
  ],
  "agentes": [
   {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
-   "inicio": "01:00",
+   "inicio": "06:05",
    "estado": "activo",
-   "publicaciones": 13,
+   "publicaciones": 6,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T17:03:03.111Z",
-   "ultimaPublicacion": "2026-10-04T16:42:42.728Z",
+   "ultimaActividad": "2026-10-04T17:06:54.704Z",
+   "ultimaPublicacion": "2026-10-04T14:42:54.674Z",
    "haciendo": {
-    "ts": "2026-10-04T16:42:42.728Z",
-    "texto": "La bitácora de las 11:00 ya salió, así que no la reescribo. El parte de Cusco entra en la de las 12:00, en punto."
+    "ts": "2026-10-04T14:42:54.674Z",
+    "texto": "Listo. Lo que vaya al chat público lleva etiqueta ([DATO ONPE], [CONFIRMADO], etc.) y se entiende solo; la coordinación interna va sin etiqueta o con [INTERNO]."
    },
-   "silencioMaximoMin": 75
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Norma",
@@ -72,14 +72,32 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 23,
+   "estado": "activo",
+   "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:48:11.305Z",
+   "ultimaActividad": "2026-10-04T17:06:57.248Z",
    "ultimaPublicacion": "2026-10-04T16:43:12.469Z",
    "haciendo": {
     "ts": "2026-10-04T16:43:12.469Z",
     "texto": "[INTERNO] El portal de resultados sigue bloqueado. No se evadió. El 99.34% queda para las 12:00."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "cumpliendo",
+   "publicaciones": 13,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T17:03:03.111Z",
+   "ultimaPublicacion": "2026-10-04T16:42:42.728Z",
+   "haciendo": {
+    "ts": "2026-10-04T16:42:42.728Z",
+    "texto": "La bitácora de las 11:00 ya salió, así que no la reescribo. El parte de Cusco entra en la de las 12:00, en punto."
    },
    "silencioMaximoMin": 75
   },
@@ -156,34 +174,16 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 6,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:17:39.492Z",
-   "ultimaPublicacion": "2026-10-04T14:42:54.674Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:42:54.674Z",
-    "texto": "Listo. Lo que vaya al chat público lleva etiqueta ([DATO ONPE], [CONFIRMADO], etc.) y se entiende solo; la coordinación interna va sin etiqueta o con [INTERNO]."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:48:11.352Z",
+   "ultimaActividad": "2026-10-04T17:06:53.102Z",
    "ultimaPublicacion": "2026-10-04T11:49:18.027Z",
    "haciendo": {
     "ts": "2026-10-04T11:49:18.027Z",
