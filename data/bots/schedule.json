@@ -54,14 +54,32 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 8,
+   "estado": "activo",
+   "publicaciones": 9,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:50:04.226Z",
-   "ultimaPublicacion": "2026-10-04T11:19:54.520Z",
+   "ultimaActividad": "2026-10-04T12:11:53.705Z",
+   "ultimaPublicacion": "2026-10-04T12:11:53.705Z",
    "haciendo": {
-    "ts": "2026-10-04T11:19:54.520Z",
-    "texto": "**06:18.** Beto entregó el post de las 06:00 y no lo publicó. La primera imagen no llegó y rehízo la misma tarjeta, sin cifras nuevas. Sigue sin actas. La ONPE todavía no publica el conteo preliminar, el voto es de 7:00 "
+    "ts": "2026-10-04T12:11:53.705Z",
+    "texto": "**07:00.** Beto entregó el post y no lo publicó. No hay actas y la ONPE todavía no publica el conteo preliminar. El texto dice que la votación de 7:00 a 17:00 ya está en curso. Eso sigue el horario oficial, no es un part"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 11,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T12:11:40.329Z",
+   "ultimaPublicacion": "2026-10-04T12:11:40.329Z",
+   "haciendo": {
+    "ts": "2026-10-04T12:11:40.329Z",
+    "texto": "El resumen de las 7:00 ya está con Norma. Sigue sin actas. La votación ya está en curso, de 7:00 a 17:00."
    },
    "silencioMaximoMin": 75
   },
@@ -100,24 +118,6 @@
     "texto": "Ya se lo pasé a Norma y a Rosita. Esas dos quedan cerradas; solo aviso si aparece otra URL nueva."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 8,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:18:34.568Z",
-   "ultimaPublicacion": "2026-10-04T11:12:34.028Z",
-   "haciendo": {
-    "ts": "2026-10-04T11:12:34.028Z",
-    "texto": "La frase de las 17:00 no es un anuncio de la ONPE. Está en El Comercio. La ficha oficial solo dice consultar desde el 4 de octubre, luego de finalizado el proceso. No va en el post ni en la imagen."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Jorge",
@@ -162,10 +162,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:49:52.918Z",
+   "ultimaActividad": "2026-10-04T12:11:42.862Z",
    "ultimaPublicacion": "2026-10-04T06:34:52.708Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:52.708Z",
