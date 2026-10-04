@@ -22,7 +22,7 @@ export function Waiting() {
       <div className="panel corners p-7">
         <span className="tag tag-warn">Sin resultados oficiales todavía</span>
         <h2 className="text-[26px] font-bold tracking-tight mt-4">Los resultados aparecen aquí apenas la ONPE los publique</h2>
-        <p className="text-ink-2 mt-2 max-w-xl">{d.status?.estado === 'bloqueado' ? 'El portal de la ONPE está rechazando nuestras consultas. No usamos trucos para saltar sus protecciones: el tablero se actualiza solo cuando vuelva a responder.' : 'Revisamos el portal oficial cada 2 minutos. Este tablero no muestra estimaciones, encuestas ni proyecciones: solo cifras oficiales.'}</p>
+        <p className="text-ink-2 mt-2 max-w-xl">{d.status?.estado === 'bloqueado' ? 'El portal de la ONPE está rechazando nuestras consultas. No usamos trucos para saltar sus protecciones: el tablero se actualiza solo cuando vuelva a responder.' : 'Revisamos el portal oficial cada minuto. Este tablero no muestra estimaciones, encuestas ni proyecciones: solo cifras oficiales.'}</p>
         <div className="mt-6 flex items-end gap-6 flex-wrap">
           <div>
             <div className="eyebrow">{left > 0 ? 'Cierre de la votación en' : 'La votación ya cerró'}</div>

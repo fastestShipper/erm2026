@@ -193,7 +193,7 @@ function StreamMeta({ m }) {
   const viewers = useViewers();
   return (
     <div className="flex flex-col gap-1.5">
-      <div className="eyebrow !text-live">Auditora Independiente Automatizada de Procesos Electorales</div>
+      <div className="eyebrow">Transmisión en vivo · ERM 2026</div>
       <h1 className="display m-0 text-[24px] xl:text-[28px] leading-[1.1]">Elecciones Regionales y Municipales 2026: auditoría en vivo</h1>
       <div className="flex items-center gap-x-3.5 gap-y-2 flex-wrap text-[13.5px] text-dim">
         <span><b className="num text-ink-2">{viewers ? n(viewers) : '—'}</b> viendo ahora</span>
@@ -449,7 +449,7 @@ export default function Live() {
   }
 
   if (wide) return (
-    <div className="h-[calc(100dvh-84px)] grid grid-cols-[minmax(0,1fr)_400px] gap-5 px-6 py-5 box-border">
+    <div className="h-[calc(100dvh-var(--hdr))] grid grid-cols-[minmax(0,1fr)_400px] gap-5 px-6 py-5 box-border">
       <section className="flex flex-col gap-3.5 min-w-0 min-h-0 overflow-y-auto pr-1">
         {m.live && <CutCard m={m} now={now} />}
         <Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={false} />
@@ -462,10 +462,9 @@ export default function Live() {
 
   // Celular: reproductor arriba; debajo, pestañas de alto fijo (nada empuja la página).
   return (
-    <div className="flex flex-col h-[calc(100dvh-84px-64px)]">
+    <div className="flex flex-col h-[calc(100dvh-var(--hdr)-64px)]">
       <div className="flex-none px-3 pt-3"><Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={false} compact /></div>
       <div className="flex-none px-3 pt-2.5">
-        <div className="eyebrow !text-live !text-[9.5px] !tracking-[0.08em] mb-1">Auditora Independiente Automatizada de Procesos Electorales</div>
         <h1 className="display m-0 text-[19px] leading-[1.15]">ERM 2026: auditoría en vivo</h1>
       </div>
       <div className="flex-1 min-h-0 flex flex-col px-3 pt-2.5 pb-3 gap-2.5">

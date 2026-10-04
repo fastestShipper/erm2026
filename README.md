@@ -59,7 +59,7 @@ Los nombres de los campos son los de la ONPE: `actasContabilizadas` (porcentaje)
 
 ## Cómo se obtienen los números
 
-1. El colector consulta cada 2 minutos la API pública que usa el propio portal de la ONPE (`/presentacion-backend`), con pausas entre pedidos para no saturarla.
+1. El colector consulta cada minuto la API pública que usa el propio portal de la ONPE (`/presentacion-backend`), con pausas entre pedidos para no saturarla.
 2. Guarda cada respuesta tal cual en `data/onpe/` y registra su huella en `manifest.json`.
 3. Arma `latest.json` y los CSV **copiando** los campos de la ONPE, sin recalcular nada.
 4. Corre las verificaciones y publica las observaciones con los dos números a la vista.

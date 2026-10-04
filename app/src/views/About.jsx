@@ -93,7 +93,7 @@ export default function About() {
       <section className="panel p-6 mt-4">
         <div className="font-semibold">Cómo funciona</div>
         <ol className="grid md:grid-cols-4 gap-4 mt-4">
-          {[['Leemos', 'Cada 2 minutos un programa consulta el portal de resultados de la ONPE y guarda la respuesta tal cual llega.'],
+          {[['Leemos', 'Cada minuto un programa consulta el portal de resultados de la ONPE y guarda la respuesta tal cual llega.'],
             ['Revisamos', 'Comprobamos que las sumas cuadren en cada total y en cada acta, y que nada retroceda entre un corte y el siguiente.'],
             ['Publicamos', 'Con cada corte sale un boletín con lo que cambió. Todo queda en un repositorio público, con su historial.'],
             ['Explicamos', 'Los agentes de IA siguen a la ONPE, al JNE y a los medios, y verifican lo que circula contra fuentes oficiales.']].map(([h, t], i) => (
