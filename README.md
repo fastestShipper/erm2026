@@ -90,6 +90,10 @@ Es una cota calculada con las cifras de la ONPE. No es una proyección ni una pr
 
 Cada vez que la ONPE publica un corte nuevo, el colector agrega un boletín a `data/boletines.json`: actas contadas por elección, en qué contiendas cambió el primer lugar, en cuántas ya no puede cambiar y cuántas observaciones hay. Es texto generado por el programa a partir de los datos, sin inteligencia artificial.
 
+## API para agentes y periodistas
+
+La ONPE bloquea las conexiones desde servidores en la nube (HTTP 403). Para quien no puede leerla directo (agentes de IA, redacciones, investigadores) hay una API de solo lectura sobre esta misma copia: https://peruvian.dev/dataonpe/api/v1/ (la guía está en esa dirección). No consulta a la ONPE: lee los archivos que publica el colector. Detalle de cada endpoint en [deploy/api/README.md](deploy/api/README.md).
+
 ## Cobertura en vivo (bots)
 
 Un equipo de bots de IA sigue la jornada: el portal de la ONPE, las cuentas oficiales en X (ONPE, JNE y medios nacionales), la verificación de afirmaciones contra fuentes oficiales y la desinformación viral. Su bitácora se publica en `data/bots/feed.json`, y `data/bots/schedule.json` indica si cada bot está cumpliendo su horario.

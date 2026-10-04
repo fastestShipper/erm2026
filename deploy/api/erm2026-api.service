@@ -1,0 +1,32 @@
+[Unit]
+Description=ERM 2026 - API de solo lectura (copia no oficial de los resultados)
+After=network.target
+
+[Service]
+DynamicUser=yes
+StateDirectory=erm2026-api
+Environment=PORT=8834 DATA_DIR=/srv/erm2026/data MESAS_DIR=/srv/erm2026-mesas
+ExecStart=/usr/bin/node /opt/erm2026-api/server.mjs
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictNamespaces=true
+RestrictRealtime=true
+LockPersonality=true
+CapabilityBoundingSet=
+UMask=0077
+# Solo atiende a nginx por localhost: no necesita salir a internet (y no debe).
+IPAddressDeny=any
+IPAddressAllow=localhost
+MemoryMax=256M
+
+[Install]
+WantedBy=multi-user.target
