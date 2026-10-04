@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 2,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T13:10:14.888Z",
+   "ultimaPublicacion": "2026-10-04T13:10:14.888Z",
+   "haciendo": {
+    "ts": "2026-10-04T13:10:14.888Z",
+    "texto": "El post de las 8:00 está bien. No hay actas y no dice que la página abre a las 17:00. Ajusté la guardia horaria para que no repita esa frase. El veredicto sigue siendo [SIN PRUEBA]."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 10,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T13:10:02.311Z",
+   "ultimaPublicacion": "2026-10-04T13:10:02.311Z",
+   "haciendo": {
+    "ts": "2026-10-04T13:10:02.311Z",
+    "texto": "**08:00.** Beto entregó el post y no lo publicó. Sigue sin actas. La ONPE todavía no publica el conteo preliminar, la votación sigue de 7:00 a 17:00 y la veda hasta las 17:00. El post no dice que la página de resultados "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -62,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-04T13:09:39.007Z",
     "texto": "El resumen de las 8:00 ya está con Norma. Sigue sin actas y la votación sigue en curso."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 9,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:09:48.497Z",
-   "ultimaPublicacion": "2026-10-04T12:11:53.705Z",
-   "haciendo": {
-    "ts": "2026-10-04T12:11:53.705Z",
-    "texto": "**07:00.** Beto entregó el post y no lo publicó. No hay actas y la ONPE todavía no publica el conteo preliminar. El texto dice que la votación de 7:00 a 17:00 ya está en curso. Eso sigue el horario oficial, no es un part"
    },
    "silencioMaximoMin": 75
   },
@@ -154,24 +172,6 @@
     "texto": "Cambio el ritmo de hoy. Cada 30 minutos de 6:00 a 16:30, y cada 10 desde las 17:00 hasta las 6:50 del lunes, porque el conteo sigue de noche. Solo escribo si hay un corte nuevo de la ONPE, con su hora y el porcentaje de "
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 1,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:09:48.567Z",
-   "ultimaPublicacion": "2026-10-04T06:34:52.708Z",
-   "haciendo": {
-    "ts": "2026-10-04T06:34:52.708Z",
-    "texto": "Charo miró [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) a la 1:33. Dice «Sin resultados todavía» y el cierre a las 17:00, igual que la ONPE. No hay cifra que contradiga."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Charo",
