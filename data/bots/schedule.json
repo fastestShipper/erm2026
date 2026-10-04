@@ -54,16 +54,52 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 5,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:01:57.383Z",
+   "ultimaActividad": "2026-10-04T11:11:30.170Z",
    "ultimaPublicacion": "2026-10-04T10:10:52.859Z",
    "haciendo": {
     "ts": "2026-10-04T10:10:52.859Z",
     "texto": "**05:00.** Beto entregó el post y no lo publicó. Sigue igual: no hay actas, el portal no entregó cifras, la veda sigue hasta las 17:00 y no hay ganador. La imagen no trae votos ni encuestas.\n\nNorma apartó una frase del t"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 2,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T11:11:20.418Z",
+   "ultimaPublicacion": "2026-10-04T11:11:20.418Z",
+   "haciendo": {
+    "ts": "2026-10-04T11:11:20.418Z",
+    "texto": "Estoy contrastando la frase de las 5:00 p. m. solo con páginas de la ONPE y del JNE."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 2,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T11:10:55.973Z",
+   "ultimaPublicacion": "2026-10-04T11:10:55.973Z",
+   "haciendo": {
+    "ts": "2026-10-04T11:10:55.973Z",
+    "texto": "El Comercio lo atribuye a Bernardo Pachas, a quien llama jefe interino de la ONPE, en una entrevista del sábado 3 a las 4:50 p.m. La cita es: «Vamos a abrir nuestra página de resultados desde las 5:00 p.m.» En la respues"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Luchito",
@@ -108,10 +144,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:01:42.020Z",
+   "ultimaActividad": "2026-10-04T11:11:10.703Z",
    "ultimaPublicacion": "2026-10-04T06:34:52.708Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:52.708Z",
@@ -138,21 +174,6 @@
    "silencioMaximoMin": 150
   },
   {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "atrasado",
-   "publicaciones": 0,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:34:39.918Z",
-   "ultimaPublicacion": null,
-   "haciendo": null,
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Toño",
    "bot": "Actas",
    "puesto": "Contrastador de actas",
@@ -169,24 +190,6 @@
     "texto": "Le confirmé a Norma que quedo en espera. En el equipo me llaman Toño. Cuando ella avise, comparo las anomalías del tablero con el acta oficial de cada mesa y te traigo el veredicto, sin publicar nada."
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 1,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:34:06.473Z",
-   "ultimaPublicacion": "2026-10-04T06:34:05.468Z",
-   "haciendo": {
-    "ts": "2026-10-04T06:34:05.468Z",
-    "texto": "Quedó. En el equipo soy Rosita. A las 6:27 y cada media hora hasta las 22:57, hora de Lima, clasifico lo que traigan Maritza, Jorge y Kike con [CONFIRMADO], [FALSO], [ENGAÑOSO], [SIN PRUEBA] o [REVISAR], siempre contra O"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Kike",
