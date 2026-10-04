@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ERM 2026 en vivo · Datos abiertos</title>
+<meta name="description" content="Conteo de votos de las Elecciones Regionales y Municipales 2026 del Perú, actualizado desde la ONPE, con verificaciones automáticas y datos descargables.">
+<meta property="og:title" content="ERM 2026 en vivo · Datos abiertos">
+<meta property="og:description" content="Resultados oficiales de la ONPE, verificados y descargables. Proyecto independiente.">
+<meta name="theme-color" content="#c8102e">
+<script>try{var t=localStorage.getItem('erm-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23c8102e'/%3E%3Cpath d='M9 17l4 4 10-10' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#"><span class="mark">ERM</span>ERM 2026 <small>datos abiertos</small></a>
+    <nav class="nav">
+      <a href="#resultados">Resultados</a>
+      <a href="#evolucion">Evolución</a>
+      <a href="#verificaciones">Verificaciones</a>
+      <a href="#cobertura">Cobertura en vivo</a>
+      <a href="#datos">Datos y API</a>
+      <a href="#apoya">Apoya</a>
+    </nav>
+    <button class="iconbtn" id="theme" title="Cambiar tema" aria-label="Cambiar tema">◐</button>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="hero">
+    <h1>Elecciones Regionales y Municipales 2026, en vivo</h1>
+    <p class="lead">Conteo oficial de la ONPE, actualizado de forma automática, con verificaciones de consistencia y todos los datos descargables. Cada número se puede rastrear hasta la respuesta original de la ONPE.</p>
+    <div class="statusrow">
+      <span class="pill wait" id="status"><span class="dot"></span><span id="statusText">Cargando…</span></span>
+      <span class="pill ghost" id="onpeTime">Corte ONPE: —</span>
+      <span class="pill ghost" id="checkTime">Última consulta: —</span>
+      <a class="pill ghost" id="repoLink" href="#" target="_blank" rel="noopener">Repositorio público ↗</a>
+    </div>
+  </div>
+
+  <!-- Estado de espera: antes de que la ONPE publique -->
+  <section id="waiting" class="hidden">
+    <div class="waiting">
+      <div class="card big">
+        <span class="badge info">Sin resultados todavía</span>
+        <h2 style="margin-top:12px">Esperando la publicación oficial de la ONPE</h2>
+        <p class="muted" id="waitDetail">La ONPE publica los resultados en su Sistema Web de Presentación de Resultados después del cierre de la votación. Hasta entonces este tablero no muestra cifras: no hay estimaciones ni proyecciones.</p>
+        <div class="countdown" id="countdown"></div>
+        <p class="small muted" id="countLabel" style="margin-top:10px">Cuenta regresiva al cierre de la votación (17:00, hora de Lima).</p>
+      </div>
+      <div class="card pad">
+        <h3>Jornada del domingo 4 de octubre</h3>
+        <ul class="timeline" id="dayline" style="margin-top:8px"></ul>
+        <p class="small muted" style="margin:10px 0 0">Horario oficial según <a href="https://erm2026.onpe.gob.pe/" target="_blank" rel="noopener">erm2026.onpe.gob.pe</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resultados -->
+  <section id="resultados" class="hidden">
+    <div class="sechead">
+      <div><h2>Resultados</h2><p id="procName">—</p></div>
+      <div class="tabs" id="tabs" role="tablist"></div>
+    </div>
+    <div class="grid kpis" id="kpis"></div>
+    <div class="results" style="margin-top:14px">
+      <div class="card pad map">
+        <div class="scopehead"><h3>Mapa por departamento</h3><span class="small muted" id="mapHint">Toca una región</span></div>
+        <div id="map"></div>
+        <div class="legend" id="legend"></div>
+      </div>
+      <div class="card pad">
+        <div class="scopehead">
+          <h3 id="scopeTitle">Nacional</h3>
+          <div class="controls"><select id="scope" aria-label="Ámbito"></select></div>
+        </div>
+        <div class="chips" id="scopeChips" style="margin-bottom:6px"></div>
+        <ul class="rank" id="rank"></ul>
+        <p class="small muted" style="margin:12px 0 0">Porcentajes sobre votos válidos, tal como los publica la ONPE. «Hoja de vida» abre la plataforma Voto Informado del JNE.</p>
+      </div>
+    </div>
+    <div class="card pad" id="lowerBox" style="margin-top:14px">
+      <div class="scopehead">
+        <h3 id="lowerTitle">Provincias y distritos</h3>
+        <input type="search" id="lowerSearch" placeholder="Buscar provincia o distrito…" aria-label="Buscar">
+      </div>
+      <div class="tablewrap"><table id="lowerTable"></table></div>
+      <p class="small muted" id="lowerNote" style="margin:10px 0 0"></p>
+    </div>
+  </section>
+
+  <section id="evolucion" class="hidden">
+    <div class="sechead"><div><h2>Evolución del conteo</h2><p>Porcentaje de actas contabilizadas en cada corte publicado por la ONPE.</p></div></div>
+    <div class="card pad chart" id="chart"></div>
+  </section>
+
+  <section id="verificaciones">
+    <div class="sechead"><div><h2>Verificaciones automáticas</h2><p>En cada corte se revisa que la data de la ONPE sea consistente consigo misma. Un aviso no es una acusación: es una diferencia que vale la pena mirar, con los dos números a la vista.</p></div></div>
+    <div class="card pad">
+      <ul class="checks" id="checks"></ul>
+      <details style="margin-top:10px"><summary class="small muted" style="cursor:pointer">¿Qué se verifica?</summary>
+        <ul class="small muted" style="margin:8px 0 0;padding-left:18px">
+          <li>Que la suma de votos de las organizaciones coincida con los votos válidos.</li>
+          <li>Que cada porcentaje publicado coincida con votos ÷ válidos (tolerancia 0,06 puntos).</li>
+          <li>Que las actas contabilizadas no superen el total de actas, ni los válidos a los emitidos.</li>
+          <li>Que los acumulados (actas, votos) nunca bajen entre un corte y el siguiente.</li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <section id="cobertura">
+    <div class="sechead"><div><h2>Cobertura en vivo</h2><p>Un equipo de bots de IA sigue la jornada: portal de la ONPE, cuentas oficiales en X, verificación de afirmaciones y desinformación. Abajo, si cada uno está cumpliendo su horario y todo lo que publicó.</p></div></div>
+    <div class="grid agents" id="agents"></div>
+    <details class="card pad" style="margin-top:14px"><summary style="cursor:pointer;font-weight:600">Plan de trabajo del día</summary><ul class="timeline" id="plan" style="margin-top:8px"></ul></details>
+    <div class="card pad" style="margin-top:14px">
+      <div class="scopehead"><h3>Bitácora</h3><span class="small muted" id="feedNote"></span></div>
+      <div class="feedbox"><ul class="feed" id="feed"></ul></div>
+    </div>
+  </section>
+
+  <section id="datos">
+    <div class="sechead"><div><h2>Datos abiertos y API</h2><p>Todo es público, gratis y sin registro. Úsalo, cítalo y verifícalo.</p></div></div>
+    <div class="grid files" id="files"></div>
+    <div class="card pad" style="margin-top:14px">
+      <h3>Cómo usarlo</h3>
+      <pre id="howto"></pre>
+      <p class="small muted" style="margin:10px 0 0">Cada archivo de <code>data/onpe/</code> es la respuesta original de la ONPE. <code>manifest.json</code> guarda, para cada uno, la URL de origen, cuándo cambió y su huella SHA-256. El historial completo de cortes queda en el historial de commits del repositorio.</p>
+    </div>
+  </section>
+
+  <section id="apoya">
+    <div class="sechead"><div><h2>Sobre este proyecto</h2></div></div>
+    <div class="support">
+      <div class="card pad">
+        <h3>Independiente y sin financiamiento</h3>
+        <p>Este proyecto no recibe financiamiento de ningún partido, candidato, organización, medio ni empresa. Es una investigación independiente con un solo objetivo: que la data electoral publicada sea veraz y que cualquiera pueda comprobarlo.</p>
+        <p class="muted small">No hacemos proyecciones, conteos rápidos ni encuestas. Solo mostramos y verificamos lo que publica la ONPE. La fuente oficial siempre es <a href="https://resultadoelectoral.onpe.gob.pe" target="_blank" rel="noopener">resultadoelectoral.onpe.gob.pe</a>.</p>
+      </div>
+      <div class="card pad" id="donate">
+        <h3>Apoya el trabajo</h3>
+        <p class="small muted">Si te sirve, puedes aportar para cubrir servidores y tiempo. Es voluntario y no cambia nada de lo que se publica.</p>
+        <div class="qrs" id="qrs"></div>
+        <div id="wallets" style="margin-top:10px"></div>
+        <p class="small muted hidden" id="donateEmpty">Los medios para aportar se publicarán pronto.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>Fuente: <a href="https://resultadoelectoral.onpe.gob.pe" target="_blank" rel="noopener">ONPE</a> · Hojas de vida: <a href="https://votoinformado.jne.gob.pe" target="_blank" rel="noopener">JNE Voto Informado</a><br>Sitio no oficial y sin afiliación con la ONPE, el JNE ni ninguna organización política.</div>
+    <div>Código MIT · Datos CC BY 4.0 · <a id="repoLink2" href="#" target="_blank" rel="noopener">GitHub</a></div>
+  </div>
+</footer>
+<script src="app.js?v=1"></script>
+</body>
+</html>
