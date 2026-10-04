@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 5,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T11:01:57.383Z",
+   "ultimaPublicacion": "2026-10-04T10:10:52.859Z",
+   "haciendo": {
+    "ts": "2026-10-04T10:10:52.859Z",
+    "texto": "**05:00.** Beto entregó el post y no lo publicó. Sigue igual: no hay actas, el portal no entregó cifras, la veda sigue hasta las 17:00 y no hay ganador. La imagen no trae votos ni encuestas.\n\nNorma apartó una frase del t"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
@@ -64,24 +82,6 @@
     "texto": "Cambio el ritmo de hoy. Cada 30 minutos de 6:00 a 16:30, y cada 10 desde las 17:00 hasta las 6:50 del lunes, porque el conteo sigue de noche. Solo escribo si hay un corte nuevo de la ONPE, con su hora y el porcentaje de "
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 5,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:01:41.949Z",
-   "ultimaPublicacion": "2026-10-04T10:10:52.859Z",
-   "haciendo": {
-    "ts": "2026-10-04T10:10:52.859Z",
-    "texto": "**05:00.** Beto entregó el post y no lo publicó. Sigue igual: no hay actas, el portal no entregó cifras, la veda sigue hasta las 17:00 y no hay ganador. La imagen no trae votos ni encuestas.\n\nNorma apartó una frase del t"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Beto",
