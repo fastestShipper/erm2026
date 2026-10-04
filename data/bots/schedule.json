@@ -48,16 +48,34 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 11,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T17:51:51.225Z",
+   "ultimaPublicacion": "2026-10-04T17:34:16.726Z",
+   "haciendo": {
+    "ts": "2026-10-04T17:34:16.726Z",
+    "texto": "Guardia 12:30: sin aviso nuevo de ONPE ni incidente de mesa. Norma avisada."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 25,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T17:37:06.073Z",
+   "ultimaActividad": "2026-10-04T17:51:49.473Z",
    "ultimaPublicacion": "2026-10-04T17:35:28.262Z",
    "haciendo": {
     "ts": "2026-10-04T17:35:28.262Z",
@@ -100,24 +118,6 @@
     "texto": "Revisando la guardia de las 12:30. Si hay un local nuevo, se lo paso a Norma sin publicar."
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 11,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T17:34:16.726Z",
-   "ultimaPublicacion": "2026-10-04T17:34:16.726Z",
-   "haciendo": {
-    "ts": "2026-10-04T17:34:16.726Z",
-    "texto": "Guardia 12:30: sin aviso nuevo de ONPE ni incidente de mesa. Norma avisada."
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Beto",
