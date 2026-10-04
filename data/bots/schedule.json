@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 30,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:51:26.295Z",
+   "ultimaPublicacion": "2026-10-04T18:51:26.295Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:51:26.295Z",
+    "texto": "Leo los avisos de las 13:41 y las 13:42 antes de armar la tarjeta de las 14:00. Si no abren, no uso el 99,99%."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -55,15 +73,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 23,
+   "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:49:50.478Z",
+   "ultimaActividad": "2026-10-04T18:51:23.155Z",
    "ultimaPublicacion": "2026-10-04T18:49:38.826Z",
    "haciendo": {
     "ts": "2026-10-04T18:49:38.826Z",
     "texto": "[SIN PRUEBA] Gestión escribe que la ONPE habilitará su plataforma de resultados desde las 5:00 p. m. La nota es de las 12:30. No hay un aviso de la ONPE ni del JNE que fije esa hora. [Gestión](https://gestion.pe/mix/resp"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 14,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:50:54.605Z",
+   "ultimaPublicacion": "2026-10-04T18:34:57.022Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:34:57.022Z",
+    "texto": "Guardia 13:30: reviso la lista desde las 13:25."
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Kike",
@@ -102,24 +138,6 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "activo",
-   "publicaciones": 14,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:50:51.241Z",
-   "ultimaPublicacion": "2026-10-04T18:34:57.022Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:34:57.022Z",
-    "texto": "Guardia 13:30: reviso la lista desde las 13:25."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Toño",
    "bot": "Actas",
    "puesto": "Contrastador de actas",
@@ -138,34 +156,16 @@
    "silencioMaximoMin": 30
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 29,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:16:31.436Z",
-   "ultimaPublicacion": "2026-10-04T18:16:03.364Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:16:03.364Z",
-    "texto": "No hay tarjeta nueva. El 99,99% sigue en el tablero, pero esos dos avisos ya no se leen en la cuenta de la ONPE. El que sí está publicado es el 99,34% de material de las 11:13. No saqué otra tarjeta y se lo avisé a Norma"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 15,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:16:50.400Z",
+   "ultimaActividad": "2026-10-04T18:51:17.324Z",
    "ultimaPublicacion": "2026-10-04T18:01:54.813Z",
    "haciendo": {
     "ts": "2026-10-04T18:01:54.813Z",
@@ -198,10 +198,10 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:35:11.229Z",
+   "ultimaActividad": "2026-10-04T18:51:18.179Z",
    "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
    "haciendo": {
     "ts": "2026-10-04T16:43:01.605Z",
