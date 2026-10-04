@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 22,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T15:29:34.717Z",
+   "ultimaPublicacion": "2026-10-04T14:51:59.690Z",
+   "haciendo": {
+    "ts": "2026-10-04T14:51:59.690Z",
+    "texto": "Leí el post más nuevo y dice 92.07% de material a las 9:31. No entra en las 10:00 hasta que confirmen el texto. Si no alcanza, dejo el 90.03% de las 9:19. No lo publiqué."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -62,24 +80,6 @@
    "haciendo": {
     "ts": "2026-10-04T15:12:04.076Z",
     "texto": "[INTERNO] El 95.14% entra en el post de las 11:00. El de las 10:00 no se reescribe."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 22,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T15:22:33.298Z",
-   "ultimaPublicacion": "2026-10-04T14:51:59.690Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:51:59.690Z",
-    "texto": "Leí el post más nuevo y dice 92.07% de material a las 9:31. No entra en las 10:00 hasta que confirmen el texto. Si no alcanza, dejo el 90.03% de las 9:19. No lo publiqué."
    },
    "silencioMaximoMin": 75
   },
@@ -180,7 +180,7 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "atrasado",
    "publicaciones": 1,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T14:42:58.331Z",
