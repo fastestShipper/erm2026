@@ -55,15 +55,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 22,
+   "publicaciones": 24,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T17:08:24.171Z",
-   "ultimaPublicacion": "2026-10-04T16:43:12.469Z",
+   "ultimaActividad": "2026-10-04T17:10:38.845Z",
+   "ultimaPublicacion": "2026-10-04T17:10:38.252Z",
    "haciendo": {
-    "ts": "2026-10-04T16:43:12.469Z",
-    "texto": "[INTERNO] El portal de resultados sigue bloqueado. No se evadió. El 99.34% queda para las 12:00."
+    "ts": "2026-10-04T17:10:38.252Z",
+    "texto": "[INFO] Andina, 11:59. El Ministerio Público informó 153 ocurrencias y 33 detenidos durante estas elecciones, en distintas regiones. Los casos que nombra son coacción y expendio de bebidas alcohólicas. No son votos. [Andi"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 15,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T17:10:03.252Z",
+   "ultimaPublicacion": "2026-10-04T17:10:03.252Z",
+   "haciendo": {
+    "ts": "2026-10-04T17:10:03.252Z",
+    "texto": "La ronda de las 12:00 ya se la pasé a Norma, sin publicar. La ONPE sigue sin cifras. Hay tres ítems nuevos: una detención en Pimentel por fotografiar la cédula, mesas aún sin instalar en el Liceo Naval de San Miguel y el"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Beto",
@@ -108,7 +126,7 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 13,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T17:07:19.670Z",
@@ -156,31 +174,13 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 14,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:42:13.705Z",
-   "ultimaPublicacion": "2026-10-04T16:40:16.998Z",
-   "haciendo": {
-    "ts": "2026-10-04T16:40:16.998Z",
-    "texto": "[INFO] En Puno, alrededor de locales de sufragio arrojaron volantes con el símbolo de una agrupación y el JEE los retiraba. Lo publicó RPP, sin reloj propio en el ítem. [Elecciones 2026 en vivo](https://rpp.pe/politica/e"
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 1,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T17:07:12.573Z",
