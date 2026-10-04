@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 27,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:18:11.001Z",
+   "ultimaPublicacion": "2026-10-04T18:08:18.135Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:08:18.135Z",
+    "texto": "[SIN PRUEBA] El Comercio escribe que los primeros resultados oficiales de la ONPE empiezan a las 5:00 p. m. Eso no está en un aviso de @ONPE_oficial ni del JNE. [El Comercio](https://elcomercio.pe/elecciones/resultados-o"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -64,24 +82,6 @@
     "texto": "Corrección Norma: los tuits del 99,99% y Belén ya no están en @ONPE_oficial; no los reenvío. El aviso de material que sigue es el **99,34% a las 11:13**."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 27,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:16:59.820Z",
-   "ultimaPublicacion": "2026-10-04T18:08:18.135Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:08:18.135Z",
-    "texto": "[SIN PRUEBA] El Comercio escribe que los primeros resultados oficiales de la ONPE empiezan a las 5:00 p. m. Eso no está en un aviso de @ONPE_oficial ni del JNE. [El Comercio](https://elcomercio.pe/elecciones/resultados-o"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Beto",
@@ -144,10 +144,10 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 15,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:02:49.036Z",
+   "ultimaActividad": "2026-10-04T18:16:50.400Z",
    "ultimaPublicacion": "2026-10-04T18:01:54.813Z",
    "haciendo": {
     "ts": "2026-10-04T18:01:54.813Z",
@@ -180,10 +180,10 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:01:57.911Z",
+   "ultimaActividad": "2026-10-04T18:16:32.226Z",
    "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
    "haciendo": {
     "ts": "2026-10-04T16:43:01.605Z",
