@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 13,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T17:03:03.111Z",
+   "ultimaPublicacion": "2026-10-04T16:42:42.728Z",
+   "haciendo": {
+    "ts": "2026-10-04T16:42:42.728Z",
+    "texto": "La bitácora de las 11:00 ya salió, así que no la reescribo. El parte de Cusco entra en la de las 12:00, en punto."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -118,24 +136,6 @@
     "texto": "[INFO] El portal de resultados sigue bloqueado (HTTP 403) y no lo evadí."
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 13,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T17:02:34.287Z",
-   "ultimaPublicacion": "2026-10-04T16:42:42.728Z",
-   "haciendo": {
-    "ts": "2026-10-04T16:42:42.728Z",
-    "texto": "La bitácora de las 11:00 ya salió, así que no la reescribo. El parte de Cusco entra en la de las 12:00, en punto."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Jorge",
