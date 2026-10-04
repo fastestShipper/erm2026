@@ -96,6 +96,7 @@ export default function App() {
   if (new URLSearchParams(location.search).has('escena')) return <Suspense fallback={null}><Live /></Suspense>;
   const route = useRoute(NAV.map((x) => x.id), 'en-vivo');
   const cur = NAV.find((x) => x.id === route);
+  const live = useData().live;
   const View = cur.view;
   return (
     <div className="app-shell">
@@ -118,8 +119,9 @@ export default function App() {
           <nav className="hidden lg:flex h-[46px] items-center justify-center gap-1 border-t border-line/70" aria-label="Secciones">
             {NAV.map(({ id, label, icon: I }) => (
               <a key={id} href={`#${id}`} aria-current={route === id ? 'page' : undefined}
-                className={`relative inline-flex items-center gap-2 h-[34px] px-4 rounded-full text-[13.5px] whitespace-nowrap transition-colors ${route === id ? 'bg-navy text-white font-semibold shadow-[0_6px_14px_-8px_rgba(11,31,75,.7)]' : id === 'que-es' ? 'text-accent-2 font-semibold hover:bg-accent-soft' : 'text-ink-2 font-medium hover:bg-bg'}`}>
-                <I size={15} className={route === id ? 'text-white' : id === 'en-vivo' ? 'text-live' : ''} />{label}
+                className={`relative inline-flex items-center gap-2 h-[34px] px-4 rounded-full text-[13.5px] whitespace-nowrap transition-colors ${route === id ? 'bg-navy text-white font-semibold shadow-[0_6px_14px_-8px_rgba(11,31,75,.7)]' : id === 'resultados' && live ? 'bg-live text-white font-semibold hover:brightness-110 shadow-[0_6px_14px_-8px_rgba(225,29,72,.8)]' : id === 'que-es' ? 'text-accent-2 font-semibold hover:bg-accent-soft' : 'text-ink-2 font-medium hover:bg-bg'}`}>
+                <I size={15} className={route === id || (id === 'resultados' && live) ? 'text-white' : id === 'en-vivo' ? 'text-live' : ''} />{label}
+                {id === 'resultados' && live && route !== id && <span className="w-2 h-2 rounded-full bg-white animate-[pulse_1.6s_ease-out_infinite] text-white" aria-hidden="true" />}
               </a>
             ))}
           </nav>
@@ -137,7 +139,7 @@ export default function App() {
       <nav className="lg:hidden fixed bottom-0 inset-x-0 z-40 h-16 border-t border-line bg-white/92 backdrop-blur-xl grid grid-cols-5" style={{ paddingBottom: 'env(safe-area-inset-bottom)' }} aria-label="Secciones">
         {NAV.map(({ id, short, icon: I }) => (
           <a key={id} href={`#${id}`} aria-current={route === id ? 'page' : undefined} className={`flex flex-col items-center justify-center gap-1 text-[10.5px] font-medium ${route === id ? 'text-ink' : 'text-dim'}`}>
-            <I size={19} className={route === id ? 'text-live' : ''} />{short}
+            <span className="relative"><I size={19} className={route === id || (id === 'resultados' && live) ? 'text-live' : ''} />{id === 'resultados' && live && route !== id && <span className="absolute -top-0.5 -right-1 w-2 h-2 rounded-full bg-live text-live animate-[pulse_1.6s_ease-out_infinite]" aria-hidden="true" />}</span>{short}
           </a>
         ))}
       </nav>

@@ -5,6 +5,7 @@ import { CLOSE_MS, ago, hms, n, norm, partyColor, pct, timeLima, title } from '.
 import { leaderOf, setZone, usePlaces, useZone, useZoneRaces } from '../lib/zona.js';
 import { Empty, PageHeader } from '../hud/common.jsx';
 import { RaceCard, Verdict, ZonePicker } from '../hud/race.jsx';
+import { NightResults } from '../hud/night.jsx';
 
 const DAY = [
   ['06:00', 'Se instalan las mesas'],
@@ -255,6 +256,9 @@ export default function Results() {
       <PageHeader eyebrow={`Resultados oficiales · corte ONPE ${timeLima(corte)}`} title="Resultados">
         Cifras oficiales de la ONPE. Cada región, cada provincia y cada distrito eligen por separado: busca tu lugar para ver quién va primero y si eso todavía puede cambiar.
       </PageHeader>
+
+      {/* lo primero en la noche: bocas de urna y parciales por contienda, de lo general a lo particular */}
+      <div className="mb-5"><NightResults /></div>
 
       {/* avance de cada elección: una franja compacta, para que tu zona quede a la vista */}
       <div className="panel px-4 py-3.5 mb-4 grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-3">

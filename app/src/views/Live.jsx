@@ -6,7 +6,6 @@ import { CLOSE_MS, TEAM_START_MS, ago, hms, n, norm, pct, plain, timeLima } from
 import { setZone, usePlaces, useZone, useZoneRaces } from '../lib/zona.js';
 import { RichText, Tag } from '../hud/common.jsx';
 import { RaceMini } from '../hud/race.jsx';
-import { NightResults } from '../hud/night.jsx';
 
 const Office = lazy(() => import('../office/Office.jsx'));
 
@@ -447,7 +446,7 @@ export default function Live() {
   if (wide) return (
     <div className="h-[calc(100dvh-var(--hdr))] grid grid-cols-[minmax(0,1fr)_400px] gap-5 px-6 py-5 box-border">
       <section className="flex flex-col gap-3.5 min-w-0 min-h-0 overflow-y-auto pr-1">
-        {m.live && <><CutCard m={m} now={now} /><NightResults /></>}
+        {m.live && <CutCard m={m} now={now} />}
         <Player m={m} now={now} sel={sel} onSelect={pick} autoRotate={false} />
         <StreamMeta m={m} />
         {!m.live && <Kpis m={m} now={now} />}
@@ -473,7 +472,7 @@ export default function Live() {
           {curTab === 'chat' && <AgentChat m={m} sel={sel} onPick={pick} className="h-full" />}
           {curTab === 'ahora' && (
             <div className="h-full overflow-y-auto flex flex-col gap-2.5">
-              {m.live ? <><CutCard m={m} now={now} /><NightResults /></> : <><LowerThird m={m} /><Kpis m={m} now={now} /></>}
+              {m.live ? <CutCard m={m} now={now} /> : <><LowerThird m={m} /><Kpis m={m} now={now} /></>}
               {m.boletin && <BulletinPin b={m.boletin} className="flex-none" />}
               {!m.live && <div className="flex gap-2"><a href="#resultados" className="btn-pill flex-1 !bg-navy !border-navy !text-white"><ChartColumn size={15} />Ver resultados</a><a href="#acerca/datos" className="btn-pill flex-1"><Database size={15} />Datos</a></div>}
             </div>
