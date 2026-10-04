@@ -658,8 +658,8 @@ def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, on_checks, budget, dead
         if not st['todos']:
             return 0
         # 0) los lugares que el público está mirando ahora, si llevan más de 90 s sin consultarse
-        by_code = {code_of(x): x for x in st['todos']}
-        asked = [by_code[c] for c in wanted if c in by_code and _age(store.get(c)) > 90]
+        by_code = {str(code_of(x)): x for x in st['todos']}
+        asked = [by_code[c] for c in map(str, wanted) if c in by_code and _age(store.get(code_of(by_code[c]))) > 90]
 
         def next_asked():
             return asked.pop(0) if asked else None
@@ -724,7 +724,7 @@ def wanted_codes(crawl, els):
     prov_of = {}
     for e in els:
         if e['nivel'] == 3:
-            prov_of = {x[2]: x[1] for x in (crawl.get(str(e['id'])) or {}).get('todos') or []}
+            prov_of = {str(x[2]): str(x[1]) for x in (crawl.get(str(e['id'])) or {}).get('todos') or []}
     prov += [prov_of[d] for d in dist if d in prov_of and prov_of[d] not in prov]
     return {e['id']: (dist if e['nivel'] == 3 else prov) for e in els}
 
