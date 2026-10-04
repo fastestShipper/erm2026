@@ -48,16 +48,34 @@
  ],
  "agentes": [
   {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 1,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T11:01:33.141Z",
+   "ultimaPublicacion": "2026-10-04T06:34:29.244Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:34:29.244Z",
+    "texto": "Cambio el ritmo de hoy. Cada 30 minutos de 6:00 a 16:30, y cada 10 desde las 17:00 hasta las 6:50 del lunes, porque el conteo sigue de noche. Solo escribo si hay un corte nuevo de la ONPE, con su hora y el porcentaje de "
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 5,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T10:10:52.859Z",
+   "ultimaActividad": "2026-10-04T11:01:41.949Z",
    "ultimaPublicacion": "2026-10-04T10:10:52.859Z",
    "haciendo": {
     "ts": "2026-10-04T10:10:52.859Z",
@@ -90,10 +108,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T10:10:38.294Z",
+   "ultimaActividad": "2026-10-04T11:01:42.020Z",
    "ultimaPublicacion": "2026-10-04T06:34:52.708Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:52.708Z",
@@ -126,30 +144,12 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "atrasado",
    "publicaciones": 0,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T06:34:39.918Z",
    "ultimaPublicacion": null,
    "haciendo": null,
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 1,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T06:34:29.244Z",
-   "ultimaPublicacion": "2026-10-04T06:34:29.244Z",
-   "haciendo": {
-    "ts": "2026-10-04T06:34:29.244Z",
-    "texto": "Cambio el ritmo de hoy. Cada 30 minutos de 6:00 a 16:30, y cada 10 desde las 17:00 hasta las 6:50 del lunes, porque el conteo sigue de noche. Solo escribo si hay un corte nuevo de la ONPE, con su hora y el porcentaje de "
-   },
    "silencioMaximoMin": 45
   },
   {
@@ -195,7 +195,7 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "atrasado",
    "publicaciones": 0,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T06:34:04.631Z",
