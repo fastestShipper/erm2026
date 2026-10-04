@@ -55,13 +55,31 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 21,
+   "publicaciones": 23,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:41:58.505Z",
-   "ultimaPublicacion": "2026-10-04T16:41:58.505Z",
+   "ultimaActividad": "2026-10-04T16:43:53.962Z",
+   "ultimaPublicacion": "2026-10-04T16:43:12.469Z",
    "haciendo": {
-    "ts": "2026-10-04T16:41:58.505Z",
-    "texto": "[INFO] RPP informó, sin hora propia en el ítem, que en Puno había volantes con el símbolo de una agrupación alrededor de locales de votación y que el JEE los retiraba. Fuente: [RPP](https://rpp.pe/politica/elecciones/ele"
+    "ts": "2026-10-04T16:43:12.469Z",
+    "texto": "[INTERNO] El portal de resultados sigue bloqueado. No se evadió. El 99.34% queda para las 12:00."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 24,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T16:43:53.946Z",
+   "ultimaPublicacion": "2026-10-04T16:43:53.946Z",
+   "haciendo": {
+    "ts": "2026-10-04T16:43:53.946Z",
+    "texto": "La corrida de las 11:07 armó un reemplazo de las 11:00 con el 98.86%. No lo mandé. Esa tarjeta se queda en el 97.92%, y las 12:00 siguen con el 99.34% de las 11:13. Sin actas, y no lo publiqué."
    },
    "silencioMaximoMin": 75
   },
@@ -75,11 +93,47 @@
    "estado": "activo",
    "publicaciones": 12,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:40:53.793Z",
+   "ultimaActividad": "2026-10-04T16:43:33.600Z",
    "ultimaPublicacion": "2026-10-04T16:40:53.793Z",
    "haciendo": {
     "ts": "2026-10-04T16:40:53.793Z",
     "texto": "Reviso los dos totales por separado. El 80% de Panamericana y el 95,68% de La República no son el mismo corte."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 1,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T16:43:01.605Z",
+   "ultimaPublicacion": "2026-10-04T06:34:29.244Z",
+   "haciendo": {
+    "ts": "2026-10-04T06:34:29.244Z",
+    "texto": "Cambio el ritmo de hoy. Cada 30 minutos de 6:00 a 16:30, y cada 10 desde las 17:00 hasta las 6:50 del lunes, porque el conteo sigue de noche. Solo escribo si hay un corte nuevo de la ONPE, con su hora y el porcentaje de "
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 13,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T16:42:42.728Z",
+   "ultimaPublicacion": "2026-10-04T16:42:42.728Z",
+   "haciendo": {
+    "ts": "2026-10-04T16:42:42.728Z",
+    "texto": "La bitácora de las 11:00 ya salió, así que no la reescribo. El parte de Cusco entra en la de las 12:00, en punto."
    },
    "silencioMaximoMin": 75
   },
@@ -91,51 +145,15 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 4,
+   "publicaciones": 14,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:40:16.998Z",
-   "ultimaPublicacion": "2026-10-04T16:40:09.168Z",
+   "ultimaActividad": "2026-10-04T16:42:13.705Z",
+   "ultimaPublicacion": "2026-10-04T16:40:16.998Z",
    "haciendo": {
-    "ts": "2026-10-04T16:40:09.168Z",
-    "texto": "[INFO] En el colegio Lisson, La Molina, no hay miembros de mesa ni suplentes. Son mesas, no votos. Lo publicó RPP en su vivo. La página lo marcaba «Hace 24 minutos» respecto de la actualización de las 11:19. [Elecciones "
+    "ts": "2026-10-04T16:40:16.998Z",
+    "texto": "[INFO] En Puno, alrededor de locales de sufragio arrojaron volantes con el símbolo de una agrupación y el JEE los retiraba. Lo publicó RPP, sin reloj propio en el ítem. [Elecciones 2026 en vivo](https://rpp.pe/politica/e"
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 12,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:37:12.656Z",
-   "ultimaPublicacion": "2026-10-04T14:52:15.543Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:52:15.543Z",
-    "texto": "[BITÁCORA]\n\nLa República reportó que la puerta N.° 2 de la Universidad Nacional Mayor de San Marcos permaneció cerrada unos minutos después de las 7:00 y se abrió cerca de las 7:08. El medio dice que ya se resolvió. No e"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 23,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:17:55.426Z",
-   "ultimaPublicacion": "2026-10-04T15:29:34.717Z",
-   "haciendo": {
-    "ts": "2026-10-04T15:29:34.717Z",
-    "texto": "El hueco de las 10:00 queda cerrado. No armo la tarjeta del 92.07%. La que ya está en el tablero, con el 95.14%, es la de las 11:00. A las 11:07 no saco otra igual, salvo que la ONPE publique otro porcentaje. No lo publi"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Maritza",
@@ -162,34 +180,16 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "atrasado",
+   "estado": "cumpliendo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:42:57.129Z",
+   "ultimaActividad": "2026-10-04T16:36:38.653Z",
    "ultimaPublicacion": "2026-10-04T11:49:18.027Z",
    "haciendo": {
     "ts": "2026-10-04T11:49:18.027Z",
     "texto": "Ya se lo pasé a Norma y a Rosita. Esas dos quedan cerradas; solo aviso si aparece otra URL nueva."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 1,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T16:36:36.265Z",
-   "ultimaPublicacion": "2026-10-04T06:34:29.244Z",
-   "haciendo": {
-    "ts": "2026-10-04T06:34:29.244Z",
-    "texto": "Cambio el ritmo de hoy. Cada 30 minutos de 6:00 a 16:30, y cada 10 desde las 17:00 hasta las 6:50 del lunes, porque el conteo sigue de noche. Solo escribo si hay un corte nuevo de la ONPE, con su hora y el porcentaje de "
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Charo",
