@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { ChartColumn, ExternalLink, Megaphone, Search, Trophy } from 'lucide-react';
 import { getJson } from '../lib/data.jsx';
-import { norm, partyColor, timeLima } from '../lib/format.js';
+import { norm, timeLima } from '../lib/format.js';
 import { Pager, usePaged } from './common.jsx';
 
 const CARGO = { gobernador: 'Gobernador regional', provincial: 'Alcalde provincial', distrital: 'Alcalde distrital', otra: 'Otra' };
@@ -13,12 +13,20 @@ const LIMA_METRO = '140100';
 const OTROS = '#cbd5e1';
 
 // El color sigue a la organización (igual en todas las tarjetas), nunca al puesto que ocupa.
+// Paleta categórica validada (8 tonos, en orden fijo) para las organizaciones que más aparecen;
+// el resto va en pizarra con su nombre al lado, y «otros» en gris.
 const FIJOS = {
-  'RENOVACION POPULAR': '#2563eb', 'AVANZA PAIS': '#db2777', 'SOMOS PERU': '#059669', 'PODEMOS PERU': '#d97706',
-  'ALIANZA PARA EL PROGRESO': '#7c3aed', 'ACCION POPULAR': '#dc2626', 'FUERZA POPULAR': '#ea580c', 'JUNTOS POR EL PERU': '#0d9488',
-  'PAIS PARA TODOS': '#0284c7', 'AHORA NACION': '#c026d3', 'PARTIDO POPULAR CRISTIANO': '#65a30d', 'FE EN EL PERU': '#475569',
+  'RENOVACION POPULAR': '#2a78d6', 'AVANZA PAIS': '#eb6834', 'SOMOS PERU': '#1baf7a', 'PODEMOS PERU': '#eda100',
+  'ALIANZA PARA EL PROGRESO': '#e87ba4', 'ACCION POPULAR': '#008300', 'FUERZA POPULAR': '#4a3aa7', 'JUNTOS POR EL PERU': '#e34948',
 };
-const colorDe = (partido, nombre) => FIJOS[norm(partido)] || partyColor(partido, nombre);
+const PIZARRA = ['#64748b', '#8b8fa3'];
+const colorDe = (partido) => {
+  const k = norm(partido);
+  if (FIJOS[k]) return FIJOS[k];
+  let h = 0;
+  for (const c of k) h = (h * 31 + c.charCodeAt(0)) >>> 0;
+  return PIZARRA[h % 2];
+};
 const pctEs = (v, d = 1) => (v === null || v === undefined || Number.isNaN(+v) ? '—' : `${Number(v).toFixed(d).replace('.', ',')} %`);
 
 /** Pide un archivo cada `ms` mientras el componente esté a la vista. */
