@@ -57,7 +57,15 @@ const PLAN = [
 
 const PRIVATE_RE = /eureka|lone ?star|del ?huerto|fuego ?inka|control ?a\b|controla|nuna|pulsegest|cobro|factura|invoice|deposit|US\$|S\/\s?\d|cliente|\bdeals?\b|crm|gmail|google cloud|ewald|mahr|zpw|password|contraseña|token/i;
 const ELECTION_RE = /onpe|jne|elecci|mesa|acta|voto|erm|regional|municipal|gobernador|alcald|desinfo|verific|squad|equipo|portal|tablero|pulso|padr[oó]n|resultados|personer|bitácora|post|medios|cronista|jornada/i;
-const GREETING_RE = /^(hey|hola)\b.{0,90}(good to meet|what do you want|qué quieres|en qué me pongo|listo para sumarme|me sumo|quedé listo)/i;
+// Coordinación interna (reparto de roles, apodos, horarios, cambios de brief): queda en feed.json con
+// «interno», pero el chat público no la muestra salvo que el visitante lo pida.
+const INTERNO_RE = /\bbrief\b|\bme llaman\b|en el equipo soy|quedo en espera|me asign[oó]|cambio el ritmo|ajust[eé] la vigilancia|\bapodos?\b|^\s*qued[oó]\b/i;
+const VEREDICTO_RE = /\[(CONFIRMADO|FALSO|ENGAÑOSO|SIN PRUEBA|REVISAR)\]/i;
+/** Qué tipo de mensaje es, para rotularlo en el chat. */
+const clase = (txt, a) => (VEREDICTO_RE.test(txt) ? 'verificacion'
+  : /^\s*\*{0,2}\d{1,2}:\d{2}\.?\*{0,2}/.test(txt) && a.apodo === 'Don Pepe' ? 'bitacora'
+  : a.apodo === 'Luchito' && /\bcorte\b|actas contad|% de actas/i.test(txt) ? 'dato' : undefined);
+const GREETING_RE =/^(hey|hola)\b.{0,90}(good to meet|what do you want|qué quieres|en qué me pongo|listo para sumarme|me sumo|quedé listo)/i;
 
 const b32 = (s) => {
   const A = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
@@ -124,7 +132,7 @@ function build() {
       .replace(/\[([^\]]+)\]\(\)/g, '$1')
       .replace(/\bsquad\b/gi, 'equipo');
     for (const [re, name] of renames) s = s.replace(re, name);
-    return s;
+    return s.replace(/(\p{L}+) \(\1\)/gu, '$1');   // «Norma (Norma)» → «Norma»
   };
   const retenidos = { veda: 0, nunca: 0 };
   const publicText = (c, a) => {
@@ -152,7 +160,7 @@ function build() {
       if (tipo === 'publica') { posts++; lastPost = Math.max(lastPost, e.timestampMs); }
       if (tipo === 'trabaja') work++;
       if (tipo !== 'recibe') doing = { ts: e.timestampMs, texto: txt.slice(0, 220) };
-      feed.push({ agente: a.apodo, bot: a.bot, tipo, ts: new Date(e.timestampMs).toISOString(), texto: txt });
+      feed.push({ agente: a.apodo, bot: a.bot, tipo, clase: INTERNO_RE.test(txt) ? undefined : clase(txt, a), interno: INTERNO_RE.test(txt) || undefined, ts: new Date(e.timestampMs).toISOString(), texto: txt });
     }
     const h = peruHour(now);
     const inWindow = h >= a.window[0] && h < a.window[1];

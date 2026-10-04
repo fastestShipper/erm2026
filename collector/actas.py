@@ -24,7 +24,7 @@ Salidas:
   data/actas/endpoints.json     rutas de la API que usa el portal (leídas de su código público)
   mesas/<NNN>.json              (fuera de git) lo que la ONPE registra en cada mesa, para «Busca tu mesa»
 
-Ritmo: una consulta cada ERM_ACTAS_DELAY segundos (0.33 por defecto) durante ERM_ACTAS_BUDGET
+Ritmo: una consulta cada ERM_ACTAS_DELAY segundos (0.5 por defecto) durante ERM_ACTAS_BUDGET
 segundos (540 por defecto). Si la ONPE bloquea, se detiene y lo deja dicho: no se evade.
 """
 import hashlib
@@ -43,9 +43,10 @@ OUT = os.path.join(DATA, 'actas')
 MESAS = os.environ.get('ERM_MESAS_DIR', os.path.join(ROOT, 'local', 'mesas'))
 STATE = os.path.join(ROOT, 'local', 'actas-state.json')
 CHANGED = os.path.join(ROOT, 'local', 'mesas-changed.txt')
+BACKOFF = os.path.join(ROOT, 'local', 'onpe-backoff.json')   # pausa compartida con collect.py si la ONPE bloquea
 PORTAL = os.environ.get('ERM_PORTAL', 'https://resultadoelectoral.onpe.gob.pe')
 BASE = os.environ.get('ERM_BASE', PORTAL + '/presentacion-backend')
-DELAY = float(os.environ.get('ERM_ACTAS_DELAY', '0.33'))
+DELAY = float(os.environ.get('ERM_ACTAS_DELAY', '0.5'))
 BUDGET = float(os.environ.get('ERM_ACTAS_BUDGET', '540'))
 FORCE = os.environ.get('ERM_ACTAS_FORCE') == '1'
 MAX_CODE = int(os.environ.get('ERM_ACTAS_MAX', '120000'))     # tope inicial del recorrido; se amplía solo
@@ -128,6 +129,20 @@ def write_json(path, obj, indent=1):
     with open(tmp, 'w', encoding='utf-8') as f:
         json.dump(obj, f, ensure_ascii=False, indent=indent)
     os.replace(tmp, path)
+
+
+def backoff_active():
+    """True mientras dure la pausa que se toma cuando la ONPE rechaza consultas."""
+    return time.time() < read_json(BACKOFF, {}).get('hasta', 0)
+
+
+def note_block(reason):
+    """La ONPE rechazó una consulta: los recorridos largos esperan 5, 10, 20… hasta 40 minutos. No se evade."""
+    prev = read_json(BACKOFF, {})
+    n = prev.get('n', 0) + 1 if time.time() - prev.get('visto', 0) < 3600 else 1
+    minutes = min(40, 5 * 2 ** (n - 1))
+    write_json(BACKOFF, {'hasta': time.time() + 60 * minutes, 'visto': time.time(), 'n': n, 'motivo': str(reason)[:200]}, indent=None)
+    log(f'los recorridos largos esperan {minutes} min')
 
 
 # ------------------------------------------------------------------ rutas del portal
@@ -280,6 +295,9 @@ def main():
     if status.get('estado') != 'en-vivo' and not FORCE:
         log('la ONPE aún no publica resultados; no hay actas que revisar')
         return
+    if backoff_active():
+        log('en pausa: la ONPE rechazó consultas hace poco')
+        return
     latest = read_json(os.path.join(DATA, 'latest.json'), {})
     names = {e['id']: e.get('menu') or e.get('nombre') for e in latest.get('elecciones', [])}
     st = read_json(STATE, {'cursor': 1, 'max': MAX_CODE, 'misses': 0, 'mesas': {}, 'consultas': 0, 'bloqueado': None})
@@ -311,12 +329,14 @@ def main():
     except Blocked as e:
         blocked = str(e)
         log('la ONPE bloqueó las consultas:', e)
+        note_block(e)
 
     # guardar fragmentos de «Busca tu mesa» y la lista de cambios para el sync
     for shard in changed:
         write_json(os.path.join(MESAS, f'{shard}.json'), st['_shard_cache'][shard], indent=None)
     st.pop('_shard_cache', None)
     if changed:
+        os.makedirs(os.path.dirname(CHANGED), exist_ok=True)
         with open(CHANGED, 'a', encoding='utf-8') as f:
             f.write(''.join(f'{s}.json\n' for s in sorted(changed)))
     st['bloqueado'] = blocked
@@ -343,6 +363,7 @@ def main():
         'consultasTotales': st['consultas'],
         'bloqueado': blocked,
         'ritmo': f'1 consulta cada {DELAY:.2f} s',
+        'fragmentos': sorted({c[:3] for c in mesas}),   # archivos mesas/NNN.json que existen (para «una mesa al azar»)
     }
     if resumen != {k: resumen_prev.get(k) for k in resumen}:
         write_json(os.path.join(OUT, 'resumen.json'), {**resumen, 'actualizado': now_iso()})

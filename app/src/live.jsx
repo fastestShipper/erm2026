@@ -20,13 +20,13 @@ function useTour(m) {
     const t = setInterval(() => {
       step++;
       if (step % 2 === 1) {
-        const recent = [...new Set((m.feed?.items || []).filter((x) => x.tipo !== 'recibe').slice(0, 8).map((x) => x.agente))];
+        const recent = [...new Set((m.feedPub?.items || []).filter((x) => x.tipo !== 'recibe').slice(0, 8).map((x) => x.agente))];
         const pool = recent.length ? recent : m.agents.filter((a) => a.estado !== 'programado').map((a) => a.agente);
         setSel(pool.length ? pool[Math.floor(step / 2) % pool.length] : null);
       } else setSel(null);
     }, 9000);
     return () => clearInterval(t);
-  }, [m.feed, m.agents]);
+  }, [m.feedPub, m.agents]);
   return sel;
 }
 
@@ -34,7 +34,7 @@ function Scene({ m, sel, now, big }) {
   return (
     <>
       <Suspense fallback={null}>
-        <Office agents={m.agents} feed={m.feed} latest={m.latest} status={m.status} actas={m.actas} anomalyDeps={m.anomalyDeps} selected={sel} autoRotate={false} compact fov={H ? 36 : 46} likesBy={m.likesBy} />
+        <Office agents={m.agents} feed={m.feedPub} latest={m.latest} status={m.status} actas={m.actas} anomalyDeps={m.anomalyDeps} selected={sel} autoRotate={false} compact fov={H ? 36 : 46} likesBy={m.likesBy} />
       </Suspense>
       <div className="absolute left-6 top-6 flex gap-2.5 pointer-events-none">
         <span className={`flex items-center rounded-[10px] bg-navy/85 text-white num font-bold ${big ? 'h-11 px-4 text-[20px]' : 'h-8 px-3 text-[14px]'}`}>AL AIRE {hms(now - TEAM_START_MS)}</span>

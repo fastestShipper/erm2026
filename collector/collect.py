@@ -39,7 +39,9 @@ INBOX = os.environ.get('ERM_INBOX', '/srv/erm2026/inbox')
 BASE = os.environ.get('ERM_BASE', 'https://resultadoelectoral.onpe.gob.pe/presentacion-backend')
 PERU = timezone(timedelta(hours=-5))
 DELAY = float(os.environ.get('ERM_DELAY', '0.3'))         # pausa entre pedidos: no saturar a la ONPE
-DISTRICT_BUDGET = int(os.environ.get('ERM_DISTRICT_BUDGET', '160'))  # pedidos de distrito por corrida
+AMBITOS_STATE = 'crawl-ambitos.json'                              # estado del recorrido de provincias y distritos
+LOWER_SECONDS = float(os.environ.get('ERM_AMBITOS_BUDGET', '100'))  # segundos por corrida de `--ambitos`
+LOWER_DELAY = float(os.environ.get('ERM_AMBITOS_DELAY', '0.2'))    # pausa entre pedidos en ese recorrido
 PUSH = os.environ.get('ERM_PUSH', '1') == '1'
 
 HEADERS = {
@@ -54,6 +56,8 @@ HEADERS = {
 }
 
 BLANK_RE = re.compile(r'BLANCO|NULO|IMPUGNAD', re.I)
+MESA_MAX = 300    # máximo de electores por mesa de sufragio (Ley Orgánica de Elecciones, art. 52)
+BACKOFF = os.path.join(ROOT, 'local', 'onpe-backoff.json')   # pausa compartida con actas.py si la ONPE bloquea
 
 
 def now_iso():
@@ -118,10 +122,10 @@ def data_of(j):
     return j
 
 
-def write_json(rel, obj, manifest=None, source=None):
+def write_json(rel, obj, manifest=None, source=None, indent=1):
     path = os.path.join(DATA, rel)
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    raw = json.dumps(obj, ensure_ascii=False, indent=1, sort_keys=False)
+    raw = json.dumps(obj, ensure_ascii=False, indent=indent, sort_keys=False, separators=None if indent else (',', ':'))
     tmp = path + '.tmp'
     with open(tmp, 'w', encoding='utf-8') as f:
         f.write(raw)
@@ -156,6 +160,28 @@ def level_for(nombre):
     return 1  # regionales (gobernador, consejeros) y cualquier otra: por departamento
 
 
+def kind_for(nombre, lvl):
+    """gobernador | consejeros | provincial | distrital. En consejeros no hay un único primer lugar."""
+    if lvl == 3:
+        return 'distrital'
+    if lvl == 2:
+        return 'provincial'
+    return 'consejeros' if 'consej' in slug(nombre) else 'gobernador'
+
+
+_RECHECK = {'siguen': 0}
+
+
+def _same_cut(t, p):
+    """True si los votos de las organizaciones suman los válidos del total (los dos pedidos son del mismo corte)."""
+    tv = (data_of(t) or {}).get('totalVotosValidos') if isinstance(data_of(t), dict) else None
+    parts = data_of(p) or []
+    if tv is None or not isinstance(parts, list) or not parts:
+        return True
+    return tv == sum((x.get('totalVotosValidos') or 0) for x in parts
+                     if isinstance(x, dict) and not BLANK_RE.search(str(x.get('nombreAgrupacionPolitica') or '')))
+
+
 def fetch_scope(eid, level, dep=None, prov=None, dist=None, manifest=None, prefix=''):
     """Totales + participantes de una elección en un ámbito. Devuelve (totales, participantes)."""
     if level == 0:
@@ -170,25 +196,70 @@ def fetch_scope(eid, level, dep=None, prov=None, dist=None, manifest=None, prefi
              f'&idUbigeoDepartamento={dep}&idUbigeoProvincia={prov}&idUbigeoDistrito={dist}')
     t = get(f'resumen-general/totales?{q}')
     p = get(f'resumen-general/participantes?{q}')
+    if _RECHECK['siguen'] < 5 and not _same_cut(t, p):
+        # Los dos pedidos pueden caer a cada lado de una actualización de la ONPE. Se repiten una vez
+        # para no reportar como diferencia lo que solo es un cambio de corte entre un pedido y otro.
+        # Si la diferencia sigue ahí varias veces, es real: se deja de repetir y se reporta.
+        time.sleep(1.5)
+        t = get(f'resumen-general/totales?{q}')
+        p = get(f'resumen-general/participantes?{q}')
+        if not _same_cut(t, p):
+            _RECHECK['siguen'] += 1
     write_json(f'{prefix}totales.json', t, manifest, f'resumen-general/totales?{q}')
     write_json(f'{prefix}participantes.json', p, manifest, f'resumen-general/participantes?{q}')
     return data_of(t) or {}, data_of(p) or []
 
 
 def compact_participants(parts, limit=None):
-    out = []
+    """Organizaciones ordenadas por votos. Los votos en blanco, nulos e impugnados van al final con
+    'especial': nunca cuentan como «primer lugar». No se copia el DNI de los candidatos (sigue en la
+    respuesta original de la ONPE, en data/onpe/)."""
+    orgs, special = [], []
     for x in parts or []:
-        out.append({
-            'partido': x.get('nombreAgrupacionPolitica'),
+        name = x.get('nombreAgrupacionPolitica')
+        row = {
+            'partido': name,
             'codPartido': x.get('codigoAgrupacionPolitica'),
             'candidato': x.get('nombreCandidato'),
-            'dni': x.get('dniCandidato'),
             'votos': x.get('totalVotosValidos'),
             'pctValidos': x.get('porcentajeVotosValidos'),
             'pctEmitidos': x.get('porcentajeVotosEmitidos'),
-        })
-    out.sort(key=lambda r: (r['votos'] is None, -(r['votos'] or 0)))
-    return out[:limit] if limit else out
+        }
+        if BLANK_RE.search(str(name or '')):
+            row['especial'] = True
+            row['candidato'] = None
+            special.append(row)
+        else:
+            orgs.append(row)
+    orgs.sort(key=lambda r: (r['votos'] is None, -(r['votos'] or 0)))
+    return (orgs[:limit] if limit else orgs) + special
+
+
+def contienda(totals, parts):
+    """Primer y segundo lugar de un ámbito, y si el primer lugar todavía puede cambiar.
+
+    No es una proyección ni una estimación: es una cota. Cada mesa tiene como máximo 300 electores
+    (Ley Orgánica de Elecciones, art. 52), así que en las actas que faltan no puede haber más de
+    «actas que faltan × 300» votos. Si la diferencia entre el primero y el segundo es mayor que
+    eso, el orden ya no cambia con lo que falta contar. No dice quién gana: eso lo proclama el JNE,
+    y en la elección regional hay segunda vuelta si nadie pasa el 30 % de los votos válidos."""
+    orgs = [p for p in parts or [] if not p.get('especial') and p.get('votos') is not None]
+    if not orgs or not totals:
+        return None
+    keys = ('partido', 'codPartido', 'candidato', 'votos', 'pctValidos')
+    a, b = orgs[0], (orgs[1] if len(orgs) > 1 else None)
+    out = {'primero': {k: a.get(k) for k in keys}}
+    dif = (a['votos'] or 0) - ((b['votos'] or 0) if b else 0)
+    if b:
+        out['segundo'] = {k: b.get(k) for k in keys}
+    out['diferencia'] = dif
+    total, cont = totals.get('totalActas'), totals.get('contabilizadas')
+    if isinstance(total, (int, float)) and isinstance(cont, (int, float)) and total >= cont >= 0:
+        faltan = int(total - cont)
+        out['actasFaltan'] = faltan
+        out['votosMaxFaltan'] = faltan * MESA_MAX
+        out['puedeCambiar'] = not (cont > 0 and (a['votos'] or 0) > 0 and dif > faltan * MESA_MAX)
+    return out
 
 
 def compact_totals(t):
@@ -313,7 +384,8 @@ def ensure_placeholders():
                        ('checks.json', {'total': 0, 'items': []}),
                        ('hallazgos.json', {'items': []}),
                        ('actas/resumen.json', {'mesasEncontradas': 0, 'actasLeidas': 0, 'actasContabilizadas': 0, 'avisos': {'alerta': 0, 'revisar': 0}}),
-                       ('actas/anomalias.json', {'total': 0, 'items': []})):
+                       ('actas/anomalias.json', {'total': 0, 'items': []}),
+                       ('boletines.json', {'items': []})):
         if empty is not None and not os.path.exists(os.path.join(DATA, rel)):
             write_json(rel, empty)
 
@@ -386,6 +458,26 @@ def main():
               'proceso': {k: proc.get(k) for k in ('id', 'nombre', 'acronimo', 'fechaProceso')},
               'elecciones': []}
     crawl = read_json('crawl-state.json', {}) or {}
+    ambitos = read_json(AMBITOS_STATE, {}) or {}      # lo llena `collect.py --ambitos`
+    # Observaciones vigentes por ámbito: cada una se reemplaza cuando ese ámbito se vuelve a consultar.
+    # Los retrocesos son hechos entre dos cortes: una vez vistos, se quedan.
+    vigentes = crawl.setdefault('_checks', {})
+    retrocesos = crawl.setdefault('_retrocesos', [])
+    nuevos = []
+
+    def revisar(label, totals, parts, prev_totals=None, cur_totals=None):
+        found = []
+        check_scope(found, label, totals, parts)
+        if found != vigentes.get(label):
+            nuevos.extend(found)
+        if found:
+            vigentes[label] = found
+        else:
+            vigentes.pop(label, None)
+        back = []
+        check_monotonic(back, label, prev_totals, cur_totals)
+        retrocesos.extend(back)
+        nuevos.extend(back)
 
     for e in elecciones:
         eid = e['idEleccion']
@@ -394,10 +486,10 @@ def main():
         pre = f'onpe/eleccion-{eid}/'
         t, p = fetch_scope(eid, 0, manifest=manifest, prefix=pre + 'nacional-')
         ct = compact_totals(t)
-        check_scope(checks, f'{nombre} · Nacional', t, p)
         prev = prev_by_id.get(eid, {})
-        check_monotonic(checks, f'{nombre} · Nacional', prev.get('totales'), ct)
-        item = {'id': eid, 'nombre': nombre, 'menu': e.get('nombre'), 'nivel': lvl, 'totales': ct,
+        revisar(f'{nombre} · Nacional', t, p, prev.get('totales'), ct)
+        tipo = kind_for(f'{e.get("nombre")} {e.get("descripcion")}', lvl)
+        item = {'id': eid, 'nombre': nombre, 'menu': e.get('nombre'), 'nivel': lvl, 'tipo': tipo, 'totales': ct,
                 'participantes': compact_participants(p, 40), 'departamentos': prev.get('departamentos', [])}
 
         changed = ct.get('fechaActualizacion') != (prev.get('totales') or {}).get('fechaActualizacion')
@@ -413,24 +505,36 @@ def main():
                 if not code:
                     continue
                 dt, dp = fetch_scope(eid, 1, dep=code, manifest=manifest, prefix=f'{pre}dep-{code}-')
-                check_scope(checks, f'{nombre} · {name}', dt, dp)
-                deps.append({'ubigeo': code, 'nombre': name, 'totales': compact_totals(dt),
-                             'participantes': compact_participants(dp, None if lvl == 1 else 5)})
+                revisar(f'{nombre} · {name}', dt, dp)
+                dep_item = {'ubigeo': code, 'nombre': name, 'totales': compact_totals(dt),
+                            'participantes': compact_participants(dp, None if lvl == 1 else 5)}
+                if tipo == 'gobernador':
+                    dep_item['contienda'] = contienda(dep_item['totales'], dep_item['participantes'])
+                deps.append(dep_item)
             item['departamentos'] = deps
             if ct:
                 append_series(eid, ct)
             write_csv(eid, nombre, item)
         if lvl >= 2:
-            item['provincias_resumen'] = crawl_lower(eid, nombre, lvl, item['departamentos'], manifest,
-                                                     crawl, changed, checks)
+            item['provincias_resumen'] = lower_summary(ambitos.get(str(eid)), lvl)
         latest['elecciones'].append(item)
 
-    write_json('crawl-state.json', crawl)
+    checks = retrocesos[-200:] + [c for items in vigentes.values() for c in items]
+    # observaciones de provincias y distritos (las anota el recorrido de ámbitos)
+    lower = [c for items in ((read_json('checks-ambitos.json', {}) or {}).get('porAmbito') or {}).values() for c in items]
+    try:
+        if not os.path.exists(os.path.join(DATA, 'ambitos', 'indice.json')):
+            write_places_index(latest, ambitos)
+        view = {**ambitos, '_lideres': crawl.setdefault('_lideres', {}), '_cambios': crawl.setdefault('_cambios', [])}
+        boletin(latest, view, checks + lower)
+    except Exception as e:  # el boletín es un extra: nunca detiene la publicación de resultados
+        log('boletín:', repr(e))
+    write_json('crawl-state.json', crawl, indent=None)
     write_json('latest.json', latest)
-    write_json('checks.json', {'total': len(checks), 'items': checks})
-    if checks:
+    write_json('checks.json', {'total': len(checks) + len(lower), 'items': checks + lower})
+    if nuevos:   # bitácora: cada observación se anota una vez, cuando aparece o cambia
         with open(os.path.join(DATA, 'checks-log.ndjson'), 'a', encoding='utf-8') as f:
-            for c in checks:
+            for c in nuevos:
                 f.write(json.dumps({'visto': now_iso(), **c}, ensure_ascii=False) + '\n')
     write_json('manifest.json', manifest)
     status.update({'estado': 'en-vivo', 'detalle': 'Resultados oficiales publicados por la ONPE.',
@@ -444,53 +548,345 @@ def main():
     log('ok', len(latest['elecciones']), 'elecciones,', len(checks), 'verificaciones')
 
 
-def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, changed, checks):
-    """Provincias (y distritos) se recorren por tandas para no saturar a la ONPE."""
-    st = crawl.setdefault(str(eid), {'provincias': {}, 'distritos': {}, 'cola': []})
-    pre = f'onpe/eleccion-{eid}/'
-    if changed or not st['cola']:
-        cola = []
-        for d in deps:
-            q = f'ubigeos/provincias?idEleccion={eid}&idAmbitoGeografico=1&idUbigeoDepartamento={d["ubigeo"]}'
-            try:
-                provs = data_of(get(q)) or []
-            except (RuntimeError, NotLive, Blocked):
+def backoff_active():
+    """True mientras dure la pausa que se toma cuando la ONPE rechaza consultas (la comparte actas.py)."""
+    try:
+        with open(BACKOFF, encoding='utf-8') as f:
+            return time.time() < json.load(f).get('hasta', 0)
+    except (FileNotFoundError, ValueError):
+        return False
+
+
+def note_block(reason):
+    """La ONPE rechazó una consulta: se pausan los recorridos largos (5, 10, 20… hasta 40 minutos).
+    El corte nacional se sigue consultando; no se intenta saltar el bloqueo."""
+    prev = {}
+    try:
+        with open(BACKOFF, encoding='utf-8') as f:
+            prev = json.load(f)
+    except (FileNotFoundError, ValueError):
+        pass
+    n = prev.get('n', 0) + 1 if time.time() - prev.get('visto', 0) < 3600 else 1
+    minutes = min(40, 5 * 2 ** (n - 1))
+    os.makedirs(os.path.dirname(BACKOFF), exist_ok=True)
+    with open(BACKOFF, 'w', encoding='utf-8') as f:
+        json.dump({'hasta': time.time() + 60 * minutes, 'visto': time.time(), 'n': n, 'motivo': str(reason)[:200]}, f)
+    log(f'la ONPE rechazó consultas ({reason}); los recorridos largos esperan {minutes} min')
+
+
+def list_scopes(eid, lvl, deps):
+    """Lista de ámbitos de una elección: provincias (alcalde provincial) o distritos (alcalde distrital)."""
+    out = []
+    for d in deps:
+        provs = data_of(get(f'ubigeos/provincias?idEleccion={eid}&idAmbitoGeografico=1&idUbigeoDepartamento={d["ubigeo"]}')) or []
+        for pv in provs:
+            pc = pv.get('ubigeo') or pv.get('idUbigeo')
+            if not pc:
                 continue
-            for pv in provs:
-                pc = pv.get('ubigeo') or pv.get('idUbigeo')
-                if not pc:
-                    continue
-                cola.append(['p', d['ubigeo'], pc, None, f'{d["nombre"]} / {pv.get("nombre")}'])
-                if lvl == 3:
-                    try:
-                        ds = data_of(get(f'ubigeos/distritos?idEleccion={eid}&idAmbitoGeografico=1&idUbigeoProvincia={pc}')) or []
-                    except (RuntimeError, NotLive, Blocked):
-                        ds = []
-                    for di in ds:
-                        dc = di.get('ubigeo') or di.get('idUbigeo')
-                        if dc:
-                            cola.append(['d', d['ubigeo'], pc, dc, f'{d["nombre"]} / {pv.get("nombre")} / {di.get("nombre")}'])
-        st['cola'] = cola
-    budget = DISTRICT_BUDGET
-    while st['cola'] and budget > 0:
-        kind, dep, prov, dist, label = st['cola'].pop(0)
-        try:
-            if kind == 'p':
-                t, p = fetch_scope(eid, 2, dep, prov, manifest=manifest, prefix=f'{pre}prov-{prov}-')
-                st['provincias'][prov] = {'nombre': label, 'totales': compact_totals(t),
-                                          'participantes': compact_participants(p, 6)}
+            if lvl == 2:
+                out.append([d['ubigeo'], pc, None, f'{d["nombre"]} / {pv.get("nombre")}'])
+                continue
+            ds = data_of(get(f'ubigeos/distritos?idEleccion={eid}&idAmbitoGeografico=1&idUbigeoProvincia={pc}')) or []
+            for di in ds:
+                dc = di.get('ubigeo') or di.get('idUbigeo')
+                if dc:
+                    out.append([d['ubigeo'], pc, dc, f'{d["nombre"]} / {pv.get("nombre")} / {di.get("nombre")}'])
+    return out
+
+
+def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, on_checks, budget, deadline):
+    """Una tanda del recorrido de provincias (alcalde provincial) o distritos (alcalde distrital).
+
+    La lista de lugares se arma una vez y se recorre en ronda: todos los lugares se refrescan, y un
+    tercio de cada tanda va a los que tienen más actas, para que las ciudades grandes se actualicen
+    más seguido. Cada lugar guarda la hora en que se consultó ('visto'). Devuelve cuántos visitó."""
+    st = crawl.setdefault(str(eid), {})
+    for k, v in (('provincias', {}), ('distritos', {}), ('cola', []), ('todos', []), ('listado', 0), ('grande', 0)):
+        st.setdefault(k, v)
+    pre = f'onpe/eleccion-{eid}/'
+    key = 'distritos' if lvl == 3 else 'provincias'
+    store = st[key]
+    code_of = (lambda x: x[2]) if lvl == 3 else (lambda x: x[1])
+    touched, seen = set(), set()
+
+    def visit(x):
+        dep, prov, dist, label = x
+        if lvl == 3:
+            t, p = fetch_scope(eid, 3, dep, prov, dist, manifest=manifest, prefix=f'{pre}dist-{dist}-')
+        else:
+            t, p = fetch_scope(eid, 2, dep, prov, manifest=manifest, prefix=f'{pre}prov-{prov}-')
+        ct, cp = compact_totals(t), compact_participants(p, 8)
+        store[code_of(x)] = {'nombre': label, 'dep': dep, 'prov': prov, 'totales': ct, 'participantes': cp,
+                             'contienda': contienda(ct, cp), 'visto': now_iso()}
+        touched.add(dep)
+        found = []
+        check_scope(found, f'{nombre} · {label}', t, p)
+        on_checks(f'{nombre} · {label}', found)
+
+    def run(queue_next, limit):
+        n = 0
+        while n < limit and time.time() < deadline:
+            x = queue_next()
+            if x is None:
+                break
+            if code_of(x) in seen:
+                continue
+            seen.add(code_of(x))
+            try:
+                visit(x)
+            except (RuntimeError, NotLive) as e:
+                log('ámbito:', e)
+            n += 1
+        return n
+
+    try:
+        if not st['todos'] or time.time() - st['listado'] > 6 * 3600:
+            st['todos'] = list_scopes(eid, lvl, deps)
+            st['listado'] = time.time()
+            st['cola'] = [list(x) for x in st['todos']]
+        if not st['todos']:
+            return 0
+        # 1) los lugares con más actas, en ronda (un tercio de la tanda)
+        big = sorted((x for x in st['todos'] if code_of(x) in store),
+                     key=lambda x: -((store[code_of(x)].get('totales') or {}).get('totalActas') or 0))[:40]
+
+        def next_big():
+            if not big or len(seen) >= len(big):
+                return None
+            st['grande'] += 1
+            return big[st['grande'] % len(big)]
+
+        def next_all():
+            if len(seen) >= len(st['todos']):
+                return None                      # ya se visitaron todos en esta tanda
+            if not st['cola']:
+                st['cola'] = [list(x) for x in st['todos']]
+            return st['cola'].pop(0)
+
+        scopes = max(1, budget // 2)
+        done = run(next_big, scopes // 3) if len(store) >= len(st['todos']) * 0.5 else 0
+        done += run(next_all, scopes - done)
+    except Blocked as e:
+        note_block(e)
+        done = len(seen)
+    except (RuntimeError, NotLive) as e:
+        log('ámbito (lista):', e)
+        done = len(seen)
+
+    # un archivo por departamento: es lo que carga «Mi zona»
+    for dep in touched:
+        write_json(f'ambitos/eleccion-{eid}/{dep}.json',
+                   {'eleccion': nombre, 'nivel': lvl, key: {c: v for c, v in store.items() if v.get('dep') == dep}}, indent=None)
+    return done
+
+
+def lower_summary(st, lvl):
+    st = st or {}
+    todos = len(st.get('todos') or [])
+    have = len((st.get('distritos') if lvl == 3 else st.get('provincias')) or {})
+    return {'provincias': len(st.get('provincias') or {}), 'distritos': len(st.get('distritos') or {}),
+            'pendientes': max(0, todos - have), 'total': todos}
+
+
+def lower_main():
+    """Recorrido de provincias y distritos (`collect.py --ambitos`).
+
+    Corre aparte del ciclo principal, con su propio ritmo, para que el corte nacional y regional se
+    siga publicando cada 2 minutos mientras los ~2,100 lugares se van refrescando en ronda."""
+    global DELAY
+    DELAY = LOWER_DELAY
+    status = read_json('status.json', {}) or {}
+    if status.get('estado') != 'en-vivo':
+        log('ámbitos: la ONPE aún no publica resultados')
+        return
+    if backoff_active():
+        log('ámbitos: en pausa, la ONPE rechazó consultas hace poco')
+        return
+    latest = read_json('latest.json', {}) or {}
+    els = [e for e in latest.get('elecciones', []) if e.get('nivel', 1) >= 2 and e.get('departamentos')]
+    if not els:
+        return
+    crawl = read_json(AMBITOS_STATE, {}) or {}
+    manifest = read_json('manifest-ambitos.json', {}) or {}
+    found = read_json('checks-ambitos.json', {}) or {}
+    by_scope = found.get('porAmbito') or {}
+
+    def on_checks(label, items):
+        if items:
+            if label not in by_scope:
+                with open(os.path.join(DATA, 'checks-log.ndjson'), 'a', encoding='utf-8') as f:
+                    for c in items:
+                        f.write(json.dumps({'visto': now_iso(), **c}, ensure_ascii=False) + '\n')
+            by_scope[label] = items
+        else:
+            by_scope.pop(label, None)
+
+    deadline = time.time() + LOWER_SECONDS
+    visited = 0
+    while time.time() < deadline and not backoff_active():
+        n = 0
+        for e in els:
+            # los distritos son diez veces más que las provincias: se llevan tres cuartos de cada vuelta
+            n += crawl_lower(e['id'], e['nombre'], e['nivel'], e['departamentos'], manifest, crawl, on_checks,
+                             60 if e['nivel'] == 3 else 20, deadline)
+        visited += n
+        if n == 0:
+            break
+    for e in els:
+        st = crawl.get(str(e['id'])) or {}
+        write_json(f'ambitos/eleccion-{e["id"]}.json', {'eleccion': e['nombre'], 'nivel': e['nivel'],
+                                                         'provincias': st.get('provincias') or {}, 'distritos': st.get('distritos') or {},
+                                                         **{k: v for k, v in lower_summary(st, e['nivel']).items() if k in ('pendientes', 'total')}},
+                   indent=None)
+    write_places_index(latest, crawl)
+    write_json(AMBITOS_STATE, crawl, indent=None)
+    write_json('manifest-ambitos.json', manifest)
+    write_json('checks-ambitos.json', {'actualizado': now_iso(), 'porAmbito': by_scope}, indent=None)
+    log('ámbitos:', visited, 'lugares consultados;',
+        ', '.join(f'{e.get("menu") or e["nombre"]}: {lower_summary(crawl.get(str(e["id"])), e["nivel"])["pendientes"]} sin visitar' for e in els))
+
+
+def write_places_index(latest, crawl):
+    """Índice de lugares para el buscador de «Mi zona»: regiones, provincias y distritos con su ruta."""
+    places, seen = [], set()
+
+    def add(nivel, code, dep, prov, nombre):
+        if code and (nivel, code) not in seen:
+            seen.add((nivel, code))
+            places.append([nivel, code, dep, prov, nombre])
+
+    by_level = {}
+    for e in latest.get('elecciones', []):
+        by_level.setdefault(e['nivel'], e)
+    for d in (by_level.get(1) or by_level.get(2) or by_level.get(3) or {}).get('departamentos', []):
+        add(1, d['ubigeo'], d['ubigeo'], None, d['nombre'])
+    for lvl in (2, 3):
+        e = by_level.get(lvl)
+        for dep, prov, dist, label in (crawl.get(str(e['id']), {}).get('todos', []) if e else []):
+            names = [s.strip() for s in label.split(' / ')]
+            if lvl == 2:
+                add(2, prov, dep, prov, names[-1])
             else:
-                t, p = fetch_scope(eid, 3, dep, prov, dist, manifest=manifest, prefix=f'{pre}dist-{dist}-')
-                st['distritos'][dist] = {'nombre': label, 'totales': compact_totals(t),
-                                         'participantes': compact_participants(p, 6)}
-            check_scope(checks, f'{nombre} · {label}', t, p)
-        except (RuntimeError, NotLive, Blocked) as e:
-            log('lower:', e)
-        budget -= 2
-    write_json(f'ambitos/eleccion-{eid}.json', {'eleccion': nombre,
-                                               'provincias': st['provincias'], 'distritos': st['distritos'],
-                                               'pendientes': len(st['cola'])})
-    return {'provincias': len(st['provincias']), 'distritos': len(st['distritos']), 'pendientes': len(st['cola'])}
+                add(2, prov, dep, prov, names[1] if len(names) > 1 else '')
+                add(3, dist, dep, prov, names[-1])
+    if places:
+        write_json('ambitos/indice.json', {'actualizado': now_iso(),
+                                          'elecciones': {str(lvl): e['id'] for lvl, e in by_level.items()},
+                                          'campos': ['nivel', 'ubigeo', 'departamento', 'provincia', 'nombre'],
+                                          'lugares': places}, indent=None)
+
+
+_MINUS = {'De', 'Del', 'La', 'Las', 'Los', 'Y', 'E', 'En', 'El'}
+
+
+def nice(name):
+    """«SAN JUAN DE LURIGANCHO» → «San Juan de Lurigancho»."""
+    words = str(name or '').title().split()
+    return ' '.join(w.lower() if i and w in _MINUS else w for i, w in enumerate(words))
+
+
+def races(latest, crawl):
+    """Todas las contiendas con datos: (elección, clave, lugar, totales, contienda)."""
+    for e in latest.get('elecciones', []):
+        if e.get('tipo') == 'consejeros':
+            continue
+        if e['nivel'] == 1:
+            for d in e.get('departamentos', []):
+                yield e, f'{e["id"]}:{d["ubigeo"]}', nice(d['nombre']), d.get('totales') or {}, d.get('contienda')
+        else:
+            st = crawl.get(str(e['id']), {})
+            for code, v in ((st.get('distritos') if e['nivel'] == 3 else st.get('provincias')) or {}).items():
+                names = [x.strip() for x in v['nombre'].split(' / ')]
+                # provincia (región) o distrito (provincia): muchos lugares comparten nombre
+                lugar = f'{nice(names[-1])} ({nice(names[-2])})' if len(names) > 1 else nice(names[-1])
+                yield e, f'{e["id"]}:{code}', lugar, v.get('totales') or {}, v.get('contienda')
+
+
+def boletin(latest, crawl, checks):
+    """Boletín de corte: lo que cambió entre un corte oficial de la ONPE y el anterior.
+
+    Lo arma este programa con los datos de la ONPE, sin inteligencia artificial. Cada corrida
+    anota los cambios de primer lugar; cuando la ONPE publica un corte nuevo, se cierra un boletín."""
+    lideres = crawl.setdefault('_lideres', {})
+    pend = crawl.setdefault('_cambios', [])
+    for e, key, lugar, tot, c in races(latest, crawl):
+        if not c or not (c['primero'].get('votos') or 0):
+            continue
+        lid = str(c['primero'].get('codPartido') or c['primero'].get('partido'))
+        old = lideres.get(key)
+        if old and old[0] != lid:
+            pend[:] = [x for x in pend if x['clave'] != key]
+            pend.append({'clave': key, 'eleccion': e.get('menu') or e['nombre'], 'lugar': lugar, 'antes': old[1],
+                         'ahora': c['primero'].get('partido'), 'candidato': c['primero'].get('candidato'),
+                         'actas': tot.get('totalActas') or 0})
+        lideres[key] = [lid, c['primero'].get('partido')]
+
+    corte = max([(x.get('totales') or {}).get('fechaActualizacion') or 0 for x in latest.get('elecciones', [])] or [0])
+    hist = read_json('boletines.json', {}) or {}
+    items = hist.get('items') or []
+    if not corte or (items and items[0].get('corte') == corte):
+        return
+    prev = {a['id']: a for a in ((items[0].get('avance') or []) if items else [])}
+    avance = []
+    for e in latest['elecciones']:
+        t = e.get('totales') or {}
+        avance.append({'id': e['id'], 'eleccion': e.get('menu') or e['nombre'], 'actasPct': t.get('actasContabilizadas'),
+                       'contabilizadas': t.get('contabilizadas'), 'totalActas': t.get('totalActas'),
+                       'participacion': t.get('participacionCiudadana'),
+                       'antesPct': (prev.get(e['id']) or {}).get('actasPct')})
+    firmes = {}
+    for e, key, lugar, tot, c in races(latest, crawl):
+        if not c or 'puedeCambiar' not in c or not (tot.get('contabilizadas') or 0):
+            continue
+        f = firmes.setdefault(str(e['id']), {'eleccion': e.get('menu') or e['nombre'], 'nivel': e['nivel'], 'firmes': 0, 'conDatos': 0})
+        f['conDatos'] += 1
+        f['firmes'] += 0 if c['puedeCambiar'] else 1
+    actas = read_json('actas/resumen.json', {}) or {}
+    cambios = sorted(pend, key=lambda x: -x['actas'])
+    b = {'corte': corte, 'hora': datetime.fromtimestamp(corte / 1000, PERU).strftime('%H:%M'), 'generado': now_iso(),
+         'avance': avance,
+         'cambios': [{k: x[k] for k in ('eleccion', 'lugar', 'antes', 'ahora', 'candidato')} for x in cambios[:12]],
+         'cambiosTotal': len(cambios),
+         'firmes': list(firmes.values()),
+         'observaciones': {'totales': len(checks), 'actasRevisadas': actas.get('actasLeidas') or 0,
+                           'actasImportantes': (actas.get('avisos') or {}).get('alerta') or 0,
+                           'actasRevisar': (actas.get('avisos') or {}).get('revisar') or 0}}
+    b['texto'] = boletin_text(b)
+    pend.clear()
+    write_json('boletines.json', {'nota': 'Boletines generados por programa con los datos oficiales de la ONPE (sin IA). '
+                                          'No son proyecciones.', 'items': ([b] + items)[:300]})
+
+
+def boletin_text(b):
+    """El mismo boletín en texto plano (para compartir y para la transmisión)."""
+    lugar_tipo = {1: 'regiones', 2: 'provincias', 3: 'distritos'}
+    out = [f'Corte ONPE de las {b["hora"]}.']
+    av = []
+    for a in b['avance']:
+        if a.get('actasPct') is None:
+            continue
+        s = f'{a["eleccion"]} {a["actasPct"]:.1f}%'
+        if a.get('antesPct') is not None and a['antesPct'] != a['actasPct']:
+            s += f' (antes {a["antesPct"]:.1f}%)'
+        av.append(s)
+    if av:
+        out.append('Actas contadas: ' + ' · '.join(av) + '.')
+    if b['cambiosTotal']:
+        names = [f'{c["lugar"]}, {c["eleccion"].lower()}' for c in b['cambios'][:4]]
+        extra = b['cambiosTotal'] - len(names)
+        out.append(f'Cambió el primer lugar en {b["cambiosTotal"]} ' + ('contienda: ' if b['cambiosTotal'] == 1 else 'contiendas: ')
+                   + '; '.join(names) + (f'; y {extra} más' if extra > 0 else '') + '.')
+    fs = [f'{f["firmes"]:,} de {f["conDatos"]:,} {lugar_tipo.get(f["nivel"], "lugares")}' for f in b['firmes'] if f['firmes']]
+    if fs:
+        out.append('El primer lugar ya no puede cambiar con las actas que faltan en ' + ', '.join(fs) + '.')
+    o = b['observaciones']
+    rev = ('los totales cuadran' if not o['totales'] else 'una diferencia en los totales' if o['totales'] == 1
+           else f'{o["totales"]:,} diferencias en los totales')
+    n_obs = o['actasImportantes'] + o['actasRevisar']
+    if o['actasRevisadas']:
+        rev += f'; {o["actasRevisadas"]:,} actas revisadas, {n_obs:,} con observaciones'
+    out.append(f'Revisión: {rev}.')
+    return ' '.join(out)
 
 
 def append_series(eid, ct):
@@ -518,16 +914,23 @@ def write_csv(eid, nombre, item):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w', newline='', encoding='utf-8') as f:
         w = csv.writer(f)
-        w.writerow(['eleccion', 'ubigeo', 'departamento', 'partido', 'candidato', 'dni', 'votos',
+        w.writerow(['eleccion', 'ubigeo', 'departamento', 'partido', 'candidato', 'votos',
                     'pct_validos', 'actas_contabilizadas_pct', 'fecha_actualizacion_onpe'])
         for d in item['departamentos']:
             for p in d['participantes']:
-                w.writerow([nombre, d['ubigeo'], d['nombre'], p['partido'], p['candidato'], p['dni'],
+                w.writerow([nombre, d['ubigeo'], d['nombre'], p['partido'], p['candidato'],
                             p['votos'], p['pctValidos'], d['totales'].get('actasContabilizadas'),
                             d['totales'].get('fechaActualizacion')])
 
 
 if __name__ == '__main__':
+    if '--ambitos' in sys.argv:
+        try:
+            lower_main()
+        except Exception as e:  # el estado del tablero lo lleva el ciclo principal: aquí solo se anota
+            log('ámbitos, fallo:', repr(e))
+            sys.exit(1)
+        sys.exit(0)
     try:
         main()
     except Exception as e:  # nunca dejamos el status mintiendo: si algo falla, se dice

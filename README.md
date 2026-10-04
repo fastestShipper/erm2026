@@ -15,10 +15,13 @@ Conteo de votos de las **Elecciones Regionales y Municipales 2026 del Perú** (d
 | `data/latest.json` | Resumen en vivo: cada elección con sus totales, candidatos y resultados por departamento. |
 | `data/csv/eleccion-<id>-departamentos.csv` | Una fila por candidato y departamento. Se abre directo en Excel. |
 | `data/series/eleccion-<id>.csv` | Cada corte nacional que publica la ONPE, con su hora exacta. |
-| `data/ambitos/eleccion-<id>.json` | Resultados por provincia y distrito (elecciones municipales). |
+| `data/ambitos/eleccion-<id>.json` | Resultados por provincia (alcalde provincial) o por distrito (alcalde distrital), con la hora en que se consultó cada lugar. |
+| `data/ambitos/indice.json` | Lista de regiones, provincias y distritos (la usa el buscador «Mi zona»). |
+| `data/boletines.json` | Boletín de cada corte: qué cambió entre un corte de la ONPE y el anterior. Lo arma el programa, sin IA. |
+| `data/actas/` | Revisión acta por acta: avance (`resumen.json`) y observaciones (`anomalias.json`). |
 | `data/onpe/` | **Respuestas originales de la ONPE**, sin tocar. |
 | `data/manifest.json` | Para cada archivo crudo: URL de origen en la ONPE, cuándo cambió y su huella SHA-256. |
-| `data/checks.json` | Verificaciones del último corte. `data/checks-log.ndjson` guarda todos los avisos. |
+| `data/checks.json` | Observaciones vigentes en los totales. `data/checks-log.ndjson` guarda todas, con su hora. |
 | `data/bots/` | Bitácora y cumplimiento de horario del equipo de bots de cobertura. |
 | `collector/` | El colector (Python, solo librería estándar). |
 | `bots/` | El exportador de la bitácora de los bots. |
@@ -59,10 +62,12 @@ Los nombres de los campos son los de la ONPE: `actasContabilizadas` (porcentaje)
 1. El colector consulta cada 2 minutos la API pública que usa el propio portal de la ONPE (`/presentacion-backend`), con pausas entre pedidos para no saturarla.
 2. Guarda cada respuesta tal cual en `data/onpe/` y registra su huella en `manifest.json`.
 3. Arma `latest.json` y los CSV **copiando** los campos de la ONPE, sin recalcular nada.
-4. Corre las verificaciones y publica los avisos con los dos números a la vista.
+4. Corre las verificaciones y publica las observaciones con los dos números a la vista.
 5. Si la ONPE no responde o todavía no publica, el dashboard lo dice. Nunca muestra cifras estimadas.
 
-Los resultados por provincia y distrito se recorren por tandas (unos 80 ámbitos por corrida), así que tardan en completarse.
+Los votos en blanco, nulos e impugnados van aparte (`especial`) y nunca cuentan como primer lugar. Los archivos derivados no copian el DNI de los candidatos; sigue en las respuestas originales de la ONPE.
+
+Las provincias y los distritos (unos 2,100 lugares) los recorre un proceso aparte (`collect.py --ambitos`), en ronda y dando más turnos a los lugares con más actas. Cada lugar guarda la hora en que se consultó. Si la ONPE rechaza consultas, los recorridos largos se pausan solos; nunca se intenta saltar el bloqueo.
 
 ## Verificaciones automáticas
 
@@ -73,7 +78,17 @@ En cada corte se revisa que la data de la ONPE sea coherente consigo misma:
 - Las actas contabilizadas no pueden superar el total de actas, ni los votos válidos a los emitidos.
 - Los acumulados (actas y votos) no deben bajar entre un corte y el siguiente.
 
-Un aviso **no es una acusación**. Es una diferencia que vale la pena mirar y que cualquiera puede comprobar con los archivos crudos.
+Una observación **no es una acusación**. Es una diferencia que vale la pena mirar y que cualquiera puede comprobar con los archivos crudos. Si dos pedidos seguidos caen a cada lado de una actualización de la ONPE, se repiten antes de anotar una diferencia.
+
+## ¿Puede cambiar el primer lugar?
+
+En cada contienda (gobernador de una región, alcalde de una provincia o de un distrito) se publica `contienda`: el primero, el segundo, la diferencia en votos y cuántas actas faltan. Cada mesa tiene como máximo 300 electores (Ley Orgánica de Elecciones, art. 52), así que en las actas que faltan no puede haber más de `actas que faltan × 300` votos. Si la diferencia es mayor que eso, `puedeCambiar` es `false`: el orden ya no cambia con lo que falta contar.
+
+Es una cota calculada con las cifras de la ONPE. No es una proyección ni una proclamación: a los ganadores los proclama el Jurado Electoral, y en la elección regional hay segunda vuelta si nadie pasa el 30 % de los votos válidos.
+
+## Boletín de cada corte
+
+Cada vez que la ONPE publica un corte nuevo, el colector agrega un boletín a `data/boletines.json`: actas contadas por elección, en qué contiendas cambió el primer lugar, en cuántas ya no puede cambiar y cuántas observaciones hay. Es texto generado por el programa a partir de los datos, sin inteligencia artificial.
 
 ## Cobertura en vivo (bots)
 
@@ -91,11 +106,14 @@ Base: Ley Orgánica de Elecciones (arts. 190 y 191) y Reglamento sobre Encuestas
 
 ```bash
 git clone https://github.com/fastestShipper/erm2026.git && cd erm2026
-ERM_PUSH=0 python3 collector/collect.py      # escribe en data/
+ERM_PUSH=0 python3 collector/collect.py      # corte nacional y por región: escribe en data/
+python3 collector/collect.py --ambitos       # provincias y distritos (se repite cada 2 minutos)
 python3 -m http.server -d . 8000             # y abre http://localhost:8000/web/ (copia data/ dentro de web/)
 ```
 
-Variables útiles: `ERM_DELAY` (pausa entre pedidos, 0.3 s por defecto) y `ERM_DISTRICT_BUDGET` (pedidos por corrida para provincias y distritos).
+Variables útiles: `ERM_DELAY` (pausa entre pedidos, 0.3 s por defecto), `ERM_AMBITOS_DELAY` (0.2 s) y `ERM_AMBITOS_BUDGET` (segundos por corrida del recorrido de provincias y distritos, 100 por defecto).
+
+Pruebas: `node --test bots/veda.test.mjs` y `python3 -m unittest discover -s collector`.
 
 ## Créditos
 
@@ -107,4 +125,4 @@ Variables útiles: `ERM_DELAY` (pausa entre pedidos, 0.3 s por defecto) y `ERM_D
 - Datos derivados: CC BY 4.0. Cita «ERM 2026 · Datos abiertos» y la fuente original, la ONPE.
 - Las respuestas de la ONPE son información pública del Estado peruano.
 
-¿Encontraste un error? Abre un *issue* con el enlace al archivo y al corte.
+¿Encontraste un error? Abre un *issue* con el enlace al archivo y al corte. Las correcciones quedan anotadas en [ERRATAS.md](ERRATAS.md).

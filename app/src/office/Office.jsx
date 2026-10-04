@@ -297,7 +297,7 @@ function HoloMap({ geo, latest, election, anomalyDeps }) {
     for (const d of el?.departamentos || []) byName[norm(d.nombre)] = d;
     return Object.fromEntries(regions.map((r) => {
       const d = byName[r.key];
-      const lead = d?.participantes?.find((p) => p.votos);
+      const lead = d?.participantes?.find((p) => p.votos && !p.especial && !/BLANCO|NULO|IMPUGNAD/i.test(p.partido || ''));
       return [r.key, lead ? partyColor(lead.codPartido, lead.partido) : null];
     }));
   }, [regions, latest, election]);
@@ -573,7 +573,7 @@ function Scene({ agents, feed, latest, election, status, actas, geo, selected, o
       ['Actas contadas', live ? pct(el?.totales?.actasContabilizadas, 1) : '—'],
       ['Actas revisadas', actas?.actasLeidas ? String(actas.actasLeidas) : '0'],
       ['Agentes activos', `${working}/${seatedList.length}`],
-      ['Alertas', String(actas?.avisos?.alerta ?? 0)],
+      ['Observaciones', String((actas?.avisos?.alerta ?? 0) + (actas?.avisos?.revisar ?? 0))],
     ],
   };
 

@@ -34,4 +34,4 @@ fi
 
 # Sitio + datos: el servidor extrae en una carpeta nueva, valida y cambia de versión de forma atómica.
 # Si el paquete llega incompleto o inválido, la versión publicada no se toca.
-tar -C "$ROOT" --exclude='*.tmp' --exclude='data/crawl-state.json' -czf - web data   | timeout 180 ssh -o ConnectTimeout=15 -o BatchMode=yes $LIMA_OPT lima /usr/local/sbin/erm2026-deploy site   || echo "sync: fallo $?"
+tar -C "$ROOT" --exclude='*.tmp' --exclude='data/crawl-state.json' --exclude='data/crawl-ambitos.json' -czf - web data   | timeout 180 ssh -o ConnectTimeout=15 -o BatchMode=yes $LIMA_OPT lima /usr/local/sbin/erm2026-deploy site   || echo "sync: fallo $?"

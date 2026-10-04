@@ -9,6 +9,7 @@ const SOURCES = {
   feed:      { path: 'data/bots/feed.json', every: 30 },
   actas:     { path: 'data/actas/resumen.json', every: 60 },
   anomalias: { path: 'data/actas/anomalias.json', every: 120 },
+  boletines: { path: 'data/boletines.json', every: 60 },
   config:    { path: 'config.json', every: 600 },
 };
 
@@ -141,12 +142,31 @@ export function useNow(ms = 1000) {
 /** Cuántas personas tienen la página abierta. */
 export const useViewers = () => useContext(AudienceCtx).viewers;
 
-/** Hash de la URL → pestaña. */
+/** Pestañas que cambiaron de nombre o se fusionaron: los enlaces viejos siguen funcionando. */
+const ALIAS = { buscar: 'resultados', datos: 'acerca/datos', proyecto: 'acerca', mercados: 'en-vivo' };
+const readHash = () => {
+  const raw = location.hash.replace(/^#\/?/, '');
+  const [view, ...rest] = (ALIAS[raw] || raw).split('/');
+  return { view, param: rest.join('/') || null };
+};
+
+/** Hash de la URL → pestaña. `#resultados/3-140102` abre Resultados en ese lugar (ver useRouteParam). */
 export function useRoute(views, fallback) {
-  const read = () => { const h = location.hash.replace(/^#\/?/, ''); return views.includes(h) ? h : fallback; };
+  const read = () => { const { view } = readHash(); return views.includes(view) ? view : fallback; };
   const [r, setR] = useState(read);
-  useEffect(() => { const f = () => { setR(read()); window.scrollTo({ top: 0 }); }; addEventListener('hashchange', f); return () => removeEventListener('hashchange', f); }, []);
+  useEffect(() => {
+    const f = () => setR((prev) => { const next = read(); if (next !== prev) window.scrollTo({ top: 0 }); return next; });
+    addEventListener('hashchange', f);
+    return () => removeEventListener('hashchange', f);
+  }, []);
   return r;
+}
+
+/** Lo que viene después de la pestaña en el hash (p. ej. el lugar en `#resultados/3-140102`). */
+export function useRouteParam() {
+  const [p, setP] = useState(() => readHash().param);
+  useEffect(() => { const f = () => setP(readHash().param); addEventListener('hashchange', f); return () => removeEventListener('hashchange', f); }, []);
+  return p;
 }
 
 /** Media query reactiva (para montar una sola escena 3D según el ancho). */
