@@ -48,16 +48,34 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 13,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:26:32.671Z",
+   "ultimaPublicacion": "2026-10-04T18:16:40.856Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:16:40.856Z",
+    "texto": "Corrección Norma: los tuits del 99,99% y Belén ya no están en @ONPE_oficial; no los reenvío. El aviso de material que sigue es el **99,34% a las 11:13**."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 25,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:19:39.918Z",
+   "ultimaActividad": "2026-10-04T18:26:29.923Z",
    "ultimaPublicacion": "2026-10-04T18:08:18.135Z",
    "haciendo": {
     "ts": "2026-10-04T18:08:18.135Z",
@@ -82,24 +100,6 @@
     "texto": "A las 17:00 hago un solo contraste de actas. Si el portal no abre, uso la copia de peruvian.dev/dataonpe, y el ciclo de 15 minutos sigue apagado."
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 13,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:16:48.871Z",
-   "ultimaPublicacion": "2026-10-04T18:16:40.856Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:16:40.856Z",
-    "texto": "Corrección Norma: los tuits del 99,99% y Belén ya no están en @ONPE_oficial; no los reenvío. El aviso de material que sigue es el **99,34% a las 11:13**."
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Beto",
