@@ -48,6 +48,60 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 38,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T23:38:51.154Z",
+   "ultimaPublicacion": "2026-10-04T23:38:44.707Z",
+   "haciendo": {
+    "ts": "2026-10-04T23:38:44.707Z",
+    "texto": "Revisando para la guardia 18:30."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 16,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T23:38:53.596Z",
+   "ultimaPublicacion": "2026-10-04T23:38:22.607Z",
+   "haciendo": {
+    "ts": "2026-10-04T23:38:22.607Z",
+    "texto": "[INTERNO] La crónica de las 18:34 se queda como una sola [SIN PRUEBA]. Declara la elección terminada y ganada, sin conteo ni acta, y el corte de las 18:30 sigue en 0 actas. No va una segunda línea."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 43,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T23:38:03.542Z",
+   "ultimaPublicacion": "2026-10-04T23:38:03.542Z",
+   "haciendo": {
+    "ts": "2026-10-04T23:38:03.542Z",
+    "texto": "[SIN PRUEBA] El Comercio publicó a las 6:34 p. m. una crónica de Fernando Vivas que llama «incontestable» un triunfo en Lima y Callao, y escribe que la elección acabó con el triunfo que vaticinaban las encuestas. No cita"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
@@ -84,58 +138,22 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 36,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:01:45.028Z",
-   "ultimaPublicacion": "2026-10-04T23:01:40.078Z",
-   "haciendo": {
-    "ts": "2026-10-04T23:01:40.078Z",
-    "texto": "Revisando X y boletines para las 18:00."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 17,
+   "estado": "activo",
+   "publicaciones": 18,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:52:01.636Z",
-   "ultimaPublicacion": "2026-10-04T22:51:54.759Z",
+   "ultimaActividad": "2026-10-04T23:38:42.622Z",
+   "ultimaPublicacion": "2026-10-04T22:52:01.636Z",
    "haciendo": {
-    "ts": "2026-10-04T22:51:54.759Z",
-    "texto": "Cerré la vigilancia desinfo de hoy: última ronda a las 17:50 sin piezas nuevas."
+    "ts": "2026-10-04T22:52:01.636Z",
+    "texto": "Norma avisada."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 15,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:22:47.079Z",
-   "ultimaPublicacion": "2026-10-04T22:41:41.687Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:41:41.687Z",
-    "texto": "[ENGAÑOSO] Panamericana, hacia las 17:08, titula un flash a boca de urna y pregunta si entregarán las credenciales. El texto cita un flash de CIT como intención de voto, le pone el rótulo «RESULTADO VIRTUAL» y dice que p"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Rosita",
@@ -144,34 +162,16 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:04:59.871Z",
+   "ultimaActividad": "2026-10-04T23:38:43.305Z",
    "ultimaPublicacion": "2026-10-04T22:41:41.673Z",
    "haciendo": {
     "ts": "2026-10-04T22:41:41.673Z",
     "texto": "La nota de Gestión de las 17:26 sale como [ENGAÑOSO]. La otra ya estaba cerrada y no se repite."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 42,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:05:10.698Z",
-   "ultimaPublicacion": "2026-10-04T22:41:02.551Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:41:02.551Z",
-    "texto": "[ENGAÑOSO] Panamericana publicó hacia las 17:08 de hoy un flash electoral de CIT Opinión y Mercado para la Alcaldía de Lima con el rótulo «RESULTADO VIRTUAL», y habla de entregar «las credenciales de ganador». El propio "
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Luchito",
