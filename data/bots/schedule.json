@@ -1,0 +1,110 @@
+{
+ "dia": "2026-10-04",
+ "plan": [
+  {
+   "hora": "05:40",
+   "que": "Arranque: probar el portal, cerrar la lista de cuentas y separar el tablero de la data de abril.",
+   "quien": [
+    "Datos ONPE",
+    "Pulso X",
+    "Tablero ERM"
+   ]
+  },
+  {
+   "hora": "06:00",
+   "que": "Instalación de mesas: Pulso X y Desinfo cubren lo que se publica.",
+   "quien": [
+    "Pulso X",
+    "Desinfo"
+   ]
+  },
+  {
+   "hora": "07:00–17:00",
+   "que": "Verifica y Pulso X siguen incidentes y afirmaciones; Datos ONPE consulta el portal.",
+   "quien": [
+    "Verifica",
+    "Pulso X",
+    "Datos ONPE"
+   ]
+  },
+  {
+   "hora": "07:40 c/hora",
+   "que": "Guardia horaria del coordinador.",
+   "quien": [
+    "Coordinador"
+   ]
+  },
+  {
+   "hora": "17:00",
+   "que": "Cierre de locales de votación; empieza el conteo.",
+   "quien": [
+    "Datos ONPE",
+    "Verifica",
+    "Pulso X",
+    "Desinfo"
+   ]
+  }
+ ],
+ "agentes": [
+  {
+   "agente": "Datos ONPE",
+   "rol": "Consulta el portal y la API de la ONPE y guarda snapshots.",
+   "inicio": "06:00",
+   "estado": "programado",
+   "publicaciones": 4,
+   "ultimaActividad": "2026-10-04T05:54:30.628Z",
+   "ultimaPublicacion": "2026-10-04T05:50:21.560Z",
+   "silencioMaximoMin": 390
+  },
+  {
+   "agente": "Pulso X",
+   "rol": "Sigue cuentas oficiales verificadas (ONPE, JNE, medios) en X.",
+   "inicio": "06:05",
+   "estado": "programado",
+   "publicaciones": 5,
+   "ultimaActividad": "2026-10-04T05:45:35.105Z",
+   "ultimaPublicacion": "2026-10-04T05:45:35.105Z",
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Verifica",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE.",
+   "inicio": "06:27",
+   "estado": "programado",
+   "publicaciones": 4,
+   "ultimaActividad": "2026-10-04T06:11:43.902Z",
+   "ultimaPublicacion": "2026-10-04T06:11:43.902Z",
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Desinfo",
+   "rol": "Detecta piezas virales falsas (capturas, audios, actas trucadas).",
+   "inicio": "06:00",
+   "estado": "programado",
+   "publicaciones": 0,
+   "ultimaActividad": "2026-10-04T05:53:18.573Z",
+   "ultimaPublicacion": null,
+   "silencioMaximoMin": 120
+  },
+  {
+   "agente": "Tablero ERM",
+   "rol": "Prepara el tablero público, separado de la data de abril.",
+   "inicio": "05:40",
+   "estado": "programado",
+   "publicaciones": 2,
+   "ultimaActividad": "2026-10-04T05:50:38.065Z",
+   "ultimaPublicacion": "2026-10-04T05:50:35.327Z",
+   "silencioMaximoMin": 180
+  },
+  {
+   "agente": "Coordinador",
+   "rol": "Coordina al squad. Guardia horaria desde las 7:40.",
+   "inicio": "07:40",
+   "estado": "programado",
+   "publicaciones": 18,
+   "ultimaActividad": "2026-10-04T06:11:39.343Z",
+   "ultimaPublicacion": "2026-10-04T06:11:32.709Z",
+   "silencioMaximoMin": 75
+  }
+ ]
+}
