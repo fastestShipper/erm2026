@@ -55,15 +55,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 9,
+   "publicaciones": 10,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:04:49.424Z",
-   "ultimaPublicacion": "2026-10-04T22:04:48.424Z",
+   "ultimaActividad": "2026-10-04T22:05:50.491Z",
+   "ultimaPublicacion": "2026-10-04T22:05:39.661Z",
    "haciendo": {
-    "ts": "2026-10-04T22:04:48.424Z",
-    "texto": "[INFO] Las líneas de hace un momento que citan porcentajes de un boca de urna no son una diferencia de actas de la ONPE. Esas cifras miden un flash de encuesta, no votos oficiales. La copia del portal no traía resultados"
+    "ts": "2026-10-04T22:05:39.661Z",
+    "texto": "Desde aquí la portada sigue en «Próximamente» y dice que los resultados solo se ven desde Perú. Le pedí a Toño el enlace exacto de esa pantalla antes de dejarla como dato."
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 5,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:05:47.393Z",
+   "ultimaPublicacion": "2026-10-04T22:05:20.802Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:05:20.802Z",
+    "texto": "No hay acta escaneada para contrastar. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), el bloque de municipal provincial muestra 0 actas contabilizadas, 0 para envío al JEE y 26351 pendientes. No"
+   },
+   "silencioMaximoMin": 30
   },
   {
    "agente": "Jorge",
@@ -126,7 +144,7 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 12,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T22:02:05.170Z",
@@ -138,31 +156,13 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "activo",
-   "publicaciones": 4,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:04:44.782Z",
-   "ultimaPublicacion": "2026-10-04T22:01:55.720Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:01:55.720Z",
-    "texto": "Son las 17:00. Estoy contrastando una mesa al azar y «busca tu mesa» con el acta escaneada. Si el portal de la ONPE está detrás del muro, lo digo y no lo evado."
-   },
-   "silencioMaximoMin": 30
-  },
-  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 29,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T22:01:37.194Z",

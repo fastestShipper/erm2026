@@ -9,8 +9,9 @@
  "elecciones": [
   {
    "id": 1,
+   "idOnpe": 1,
    "nombre": "Elecciones Regionales",
-   "menu": "Elecciones Regionales",
+   "menu": "Gobernador regional",
    "nivel": 1,
    "tipo": "gobernador",
    "totales": {
@@ -3062,11 +3063,12 @@
    ]
   },
   {
-   "id": 3,
-   "nombre": "Elecciones Municipales",
-   "menu": "Elecciones Municipales",
-   "nivel": 1,
-   "tipo": "gobernador",
+   "id": 302,
+   "idOnpe": 3,
+   "nombre": "Elecciones Municipales · alcalde provincial",
+   "menu": "Alcalde provincial",
+   "nivel": 2,
+   "tipo": "provincial",
    "totales": {
     "actasContabilizadas": 0.0,
     "contabilizadas": 0,
@@ -3086,178 +3088,339 @@
      "ubigeo": "010000",
      "nombre": "AMAZONAS",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "020000",
      "nombre": "ÁNCASH",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "030000",
      "nombre": "APURÍMAC",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "040000",
      "nombre": "AREQUIPA",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "050000",
      "nombre": "AYACUCHO",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "060000",
      "nombre": "CAJAMARCA",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "240000",
      "nombre": "CALLAO",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "070000",
      "nombre": "CUSCO",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "080000",
      "nombre": "HUANCAVELICA",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "090000",
      "nombre": "HUÁNUCO",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "100000",
      "nombre": "ICA",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "110000",
      "nombre": "JUNÍN",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "120000",
      "nombre": "LA LIBERTAD",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "130000",
      "nombre": "LAMBAYEQUE",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "140000",
      "nombre": "LIMA",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "150000",
      "nombre": "LORETO",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "160000",
      "nombre": "MADRE DE DIOS",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "170000",
      "nombre": "MOQUEGUA",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "180000",
      "nombre": "PASCO",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "190000",
      "nombre": "PIURA",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "200000",
      "nombre": "PUNO",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "210000",
      "nombre": "SAN MARTÍN",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "220000",
      "nombre": "TACNA",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "230000",
      "nombre": "TUMBES",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     },
     {
      "ubigeo": "250000",
      "nombre": "UCAYALI",
      "totales": {},
-     "participantes": [],
-     "contienda": null
+     "participantes": []
     }
-   ]
+   ],
+   "provincias_resumen": {
+    "provincias": 0,
+    "distritos": 0,
+    "pendientes": 0,
+    "total": 0
+   }
+  },
+  {
+   "id": 303,
+   "idOnpe": 3,
+   "nombre": "Elecciones Municipales · alcalde distrital",
+   "menu": "Alcalde distrital",
+   "nivel": 3,
+   "tipo": "distrital",
+   "totales": {
+    "actasContabilizadas": 0.0,
+    "contabilizadas": 0,
+    "totalActas": 89935,
+    "participacionCiudadana": 0.0,
+    "actasEnviadasJee": 0.0,
+    "enviadasJee": 0,
+    "actasPendientesJee": 100.0,
+    "pendientesJee": 89935,
+    "totalVotosEmitidos": 0,
+    "totalVotosValidos": 0,
+    "fechaActualizacion": 1791151214377
+   },
+   "participantes": [],
+   "departamentos": [
+    {
+     "ubigeo": "010000",
+     "nombre": "AMAZONAS",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "020000",
+     "nombre": "ÁNCASH",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "030000",
+     "nombre": "APURÍMAC",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "040000",
+     "nombre": "AREQUIPA",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "050000",
+     "nombre": "AYACUCHO",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "060000",
+     "nombre": "CAJAMARCA",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "240000",
+     "nombre": "CALLAO",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "070000",
+     "nombre": "CUSCO",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "080000",
+     "nombre": "HUANCAVELICA",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "090000",
+     "nombre": "HUÁNUCO",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "100000",
+     "nombre": "ICA",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "110000",
+     "nombre": "JUNÍN",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "120000",
+     "nombre": "LA LIBERTAD",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "130000",
+     "nombre": "LAMBAYEQUE",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "140000",
+     "nombre": "LIMA",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "150000",
+     "nombre": "LORETO",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "160000",
+     "nombre": "MADRE DE DIOS",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "170000",
+     "nombre": "MOQUEGUA",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "180000",
+     "nombre": "PASCO",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "190000",
+     "nombre": "PIURA",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "200000",
+     "nombre": "PUNO",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "210000",
+     "nombre": "SAN MARTÍN",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "220000",
+     "nombre": "TACNA",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "230000",
+     "nombre": "TUMBES",
+     "totales": {},
+     "participantes": []
+    },
+    {
+     "ubigeo": "250000",
+     "nombre": "UCAYALI",
+     "totales": {},
+     "participantes": []
+    }
+   ],
+   "provincias_resumen": {
+    "provincias": 0,
+    "distritos": 0,
+    "pendientes": 0,
+    "total": 0
+   }
   }
  ]
 }
