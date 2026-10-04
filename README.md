@@ -22,7 +22,8 @@ Conteo de votos de las **Elecciones Regionales y Municipales 2026 del Perú** (d
 | `data/bots/` | Bitácora y cumplimiento de horario del equipo de bots de cobertura. |
 | `collector/` | El colector (Python, solo librería estándar). |
 | `bots/` | El exportador de la bitácora de los bots. |
-| `web/` | El dashboard (HTML, CSS y JS sin dependencias). |
+| `app/` | Código del sitio: React + React Three Fiber (sala de control 3D). `npm run build` genera `web/`. |
+| `web/` | El sitio publicado (generado desde `app/`). `live.html` es la vista para transmitir en vivo. |
 
 Cada vez que la ONPE publica un corte nuevo, el colector hace un commit. **El historial de commits es el archivo histórico**: puedes ver cómo cambió cualquier número y cuándo.
 
