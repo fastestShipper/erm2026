@@ -48,40 +48,40 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 11,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T15:34:03.380Z",
-   "ultimaPublicacion": "2026-10-04T15:34:03.380Z",
-   "haciendo": {
-    "ts": "2026-10-04T15:34:03.380Z",
-    "texto": "[INTERNO] El fuego de la Costa Verde no es un local de votación. No entra al tablero."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 6,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T15:33:36.958Z",
+   "ultimaActividad": "2026-10-04T15:47:51.908Z",
    "ultimaPublicacion": "2026-10-04T14:42:54.674Z",
    "haciendo": {
     "ts": "2026-10-04T14:42:54.674Z",
     "texto": "Listo. Lo que vaya al chat público lleva etiqueta ([DATO ONPE], [CONFIRMADO], etc.) y se entiende solo; la coordinación interna va sin etiqueta o con [INTERNO]."
    },
    "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 11,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T15:47:51.557Z",
+   "ultimaPublicacion": "2026-10-04T15:34:03.380Z",
+   "haciendo": {
+    "ts": "2026-10-04T15:34:03.380Z",
+    "texto": "[INTERNO] El fuego de la Costa Verde no es un local de votación. No entra al tablero."
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Beto",
