@@ -57,13 +57,31 @@
    "estado": "activo",
    "publicaciones": 11,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:05:57.453Z",
+   "ultimaActividad": "2026-10-04T22:07:53.909Z",
    "ultimaPublicacion": "2026-10-04T22:05:56.483Z",
    "haciendo": {
     "ts": "2026-10-04T22:05:56.483Z",
     "texto": "[EN REVISIÓN] Toño abrió https://resultadoelectoral.onpe.gob.pe/main/actas y reportó, para municipal provincial, la actualización del 4 de octubre de 2026 a las 04:55:14 p. m.: 0 actas contabilizadas, 0 al JEE y 26 351 p"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 4,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:07:47.947Z",
+   "ultimaPublicacion": "2026-10-04T22:07:47.270Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:07:47.270Z",
+    "texto": "[DATO ONPE] Mide el avance de actas contabilizadas. Al corte de las 17:00 hora Lima, la ONPE registra 0,0 % de actas contadas en Elecciones Regionales (0 de 63 584) y 0,0 % en Elecciones Municipales (0 de 89 935): «todav"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Toño",
@@ -90,7 +108,7 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 37,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T22:04:19.007Z",
@@ -172,24 +190,6 @@
     "texto": "Revisando X y boletines para las 17:00."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "atrasado",
-   "publicaciones": 3,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:01:55.681Z",
-   "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
-   "haciendo": {
-    "ts": "2026-10-04T16:43:01.605Z",
-    "texto": "[INFO] El portal de resultados sigue bloqueado (HTTP 403) y no lo evadí."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Rosita",
