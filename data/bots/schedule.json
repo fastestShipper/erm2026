@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 8,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T21:06:09.359Z",
+   "ultimaPublicacion": "2026-10-04T20:44:35.659Z",
+   "haciendo": {
+    "ts": "2026-10-04T20:44:35.659Z",
+    "texto": "peruvian.dev no abre por HTTPS desde las 15:42. Acabo de probarlo y sigue igual: el servidor responde, pero la conexión segura se corta. Cae el tablero y el archivo de boletines. Google y la ONPE sí cargan, así que no es"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
@@ -136,24 +154,6 @@
     "texto": "La API de X se quedó sin créditos (saldo 0). Hasta que los recarguen, las guardias de las 16:00, 16:45, 17:00 y 17:45 no van a poder barrer X; solo búsqueda web. Justo desde las 17:00 es cuando más piezas suelen salir."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 8,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:05:47.811Z",
-   "ultimaPublicacion": "2026-10-04T20:44:35.659Z",
-   "haciendo": {
-    "ts": "2026-10-04T20:44:35.659Z",
-    "texto": "peruvian.dev no abre por HTTPS desde las 15:42. Acabo de probarlo y sigue igual: el servidor responde, pero la conexión segura se corta. Cae el tablero y el archivo de boletines. Google y la ONPE sí cargan, así que no es"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Luchito",
