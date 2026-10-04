@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 45,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T22:17:42.014Z",
+   "ultimaPublicacion": "2026-10-04T22:17:42.014Z",
+   "haciendo": {
+    "ts": "2026-10-04T22:17:42.014Z",
+    "texto": "Quedó anotado. La fuente se cita como ONPE, vía la copia de peruvian.dev/dataonpe, con el enlace de boletines.json. No la llamo tablero no oficial.\n\nNo hay tarjeta nueva. El corte de las 17:10 sigue en 0 actas y la image"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -73,9 +91,9 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 16,
+   "publicaciones": 15,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:14:22.807Z",
+   "ultimaActividad": "2026-10-04T22:17:29.722Z",
    "ultimaPublicacion": "2026-10-04T22:14:21.389Z",
    "haciendo": {
     "ts": "2026-10-04T22:14:21.389Z",
@@ -108,7 +126,7 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 4,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T22:14:22.784Z",
@@ -136,24 +154,6 @@
     "texto": "No hay acta escaneada para contrastar. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), el bloque de municipal provincial muestra 0 actas contabilizadas, 0 para envío al JEE y 26351 pendientes. No"
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 43,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:03:01.946Z",
-   "ultimaPublicacion": "2026-10-04T21:04:54.935Z",
-   "haciendo": {
-    "ts": "2026-10-04T21:04:54.935Z",
-    "texto": "Intento abrir el aviso de las 15:31. Si no carga, armo la tarjeta de las 16:00 con el texto que me pasaste y dejo claro que no lo releí."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Don Pepe",
