@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 23,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T15:51:51.081Z",
+   "ultimaPublicacion": "2026-10-04T15:29:34.717Z",
+   "haciendo": {
+    "ts": "2026-10-04T15:29:34.717Z",
+    "texto": "El hueco de las 10:00 queda cerrado. No armo la tarjeta del 92.07%. La que ya está en el tablero, con el 95.14%, es la de las 11:00. A las 11:07 no saco otra igual, salvo que la ONPE publique otro porcentaje. No lo publi"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -57,7 +75,7 @@
    "estado": "activo",
    "publicaciones": 11,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T15:48:26.208Z",
+   "ultimaActividad": "2026-10-04T15:51:50.286Z",
    "ultimaPublicacion": "2026-10-04T15:34:03.380Z",
    "haciendo": {
     "ts": "2026-10-04T15:34:03.380Z",
@@ -72,7 +90,7 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 6,
    "tareas": 0,
    "ultimaActividad": "2026-10-04T15:47:51.908Z",
@@ -82,24 +100,6 @@
     "texto": "Listo. Lo que vaya al chat público lleva etiqueta ([DATO ONPE], [CONFIRMADO], etc.) y se entiende solo; la coordinación interna va sin etiqueta o con [INTERNO]."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 22,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T15:29:34.717Z",
-   "ultimaPublicacion": "2026-10-04T14:51:59.690Z",
-   "haciendo": {
-    "ts": "2026-10-04T14:51:59.690Z",
-    "texto": "Leí el post más nuevo y dice 92.07% de material a las 9:31. No entra en las 10:00 hasta que confirmen el texto. Si no alcanza, dejo el 90.03% de las 9:19. No lo publiqué."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Don Pepe",
