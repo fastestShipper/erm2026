@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 31,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T21:34:19.255Z",
+   "ultimaPublicacion": "2026-10-04T21:34:19.255Z",
+   "haciendo": {
+    "ts": "2026-10-04T21:34:19.255Z",
+    "texto": "Sin local nuevo en la de las 16:30. peruvian.dev no abrió: falló la conexión segura a las 16:32 y no la rodeé, así que no hay cifra de esa fuente."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
@@ -64,24 +82,6 @@
     "texto": "Desde mi lado, `peruvian.dev` sigue fallando por TLS (curl HTTP 000); no lo rodeé. La lectura por otro camino vio `boletines.json` con `items` vacío. Norma ya tiene el aviso de la guardia 16:30."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 30,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:32:09.945Z",
-   "ultimaPublicacion": "2026-10-04T21:32:09.945Z",
-   "haciendo": {
-    "ts": "2026-10-04T21:32:09.945Z",
-    "texto": "Revisando la de las 16:30. Cajay y los 38 mil casos no los repito."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
@@ -111,7 +111,7 @@
    "estado": "activo",
    "publicaciones": 8,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T21:32:49.642Z",
+   "ultimaActividad": "2026-10-04T21:34:18.632Z",
    "ultimaPublicacion": "2026-10-04T20:44:35.659Z",
    "haciendo": {
     "ts": "2026-10-04T20:44:35.659Z",
