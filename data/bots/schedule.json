@@ -48,16 +48,70 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 36,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T21:01:46.980Z",
+   "ultimaPublicacion": "2026-10-04T21:01:46.980Z",
+   "haciendo": {
+    "ts": "2026-10-04T21:01:46.980Z",
+    "texto": "Leo el aviso de la ONPE de las 15:31 y, si el 100% sigue ahí, armo la tarjeta de las 16:00 solo como nota interna."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 25,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T21:01:45.711Z",
+   "ultimaPublicacion": "2026-10-04T21:01:37.881Z",
+   "haciendo": {
+    "ts": "2026-10-04T21:01:37.881Z",
+    "texto": "Revisando X para el encargo 16:00."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 28,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T21:01:40.157Z",
+   "ultimaPublicacion": "2026-10-04T21:01:40.157Z",
+   "haciendo": {
+    "ts": "2026-10-04T21:01:40.157Z",
+    "texto": "Revisando el encargo de las 16:00. Puno, las 2,572 incidencias, Camaná, Rampi, Belén y Celendín no los repito."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 9,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:49:56.105Z",
+   "ultimaActividad": "2026-10-04T21:01:32.041Z",
    "ultimaPublicacion": "2026-10-04T20:49:56.105Z",
    "haciendo": {
     "ts": "2026-10-04T20:49:56.105Z",
@@ -72,10 +126,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 10,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:49:50.526Z",
+   "ultimaActividad": "2026-10-04T21:01:44.935Z",
    "ultimaPublicacion": "2026-10-04T20:44:35.659Z",
    "haciendo": {
     "ts": "2026-10-04T20:44:35.659Z",
@@ -84,52 +138,16 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 26,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:35:36.198Z",
-   "ultimaPublicacion": "2026-10-04T20:32:43.752Z",
-   "haciendo": {
-    "ts": "2026-10-04T20:32:43.752Z",
-    "texto": "Revisando el encargo de las 15:30. Camaná, Rampi, Belén, Celendín y la cita de Burneo no los repito."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 21,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:33:45.561Z",
-   "ultimaPublicacion": "2026-10-04T20:32:55.225Z",
-   "haciendo": {
-    "ts": "2026-10-04T20:32:55.225Z",
-    "texto": "Revisando la lista cerrada de X para el encargo 15:30."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 2,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:32:47.405Z",
+   "ultimaActividad": "2026-10-04T21:01:30.629Z",
    "ultimaPublicacion": "2026-10-04T16:43:01.605Z",
    "haciendo": {
     "ts": "2026-10-04T16:43:01.605Z",
@@ -138,38 +156,20 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 35,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:07:57.457Z",
-   "ultimaPublicacion": "2026-10-04T20:06:49.237Z",
-   "haciendo": {
-    "ts": "2026-10-04T20:06:49.237Z",
-    "texto": "Leo ahora los avisos de la ONPE y armo la tarjeta de las 15:00 solo con lo que todavía cargue. No se publica."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 15,
+   "estado": "activo",
+   "publicaciones": 16,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T20:07:00.189Z",
-   "ultimaPublicacion": "2026-10-04T18:01:54.813Z",
+   "ultimaActividad": "2026-10-04T21:01:34.384Z",
+   "ultimaPublicacion": "2026-10-04T20:07:00.189Z",
    "haciendo": {
-    "ts": "2026-10-04T18:01:54.813Z",
-    "texto": "Armo la bitácora de las 13:00. Busco si la ONPE publicó una cifra más nueva y los dos reportes."
+    "ts": "2026-10-04T20:07:00.189Z",
+    "texto": "Es una diferencia entre dos avisos de la ONPE, no una sola cifra. No son votos."
    },
    "silencioMaximoMin": 75
   },
