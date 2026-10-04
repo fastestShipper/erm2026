@@ -57,14 +57,27 @@ const PLAN = [
 
 const PRIVATE_RE = /eureka|lone ?star|del ?huerto|fuego ?inka|control ?a\b|controla|nuna|pulsegest|cobro|factura|invoice|deposit|US\$|S\/\s?\d|cliente|\bdeals?\b|crm|gmail|google cloud|ewald|mahr|zpw|password|contraseña|token/i;
 const ELECTION_RE = /onpe|jne|elecci|mesa|acta|voto|erm|regional|municipal|gobernador|alcald|desinfo|verific|squad|equipo|portal|tablero|pulso|padr[oó]n|resultados|personer|bitácora|post|medios|cronista|jornada/i;
-// Coordinación interna (reparto de roles, apodos, horarios, cambios de brief): queda en feed.json con
-// «interno», pero el chat público no la muestra salvo que el visitante lo pida.
+// Qué es cada mensaje. Los mensajes para el público empiezan con una etiqueta ([DATO ONPE], [CONFIRMADO],
+// [FALSO]…), que se quita del texto y se muestra como rótulo. Todo lo demás es trabajo interno del equipo
+// (pedidos, «reviso», «pauso», quién entregó qué): queda en feed.json con «interno» y el chat lo muestra plegado.
+const ETIQUETAS = {
+  'DATO ONPE': 'dato', DATO: 'dato', CONFIRMADO: 'confirmado', FALSO: 'falso', 'ENGAÑOSO': 'enganoso', ENGANOSO: 'enganoso',
+  'SIN PRUEBA': 'sin-prueba', 'SIN PRUEBAS': 'sin-prueba', REVISAR: 'revisar', 'EN REVISIÓN': 'revisar', 'EN REVISION': 'revisar',
+  'BITÁCORA': 'bitacora', BITACORA: 'bitacora', INFO: 'info', 'INFORMACIÓN': 'info', INTERNO: 'interno',
+};
+const ETIQUETA_RE = /^\s*(?:\*\*)?\[\s*([^\]]{2,24}?)\s*\](?:\*\*)?\s*[:·—-]?\s*/;
+/** [etiqueta, texto sin la etiqueta] — etiqueta null si el mensaje no empieza con una conocida. */
+function etiquetar(txt) {
+  const m = ETIQUETA_RE.exec(txt);
+  const e = m && ETIQUETAS[m[1].toUpperCase()];
+  return e ? [e, txt.slice(m[0].length)] : [null, txt];
+}
+// Antes de que el equipo use etiquetas, el trabajo interno se reconoce por cómo está escrito.
 const INTERNO_RE = /\bbrief\b|\bme llaman\b|en el equipo soy|quedo en espera|me asign[oó]|cambio el ritmo|ajust[eé] la vigilancia|\bapodos?\b|^\s*qued[oó]\b/i;
-const VEREDICTO_RE = /\[(CONFIRMADO|FALSO|ENGAÑOSO|SIN PRUEBA|REVISAR)\]/i;
-/** Qué tipo de mensaje es, para rotularlo en el chat. */
-const clase = (txt, a) => (VEREDICTO_RE.test(txt) ? 'verificacion'
-  : /^\s*\*{0,2}\d{1,2}:\d{2}\.?\*{0,2}/.test(txt) && a.apodo === 'Don Pepe' ? 'bitacora'
-  : a.apodo === 'Luchito' && /\bcorte\b|actas contad|% de actas/i.test(txt) ? 'dato' : undefined);
+const PROCESO_RE = /^\s*(?:reviso|pauso|busco|dejo|me quedo|para las \d|estoy (?:confirmando|contrastando|rehaciendo|revisando)|ya lo tienen|ya se lo pas[eé]|qued[oó] fuera|le confirm[eé]|norma (?:pide|pidi[oó]|mand[oó]|confirm[oó]|cambi[oó]|me asign[oó]))|^\s*(?:norma|rosita|kike|maritza|jorge|luchito|charo|don pepe|toño|beto)\b|est[aá] con norma|entreg[oó] el (?:post|texto)|no lo publico|no publico|el (?:post|resumen) de las \d|la tarjeta|el archivo de las/i;
+/** Rótulo para mensajes sin etiqueta (de antes de que el equipo las usara). */
+const rotuloViejo = (txt, a) => (/^\s*\*{0,2}\d{1,2}:\d{2}\.?\*{0,2}/.test(txt) && a.apodo === 'Don Pepe' ? 'bitacora'
+  : a.apodo === 'Luchito' && /\bcorte\b|actas contad|% de actas/i.test(txt) ? 'dato' : null);
 const GREETING_RE =/^(hey|hola)\b.{0,90}(good to meet|what do you want|qué quieres|en qué me pongo|listo para sumarme|me sumo|quedé listo)/i;
 
 const b32 = (s) => {
@@ -160,7 +173,8 @@ function build() {
       if (tipo === 'publica') { posts++; lastPost = Math.max(lastPost, e.timestampMs); }
       if (tipo === 'trabaja') work++;
       if (tipo !== 'recibe') doing = { ts: e.timestampMs, texto: txt.slice(0, 220) };
-      feed.push({ agente: a.apodo, bot: a.bot, tipo, clase: INTERNO_RE.test(txt) ? undefined : clase(txt, a), interno: INTERNO_RE.test(txt) || undefined, ts: new Date(e.timestampMs).toISOString(), texto: txt });
+      const [etiqueta, texto] = etiquetar(txt);
+      feed.push({ agente: a.apodo, bot: a.bot, tipo, etiqueta, ts: new Date(e.timestampMs).toISOString(), texto, _a: a });
     }
     const h = peruHour(now);
     const inWindow = h >= a.window[0] && h < a.window[1];
@@ -179,6 +193,19 @@ function build() {
     });
   }
   feed.sort((x, y) => y.ts.localeCompare(x.ts));
+  // Desde el primer mensaje con etiqueta, el equipo ya escribe para el público con etiquetas: lo que no
+  // la tenga es trabajo interno. Antes de eso se usa la redacción para reconocerlo.
+  const adopcion = feed.filter((x) => x.etiqueta && x.etiqueta !== 'interno').map((x) => x.ts).sort()[0] || null;
+  for (const x of feed) {
+    const viejo = !adopcion || x.ts < adopcion;
+    if (x.etiqueta === 'interno') x.interno = true;
+    else if (!x.etiqueta && viejo) {
+      if (INTERNO_RE.test(x.texto) || PROCESO_RE.test(x.texto)) x.interno = true;
+      else x.etiqueta = rotuloViejo(x.texto, x._a);
+    } else if (!x.etiqueta) x.interno = true;
+    if (x.etiqueta === 'interno' || !x.etiqueta) delete x.etiqueta;
+    delete x._a;
+  }
   return {
     feed: {
       nota: 'Mensajes de agentes de IA. Son trabajo en curso: verifica siempre contra la fuente oficial que citan.',

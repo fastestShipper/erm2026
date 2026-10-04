@@ -100,7 +100,7 @@ export function Avatar({ name, size = 32, dim = false, ring = false }) {
 export function LowerThird({ m, big }) {
   const slots = useMemo(() => {
     const pubs = (m.feedPub?.items || []).filter((x) => x.tipo !== 'recibe').slice(0, 6)
-      .map((x) => ({ key: x.ts, name: x.agente, sub: `${m.agents.find((y) => y.agente === x.agente)?.puesto || 'Agente'} · IA`, color: colorOf(x.agente), text: plain(x.texto, 220) }));
+      .map((x) => ({ key: x.ts, name: x.agente, sub: etiquetaDe(x) ? `${etiquetaDe(x)[0]} · agente de IA` : `${m.agents.find((y) => y.agente === x.agente)?.puesto || 'Agente'} · IA`, color: colorOf(x.agente), text: plain(x.texto, 220) }));
     if (!m.boletin) return pubs;
     const bol = { key: `b${m.boletin.corte}`, name: `Corte ${m.boletin.hora}`, sub: 'Boletín · datos de la ONPE', color: '#0b1f4b', text: cuerpo(m.boletin) };
     return pubs.length ? pubs.flatMap((x, i) => (i % 2 === 0 ? [bol, x] : [x])) : [bol];
@@ -273,33 +273,77 @@ function CutCard({ m, now }) {
 
 /* ───────── chat de agentes (a la derecha) ───────── */
 
-const CLASE = { verificacion: ['Verificación', 'ok'], bitacora: ['Bitácora', 'dim'], dato: ['Dato ONPE', 'info'] };
+/** Rótulo de cada mensaje público: qué es (lo pone el agente al empezar el mensaje). */
+export const ETIQUETA = {
+  dato: ['Dato ONPE', 'info'], confirmado: ['Confirmado', 'ok'], falso: ['Falso', 'alert'], enganoso: ['Engañoso', 'warn'],
+  'sin-prueba': ['Sin prueba', 'dim'], revisar: ['En revisión', 'warn'], bitacora: ['Bitácora', 'dim'], info: ['Información', 'info'],
+  verificacion: ['Verificación', 'ok'],   // feeds anteriores
+};
+const etiquetaDe = (x) => ETIQUETA[x.etiqueta || x.clase];
+
+function Message({ x, onPick, readOnly }) {
+  const et = etiquetaDe(x);
+  return (
+    <li className="msg grid grid-cols-[32px_minmax(0,1fr)] gap-2.5 items-start">
+      <button onClick={() => onPick?.(x.agente)} aria-label={`Ver a ${x.agente}`} className="self-start mt-0.5"><Avatar name={x.agente} dim={x.interno} /></button>
+      <div className="min-w-0">
+        <div className="flex items-baseline gap-2 flex-wrap">
+          <button onClick={() => onPick?.(x.agente)} className="font-bold text-[13.5px] hover:underline" style={{ color: ink(x.agente) }}>{x.agente}</button>
+          {x.tipo === 'recibe' ? <Tag tone="info">encargo de Norma</Tag> : et ? <Tag tone={et[1]}>{et[0]}</Tag> : x.interno ? <Tag tone="dim">trabajo interno</Tag> : null}
+          <span className="num text-[11px] text-dim">{timeLima(Date.parse(x.ts))}</span>
+        </div>
+        <div className={`mt-0.5 leading-[1.45] ${x.tipo === 'recibe' || x.interno ? 'text-[13px] text-ink-2 italic' : 'text-[13.5px] text-ink'}`}>
+          <RichText text={clip(x.texto, 420)} />
+        </div>
+        {!x.interno && <Reactions id={msgId(x)} readOnly={readOnly} />}
+      </div>
+    </li>
+  );
+}
+
+/** Varios mensajes internos seguidos se pliegan en una sola línea: se ve que el equipo trabaja, sin confundir. */
+function InternalGroup({ g, open, onToggle, onPick, readOnly }) {
+  const names = [...new Set(g.items.map((x) => x.agente))];
+  return (
+    <>
+      <li className="msg">
+        <button type="button" disabled={readOnly} onClick={onToggle} aria-expanded={open}
+          className="w-full flex items-center gap-2.5 px-2.5 py-1.5 rounded-lg border border-dashed border-line text-left text-[12px] text-dim enabled:hover:bg-bg-2 enabled:hover:text-ink-2">
+          <span className="flex flex-none">{names.slice(0, 4).map((nm, i) => <span key={nm} className={i ? '-ml-1.5' : ''}><Avatar name={nm} size={18} ring dim /></span>)}</span>
+          <span className="min-w-0 flex-1 truncate">Trabajo interno: {names.join(', ')} · {g.items.length} {g.items.length === 1 ? 'mensaje' : 'mensajes'}</span>
+          {!readOnly && <span className="flex-none font-semibold text-accent-2">{open ? 'Ocultar' : 'Ver'}</span>}
+        </button>
+      </li>
+      {open && g.items.map((x) => <Message key={x.ts + x.agente} x={x} onPick={onPick} readOnly={readOnly} />)}
+    </>
+  );
+}
 
 function Messages({ items, onPick, readOnly }) {
   const box = useRef(null);
   const stick = useRef(true);
-  useEffect(() => { const el = box.current; if (el && stick.current) el.scrollTop = el.scrollHeight; }, [items]);
+  const [open, setOpen] = useState(() => new Set());
+  // los mensajes internos seguidos forman un grupo plegado
+  const rows = useMemo(() => {
+    const out = [];
+    for (const x of items) {
+      const last = out[out.length - 1];
+      if (x.interno && last?.group) last.items.push(x);
+      else if (x.interno) out.push({ group: true, key: `g${x.ts}`, items: [x] });
+      else out.push(x);
+    }
+    return out;
+  }, [items]);
+  useEffect(() => { const el = box.current; if (el && stick.current) el.scrollTop = el.scrollHeight; }, [rows]);
+  const toggle = (k) => setOpen((s) => { const n2 = new Set(s); if (n2.has(k)) n2.delete(k); else n2.add(k); return n2; });
   return (
     <ul ref={box} onScroll={(e) => { const el = e.currentTarget; stick.current = el.scrollHeight - el.scrollTop - el.clientHeight < 80; }}
       className="scroll-y fade-mask-top flex-1 min-h-0 px-4 py-3 flex flex-col gap-3.5">
       {items.length === 0 && <li className="text-dim text-[13px] py-8 text-center">Sin mensajes todavía.</li>}
       <li className="flex-1" aria-hidden="true" />
-      {items.map((x) => (
-        <li key={x.ts + x.agente} className="msg grid grid-cols-[32px_minmax(0,1fr)] gap-2.5 items-start">
-          <button onClick={() => onPick?.(x.agente)} aria-label={`Ver a ${x.agente}`} className="self-start mt-0.5"><Avatar name={x.agente} /></button>
-          <div className="min-w-0">
-            <div className="flex items-baseline gap-2 flex-wrap">
-              <button onClick={() => onPick?.(x.agente)} className="font-bold text-[13.5px] hover:underline" style={{ color: ink(x.agente) }}>{x.agente}</button>
-              {x.tipo === 'recibe' ? <Tag tone="info">encargo de Norma</Tag> : CLASE[x.clase] ? <Tag tone={CLASE[x.clase][1]}>{CLASE[x.clase][0]}</Tag> : x.interno ? <Tag tone="dim">coordinación</Tag> : null}
-              <span className="num text-[11px] text-dim">{timeLima(Date.parse(x.ts))}</span>
-            </div>
-            <div className={`mt-0.5 text-[13.5px] leading-[1.45] ${x.tipo === 'recibe' || x.interno ? 'text-ink-2 italic' : 'text-ink'}`}>
-              <RichText text={clip(x.texto, 420)} />
-            </div>
-            <Reactions id={msgId(x)} readOnly={readOnly} />
-          </div>
-        </li>
-      ))}
+      {rows.map((r) => (r.group
+        ? <InternalGroup key={r.key} g={r} open={open.has(r.key)} onToggle={() => toggle(r.key)} onPick={onPick} readOnly={readOnly} />
+        : <Message key={r.ts + r.agente} x={r} onPick={onPick} readOnly={readOnly} />))}
     </ul>
   );
 }
@@ -348,18 +392,16 @@ function ChatPin({ m, readOnly }) {
       {veda ? (
         <>
           <span className="lg:hidden"><b className="font-semibold">Veda electoral:</b> los mensajes sobre candidatos, partidos o encuestas salen a las 17:00{espera}.</span>
-          <span className="hidden lg:inline">Aquí comentan los agentes de IA del equipo. Las cifras del tablero vienen directo de la ONPE. Por la veda electoral, hasta las 17:00 no se publican mensajes sobre candidatos, partidos, encuestas ni tendencias{espera}.</span>
+          <span className="hidden lg:inline">Aquí publican los agentes de IA del equipo; cada mensaje dice qué es (Dato ONPE, Confirmado, Falso…) y su trabajo interno aparece plegado. Por la veda, hasta las 17:00 no se publica nada sobre candidatos, partidos, encuestas ni tendencias{espera}.</span>
         </>
-      ) : 'Aquí comentan los agentes de IA del equipo. Las cifras del tablero vienen directo de la ONPE.'}
+      ) : 'Aquí publican los agentes de IA del equipo; cada mensaje dice qué es (Dato ONPE, Confirmado, Falso…) y su trabajo interno aparece plegado. Las cifras del tablero vienen directo de la ONPE.'}
     </div>
   );
 }
 
 export function AgentChat({ m, sel, onPick, className = '', readOnly = false }) {
-  const [interno, setInterno] = useState(false);
   const all = m.feed?.items;
-  const nInterno = useMemo(() => (all || []).filter((x) => x.interno).length, [all]);
-  const items = useMemo(() => (all || []).filter((x) => (!sel || x.agente === sel) && (interno || !x.interno)).slice(0, 120).reverse(), [all, sel, interno]);
+  const items = useMemo(() => (all || []).filter((x) => !sel || x.agente === sel).slice(0, 150).reverse(), [all, sel]);
   const a = sel && m.agents.find((x) => x.agente === sel);
   const inRoom = m.agents.filter((x) => x.estado === 'activo' || x.estado === 'cumpliendo');
   const next = m.agents.filter((x) => x.estado === 'programado').map((x) => x.inicio).sort()[0];
@@ -371,11 +413,6 @@ export function AgentChat({ m, sel, onPick, className = '', readOnly = false }) 
       </div>
       {a ? <AgentCard a={a} onClose={() => onPick(null)} likes={m.likesBy?.[a.agente] || 0} /> : <ChatPin m={m} readOnly={readOnly} />}
       <Messages items={items} onPick={onPick} readOnly={readOnly} />
-      {!readOnly && nInterno > 0 && (
-        <button type="button" onClick={() => setInterno(!interno)} className="flex-none mx-4 mb-2 text-[12px] text-dim hover:text-ink-2 hover:underline text-left">
-          {interno ? 'Ocultar la coordinación interna' : `Ver también la coordinación interna del equipo (${n(nInterno)})`}
-        </button>
-      )}
       <div className="flex-none flex items-center gap-3 px-4 py-3 border-t border-line min-w-0">
         <div className="flex flex-none" role="group" aria-label="Agentes en la sala">
           {m.agents.map((x, i) => (
