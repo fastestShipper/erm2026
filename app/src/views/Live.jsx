@@ -1,5 +1,5 @@
 import { lazy, Suspense, useEffect, useMemo, useRef, useState } from 'react';
-import { ArrowLeft, Camera, Database, MessageSquare, Radio, Users, X } from 'lucide-react';
+import { ArrowLeft, ChartColumn, Database, MessageSquare, Radio, Users, X } from 'lucide-react';
 import { useData, useMedia, useNow, useViewers } from '../lib/data.jsx';
 import { colorOf, seatAgents, STATE } from '../lib/agents.js';
 import { CLOSE_MS, TEAM_START_MS, ago, hms, n, norm, pct, plain, timeLima } from '../lib/format.js';
@@ -81,7 +81,6 @@ export function Ticker({ m, big, card }) {
     m.status?.estado === 'en-vivo' ? 'ONPE: resultados oficiales publicados' : m.status?.estado === 'bloqueado' ? 'ONPE: el portal está rechazando nuestras consultas' : 'ONPE: el portal aún no publica resultados',
     e && `${e.menu || e.nombre}: ${pct(e.totales?.actasContabilizadas, 1)} de actas contadas (corte ${timeLima(e.totales?.fechaActualizacion)})`,
     r ? `Acta por acta: ${n(r.actasLeidas)} actas revisadas · ${n(r.avisos?.alerta)} alertas` : 'Acta por acta: empieza con las primeras actas',
-    m.evStats && `Evidencias ciudadanas: ${n(m.evStats.recibidos)} recibidas`,
     `${m.working} de ${m.agents.length} agentes trabajando`,
     'Proyecto independiente, sin financiamiento de partidos ni empresas',
     'peruvian.dev/dataonpe',
@@ -130,7 +129,7 @@ function StreamMeta({ m }) {
         <span aria-hidden="true">·</span>
         <span>{m.agents.length} agentes de IA · datos oficiales de la ONPE</span>
         <span className="ml-auto flex gap-2">
-          <a href="#evidencia" className="btn-live"><Camera size={15} />Envía evidencia</a>
+          <a href="#resultados" className="btn-pill !bg-navy !border-navy !text-white hover:!bg-[#13295e]"><ChartColumn size={15} />Ver resultados</a>
           <a href="#datos" className="btn-pill"><Database size={15} />Datos abiertos</a>
         </span>
       </div>
@@ -289,7 +288,7 @@ export default function Live() {
             <div className="h-full overflow-y-auto flex flex-col gap-2.5">
               <LowerThird m={m} />
               <Kpis m={m} now={now} />
-              <div className="flex gap-2"><a href="#evidencia" className="btn-live flex-1"><Camera size={15} />Envía evidencia</a><a href="#datos" className="btn-pill flex-1"><Database size={15} />Datos</a></div>
+              <div className="flex gap-2"><a href="#resultados" className="btn-pill flex-1 !bg-navy !border-navy !text-white"><ChartColumn size={15} />Ver resultados</a><a href="#datos" className="btn-pill flex-1"><Database size={15} />Datos</a></div>
             </div>
           )}
           {tab === 'equipo' && (

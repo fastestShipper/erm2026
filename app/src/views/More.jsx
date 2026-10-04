@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { Check, Copy, Database, Download, FileText, Lock, Send, ShieldCheck, TrendingUp, Upload } from 'lucide-react';
+import { Check, Copy, Database, Download, FileText, Lock, ShieldCheck, TrendingUp } from 'lucide-react';
 import { useData } from '../lib/data.jsx';
 import { colorOf, seatAgents, STATE } from '../lib/agents.js';
 import { ago, n, pct, timeLima, title } from '../lib/format.js';
-import { Empty, PageHeader, Pager, Tag, usePaged } from '../hud/common.jsx';
+import { PageHeader, Tag } from '../hud/common.jsx';
 
 const REPO = 'https://github.com/fastestShipper/erm2026';
 
@@ -50,96 +50,6 @@ export function Markets() {
         </div>
       )}
       {ms.length > 0 && <p className="text-[12.5px] text-dim mt-4">Actualizado {ago(Date.parse(d.markets.actualizado))}. Las probabilidades cambian en cualquier momento y no anticipan el resultado oficial.</p>}
-    </>
-  );
-}
-
-/* ───────────── Evidencia ciudadana ───────────── */
-const TIPOS = ['Problema en una mesa o local de votación', 'Acta o cifra que no cuadra', 'Compra de votos o presión a electores', 'Propaganda prohibida el día de la elección', 'Noticia, audio o imagen falsa', 'Otro'];
-const MAX = 10 * 1024 * 1024;
-const toB64 = (f) => new Promise((ok, ko) => { const r = new FileReader(); r.onload = () => ok(String(r.result).split(',')[1]); r.onerror = ko; r.readAsDataURL(f); });
-
-export function Evidence() {
-  const d = useData();
-  const [msg, setMsg] = useState(null);
-  const [busy, setBusy] = useState(false);
-  const findings = d.findings?.items || [];
-  const pf = usePaged(findings, 4, findings.length);
-  const submit = async (ev) => {
-    ev.preventDefault();
-    const fm = ev.currentTarget, fd = new FormData(fm);
-    const files = [...(fm.archivos.files || [])];
-    const err = (t) => setMsg({ tone: 'alert', t });
-    if (!fd.get('tipo')) return err('Elige qué pasó.');
-    if (String(fd.get('descripcion') || '').trim().length < 20) return err('Cuéntanos un poco más (al menos 20 caracteres).');
-    if (!fm.acepto.checked) return err('Marca la casilla de confirmación.');
-    if (files.length > 3) return err('Puedes subir hasta 3 archivos.');
-    if (files.reduce((t, f) => t + f.size, 0) > MAX) return err('Los archivos pasan de 10 MB. Prueba con menos o más livianos.');
-    setBusy(true); setMsg({ tone: 'dim', t: 'Enviando…' });
-    try {
-      const body = { tipo: fd.get('tipo'), lugar: fd.get('lugar'), mesa: fd.get('mesa'), descripcion: fd.get('descripcion'), enlace: fd.get('enlace'), contacto: fd.get('contacto'), web: fd.get('web'),
-        archivos: await Promise.all(files.map(async (f) => ({ nombre: f.name, tipo: f.type, datos: await toB64(f) }))) };
-      const r = await fetch('api/evidencia', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) });
-      const j = await r.json().catch(() => ({}));
-      if (!r.ok) throw new Error(j.error || 'No se pudo enviar. Intenta otra vez en un rato.');
-      fm.reset();
-      setMsg({ tone: 'ok', t: `Recibido. Tu código es ${j.codigo}. Guárdalo: con él puedes preguntarnos por tu envío.` });
-    } catch (e) { err(e.message); } finally { setBusy(false); }
-  };
-  const L = ({ label, children }) => <label className="grid gap-1.5 text-[13.5px] font-medium">{label}{children}</label>;
-  return (
-    <>
-      <PageHeader eyebrow="Participación ciudadana" title="Envía evidencia o una denuncia">¿Viste algo raro en tu mesa, una cifra que no cuadra o una noticia falsa? Mándalo. El equipo lo revisa con fuentes oficiales antes de publicar cualquier cosa.</PageHeader>
-      <div className="grid lg:grid-cols-[1.3fr_1fr] gap-4 items-start">
-        <form onSubmit={submit} noValidate className="panel p-6 grid gap-4">
-          <L label="¿Qué pasó?"><select name="tipo" className="field" defaultValue=""><option value="" disabled>Elige una opción</option>{TIPOS.map((t) => <option key={t}>{t}</option>)}</select></L>
-          <div className="grid sm:grid-cols-2 gap-4">
-            <L label="Región, provincia o distrito"><input name="lugar" maxLength={160} className="field" placeholder="Ej.: Cusco, Wanchaq" /></L>
-            <L label="Local o número de mesa (opcional)"><input name="mesa" maxLength={120} className="field" placeholder="Ej.: I.E. 123 · mesa 045678" /></L>
-          </div>
-          <L label="Cuéntanos qué viste"><textarea name="descripcion" rows={5} maxLength={3000} className="field" placeholder="Qué pasó, a qué hora y quiénes estaban. Mientras más concreto, mejor." /></L>
-          <L label="Fotos, video, audio o PDF (opcional · hasta 3 archivos y 10 MB)">
-            <div className="field h-auto py-3 flex items-center gap-3"><Upload size={16} className="text-dim" /><input type="file" name="archivos" multiple accept="image/jpeg,image/png,image/webp,video/mp4,video/quicktime,audio/mpeg,audio/ogg,audio/mp4,application/pdf" className="text-[13px] text-ink-2 file:mr-3 file:rounded-md file:border-0 file:bg-panel-2 file:px-3 file:py-1.5 file:text-ink file:font-medium" /></div>
-          </L>
-          <div className="grid sm:grid-cols-2 gap-4">
-            <L label="Enlace (opcional)"><input name="enlace" type="url" maxLength={500} className="field" placeholder="https://…" /></L>
-            <L label="Cómo contactarte (opcional)"><input name="contacto" maxLength={160} className="field" placeholder="Correo o Telegram" /></L>
-          </div>
-          <input name="web" tabIndex={-1} autoComplete="off" aria-hidden="true" className="absolute -left-[9999px] w-px h-px opacity-0" />
-          <label className="flex gap-3 items-start text-[13.5px] text-ink-2"><input type="checkbox" name="acepto" className="mt-1 accent-blue-700" /> Lo que envío es real hasta donde sé, y entiendo que no se publicará sin verificarlo.</label>
-          <div className="flex items-center gap-4 flex-wrap">
-            <button className="btn" disabled={busy}><Send size={15} /> Enviar</button>
-            {msg && <span className={`text-[13.5px] ${msg.tone === 'alert' ? 'text-alert' : msg.tone === 'ok' ? 'text-ok' : 'text-dim'}`} role="status">{msg.t}</span>}
-          </div>
-        </form>
-        <div className="grid gap-4">
-          <section className="panel p-6">
-            <div className="font-semibold">Qué pasa con lo que envías</div>
-            <ol className="mt-3 space-y-3 text-[13.5px] text-ink-2">
-              <li><b className="text-ink">1.</b> Llega a una bandeja privada. No es pública.</li>
-              <li><b className="text-ink">2.</b> Rosita, Kike y Toño lo contrastan con la ONPE, el JNE y otras fuentes.</li>
-              <li><b className="text-ink">3.</b> Si se confirma, se publica aquí <b className="text-ink">sin tus datos</b>. Si no, se descarta.</li>
-            </ol>
-            <div className="grid grid-cols-3 gap-2 mt-4">
-              {[['recibidos', d.evStats?.recibidos], ['en revisión', d.evStats?.enRevision], ['verificados', d.evStats?.verificados]].map(([l, v]) => (
-                <div key={l} className="rounded-xl bg-bg-2 border border-line p-3 text-center"><div className="num text-[22px] font-semibold">{n(v ?? 0)}</div><div className="text-[11.5px] text-dim">{l}</div></div>
-              ))}
-            </div>
-            <p className="text-[12px] text-dim mt-4">Para una denuncia formal acude también al JNE, a la ONPE o al Ministerio Público. Esto no reemplaza esos canales.</p>
-          </section>
-          <section className="panel p-6">
-            <div className="font-semibold mb-1">Lo que ya verificamos</div>
-            {pf.slice.length ? pf.slice.map((h, i) => (
-              <div key={i} className="py-3 border-t border-line first:border-0">
-                <Tag tone={h.veredicto === 'falso' ? 'ok' : h.veredicto === 'confirmado' ? 'alert' : 'warn'}>{h.veredicto}</Tag>
-                <div className="font-medium text-[14px] mt-1.5">{h.titulo}</div>
-                <div className="text-[13px] text-ink-2">{h.detalle}</div>
-              </div>
-            )) : <p className="text-[13.5px] text-dim py-4">Cuando confirmemos o descartemos algo, aparecerá aquí con su fuente.</p>}
-            <Pager {...pf} />
-          </section>
-        </div>
-      </div>
     </>
   );
 }

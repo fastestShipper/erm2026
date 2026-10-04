@@ -1,0 +1,24 @@
+[Unit]
+Description=ERM 2026 - contador de personas viendo el sitio
+After=network.target
+
+[Service]
+DynamicUser=yes
+Environment=PORT=8833
+ExecStart=/usr/bin/node /opt/erm2026-viewers/server.mjs
+Restart=always
+RestartSec=3
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+LockPersonality=true
+MemoryMax=256M
+
+[Install]
+WantedBy=multi-user.target

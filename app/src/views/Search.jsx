@@ -48,7 +48,7 @@ function MesaLookup() {
                 </tbody></table>
               </div>
             ))}
-            <p className="text-[12px] text-dim mt-3">Fuente: API pública de la ONPE. ¿No coincide con el acta de tu mesa? Envíanos la foto en la pestaña Evidencia.</p>
+            <p className="text-[12px] text-dim mt-3">Fuente: API pública de la ONPE. Compara estos números con la foto del acta de tu mesa.</p>
           </div>
         )}
       </div>

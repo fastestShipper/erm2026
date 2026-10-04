@@ -90,7 +90,7 @@ function Stream() {
             </div>
             <AgentChat m={m} sel={null} onPick={() => {}} className="flex-1" />
             <div className="flex items-center justify-between gap-4 px-6 py-4 rounded-[18px] bg-navy text-white">
-              <span className="text-[20px]">Datos y evidencias en</span>
+              <span className="text-[20px]">Todos los datos en</span>
               <span className="num font-bold text-[22px]">peruvian.dev/dataonpe</span>
             </div>
           </div>
@@ -111,7 +111,7 @@ function Stream() {
             <Kpi label="AGENTES TRABAJANDO" value={`${m.working} de ${m.agents.length}`} cls="!text-ok" big />
           </div>
           <div className="flex-none mx-10 mt-4 flex items-center justify-between gap-4 px-6 py-5 rounded-[18px] bg-navy text-white">
-            <span className="text-[26px] leading-tight">Revisa los datos y envía evidencia</span>
+            <span className="text-[26px] leading-tight">Revisa todos los datos en</span>
             <span className="num font-bold text-[28px]">peruvian.dev/dataonpe</span>
           </div>
           <div className="flex-none mx-10 mt-4"><Ticker m={m} big card /></div>

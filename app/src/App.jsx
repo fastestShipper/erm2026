@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState } from 'react';
-import { Camera, ChartColumn, Database, Ellipsis, Eye, Info, Radio, Search, ShieldCheck, TrendingUp, X } from 'lucide-react';
+import { ChartColumn, Database, Ellipsis, Eye, Info, Radio, Search, ShieldCheck, TrendingUp, X } from 'lucide-react';
 import { useData, useRoute, useViewers } from './lib/data.jsx';
 import { n } from './lib/format.js';
 
@@ -8,7 +8,6 @@ const Results = lazy(() => import('./views/Results.jsx'));
 const Audit = lazy(() => import('./views/Audit.jsx'));
 const SearchView = lazy(() => import('./views/Search.jsx'));
 const Markets = lazy(() => import('./views/More.jsx').then((m) => ({ default: m.Markets })));
-const Evidence = lazy(() => import('./views/More.jsx').then((m) => ({ default: m.Evidence })));
 const DataView = lazy(() => import('./views/More.jsx').then((m) => ({ default: m.DataView })));
 const About = lazy(() => import('./views/More.jsx').then((m) => ({ default: m.About })));
 
@@ -18,7 +17,6 @@ const NAV = [
   { id: 'auditoria', label: 'Auditoría', icon: ShieldCheck, view: Audit },
   { id: 'buscar', label: 'Buscar', icon: Search, view: SearchView },
   { id: 'mercados', label: 'Mercados', icon: TrendingUp, view: Markets },
-  { id: 'evidencia', label: 'Evidencia', icon: Camera, view: Evidence },
   { id: 'datos', label: 'Datos', icon: Database, view: DataView },
   { id: 'proyecto', label: 'Proyecto', icon: Info, view: About },
 ];

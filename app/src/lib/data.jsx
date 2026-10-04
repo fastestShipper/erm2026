@@ -9,9 +9,7 @@ const SOURCES = {
   feed:      { path: 'data/bots/feed.json', every: 30 },
   actas:     { path: 'data/actas/resumen.json', every: 60 },
   markets:   { path: 'data/mercados.json', every: 120 },
-  findings:  { path: 'data/hallazgos.json', every: 120 },
   anomalias: { path: 'data/actas/anomalias.json', every: 120 },
-  evStats:   { path: 'api/stats', every: 60 },
   config:    { path: 'config.json', every: 600 },
 };
 
