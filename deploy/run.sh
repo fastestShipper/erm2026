@@ -20,6 +20,7 @@ LIMA_OPT=""
 if ! timeout 15 ssh -o ConnectTimeout=8 -o BatchMode=yes lima true 2>/dev/null; then LIMA_OPT="-o HostName=100.96.13.90"; fi
 PY="${ERM_PY:-/c/Users/shitc/AppData/Local/hermes/tools/python-3.14.7+20260901-win32-x64/python.exe}"
 export ERM_ROOT="$(cygpath -w "$ROOT")" ERM_INBOX="$(cygpath -w "$ROOT/local/inbox")"
+ERM_OUT="$(cygpath -w "$ROOT/data/bots")" timeout 40 node "$ROOT/bots/narrador.mjs" || echo "narrador: fallo $?"
 ERM_OUT="$(cygpath -w "$ROOT/data/bots")" ERM_REMOTE=none ERM_ALERT=1 timeout 120 node "$ROOT/bots/export_grok.mjs" || echo "bots: fallo $?"
 timeout 900 "$PY" "$ROOT/collector/collect.py" || echo "colector: fallo $?"
 # Fragmentos de «Busca tu mesa»: solo se suben los que cambiaron; el servidor los valida y reemplaza uno por uno

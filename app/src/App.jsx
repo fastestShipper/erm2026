@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { ChartColumn, CircleHelp, Eye, Info, Radio, ShieldCheck, TriangleAlert } from 'lucide-react';
 import { useData, useNow, useRoute, useStale, useViewers } from './lib/data.jsx';
 import { n, timeLima } from './lib/format.js';
+import { useBocas } from './hud/night.jsx';
 
 const Live = lazy(() => import('./views/Live.jsx'));
 const Results = lazy(() => import('./views/Results.jsx'));
@@ -72,9 +73,48 @@ function Occasion() {
 }
 
 /** Aviso fijo en todas las pantallas: quien llega tiene que saber de entrada que esto no es la ONPE ni el JNE. */
+/* Marquesina de noticiero: las bocas de urna corren arriba, en la misma franja del aviso (no mueve nada),
+   hasta que la ONPE tenga actas contadas. */
+const ORDEN_BU = { provincial: 1, gobernador: 2, distrital: 3 };
+const pctEs = (v) => `${Number(v).toFixed(1).replace('.', ',')} %`;
+function useMarquee() {
+  const d = useData();
+  const bocas = useBocas();
+  const conActas = (d.latest?.elecciones || []).some((e) => (e.totales?.actasContabilizadas || 0) > 0);
+  if (!bocas?.length || conActas) return null;
+  const lista = [...bocas].sort((a, b) => {
+    const la = a.ubigeo === '140100' ? 0 : ORDEN_BU[a.tipo] ?? 4, lb = b.ubigeo === '140100' ? 0 : ORDEN_BU[b.tipo] ?? 4;
+    return la - lb || String(a.lugar).localeCompare(String(b.lugar));
+  });
+  const row = (k) => (
+    <span key={k} className="inline-flex items-center gap-7 pr-7">
+      {lista.map((b) => (
+        <span key={b.id} className="inline-flex items-center gap-2">
+          <b className="font-bold text-white">{b.lugar}</b>
+          <span className="text-white/60 text-[11px]">{b.encuestadora}</span>
+          {b.filas.slice(0, 3).map((f, i) => (
+            <span key={i} className={i === 0 ? 'text-white' : 'text-white/80'}>{f.candidato || f.partido} <b className="num">{pctEs(f.pct)}</b>{i < Math.min(2, b.filas.length - 1) ? <span className="text-white/40"> ·</span> : null}</span>
+          ))}
+          <span className="text-live text-[10px]" aria-hidden="true">◆</span>
+        </span>
+      ))}
+      <span className="text-white/70">Estimaciones de encuestadoras difundidas por los medios, no resultados oficiales · Sitio no oficial: no somos la ONPE ni el JNE</span>
+      <span className="text-live text-[10px]" aria-hidden="true">◆</span>
+    </span>
+  );
+  return (
+    <a href="#resultados" className="h-7 border-b border-[#0b1f4b] bg-navy text-[12.5px] leading-none flex items-stretch whitespace-nowrap overflow-hidden" aria-label="Bocas de urna: ver todas en Resultados">
+      <span className="flex-none flex items-center gap-1.5 bg-live text-white font-bold uppercase tracking-[.08em] text-[11px] px-3"><i className="w-1.5 h-1.5 rounded-full bg-white animate-[blink_1.2s_steps(2)_infinite]" />Boca de urna</span>
+      <span className="flex-1 overflow-hidden flex items-center"><span className="crawl-track pl-4" style={{ animationDuration: `${Math.max(45, lista.length * 9)}s` }}>{row('a')}{row('b')}</span></span>
+      <span className="flex-none hidden md:flex items-center px-3 text-[11px] font-semibold text-white bg-[#13295e]">Ver todas ({lista.length}) →</span>
+    </a>
+  );
+}
+
 function Unofficial() {
   // Si los datos se atrasan, la franja lo dice en lugar del aviso habitual: nunca mostramos cifras viejas como si fueran actuales.
   const stale = useStale();
+  const marquee = useMarquee();
   if (stale) return (
     <div className="h-7 border-b border-[#f3d9a8] bg-[#fdf3e2] text-[12px] leading-none text-[#7c4a03] flex items-center justify-center gap-1.5 px-4 whitespace-nowrap overflow-hidden" role="alert">
       <TriangleAlert size={13} className="flex-none" />
@@ -82,6 +122,7 @@ function Unofficial() {
       <span className="hidden md:inline"><b className="font-semibold">Los datos de este tablero tienen {stale} minutos de retraso.</b> Ya lo estamos revisando; mientras tanto, consulta resultadoelectoral.onpe.gob.pe.</span>
     </div>
   );
+  if (marquee) return marquee;
   return (
     <div className="h-7 border-b border-line bg-bg-2 text-[12px] leading-none text-ink-2 flex items-center justify-center gap-1.5 px-4 whitespace-nowrap overflow-hidden" role="note">
       <Info size={13} className="flex-none text-dim" />

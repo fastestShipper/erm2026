@@ -73,6 +73,12 @@ function Row({ r, mode }) {
     : <li className={cls}>{inner}</li>;
 }
 
+/** Bocas de urna publicadas (las comparte la marquesina de arriba y el panel). */
+export function useBocas() {
+  const bu = usePoll('canal/bocaurna', 30000);
+  return bu?.items || null;
+}
+
 /** Panel principal de la noche. `live` = la ONPE ya publica. */
 export function NightResults() {
   const onpe = usePoll('data/ambitos/contiendas.json', 60000);

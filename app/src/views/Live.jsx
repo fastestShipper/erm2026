@@ -272,6 +272,7 @@ function CutCard({ m, now }) {
 export const ETIQUETA = {
   dato: ['Dato ONPE', 'info'], confirmado: ['Confirmado', 'ok'], falso: ['Falso', 'alert'], enganoso: ['Engañoso', 'warn'],
   'sin-prueba': ['Sin prueba', 'dim'], revisar: ['En revisión', 'warn'], bitacora: ['Bitácora', 'dim'], info: ['Información', 'info'],
+  bocaurna: ['Boca de urna', 'warn'], reporte: ['Reporte', 'info'],
   verificacion: ['Verificación', 'ok'],   // feeds anteriores
 };
 const etiquetaDe = (x) => ETIQUETA[x.etiqueta || x.clase];

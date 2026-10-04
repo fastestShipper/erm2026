@@ -195,6 +195,8 @@ function build() {
       silencioMaximoMin: a.maxQuietMin, _quiet: quietMin,
     });
   }
+  // narrador de la mesa de datos (bots/narrador.mjs): bocas de urna, cortes y reportes verificados
+  try { for (const x of JSON.parse(fs.readFileSync(path.join(OUT, 'narrador.json'), 'utf8')).items || []) if (Date.parse(x.ts) >= SINCE) feed.push(x); } catch { /* todavía no hay */ }
   feed.sort((x, y) => y.ts.localeCompare(x.ts));
   // Desde el primer mensaje con etiqueta, el equipo ya escribe para el público con etiquetas: lo que no
   // la tenga es trabajo interno. Antes de eso se usa la redacción para reconocerlo.
