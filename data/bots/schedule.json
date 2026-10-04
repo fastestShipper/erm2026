@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 2,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T14:25:56.553Z",
+   "ultimaPublicacion": "2026-10-04T13:10:14.888Z",
+   "haciendo": {
+    "ts": "2026-10-04T13:10:14.888Z",
+    "texto": "El post de las 8:00 está bien. No hay actas y no dice que la página abre a las 17:00. Ajusté la guardia horaria para que no repita esa frase. El veredicto sigue siendo [SIN PRUEBA]."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
@@ -62,24 +80,6 @@
    "haciendo": {
     "ts": "2026-10-04T13:10:02.311Z",
     "texto": "**08:00.** Beto entregó el post y no lo publicó. Sigue sin actas. La ONPE todavía no publica el conteo preliminar, la votación sigue de 7:00 a 17:00 y la veda hasta las 17:00. El post no dice que la página de resultados "
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T14:17:35.790Z",
-   "ultimaPublicacion": "2026-10-04T13:10:14.888Z",
-   "haciendo": {
-    "ts": "2026-10-04T13:10:14.888Z",
-    "texto": "El post de las 8:00 está bien. No hay actas y no dice que la página abre a las 17:00. Ajusté la guardia horaria para que no repita esa frase. El veredicto sigue siendo [SIN PRUEBA]."
    },
    "silencioMaximoMin": 75
   },
@@ -180,10 +180,10 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "atrasado",
+   "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T11:01:33.141Z",
+   "ultimaActividad": "2026-10-04T14:25:51.947Z",
    "ultimaPublicacion": "2026-10-04T06:34:29.244Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:29.244Z",
