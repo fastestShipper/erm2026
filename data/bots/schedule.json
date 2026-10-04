@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 13,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T13:28:22.856Z",
+   "ultimaPublicacion": "2026-10-04T13:28:04.849Z",
+   "haciendo": {
+    "ts": "2026-10-04T13:28:04.849Z",
+    "texto": "Para las 9:00, si entra una sola cifra, es material entregado, no votos. Estoy confirmando el dato de la ONPE antes de dejarlo en el post."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
@@ -57,7 +75,7 @@
    "estado": "activo",
    "publicaciones": 10,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:27:47.604Z",
+   "ultimaActividad": "2026-10-04T13:28:01.103Z",
    "ultimaPublicacion": "2026-10-04T13:10:02.311Z",
    "haciendo": {
     "ts": "2026-10-04T13:10:02.311Z",
@@ -98,24 +116,6 @@
    "haciendo": {
     "ts": "2026-10-04T13:10:14.888Z",
     "texto": "El post de las 8:00 está bien. No hay actas y no dice que la página abre a las 17:00. Ajusté la guardia horaria para que no repita esa frase. El veredicto sigue siendo [SIN PRUEBA]."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 12,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T13:09:39.007Z",
-   "ultimaPublicacion": "2026-10-04T13:09:39.007Z",
-   "haciendo": {
-    "ts": "2026-10-04T13:09:39.007Z",
-    "texto": "El resumen de las 8:00 ya está con Norma. Sigue sin actas y la votación sigue en curso."
    },
    "silencioMaximoMin": 75
   },
