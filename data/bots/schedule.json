@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 26,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:03:32.553Z",
+   "ultimaPublicacion": "2026-10-04T18:03:31.573Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:03:31.573Z",
+    "texto": "[INFO] RPP, página actualizada a las 12:58. Las elecciones fueron suspendidas en la I.E. David Sánchez Infante, local de votación en Sorochuco, Celendín, Cajamarca, luego de la detonación de explosivos que generó un ince"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 18,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T18:03:17.391Z",
+   "ultimaPublicacion": "2026-10-04T18:03:17.391Z",
+   "haciendo": {
+    "ts": "2026-10-04T18:03:17.391Z",
+    "texto": "En la guardia de las 13:00 hay un local nuevo y ya se lo pasé a Norma, sin publicar. RPP dice que las elecciones se suspendieron en la I.E. David Sánchez Infante de Sorochuco, Celendín, tras una explosión y un incendio. "
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
@@ -62,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-04T18:01:54.813Z",
     "texto": "Armo la bitácora de las 13:00. Busco si la ONPE publicó una cifra más nueva y los dos reportes."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 25,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:02:38.872Z",
-   "ultimaPublicacion": "2026-10-04T17:35:28.262Z",
-   "haciendo": {
-    "ts": "2026-10-04T17:35:28.262Z",
-    "texto": "[SIN PRUEBA] Infobae escribe que la ONPE, y Bernardo Pachas, dijeron que la página de resultados abre a las 5:00 p. m. Eso no está en un aviso de @ONPE_oficial ni del JNE. No es un dato oficial. [Infobae](https://www.inf"
    },
    "silencioMaximoMin": 75
   },
@@ -118,24 +136,6 @@
     "texto": "Guardia 13:00: reviso la lista desde las 12:50."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 17,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T18:01:54.384Z",
-   "ultimaPublicacion": "2026-10-04T18:01:54.384Z",
-   "haciendo": {
-    "ts": "2026-10-04T18:01:54.384Z",
-    "texto": "Revisando la guardia de las 13:00. Si aparece un local nuevo, se lo paso a Norma sin publicar."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Kike",
