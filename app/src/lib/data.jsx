@@ -2,14 +2,14 @@ import { createContext, useCallback, useContext, useEffect, useMemo, useRef, use
 
 // Todo lo que muestra el sitio sale de estos archivos públicos (los mismos del repositorio).
 const SOURCES = {
-  status:    { path: 'data/status.json', every: 30 },
-  latest:    { path: 'data/latest.json', every: 60 },
+  status:    { path: 'data/status.json', every: 20 },
+  latest:    { path: 'data/latest.json', every: 30 },
   checks:    { path: 'data/checks.json', every: 60 },
   schedule:  { path: 'data/bots/schedule.json', every: 30 },
   feed:      { path: 'data/bots/feed.json', every: 30 },
   actas:     { path: 'data/actas/resumen.json', every: 60 },
   anomalias: { path: 'data/actas/anomalias.json', every: 120 },
-  boletines: { path: 'data/boletines.json', every: 60 },
+  boletines: { path: 'data/boletines.json', every: 30 },
   config:    { path: 'config.json', every: 600 },
 };
 
@@ -140,6 +140,17 @@ export function useNow(ms = 1000) {
   const [now, setNow] = useState(Date.now());
   useEffect(() => { const t = setInterval(() => setNow(Date.now()), ms); return () => clearInterval(t); }, [ms]);
   return now;
+}
+
+/** Minutos de retraso de los datos (desde la última consulta a la ONPE), o 0 si están al día.
+ *  El ciclo consulta cada 1-2 minutos: más de 6 minutos es un retraso que hay que decir. */
+export function useStale() {
+  const d = useData();
+  const now = useNow(15000);
+  const t = Date.parse(d?.status?.consultado || '');
+  if (!t) return 0;
+  const min = Math.floor((now - t) / 60000);
+  return min >= 6 ? min : 0;
 }
 
 /** Cuántas personas tienen la página abierta. */

@@ -24,7 +24,7 @@ Salidas:
   data/actas/endpoints.json     rutas de la API que usa el portal (leídas de su código público)
   mesas/<NNN>.json              (fuera de git) lo que la ONPE registra en cada mesa, para «Busca tu mesa»
 
-Ritmo: una consulta cada ERM_ACTAS_DELAY segundos (0.5 por defecto) durante ERM_ACTAS_BUDGET
+Ritmo: una consulta cada ERM_ACTAS_DELAY segundos (1.0 por defecto) durante ERM_ACTAS_BUDGET
 segundos (540 por defecto). Si la ONPE bloquea, se detiene y lo deja dicho: no se evade.
 """
 import hashlib
@@ -46,7 +46,7 @@ CHANGED = os.path.join(ROOT, 'local', 'mesas-changed.txt')
 BACKOFF = os.path.join(ROOT, 'local', 'onpe-backoff.json')   # pausa compartida con collect.py si la ONPE bloquea
 PORTAL = os.environ.get('ERM_PORTAL', 'https://resultadoelectoral.onpe.gob.pe')
 BASE = os.environ.get('ERM_BASE', PORTAL + '/presentacion-backend')
-DELAY = float(os.environ.get('ERM_ACTAS_DELAY', '0.5'))
+DELAY = float(os.environ.get('ERM_ACTAS_DELAY', '1.0'))   # lento a propósito: no arriesgar el corte nacional
 BUDGET = float(os.environ.get('ERM_ACTAS_BUDGET', '540'))
 FORCE = os.environ.get('ERM_ACTAS_FORCE') == '1'
 MAX_CODE = int(os.environ.get('ERM_ACTAS_MAX', '120000'))     # tope inicial del recorrido; se amplía solo

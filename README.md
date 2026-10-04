@@ -111,7 +111,7 @@ python3 collector/collect.py --ambitos       # provincias y distritos (se repite
 python3 -m http.server -d . 8000             # y abre http://localhost:8000/web/ (copia data/ dentro de web/)
 ```
 
-Variables útiles: `ERM_DELAY` (pausa entre pedidos, 0.3 s por defecto), `ERM_AMBITOS_DELAY` (0.2 s) y `ERM_AMBITOS_BUDGET` (segundos por corrida del recorrido de provincias y distritos, 100 por defecto).
+Variables útiles: `ERM_DELAY` (pausa entre pedidos, 0.3 s por defecto), `ERM_AMBITOS_DELAY` (0.5 s) y `ERM_AMBITOS_BUDGET` (segundos por corrida del recorrido de provincias y distritos, 100 por defecto).
 
 Pruebas: `node --test bots/veda.test.mjs` y `python3 -m unittest discover -s collector`.
 

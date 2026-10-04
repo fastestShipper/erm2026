@@ -1,6 +1,6 @@
 import { lazy, Suspense } from 'react';
-import { ChartColumn, Eye, Info, Radio, ShieldCheck } from 'lucide-react';
-import { useData, useRoute, useViewers } from './lib/data.jsx';
+import { ChartColumn, Eye, Info, Radio, ShieldCheck, TriangleAlert } from 'lucide-react';
+import { useData, useRoute, useStale, useViewers } from './lib/data.jsx';
 import { n } from './lib/format.js';
 
 const Live = lazy(() => import('./views/Live.jsx'));
@@ -42,6 +42,15 @@ function Brand({ compact }) {
 
 /** Aviso fijo en todas las pantallas: quien llega tiene que saber de entrada que esto no es la ONPE ni el JNE. */
 function Unofficial() {
+  // Si los datos se atrasan, la franja lo dice en lugar del aviso habitual: nunca mostramos cifras viejas como si fueran actuales.
+  const stale = useStale();
+  if (stale) return (
+    <div className="h-7 border-b border-[#f3d9a8] bg-[#fdf3e2] text-[12px] leading-none text-[#7c4a03] flex items-center justify-center gap-1.5 px-4 whitespace-nowrap overflow-hidden" role="alert">
+      <TriangleAlert size={13} className="flex-none" />
+      <span className="md:hidden"><b className="font-semibold">Datos con {stale} min de retraso.</b> Consulta también la ONPE.</span>
+      <span className="hidden md:inline"><b className="font-semibold">Los datos de este tablero tienen {stale} minutos de retraso.</b> Ya lo estamos revisando; mientras tanto, consulta resultadoelectoral.onpe.gob.pe.</span>
+    </div>
+  );
   return (
     <div className="h-7 border-b border-line bg-bg-2 text-[12px] leading-none text-ink-2 flex items-center justify-center gap-1.5 px-4 whitespace-nowrap overflow-hidden" role="note">
       <Info size={13} className="flex-none text-dim" />

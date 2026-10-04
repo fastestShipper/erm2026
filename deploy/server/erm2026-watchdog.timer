@@ -1,0 +1,10 @@
+[Unit]
+Description=ERM 2026 - vigia del tablero, cada minuto
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+AccuracySec=5s
+
+[Install]
+WantedBy=timers.target

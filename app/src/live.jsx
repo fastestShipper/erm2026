@@ -4,7 +4,7 @@
 import { lazy, Suspense, useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './theme.css';
-import { DataProvider, useNow } from './lib/data.jsx';
+import { DataProvider, useNow, useStale } from './lib/data.jsx';
 import { CLOSE_MS, TEAM_START_MS, hms, pct, timeLima } from './lib/format.js';
 import { useLiveModel, LowerThird, Ticker, AgentChat } from './views/Live.jsx';
 
@@ -31,6 +31,7 @@ function useTour(m) {
 }
 
 function Scene({ m, sel, now, big }) {
+  const stale = useStale();
   return (
     <>
       <Suspense fallback={null}>
@@ -38,6 +39,7 @@ function Scene({ m, sel, now, big }) {
       </Suspense>
       <div className="absolute left-6 top-6 flex gap-2.5 pointer-events-none">
         <span className={`flex items-center rounded-[10px] bg-navy/85 text-white num font-bold ${big ? 'h-11 px-4 text-[20px]' : 'h-8 px-3 text-[14px]'}`}>AL AIRE {hms(now - TEAM_START_MS)}</span>
+        {stale > 0 && <span className={`flex items-center rounded-[10px] bg-[#b45309] text-white num font-bold ${big ? 'h-11 px-4 text-[20px]' : 'h-8 px-3 text-[14px]'}`}>DATOS CON {stale} MIN DE RETRASO</span>}
       </div>
       <div className={`absolute right-6 top-6 flex flex-col items-end gap-1 rounded-xl bg-white/90 pointer-events-none ${big ? 'px-4 py-2.5' : 'px-3 py-2'}`}>
         <span className={`num font-bold leading-none text-navy ${big ? 'text-[34px]' : 'text-[24px]'}`}>{timeLima(now)}</span>

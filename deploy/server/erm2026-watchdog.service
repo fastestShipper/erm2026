@@ -1,0 +1,7 @@
+[Unit]
+Description=ERM 2026 - vigia del tablero (datos al dia, sitio arriba, estado de la ONPE)
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/erm2026-watchdog
+TimeoutStartSec=60

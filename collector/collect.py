@@ -41,7 +41,7 @@ PERU = timezone(timedelta(hours=-5))
 DELAY = float(os.environ.get('ERM_DELAY', '0.3'))         # pausa entre pedidos: no saturar a la ONPE
 AMBITOS_STATE = 'crawl-ambitos.json'                              # estado del recorrido de provincias y distritos
 LOWER_SECONDS = float(os.environ.get('ERM_AMBITOS_BUDGET', '100'))  # segundos por corrida de `--ambitos`
-LOWER_DELAY = float(os.environ.get('ERM_AMBITOS_DELAY', '0.2'))    # pausa entre pedidos en ese recorrido
+LOWER_DELAY = float(os.environ.get('ERM_AMBITOS_DELAY', '0.5'))    # pausa entre pedidos: el corte nacional tiene prioridad
 PUSH = os.environ.get('ERM_PUSH', '1') == '1'
 
 HEADERS = {
