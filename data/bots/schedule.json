@@ -48,38 +48,38 @@
  ],
  "agentes": [
   {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 9,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T12:11:53.705Z",
-   "ultimaPublicacion": "2026-10-04T12:11:53.705Z",
-   "haciendo": {
-    "ts": "2026-10-04T12:11:53.705Z",
-    "texto": "**07:00.** Beto entregó el post y no lo publicó. No hay actas y la ONPE todavía no publica el conteo preliminar. El texto dice que la votación de 7:00 a 17:00 ya está en curso. Eso sigue el horario oficial, no es un part"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 11,
+   "estado": "activo",
+   "publicaciones": 12,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T12:11:40.329Z",
-   "ultimaPublicacion": "2026-10-04T12:11:40.329Z",
+   "ultimaActividad": "2026-10-04T13:09:39.007Z",
+   "ultimaPublicacion": "2026-10-04T13:09:39.007Z",
    "haciendo": {
-    "ts": "2026-10-04T12:11:40.329Z",
-    "texto": "El resumen de las 7:00 ya está con Norma. Sigue sin actas. La votación ya está en curso, de 7:00 a 17:00."
+    "ts": "2026-10-04T13:09:39.007Z",
+    "texto": "El resumen de las 8:00 ya está con Norma. Sigue sin actas y la votación sigue en curso."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 9,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-04T13:09:48.497Z",
+   "ultimaPublicacion": "2026-10-04T12:11:53.705Z",
+   "haciendo": {
+    "ts": "2026-10-04T12:11:53.705Z",
+    "texto": "**07:00.** Beto entregó el post y no lo publicó. No hay actas y la ONPE todavía no publica el conteo preliminar. El texto dice que la votación de 7:00 a 17:00 ya está en curso. Eso sigue el horario oficial, no es un part"
    },
    "silencioMaximoMin": 75
   },
@@ -162,10 +162,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 1,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T12:11:42.862Z",
+   "ultimaActividad": "2026-10-04T13:09:48.567Z",
    "ultimaPublicacion": "2026-10-04T06:34:52.708Z",
    "haciendo": {
     "ts": "2026-10-04T06:34:52.708Z",
