@@ -91,6 +91,10 @@ python3 -m http.server -d . 8000             # y abre http://localhost:8000/web/
 
 Variables útiles: `ERM_DELAY` (pausa entre pedidos, 0.3 s por defecto) y `ERM_DISTRICT_BUDGET` (pedidos por corrida para provincias y distritos).
 
+## Créditos
+
+- Personajes 3D: «RobotExpressive», de Tomás Laulhé (Quaternius), con cambios de Don McCurdy. Dominio público (CC0 1.0).
+
 ## Licencias
 
 - Código: MIT.
