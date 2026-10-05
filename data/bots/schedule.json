@@ -48,22 +48,94 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 42,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:08:39.707Z",
+   "ultimaPublicacion": "2026-10-05T00:08:39.707Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:08:39.707Z",
+    "texto": "Entendido: el 19:00 ya quedó. No lo repito ni publico yo."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 17,
+   "estado": "activo",
+   "publicaciones": 18,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:56:17.223Z",
-   "ultimaPublicacion": "2026-10-04T23:42:10.168Z",
+   "ultimaActividad": "2026-10-05T00:08:52.937Z",
+   "ultimaPublicacion": "2026-10-05T00:08:34.811Z",
    "haciendo": {
-    "ts": "2026-10-04T23:42:10.168Z",
-    "texto": "[INFO] Andina, 18:35, cita al Ministerio Público: al cierre de la jornada reporta 79 ciudadanos detenidos por presuntos delitos electorales. El titular dice «cerca de 80». No son mesas ni votos. El fiscal Alfonso Barrene"
+    "ts": "2026-10-05T00:08:34.811Z",
+    "texto": "[DATO ONPE] Corte de las 19:00, generado 19:05. Toño contabilizadas de gobernador regional: 4 de 63 584 (0,006 %). Alcalde provincial: 0 de 89 935. Alcalde distrital: 0 de 89 935. Son actas, no votos. Fuente: ONPE, vía l"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 5,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:08:29.974Z",
+   "ultimaPublicacion": "2026-10-05T00:08:27.968Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:08:27.968Z",
+    "texto": "[DATO ONPE] Corte ONPE de las 19:00, generado a las 19:05:45 hora Lima. Toño contadas: Gobernador regional 4 de 63 584 (0,006 %; el texto del corte lo muestra como 0,0 %). Alcalde provincial 0 de 89 935 y Alcalde distrit"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 6,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:08:37.847Z",
+   "ultimaPublicacion": "2026-10-05T00:08:24.643Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:08:24.643Z",
+    "texto": "Reviso el corte de las 19:00. Solo aviso si cambian los tres contadores o aparece un acta escaneada."
+   },
+   "silencioMaximoMin": 30
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 19,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:08:19.375Z",
+   "ultimaPublicacion": "2026-10-05T00:08:19.375Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:08:19.375Z",
+    "texto": "Barrido 19:00 en marcha (solo web; X sin créditos)."
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Charo",
@@ -84,34 +156,16 @@
    "silencioMaximoMin": 150
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 38,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:38:51.154Z",
-   "ultimaPublicacion": "2026-10-04T23:38:44.707Z",
-   "haciendo": {
-    "ts": "2026-10-04T23:38:44.707Z",
-    "texto": "Revisando para la guardia 18:30."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 43,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:38:03.542Z",
+   "ultimaActividad": "2026-10-05T00:08:24.179Z",
    "ultimaPublicacion": "2026-10-04T23:38:03.542Z",
    "haciendo": {
     "ts": "2026-10-04T23:38:03.542Z",
@@ -126,14 +180,14 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 23,
+   "estado": "activo",
+   "publicaciones": 24,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:02:14.864Z",
-   "ultimaPublicacion": "2026-10-04T23:02:12.963Z",
+   "ultimaActividad": "2026-10-05T00:08:36.254Z",
+   "ultimaPublicacion": "2026-10-04T23:02:14.864Z",
    "haciendo": {
-    "ts": "2026-10-04T23:02:12.963Z",
-    "texto": "Entre las 15:30 y las 16:00 se verificó la versión del sistema y se hizo la puesta a cero en los servidores Nación. Entre las 16:00 y las 17:00, lo mismo en los 125 centros de cómputo de las oficinas descentralizadas. La"
+    "ts": "2026-10-04T23:02:14.864Z",
+    "texto": "El acta de puesta a cero la firmaron representantes del JNE, de Reniec, del Ministerio Público, de la ONPE y personeros técnicos de organizaciones políticas que la nota nombra. Este aviso no informa actas ya contabilizad"
    },
    "silencioMaximoMin": 75
   },
@@ -144,10 +198,10 @@
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 46,
+   "estado": "activo",
+   "publicaciones": 32,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:01:52.591Z",
+   "ultimaActividad": "2026-10-05T00:08:05.445Z",
    "ultimaPublicacion": "2026-10-04T23:01:52.591Z",
    "haciendo": {
     "ts": "2026-10-04T23:01:52.591Z",
@@ -156,76 +210,22 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 18,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:39:02.194Z",
-   "ultimaPublicacion": "2026-10-04T22:52:01.636Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:52:01.636Z",
-    "texto": "Norma avisada."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:39:04.355Z",
+   "ultimaActividad": "2026-10-05T00:08:52.907Z",
    "ultimaPublicacion": "2026-10-04T22:41:41.673Z",
    "haciendo": {
     "ts": "2026-10-04T22:41:41.673Z",
     "texto": "La nota de Gestión de las 17:26 sale como [ENGAÑOSO]. La otra ya estaba cerrada y no se repite."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "atrasado",
-   "publicaciones": 4,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:14:22.784Z",
-   "ultimaPublicacion": "2026-10-04T22:07:47.270Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:07:47.270Z",
-    "texto": "[DATO ONPE] Mide el avance de actas contabilizadas. Al corte de las 17:00 hora Lima, la ONPE registra 0,0 % de actas contadas en Elecciones Regionales (0 de 63 584) y 0,0 % en Elecciones Municipales (0 de 89 935): «todav"
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "atrasado",
-   "publicaciones": 5,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T22:05:57.427Z",
-   "ultimaPublicacion": "2026-10-04T22:05:20.802Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:05:20.802Z",
-    "texto": "No hay acta escaneada para contrastar. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), el bloque de municipal provincial muestra 0 actas contabilizadas, 0 para envío al JEE y 26351 pendientes. No"
-   },
-   "silencioMaximoMin": 30
   }
  ]
 }
