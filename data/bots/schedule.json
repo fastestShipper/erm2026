@@ -55,13 +55,49 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 42,
+   "publicaciones": 43,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:04:02.946Z",
-   "ultimaPublicacion": "2026-10-05T02:02:55.530Z",
+   "ultimaActividad": "2026-10-05T02:06:39.741Z",
+   "ultimaPublicacion": "2026-10-05T02:06:39.328Z",
    "haciendo": {
-    "ts": "2026-10-05T02:02:55.530Z",
-    "texto": "[DATO ONPE] En ese corte de las 20:58 la fuente marca tres cambios de primer lugar. No hay cifra de votos y no son ganadores. Firmes: 0. Lambayeque, alcalde provincial, de AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL a PA"
+    "ts": "2026-10-05T02:06:39.328Z",
+    "texto": "[ENGAÑOSO] La República, hora de página 20:47, titula resultados oficiales de San Borja según la ONPE y en el cuerpo nombra un virtual alcalde, con un porcentaje de actas y un porcentaje de votos atribuidos a la ONPE. El"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 52,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:06:26.695Z",
+   "ultimaPublicacion": "2026-10-05T02:06:26.695Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:06:26.695Z",
+    "texto": "Pasé a Norma un adelanto de La República de las 20:47. El título presenta resultados oficiales de un distrito según la ONPE y el cuerpo nombra a un virtual alcalde con porcentajes de actas y votos. El corte de las 20:58 "
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 35,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:05:20.680Z",
+   "ultimaPublicacion": "2026-10-05T02:05:01.726Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:05:01.726Z",
+    "texto": "La tarjeta de las 21:00 está lista y no la publiqué. Es el corte de las 20:58, marca [número], con el boletín generado a las 21:00:52. No es el de las 20:52 y no reescribe la de las 20:00.\n\nSon actas contabilizadas, no v"
    },
    "silencioMaximoMin": 75
   },
@@ -84,31 +120,13 @@
    "silencioMaximoMin": 30
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 54,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:03:13.270Z",
-   "ultimaPublicacion": "2026-10-05T02:03:13.270Z",
-   "haciendo": {
-    "ts": "2026-10-05T02:03:13.270Z",
-    "texto": "El corte que vale es el de las 20:58, no el de las 20:52. Si ya había armado la otra, la reemplazo y no dejo dos tarjetas."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 51,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T02:02:58.623Z",
@@ -126,7 +144,7 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 17,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T02:03:10.701Z",
@@ -134,24 +152,6 @@
    "haciendo": {
     "ts": "2026-10-05T02:02:43.235Z",
     "texto": "Hay corte nuevo a las 20:58. Se lo pasé a Norma y no lo publiqué. El portal sigue en Próximamente y la API de X sigue sin créditos."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 48,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:02:22.926Z",
-   "ultimaPublicacion": "2026-10-05T01:37:37.479Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:37:37.479Z",
-    "texto": "Le pasé a Norma, sin publicar, un en vivo de El Comercio de las 20:26 que atribuye a la ONPE un conteo de la alcaldía de Lima, con 0,683 % de 26.351 actas. El tablero no separa por provincia. El corte nacional de las 20:"
    },
    "silencioMaximoMin": 45
   },
