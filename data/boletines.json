@@ -2,6 +2,84 @@
  "nota": "Boletines generados por programa con los datos oficiales de la ONPE (sin IA). No son proyecciones.",
  "items": [
   {
+   "corte": 1791207135140,
+   "hora": "08:32",
+   "generado": "2026-10-05T08:35:44-05:00",
+   "avance": [
+    {
+     "id": 1,
+     "eleccion": "Gobernador regional",
+     "actasPct": 88.499,
+     "contabilizadas": 56271,
+     "totalActas": 63584,
+     "participacion": 66.67,
+     "antesPct": 88.29
+    },
+    {
+     "id": 302,
+     "eleccion": "Alcalde provincial",
+     "actasPct": 89.545,
+     "contabilizadas": 80532,
+     "totalActas": 89935,
+     "participacion": 68.012,
+     "antesPct": 89.272
+    },
+    {
+     "id": 303,
+     "eleccion": "Alcalde distrital",
+     "actasPct": 89.545,
+     "contabilizadas": 80532,
+     "totalActas": 89935,
+     "participacion": 68.012,
+     "antesPct": 89.272
+    }
+   ],
+   "cambios": [
+    {
+     "eleccion": "Alcalde provincial",
+     "lugar": "Cajabamba (Cajamarca)",
+     "antes": "PARTIDO POLÍTICO PERÚ PRIMERO",
+     "ahora": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+     "candidato": "RICHARD OBANDO BARAHONA"
+    },
+    {
+     "eleccion": "Alcalde distrital",
+     "lugar": "Copa (Cajatambo)",
+     "antes": "APP - LA CHOLITA",
+     "ahora": "CONCERTACIÓN PARA EL DESARROLLO REGIONAL - LIMA",
+     "candidato": "JOHEL IVAN GRACIANO ARCE"
+    }
+   ],
+   "cambiosTotal": 2,
+   "firmes": [
+    {
+     "eleccion": "Gobernador regional",
+     "nivel": 1,
+     "firmes": 5,
+     "conDatos": 25
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "nivel": 2,
+     "firmes": 88,
+     "conDatos": 192
+    },
+    {
+     "eleccion": "Alcalde distrital",
+     "nivel": 3,
+     "firmes": 1234,
+     "conDatos": 1680
+    }
+   ],
+   "observaciones": {
+    "totales": 256,
+    "actasRevisadas": 0,
+    "actasImportantes": 0,
+    "actasRevisar": 0
+   },
+   "texto": "Corte ONPE de las 08:32. Actas contadas: Gobernador regional 88.5% (antes 88.3%) · Alcalde provincial 89.5% (antes 89.3%) · Alcalde distrital 89.5% (antes 89.3%). Cambió el primer lugar en 2 contiendas: Cajabamba (Cajamarca), alcalde provincial; Copa (Cajatambo), alcalde distrital. El primer lugar ya no puede cambiar con las actas que faltan en 5 de 25 regiones, 88 de 192 provincias, 1,234 de 1,680 distritos. Revisión: 256 diferencias en los totales."
+  },
+  {
    "corte": 1791206787684,
    "hora": "08:26",
    "generado": "2026-10-05T08:30:49-05:00",
