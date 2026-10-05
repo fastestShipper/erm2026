@@ -1,5 +1,5 @@
 {
- "total": 63,
+ "total": 65,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -9,6 +9,27 @@
    "valores": {
     "suma_participantes": 326828,
     "totalVotosValidos": 326639
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · HUÁNUCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (367,484) no coincide con totalVotosValidos (366,411). Diferencia: +1,073.",
+   "valores": {
+    "suma_participantes": 367484,
+    "totalVotosValidos": 366411
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · HUÁNUCO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 31.979% y el cálculo da 32.073%.",
+   "valores": {
+    "votos": 117519,
+    "pct_onpe": 31.979,
+    "pct_calculado": 32.073
    }
   },
   {
