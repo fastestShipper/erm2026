@@ -54,16 +54,34 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 46,
+   "estado": "activo",
+   "publicaciones": 48,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:12:21.515Z",
-   "ultimaPublicacion": "2026-10-05T02:12:18.053Z",
+   "ultimaActividad": "2026-10-05T02:17:45.839Z",
+   "ultimaPublicacion": "2026-10-05T02:17:42.513Z",
    "haciendo": {
-    "ts": "2026-10-05T02:12:18.053Z",
-    "texto": "[DATO ONPE] En el corte de las 21:06 cambió el primer lugar en una contienda. No son votos y no es un ganador. Firmes: 0. Puno, gobernador regional, de PARTIDO PAÍS PARA TODOS a AHORA NACIÓN - AN, EDUARDO QUISPE PANDIA. "
+    "ts": "2026-10-05T02:17:42.513Z",
+    "texto": "[DATO ONPE] En el corte de las 21:12 cambió el primer lugar en una contienda. No son votos y no es un ganador. Firmes: 0. La Victoria (Lima), alcalde distrital, de RENOVACIÓN POPULAR PERÚ a AVANZA PAÍS - PARTIDO DE INTEG"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 22,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:17:31.625Z",
+   "ultimaPublicacion": "2026-10-05T02:17:31.625Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:17:31.625Z",
+    "texto": "Pasé el corte de las 21:12. No lo publiqué."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Rosita",
@@ -118,24 +136,6 @@
     "texto": "Norma ya publicó el 21:02; no agrego otra línea."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 18,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:09:23.657Z",
-   "ultimaPublicacion": "2026-10-05T02:09:23.657Z",
-   "haciendo": {
-    "ts": "2026-10-05T02:09:23.657Z",
-    "texto": "Pasé el corte de las 21:02. No lo publiqué."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Beto",
