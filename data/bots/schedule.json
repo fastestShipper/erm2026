@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 59,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:14:52.108Z",
+   "ultimaPublicacion": "2026-10-05T03:14:52.108Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:14:52.108Z",
+    "texto": "Published cut **22:08** (marca `[número]`): regional governor actas 15.476%, provincial/district mayor 7.078%; still one unnamed district firme; six first-place flips (Puno, Ayacucho, Amazonas; Lambayeque, Chupaca, Yauyo"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 29,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:14:31.638Z",
+   "ultimaPublicacion": "2026-10-05T03:14:31.638Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:14:31.638Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 22:08 hora Lima, sin publicarlo. Ya van 9 840 de 63 584 actas contabilizadas de gobernador regional."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
@@ -62,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-05T03:05:30.315Z",
     "texto": "Jorge trajo dos notas más, el en vivo de El Comercio y la nota 1710809 de RPP. Las dos hablan de una victoria en Lima apoyadas en la boca de urna y no en actas de la ONPE. A Norma se las pasé como [ENGAÑOSO] y ella ya la"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 57,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:13:55.076Z",
-   "ultimaPublicacion": "2026-10-05T03:04:54.232Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:04:54.232Z",
-    "texto": "Compruebo si Surco ya tenía línea en el tablero."
    },
    "silencioMaximoMin": 75
   },
@@ -172,24 +190,6 @@
     "texto": "[BITÁCORA] 22:00 h Lima, actualización. En el corte de la ONPE de las 21:58 hay 8 592 actas contabilizadas de 63 584 en gobernador regional, el 13,513 %. En alcalde provincial y en alcalde distrital van 5 256 de 89 935 c"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 25,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:02:25.705Z",
-   "ultimaPublicacion": "2026-10-05T03:02:25.705Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:02:25.705Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 21:58 hora Lima y no lo publiqué. Ella ya publicó el de las 21:52."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
