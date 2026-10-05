@@ -1,5 +1,5 @@
 {
- "total": 90,
+ "total": 99,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -737,27 +737,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (454,717) no coincide con totalVotosValidos (453,264). Diferencia: +1,453.",
-   "valores": {
-    "suma_participantes": 454717,
-    "totalVotosValidos": 453264
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 32.809% y el cálculo da 32.914%.",
-   "valores": {
-    "votos": 149189,
-    "pct_onpe": 32.809,
-    "pct_calculado": 32.914
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (20,619) no coincide con totalVotosValidos (19,926). Diferencia: +693.",
@@ -970,6 +949,125 @@
    "valores": {
     "suma_participantes": 155802,
     "totalVotosValidos": 155624
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (33,662) no coincide con totalVotosValidos (33,487). Diferencia: +175.",
+   "valores": {
+    "suma_participantes": 33662,
+    "totalVotosValidos": 33487
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 14.536% y el cálculo da 14.612%.",
+   "valores": {
+    "votos": 4893,
+    "pct_onpe": 14.536,
+    "pct_calculado": 14.612
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 15.332% y el cálculo da 15.412%.",
+   "valores": {
+    "votos": 5161,
+    "pct_onpe": 15.332,
+    "pct_calculado": 15.412
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 29.092% y el cálculo da 29.244%.",
+   "valores": {
+    "votos": 9793,
+    "pct_onpe": 29.092,
+    "pct_calculado": 29.244
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 30.444% y el cálculo da 30.603%.",
+   "valores": {
+    "votos": 10248,
+    "pct_onpe": 30.444,
+    "pct_calculado": 30.603
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / PACASMAYO / GUADALUPE",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (17,941) no coincide con totalVotosValidos (17,767). Diferencia: +174.",
+   "valores": {
+    "suma_participantes": 17941,
+    "totalVotosValidos": 17767
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / PACASMAYO / GUADALUPE",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 9.347% y el cálculo da 9.439%.",
+   "valores": {
+    "votos": 1677,
+    "pct_onpe": 9.347,
+    "pct_calculado": 9.439
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / PACASMAYO / GUADALUPE",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 14.904% y el cálculo da 15.050%.",
+   "valores": {
+    "votos": 2674,
+    "pct_onpe": 14.904,
+    "pct_calculado": 15.05
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / PACASMAYO / GUADALUPE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 16.638% y el cálculo da 16.801%.",
+   "valores": {
+    "votos": 2985,
+    "pct_onpe": 16.638,
+    "pct_calculado": 16.801
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / PACASMAYO / GUADALUPE",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 16.677% y el cálculo da 16.840%.",
+   "valores": {
+    "votos": 2992,
+    "pct_onpe": 16.677,
+    "pct_calculado": 16.84
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / PACASMAYO / GUADALUPE",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 24.419% y el cálculo da 24.658%.",
+   "valores": {
+    "votos": 4381,
+    "pct_onpe": 24.419,
+    "pct_calculado": 24.658
    }
   }
  ]
