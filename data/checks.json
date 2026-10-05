@@ -1,5 +1,5 @@
 {
- "total": 250,
+ "total": 255,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -2089,16 +2089,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / LAMBAYEQUE",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (174,004) no coincide con totalVotosValidos (173,823). Diferencia: +181.",
-   "valores": {
-    "suma_participantes": 174004,
-    "totalVotosValidos": 173823
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · PIURA / MORROPÓN",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (84,302) no coincide con totalVotosValidos (83,137). Diferencia: +1,165.",
@@ -2711,6 +2701,71 @@
     "votos": 10294,
     "pct_onpe": 20.867,
     "pct_calculado": 22.076
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (26,586) no coincide con totalVotosValidos (26,043). Diferencia: +543.",
+   "valores": {
+    "suma_participantes": 26586,
+    "totalVotosValidos": 26043
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 6.782% y el cálculo da 6.923%.",
+   "valores": {
+    "votos": 1803,
+    "pct_onpe": 6.782,
+    "pct_calculado": 6.923
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 13.62% y el cálculo da 13.904%.",
+   "valores": {
+    "votos": 3621,
+    "pct_onpe": 13.62,
+    "pct_calculado": 13.904
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 15.079% y el cálculo da 15.394%.",
+   "valores": {
+    "votos": 4009,
+    "pct_onpe": 15.079,
+    "pct_calculado": 15.394
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 25.641% y el cálculo da 26.176%.",
+   "valores": {
+    "votos": 6817,
+    "pct_onpe": 25.641,
+    "pct_calculado": 26.176
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 37.561% y el cálculo da 38.344%.",
+   "valores": {
+    "votos": 9986,
+    "pct_onpe": 37.561,
+    "pct_calculado": 38.344
    }
   }
  ]
