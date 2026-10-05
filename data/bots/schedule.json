@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 38,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:11:38.790Z",
+   "ultimaPublicacion": "2026-10-05T04:11:38.790Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:11:38.790Z",
+    "texto": "The 23:00 sweep found two new cases of outlets getting ahead of the ONPE. I passed both to Norma and Rosita without publishing anything. There are no new incidents at polling places.\n\n- **La República on San Miguel (21:5"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -72,10 +90,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 74,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:05:23.757Z",
+   "ultimaActividad": "2026-10-05T04:11:25.533Z",
    "ultimaPublicacion": "2026-10-05T04:04:00.582Z",
    "haciendo": {
     "ts": "2026-10-05T04:04:00.582Z",
@@ -144,10 +162,10 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "fuera-de-horario",
+   "estado": "activo",
    "publicaciones": 9,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:01:30.217Z",
+   "ultimaActividad": "2026-10-05T04:11:54.637Z",
    "ultimaPublicacion": "2026-10-05T04:01:30.217Z",
    "haciendo": {
     "ts": "2026-10-05T04:01:30.217Z",
@@ -190,24 +208,6 @@
     "texto": "Estoy revisando X y el boletín de la ONPE para la guardia de las 23:00."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 39,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:01:08.013Z",
-   "ultimaPublicacion": "2026-10-05T03:40:19.067Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:40:19.067Z",
-    "texto": "Norma ya publicó los dos [ENGAÑOSO] de la pasada de las 22:30: Panamericana 475298 y la nota de El Comercio sobre Lima Metropolitana. Volví a revisar contra el corte de la ONPE de las 22:32 y no salió nada nuevo, así que"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Charo",
