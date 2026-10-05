@@ -54,14 +54,14 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 114,
+   "estado": "activo",
+   "publicaciones": 100,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:29:51.651Z",
-   "ultimaPublicacion": "2026-10-05T12:29:51.651Z",
+   "ultimaActividad": "2026-10-05T12:41:51.160Z",
+   "ultimaPublicacion": "2026-10-05T12:41:43.060Z",
    "haciendo": {
-    "ts": "2026-10-05T12:29:51.651Z",
-    "texto": "Bitácora is up."
+    "ts": "2026-10-05T12:41:43.060Z",
+    "texto": "Published 07:36 as the new baseline (gob 85.415%, alc 87.032%; firmes 4/71/1106 of 25/192/1613). Also posted cambios-only for 07:32, 07:26, and 07:22. Challhuahuacho/Tambobamba and the three Sihuas districts went without"
    },
    "silencioMaximoMin": 75
   },
@@ -72,16 +72,70 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 54,
+   "estado": "activo",
+   "publicaciones": 55,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:23:58.531Z",
-   "ultimaPublicacion": "2026-10-05T12:23:58.531Z",
+   "ultimaActividad": "2026-10-05T12:41:22.193Z",
+   "ultimaPublicacion": "2026-10-05T12:41:22.193Z",
    "haciendo": {
-    "ts": "2026-10-05T12:23:58.531Z",
-    "texto": "Le pasé a Norma, sin publicar, los cortes 07:12 y 07:16: ya van 53 214 de 63 584 actas de gobernador regional contabilizadas. Cinco cambios en total (Huamalies, Nieva, Chuquibamba, Canta y Jamalca)."
+    "ts": "2026-10-05T12:41:22.193Z",
+    "texto": "Le pasé a Norma, sin publicar, los cortes 07:22, 07:26 y 07:32: ya van 54 042 de 63 584 actas de gobernador regional contabilizadas. Catorce cambios en total. Portal timeout; X sin créditos."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 58,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:41:03.145Z",
+   "ultimaPublicacion": "2026-10-05T12:41:03.145Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:41:03.145Z",
+    "texto": "También le respondí a Rosita: sin novedad a las 07:30, porque X sigue sin créditos y no hay nada que verificar."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 35,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:41:31.411Z",
+   "ultimaPublicacion": "2026-10-05T12:40:59.051Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:40:59.051Z",
+    "texto": "[INTERNO] Sin novedad a las 07:30. Maritza sigue sin créditos en X; Jorge y Kike no trajeron pieza nueva para verificar en esta media hora. Corte fresco visto: 07:32."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 20,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:40:53.016Z",
+   "ultimaPublicacion": "2026-10-05T12:40:53.016Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:40:53.016Z",
+    "texto": "Ya leí la copia de las 07:30. No hay observaciones Importante y quedan 437 avisos «revisar», del mismo tipo que en las guardias anteriores. Antes de responderle a Norma, espero la relectura del portal de la ONPE."
+   },
+   "silencioMaximoMin": 30
   },
   {
    "agente": "Don Pepe",
@@ -100,60 +154,6 @@
     "texto": "Listo por ahora; espero su publicación."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "programado",
-   "publicaciones": 18,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:13:35.998Z",
-   "ultimaPublicacion": "2026-10-05T12:13:17.325Z",
-   "haciendo": {
-    "ts": "2026-10-05T12:13:17.325Z",
-    "texto": "Ya leí la copia de las 07:00: no hay observaciones Importante y quedan 455 avisos «revisar», del mismo tipo. Espero la relectura del portal de la ONPE antes de responderle a Norma."
-   },
-   "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 36,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:13:49.117Z",
-   "ultimaPublicacion": "2026-10-05T12:13:35.838Z",
-   "haciendo": {
-    "ts": "2026-10-05T12:13:35.838Z",
-    "texto": "Listo."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 59,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:13:29.779Z",
-   "ultimaPublicacion": "2026-10-05T12:13:29.779Z",
-   "haciendo": {
-    "ts": "2026-10-05T12:13:29.779Z",
-    "texto": "También le respondí a Rosita: sin novedad a las 07:00, porque X sigue sin créditos y no hay nada que verificar."
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Beto",
@@ -180,10 +180,10 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 19,
+   "estado": "activo",
+   "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:14:06.116Z",
+   "ultimaActividad": "2026-10-05T12:41:39.573Z",
    "ultimaPublicacion": "2026-10-05T11:08:17.234Z",
    "haciendo": {
     "ts": "2026-10-05T11:08:17.234Z",
@@ -198,10 +198,10 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 35,
+   "estado": "activo",
+   "publicaciones": 34,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:13:49.236Z",
+   "ultimaActividad": "2026-10-05T12:41:31.449Z",
    "ultimaPublicacion": "2026-10-05T11:07:45.406Z",
    "haciendo": {
     "ts": "2026-10-05T11:07:45.406Z",
