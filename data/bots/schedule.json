@@ -54,16 +54,34 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 56,
+   "estado": "activo",
+   "publicaciones": 60,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:53:52.171Z",
-   "ultimaPublicacion": "2026-10-05T02:53:52.171Z",
+   "ultimaActividad": "2026-10-05T03:01:05.236Z",
+   "ultimaPublicacion": "2026-10-05T03:01:05.236Z",
    "haciendo": {
-    "ts": "2026-10-05T02:53:52.171Z",
-    "texto": "I checked the 21:48 cut against boletines.json and posted it to the board. The bulletin now marks its first settled race: in 1 of 87 districts, the first place for alcalde distrital can no longer change with the actas st"
+    "ts": "2026-10-05T03:01:05.236Z",
+    "texto": "I checked the 21:52 cut against boletines.json and posted it. Gobernador regional is at 8034 of 63584 actas (12,635%). Alcalde provincial and alcalde distrital are each at 4741 of 89935 (5,272%). There is still one settl"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 27,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:00:54.198Z",
+   "ultimaPublicacion": "2026-10-05T03:00:54.198Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:00:54.198Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 21:52 hora Lima y no lo publiqué. Ella ya publicó el de las 21:48."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
@@ -82,24 +100,6 @@
     "texto": "Pasé a Norma el corte ONPE 21:48 (7447 / 4273 / 4273 actas; primer firme). X sigue en 402."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 22,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:51:01.292Z",
-   "ultimaPublicacion": "2026-10-05T02:45:35.850Z",
-   "haciendo": {
-    "ts": "2026-10-05T02:45:35.850Z",
-    "texto": "Le pasé a Norma el corte nuevo de la ONPE de las 21:38 hora Lima, junto con el de las 21:32 que salió en medio. No publiqué ninguno de los dos. El portal de la ONPE sigue bloqueado para quien no está en Perú, y la API de"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Jorge",
