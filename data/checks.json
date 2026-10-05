@@ -1,101 +1,57 @@
 {
- "total": 71,
+ "total": 67,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · AMAZONAS",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (192,691) no coincide con totalVotosValidos (191,871). Diferencia: +820.",
+   "detalle": "La suma de votos de las organizaciones (192,849) no coincide con totalVotosValidos (192,691). Diferencia: +158.",
    "valores": {
-    "suma_participantes": 192691,
-    "totalVotosValidos": 191871
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · AMAZONAS",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.257% y el cálculo da 22.353%.",
-   "valores": {
-    "votos": 42888,
-    "pct_onpe": 22.257,
-    "pct_calculado": 22.353
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · AMAZONAS",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO REGIONAL VICTORIA AMAZONENSE: ONPE publica 22.678% y el cálculo da 22.775%.",
-   "valores": {
-    "votos": 43699,
-    "pct_onpe": 22.678,
-    "pct_calculado": 22.775
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · AMAZONAS",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO REGIONAL AMAZONENSE UNIDOS AL CAMPO: ONPE publica 23.5% y el cálculo da 23.601%.",
-   "valores": {
-    "votos": 45283,
-    "pct_onpe": 23.5,
-    "pct_calculado": 23.601
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · AMAZONAS",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 25.384% y el cálculo da 25.493%.",
-   "valores": {
-    "votos": 48913,
-    "pct_onpe": 25.384,
-    "pct_calculado": 25.493
+    "suma_participantes": 192849,
+    "totalVotosValidos": 192691
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (301,127) no coincide con totalVotosValidos (299,602). Diferencia: +1,525.",
+   "detalle": "La suma de votos de las organizaciones (303,307) no coincide con totalVotosValidos (301,127). Diferencia: +2,180.",
    "valores": {
-    "suma_participantes": 301127,
-    "totalVotosValidos": 299602
+    "suma_participantes": 303307,
+    "totalVotosValidos": 301127
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 20.169% y el cálculo da 20.272%.",
+   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 20.283% y el cálculo da 20.430%.",
    "valores": {
-    "votos": 60735,
-    "pct_onpe": 20.169,
-    "pct_calculado": 20.272
+    "votos": 61520,
+    "pct_onpe": 20.283,
+    "pct_calculado": 20.43
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 32.994% y el cálculo da 33.162%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 32.953% y el cálculo da 33.191%.",
    "valores": {
-    "votos": 99354,
-    "pct_onpe": 32.994,
-    "pct_calculado": 33.162
+    "votos": 99948,
+    "pct_onpe": 32.953,
+    "pct_calculado": 33.191
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "LIBERTAD POPULAR: ONPE publica 36.112% y el cálculo da 36.296%.",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 35.937% y el cálculo da 36.197%.",
    "valores": {
-    "votos": 108743,
-    "pct_onpe": 36.112,
-    "pct_calculado": 36.296
+    "votos": 108999,
+    "pct_onpe": 35.937,
+    "pct_calculado": 36.197
    }
   },
   {
