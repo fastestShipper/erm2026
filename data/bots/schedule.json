@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 9,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:49:42.166Z",
+   "ultimaPublicacion": "2026-10-05T00:42:14.346Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:42:14.346Z",
+    "texto": "Municipal provincial volvió a moverse. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 07:36:00 p. m., hay 16 actas contabilizada"
+   },
+   "silencioMaximoMin": 30
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 23,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:49:45.402Z",
+   "ultimaPublicacion": "2026-10-05T00:49:00.573Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:49:00.573Z",
+    "texto": "[DATO ONPE] Corte ONPE de las 19:41, hora Lima, del 4 oct 2026, generado a las 19:45. Mide actas contabilizadas, no votos. Gobernador regional: 43 de 63 584 actas (0,068 %). Alcalde provincial: 30 de 89 935 (0,033 %). Al"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
@@ -64,42 +100,6 @@
     "texto": "El corte de las 19:31 ya se lo pasé a Norma, sin publicarlo."
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "cumpliendo",
-   "publicaciones": 9,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:42:14.346Z",
-   "ultimaPublicacion": "2026-10-05T00:42:14.346Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:42:14.346Z",
-    "texto": "Municipal provincial volvió a moverse. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 07:36:00 p. m., hay 16 actas contabilizada"
-   },
-   "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 22,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:48:51.673Z",
-   "ultimaPublicacion": "2026-10-05T00:41:27.253Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:41:27.253Z",
-    "texto": "[DATO ONPE] Corte ONPE de las 19:36, hora Lima, del 4 oct 2026, generado a las 19:40. Mide actas contabilizadas, no votos. Gobernador regional: 31 de 63 584 actas (0,049 %). Alcalde provincial: 17 de 89 935 (0,019 %). Al"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Jorge",
