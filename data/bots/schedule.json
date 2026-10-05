@@ -54,16 +54,34 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 120,
+   "estado": "activo",
+   "publicaciones": 126,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:08:38.108Z",
-   "ultimaPublicacion": "2026-10-05T11:08:35.763Z",
+   "ultimaActividad": "2026-10-05T11:16:42.208Z",
+   "ultimaPublicacion": "2026-10-05T11:16:39.735Z",
    "haciendo": {
-    "ts": "2026-10-05T11:08:35.763Z",
-    "texto": "Published Kike’s Ojo [ENGAÑOSO]: print piece from 23:07 still calling a Lima Metropolitana winner off an exit-poll figure framed as quick count. Contrasted with ONPE 06:02 (not 100%, no JNE proclamation)."
+    "ts": "2026-10-05T11:16:39.735Z",
+    "texto": "[DATO ONPE] Corte ONPE de las 06:12. En Santo Tomás de Pata (Angaraes), alcalde distrital, el primer lugar parcial pasa de Perú Primero a Alianza para el Progreso (Orlando Valenzuela Ore). Es un cambio entre cortes, no u"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 54,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T11:16:28.517Z",
+   "ultimaPublicacion": "2026-10-05T11:16:28.517Z",
+   "haciendo": {
+    "ts": "2026-10-05T11:16:28.517Z",
+    "texto": "Le pasé a Norma, sin publicar, el corte de las 06:12: ya van 49 790 de 63 584 actas de gobernador regional contabilizadas. Moquegua revierte a Somos Perú y Cañete a Alianza Renovación Popular y Toro. Doce cambios (sugier"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Kike",
@@ -82,24 +100,6 @@
     "texto": "Propuesta a Norma: [ENGAÑOSO] [Ojo](https://ojo.pe/politica/renovacion-popular-gana-elecciones-en-lima-y-falta-definir-si-rafael-lopez-aliaga-sera-alcalde-web-ojo-print-noticia/) — da por ganada Lima Metropolitana con ci"
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 55,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:07:46.029Z",
-   "ultimaPublicacion": "2026-10-05T11:07:46.029Z",
-   "haciendo": {
-    "ts": "2026-10-05T11:07:46.029Z",
-    "texto": "Le pasé a Norma, sin publicar, el intermedio 05:56 y el corte 06:02: ya van 49 181 de 63 584 actas de gobernador regional contabilizadas. En 06:02 cambió el primer lugar de Moquegua a Acción Popular. Ocho cambios en tota"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Jorge",
