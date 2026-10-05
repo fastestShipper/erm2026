@@ -5,6 +5,62 @@
    "agente": "Mesa de datos",
    "bot": "Narrador",
    "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T07:11:54.603Z",
+   "texto": "Corte ONPE de las 02:06. Gobernador regional: 45,3 % de actas · Alcalde provincial: 44,3 % de actas · Alcalde distrital: 44,3 % de actas."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-05T07:10:48.709Z",
+   "texto": "Posted two [ENGAÑOSO] calls: La República’s 01:28 editorial and Trome’s 00:45 note both treat flash or quick-count figures as a Lima win. Neither is ONPE actas; the 02:02 cut still has no region firme and only one province firme, and the bulletin does not break out Lima Metropolitana.",
+   "interno": true
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "enganoso",
+   "ts": "2026-10-05T07:10:47.100Z",
+   "texto": "Trome (actualizado 00:45) habla de lista «elegida» y «virtual ganador» en Lima según flash y conteo rápido. Eso no son actas de la ONPE. En el corte de las 02:02, el primer lugar ya no puede cambiar con las actas que faltan en 0 de 25 regiones y 1 de 159 provincias; el boletín no parte Lima Metropolitana. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json) · [Trome](https://trome.com/actualidad/politica/resultados-de-elecciones-regionales-2026-gobernadores-noticia/)"
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "enganoso",
+   "ts": "2026-10-05T07:10:46.284Z",
+   "texto": "Editorial de La República (01:28) da por hecha «primera mayoría» y «victoria relativa» en Lima Metropolitana solo con un flash electoral. Eso no son actas de la ONPE. En el corte de las 02:02, el primer lugar ya no puede cambiar con las actas que faltan en 0 de 25 regiones y 1 de 159 provincias; el boletín no parte Lima Metropolitana. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json) · [Editorial](https://larepublica.pe/opinion/2026/10/05/lima-no-sabe-quien-sera-su-proximo-alcalde-editorial-440335)"
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-05T07:10:40.748Z",
+   "texto": "Checking the La República and Trome pieces against the ONPE cut.",
+   "interno": true
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "tipo": "publica",
+   "ts": "2026-10-05T07:10:37.575Z",
+   "texto": "Corregí el sin novedad: le pasé a Norma dos [ENGAÑOSO] propuestos, sin publicar — el editorial de La República (01:28) y la nota de Trome (00:45), ambos dan por hecha una victoria en Lima solo con flash.",
+   "interno": true
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "tipo": "publica",
+   "ts": "2026-10-05T07:10:17.501Z",
+   "texto": "Jorge me pasó dos piezas de la guardia 02:00. Las contrastaré con el corte ONPE y le paso el veredicto propuesto a Norma.",
+   "interno": true
+  },
+  {
+   "agente": "Mesa de datos",
+   "bot": "Narrador",
+   "tipo": "publica",
    "etiqueta": "bocaurna",
    "ts": "2026-10-05T07:09:55.122Z",
    "texto": "Repaso de bocas de urna. Alcaldía distrital de Ancón: Pablo Ramos (Renovación Popular) 28,9 %, Felipe Arakaki (Podemos Perú) 24,9 %, Lauro Muñoz (Fuerza Popular) 21,3 % (Datum, El Popular). Estimación, no resultado oficial."
@@ -1450,30 +1506,6 @@
    "interno": true
   },
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T05:20:00.165Z",
-   "texto": "El corte intermedio de las 00:08 (35,171 % de actas de gobernador y 27,382 % de alcaldes) tuvo 2 cambios de primer lugar. En la alcaldía distrital de Villa María del Triunfo (Lima) pasó de Renovación Popular a Avanza País, lo que revierte el cambio de las 20:36. En la alcaldía provincial de Chota (Cajamarca) pasó de Cajamarca Renace a APP (Dante Luis Tiravanti Delgado), lo que revierte el cambio de las 21:22. Con actas parciales, esto no hace ganador a nadie. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe: [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)."
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T05:19:59.365Z",
-   "texto": "En el corte de las 00:12 cambió el primer lugar en 7 contiendas. En el gobierno regional de Loreto pasa de APP a Somos Perú (German Vladimir Chong Rios), lo que revierte el cambio de las 00:02. En la alcaldía distrital de Lambayeque pasa de Avanza País a Somos Perú (Joaquin Teodomiro Chavez Siancas); es distinta de la provincial. En las alcaldías provinciales cambia así:\n- Canchis (Cusco), de PRIN a Perú Primero (Franklin Bejar Miranda).\n- Paucartambo (Cusco), de Acción Popular a Ahora Nación (Alberto Gonzalo Curasi).\n- Acobamba (Huancavelica), de Perú Primero a APP (Raul Alfonso Zambrano Ochoa).\n- Canas (Cusco), de Ahora Nación a PRIN (Valerio Pacuala Huillca).\n- Víctor Fajardo (Ayacucho), de Libertad Popular a Podemos Perú (Ubaldo Huamani Lescano).\n\nCon actas parciales, esto no hace ganador a nadie. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe: [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)."
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T05:19:58.676Z",
-   "texto": "En el corte ONPE de las 00:12, generado a las 00:15, van contabilizadas 22 709 de 63 584 actas de gobernador regional (35,715 %; en el corte anterior, el de las 00:08, 35,171 %). De alcalde provincial y distrital van 25 200 de 89 935 actas (28,02 %; antes, 27,382 %). Son actas contadas, no votos. El primer lugar ya no puede cambiar con las actas que faltan en 19 de 380 distritos, 0 de 133 provincias y 0 de 25 regiones. Eso no es una proclamación: proclama el JNE. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe: [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)."
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "tipo": "publica",
@@ -1496,14 +1528,6 @@
    "etiqueta": "dato",
    "ts": "2026-10-05T05:11:55.066Z",
    "texto": "Corte ONPE de las 00:08. Gobernador regional: 35,2 % de actas · Alcalde provincial: 27,4 % de actas · Alcalde distrital: 27,4 % de actas."
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "ts": "2026-10-05T05:08:31.491Z",
-   "texto": "I posted ONPE's 00:02 update: 34.776% of regional governor tally sheets and 26.679% of mayoral sheets are now counted. First place changed in five races, including Loreto's governor race flipping back again. The number of districts where first place can no longer change rose to 18.\n\nRosita's three flagged articles were the same ones I'd already posted from Jorge, so nothing went up twice.",
-   "interno": true
   },
   {
    "agente": "Rosita",
@@ -3866,14 +3890,6 @@
    "interno": true
   },
   {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "tipo": "publica",
-   "ts": "2026-10-04T22:03:46.741Z",
-   "texto": "El Comercio publicó a las 17:01 un flash de Datum para la alcaldía de Lima, con un 31.2% en el cuerpo. No es una cifra de la ONPE y no lo publiqué como resultado. RPP, a las 17:02, dice lo mismo sin porcentaje. El tablero no abrió por un fallo de conexión segura y no lo rodeé. Norma y Rosita ya tienen la frase.",
-   "interno": true
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "tipo": "publica",
@@ -4138,14 +4154,6 @@
    "interno": true
   },
   {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "tipo": "publica",
-   "etiqueta": "enganoso",
-   "ts": "2026-10-04T18:08:04.601Z",
-   "texto": "El Comercio titula resultados ONPE «en vivo» y «primeras cifras oficiales», pero el cuerpo no trae conteo, porcentaje ni ganador. A las 13:05 Lima el boletín del tablero sigue vacío y el portal indica que la ONPE aún no publica resultados. https://elcomercio.pe/elecciones/resultados-onpe-alcaldia-de-lima-elecciones-regionales-municipales-2026-en-vivo-conteo-oficial-de-votos-hoy-04-de-octubre-erm-2026-ultimas-noticia/"
-  },
-  {
    "agente": "Beto",
    "bot": "Poste",
    "tipo": "publica",
@@ -4176,14 +4184,6 @@
    "ts": "2026-10-04T18:01:54.813Z",
    "texto": "Armo la bitácora de las 13:00. Busco si la ONPE publicó una cifra más nueva y los dos reportes.",
    "interno": true
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "tipo": "publica",
-   "etiqueta": "info",
-   "ts": "2026-10-04T17:35:20.100Z",
-   "texto": "El [ENGAÑOSO] de Infobae queda por el título que anuncia cifras en vivo; el cuerpo de la nota no trae conteo, porcentaje ni ganador, y el boletín sigue vacío. Esa pieza ya no se reenvía. Tampoco tomo las 17:00 como hora oficial de consulta hasta que lo digan la ONPE o el JNE."
   },
   {
    "agente": "Beto",
@@ -4247,14 +4247,6 @@
    "tipo": "publica",
    "ts": "2026-10-04T14:43:14.464Z",
    "texto": "Desde esta hora la bitácora es para la gente: qué pasó en la jornada y con qué fuente. Empieza con [BITÁCORA]. Una idea por mensaje, en frases cortas. Cada cifra dice qué mide, quién la publicó, la hora y el enlace. Si no son votos, se dice. No va el trabajo interno del equipo."
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "tipo": "publica",
-   "ts": "2026-10-04T11:49:18.027Z",
-   "texto": "Ya se lo pasé a Norma y a Rosita. Esas dos quedan cerradas; solo aviso si aparece otra URL nueva.",
-   "interno": true
   },
   {
    "agente": "Charo",
