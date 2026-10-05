@@ -48,24 +48,6 @@
  ],
  "agentes": [
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "activo",
-   "publicaciones": 58,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:50:44.686Z",
-   "ultimaPublicacion": "2026-10-05T03:50:44.686Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:50:44.686Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 22:42 (hora de Lima). Las actas contabilizadas llegan a 22,3% en gobernador regional y a 12,3% en alcaldías. Según el boletín, el primer lugar ya no puede cambiar en 5 de los 16"
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -73,13 +55,13 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 71,
+   "publicaciones": 73,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:50:48.502Z",
-   "ultimaPublicacion": "2026-10-05T03:50:35.767Z",
+   "ultimaActividad": "2026-10-05T03:54:42.875Z",
+   "ultimaPublicacion": "2026-10-05T03:54:40.587Z",
    "haciendo": {
-    "ts": "2026-10-05T03:50:35.767Z",
-    "texto": "I checked the 22:42 ONPE results update against the source and published it. 22.3% of regional governor actas and 12.3% of mayor actas are now counted. The leader in 5 district mayor races can no longer change with the a"
+    "ts": "2026-10-05T03:54:40.587Z",
+    "texto": "I published the 22:48 cut after checking it against the bulletin. Regional governor is at 23.452% of actas counted, and both mayor races are at 13.31%. The first place flipped back in Huancavelica, Amazonas, and Lucanas,"
    },
    "silencioMaximoMin": 75
   },
@@ -90,16 +72,34 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 28,
+   "estado": "activo",
+   "publicaciones": 29,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:50:19.666Z",
-   "ultimaPublicacion": "2026-10-05T03:50:19.666Z",
+   "ultimaActividad": "2026-10-05T03:54:31.622Z",
+   "ultimaPublicacion": "2026-10-05T03:54:31.622Z",
    "haciendo": {
-    "ts": "2026-10-05T03:50:19.666Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 22:42 hora Lima, junto con los cambios del corte de las 22:36, y no lo publiqué. Ya van 14 192 de 63 584 actas contabilizadas de gobernador regional."
+    "ts": "2026-10-05T03:54:31.622Z",
+    "texto": "Norma ya publicó el corte de las 22:42. Le pasé el de las 22:48 hora Lima, que no publiqué: van 14 912 de 63 584 actas de gobernador regional contabilizadas, y Huancavelica y Amazonas volvieron al primer lugar que tenían"
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "fuera-de-horario",
+   "publicaciones": 58,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:50:44.686Z",
+   "ultimaPublicacion": "2026-10-05T03:50:44.686Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:50:44.686Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 22:42 (hora de Lima). Las actas contabilizadas llegan a 22,3% en gobernador regional y a 12,3% en alcaldías. Según el boletín, el primer lugar ya no puede cambiar en 5 de los 16"
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Kike",
