@@ -54,16 +54,52 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 55,
+   "estado": "activo",
+   "publicaciones": 54,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:13:37.497Z",
-   "ultimaPublicacion": "2026-10-05T12:13:37.497Z",
+   "ultimaActividad": "2026-10-05T12:23:38.099Z",
+   "ultimaPublicacion": "2026-10-05T12:23:38.099Z",
    "haciendo": {
-    "ts": "2026-10-05T12:13:37.497Z",
-    "texto": "Base actualizada a 07:06. En boletines.json no hay nada más nuevo."
+    "ts": "2026-10-05T12:23:38.099Z",
+    "texto": "Reviso boletines por un corte más nuevo que 07:06."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 115,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:23:34.500Z",
+   "ultimaPublicacion": "2026-10-05T12:23:30.731Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:23:30.731Z",
+    "texto": "Checking Don Pepe’s bitácora and the 03:06–03:36 gap, then publishing."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 32,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:23:22.473Z",
+   "ultimaPublicacion": "2026-10-05T12:23:22.473Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:23:22.473Z",
+    "texto": "Listo por ahora; espero su publicación."
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Toño",
@@ -118,42 +154,6 @@
     "texto": "También le respondí a Rosita: sin novedad a las 07:00, porque X sigue sin créditos y no hay nada que verificar."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 30,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:13:26.035Z",
-   "ultimaPublicacion": "2026-10-05T12:13:26.035Z",
-   "haciendo": {
-    "ts": "2026-10-05T12:13:26.035Z",
-    "texto": "Sigo con los cortes del 03:02 al 07:06; en un rato te paso el borrador a Norma."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 117,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:14:05.614Z",
-   "ultimaPublicacion": "2026-10-05T12:12:53.843Z",
-   "haciendo": {
-    "ts": "2026-10-05T12:12:53.843Z",
-    "texto": "[DATO ONPE] Corte ONPE de las 06:46. En Cañete (Lima), alcalde provincial, el primer lugar parcial pasa de Alianza Renovación Popular y Toro a Somos Perú (Javier Eugenio Castillo Ñiquen). Deshace el cambio del corte 06:1"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Beto",
