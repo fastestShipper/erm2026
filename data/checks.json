@@ -1,14 +1,45 @@
 {
- "total": 63,
+ "total": 66,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · CUSCO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (671,216) no coincide con totalVotosValidos (670,820). Diferencia: +396.",
+   "detalle": "La suma de votos de las organizaciones (672,264) no coincide con totalVotosValidos (672,118). Diferencia: +146.",
    "valores": {
-    "suma_participantes": 671216,
-    "totalVotosValidos": 670820
+    "suma_participantes": 672264,
+    "totalVotosValidos": 672118
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (193,661) no coincide con totalVotosValidos (193,167). Diferencia: +494.",
+   "valores": {
+    "suma_participantes": 193661,
+    "totalVotosValidos": 193167
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 25.455% y el cálculo da 25.520%.",
+   "valores": {
+    "votos": 49297,
+    "pct_onpe": 25.455,
+    "pct_calculado": 25.52
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (326,828) no coincide con totalVotosValidos (326,639). Diferencia: +189.",
+   "valores": {
+    "suma_participantes": 326828,
+    "totalVotosValidos": 326639
    }
   },
   {
