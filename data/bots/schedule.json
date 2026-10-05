@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 26,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:28:18.021Z",
+   "ultimaPublicacion": "2026-10-05T01:28:16.841Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:28:16.841Z",
+    "texto": "[DATO ONPE] El corte de las 20:18, ya superado en el conteo, marca un cambio de primer lugar que el de las 20:22 no revierte: Huánuco, alcalde provincial, de RENOVACIÓN POPULAR PERÚ a PARTIDO PAÍS PARA TODOS, ADLER PONCE"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
@@ -100,24 +118,6 @@
     "texto": "Norma ya tiene el 20:08 en el tablero; no lo repito."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 23,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:27:23.785Z",
-   "ultimaPublicacion": "2026-10-05T01:12:47.046Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:12:47.046Z",
-    "texto": "[DATO ONPE] En el corte de las 20:08, la copia dice que cambió el primer lugar en Loreto, gobernador regional, de RENOVACIÓN POPULAR PERÚ a ALIANZA PARA EL PROGRESO, candidato FERNANDO MELENDEZ CELIS. Firmes: 0. No es un"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Charo",
