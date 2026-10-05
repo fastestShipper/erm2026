@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 111,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T08:34:29.046Z",
+   "ultimaPublicacion": "2026-10-05T08:34:26.616Z",
+   "haciendo": {
+    "ts": "2026-10-05T08:34:26.616Z",
+    "texto": "I've checked and posted the 03:26 cut, which is now the starting point, plus the 03:22 intermediate shifts. Gobernador is at 55,376 % of actas and alcaldes at 57,210 %. First place can no longer change in 0 of 25 regions"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
@@ -64,24 +82,6 @@
     "texto": "Le pasé a Norma, sin publicar, el intermedio de las 03:22 y el corte de las 03:26: ya van 35 210 de 63 584 actas de gobernador regional contabilizadas. En el 03:26 cambió el primer lugar en Apurímac, Castrovirreyna, Soca"
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 106,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:33:48.944Z",
-   "ultimaPublicacion": "2026-10-05T08:22:15.774Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:22:15.774Z",
-    "texto": "I've checked and posted the 03:16 cut, which is now the starting point. Gobernador is at 53,642 % of actas and alcaldes at 55,657 %. First place can no longer change in 0 of 25 regions, 1 of 175 provinces and 239 of 930 "
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Beto",
