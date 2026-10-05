@@ -1,5 +1,5 @@
 {
- "total": 79,
+ "total": 88,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -708,21 +708,21 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / SANTA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (229,114) no coincide con totalVotosValidos (228,379). Diferencia: +735.",
+   "detalle": "La suma de votos de las organizaciones (229,899) no coincide con totalVotosValidos (229,114). Diferencia: +785.",
    "valores": {
-    "suma_participantes": 229114,
-    "totalVotosValidos": 228379
+    "suma_participantes": 229899,
+    "totalVotosValidos": 229114
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / SANTA",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 45.563% y el cálculo da 45.710%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 45.568% y el cálculo da 45.724%.",
    "valores": {
-    "votos": 104392,
-    "pct_onpe": 45.563,
-    "pct_calculado": 45.71
+    "votos": 104760,
+    "pct_onpe": 45.568,
+    "pct_calculado": 45.724
    }
   },
   {
@@ -853,6 +853,103 @@
     "votos": 21792,
     "pct_onpe": 52.37,
     "pct_calculado": 52.563
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (178,129) no coincide con totalVotosValidos (177,316). Diferencia: +813.",
+   "valores": {
+    "suma_participantes": 178129,
+    "totalVotosValidos": 177316
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 16.22% y el cálculo da 16.294%.",
+   "valores": {
+    "votos": 28892,
+    "pct_onpe": 16.22,
+    "pct_calculado": 16.294
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 33.908% y el cálculo da 34.063%.",
+   "valores": {
+    "votos": 60400,
+    "pct_onpe": 33.908,
+    "pct_calculado": 34.063
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (75,325) no coincide con totalVotosValidos (74,530). Diferencia: +795.",
+   "valores": {
+    "suma_participantes": 75325,
+    "totalVotosValidos": 74530
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 6.412% y el cálculo da 6.481%.",
+   "valores": {
+    "votos": 4830,
+    "pct_onpe": 6.412,
+    "pct_calculado": 6.481
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 8.984% y el cálculo da 9.080%.",
+   "valores": {
+    "votos": 6767,
+    "pct_onpe": 8.984,
+    "pct_calculado": 9.08
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
+   "severidad": "revisar",
+   "detalle": "SOCIOS POR ANCASH: ONPE publica 18.8% y el cálculo da 19.000%.",
+   "valores": {
+    "votos": 14161,
+    "pct_onpe": 18.8,
+    "pct_calculado": 19.0
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 19.465% y el cálculo da 19.673%.",
+   "valores": {
+    "votos": 14662,
+    "pct_onpe": 19.465,
+    "pct_calculado": 19.673
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 35.381% y el cálculo da 35.759%.",
+   "valores": {
+    "votos": 26651,
+    "pct_onpe": 35.381,
+    "pct_calculado": 35.759
    }
   }
  ]
