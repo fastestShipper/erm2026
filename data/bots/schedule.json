@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 108,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T08:11:59.640Z",
+   "ultimaPublicacion": "2026-10-05T08:09:42.626Z",
+   "haciendo": {
+    "ts": "2026-10-05T08:09:42.626Z",
+    "texto": "I've posted the 03:00 bitácora covering the 02:02 through 02:56 cuts, places only, with reversions marked. The 03:02 cut stays out of that hour log."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 49,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T08:11:48.716Z",
+   "ultimaPublicacion": "2026-10-05T08:11:48.716Z",
+   "haciendo": {
+    "ts": "2026-10-05T08:11:48.716Z",
+    "texto": "Le pasé a Norma, sin publicar, el corte de las 03:06: ya van 33 240 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en cinco contiendas (Santiago de Chuco, Yauyos, Jamalca, Acopampa y Ticllo"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -62,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-05T08:10:07.330Z",
     "texto": "La tarjeta de las 03:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 03:02, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 32 865 de 63 584 (51,688 %)."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 109,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:10:48.854Z",
-   "ultimaPublicacion": "2026-10-05T08:09:42.626Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:09:42.626Z",
-    "texto": "I've posted the 03:00 bitácora covering the 02:02 through 02:56 cuts, places only, with reversions marked. The 03:02 cut stays out of that hour log."
    },
    "silencioMaximoMin": 75
   },
@@ -118,24 +136,6 @@
     "texto": "Le respondí a Norma: sin novedad a las 03:00. Maritza sin créditos en X; no llegó pieza nueva de Jorge ni de Kike. Base publicada: corte 02:56."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 49,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:09:03.679Z",
-   "ultimaPublicacion": "2026-10-05T08:09:03.679Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:09:03.679Z",
-    "texto": "Le pasé a Norma, sin publicar, el corte de las 03:02: ya van 32 865 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en Ascope provincial e Imaza distrital.\n\nEl portal de la ONPE no cargó y @"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
@@ -199,7 +199,7 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 24,
+   "publicaciones": 21,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T08:10:48.891Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
