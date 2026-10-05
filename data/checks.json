@@ -1,100 +1,122 @@
 {
- "total": 84,
+ "total": 83,
  "items": [
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · PASCO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (129,748) no coincide con totalVotosValidos (129,206). Diferencia: +542.",
-   "valores": {
-    "suma_participantes": 129748,
-    "totalVotosValidos": 129206
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · PASCO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 18.326% y el cálculo da 18.403%.",
-   "valores": {
-    "votos": 23778,
-    "pct_onpe": 18.326,
-    "pct_calculado": 18.403
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · PASCO",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 24.439% y el cálculo da 24.541%.",
-   "valores": {
-    "votos": 31709,
-    "pct_onpe": 24.439,
-    "pct_calculado": 24.541
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · PASCO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO FRENTE DE LA ESPERANZA 2021: ONPE publica 28.655% y el cálculo da 28.775%.",
-   "valores": {
-    "votos": 37179,
-    "pct_onpe": 28.655,
-    "pct_calculado": 28.775
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · PIURA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (884,150) no coincide con totalVotosValidos (879,584). Diferencia: +4,566.",
+   "detalle": "La suma de votos de las organizaciones (887,539) no coincide con totalVotosValidos (884,150). Diferencia: +3,389.",
    "valores": {
-    "suma_participantes": 884150,
-    "totalVotosValidos": 879584
+    "suma_participantes": 887539,
+    "totalVotosValidos": 884150
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · PIURA",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 17.187% y el cálculo da 17.276%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 17.252% y el cálculo da 17.318%.",
    "valores": {
-    "votos": 151960,
-    "pct_onpe": 17.187,
-    "pct_calculado": 17.276
+    "votos": 153117,
+    "pct_onpe": 17.252,
+    "pct_calculado": 17.318
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · PIURA",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 17.902% y el cálculo da 17.995%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 17.851% y el cálculo da 17.920%.",
    "valores": {
-    "votos": 158282,
-    "pct_onpe": 17.902,
-    "pct_calculado": 17.995
+    "votos": 158436,
+    "pct_onpe": 17.851,
+    "pct_calculado": 17.92
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · PIURA",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.435% y el cálculo da 22.552%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.355% y el cálculo da 22.441%.",
    "valores": {
-    "votos": 198360,
-    "pct_onpe": 22.435,
-    "pct_calculado": 22.552
+    "votos": 198408,
+    "pct_onpe": 22.355,
+    "pct_calculado": 22.441
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · UCAYALI",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (203,487) no coincide con totalVotosValidos (203,322). Diferencia: +165.",
+   "detalle": "La suma de votos de las organizaciones (203,664) no coincide con totalVotosValidos (203,487). Diferencia: +177.",
    "valores": {
-    "suma_participantes": 203487,
-    "totalVotosValidos": 203322
+    "suma_participantes": 203664,
+    "totalVotosValidos": 203487
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (285,630) no coincide con totalVotosValidos (283,459). Diferencia: +2,171.",
+   "valores": {
+    "suma_participantes": 285630,
+    "totalVotosValidos": 283459
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 8.815% y el cálculo da 8.882%.",
+   "valores": {
+    "votos": 25177,
+    "pct_onpe": 8.815,
+    "pct_calculado": 8.882
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 8.833% y el cálculo da 8.901%.",
+   "valores": {
+    "votos": 25230,
+    "pct_onpe": 8.833,
+    "pct_calculado": 8.901
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 14.991% y el cálculo da 15.106%.",
+   "valores": {
+    "votos": 42820,
+    "pct_onpe": 14.991,
+    "pct_calculado": 15.106
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 24.304% y el cálculo da 24.490%.",
+   "valores": {
+    "votos": 69420,
+    "pct_onpe": 24.304,
+    "pct_calculado": 24.49
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 28.288% y el cálculo da 28.505%.",
+   "valores": {
+    "votos": 80799,
+    "pct_onpe": 28.288,
+    "pct_calculado": 28.505
    }
   },
   {
@@ -625,38 +647,6 @@
     "votos": 4381,
     "pct_onpe": 24.419,
     "pct_calculado": 24.658
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / HUALGAYOC",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (41,612) no coincide con totalVotosValidos (41,459). Diferencia: +153.",
-   "valores": {
-    "suma_participantes": 41612,
-    "totalVotosValidos": 41459
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / HUALGAYOC",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 20.307% y el cálculo da 20.382%.",
-   "valores": {
-    "votos": 8450,
-    "pct_onpe": 20.307,
-    "pct_calculado": 20.382
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / HUALGAYOC",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 52.37% y el cálculo da 52.563%.",
-   "valores": {
-    "votos": 21792,
-    "pct_onpe": 52.37,
-    "pct_calculado": 52.563
    }
   },
   {
