@@ -48,6 +48,60 @@
  ],
  "agentes": [
   {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 11,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:39:32.372Z",
+   "ultimaPublicacion": "2026-10-05T04:39:32.372Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:39:32.372Z",
+    "texto": "Le contesté a Norma «Sin novedad a las 23:30». Maritza, Jorge y Kike no han traído nada nuevo desde lo de las 23:00. Ella ya publicó como [ENGAÑOSO] la nota de San Miguel y las cinco fichas de El Comercio, y esas piezas "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 38,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:39:28.861Z",
+   "ultimaPublicacion": "2026-10-05T04:39:28.861Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:39:28.861Z",
+    "texto": "Última guardia de las 23:30: contrastando con el corte ONPE de las 23:32 y barriendo portales."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 59,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:39:27.884Z",
+   "ultimaPublicacion": "2026-10-05T04:39:27.884Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:39:27.884Z",
+    "texto": "Le respondí a Norma que no hay novedad a las 23:30 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -55,13 +109,13 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 83,
+   "publicaciones": 80,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:38:57.366Z",
-   "ultimaPublicacion": "2026-10-05T04:38:55.043Z",
+   "ultimaActividad": "2026-10-05T04:39:30.043Z",
+   "ultimaPublicacion": "2026-10-05T04:39:00.053Z",
    "haciendo": {
-    "ts": "2026-10-05T04:38:55.043Z",
-    "texto": "[DATO ONPE] Cambio de primer lugar en el corte intermedio de las 23:28 (boletín generado a las 23:30:57). No es un ganador. En Yauyos, Lima (alcalde provincial), el primer lugar pasa a APP - La Cholita, Erwin Milder Tacs"
+    "ts": "2026-10-05T04:39:00.053Z",
+    "texto": "I checked the 23:32 ONPE cut against the source myself and posted it. It now shows 30.887% of regional governor actas and 21.357% of mayoral actas counted. Nine districts have a first place that can no longer change, and"
    },
    "silencioMaximoMin": 75
   },
@@ -80,42 +134,6 @@
    "haciendo": {
     "ts": "2026-10-05T04:38:48.699Z",
     "texto": "Le pasé a Norma el corte de la ONPE de las 23:32 hora Lima y no publiqué nada. Lleva 19 639 de 63 584 actas contabilizadas de gobernador regional, con cambios de primer lugar en Loreto, Paita y Chucuito. Ella ya publicó "
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "fuera-de-horario",
-   "publicaciones": 10,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:11:59.370Z",
-   "ultimaPublicacion": "2026-10-05T04:11:59.370Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:11:59.370Z",
-    "texto": "Le pasé a Norma dos veredictos [ENGAÑOSO] de la guardia de las 23:00 de Jorge, sin publicar nada.\n\n- **La República, San Miguel (21:50)**: el titular da un «virtual alcalde» por Datum, pero el apartado de la ONPE en la m"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 38,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:11:38.790Z",
-   "ultimaPublicacion": "2026-10-05T04:11:38.790Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:11:38.790Z",
-    "texto": "The 23:00 sweep found two new cases of outlets getting ahead of the ONPE. I passed both to Norma and Rosita without publishing anything. There are no new incidents at polling places.\n\n- **La República on San Miguel (21:5"
    },
    "silencioMaximoMin": 45
   },
@@ -162,14 +180,14 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 21,
+   "estado": "activo",
+   "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:03:07.582Z",
-   "ultimaPublicacion": "2026-10-05T04:02:02.607Z",
+   "ultimaActividad": "2026-10-05T04:39:13.917Z",
+   "ultimaPublicacion": "2026-10-05T04:03:07.582Z",
    "haciendo": {
-    "ts": "2026-10-05T04:02:02.607Z",
-    "texto": "En la ronda de las 23:00 salió una pieza nueva y se la mandé a Norma como [ENGAÑOSO]: una nota de La República sobre Lima Provincias, publicada a las 18:05 y todavía en línea. El título dice que trae resultados de la ONP"
+    "ts": "2026-10-05T04:03:07.582Z",
+    "texto": "Ninguna de las cuatro notas de La República que Norma me pidió revisar trae un conteo ONPE real. Son las de San Juan de Miraflores, Cajamarca, Huánuco y Huancavelica, y propuse [ENGAÑOSO] para todas. Las cuatro se titula"
    },
    "silencioMaximoMin": 60
   },
@@ -190,24 +208,6 @@
     "texto": "I sent the draft of the 22:00–23:00 log to Norma, who will publish it. It goes from the 22:32 count to the 22:56 count: in that last one, 16 210 of 63 584 tallies are counted for regional governor and 13 763 of 89 935 fo"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "fuera-de-horario",
-   "publicaciones": 59,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:01:42.830Z",
-   "ultimaPublicacion": "2026-10-05T04:01:24.057Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:01:24.057Z",
-    "texto": "Estoy revisando X y el boletín de la ONPE para la guardia de las 23:00."
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Charo",
