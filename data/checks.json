@@ -1,6 +1,131 @@
 {
- "total": 84,
+ "total": 86,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · HUÁNUCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (360,302) no coincide con totalVotosValidos (360,168). Diferencia: +134.",
+   "valores": {
+    "suma_participantes": 360302,
+    "totalVotosValidos": 360168
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · JUNÍN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (618,316) no coincide con totalVotosValidos (617,882). Diferencia: +434.",
+   "valores": {
+    "suma_participantes": 618316,
+    "totalVotosValidos": 617882
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LA LIBERTAD",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (883,711) no coincide con totalVotosValidos (883,282). Diferencia: +429.",
+   "valores": {
+    "suma_participantes": 883711,
+    "totalVotosValidos": 883282
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LAMBAYEQUE",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (641,461) no coincide con totalVotosValidos (639,553). Diferencia: +1,908.",
+   "valores": {
+    "suma_participantes": 641461,
+    "totalVotosValidos": 639553
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LAMBAYEQUE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 28.396% y el cálculo da 28.481%.",
+   "valores": {
+    "votos": 182148,
+    "pct_onpe": 28.396,
+    "pct_calculado": 28.481
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (268,649) no coincide con totalVotosValidos (266,917). Diferencia: +1,732.",
+   "valores": {
+    "suma_participantes": 268649,
+    "totalVotosValidos": 266917
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 9.216% y el cálculo da 9.276%.",
+   "valores": {
+    "votos": 24760,
+    "pct_onpe": 9.216,
+    "pct_calculado": 9.276
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 15.428% y el cálculo da 15.528%.",
+   "valores": {
+    "votos": 41446,
+    "pct_onpe": 15.428,
+    "pct_calculado": 15.528
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 23.748% y el cálculo da 23.902%.",
+   "valores": {
+    "votos": 63799,
+    "pct_onpe": 23.748,
+    "pct_calculado": 23.902
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 28.237% y el cálculo da 28.420%.",
+   "valores": {
+    "votos": 75859,
+    "pct_onpe": 28.237,
+    "pct_calculado": 28.42
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (128,068) no coincide con totalVotosValidos (127,916). Diferencia: +152.",
+   "valores": {
+    "suma_participantes": 128068,
+    "totalVotosValidos": 127916
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (860,978) no coincide con totalVotosValidos (860,212). Diferencia: +766.",
+   "valores": {
+    "suma_participantes": 860978,
+    "totalVotosValidos": 860212
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
@@ -360,49 +485,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (450,950) no coincide con totalVotosValidos (448,978). Diferencia: +1,972.",
-   "valores": {
-    "suma_participantes": 450950,
-    "totalVotosValidos": 448978
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
-   "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 14.643% y el cálculo da 14.707%.",
-   "valores": {
-    "votos": 66033,
-    "pct_onpe": 14.643,
-    "pct_calculado": 14.707
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 17.602% y el cálculo da 17.679%.",
-   "valores": {
-    "votos": 79374,
-    "pct_onpe": 17.602,
-    "pct_calculado": 17.679
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 33.042% y el cálculo da 33.188%.",
-   "valores": {
-    "votos": 149005,
-    "pct_onpe": 33.042,
-    "pct_calculado": 33.188
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / JAÉN / POMAHUACA",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (2,392) no coincide con totalVotosValidos (2,017). Diferencia: +375.",
@@ -539,71 +621,6 @@
     "votos": 2206,
     "pct_onpe": 22.317,
     "pct_calculado": 22.572
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (26,961) no coincide con totalVotosValidos (26,764). Diferencia: +197.",
-   "valores": {
-    "suma_participantes": 26961,
-    "totalVotosValidos": 26764
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 8.79% y el cálculo da 8.855%.",
-   "valores": {
-    "votos": 2370,
-    "pct_onpe": 8.79,
-    "pct_calculado": 8.855
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 10.641% y el cálculo da 10.720%.",
-   "valores": {
-    "votos": 2869,
-    "pct_onpe": 10.641,
-    "pct_calculado": 10.72
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
-   "severidad": "revisar",
-   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 12.433% y el cálculo da 12.524%.",
-   "valores": {
-    "votos": 3352,
-    "pct_onpe": 12.433,
-    "pct_calculado": 12.524
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 20.289% y el cálculo da 20.438%.",
-   "valores": {
-    "votos": 5470,
-    "pct_onpe": 20.289,
-    "pct_calculado": 20.438
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 39.839% y el cálculo da 40.132%.",
-   "valores": {
-    "votos": 10741,
-    "pct_onpe": 39.839,
-    "pct_calculado": 40.132
    }
   },
   {
