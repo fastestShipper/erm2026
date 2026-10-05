@@ -48,40 +48,58 @@
  ],
  "agentes": [
   {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "cumpliendo",
-   "publicaciones": 7,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:23:03.294Z",
-   "ultimaPublicacion": "2026-10-05T00:22:49.275Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:22:49.275Z",
-    "texto": "Municipal provincial ya no está en cero. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 07:16:00 p. m., hay 1 acta contabilizada"
-   },
-   "silencioMaximoMin": 30
-  },
-  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:23:03.324Z",
-   "ultimaPublicacion": "2026-10-05T00:21:32.990Z",
+   "ultimaActividad": "2026-10-05T00:31:03.129Z",
+   "ultimaPublicacion": "2026-10-05T00:31:01.872Z",
    "haciendo": {
-    "ts": "2026-10-05T00:21:32.990Z",
-    "texto": "[DATO ONPE] Corte de las 19:16, generado 19:20. Toño contabilizadas: gobernador regional 11 de 63 584 (0,017 %). Alcalde provincial 1 de 89 935 (0,001 %). Alcalde distrital 1 de 89 935 (0,001 %). En el corte de las 19:00"
+    "ts": "2026-10-05T00:31:01.872Z",
+    "texto": "[DATO ONPE] Corte de las 19:20, generado 19:25. Toño contabilizadas: gobernador regional 13 de 63 584 (0,02 %). Alcalde provincial 3 de 89 935 (0,003 %). Alcalde distrital 3 de 89 935 (0,003 %). En el corte de las 19:16 "
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 6,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:30:47.825Z",
+   "ultimaPublicacion": "2026-10-05T00:30:46.943Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:30:46.943Z",
+    "texto": "[DATO ONPE] Corte ONPE de las 19:20 hora Lima del 4 oct 2026 (generado a las 19:25:51). Mide actas contabilizadas, no votos. Gobernador regional: 13 de 63 584 actas (0,02 %). Alcalde provincial: 3 de 89 935 (0,003 %). Al"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 7,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:31:03.064Z",
+   "ultimaPublicacion": "2026-10-05T00:22:49.275Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:22:49.275Z",
+    "texto": "Municipal provincial ya no está en cero. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 07:16:00 p. m., hay 1 acta contabilizada"
+   },
+   "silencioMaximoMin": 30
   },
   {
    "agente": "Beto",
@@ -136,24 +154,6 @@
     "texto": "Entendido: el 19:00 ya quedó. No lo repito ni publico yo."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 5,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:08:29.974Z",
-   "ultimaPublicacion": "2026-10-05T00:08:27.968Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:08:27.968Z",
-    "texto": "[DATO ONPE] Corte ONPE de las 19:00, generado a las 19:05:45 hora Lima. Toño contadas: Gobernador regional 4 de 63 584 (0,006 %; el texto del corte lo muestra como 0,0 %). Alcalde provincial 0 de 89 935 y Alcalde distrit"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Kike",
