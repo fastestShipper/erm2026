@@ -1,5 +1,5 @@
 {
- "total": 67,
+ "total": 79,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -723,6 +723,136 @@
     "votos": 2206,
     "pct_onpe": 22.317,
     "pct_calculado": 22.572
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (26,961) no coincide con totalVotosValidos (26,764). Diferencia: +197.",
+   "valores": {
+    "suma_participantes": 26961,
+    "totalVotosValidos": 26764
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 8.79% y el cálculo da 8.855%.",
+   "valores": {
+    "votos": 2370,
+    "pct_onpe": 8.79,
+    "pct_calculado": 8.855
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 10.641% y el cálculo da 10.720%.",
+   "valores": {
+    "votos": 2869,
+    "pct_onpe": 10.641,
+    "pct_calculado": 10.72
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 12.433% y el cálculo da 12.524%.",
+   "valores": {
+    "votos": 3352,
+    "pct_onpe": 12.433,
+    "pct_calculado": 12.524
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 20.289% y el cálculo da 20.438%.",
+   "valores": {
+    "votos": 5470,
+    "pct_onpe": 20.289,
+    "pct_calculado": 20.438
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / SAN JERÓNIMO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 39.839% y el cálculo da 40.132%.",
+   "valores": {
+    "votos": 10741,
+    "pct_onpe": 39.839,
+    "pct_calculado": 40.132
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / QUELLOUNO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (5,535) no coincide con totalVotosValidos (4,437). Diferencia: +1,098.",
+   "valores": {
+    "suma_participantes": 5535,
+    "totalVotosValidos": 4437
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / QUELLOUNO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 0.578% y el cálculo da 0.721%.",
+   "valores": {
+    "votos": 32,
+    "pct_onpe": 0.578,
+    "pct_calculado": 0.721
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / QUELLOUNO",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 1.481% y el cálculo da 1.848%.",
+   "valores": {
+    "votos": 82,
+    "pct_onpe": 1.481,
+    "pct_calculado": 1.848
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / QUELLOUNO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 26.522% y el cálculo da 33.085%.",
+   "valores": {
+    "votos": 1468,
+    "pct_onpe": 26.522,
+    "pct_calculado": 33.085
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / QUELLOUNO",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 33.586% y el cálculo da 41.898%.",
+   "valores": {
+    "votos": 1859,
+    "pct_onpe": 33.586,
+    "pct_calculado": 41.898
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / QUELLOUNO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 37.832% y el cálculo da 47.194%.",
+   "valores": {
+    "votos": 2094,
+    "pct_onpe": 37.832,
+    "pct_calculado": 47.194
    }
   }
  ]
