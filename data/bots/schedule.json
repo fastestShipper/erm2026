@@ -48,6 +48,78 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 125,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:33:52.199Z",
+   "ultimaPublicacion": "2026-10-05T10:33:52.199Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:33:52.199Z",
+    "texto": "[DATO ONPE] Corte ONPE de las 05:22. En Mirgas (Antonio Raimondi), alcalde distrital, el primer lugar parcial pasa de País para Todos a Podemos Perú. Va sin nombre por posible error de copia en la fuente. Es un cambio en"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 38,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:33:51.711Z",
+   "ultimaPublicacion": "2026-10-05T10:33:42.806Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:33:42.806Z",
+    "texto": "Guardia 05:30: pasé a Norma una pieza [INFO] de Diario La Región (05/10) sobre disturbios y quema de actas en locales de Loreto. Sin adelanto nuevo a la ONPE. Corte 05:26 (~73 % gobernadores, ~76 % alcaldes)."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 55,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:33:29.277Z",
+   "ultimaPublicacion": "2026-10-05T10:33:29.277Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:33:29.277Z",
+    "texto": "Le pasé a Norma, sin publicar, el intermedio de las 05:22 y el corte de las 05:26: ya van 46 655 de 63 584 actas de gobernador regional contabilizadas. Veinticinco cambios en total en la fuente (sugiero Cumba, Ponto y Mi"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 35,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:33:21.424Z",
+   "ultimaPublicacion": "2026-10-05T10:33:21.424Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:33:21.424Z",
+    "texto": "Le respondí a Norma: sin novedad a las 05:30. Nadie me pasó pieza nueva que verificar."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -66,60 +138,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "activo",
-   "publicaciones": 34,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:32:51.320Z",
-   "ultimaPublicacion": "2026-10-05T10:32:51.320Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:32:51.320Z",
-    "texto": "Reviso piezas de las 05:00–05:30 y el corte ONPE."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 55,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:32:48.366Z",
-   "ultimaPublicacion": "2026-10-05T10:32:48.366Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:32:48.366Z",
-    "texto": "Reviso boletines después del 05:06."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 124,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:32:44.639Z",
-   "ultimaPublicacion": "2026-10-05T10:16:18.226Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:16:18.226Z",
-    "texto": "Posted the 05:06 cut as the new baseline, plus the 05:02 shifts. Gobernador is at 70,46 % of actas and alcaldes at 73,531 %. First place can no longer change in 1 of 25 regions, 15 of 186 provinces and 587 of 1 269 distr"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
@@ -127,9 +145,9 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 21,
+   "publicaciones": 20,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:32:43.266Z",
+   "ultimaActividad": "2026-10-05T10:33:48.890Z",
    "ultimaPublicacion": "2026-10-05T10:05:24.324Z",
    "haciendo": {
     "ts": "2026-10-05T10:05:24.324Z",
@@ -192,24 +210,6 @@
    "silencioMaximoMin": 150
   },
   {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 38,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:32:42.669Z",
-   "ultimaPublicacion": "2026-10-05T09:06:41.320Z",
-   "haciendo": {
-    "ts": "2026-10-05T09:06:41.320Z",
-    "texto": "Arranco la guardia 04:00: corto ONPE y barrido de incidentes y adelantos."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Toño",
    "bot": "Actas",
    "puesto": "Contrastador de actas",
@@ -219,7 +219,7 @@
    "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:32:44.570Z",
+   "ultimaActividad": "2026-10-05T10:33:16.592Z",
    "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
    "haciendo": {
     "ts": "2026-10-05T04:03:32.500Z",
