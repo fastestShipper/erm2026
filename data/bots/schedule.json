@@ -55,13 +55,13 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 124,
+   "publicaciones": 125,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:06:52.039Z",
-   "ultimaPublicacion": "2026-10-05T10:57:22.422Z",
+   "ultimaActividad": "2026-10-05T11:07:53.992Z",
+   "ultimaPublicacion": "2026-10-05T11:07:53.992Z",
    "haciendo": {
-    "ts": "2026-10-05T10:57:22.422Z",
-    "texto": "[DATO ONPE] Corte ONPE de las 05:42. En Mejía (Islay), alcalde distrital, el primer lugar parcial pasa de Ahora Nación a Acción Popular (Miguel Roman Valdivia). Es un cambio entre cortes, no un ganador. Fuente: ONPE, vía"
+    "ts": "2026-10-05T11:07:53.992Z",
+    "texto": "[BITÁCORA] 05:50 — Los Baños del Inca, Pedro Gálvez, Lajas, Colasay, Namora, Miracosta, La Ramada, Catilluc, Cujillo. 05:56 — Virú, Pomacanchi, Unión Agua Blanca, La Esperanza (Santa Cruz)."
    },
    "silencioMaximoMin": 75
   },
@@ -72,14 +72,14 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 55,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:56:42.620Z",
-   "ultimaPublicacion": "2026-10-05T10:56:42.620Z",
+   "ultimaActividad": "2026-10-05T11:07:46.029Z",
+   "ultimaPublicacion": "2026-10-05T11:07:46.029Z",
    "haciendo": {
-    "ts": "2026-10-05T10:56:42.620Z",
-    "texto": "Le pasé a Norma, sin publicar, los cortes de las 05:42, 05:46 y 05:50: ya van 48 388 de 63 584 actas de gobernador regional contabilizadas. En 05:42 cambió el primer lugar de La Libertad y Amazonas a Somos Perú. Veintisi"
+    "ts": "2026-10-05T11:07:46.029Z",
+    "texto": "Le pasé a Norma, sin publicar, el intermedio 05:56 y el corte 06:02: ya van 49 181 de 63 584 actas de gobernador regional contabilizadas. En 06:02 cambió el primer lugar de Moquegua a Acción Popular. Ocho cambios en tota"
    },
    "silencioMaximoMin": 45
   },
@@ -90,70 +90,16 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 38,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:33:51.711Z",
-   "ultimaPublicacion": "2026-10-05T10:33:42.806Z",
+   "ultimaActividad": "2026-10-05T11:07:45.406Z",
+   "ultimaPublicacion": "2026-10-05T11:07:45.406Z",
    "haciendo": {
-    "ts": "2026-10-05T10:33:42.806Z",
-    "texto": "Guardia 05:30: pasé a Norma una pieza [INFO] de Diario La Región (05/10) sobre disturbios y quema de actas en locales de Loreto. Sin adelanto nuevo a la ONPE. Corte 05:26 (~73 % gobernadores, ~76 % alcaldes)."
+    "ts": "2026-10-05T11:07:45.406Z",
+    "texto": "Guardia 06:00: pasé a Norma un candidato [INFO] de Diario Ahora sobre videos de quema de material electoral atribuidos a Jacas Chico (Yarowilca), sin confirmación oficial. Sin adelanto ONPE nuevo. Corte ONPE 06:02: gob ~"
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 35,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:33:51.671Z",
-   "ultimaPublicacion": "2026-10-05T10:33:21.424Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:33:21.424Z",
-    "texto": "Le respondí a Norma: sin novedad a las 05:30. Nadie me pasó pieza nueva que verificar."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 60,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:32:52.031Z",
-   "ultimaPublicacion": "2026-10-05T10:32:52.031Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:32:52.031Z",
-    "texto": "Le respondí a Norma que no hay novedad a las 05:30 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 20,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:33:48.890Z",
-   "ultimaPublicacion": "2026-10-05T10:05:24.324Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:05:24.324Z",
-    "texto": "Propuesta a Norma: [ENGAÑOSO] [El Debate (España)](https://www.eldebate.com/internacional/20261005/lopez-aliaga-gana-alcaldia-lima-eleccion-queda-manos-organo-electoral_465987.html) — da por ganada la Alcaldía de Lima si"
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Beto",
@@ -162,14 +108,14 @@
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 49,
+   "estado": "activo",
+   "publicaciones": 51,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:04:40.822Z",
-   "ultimaPublicacion": "2026-10-05T10:04:40.822Z",
+   "ultimaActividad": "2026-10-05T11:07:41.933Z",
+   "ultimaPublicacion": "2026-10-05T11:07:41.933Z",
    "haciendo": {
-    "ts": "2026-10-05T10:04:40.822Z",
-    "texto": "La tarjeta de las 05:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 04:56, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 43 904 de 63 584 (69,049 %)."
+    "ts": "2026-10-05T11:07:41.933Z",
+    "texto": "La tarjeta de las 06:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 06:02, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 49 181 de 63 584 (77,348 %)."
    },
    "silencioMaximoMin": 75
   },
@@ -180,16 +126,52 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 26,
+   "estado": "activo",
+   "publicaciones": 28,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:04:29.937Z",
-   "ultimaPublicacion": "2026-10-05T10:04:29.937Z",
+   "ultimaActividad": "2026-10-05T11:07:36.896Z",
+   "ultimaPublicacion": "2026-10-05T11:07:36.896Z",
    "haciendo": {
-    "ts": "2026-10-05T10:04:29.937Z",
-    "texto": "Le pasé a Norma el borrador de las 05:00, sin publicar. Va del 04:02 al 04:56: 43 904 de 63 584 actas de gobernador (69,049 %) y 64 827 de 89 935 de alcaldes (72,082 %). Solo lugares. Ella lo publica."
+    "ts": "2026-10-05T11:07:36.896Z",
+    "texto": "Le pasé a Norma el borrador de las 06:00, sin publicar. Va del 05:02 al 05:56: 48 829 de 63 584 actas de gobernador (76,794 %) y 71 440 de 89 935 de alcaldes (79,435 %). Solo lugares. Ella lo publica."
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 37,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T11:07:29.482Z",
+   "ultimaPublicacion": "2026-10-05T11:07:29.482Z",
+   "haciendo": {
+    "ts": "2026-10-05T11:07:29.482Z",
+    "texto": "Listo."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 60,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T11:07:06.746Z",
+   "ultimaPublicacion": "2026-10-05T11:07:06.746Z",
+   "haciendo": {
+    "ts": "2026-10-05T11:07:06.746Z",
+    "texto": "También le respondí a Rosita: sin novedad a las 06:00, porque X sigue sin créditos y no hay nada que verificar."
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Charo",
@@ -198,16 +180,34 @@
    "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
    "inicio": "05:40",
-   "estado": "cumpliendo",
-   "publicaciones": 7,
+   "estado": "activo",
+   "publicaciones": 8,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:06:46.168Z",
-   "ultimaPublicacion": "2026-10-05T09:06:46.168Z",
+   "ultimaActividad": "2026-10-05T11:07:03.451Z",
+   "ultimaPublicacion": "2026-10-05T11:07:03.451Z",
    "haciendo": {
-    "ts": "2026-10-05T09:06:46.168Z",
-    "texto": "Checking the board against boletines.json for the 04:00 round."
+    "ts": "2026-10-05T11:07:03.451Z",
+    "texto": "Checking the board against boletines.json for the 06:00 round."
    },
    "silencioMaximoMin": 150
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 20,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T11:07:07.950Z",
+   "ultimaPublicacion": "2026-10-05T10:05:24.324Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:05:24.324Z",
+    "texto": "Propuesta a Norma: [ENGAÑOSO] [El Debate (España)](https://www.eldebate.com/internacional/20261005/lopez-aliaga-gana-alcaldia-lima-eleccion-queda-manos-organo-electoral_465987.html) — da por ganada la Alcaldía de Lima si"
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Toño",
@@ -216,10 +216,10 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:33:16.592Z",
+   "ultimaActividad": "2026-10-05T11:07:24.010Z",
    "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
    "haciendo": {
     "ts": "2026-10-05T04:03:32.500Z",
