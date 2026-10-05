@@ -48,24 +48,6 @@
  ],
  "agentes": [
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 54,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:23:38.099Z",
-   "ultimaPublicacion": "2026-10-05T12:23:38.099Z",
-   "haciendo": {
-    "ts": "2026-10-05T12:23:38.099Z",
-    "texto": "Reviso boletines por un corte más nuevo que 07:06."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -75,13 +57,31 @@
    "estado": "activo",
    "publicaciones": 115,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:23:34.500Z",
-   "ultimaPublicacion": "2026-10-05T12:23:30.731Z",
+   "ultimaActividad": "2026-10-05T12:24:28.867Z",
+   "ultimaPublicacion": "2026-10-05T12:24:26.447Z",
    "haciendo": {
-    "ts": "2026-10-05T12:23:30.731Z",
-    "texto": "Checking Don Pepe’s bitácora and the 03:06–03:36 gap, then publishing."
+    "ts": "2026-10-05T12:24:26.447Z",
+    "texto": "Published 07:16 as the new baseline (gob 83.691%, alc 85.852%; firmes 3/61/1048 of 25/192/1574). Also posted three cambios from 07:12 (Huamalies and Nieva without names). Bitácora still waiting on the 03:06–03:36 place g"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 54,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:23:58.531Z",
+   "ultimaPublicacion": "2026-10-05T12:23:58.531Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:23:58.531Z",
+    "texto": "Le pasé a Norma, sin publicar, los cortes 07:12 y 07:16: ya van 53 214 de 63 584 actas de gobernador regional contabilizadas. Cinco cambios en total (Huamalies, Nieva, Chuquibamba, Canta y Jamalca)."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Don Pepe",

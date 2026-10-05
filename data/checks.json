@@ -1,6 +1,113 @@
 {
- "total": 419,
+ "total": 391,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (415,197) no coincide con totalVotosValidos (414,983). Diferencia: +214.",
+   "valores": {
+    "suma_participantes": 415197,
+    "totalVotosValidos": 414983
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · TACNA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (215,182) no coincide con totalVotosValidos (212,607). Diferencia: +2,575.",
+   "valores": {
+    "suma_participantes": 215182,
+    "totalVotosValidos": 212607
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · TACNA",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 6.915% y el cálculo da 6.998%.",
+   "valores": {
+    "votos": 14879,
+    "pct_onpe": 6.915,
+    "pct_calculado": 6.998
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · TACNA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 7.784% y el cálculo da 7.878%.",
+   "valores": {
+    "votos": 16750,
+    "pct_onpe": 7.784,
+    "pct_calculado": 7.878
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · TACNA",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO INDEPENDIENTE REGIONAL FUERZA TACNA: ONPE publica 8.781% y el cálculo da 8.888%.",
+   "valores": {
+    "votos": 18896,
+    "pct_onpe": 8.781,
+    "pct_calculado": 8.888
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · TACNA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 13.629% y el cálculo da 13.794%.",
+   "valores": {
+    "votos": 29328,
+    "pct_onpe": 13.629,
+    "pct_calculado": 13.794
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · TACNA",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 17.602% y el cálculo da 17.815%.",
+   "valores": {
+    "votos": 37876,
+    "pct_onpe": 17.602,
+    "pct_calculado": 17.815
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · TACNA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 29.312% y el cálculo da 29.667%.",
+   "valores": {
+    "votos": 63075,
+    "pct_onpe": 29.312,
+    "pct_calculado": 29.667
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (172,175) no coincide con totalVotosValidos (171,872). Diferencia: +303.",
+   "valores": {
+    "suma_participantes": 172175,
+    "totalVotosValidos": 171872
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.364% y el cálculo da 35.426%.",
+   "valores": {
+    "votos": 60888,
+    "pct_onpe": 35.364,
+    "pct_calculado": 35.426
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / CHOTA / CHALAMARCA",
@@ -139,136 +246,6 @@
     "votos": 14248,
     "pct_onpe": 37.384,
     "pct_calculado": 37.981
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / HUAYLLAPAMPA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (239) no coincide con totalVotosValidos (120). Diferencia: +119.",
-   "valores": {
-    "suma_participantes": 239,
-    "totalVotosValidos": 120
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / HUAYLLAPAMPA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 0.418% y el cálculo da 0.833%.",
-   "valores": {
-    "votos": 1,
-    "pct_onpe": 0.418,
-    "pct_calculado": 0.833
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / HUAYLLAPAMPA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 4.603% y el cálculo da 9.167%.",
-   "valores": {
-    "votos": 11,
-    "pct_onpe": 4.603,
-    "pct_calculado": 9.167
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / HUAYLLAPAMPA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 6.276% y el cálculo da 12.500%.",
-   "valores": {
-    "votos": 15,
-    "pct_onpe": 6.276,
-    "pct_calculado": 12.5
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / HUAYLLAPAMPA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMÓCRATA VERDE: ONPE publica 28.87% y el cálculo da 57.500%.",
-   "valores": {
-    "votos": 69,
-    "pct_onpe": 28.87,
-    "pct_calculado": 57.5
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / HUAYLLAPAMPA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 59.833% y el cálculo da 119.167%.",
-   "valores": {
-    "votos": 143,
-    "pct_onpe": 59.833,
-    "pct_calculado": 119.167
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / LLACLLIN",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (662) no coincide con totalVotosValidos (490). Diferencia: +172.",
-   "valores": {
-    "suma_participantes": 662,
-    "totalVotosValidos": 490
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / LLACLLIN",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 4.834% y el cálculo da 6.531%.",
-   "valores": {
-    "votos": 32,
-    "pct_onpe": 4.834,
-    "pct_calculado": 6.531
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / LLACLLIN",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 8.157% y el cálculo da 11.020%.",
-   "valores": {
-    "votos": 54,
-    "pct_onpe": 8.157,
-    "pct_calculado": 11.02
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / LLACLLIN",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 8.912% y el cálculo da 12.041%.",
-   "valores": {
-    "votos": 59,
-    "pct_onpe": 8.912,
-    "pct_calculado": 12.041
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / LLACLLIN",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMÓCRATA VERDE: ONPE publica 29.305% y el cálculo da 39.592%.",
-   "valores": {
-    "votos": 194,
-    "pct_onpe": 29.305,
-    "pct_calculado": 39.592
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / RECUAY / LLACLLIN",
-   "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 48.792% y el cálculo da 65.918%.",
-   "valores": {
-    "votos": 323,
-    "pct_onpe": 48.792,
-    "pct_calculado": 65.918
    }
   },
   {
@@ -2584,211 +2561,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / CARABAYA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (30,521) no coincide con totalVotosValidos (30,384). Diferencia: +137.",
-   "valores": {
-    "suma_participantes": 30521,
-    "totalVotosValidos": 30384
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / CARABAYA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 22.155% y el cálculo da 22.255%.",
-   "valores": {
-    "votos": 6762,
-    "pct_onpe": 22.155,
-    "pct_calculado": 22.255
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / CARABAYA",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 29.262% y el cálculo da 29.394%.",
-   "valores": {
-    "votos": 8931,
-    "pct_onpe": 29.262,
-    "pct_calculado": 29.394
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / CARABAYA",
-   "severidad": "revisar",
-   "detalle": "ASI - JUNTOS POR EL PERÚ: ONPE publica 40.035% y el cálculo da 40.215%.",
-   "valores": {
-    "votos": 12219,
-    "pct_onpe": 40.035,
-    "pct_calculado": 40.215
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / HUANCANÉ",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (40,615) no coincide con totalVotosValidos (40,407). Diferencia: +208.",
-   "valores": {
-    "suma_participantes": 40615,
-    "totalVotosValidos": 40407
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / HUANCANÉ",
-   "severidad": "revisar",
-   "detalle": "ASI - JUNTOS POR EL PERÚ: ONPE publica 21.677% y el cálculo da 21.788%.",
-   "valores": {
-    "votos": 8804,
-    "pct_onpe": 21.677,
-    "pct_calculado": 21.788
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / HUANCANÉ",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 22.46% y el cálculo da 22.575%.",
-   "valores": {
-    "votos": 9122,
-    "pct_onpe": 22.46,
-    "pct_calculado": 22.575
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / HUANCANÉ",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 30.947% y el cálculo da 31.106%.",
-   "valores": {
-    "votos": 12569,
-    "pct_onpe": 30.947,
-    "pct_calculado": 31.106
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / MELGAR",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (39,951) no coincide con totalVotosValidos (39,561). Diferencia: +390.",
-   "valores": {
-    "suma_participantes": 39951,
-    "totalVotosValidos": 39561
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / MELGAR",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 9.764% y el cálculo da 9.861%.",
-   "valores": {
-    "votos": 3901,
-    "pct_onpe": 9.764,
-    "pct_calculado": 9.861
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / MELGAR",
-   "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 23.409% y el cálculo da 23.639%.",
-   "valores": {
-    "votos": 9352,
-    "pct_onpe": 23.409,
-    "pct_calculado": 23.639
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / MELGAR",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 25.611% y el cálculo da 25.864%.",
-   "valores": {
-    "votos": 10232,
-    "pct_onpe": 25.611,
-    "pct_calculado": 25.864
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / MELGAR",
-   "severidad": "revisar",
-   "detalle": "ASI - JUNTOS POR EL PERÚ: ONPE publica 25.774% y el cálculo da 26.028%.",
-   "valores": {
-    "votos": 10297,
-    "pct_onpe": 25.774,
-    "pct_calculado": 26.028
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / SANDIA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (16,759) no coincide con totalVotosValidos (15,487). Diferencia: +1,272.",
-   "valores": {
-    "suma_participantes": 16759,
-    "totalVotosValidos": 15487
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / SANDIA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 3.467% y el cálculo da 3.752%.",
-   "valores": {
-    "votos": 581,
-    "pct_onpe": 3.467,
-    "pct_calculado": 3.752
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / SANDIA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 14.333% y el cálculo da 15.510%.",
-   "valores": {
-    "votos": 2402,
-    "pct_onpe": 14.333,
-    "pct_calculado": 15.51
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / SANDIA",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 20.18% y el cálculo da 21.838%.",
-   "valores": {
-    "votos": 3382,
-    "pct_onpe": 20.18,
-    "pct_calculado": 21.838
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / SANDIA",
-   "severidad": "revisar",
-   "detalle": "SALVEMOS AL PERÚ: ONPE publica 29.578% y el cálculo da 32.007%.",
-   "valores": {
-    "votos": 4957,
-    "pct_onpe": 29.578,
-    "pct_calculado": 32.007
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / SANDIA",
-   "severidad": "revisar",
-   "detalle": "ASI - JUNTOS POR EL PERÚ: ONPE publica 32.442% y el cálculo da 35.107%.",
-   "valores": {
-    "votos": 5437,
-    "pct_onpe": 32.442,
-    "pct_calculado": 35.107
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · SAN MARTÍN / BELLAVISTA",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (25,508) no coincide con totalVotosValidos (25,363). Diferencia: +145.",
@@ -3250,82 +3022,6 @@
     "votos": 9096,
     "pct_onpe": 39.03,
     "pct_calculado": 40.351
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (142,410) no coincide con totalVotosValidos (139,797). Diferencia: +2,613.",
-   "valores": {
-    "suma_participantes": 142410,
-    "totalVotosValidos": 139797
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 4.537% y el cálculo da 4.622%.",
-   "valores": {
-    "votos": 6461,
-    "pct_onpe": 4.537,
-    "pct_calculado": 4.622
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "BATALLA PERÚ: ONPE publica 5.129% y el cálculo da 5.225%.",
-   "valores": {
-    "votos": 7304,
-    "pct_onpe": 5.129,
-    "pct_calculado": 5.225
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 9.195% y el cálculo da 9.367%.",
-   "valores": {
-    "votos": 13095,
-    "pct_onpe": 9.195,
-    "pct_calculado": 9.367
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 16.296% y el cálculo da 16.600%.",
-   "valores": {
-    "votos": 23207,
-    "pct_onpe": 16.296,
-    "pct_calculado": 16.6
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 24.789% y el cálculo da 25.252%.",
-   "valores": {
-    "votos": 35302,
-    "pct_onpe": 24.789,
-    "pct_calculado": 25.252
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "LIBERTAD POPULAR: ONPE publica 31.206% y el cálculo da 31.789%.",
-   "valores": {
-    "votos": 44440,
-    "pct_onpe": 31.206,
-    "pct_calculado": 31.789
    }
   },
   {
