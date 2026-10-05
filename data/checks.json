@@ -1,6 +1,90 @@
 {
- "total": 71,
+ "total": 79,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · AYACUCHO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (288,505) no coincide con totalVotosValidos (286,198). Diferencia: +2,307.",
+   "valores": {
+    "suma_participantes": 288505,
+    "totalVotosValidos": 286198
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AYACUCHO",
+   "severidad": "revisar",
+   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 19.811% y el cálculo da 19.971%.",
+   "valores": {
+    "votos": 57156,
+    "pct_onpe": 19.811,
+    "pct_calculado": 19.971
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AYACUCHO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 32.716% y el cálculo da 32.980%.",
+   "valores": {
+    "votos": 94387,
+    "pct_onpe": 32.716,
+    "pct_calculado": 32.98
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AYACUCHO",
+   "severidad": "revisar",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 36.634% y el cálculo da 36.929%.",
+   "valores": {
+    "votos": 105690,
+    "pct_onpe": 36.634,
+    "pct_calculado": 36.929
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · CAJAMARCA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (732,400) no coincide con totalVotosValidos (732,080). Diferencia: +320.",
+   "valores": {
+    "suma_participantes": 732400,
+    "totalVotosValidos": 732080
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · CUSCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (666,709) no coincide con totalVotosValidos (666,388). Diferencia: +321.",
+   "valores": {
+    "suma_participantes": 666709,
+    "totalVotosValidos": 666388
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · HUÁNUCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (363,245) no coincide con totalVotosValidos (362,320). Diferencia: +925.",
+   "valores": {
+    "suma_participantes": 363245,
+    "totalVotosValidos": 362320
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · HUÁNUCO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 31.84% y el cálculo da 31.921%.",
+   "valores": {
+    "votos": 115657,
+    "pct_onpe": 31.84,
+    "pct_calculado": 31.921
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
