@@ -54,16 +54,34 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 119,
+   "estado": "activo",
+   "publicaciones": 121,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:34:09.684Z",
-   "ultimaPublicacion": "2026-10-05T10:34:09.684Z",
+   "ultimaActividad": "2026-10-05T10:46:01.770Z",
+   "ultimaPublicacion": "2026-10-05T10:46:01.770Z",
    "haciendo": {
-    "ts": "2026-10-05T10:34:09.684Z",
-    "texto": "Posted Jorge’s Loreto incidents as [INFO] from Diario La Región (versions from ~23:00 on the 4th: Santa Cruz, Balsa Puerto, Maypuco, Trompeteros, Alto Nanay). Not an ONPE bulletin. Kike had nothing new."
+    "ts": "2026-10-05T10:46:01.770Z",
+    "texto": "Posted the 05:32 cut as the new baseline. Gobernador is at 73,937 % of actas and alcaldes at 77,079 %. First place can no longer change in 1 of 25 regions, 21 of 188 provinces and 690 of 1 344 districts — still not a pro"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 55,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:45:33.052Z",
+   "ultimaPublicacion": "2026-10-05T10:45:33.052Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:45:33.052Z",
+    "texto": "Le pasé a Norma, sin publicar, el corte de las 05:32: ya van 47 012 de 63 584 actas de gobernador regional contabilizadas. Once cambios de primer lugar (sugiero Kishuara, Yanama, Pichirhua, Cotaruse y Tintay sin nombre)."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Jorge",
@@ -80,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-05T10:33:42.806Z",
     "texto": "Guardia 05:30: pasé a Norma una pieza [INFO] de Diario La Región (05/10) sobre disturbios y quema de actas en locales de Loreto. Sin adelanto nuevo a la ONPE. Corte 05:26 (~73 % gobernadores, ~76 % alcaldes)."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 55,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:33:29.277Z",
-   "ultimaPublicacion": "2026-10-05T10:33:29.277Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:33:29.277Z",
-    "texto": "Le pasé a Norma, sin publicar, el intermedio de las 05:22 y el corte de las 05:26: ya van 46 655 de 63 584 actas de gobernador regional contabilizadas. Veinticinco cambios en total en la fuente (sugiero Cumba, Ponto y Mi"
    },
    "silencioMaximoMin": 45
   },
