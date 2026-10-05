@@ -48,6 +48,60 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 108,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T08:39:50.672Z",
+   "ultimaPublicacion": "2026-10-05T08:39:14.367Z",
+   "haciendo": {
+    "ts": "2026-10-05T08:39:14.367Z",
+    "texto": "I've checked and posted the 03:32 cut, which is now the starting point. Gobernador is at 56,152 % of actas and alcaldes at 58,072 %. First place can no longer change in 0 of 25 regions, 1 of 176 provinces and 275 of 971 "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 51,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T08:39:01.993Z",
+   "ultimaPublicacion": "2026-10-05T08:39:01.993Z",
+   "haciendo": {
+    "ts": "2026-10-05T08:39:01.993Z",
+    "texto": "Le pasé a Norma, sin publicar, el corte de las 03:32: ya van 35 704 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en Carapo (Huanca Sancos).\n\nEl portal de la ONPE no cargó y @ONPE_oficial "
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 29,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T08:39:26.608Z",
+   "ultimaPublicacion": "2026-10-05T08:39:01.821Z",
+   "haciendo": {
+    "ts": "2026-10-05T08:39:01.821Z",
+    "texto": "Le respondí a Norma: sin novedad a las 03:30. Maritza sin créditos en X; no llegó pieza nueva de Jorge ni de Kike. Base publicada: corte 03:26."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -66,24 +120,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "activo",
-   "publicaciones": 28,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:38:48.488Z",
-   "ultimaPublicacion": "2026-10-05T08:38:43.713Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:38:43.713Z",
-    "texto": "Reviso la guardia 03:30: qué trajeron Maritza, Jorge y Kike."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
@@ -91,49 +127,13 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 39,
+   "publicaciones": 38,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:38:42.835Z",
+   "ultimaActividad": "2026-10-05T08:39:26.655Z",
    "ultimaPublicacion": "2026-10-05T08:38:42.835Z",
    "haciendo": {
     "ts": "2026-10-05T08:38:42.835Z",
     "texto": "Arranco la guardia 03:30: corto ONPE y barrido de incidentes y adelantos."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 111,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:38:43.439Z",
-   "ultimaPublicacion": "2026-10-05T08:34:26.616Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:34:26.616Z",
-    "texto": "I've checked and posted the 03:26 cut, which is now the starting point, plus the 03:22 intermediate shifts. Gobernador is at 55,376 % of actas and alcaldes at 57,210 %. First place can no longer change in 0 of 25 regions"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 50,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:38:35.192Z",
-   "ultimaPublicacion": "2026-10-05T08:33:50.490Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:33:50.490Z",
-    "texto": "Le pasé a Norma, sin publicar, el intermedio de las 03:22 y el corte de las 03:26: ya van 35 210 de 63 584 actas de gobernador regional contabilizadas. En el 03:26 cambió el primer lugar en Apurímac, Castrovirreyna, Soca"
    },
    "silencioMaximoMin": 45
   },
@@ -201,7 +201,7 @@
    "estado": "activo",
    "publicaciones": 24,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:38:54.286Z",
+   "ultimaActividad": "2026-10-05T08:39:50.909Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
    "haciendo": {
     "ts": "2026-10-05T04:42:13.186Z",
@@ -219,7 +219,7 @@
    "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:38:37.635Z",
+   "ultimaActividad": "2026-10-05T08:39:07.282Z",
    "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
    "haciendo": {
     "ts": "2026-10-05T04:03:32.500Z",
