@@ -48,6 +48,78 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 121,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T09:08:00.003Z",
+   "ultimaPublicacion": "2026-10-05T09:08:00.003Z",
+   "haciendo": {
+    "ts": "2026-10-05T09:08:00.003Z",
+    "texto": "[BITÁCORA] 03:12. Gobernador 33 661 (52,939 %). Alcaldes 49 287 (54,803 %). Cambió en Mariscal Cáceres (San Martín), Tarica (Huaraz), Cajay (Huari), Huantar (Huari), Mato (Huaylas) y San Pedro (Ocros)."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 48,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T09:07:38.588Z",
+   "ultimaPublicacion": "2026-10-05T09:07:38.588Z",
+   "haciendo": {
+    "ts": "2026-10-05T09:07:38.588Z",
+    "texto": "La tarjeta de las 04:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 04:02, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 38 872 de 63 584 (61,135 %)."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 52,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T09:07:23.167Z",
+   "ultimaPublicacion": "2026-10-05T09:07:23.167Z",
+   "haciendo": {
+    "ts": "2026-10-05T09:07:23.167Z",
+    "texto": "Le pasé a Norma, sin publicar, los cortes de las 03:46, 03:52, 03:56 y 04:02: ya van 38 872 de 63 584 actas de gobernador regional contabilizadas. En el 04:02 cambió el primer lugar en siete contiendas.\n\nEl portal de la "
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 24,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T09:07:12.533Z",
+   "ultimaPublicacion": "2026-10-05T09:07:12.533Z",
+   "haciendo": {
+    "ts": "2026-10-05T09:07:12.533Z",
+    "texto": "I sent Norma the unpublished draft of the 4:00 a.m. log. It runs from after 02:56 through the 03:56 count. At 03:56: 38 395 of 63 584 tallies for regional governor (60.385 %) and 56 155 of 89 935 for mayors (62.44 %). Pl"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
@@ -62,24 +134,6 @@
    "haciendo": {
     "ts": "2026-10-05T09:06:55.491Z",
     "texto": "Le respondí a Norma: sin novedad a las 04:00. Desde las 03:30 no llegó pieza nueva de Maritza, Jorge ni Kike. Base publicada: corte 03:42."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 23,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:06:48.837Z",
-   "ultimaPublicacion": "2026-10-05T09:06:48.837Z",
-   "haciendo": {
-    "ts": "2026-10-05T09:06:48.837Z",
-    "texto": "Armando el borrador de las 04:00: leo los cortes después del 02:56."
    },
    "silencioMaximoMin": 75
   },
@@ -120,42 +174,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 47,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:06:42.805Z",
-   "ultimaPublicacion": "2026-10-05T09:06:42.805Z",
-   "haciendo": {
-    "ts": "2026-10-05T09:06:42.805Z",
-    "texto": "Releo el boletín y armo la tarjeta de las 04:00 solo como [INTERNO], sin publicarla."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 51,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:06:42.347Z",
-   "ultimaPublicacion": "2026-10-05T09:06:42.347Z",
-   "haciendo": {
-    "ts": "2026-10-05T09:06:42.347Z",
-    "texto": "Reviso boletines y el portal para la guardia de las 04:00."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
@@ -172,24 +190,6 @@
     "texto": "Arranco la guardia 04:00: corto ONPE y barrido de incidentes y adelantos."
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 106,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:06:53.932Z",
-   "ultimaPublicacion": "2026-10-05T08:50:36.985Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:50:36.985Z",
-    "texto": "I've checked and posted the 03:42 cut, which is now the starting point, plus the 03:36 intermediate shifts. Gobernador is at 58,063 % of actas and alcaldes at 59,861 %. First place can no longer change in 0 of 25 regions"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Kike",
@@ -219,7 +219,7 @@
    "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:06:40.866Z",
+   "ultimaActividad": "2026-10-05T09:07:22.313Z",
    "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
    "haciendo": {
     "ts": "2026-10-05T04:03:32.500Z",
