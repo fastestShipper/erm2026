@@ -1,5 +1,5 @@
 {
- "total": 83,
+ "total": 79,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -20,48 +20,6 @@
     "votos": 71910,
     "pct_onpe": 35.238,
     "pct_calculado": 35.308
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · CAJAMARCA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (712,899) no coincide con totalVotosValidos (712,501). Diferencia: +398.",
-   "valores": {
-    "suma_participantes": 712899,
-    "totalVotosValidos": 712501
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · HUANCAVELICA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (212,910) no coincide con totalVotosValidos (212,347). Diferencia: +563.",
-   "valores": {
-    "suma_participantes": 212910,
-    "totalVotosValidos": 212347
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · HUANCAVELICA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 31.732% y el cálculo da 31.816%.",
-   "valores": {
-    "votos": 67561,
-    "pct_onpe": 31.732,
-    "pct_calculado": 31.816
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · HUANCAVELICA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 33.631% y el cálculo da 33.720%.",
-   "valores": {
-    "votos": 71603,
-    "pct_onpe": 33.631,
-    "pct_calculado": 33.72
    }
   },
   {
