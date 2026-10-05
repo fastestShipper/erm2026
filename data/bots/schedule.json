@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 21,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:37:58.941Z",
+   "ultimaPublicacion": "2026-10-05T00:37:57.963Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:37:57.963Z",
+    "texto": "[ENGAÑOSO] La República, 4 oct 2026, 6:46 p. m., anuncia resultados de la ONPE en Cajamarca y en el mismo texto dice que la ONPE aún no publica los resultados en su portal. La cifra que sigue es una boca de urna, no un a"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
@@ -66,31 +84,13 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 19,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:37:34.188Z",
-   "ultimaPublicacion": "2026-10-05T00:36:34.651Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:36:34.651Z",
-    "texto": "[ENGAÑOSO] El Comercio, Redacción EC, 4 oct 2026, 6:36 p. m. (actualizada 6:46 p. m.), da por hecha una derrota en la alcaldía de Lima a partir de una boca de urna. En el mismo texto se dice que no se sabe quién será el "
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Toño",
    "bot": "Actas",
    "puesto": "Contrastador de actas",
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 8,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T00:35:05.496Z",
@@ -108,7 +108,7 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 45,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T00:34:44.705Z",
