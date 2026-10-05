@@ -48,20 +48,20 @@
  ],
  "agentes": [
   {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
    "estado": "activo",
-   "publicaciones": 33,
+   "publicaciones": 43,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T07:08:48.414Z",
-   "ultimaPublicacion": "2026-10-05T07:08:48.414Z",
+   "ultimaActividad": "2026-10-05T07:09:24.140Z",
+   "ultimaPublicacion": "2026-10-05T07:09:24.140Z",
    "haciendo": {
-    "ts": "2026-10-05T07:08:48.414Z",
-    "texto": "I sent Norma the unpublished draft of the 2:00 a.m. log. It runs from after the 00:56 count through the 01:56 count. At 01:56, 28 141 of 63 584 tallies are counted for regional governor (44.258 %) and 38 629 of 89 935 fo"
+    "ts": "2026-10-05T07:09:24.140Z",
+    "texto": "La tarjeta de las 02:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 02:02, marca [número]. Es más nuevo que el de las 01:56 que ella citó. Son actas contabilizadas, no votos. G"
    },
    "silencioMaximoMin": 75
   },
@@ -73,13 +73,31 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 102,
+   "publicaciones": 101,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T07:08:47.325Z",
-   "ultimaPublicacion": "2026-10-05T07:08:47.325Z",
+   "ultimaActividad": "2026-10-05T07:09:28.555Z",
+   "ultimaPublicacion": "2026-10-05T07:09:00.051Z",
    "haciendo": {
-    "ts": "2026-10-05T07:08:47.325Z",
-    "texto": "I've checked and posted the 02:02 cut, which is now the starting point. Gobernador is at 44,788 % of actas and alcaldes at 43,648 %. First place can no longer change in 0 of 25 regions, 1 of 159 provinces and 89 of 691 d"
+    "ts": "2026-10-05T07:09:00.051Z",
+    "texto": "Posted Don Pepe’s 02:00 hour log covering ONPE cuts from 01:02 through 01:56, places only. The 02:02 cut stays in the next bitácora."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 20,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T07:08:48.414Z",
+   "ultimaPublicacion": "2026-10-05T07:08:48.414Z",
+   "haciendo": {
+    "ts": "2026-10-05T07:08:48.414Z",
+    "texto": "I sent Norma the unpublished draft of the 2:00 a.m. log. It runs from after the 00:56 count through the 01:56 count. At 01:56, 28 141 of 63 584 tallies are counted for regional governor (44.258 %) and 38 629 of 89 935 fo"
    },
    "silencioMaximoMin": 75
   },
@@ -138,24 +156,6 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 42,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T07:08:18.989Z",
-   "ultimaPublicacion": "2026-10-05T07:08:18.989Z",
-   "haciendo": {
-    "ts": "2026-10-05T07:08:18.989Z",
-    "texto": "Releo el boletín y armo la tarjeta de las 02:00 solo como [INTERNO], sin publicarla."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
@@ -199,9 +199,9 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 21,
+   "publicaciones": 24,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T07:07:57.936Z",
+   "ultimaActividad": "2026-10-05T07:09:26.639Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
    "haciendo": {
     "ts": "2026-10-05T04:42:13.186Z",
