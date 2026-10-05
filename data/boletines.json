@@ -2,6 +2,91 @@
  "nota": "Boletines generados por programa con los datos oficiales de la ONPE (sin IA). No son proyecciones.",
  "items": [
   {
+   "corte": 1791170528782,
+   "hora": "22:22",
+   "generado": "2026-10-04T22:25:57-05:00",
+   "avance": [
+    {
+     "id": 1,
+     "eleccion": "Gobernador regional",
+     "actasPct": 18.113,
+     "contabilizadas": 11517,
+     "totalActas": 63584,
+     "participacion": 13.962,
+     "antesPct": 17.163
+    },
+    {
+     "id": 302,
+     "eleccion": "Alcalde provincial",
+     "actasPct": 8.943,
+     "contabilizadas": 8043,
+     "totalActas": 89935,
+     "participacion": 6.814,
+     "antesPct": 8.175
+    },
+    {
+     "id": 303,
+     "eleccion": "Alcalde distrital",
+     "actasPct": 8.943,
+     "contabilizadas": 8043,
+     "totalActas": 89935,
+     "participacion": 6.814,
+     "antesPct": 8.175
+    }
+   ],
+   "cambios": [
+    {
+     "eleccion": "Gobernador regional",
+     "lugar": "Puno",
+     "antes": "PARTIDO PAÍS PARA TODOS",
+     "ahora": "AHORA NACIÓN - AN",
+     "candidato": "EDUARDO QUISPE PANDIA"
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "lugar": "Urubamba (Cusco)",
+     "antes": "PROGRESEMOS",
+     "ahora": "AHORA NACIÓN - AN",
+     "candidato": "LEOCADIO MADERA GUARDANAULA"
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "lugar": "Lucanas (Ayacucho)",
+     "antes": "PODEMOS PERÚ",
+     "ahora": "FUERZA POPULAR",
+     "candidato": "ROFILIO T NEYRA HUAMANI"
+    }
+   ],
+   "cambiosTotal": 3,
+   "firmes": [
+    {
+     "eleccion": "Gobernador regional",
+     "nivel": 1,
+     "firmes": 0,
+     "conDatos": 25
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "nivel": 2,
+     "firmes": 0,
+     "conDatos": 92
+    },
+    {
+     "eleccion": "Alcalde distrital",
+     "nivel": 3,
+     "firmes": 1,
+     "conDatos": 135
+    }
+   ],
+   "observaciones": {
+    "totales": 767,
+    "actasRevisadas": 0,
+    "actasImportantes": 0,
+    "actasRevisar": 0
+   },
+   "texto": "Corte ONPE de las 22:22. Actas contadas: Gobernador regional 18.1% (antes 17.2%) · Alcalde provincial 8.9% (antes 8.2%) · Alcalde distrital 8.9% (antes 8.2%). Cambió el primer lugar en 3 contiendas: Puno, gobernador regional; Urubamba (Cusco), alcalde provincial; Lucanas (Ayacucho), alcalde provincial. El primer lugar ya no puede cambiar con las actas que faltan en 1 de 135 distritos. Revisión: 767 diferencias en los totales."
+  },
+  {
    "corte": 1791170280520,
    "hora": "22:18",
    "generado": "2026-10-04T22:20:45-05:00",
