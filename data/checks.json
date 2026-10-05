@@ -1,5 +1,5 @@
 {
- "total": 71,
+ "total": 88,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -502,16 +502,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / HUANCAYO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (309,182) no coincide con totalVotosValidos (308,986). Diferencia: +196.",
-   "valores": {
-    "suma_participantes": 309182,
-    "totalVotosValidos": 308986
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (4,130) no coincide con totalVotosValidos (3,738). Diferencia: +392.",
@@ -767,6 +757,199 @@
     "votos": 587,
     "pct_onpe": 36.505,
     "pct_calculado": 58.234
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (450,950) no coincide con totalVotosValidos (448,978). Diferencia: +1,972.",
+   "valores": {
+    "suma_participantes": 450950,
+    "totalVotosValidos": 448978
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 14.643% y el cálculo da 14.707%.",
+   "valores": {
+    "votos": 66033,
+    "pct_onpe": 14.643,
+    "pct_calculado": 14.707
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 17.602% y el cálculo da 17.679%.",
+   "valores": {
+    "votos": 79374,
+    "pct_onpe": 17.602,
+    "pct_calculado": 17.679
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 33.042% y el cálculo da 33.188%.",
+   "valores": {
+    "votos": 149005,
+    "pct_onpe": 33.042,
+    "pct_calculado": 33.188
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / JAÉN / POMAHUACA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (2,392) no coincide con totalVotosValidos (2,017). Diferencia: +375.",
+   "valores": {
+    "suma_participantes": 2392,
+    "totalVotosValidos": 2017
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / JAÉN / POMAHUACA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 8.528% y el cálculo da 10.114%.",
+   "valores": {
+    "votos": 204,
+    "pct_onpe": 8.528,
+    "pct_calculado": 10.114
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / JAÉN / POMAHUACA",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 12.918% y el cálculo da 15.320%.",
+   "valores": {
+    "votos": 309,
+    "pct_onpe": 12.918,
+    "pct_calculado": 15.32
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / JAÉN / POMAHUACA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMÓCRATA VERDE: ONPE publica 15.008% y el cálculo da 17.799%.",
+   "valores": {
+    "votos": 359,
+    "pct_onpe": 15.008,
+    "pct_calculado": 17.799
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / JAÉN / POMAHUACA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 31.564% y el cálculo da 37.432%.",
+   "valores": {
+    "votos": 755,
+    "pct_onpe": 31.564,
+    "pct_calculado": 37.432
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / JAÉN / POMAHUACA",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 31.982% y el cálculo da 37.928%.",
+   "valores": {
+    "votos": 765,
+    "pct_onpe": 31.982,
+    "pct_calculado": 37.928
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / SANTA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (228,379) no coincide con totalVotosValidos (228,180). Diferencia: +199.",
+   "valores": {
+    "suma_participantes": 228379,
+    "totalVotosValidos": 228180
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CUSCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (237,404) no coincide con totalVotosValidos (237,203). Diferencia: +201.",
+   "valores": {
+    "suma_participantes": 237404,
+    "totalVotosValidos": 237203
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (9,885) no coincide con totalVotosValidos (9,773). Diferencia: +112.",
+   "valores": {
+    "suma_participantes": 9885,
+    "totalVotosValidos": 9773
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 10.41% y el cálculo da 10.529%.",
+   "valores": {
+    "votos": 1029,
+    "pct_onpe": 10.41,
+    "pct_calculado": 10.529
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 17.633% y el cálculo da 17.835%.",
+   "valores": {
+    "votos": 1743,
+    "pct_onpe": 17.633,
+    "pct_calculado": 17.835
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 20.111% y el cálculo da 20.342%.",
+   "valores": {
+    "votos": 1988,
+    "pct_onpe": 20.111,
+    "pct_calculado": 20.342
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 22.317% y el cálculo da 22.572%.",
+   "valores": {
+    "votos": 2206,
+    "pct_onpe": 22.317,
+    "pct_calculado": 22.572
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 22.317% y el cálculo da 22.572%.",
+   "valores": {
+    "votos": 2206,
+    "pct_onpe": 22.317,
+    "pct_calculado": 22.572
    }
   }
  ]
