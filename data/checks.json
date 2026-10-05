@@ -1,6 +1,47 @@
 {
- "total": 88,
+ "total": 87,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (278,355) no coincide con totalVotosValidos (278,195). Diferencia: +160.",
+   "valores": {
+    "suma_participantes": 278355,
+    "totalVotosValidos": 278195
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (128,605) no coincide con totalVotosValidos (128,348). Diferencia: +257.",
+   "valores": {
+    "suma_participantes": 128605,
+    "totalVotosValidos": 128348
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (877,138) no coincide con totalVotosValidos (874,552). Diferencia: +2,586.",
+   "valores": {
+    "suma_participantes": 877138,
+    "totalVotosValidos": 874552
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.535% y el cálculo da 22.601%.",
+   "valores": {
+    "votos": 197661,
+    "pct_onpe": 22.535,
+    "pct_calculado": 22.601
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
@@ -464,60 +505,6 @@
     "votos": 1622,
     "pct_onpe": 30.866,
     "pct_calculado": 32.874
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (27,800) no coincide con totalVotosValidos (27,664). Diferencia: +136.",
-   "valores": {
-    "suma_participantes": 27800,
-    "totalVotosValidos": 27664
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 13.525% y el cálculo da 13.592%.",
-   "valores": {
-    "votos": 3760,
-    "pct_onpe": 13.525,
-    "pct_calculado": 13.592
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 15.291% y el cálculo da 15.367%.",
-   "valores": {
-    "votos": 4251,
-    "pct_onpe": 15.291,
-    "pct_calculado": 15.367
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 25.353% y el cálculo da 25.477%.",
-   "valores": {
-    "votos": 7048,
-    "pct_onpe": 25.353,
-    "pct_calculado": 25.477
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 37.755% y el cálculo da 37.941%.",
-   "valores": {
-    "votos": 10496,
-    "pct_onpe": 37.755,
-    "pct_calculado": 37.941
    }
   },
   {
