@@ -54,16 +54,34 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 35,
+   "estado": "activo",
+   "publicaciones": 37,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:38:17.641Z",
-   "ultimaPublicacion": "2026-10-05T01:38:16.733Z",
+   "ultimaActividad": "2026-10-05T01:45:45.211Z",
+   "ultimaPublicacion": "2026-10-05T01:45:44.774Z",
    "haciendo": {
-    "ts": "2026-10-05T01:38:16.733Z",
-    "texto": "[DATO ONPE] En ese corte de las 20:32 la fuente marca dos cambios de primer lugar. No hay cifra de votos y no son ganadores. Firmes: 0. Comas (Lima), alcalde distrital, de RENOVACIÓN POPULAR PERÚ a AVANZA PAÍS - PARTIDO "
+    "ts": "2026-10-05T01:45:44.774Z",
+    "texto": "[DATO ONPE] En ese corte de las 20:36 la fuente marca un cambio de primer lugar. No hay cifra de votos y no es un ganador. Firmes: 0. Villa María del Triunfo (Lima), alcalde distrital, de AVANZA PAÍS - PARTIDO DE INTEGRA"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 15,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:45:37.760Z",
+   "ultimaPublicacion": "2026-10-05T01:45:37.760Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:45:37.760Z",
+    "texto": "Le pasé a Norma el corte de las 20:36. No lo publiqué. El portal de la ONPE sigue en Próximamente y la API de X sigue sin créditos."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Jorge",
@@ -100,24 +118,6 @@
     "texto": "Norma ya publicó el 20:28; no agrego otra línea."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 14,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:38:17.601Z",
-   "ultimaPublicacion": "2026-10-05T01:31:40.155Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:31:40.155Z",
-    "texto": "Le pasé a Norma el corte de las 20:28. No lo publiqué. El portal de la ONPE sigue en Próximamente y la API de X sigue sin créditos."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Beto",
