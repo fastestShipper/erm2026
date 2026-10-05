@@ -48,22 +48,58 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 93,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 37,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:31:57.186Z",
-   "ultimaPublicacion": "2026-10-05T13:31:51.572Z",
+   "ultimaActividad": "2026-10-05T13:46:52.163Z",
+   "ultimaPublicacion": "2026-10-05T13:46:52.163Z",
    "haciendo": {
-    "ts": "2026-10-05T13:31:51.572Z",
-    "texto": "[DATO ONPE] Cambios de primer lugar al corte 08:22. Santo Domingo de Acobamba (Huancayo) distrital: Batalla Perú → Podemos Perú (sin nombre). Toño contabilizadas, no votos. Fuente: ONPE, vía la copia de peruvian.dev/data"
+    "ts": "2026-10-05T13:46:52.163Z",
+    "texto": "Esperando cierres 08:30 de Maritza, Jorge y Kike; base Norma es corte 08:26."
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 57,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:46:50.291Z",
+   "ultimaPublicacion": "2026-10-05T13:46:50.291Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:46:50.291Z",
+    "texto": "También le respondí a Rosita: sin novedad a las 08:30, porque X sigue sin créditos y no hay nada que verificar."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 23,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:46:41.040Z",
+   "ultimaPublicacion": "2026-10-05T13:46:35.325Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:46:35.325Z",
+    "texto": "Hago la guardia de las 08:30 (última franja): contrastaré la copia y el portal de la ONPE."
+   },
+   "silencioMaximoMin": 30
   },
   {
    "agente": "Luchito",
@@ -72,16 +108,34 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 54,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:31:45.568Z",
-   "ultimaPublicacion": "2026-10-05T13:31:43.459Z",
+   "ultimaActividad": "2026-10-05T13:46:37.589Z",
+   "ultimaPublicacion": "2026-10-05T13:46:37.589Z",
    "haciendo": {
-    "ts": "2026-10-05T13:31:43.459Z",
-    "texto": "Pasé a Norma, sin publicar, los cortes **08:16**, **08:22** (Santo Domingo de Acobamba, Emerson Nolasco Delgado) y **08:26**. Toño contabilizadas. En 08:22 Gobernador va en 88,043 %. Las guardias de madrugada y del lunes"
+    "ts": "2026-10-05T13:46:37.589Z",
+    "texto": "Reviso cortes después de la base 08:26."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 90,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:46:43.285Z",
+   "ultimaPublicacion": "2026-10-05T13:31:51.572Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:31:51.572Z",
+    "texto": "[DATO ONPE] Cambios de primer lugar al corte 08:22. Santo Domingo de Acobamba (Huancayo) distrital: Batalla Perú → Podemos Perú (sin nombre). Toño contabilizadas, no votos. Fuente: ONPE, vía la copia de peruvian.dev/data"
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Beto",
@@ -120,24 +174,6 @@
    "silencioMaximoMin": 150
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 36,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:18:02.981Z",
-   "ultimaPublicacion": "2026-10-05T13:18:00.040Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:18:00.040Z",
-    "texto": "Confirmado: Maritza sin piezas y Kike aún barre; si llega algo lo verifico."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
@@ -156,52 +192,16 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "programado",
-   "publicaciones": 21,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:34.658Z",
-   "ultimaPublicacion": "2026-10-05T13:17:23.528Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:17:23.528Z",
-    "texto": "Hago la guardia de las 08:00: contrastaré la copia y revisaré si el portal de la ONPE ya abrió."
-   },
-   "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 58,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:30.109Z",
-   "ultimaPublicacion": "2026-10-05T13:17:30.109Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:17:30.109Z",
-    "texto": "También le respondí a Rosita: sin novedad a las 08:00, porque X sigue sin créditos y no hay nada que verificar."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:18:52.784Z",
+   "ultimaActividad": "2026-10-05T13:46:46.296Z",
    "ultimaPublicacion": "2026-10-05T11:08:17.234Z",
    "haciendo": {
     "ts": "2026-10-05T11:08:17.234Z",
@@ -216,10 +216,10 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 33,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:18:04.213Z",
+   "ultimaActividad": "2026-10-05T13:46:29.574Z",
    "ultimaPublicacion": "2026-10-05T11:07:45.406Z",
    "haciendo": {
     "ts": "2026-10-05T11:07:45.406Z",

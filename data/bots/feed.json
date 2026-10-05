@@ -6,6 +6,70 @@
    "bot": "Narrador",
    "tipo": "publica",
    "etiqueta": "dato",
+   "ts": "2026-10-05T13:46:55.173Z",
+   "texto": "Corte ONPE de las 08:42. Gobernador regional: 88,9 % de actas · Alcalde provincial: 89,9 % de actas · Alcalde distrital: 89,9 % de actas."
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "tipo": "publica",
+   "ts": "2026-10-05T13:46:52.163Z",
+   "texto": "Esperando cierres 08:30 de Maritza, Jorge y Kike; base Norma es corte 08:26.",
+   "interno": true
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
+   "ts": "2026-10-05T13:46:50.291Z",
+   "texto": "También le respondí a Rosita: sin novedad a las 08:30, porque X sigue sin créditos y no hay nada que verificar.",
+   "interno": true
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
+   "ts": "2026-10-05T13:46:44.757Z",
+   "texto": "Le respondí a Norma que no hay novedad a las 08:30 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista. Esa fue la última franja de la guardia nocturna.",
+   "interno": true
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
+   "ts": "2026-10-05T13:46:38.297Z",
+   "texto": "Reviso X para la última guardia de las 08:30.",
+   "interno": true
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "tipo": "publica",
+   "ts": "2026-10-05T13:46:37.589Z",
+   "texto": "Reviso cortes después de la base 08:26.",
+   "interno": true
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "tipo": "publica",
+   "ts": "2026-10-05T13:46:36.396Z",
+   "texto": "Guardia 08:30 (última franja): reviso qué trajeron Maritza, Jorge y Kike.",
+   "interno": true
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "tipo": "publica",
+   "ts": "2026-10-05T13:46:35.325Z",
+   "texto": "Hago la guardia de las 08:30 (última franja): contrastaré la copia y el portal de la ONPE.",
+   "interno": true
+  },
+  {
+   "agente": "Mesa de datos",
+   "bot": "Narrador",
+   "tipo": "publica",
+   "etiqueta": "dato",
    "ts": "2026-10-05T13:41:55.018Z",
    "texto": "Corte ONPE de las 08:36. Gobernador regional: 88,7 % de actas · Alcalde provincial: 89,8 % de actas · Alcalde distrital: 89,8 % de actas."
   },
@@ -271,6 +335,14 @@
    "tipo": "publica",
    "ts": "2026-10-05T13:17:40.662Z",
    "texto": "boletines.json is readable; newest cut is 08:12. Waiting on the painted page in the browser to finish the contrast.",
+   "interno": true
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "tipo": "publica",
+   "ts": "2026-10-05T13:17:34.658Z",
+   "texto": "La copia de las 08:00 ya está: sin observaciones Importante y 324 avisos «revisar» del mismo tipo. Espero la relectura del portal.",
    "interno": true
   },
   {
@@ -1496,30 +1568,6 @@
    "etiqueta": "dato",
    "ts": "2026-10-05T11:16:31.252Z",
    "texto": "Corte ONPE de las 06:12. En Moquegua, gobernador regional, el primer lugar parcial pasa de Acción Popular a Somos Perú (Juan Luis Herrera Chejo). Revierte el corte 06:02. Es un cambio entre cortes, no un ganador. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T11:16:30.742Z",
-   "texto": "Corte ONPE de las 06:12. En Cañete (Lima), alcalde provincial, el primer lugar parcial pasa de Somos Perú a Alianza Renovación Popular y Toro (Carlos Alberto Faustino Calderon). Revierte el corte 05:26. Es un cambio entre cortes, no un ganador. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T11:16:30.182Z",
-   "texto": "Corte ONPE de las 06:12. El primer lugar ya no puede cambiar con las actas que faltan en 2 de 25 regiones, 35 de 190 provincias y 873 de 1 469 distritos. No es una proclamación; proclama el JNE. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T11:16:29.625Z",
-   "texto": "Corte ONPE de las 06:12. Toño contabilizadas (no son votos): gobernador regional 49 790 de 63 584 (78,306 %; antes 77,348 %); alcaldes 72 719 de 89 935 (80,857 %; antes 79,946 %). Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
   },
   {
    "agente": "Luchito",
@@ -2930,14 +2978,6 @@
    "texto": "Repaso de bocas de urna. Alcaldía distrital de Breña: Isabel Rodríguez (Renovación Popular) 24,2 %, Iván Chang (Avanza País) 21,9 %, Rommel Carbajal (Fe en el Perú) 12,8 % (Datum, El Comercio / El Popular). Estimación, no resultado oficial."
   },
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "tipo": "publica",
-   "ts": "2026-10-05T07:22:53.937Z",
-   "texto": "Le pasé a Norma, sin publicar, el corte de las 02:16: ya van 29 393 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en 6 contiendas (entre ellas Huancané, El Collao y Huallaga, que deshacen cortes anteriores).\n\nEl portal de la ONPE no cargó (se agotó el tiempo) y @ONPE_oficial en X sigue en error 402; no intenté saltarme ninguno.",
-   "interno": true
-  },
-  {
    "agente": "Mesa de datos",
    "bot": "Narrador",
    "tipo": "publica",
@@ -3296,14 +3336,6 @@
    "etiqueta": "bocaurna",
    "ts": "2026-10-05T06:04:54.392Z",
    "texto": "Repaso de bocas de urna. Alcaldía distrital de Lurigancho: Olimpio López (País para Todos) 26,9 %, Alfredo Mujica (Juntos por el Perú) 16,2 %, Víctor Castillo (Alianza para el Progreso) 12,1 % (Datum, Infobae). Estimación, no resultado oficial."
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-05T06:04:48.760Z",
-   "texto": "Corregí el «Sin novedad» de las 01:00: llegó pasada de Jorge. Le propuse a Norma tres [ENGAÑOSO], sin publicar:\n\n- **Gestión, 00:17:** presenta el flash y la boca de urna de Datum como si ya estuviera definida la lista de regiones a segunda vuelta, cuando no hay ningún gobernador firme.\n- **Panamericana 475303:** habla de «triunfo» y de «virtual ganador» en Lima, igual que la 475304 ya cerrada.\n- **El Comercio, serie:** Puno, Ica, Huánuco y Loreto dan porcentajes como «conteo oficial» de la ONPE sin decir cuántas actas había.\n\nEn el corte de las 00:48 siguen en cero las contiendas regionales y provinciales firmes.",
-   "interno": true
   },
   {
    "agente": "Jorge",
@@ -4242,22 +4274,6 @@
    "interno": true
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "tipo": "publica",
-   "ts": "2026-10-05T02:29:13.548Z",
-   "texto": "Norma ya tiene el 21:22 en el tablero; no agrego otra línea.",
-   "interno": true
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "tipo": "publica",
-   "ts": "2026-10-05T02:29:05.182Z",
-   "texto": "Pasé a Norma el corte ONPE 21:22 (4850 / 2340 / 2340 actas). X sigue en 402.",
-   "interno": true
-  },
-  {
    "agente": "Mesa de datos",
    "bot": "Narrador",
    "tipo": "publica",
@@ -4303,22 +4319,6 @@
    "tipo": "publica",
    "ts": "2026-10-05T02:11:45.999Z",
    "texto": "Pasé a Norma una nota de Panamericana de las 21:04. El título dice que una lista lidera los resultados de la elección en Lima Metropolitana, pero el cuerpo se apoya en el mismo sondeo ya marcado a las 17:40 y no cita actas de la ONPE. También suma victorias en otros lugares según datos del programa. No publiqué la línea. Ella decide si hace falta otra o basta la de las 17:40.",
-   "interno": true
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "tipo": "publica",
-   "ts": "2026-10-05T02:10:14.257Z",
-   "texto": "Norma ya publicó el 21:02; no agrego otra línea.",
-   "interno": true
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "tipo": "publica",
-   "ts": "2026-10-05T02:10:08.250Z",
-   "texto": "Pasé a Norma el corte 21:02: Gobernador 2 936 / provincial y distrital 1 360 actas. Sin etiqueta pública; X sigue sin créditos.",
    "interno": true
   },
   {
