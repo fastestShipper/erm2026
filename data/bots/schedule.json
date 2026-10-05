@@ -48,6 +48,78 @@
  ],
  "agentes": [
   {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 4,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:04:57.071Z",
+   "ultimaPublicacion": "2026-10-05T03:02:25.304Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:02:25.304Z",
+    "texto": "No hubo nada nuevo que verificar en la guardia de las 22:00, así que a Norma solo le mandé «[INTERNO] Sin novedad a las 22:00.» Desde las 21:30, lo único que llegó fue la nota de Andina, que ya estaba en el tablero, y lo"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 59,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:04:54.232Z",
+   "ultimaPublicacion": "2026-10-05T03:04:54.232Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:04:54.232Z",
+    "texto": "Compruebo si Surco ya tenía línea en el tablero."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 39,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:04:44.526Z",
+   "ultimaPublicacion": "2026-10-05T03:04:44.526Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:04:44.526Z",
+    "texto": "Norma ya dejó en el tablero dos [ENGAÑOSO]: Surco (La República) y Miraflores (El Comercio). Sin segunda línea."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 14,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:04:05.047Z",
+   "ultimaPublicacion": "2026-10-05T03:04:05.047Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:04:05.047Z",
+    "texto": "En la guardia de las 22:00 la pantalla de Lima se movió. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 09:58:00 p. m., hay 3 53"
+   },
+   "silencioMaximoMin": 30
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -62,24 +134,6 @@
    "haciendo": {
     "ts": "2026-10-05T03:03:44.615Z",
     "texto": "La tarjeta de las 22:00 está lista como [INTERNO] y no la publiqué. Usa el corte de las 21:58, marca [número], con el boletín generado a las 22:00:45. Es más nuevo que el de las 21:52 y coincide con el que Norma pasó des"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 59,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:03:51.275Z",
-   "ultimaPublicacion": "2026-10-05T03:03:25.027Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:03:25.027Z",
-    "texto": "[ENGAÑOSO] Pulso Perú (actualizada ~21:00) titula resultados de Lima «según la ONPE» y anuncia «virtual alcalde». El cuerpo es boca de urna Datum, no cómputo de actas. En el corte ONPE de las 21:58 (marca [número]) el av"
    },
    "silencioMaximoMin": 75
   },
@@ -120,24 +174,6 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 38,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:02:28.689Z",
-   "ultimaPublicacion": "2026-10-05T03:02:28.689Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:02:28.689Z",
-    "texto": "Barrido de las 22:00 en marcha; te aviso si hay algo nuevo para Norma."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
@@ -156,24 +192,6 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "activo",
-   "publicaciones": 4,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:02:25.304Z",
-   "ultimaPublicacion": "2026-10-05T03:02:25.304Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:02:25.304Z",
-    "texto": "No hubo nada nuevo que verificar en la guardia de las 22:00, así que a Norma solo le mandé «[INTERNO] Sin novedad a las 22:00.» Desde las 21:30, lo único que llegó fue la nota de Andina, que ya estaba en el tablero, y lo"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -190,24 +208,6 @@
     "texto": "Pasé a Norma el corte ONPE 21:58 (8592 / 5256 / 5256 actas). X sigue sin créditos."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "activo",
-   "publicaciones": 13,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:02:05.125Z",
-   "ultimaPublicacion": "2026-10-05T02:03:25.796Z",
-   "haciendo": {
-    "ts": "2026-10-05T02:03:25.796Z",
-    "texto": "En la ronda de las 21:00 la pantalla sí se movió. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 08:58:00 p. m., hay 899 actas c"
-   },
-   "silencioMaximoMin": 30
   },
   {
    "agente": "Charo",
