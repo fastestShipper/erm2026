@@ -1,5 +1,5 @@
 {
- "total": 66,
+ "total": 73,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -714,6 +714,82 @@
     "votos": 7136,
     "pct_onpe": 41.115,
     "pct_calculado": 44.982
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (16,643) no coincide con totalVotosValidos (12,663). Diferencia: +3,980.",
+   "valores": {
+    "suma_participantes": 16643,
+    "totalVotosValidos": 12663
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 1.592% y el cálculo da 2.093%.",
+   "valores": {
+    "votos": 265,
+    "pct_onpe": 1.592,
+    "pct_calculado": 2.093
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 1.899% y el cálculo da 2.495%.",
+   "valores": {
+    "votos": 316,
+    "pct_onpe": 1.899,
+    "pct_calculado": 2.495
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 5.432% y el cálculo da 7.139%.",
+   "valores": {
+    "votos": 904,
+    "pct_onpe": 5.432,
+    "pct_calculado": 7.139
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 10.233% y el cálculo da 13.449%.",
+   "valores": {
+    "votos": 1703,
+    "pct_onpe": 10.233,
+    "pct_calculado": 13.449
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 29.033% y el cálculo da 38.158%.",
+   "valores": {
+    "votos": 4832,
+    "pct_onpe": 29.033,
+    "pct_calculado": 38.158
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 51.812% y el cálculo da 68.096%.",
+   "valores": {
+    "votos": 8623,
+    "pct_onpe": 51.812,
+    "pct_calculado": 68.096
    }
   }
  ]
