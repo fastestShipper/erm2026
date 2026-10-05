@@ -1,5 +1,5 @@
 {
- "total": 337,
+ "total": 371,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -3235,59 +3235,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · CALLAO / CALLAO / CALLAO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (242,902) no coincide con totalVotosValidos (242,318). Diferencia: +584.",
-   "valores": {
-    "suma_participantes": 242902,
-    "totalVotosValidos": 242318
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CALLAO / CALLAO / CALLAO",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 62.254% y el cálculo da 62.404%.",
-   "valores": {
-    "votos": 151215,
-    "pct_onpe": 62.254,
-    "pct_calculado": 62.404
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN JUAN DE MIRAFLORES",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (213,093) no coincide con totalVotosValidos (212,154). Diferencia: +939.",
-   "valores": {
-    "suma_participantes": 213093,
-    "totalVotosValidos": 212154
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN JUAN DE MIRAFLORES",
-   "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 19.496% y el cálculo da 19.582%.",
-   "valores": {
-    "votos": 41544,
-    "pct_onpe": 19.496,
-    "pct_calculado": 19.582
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN JUAN DE MIRAFLORES",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 29.619% y el cálculo da 29.751%.",
-   "valores": {
-    "votos": 63117,
-    "pct_onpe": 29.619,
-    "pct_calculado": 29.751
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / HUALGAYOC / HUALGAYOC",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (5,180) no coincide con totalVotosValidos (4,590). Diferencia: +590.",
@@ -3652,6 +3599,430 @@
     "votos": 8435,
     "pct_onpe": 32.385,
     "pct_calculado": 32.613
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / LARES",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (2,963) no coincide con totalVotosValidos (2,095). Diferencia: +868.",
+   "valores": {
+    "suma_participantes": 2963,
+    "totalVotosValidos": 2095
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / LARES",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 0.709% y el cálculo da 1.002%.",
+   "valores": {
+    "votos": 21,
+    "pct_onpe": 0.709,
+    "pct_calculado": 1.002
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / LARES",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 0.877% y el cálculo da 1.241%.",
+   "valores": {
+    "votos": 26,
+    "pct_onpe": 0.877,
+    "pct_calculado": 1.241
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / LARES",
+   "severidad": "revisar",
+   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 3.139% y el cálculo da 4.439%.",
+   "valores": {
+    "votos": 93,
+    "pct_onpe": 3.139,
+    "pct_calculado": 4.439
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / LARES",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMÓCRATA VERDE: ONPE publica 3.51% y el cálculo da 4.964%.",
+   "valores": {
+    "votos": 104,
+    "pct_onpe": 3.51,
+    "pct_calculado": 4.964
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / LARES",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 11.475% y el cálculo da 16.229%.",
+   "valores": {
+    "votos": 340,
+    "pct_onpe": 11.475,
+    "pct_calculado": 16.229
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / LARES",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 20.182% y el cálculo da 28.544%.",
+   "valores": {
+    "votos": 598,
+    "pct_onpe": 20.182,
+    "pct_calculado": 28.544
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / LARES",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 26.595% y el cálculo da 37.613%.",
+   "valores": {
+    "votos": 788,
+    "pct_onpe": 26.595,
+    "pct_calculado": 37.613
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / LARES",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 33.311% y el cálculo da 47.112%.",
+   "valores": {
+    "votos": 987,
+    "pct_onpe": 33.311,
+    "pct_calculado": 47.112
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (1,647) no coincide con totalVotosValidos (751). Diferencia: +896.",
+   "valores": {
+    "suma_participantes": 1647,
+    "totalVotosValidos": 751
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 0.121% y el cálculo da 0.266%.",
+   "valores": {
+    "votos": 2,
+    "pct_onpe": 0.121,
+    "pct_calculado": 0.266
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO CÍVICO OBRAS: ONPE publica 0.364% y el cálculo da 0.799%.",
+   "valores": {
+    "votos": 6,
+    "pct_onpe": 0.364,
+    "pct_calculado": 0.799
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 0.546% y el cálculo da 1.198%.",
+   "valores": {
+    "votos": 9,
+    "pct_onpe": 0.546,
+    "pct_calculado": 1.198
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 1.396% y el cálculo da 3.063%.",
+   "valores": {
+    "votos": 23,
+    "pct_onpe": 1.396,
+    "pct_calculado": 3.063
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMÓCRATA VERDE: ONPE publica 1.639% y el cálculo da 3.595%.",
+   "valores": {
+    "votos": 27,
+    "pct_onpe": 1.639,
+    "pct_calculado": 3.595
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 3.886% y el cálculo da 8.522%.",
+   "valores": {
+    "votos": 64,
+    "pct_onpe": 3.886,
+    "pct_calculado": 8.522
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 3.886% y el cálculo da 8.522%.",
+   "valores": {
+    "votos": 64,
+    "pct_onpe": 3.886,
+    "pct_calculado": 8.522
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 13.115% y el cálculo da 28.762%.",
+   "valores": {
+    "votos": 216,
+    "pct_onpe": 13.115,
+    "pct_calculado": 28.762
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 30.055% y el cálculo da 65.912%.",
+   "valores": {
+    "votos": 495,
+    "pct_onpe": 30.055,
+    "pct_calculado": 65.912
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CALCA / YANATILE",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 44.991% y el cálculo da 98.668%.",
+   "valores": {
+    "votos": 741,
+    "pct_onpe": 44.991,
+    "pct_calculado": 98.668
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / SÁNCHEZ CARRIÓN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (66,319) no coincide con totalVotosValidos (66,163). Diferencia: +156.",
+   "valores": {
+    "suma_participantes": 66319,
+    "totalVotosValidos": 66163
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / SÁNCHEZ CARRIÓN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 33.01% y el cálculo da 33.088%.",
+   "valores": {
+    "votos": 21892,
+    "pct_onpe": 33.01,
+    "pct_calculado": 33.088
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / SÁNCHEZ CARRIÓN",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 35.034% y el cálculo da 35.116%.",
+   "valores": {
+    "votos": 23234,
+    "pct_onpe": 35.034,
+    "pct_calculado": 35.116
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / CONDORCANQUI",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (5,231) no coincide con totalVotosValidos (4,565). Diferencia: +666.",
+   "valores": {
+    "suma_participantes": 5231,
+    "totalVotosValidos": 4565
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / CONDORCANQUI",
+   "severidad": "revisar",
+   "detalle": "PRIMERO LA GENTE - COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO: ONPE publica 2.428% y el cálculo da 2.782%.",
+   "valores": {
+    "votos": 127,
+    "pct_onpe": 2.428,
+    "pct_calculado": 2.782
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / CONDORCANQUI",
+   "severidad": "revisar",
+   "detalle": "BATALLA PERÚ: ONPE publica 2.829% y el cálculo da 3.242%.",
+   "valores": {
+    "votos": 148,
+    "pct_onpe": 2.829,
+    "pct_calculado": 3.242
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / CONDORCANQUI",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 4.435% y el cálculo da 5.082%.",
+   "valores": {
+    "votos": 232,
+    "pct_onpe": 4.435,
+    "pct_calculado": 5.082
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / CONDORCANQUI",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 8.928% y el cálculo da 10.230%.",
+   "valores": {
+    "votos": 467,
+    "pct_onpe": 8.928,
+    "pct_calculado": 10.23
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / CONDORCANQUI",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO REGIONAL AMAZONENSE UNIDOS AL CAMPO: ONPE publica 10.782% y el cálculo da 12.355%.",
+   "valores": {
+    "votos": 564,
+    "pct_onpe": 10.782,
+    "pct_calculado": 12.355
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / CONDORCANQUI",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO REGIONAL VICTORIA AMAZONENSE: ONPE publica 11.222% y el cálculo da 12.859%.",
+   "valores": {
+    "votos": 587,
+    "pct_onpe": 11.222,
+    "pct_calculado": 12.859
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / CONDORCANQUI",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 13.171% y el cálculo da 15.093%.",
+   "valores": {
+    "votos": 689,
+    "pct_onpe": 13.171,
+    "pct_calculado": 15.093
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / CONDORCANQUI",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 19.193% y el cálculo da 21.993%.",
+   "valores": {
+    "votos": 1004,
+    "pct_onpe": 19.193,
+    "pct_calculado": 21.993
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / CONDORCANQUI",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 26.974% y el cálculo da 30.909%.",
+   "valores": {
+    "votos": 1411,
+    "pct_onpe": 26.974,
+    "pct_calculado": 30.909
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / UTCUBAMBA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (55,698) no coincide con totalVotosValidos (54,384). Diferencia: +1,314.",
+   "valores": {
+    "suma_participantes": 55698,
+    "totalVotosValidos": 54384
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / UTCUBAMBA",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 9.126% y el cálculo da 9.346%.",
+   "valores": {
+    "votos": 5083,
+    "pct_onpe": 9.126,
+    "pct_calculado": 9.346
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / UTCUBAMBA",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO REGIONAL VICTORIA AMAZONENSE: ONPE publica 9.363% y el cálculo da 9.589%.",
+   "valores": {
+    "votos": 5215,
+    "pct_onpe": 9.363,
+    "pct_calculado": 9.589
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / UTCUBAMBA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 21.828% y el cálculo da 22.356%.",
+   "valores": {
+    "votos": 12158,
+    "pct_onpe": 21.828,
+    "pct_calculado": 22.356
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / UTCUBAMBA",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO REGIONAL AMAZONENSE UNIDOS AL CAMPO: ONPE publica 25.021% y el cálculo da 25.625%.",
+   "valores": {
+    "votos": 13936,
+    "pct_onpe": 25.021,
+    "pct_calculado": 25.625
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / UTCUBAMBA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 32.77% y el cálculo da 33.561%.",
+   "valores": {
+    "votos": 18252,
+    "pct_onpe": 32.77,
+    "pct_calculado": 33.561
    }
   }
  ]
