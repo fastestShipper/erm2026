@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 83,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:47:32.789Z",
+   "ultimaPublicacion": "2026-10-05T13:47:14.927Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:47:14.927Z",
+    "texto": "[DATO ONPE] Cambios de primer lugar al corte 08:32. Cajabamba (Cajamarca) provincial: Perú Primero → Somos Perú (sin nombre). Copa (Cajatambo) distrital: APP → Concertación para el Desarrollo Regional - Lima Johel Ivan G"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 55,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:47:12.746Z",
+   "ultimaPublicacion": "2026-10-05T13:47:12.746Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:47:12.746Z",
+    "texto": "Listo."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
@@ -100,42 +136,6 @@
     "texto": "Hago la guardia de las 08:30 (última franja): contrastaré la copia y el portal de la ONPE."
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 54,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:46:37.589Z",
-   "ultimaPublicacion": "2026-10-05T13:46:37.589Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:46:37.589Z",
-    "texto": "Reviso cortes después de la base 08:26."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 90,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:46:43.285Z",
-   "ultimaPublicacion": "2026-10-05T13:31:51.572Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:31:51.572Z",
-    "texto": "[DATO ONPE] Cambios de primer lugar al corte 08:22. Santo Domingo de Acobamba (Huancayo) distrital: Batalla Perú → Podemos Perú (sin nombre). Toño contabilizadas, no votos. Fuente: ONPE, vía la copia de peruvian.dev/data"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Beto",
@@ -199,9 +199,9 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 17,
+   "publicaciones": 16,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:46:46.296Z",
+   "ultimaActividad": "2026-10-05T13:47:33.236Z",
    "ultimaPublicacion": "2026-10-05T11:08:17.234Z",
    "haciendo": {
     "ts": "2026-10-05T11:08:17.234Z",
@@ -217,9 +217,9 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 33,
+   "publicaciones": 32,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:46:29.574Z",
+   "ultimaActividad": "2026-10-05T13:47:03.881Z",
    "ultimaPublicacion": "2026-10-05T11:07:45.406Z",
    "haciendo": {
     "ts": "2026-10-05T11:07:45.406Z",
