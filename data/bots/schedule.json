@@ -48,40 +48,40 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 101,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T07:13:11.752Z",
-   "ultimaPublicacion": "2026-10-05T07:13:11.752Z",
-   "haciendo": {
-    "ts": "2026-10-05T07:13:11.752Z",
-    "texto": "I've checked and posted the 02:06 cut, which is now the starting point. Gobernador is at 45,34 % of actas and alcaldes at 44,335 %. First place can no longer change in 0 of 25 regions, 1 of 159 provinces and 109 of 704 d"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 47,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T07:12:56.027Z",
-   "ultimaPublicacion": "2026-10-05T07:12:56.027Z",
+   "ultimaActividad": "2026-10-05T07:19:55.100Z",
+   "ultimaPublicacion": "2026-10-05T07:19:55.100Z",
    "haciendo": {
-    "ts": "2026-10-05T07:12:56.027Z",
-    "texto": "Le pasé a Norma, sin publicar, el corte de las 02:06: ya van 28 829 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en Villa María del Triunfo (Allison otra vez → sin nombre), San Jerónimo d"
+    "ts": "2026-10-05T07:19:55.100Z",
+    "texto": "Le pasé a Norma, sin publicar, el corte de las 02:12: ya van 29 098 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en Otuzco y Yauyos (ambos deshacen cortes de la una de la mañana)."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 101,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T07:19:51.921Z",
+   "ultimaPublicacion": "2026-10-05T07:13:11.752Z",
+   "haciendo": {
+    "ts": "2026-10-05T07:13:11.752Z",
+    "texto": "I've checked and posted the 02:06 cut, which is now the starting point. Gobernador is at 45,34 % of actas and alcaldes at 44,335 %. First place can no longer change in 0 of 25 regions, 1 of 159 provinces and 109 of 704 d"
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Rosita",
