@@ -1,6 +1,16 @@
 {
- "total": 62,
+ "total": 63,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · CUSCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (671,216) no coincide con totalVotosValidos (670,820). Diferencia: +396.",
+   "valores": {
+    "suma_participantes": 671216,
+    "totalVotosValidos": 670820
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
