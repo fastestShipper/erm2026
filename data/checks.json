@@ -1,57 +1,47 @@
 {
- "total": 69,
+ "total": 68,
  "items": [
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · AMAZONAS",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (192,849) no coincide con totalVotosValidos (192,691). Diferencia: +158.",
-   "valores": {
-    "suma_participantes": 192849,
-    "totalVotosValidos": 192691
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (303,307) no coincide con totalVotosValidos (301,127). Diferencia: +2,180.",
+   "detalle": "La suma de votos de las organizaciones (305,316) no coincide con totalVotosValidos (303,307). Diferencia: +2,009.",
    "valores": {
-    "suma_participantes": 303307,
-    "totalVotosValidos": 301127
+    "suma_participantes": 305316,
+    "totalVotosValidos": 303307
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 20.283% y el cálculo da 20.430%.",
+   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 20.394% y el cálculo da 20.529%.",
    "valores": {
-    "votos": 61520,
-    "pct_onpe": 20.283,
-    "pct_calculado": 20.43
+    "votos": 62267,
+    "pct_onpe": 20.394,
+    "pct_calculado": 20.529
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 32.953% y el cálculo da 33.191%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 32.929% y el cálculo da 33.148%.",
    "valores": {
-    "votos": 99948,
-    "pct_onpe": 32.953,
-    "pct_calculado": 33.191
+    "votos": 100539,
+    "pct_onpe": 32.929,
+    "pct_calculado": 33.148
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "LIBERTAD POPULAR: ONPE publica 35.937% y el cálculo da 36.197%.",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 35.78% y el cálculo da 36.017%.",
    "valores": {
-    "votos": 108999,
-    "pct_onpe": 35.937,
-    "pct_calculado": 36.197
+    "votos": 109243,
+    "pct_onpe": 35.78,
+    "pct_calculado": 36.017
    }
   },
   {
