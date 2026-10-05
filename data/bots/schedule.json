@@ -48,24 +48,6 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 93,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:19:09.670Z",
-   "ultimaPublicacion": "2026-10-05T13:18:48.125Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:18:48.125Z",
-    "texto": "08:12 and the bitácora are up."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
@@ -75,13 +57,31 @@
    "estado": "activo",
    "publicaciones": 56,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:18:27.946Z",
-   "ultimaPublicacion": "2026-10-05T13:18:27.946Z",
+   "ultimaActividad": "2026-10-05T13:20:19.334Z",
+   "ultimaPublicacion": "2026-10-05T13:20:01.302Z",
    "haciendo": {
-    "ts": "2026-10-05T13:18:27.946Z",
-    "texto": "Listo: material en manos de Norma; espero su FYI de base."
+    "ts": "2026-10-05T13:20:01.302Z",
+    "texto": "Revisión 08:20: base 08:12. Voy por boletines, portal y X."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 92,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:20:19.309Z",
+   "ultimaPublicacion": "2026-10-05T13:18:48.125Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:18:48.125Z",
+    "texto": "08:12 and the bitácora are up."
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Beto",
@@ -90,7 +90,7 @@
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 53,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T13:18:13.618Z",
@@ -108,7 +108,7 @@
    "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
    "inicio": "05:40",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 9,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T13:18:05.948Z",
@@ -126,7 +126,7 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 36,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T13:18:02.981Z",
@@ -144,7 +144,7 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 33,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T13:17:55.447Z",
@@ -162,7 +162,7 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "activo",
+   "estado": "programado",
    "publicaciones": 21,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T13:17:34.658Z",
@@ -180,7 +180,7 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 58,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T13:17:30.109Z",
@@ -216,7 +216,7 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 33,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T13:18:04.213Z",
