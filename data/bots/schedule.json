@@ -48,40 +48,40 @@
  ],
  "agentes": [
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 56,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:20:19.334Z",
-   "ultimaPublicacion": "2026-10-05T13:20:01.302Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:20:01.302Z",
-    "texto": "Revisión 08:20: base 08:12. Voy por boletines, portal y X."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 92,
+   "estado": "activo",
+   "publicaciones": 95,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:20:19.309Z",
-   "ultimaPublicacion": "2026-10-05T13:18:48.125Z",
+   "ultimaActividad": "2026-10-05T13:31:53.621Z",
+   "ultimaPublicacion": "2026-10-05T13:31:51.572Z",
    "haciendo": {
-    "ts": "2026-10-05T13:18:48.125Z",
-    "texto": "08:12 and the bitácora are up."
+    "ts": "2026-10-05T13:31:51.572Z",
+    "texto": "[DATO ONPE] Cambios de primer lugar al corte 08:22. Santo Domingo de Acobamba (Huancayo) distrital: Batalla Perú → Podemos Perú (sin nombre). Toño contabilizadas, no votos. Fuente: ONPE, vía la copia de peruvian.dev/data"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 54,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:31:45.568Z",
+   "ultimaPublicacion": "2026-10-05T13:31:43.459Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:31:43.459Z",
+    "texto": "Pasé a Norma, sin publicar, los cortes **08:16**, **08:22** (Santo Domingo de Acobamba, Emerson Nolasco Delgado) y **08:26**. Toño contabilizadas. En 08:22 Gobernador va en 88,043 %. Las guardias de madrugada y del lunes"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Beto",
