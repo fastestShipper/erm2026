@@ -1,59 +1,6 @@
 {
- "total": 80,
+ "total": 74,
  "items": [
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · AYACUCHO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (292,740) no coincide con totalVotosValidos (291,123). Diferencia: +1,617.",
-   "valores": {
-    "suma_participantes": 292740,
-    "totalVotosValidos": 291123
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · AYACUCHO",
-   "severidad": "revisar",
-   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 20.03% y el cálculo da 20.141%.",
-   "valores": {
-    "votos": 58636,
-    "pct_onpe": 20.03,
-    "pct_calculado": 20.141
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · AYACUCHO",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 32.619% y el cálculo da 32.800%.",
-   "valores": {
-    "votos": 95489,
-    "pct_onpe": 32.619,
-    "pct_calculado": 32.8
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · AYACUCHO",
-   "severidad": "revisar",
-   "detalle": "LIBERTAD POPULAR: ONPE publica 36.541% y el cálculo da 36.744%.",
-   "valores": {
-    "votos": 106971,
-    "pct_onpe": 36.541,
-    "pct_calculado": 36.744
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · CAJAMARCA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (732,720) no coincide con totalVotosValidos (732,554). Diferencia: +166.",
-   "valores": {
-    "suma_participantes": 732720,
-    "totalVotosValidos": 732554
-   }
-  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · CUSCO",
@@ -83,16 +30,6 @@
     "votos": 115657,
     "pct_onpe": 31.84,
     "pct_calculado": 31.921
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · AMAZONAS",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (190,833) no coincide con totalVotosValidos (190,618). Diferencia: +215.",
-   "valores": {
-    "suma_participantes": 190833,
-    "totalVotosValidos": 190618
    }
   },
   {
