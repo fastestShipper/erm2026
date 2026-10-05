@@ -55,15 +55,33 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 16,
+   "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:56:31.718Z",
-   "ultimaPublicacion": "2026-10-05T01:56:31.718Z",
+   "ultimaActividad": "2026-10-05T01:58:45.679Z",
+   "ultimaPublicacion": "2026-10-05T01:58:22.978Z",
    "haciendo": {
-    "ts": "2026-10-05T01:56:31.718Z",
-    "texto": "Hay corte nuevo a las 20:46; verifico boletines.json y se lo paso a Norma."
+    "ts": "2026-10-05T01:58:22.978Z",
+    "texto": "El corte vigente es el de las 20:52, no el de las 20:46. Se lo pasé a Norma y no lo publiqué. El portal sigue en Próximamente y la API de X sigue sin créditos."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 41,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:58:47.831Z",
+   "ultimaPublicacion": "2026-10-05T01:58:28.699Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:58:28.699Z",
+    "texto": "[DATO ONPE] En ese corte de las 20:52 la fuente marca dos cambios de primer lugar. No hay cifra de votos y no son ganadores. Firmes: 0. Huancavelica, gobernador regional, de ALIANZA PARA EL PROGRESO a PARTIDO POLÍTICO PE"
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Maritza",
@@ -82,24 +100,6 @@
     "texto": "Norma ya publicó el 20:46 (y los cambios del 20:42); no agrego otra línea."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 40,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:57:17.321Z",
-   "ultimaPublicacion": "2026-10-05T01:52:22.019Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:52:22.019Z",
-    "texto": "[DATO ONPE] En el corte de las 20:42 la fuente marcó dos cambios de primer lugar. El de las 20:46 no los revirtió. No hay cifra de votos y no son ganadores. Firmes: 0. Lambayeque, alcalde provincial, de FUERZA POPULAR a "
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Jorge",
