@@ -1,5 +1,5 @@
 {
- "total": 72,
+ "total": 86,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -97,82 +97,6 @@
     "votos": 12048,
     "pct_onpe": 20.419,
     "pct_calculado": 21.084
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (9,158) no coincide con totalVotosValidos (8,301). Diferencia: +857.",
-   "valores": {
-    "suma_participantes": 9158,
-    "totalVotosValidos": 8301
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 2.446% y el cálculo da 2.698%.",
-   "valores": {
-    "votos": 224,
-    "pct_onpe": 2.446,
-    "pct_calculado": 2.698
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
-   "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 3.309% y el cálculo da 3.650%.",
-   "valores": {
-    "votos": 303,
-    "pct_onpe": 3.309,
-    "pct_calculado": 3.65
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 4.619% y el cálculo da 5.096%.",
-   "valores": {
-    "votos": 423,
-    "pct_onpe": 4.619,
-    "pct_calculado": 5.096
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
-   "severidad": "revisar",
-   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 23.357% y el cálculo da 25.768%.",
-   "valores": {
-    "votos": 2139,
-    "pct_onpe": 23.357,
-    "pct_calculado": 25.768
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 31.295% y el cálculo da 34.526%.",
-   "valores": {
-    "votos": 2866,
-    "pct_onpe": 31.295,
-    "pct_calculado": 34.526
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 34.571% y el cálculo da 38.140%.",
-   "valores": {
-    "votos": 3166,
-    "pct_onpe": 34.571,
-    "pct_calculado": 38.14
    }
   },
   {
@@ -396,21 +320,98 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (137,620) no coincide con totalVotosValidos (137,272). Diferencia: +348.",
+   "detalle": "La suma de votos de las organizaciones (144,885) no coincide con totalVotosValidos (139,624). Diferencia: +5,261.",
    "valores": {
-    "suma_participantes": 137620,
-    "totalVotosValidos": 137272
+    "suma_participantes": 144885,
+    "totalVotosValidos": 139624
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 27.0% y el cálculo da 27.068%.",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 1.744% y el cálculo da 1.810%.",
    "valores": {
-    "votos": 37157,
-    "pct_onpe": 27.0,
-    "pct_calculado": 27.068
+    "votos": 2527,
+    "pct_onpe": 1.744,
+    "pct_calculado": 1.81
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 8.46% y el cálculo da 8.779%.",
+   "valores": {
+    "votos": 12257,
+    "pct_onpe": 8.46,
+    "pct_calculado": 8.779
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 8.886% y el cálculo da 9.220%.",
+   "valores": {
+    "votos": 12874,
+    "pct_onpe": 8.886,
+    "pct_calculado": 9.22
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 9.814% y el cálculo da 10.184%.",
+   "valores": {
+    "votos": 14219,
+    "pct_onpe": 9.814,
+    "pct_calculado": 10.184
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 10.236% y el cálculo da 10.621%.",
+   "valores": {
+    "votos": 14830,
+    "pct_onpe": 10.236,
+    "pct_calculado": 10.621
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 13.591% y el cálculo da 14.103%.",
+   "valores": {
+    "votos": 19691,
+    "pct_onpe": 13.591,
+    "pct_calculado": 14.103
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 18.374% y el cálculo da 19.066%.",
+   "valores": {
+    "votos": 26621,
+    "pct_onpe": 18.374,
+    "pct_calculado": 19.066
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 26.765% y el cálculo da 27.774%.",
+   "valores": {
+    "votos": 38779,
+    "pct_onpe": 26.765,
+    "pct_calculado": 27.774
    }
   },
   {
@@ -779,6 +780,157 @@
     "votos": 1380,
     "pct_onpe": 44.689,
     "pct_calculado": 102.602
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / ATIQUIPA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (229) no coincide con totalVotosValidos (115). Diferencia: +114.",
+   "valores": {
+    "suma_participantes": 229,
+    "totalVotosValidos": 115
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / ATIQUIPA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 100.0% y el cálculo da 199.130%.",
+   "valores": {
+    "votos": 229,
+    "pct_onpe": 100.0,
+    "pct_calculado": 199.13
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / BELLA UNIÓN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (1,960) no coincide con totalVotosValidos (1,536). Diferencia: +424.",
+   "valores": {
+    "suma_participantes": 1960,
+    "totalVotosValidos": 1536
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / BELLA UNIÓN",
+   "severidad": "revisar",
+   "detalle": "YO AREQUIPA: ONPE publica 3.061% y el cálculo da 3.906%.",
+   "valores": {
+    "votos": 60,
+    "pct_onpe": 3.061,
+    "pct_calculado": 3.906
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / BELLA UNIÓN",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 20.204% y el cálculo da 25.781%.",
+   "valores": {
+    "votos": 396,
+    "pct_onpe": 20.204,
+    "pct_calculado": 25.781
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / BELLA UNIÓN",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 30.0% y el cálculo da 38.281%.",
+   "valores": {
+    "votos": 588,
+    "pct_onpe": 30.0,
+    "pct_calculado": 38.281
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / BELLA UNIÓN",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 46.531% y el cálculo da 59.375%.",
+   "valores": {
+    "votos": 912,
+    "pct_onpe": 46.531,
+    "pct_calculado": 59.375
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / CHAPARRA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (1,608) no coincide con totalVotosValidos (1,008). Diferencia: +600.",
+   "valores": {
+    "suma_participantes": 1608,
+    "totalVotosValidos": 1008
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / CHAPARRA",
+   "severidad": "revisar",
+   "detalle": "FE EN EL PERÚ: ONPE publica 0.995% y el cálculo da 1.587%.",
+   "valores": {
+    "votos": 16,
+    "pct_onpe": 0.995,
+    "pct_calculado": 1.587
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / CHAPARRA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO MORADO: ONPE publica 3.234% y el cálculo da 5.159%.",
+   "valores": {
+    "votos": 52,
+    "pct_onpe": 3.234,
+    "pct_calculado": 5.159
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / CHAPARRA",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 14.303% y el cálculo da 22.817%.",
+   "valores": {
+    "votos": 230,
+    "pct_onpe": 14.303,
+    "pct_calculado": 22.817
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / CHAPARRA",
+   "severidad": "revisar",
+   "detalle": "FUERZA AREQUIPEÑA: ONPE publica 22.264% y el cálculo da 35.516%.",
+   "valores": {
+    "votos": 358,
+    "pct_onpe": 22.264,
+    "pct_calculado": 35.516
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / CHAPARRA",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 22.699% y el cálculo da 36.210%.",
+   "valores": {
+    "votos": 365,
+    "pct_onpe": 22.699,
+    "pct_calculado": 36.21
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / CARAVELÍ / CHAPARRA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 36.505% y el cálculo da 58.234%.",
+   "valores": {
+    "votos": 587,
+    "pct_onpe": 36.505,
+    "pct_calculado": 58.234
    }
   }
  ]
