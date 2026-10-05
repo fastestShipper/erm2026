@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 46,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:12:21.515Z",
+   "ultimaPublicacion": "2026-10-05T02:12:18.053Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:12:18.053Z",
+    "texto": "[DATO ONPE] En el corte de las 21:06 cambió el primer lugar en una contienda. No son votos y no es un ganador. Firmes: 0. Puno, gobernador regional, de PARTIDO PAÍS PARA TODOS a AHORA NACIÓN - AN, EDUARDO QUISPE PANDIA. "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 3,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:12:18.479Z",
+   "ultimaPublicacion": "2026-10-05T02:12:09.766Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:12:09.766Z",
+    "texto": "El veredicto ya está con Norma. No lo subí."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
@@ -55,7 +91,7 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 53,
+   "publicaciones": 46,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T02:11:45.999Z",
    "ultimaPublicacion": "2026-10-05T02:11:45.999Z",
@@ -84,31 +120,13 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 44,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:11:43.849Z",
-   "ultimaPublicacion": "2026-10-05T02:09:38.758Z",
-   "haciendo": {
-    "ts": "2026-10-05T02:09:38.758Z",
-    "texto": "[INFO] El nombre FRANCIS JAMES ALLISON OYAGUE, en el corte de las 21:02 para Jesús María (Lima), alcalde distrital, es el campo candidato del archivo. El mismo texto ya salió en Comas a las 20:32 y en La Victoria a las 2"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 18,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T02:09:23.657Z",
@@ -172,24 +190,6 @@
     "texto": "[EN REVISIÓN] La tarjeta «Observaciones» de [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) muestra 138, que son las actas contabilizadas de gobernador regional (138 de 63584), no las 136 diferencias de los total"
    },
    "silencioMaximoMin": 150
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:05:50.875Z",
-   "ultimaPublicacion": "2026-10-05T01:05:50.875Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:05:50.875Z",
-    "texto": "La ronda de las 20:00 ya quedó con Norma: la nota de Panamericana no lleva otra línea y no hay incidente nuevo."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Don Pepe",
