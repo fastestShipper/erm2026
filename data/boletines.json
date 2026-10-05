@@ -2,6 +2,91 @@
  "nota": "Boletines generados por programa con los datos oficiales de la ONPE (sin IA). No son proyecciones.",
  "items": [
   {
+   "corte": 1791179281639,
+   "hora": "00:48",
+   "generado": "2026-10-05T00:50:54-05:00",
+   "avance": [
+    {
+     "id": 1,
+     "eleccion": "Gobernador regional",
+     "actasPct": 38.623,
+     "contabilizadas": 24558,
+     "totalActas": 63584,
+     "participacion": 29.61,
+     "antesPct": 38.245
+    },
+    {
+     "id": 302,
+     "eleccion": "Alcalde provincial",
+     "actasPct": 33.262,
+     "contabilizadas": 29914,
+     "totalActas": 89935,
+     "participacion": 25.513,
+     "antesPct": 32.567
+    },
+    {
+     "id": 303,
+     "eleccion": "Alcalde distrital",
+     "actasPct": 33.262,
+     "contabilizadas": 29914,
+     "totalActas": 89935,
+     "participacion": 25.513,
+     "antesPct": 32.567
+    }
+   ],
+   "cambios": [
+    {
+     "eleccion": "Gobernador regional",
+     "lugar": "Loreto",
+     "antes": "ALIANZA PARA EL PROGRESO",
+     "ahora": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+     "candidato": "GERMAN VLADIMIR CHONG RIOS"
+    },
+    {
+     "eleccion": "Gobernador regional",
+     "lugar": "Moquegua",
+     "antes": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+     "ahora": "ACCIÓN POPULAR",
+     "candidato": "ABRAHAM ALEJANDRO CARDENAS ROMERO"
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "lugar": "Chota (Cajamarca)",
+     "antes": "ALIANZA PARA EL PROGRESO",
+     "ahora": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE",
+     "candidato": "NEPTALI TICLLA RAFAEL"
+    }
+   ],
+   "cambiosTotal": 3,
+   "firmes": [
+    {
+     "eleccion": "Gobernador regional",
+     "nivel": 1,
+     "firmes": 0,
+     "conDatos": 25
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "nivel": 2,
+     "firmes": 0,
+     "conDatos": 145
+    },
+    {
+     "eleccion": "Alcalde distrital",
+     "nivel": 3,
+     "firmes": 25,
+     "conDatos": 452
+    }
+   ],
+   "observaciones": {
+    "totales": 730,
+    "actasRevisadas": 0,
+    "actasImportantes": 0,
+    "actasRevisar": 0
+   },
+   "texto": "Corte ONPE de las 00:48. Actas contadas: Gobernador regional 38.6% (antes 38.2%) · Alcalde provincial 33.3% (antes 32.6%) · Alcalde distrital 33.3% (antes 32.6%). Cambió el primer lugar en 3 contiendas: Loreto, gobernador regional; Moquegua, gobernador regional; Chota (Cajamarca), alcalde provincial. El primer lugar ya no puede cambiar con las actas que faltan en 25 de 452 distritos. Revisión: 730 diferencias en los totales."
+  },
+  {
    "corte": 1791178923003,
    "hora": "00:42",
    "generado": "2026-10-05T00:45:44-05:00",
