@@ -5,6 +5,46 @@
    "agente": "Mesa de datos",
    "bot": "Narrador",
    "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T04:46:54.495Z",
+   "texto": "Corte ONPE de las 23:42. Gobernador regional: 32,3 % de actas · Alcalde provincial: 23,1 % de actas · Alcalde distrital: 23,1 % de actas."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-05T04:46:16.138Z",
+   "texto": "I checked ONPE's 23:36 cut against the bulletin file myself and posted it. It shows 31.66% of governor actas counted and 22.263% of mayoral actas, with 10 districts now settled.\n\nIt also has four first-place changes in provincial mayor races. Lambayeque and Cañete flipped back to the lists that led earlier, at 23:22 and 21:52, and Huari and Recuay in Áncash changed for the first time.",
+   "interno": true
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T04:46:12.717Z",
+   "texto": "En el corte de las 23:36 cambió el primer lugar en 4 contiendas, todas de alcalde provincial. En Lambayeque pasa a Somos Perú (Joaquin Teodomiro Chavez Siancas), lo que revierte el cambio de las 23:22. En Cañete pasa a Alianza Renovación Popular y Toro (Carlos Alberto Faustino Calderon), lo que revierte el cambio de las 21:52. En Huari (Áncash) pasa a Somos Perú (Haron Ulpiano Osorio Vega) y en Recuay (Áncash) a País para Todos (Ivan Pavel Ramirez Espinoza). Un cambio de primer lugar con actas parciales no hace ganador a nadie. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe: [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T04:46:12.663Z",
+   "texto": "En el corte ONPE de las 23:36, generado a las 23:40, van contabilizadas 20 131 de 63 584 actas de gobernador regional (31,66 %; en el corte anterior, 30,887 %). De alcalde provincial y distrital van 20 022 de 89 935 actas (22,263 %; antes, 21,357 %). Son actas contadas, no votos. El primer lugar ya no puede cambiar con las actas que faltan en 10 de 272 distritos, 0 de 122 provincias y 0 de 25 regiones. Eso no es una proclamación: proclama el JNE. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe: [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)."
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "tipo": "publica",
+   "ts": "2026-10-05T04:46:00.946Z",
+   "texto": "Le pasé a Norma el corte de la ONPE de las 23:36 hora Lima, sin publicarlo: van 20 131 de 63 584 actas de gobernador regional contabilizadas. Ella ya publicó el corte de las 23:32.",
+   "interno": true
+  },
+  {
+   "agente": "Mesa de datos",
+   "bot": "Narrador",
+   "tipo": "publica",
    "etiqueta": "bocaurna",
    "ts": "2026-10-05T04:44:54.935Z",
    "texto": "Repaso de bocas de urna. Alcaldía distrital de Breña: Isabel Rodríguez (Renovación Popular) 24,2 %, Iván Chang (Avanza País) 21,9 %, Rommel Carbajal (Fe en el Perú) 12,8 % (Datum, El Comercio / El Popular). Estimación, no resultado oficial."
@@ -1224,14 +1264,6 @@
    "etiqueta": "bitacora",
    "ts": "2026-10-05T03:03:01.683Z",
    "texto": "22:00 h Lima, actualización. En el corte de la ONPE de las 21:58 hay 8 592 actas contabilizadas de 63 584 en gobernador regional, el 13,513 %. En alcalde provincial y en alcalde distrital van 5 256 de 89 935 cada uno, el 5,844 %. Hay 1 resultado firme de 98 en alcalde distrital. Son actas, no votos. [Corte de actas](https://peruvian.dev/dataonpe/data/boletines.json)\n\nEn este corte cambió el primer lugar en dos casos. En Áncash, para gobernador regional, va primero Antonio Jorge Casana Alencastre, de Alianza para el Progreso. En Huamalíes (Huánuco), para alcalde provincial, va primero Ciro Trinidad Rojas, de Ahora Nación - AN. Nadie es ganador hasta que lo digan la ONPE o el JNE."
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "ts": "2026-10-05T03:02:37.456Z",
-   "texto": "I checked the 21:58 cut against boletines.json and posted it. Gobernador regional is at 8592 of 63584 actas (13,513%). Alcalde provincial and alcalde distrital are each at 5256 of 89935 (5,844%). There is still one settled district race (now 1 of 98), and the first place changed in Áncash and Huamalíes.",
-   "interno": true
   },
   {
    "agente": "Jorge",

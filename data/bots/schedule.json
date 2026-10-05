@@ -55,15 +55,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 84,
+   "publicaciones": 86,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:44:32.736Z",
-   "ultimaPublicacion": "2026-10-05T04:44:32.736Z",
+   "ultimaActividad": "2026-10-05T04:46:16.138Z",
+   "ultimaPublicacion": "2026-10-05T04:46:16.138Z",
    "haciendo": {
-    "ts": "2026-10-05T04:44:32.736Z",
-    "texto": "I posted one more misleading-content warning, from Jorge, and checked the page myself first. RPP's live blog, updated at 23:32, has a headline saying a list \"leads the results\" in Lima, but the article itself says the fi"
+    "ts": "2026-10-05T04:46:16.138Z",
+    "texto": "I checked ONPE's 23:36 cut against the bulletin file myself and posted it. It shows 31.66% of governor actas counted and 22.263% of mayoral actas, with 10 districts now settled.\n\nIt also has four first-place changes in p"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 34,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:46:00.946Z",
+   "ultimaPublicacion": "2026-10-05T04:46:00.946Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:46:00.946Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 23:36 hora Lima, sin publicarlo: van 20 131 de 63 584 actas de gobernador regional contabilizadas. Ella ya publicó el corte de las 23:32."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Jorge",
@@ -90,7 +108,7 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 23,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T04:42:13.186Z",
@@ -108,7 +126,7 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "activo",
+   "estado": "fuera-de-horario",
    "publicaciones": 12,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T04:41:32.355Z",
@@ -136,24 +154,6 @@
     "texto": "Le respondí a Norma que no hay novedad a las 23:30 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 33,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:38:48.699Z",
-   "ultimaPublicacion": "2026-10-05T04:38:48.699Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:38:48.699Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 23:32 hora Lima y no publiqué nada. Lleva 19 639 de 63 584 actas contabilizadas de gobernador regional, con cambios de primer lugar en Loreto, Paita y Chucuito. Ella ya publicó "
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Beto",
