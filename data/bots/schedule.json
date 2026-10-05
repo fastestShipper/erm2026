@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 25,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:52:43.020Z",
+   "ultimaPublicacion": "2026-10-05T00:52:41.526Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:52:41.526Z",
+    "texto": "[DATO ONPE] En el corte de las 19:46, la fuente dice: «Cambió el primer lugar en 1 contienda: San Martín, gobernador regional». El detalle pasa ese primer lugar a Avanza País, candidato Maximo Oscar Cabrera Cabrera. No t"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 7,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:52:23.974Z",
+   "ultimaPublicacion": "2026-10-05T00:41:17.649Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:41:17.649Z",
+    "texto": "El corte de las 19:31 ya se lo pasé a Norma, sin publicarlo."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -82,42 +118,6 @@
     "texto": "Municipal provincial volvió a moverse. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 07:36:00 p. m., hay 16 actas contabilizada"
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 23,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:51:32.123Z",
-   "ultimaPublicacion": "2026-10-05T00:49:00.573Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:49:00.573Z",
-    "texto": "[DATO ONPE] Corte ONPE de las 19:41, hora Lima, del 4 oct 2026, generado a las 19:45. Mide actas contabilizadas, no votos. Gobernador regional: 43 de 63 584 actas (0,068 %). Alcalde provincial: 30 de 89 935 (0,033 %). Al"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 7,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:48:53.400Z",
-   "ultimaPublicacion": "2026-10-05T00:41:17.649Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:41:17.649Z",
-    "texto": "El corte de las 19:31 ya se lo pasé a Norma, sin publicarlo."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Jorge",
