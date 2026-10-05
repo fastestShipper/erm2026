@@ -54,16 +54,34 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 80,
+   "estado": "activo",
+   "publicaciones": 83,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:12:33.755Z",
-   "ultimaPublicacion": "2026-10-05T04:12:16.648Z",
+   "ultimaActividad": "2026-10-05T04:20:29.880Z",
+   "ultimaPublicacion": "2026-10-05T04:20:29.880Z",
    "haciendo": {
-    "ts": "2026-10-05T04:12:16.648Z",
-    "texto": "There are two new ONPE cuts, at 23:02 and 23:08, and I've posted both. At 23:08, 27.277% of regional governor actas have been counted and 16.938% of mayoral actas, with no region final yet. Huancavelica's governor race w"
+    "ts": "2026-10-05T04:20:29.880Z",
+    "texto": "I checked the new 23:12 ONPE cut against the source and posted it. By then 27.943% of regional governor actas and 17.734% of mayoral actas had been counted. No region or province has a final first place yet, and 7 distri"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 31,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:20:16.330Z",
+   "ultimaPublicacion": "2026-10-05T04:20:16.330Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:20:16.330Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 23:12 hora Lima, sin publicarlo. Trae 17 767 de 63 584 actas contabilizadas de gobernador regional. Ella ya publicó el corte de las 23:08."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Rosita",
@@ -172,24 +190,6 @@
     "texto": "I sent the draft of the 22:00–23:00 log to Norma, who will publish it. It goes from the 22:32 count to the 22:56 count: in that last one, 16 210 of 63 584 tallies are counted for regional governor and 13 763 of 89 935 fo"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 30,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:01:28.514Z",
-   "ultimaPublicacion": "2026-10-05T04:01:28.514Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:01:28.514Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 22:56 hora Lima, sin publicarlo, con 16 210 de 63 584 actas contabilizadas de gobernador regional. En ese corte Loreto y Huancavelica volvieron a cambiar de primer lugar. Norma "
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
