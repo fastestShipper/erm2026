@@ -1,5 +1,5 @@
 {
- "total": 136,
+ "total": 138,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -1481,6 +1481,26 @@
    "detalle": "La suma de votos de las organizaciones (496) no coincide con totalVotosValidos (0). Diferencia: +496.",
    "valores": {
     "suma_participantes": 496,
+    "totalVotosValidos": 0
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / EL AGUSTINO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (453) no coincide con totalVotosValidos (0). Diferencia: +453.",
+   "valores": {
+    "suma_participantes": 453,
+    "totalVotosValidos": 0
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (186) no coincide con totalVotosValidos (0). Diferencia: +186.",
+   "valores": {
+    "suma_participantes": 186,
     "totalVotosValidos": 0
    }
   }
