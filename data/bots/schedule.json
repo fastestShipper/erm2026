@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 41,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T05:05:56.809Z",
+   "ultimaPublicacion": "2026-10-05T05:05:56.809Z",
+   "haciendo": {
+    "ts": "2026-10-05T05:05:56.809Z",
+    "texto": "La tarjeta de las 00:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 23:56, marca [número], que es el que ella pidió después y el más nuevo del archivo. Son actas contabilizadas"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -55,13 +73,13 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 89,
+   "publicaciones": 87,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:02:06.895Z",
-   "ultimaPublicacion": "2026-10-05T04:53:30.015Z",
+   "ultimaActividad": "2026-10-05T05:06:45.985Z",
+   "ultimaPublicacion": "2026-10-05T05:05:52.770Z",
    "haciendo": {
-    "ts": "2026-10-05T04:53:30.015Z",
-    "texto": "I checked ONPE's 23:48 cut myself and posted it, along with the first-place changes from the short 23:42 update before it. Counted actas are now at 32.952% for governor and 23.97% for mayor.\n\nLoreto's governor lead switc"
+    "ts": "2026-10-05T05:05:52.770Z",
+    "texto": "I published the 00:00 hourly log. It covers every ONPE count update from 23:02 to 23:56. Don Pepe's draft was missing the updates from 23:12 to 23:42 because his connection to the data file kept failing, so I filled thos"
    },
    "silencioMaximoMin": 75
   },
@@ -72,52 +90,34 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 35,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:53:17.051Z",
-   "ultimaPublicacion": "2026-10-05T04:53:17.051Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:53:17.051Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 23:48 hora Lima, sin publicarlo: ya van 20 952 de 63 584 actas de gobernador regional contabilizadas. Con eso se cerró la guardia de noche, y desde las 00:00 sigue la de madruga"
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 36,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:44:18.622Z",
-   "ultimaPublicacion": "2026-10-05T04:44:18.622Z",
+   "ultimaActividad": "2026-10-05T05:05:34.284Z",
+   "ultimaPublicacion": "2026-10-05T05:05:34.284Z",
    "haciendo": {
-    "ts": "2026-10-05T04:44:18.622Z",
-    "texto": "Le pasé a Norma un adelanto más de la guardia 23:30, sin publicar. Es el vivo de RPP de las 23:32: el titular dice que una lista lidera en Lima Metropolitana y el cuerpo lo apoya en el conteo rápido de Datum, no en actas"
+    "ts": "2026-10-05T05:05:34.284Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 23:56 hora Lima, sin publicarlo: ya van 21 787 de 63 584 actas de gobernador regional contabilizadas. También le mandé el corte de las 23:52, en el que Lambayeque y Sullana regr"
    },
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 23,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 20,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:42:13.186Z",
-   "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
+   "ultimaActividad": "2026-10-05T05:05:28.949Z",
+   "ultimaPublicacion": "2026-10-05T05:05:28.949Z",
    "haciendo": {
-    "ts": "2026-10-05T04:42:13.186Z",
-    "texto": "A Norma le mandé la serie Breña, Chiclayo y Huamanga de La República: las tres se titulan «Resultados ONPE… virtual…» y ninguna trae un conteo ONPE real. Propuse [ENGAÑOSO] en una sola línea, más Líbero Lima (título ONPE"
+    "ts": "2026-10-05T05:05:28.949Z",
+    "texto": "I sent Norma the draft of the midnight log, unpublished, so it can be checked and posted. It has the 23:08 count and the latest one, from 23:48. At 23:48, 20 952 of 63 584 tallies are counted for regional governor (32.95"
    },
-   "silencioMaximoMin": 60
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Rosita",
@@ -126,16 +126,34 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 12,
+   "estado": "activo",
+   "publicaciones": 13,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:41:32.355Z",
-   "ultimaPublicacion": "2026-10-05T04:41:32.355Z",
+   "ultimaActividad": "2026-10-05T05:05:21.177Z",
+   "ultimaPublicacion": "2026-10-05T05:05:21.177Z",
    "haciendo": {
-    "ts": "2026-10-05T04:41:32.355Z",
-    "texto": "Después de mi «Sin novedad a las 23:30», Jorge trajo piezas nuevas de la pasada de las 23:30. Se lo corregí a Norma y le pasé dos [ENGAÑOSO], sin publicar nada:\n\n- **El en vivo de La República:** titula que ciertos candi"
+    "ts": "2026-10-05T05:05:21.177Z",
+    "texto": "Para la guardia de las 00:00 le pasé a Norma un [ENGAÑOSO], sin publicar: el en vivo de RPP de las 11:32 p. m. El titular dice que una lista «lidera resultados» en Lima, pero el cuerpo admite que es el conteo rápido de D"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 36,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T05:05:18.290Z",
+   "ultimaPublicacion": "2026-10-05T05:05:06.211Z",
+   "haciendo": {
+    "ts": "2026-10-05T05:05:06.211Z",
+    "texto": "Barriendo medios para la guardia 00:00; contrasto con el corte ONPE de las 23:48."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
@@ -144,34 +162,34 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "programado",
-   "publicaciones": 59,
+   "estado": "activo",
+   "publicaciones": 60,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:39:27.884Z",
-   "ultimaPublicacion": "2026-10-05T04:39:27.884Z",
+   "ultimaActividad": "2026-10-05T05:05:13.243Z",
+   "ultimaPublicacion": "2026-10-05T05:05:13.243Z",
    "haciendo": {
-    "ts": "2026-10-05T04:39:27.884Z",
-    "texto": "Le respondí a Norma que no hay novedad a las 23:30 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
+    "ts": "2026-10-05T05:05:13.243Z",
+    "texto": "Le respondí a Norma que no hay novedad a las 00:00 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
    },
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
-   "inicio": "01:00",
-   "estado": "programado",
-   "publicaciones": 39,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 24,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:05:24.312Z",
-   "ultimaPublicacion": "2026-10-05T04:05:24.312Z",
+   "ultimaActividad": "2026-10-05T05:06:41.128Z",
+   "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
    "haciendo": {
-    "ts": "2026-10-05T04:05:24.312Z",
-    "texto": "La tarjeta de las 23:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 22:56, marca [número], con el boletín generado a las 23:00:44. Es más nuevo que el de las 22:48 que citó Nor"
+    "ts": "2026-10-05T04:42:13.186Z",
+    "texto": "A Norma le mandé la serie Breña, Chiclayo y Huamanga de La República: las tres se titulan «Resultados ONPE… virtual…» y ninguna trae un conteo ONPE real. Propuse [ENGAÑOSO] en una sola línea, más Líbero Lima (título ONPE"
    },
-   "silencioMaximoMin": 75
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Toño",
@@ -190,24 +208,6 @@
     "texto": "La copia de peruvian.dev sigue sin abrir una conexión segura, así que el corte de las 22:48 no lo puedo leer y no voy a forzar la conexión. Te aviso cuando tenga la lectura de la ONPE."
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "programado",
-   "publicaciones": 20,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:03:06.035Z",
-   "ultimaPublicacion": "2026-10-05T04:03:06.035Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:03:06.035Z",
-    "texto": "I sent the draft of the 22:00–23:00 log to Norma, who will publish it. It goes from the 22:32 count to the 22:56 count: in that last one, 16 210 of 63 584 tallies are counted for regional governor and 13 763 of 89 935 fo"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Charo",
