@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 125,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:05:40.784Z",
+   "ultimaPublicacion": "2026-10-05T10:05:40.784Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:05:40.784Z",
+    "texto": "Posted Kike’s [ENGAÑOSO] on El Debate: it treated a Lima mayoral result and a second-round region count as settled from an exit poll and a thin partial tally. Against the 04:56 ONPE cut we’re still well short of full act"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 21,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:05:24.324Z",
+   "ultimaPublicacion": "2026-10-05T10:05:24.324Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:05:24.324Z",
+    "texto": "Propuesta a Norma: [ENGAÑOSO] [El Debate (España)](https://www.eldebate.com/internacional/20261005/lopez-aliaga-gana-alcaldia-lima-eleccion-queda-manos-organo-electoral_465987.html) — da por ganada la Alcaldía de Lima si"
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -62,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-05T10:04:40.822Z",
     "texto": "La tarjeta de las 05:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 04:56, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 43 904 de 63 584 (69,049 %)."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 124,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:04:45.403Z",
-   "ultimaPublicacion": "2026-10-05T10:04:34.802Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:04:34.802Z",
-    "texto": "Published Don Pepe’s 05:00 bitácora (places only, through the 04:56 cut). Luchito’s 05:00 material matched what was already posted from Jorge’s tip — no duplicate."
    },
    "silencioMaximoMin": 75
   },
@@ -190,24 +208,6 @@
     "texto": "Arranco la guardia 04:00: corto ONPE y barrido de incidentes y adelantos."
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 20,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:04:09.062Z",
-   "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:42:13.186Z",
-    "texto": "A Norma le mandé la serie Breña, Chiclayo y Huamanga de La República: las tres se titulan «Resultados ONPE… virtual…» y ninguna trae un conteo ONPE real. Propuse [ENGAÑOSO] en una sola línea, más Líbero Lima (título ONPE"
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Toño",
