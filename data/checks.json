@@ -1,6 +1,112 @@
 {
- "total": 277,
+ "total": 280,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (120,440) no coincide con totalVotosValidos (120,319). Diferencia: +121.",
+   "valores": {
+    "suma_participantes": 120440,
+    "totalVotosValidos": 120319
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (813,090) no coincide con totalVotosValidos (808,314). Diferencia: +4,776.",
+   "valores": {
+    "suma_participantes": 813090,
+    "totalVotosValidos": 808314
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 10.69% y el cálculo da 10.753%.",
+   "valores": {
+    "votos": 86921,
+    "pct_onpe": 10.69,
+    "pct_calculado": 10.753
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 16.761% y el cálculo da 16.860%.",
+   "valores": {
+    "votos": 136285,
+    "pct_onpe": 16.761,
+    "pct_calculado": 16.86
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 18.342% y el cálculo da 18.450%.",
+   "valores": {
+    "votos": 149134,
+    "pct_onpe": 18.342,
+    "pct_calculado": 18.45
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.543% y el cálculo da 22.676%.",
+   "valores": {
+    "votos": 183296,
+    "pct_onpe": 22.543,
+    "pct_calculado": 22.676
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (438,022) no coincide con totalVotosValidos (436,882). Diferencia: +1,140.",
+   "valores": {
+    "suma_participantes": 438022,
+    "totalVotosValidos": 436882
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 31.128% y el cálculo da 31.210%.",
+   "valores": {
+    "votos": 136349,
+    "pct_onpe": 31.128,
+    "pct_calculado": 31.21
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (180,856) no coincide con totalVotosValidos (180,535). Diferencia: +321.",
+   "valores": {
+    "suma_participantes": 180856,
+    "totalVotosValidos": 180535
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.316% y el cálculo da 35.379%.",
+   "valores": {
+    "votos": 63871,
+    "pct_onpe": 35.316,
+    "pct_calculado": 35.379
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
@@ -119,71 +225,6 @@
     "votos": 7081,
     "pct_onpe": 27.288,
     "pct_calculado": 28.185
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SECHURA / VICE",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (6,219) no coincide con totalVotosValidos (3,860). Diferencia: +2,359.",
-   "valores": {
-    "suma_participantes": 6219,
-    "totalVotosValidos": 3860
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SECHURA / VICE",
-   "severidad": "revisar",
-   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 1.061% y el cálculo da 1.710%.",
-   "valores": {
-    "votos": 66,
-    "pct_onpe": 1.061,
-    "pct_calculado": 1.71
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SECHURA / VICE",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 2.074% y el cálculo da 3.342%.",
-   "valores": {
-    "votos": 129,
-    "pct_onpe": 2.074,
-    "pct_calculado": 3.342
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SECHURA / VICE",
-   "severidad": "revisar",
-   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 20.486% y el cálculo da 33.005%.",
-   "valores": {
-    "votos": 1274,
-    "pct_onpe": 20.486,
-    "pct_calculado": 33.005
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SECHURA / VICE",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 37.852% y el cálculo da 60.984%.",
-   "valores": {
-    "votos": 2354,
-    "pct_onpe": 37.852,
-    "pct_calculado": 60.984
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SECHURA / VICE",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 38.527% y el cálculo da 62.073%.",
-   "valores": {
-    "votos": 2396,
-    "pct_onpe": 38.527,
-    "pct_calculado": 62.073
    }
   },
   {
@@ -2628,16 +2669,6 @@
     "votos": 58848,
     "pct_onpe": 24.889,
     "pct_calculado": 24.954
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (174,484) no coincide con totalVotosValidos (174,302). Diferencia: +182.",
-   "valores": {
-    "suma_participantes": 174484,
-    "totalVotosValidos": 174302
    }
   },
   {
