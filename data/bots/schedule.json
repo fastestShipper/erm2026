@@ -48,20 +48,56 @@
  ],
  "agentes": [
   {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 15,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:01:48.206Z",
+   "ultimaPublicacion": "2026-10-05T04:01:48.206Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:01:48.206Z",
+    "texto": "La copia de peruvian.dev sigue sin abrir una conexión segura, así que el corte de las 22:48 no lo puedo leer y no voy a forzar la conexión. Te aviso cuando tenga la lectura de la ONPE."
+   },
+   "silencioMaximoMin": 30
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 73,
+   "estado": "activo",
+   "publicaciones": 72,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:54:42.875Z",
-   "ultimaPublicacion": "2026-10-05T03:54:40.587Z",
+   "ultimaActividad": "2026-10-05T04:01:42.827Z",
+   "ultimaPublicacion": "2026-10-05T04:01:40.266Z",
    "haciendo": {
-    "ts": "2026-10-05T03:54:40.587Z",
-    "texto": "I published the 22:48 cut after checking it against the bulletin. Regional governor is at 23.452% of actas counted, and both mayor races are at 13.31%. The first place flipped back in Huancavelica, Amazonas, and Lucanas,"
+    "ts": "2026-10-05T04:01:40.266Z",
+    "texto": "I checked the 22:56 cut against the bulletin and published it. Toño counted are now 25.494% for regional governor and 15.303% for both mayor races. In the governor races, Loreto and Huancavelica both went back to the par"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 9,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:01:30.217Z",
+   "ultimaPublicacion": "2026-10-05T04:01:30.217Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:01:30.217Z",
+    "texto": "A Norma le respondí «[INTERNO] Sin novedad a las 23:00»: desde las 22:40 no me llegó ninguna nota nueva para verificar. Kike seguía revisando a esa hora, así que si encuentra algo me llegará después. Mi vigilancia de las"
    },
    "silencioMaximoMin": 75
   },
@@ -72,16 +108,34 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 29,
+   "estado": "activo",
+   "publicaciones": 30,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:54:31.622Z",
-   "ultimaPublicacion": "2026-10-05T03:54:31.622Z",
+   "ultimaActividad": "2026-10-05T04:01:28.514Z",
+   "ultimaPublicacion": "2026-10-05T04:01:28.514Z",
    "haciendo": {
-    "ts": "2026-10-05T03:54:31.622Z",
-    "texto": "Norma ya publicó el corte de las 22:42. Le pasé el de las 22:48 hora Lima, que no publiqué: van 14 912 de 63 584 actas de gobernador regional contabilizadas, y Huancavelica y Amazonas volvieron al primer lugar que tenían"
+    "ts": "2026-10-05T04:01:28.514Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 22:56 hora Lima, sin publicarlo, con 16 210 de 63 584 actas contabilizadas de gobernador regional. En ese corte Loreto y Huancavelica volvieron a cambiar de primer lugar. Norma "
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 38,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:01:24.563Z",
+   "ultimaPublicacion": "2026-10-05T04:01:24.563Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:01:24.563Z",
+    "texto": "Releo el boletín y armo la tarjeta de las 23:00 solo como [INTERNO], sin publicarla."
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Maritza",
@@ -90,14 +144,14 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "fuera-de-horario",
-   "publicaciones": 58,
+   "estado": "activo",
+   "publicaciones": 59,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:50:44.686Z",
-   "ultimaPublicacion": "2026-10-05T03:50:44.686Z",
+   "ultimaActividad": "2026-10-05T04:01:42.830Z",
+   "ultimaPublicacion": "2026-10-05T04:01:24.057Z",
    "haciendo": {
-    "ts": "2026-10-05T03:50:44.686Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 22:42 (hora de Lima). Las actas contabilizadas llegan a 22,3% en gobernador regional y a 12,3% en alcaldías. Según el boletín, el primer lugar ya no puede cambiar en 5 de los 16"
+    "ts": "2026-10-05T04:01:24.057Z",
+    "texto": "Estoy revisando X y el boletín de la ONPE para la guardia de las 23:00."
    },
    "silencioMaximoMin": 60
   },
@@ -108,10 +162,10 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 20,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:40:50.801Z",
+   "ultimaActividad": "2026-10-05T04:01:09.357Z",
    "ultimaPublicacion": "2026-10-05T03:40:50.801Z",
    "haciendo": {
     "ts": "2026-10-05T03:40:50.801Z",
@@ -126,10 +180,10 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 39,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:40:19.067Z",
+   "ultimaActividad": "2026-10-05T04:01:08.013Z",
    "ultimaPublicacion": "2026-10-05T03:40:19.067Z",
    "haciendo": {
     "ts": "2026-10-05T03:40:19.067Z",
@@ -138,70 +192,16 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "fuera-de-horario",
-   "publicaciones": 8,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:40:16.605Z",
-   "ultimaPublicacion": "2026-10-05T03:40:16.605Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:40:16.605Z",
-    "texto": "A Norma le respondí «[INTERNO] Sin novedad a las 22:30». Ella ya había cerrado las dos notas de la media hora como [ENGAÑOSO]. A Panamericana 475298 le puso [ENGAÑOSO] y no el [SIN PRUEBA] que yo había propuesto, porque "
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "atrasado",
-   "publicaciones": 14,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:04:05.047Z",
-   "ultimaPublicacion": "2026-10-05T03:04:05.047Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:04:05.047Z",
-    "texto": "En la guardia de las 22:00 la pantalla de Lima se movió. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 09:58:00 p. m., hay 3 53"
-   },
-   "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 38,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:03:44.615Z",
-   "ultimaPublicacion": "2026-10-05T03:03:44.615Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:03:44.615Z",
-    "texto": "La tarjeta de las 22:00 está lista como [INTERNO] y no la publiqué. Usa el corte de las 21:58, marca [número], con el boletín generado a las 22:00:45. Es más nuevo que el de las 21:52 y coincide con el que Norma pasó des"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "puesto": "Cronista",
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 20,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:03:01.683Z",
+   "ultimaActividad": "2026-10-05T04:01:11.563Z",
    "ultimaPublicacion": "2026-10-05T03:03:01.683Z",
    "haciendo": {
     "ts": "2026-10-05T03:03:01.683Z",
