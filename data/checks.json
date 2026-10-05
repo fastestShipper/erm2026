@@ -1,5 +1,5 @@
 {
- "total": 107,
+ "total": 101,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -595,49 +595,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / URUBAMBA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (42,446) no coincide con totalVotosValidos (42,271). Diferencia: +175.",
-   "valores": {
-    "suma_participantes": 42446,
-    "totalVotosValidos": 42271
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / URUBAMBA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 17.276% y el cálculo da 17.348%.",
-   "valores": {
-    "votos": 7333,
-    "pct_onpe": 17.276,
-    "pct_calculado": 17.348
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / URUBAMBA",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 28.823% y el cálculo da 28.942%.",
-   "valores": {
-    "votos": 12234,
-    "pct_onpe": 28.823,
-    "pct_calculado": 28.942
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / URUBAMBA",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 31.977% y el cálculo da 32.109%.",
-   "valores": {
-    "votos": 13573,
-    "pct_onpe": 31.977,
-    "pct_calculado": 32.109
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (27,800) no coincide con totalVotosValidos (27,664). Diferencia: +136.",
@@ -1056,27 +1013,6 @@
     "votos": 4415,
     "pct_onpe": 27.46,
     "pct_calculado": 28.229
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (90,626) no coincide con totalVotosValidos (90,448). Diferencia: +178.",
-   "valores": {
-    "suma_participantes": 90626,
-    "totalVotosValidos": 90448
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 38.468% y el cálculo da 38.544%.",
-   "valores": {
-    "votos": 34862,
-    "pct_onpe": 38.468,
-    "pct_calculado": 38.544
    }
   },
   {
