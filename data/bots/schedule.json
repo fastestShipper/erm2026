@@ -55,51 +55,51 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 69,
+   "publicaciones": 68,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:38:22.553Z",
-   "ultimaPublicacion": "2026-10-05T03:38:22.553Z",
+   "ultimaActividad": "2026-10-05T03:41:03.198Z",
+   "ultimaPublicacion": "2026-10-05T03:41:03.198Z",
    "haciendo": {
-    "ts": "2026-10-05T03:38:22.553Z",
-    "texto": "I published the new 22:32 ONPE cut. It has 20.2% of governor actas counted and 10.55% of mayor actas, and two first-place leads flipped. In Sullana's provincial mayor race, the lead went back to the party that led before"
+    "ts": "2026-10-05T03:41:03.198Z",
+    "texto": "I flagged an Evidencia.pe story as misleading after reading it myself. It says three regions already have governors-elect, but that comes from an exit poll. The ONPE figures the story quotes itself fall short of the 30% "
    },
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 28,
+   "publicaciones": 21,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:37:58.909Z",
-   "ultimaPublicacion": "2026-10-05T03:37:58.909Z",
+   "ultimaActividad": "2026-10-05T03:40:50.801Z",
+   "ultimaPublicacion": "2026-10-05T03:40:50.801Z",
    "haciendo": {
-    "ts": "2026-10-05T03:37:58.909Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 22:32 hora Lima y no lo publiqué. Ya van 12 856 de 63 584 actas contabilizadas de gobernador regional. Ella ya publicó hasta el corte de las 22:28."
+    "ts": "2026-10-05T03:40:50.801Z",
+    "texto": "En la ronda de las 22:30 salió una pieza nueva y se la pasé a Norma: una nota de Evidencia.pe, con veredicto propuesto [ENGAÑOSO]. El título da por hechos los gobernadores regionales y las segundas vueltas en seis region"
    },
-   "silencioMaximoMin": 45
+   "silencioMaximoMin": 60
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
-   "inicio": "06:27",
+   "inicio": "06:05",
    "estado": "activo",
-   "publicaciones": 7,
+   "publicaciones": 58,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:37:44.729Z",
-   "ultimaPublicacion": "2026-10-05T03:37:44.729Z",
+   "ultimaActividad": "2026-10-05T03:40:20.188Z",
+   "ultimaPublicacion": "2026-10-05T03:40:20.188Z",
    "haciendo": {
-    "ts": "2026-10-05T03:37:44.729Z",
-    "texto": "Le pasé a Norma, sin publicarlas, dos notas nuevas que trajo Jorge en la pasada de las 22:30.\n\n- **Panamericana 475298**: dice que un candidato «volverá al sillón municipal» de Lima, sin dar cifras ni actas. Propuse [SIN"
+    "ts": "2026-10-05T03:40:20.188Z",
+    "texto": "No hay nada nuevo a las 22:40 (hora de Lima), y así se lo dije a Norma. El último corte de la ONPE sigue siendo el de las 22:32, que ella ya publicó. X sigue sin créditos, así que no pude revisar la lista."
    },
-   "silencioMaximoMin": 75
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Jorge",
@@ -111,31 +111,49 @@
    "estado": "activo",
    "publicaciones": 39,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:37:29.601Z",
-   "ultimaPublicacion": "2026-10-05T03:37:29.601Z",
+   "ultimaActividad": "2026-10-05T03:40:19.067Z",
+   "ultimaPublicacion": "2026-10-05T03:40:19.067Z",
    "haciendo": {
-    "ts": "2026-10-05T03:37:29.601Z",
-    "texto": "Norma cerró como [ENGAÑOSO] el en vivo de El Comercio (el titular de las 22:01) y la nota 1710809 de RPP. En la pasada de las 22:30 salieron dos adelantos nuevos y ya se los pasé a ella y a Rosita, sin publicar nada:\n\n- "
+    "ts": "2026-10-05T03:40:19.067Z",
+    "texto": "Norma ya publicó los dos [ENGAÑOSO] de la pasada de las 22:30: Panamericana 475298 y la nota de El Comercio sobre Lima Metropolitana. Volví a revisar contra el corte de la ONPE de las 22:32 y no salió nada nuevo, así que"
    },
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 57,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 8,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:32:40.496Z",
-   "ultimaPublicacion": "2026-10-05T03:32:40.496Z",
+   "ultimaActividad": "2026-10-05T03:40:16.605Z",
+   "ultimaPublicacion": "2026-10-05T03:40:16.605Z",
    "haciendo": {
-    "ts": "2026-10-05T03:32:40.496Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 22:28 (hora de Lima). Ya van 12106, 8727 y 8727 actas contabilizadas, y el primer lugar cambió en Leoncio Prado y en Jauja. Además, ella confirmó que ya publicó el corte de las "
+    "ts": "2026-10-05T03:40:16.605Z",
+    "texto": "A Norma le respondí «[INTERNO] Sin novedad a las 22:30». Ella ya había cerrado las dos notas de la media hora como [ENGAÑOSO]. A Panamericana 475298 le puso [ENGAÑOSO] y no el [SIN PRUEBA] que yo había propuesto, porque "
    },
-   "silencioMaximoMin": 60
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 27,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:40:13.716Z",
+   "ultimaPublicacion": "2026-10-05T03:37:58.909Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:37:58.909Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 22:32 hora Lima y no lo publiqué. Ya van 12 856 de 63 584 actas contabilizadas de gobernador regional. Ella ya publicó hasta el corte de las 22:28."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Toño",
@@ -172,24 +190,6 @@
     "texto": "La tarjeta de las 22:00 está lista como [INTERNO] y no la publiqué. Usa el corte de las 21:58, marca [número], con el boletín generado a las 22:00:45. Es más nuevo que el de las 21:52 y coincide con el que Norma pasó des"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 19,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:03:14.494Z",
-   "ultimaPublicacion": "2026-10-05T03:03:14.494Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:03:14.494Z",
-    "texto": "Guardia 22:00: una pieza nueva a Norma — Pulso Perú, veredicto propuesto [ENGAÑOSO] (título/lead como ONPE y «virtual alcalde»; cuerpo es Datum). No la publiqué."
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Don Pepe",
