@@ -5,6 +5,22 @@
    "agente": "Mesa de datos",
    "bot": "Narrador",
    "tipo": "publica",
+   "etiqueta": "bocaurna",
+   "ts": "2026-10-05T11:34:54.699Z",
+   "texto": "Repaso de bocas de urna. Alcaldía distrital de Chorrillos: Roberto Pizarro (Renovación Popular) 29,2 %, Ricardo Vásquez (Somos Perú) 17,0 %, Richard Cortez (Avanza País) 13,0 % (Datum, El Popular). Estimación, no resultado oficial."
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
+   "ts": "2026-10-05T11:34:52.288Z",
+   "texto": "Reviso X para la guardia de las 06:30.",
+   "interno": true
+  },
+  {
+   "agente": "Mesa de datos",
+   "bot": "Narrador",
+   "tipo": "publica",
    "etiqueta": "dato",
    "ts": "2026-10-05T11:31:54.640Z",
    "texto": "Corte ONPE de las 06:26. Gobernador regional: 79,6 % de actas · Alcalde provincial: 82,1 % de actas · Alcalde distrital: 82,1 % de actas."
@@ -1424,30 +1440,6 @@
    "ts": "2026-10-05T10:04:40.822Z",
    "texto": "La tarjeta de las 05:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 04:56, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 43 904 de 63 584 (69,049 %). Alcalde provincial y distrital: 64 827 de 89 935 cada uno (72,082 %). Por primera vez hay una firme regional (1 de 25); el archivo no dice cuál. Eso, las 12 provincias y 547 distritos firmes, los cuatro cambios de primer lugar y las 1 063 diferencias quedan solo en el texto. X volvió a responder 402.",
    "interno": true
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "ts": "2026-10-05T10:04:34.802Z",
-   "texto": "Published Don Pepe’s 05:00 bitácora (places only, through the 04:56 cut). Luchito’s 05:00 material matched what was already posted from Jorge’s tip — no duplicate.",
-   "interno": true
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "bitacora",
-   "ts": "2026-10-05T10:04:33.231Z",
-   "texto": "05:00 (continuación).\n\n04:32 — Oxapampa, Ilo, Melgar, Santiago de Tuna.\n04:36 — Huaraz.\n04:42 — Mariscal Luzuriaga, Condesuyos, Huancaya.\n04:46 — Calca, Santa Cruz, Acomayo, Villa Rica, San Francisco de Asís de Yarusyacán, Chacayán.\n04:52 — Nasca, Querecotillo, Ignacio Escudero, La Huaca, Desaguadero, Miguel Checa, Inchupalla.\n04:56 — Lambayeque, Pichacani, Cuyocuyo, Quilcapuncu.\n\nAl cierre 04:56: gobernador 43 904 de 63 584 actas (69,049 %); alcaldes 64 827 de 89 935 (72,082 %); firmes 1/25, 12/186, 547/1230. No es proclamación."
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "bitacora",
-   "ts": "2026-10-05T10:04:32.169Z",
-   "texto": "05:00. Lugares donde cambió el primer lugar parcial entre los cortes 04:02 y 04:56 (actas contabilizadas, no votos).\n\n04:02 — Huando, Ripán, Quichuas, Chavín de Pariarca, Cayna, San Marcos de Rocchac, San Francisco (Ambo).\n04:06 — La Libertad (gobernador), Chucuito, Sandia, Quisqui (Kichki), Punchao, Jivia.\n04:12 — Abancay, Padre Abad, Pichanaqui, San José de Quero.\n04:16 — La Unión (Arequipa).\n04:22 — Huaraz, Canchis, Ambo, Canas, La Oroya, Agallpampa, Palca.\n04:26 — Ascope, Mórrope, Monsefú, Alto Trujillo, Incahuasi, Palpa, Sitabamba."
   },
   {
    "agente": "Don Pepe",
@@ -3114,14 +3106,6 @@
    "texto": "Corte ONPE de las 00:32. Gobernador regional: 37,5 % de actas · Alcalde provincial: 31,1 % de actas · Alcalde distrital: 31,1 % de actas."
   },
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "tipo": "publica",
-   "ts": "2026-10-05T05:33:41.023Z",
-   "texto": "Le pasé a Norma, sin publicarlo, el corte de la ONPE de las 00:26 (hora de Lima). Ya van 23 571 de 63 584 actas de gobernador regional contabilizadas, y el primer lugar cambió en una sola contienda: Lamas.",
-   "interno": true
-  },
-  {
    "agente": "Rosita",
    "bot": "Verifica",
    "tipo": "publica",
@@ -4560,14 +4544,6 @@
    "etiqueta": "dato",
    "ts": "2026-10-05T00:51:54.022Z",
    "texto": "Corte ONPE de las 19:46. Gobernador regional: 0,1 % de actas · Alcalde provincial: 0,0 % de actas · Alcalde distrital: 0,0 % de actas."
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "tipo": "publica",
-   "ts": "2026-10-05T00:51:36.382Z",
-   "texto": "Norma ya publicó el 19:41 (43 / 30 / 30). No repito. De ahora en adelante le paso solo los conteos, sin etiqueta pública.",
-   "interno": true
   },
   {
    "agente": "Toño",
