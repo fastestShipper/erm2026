@@ -1,90 +1,69 @@
 {
- "total": 99,
+ "total": 91,
  "items": [
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · PIURA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (864,068) no coincide con totalVotosValidos (861,724). Diferencia: +2,344.",
-   "valores": {
-    "suma_participantes": 864068,
-    "totalVotosValidos": 861724
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · PIURA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.635% y el cálculo da 22.696%.",
-   "valores": {
-    "votos": 195579,
-    "pct_onpe": 22.635,
-    "pct_calculado": 22.696
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · UCAYALI",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (198,802) no coincide con totalVotosValidos (197,288). Diferencia: +1,514.",
+   "detalle": "La suma de votos de las organizaciones (202,002) no coincide con totalVotosValidos (198,802). Diferencia: +3,200.",
    "valores": {
-    "suma_participantes": 198802,
-    "totalVotosValidos": 197288
+    "suma_participantes": 202002,
+    "totalVotosValidos": 198802
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · UCAYALI",
    "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 10.711% y el cálculo da 10.793%.",
+   "detalle": "FUERZA POPULAR: ONPE publica 10.586% y el cálculo da 10.756%.",
    "valores": {
-    "votos": 21293,
-    "pct_onpe": 10.711,
-    "pct_calculado": 10.793
+    "votos": 21383,
+    "pct_onpe": 10.586,
+    "pct_calculado": 10.756
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · UCAYALI",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 11.385% y el cálculo da 11.472%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 11.515% y el cálculo da 11.701%.",
    "valores": {
-    "votos": 22633,
-    "pct_onpe": 11.385,
-    "pct_calculado": 11.472
+    "votos": 23261,
+    "pct_onpe": 11.515,
+    "pct_calculado": 11.701
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · UCAYALI",
    "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 16.458% y el cálculo da 16.584%.",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 16.341% y el cálculo da 16.604%.",
    "valores": {
-    "votos": 32718,
-    "pct_onpe": 16.458,
-    "pct_calculado": 16.584
+    "votos": 33009,
+    "pct_onpe": 16.341,
+    "pct_calculado": 16.604
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · UCAYALI",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 20.706% y el cálculo da 20.865%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 20.866% y el cálculo da 21.202%.",
    "valores": {
-    "votos": 41164,
-    "pct_onpe": 20.706,
-    "pct_calculado": 20.865
+    "votos": 42150,
+    "pct_onpe": 20.866,
+    "pct_calculado": 21.202
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · UCAYALI",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.26% y el cálculo da 35.530%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.263% y el cálculo da 35.831%.",
    "valores": {
-    "votos": 70097,
-    "pct_onpe": 35.26,
-    "pct_calculado": 35.53
+    "votos": 71232,
+    "pct_onpe": 35.263,
+    "pct_calculado": 35.831
    }
   },
   {
@@ -409,71 +388,6 @@
     "votos": 765,
     "pct_onpe": 31.982,
     "pct_calculado": 37.928
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (9,885) no coincide con totalVotosValidos (9,773). Diferencia: +112.",
-   "valores": {
-    "suma_participantes": 9885,
-    "totalVotosValidos": 9773
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 10.41% y el cálculo da 10.529%.",
-   "valores": {
-    "votos": 1029,
-    "pct_onpe": 10.41,
-    "pct_calculado": 10.529
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 17.633% y el cálculo da 17.835%.",
-   "valores": {
-    "votos": 1743,
-    "pct_onpe": 17.633,
-    "pct_calculado": 17.835
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 20.111% y el cálculo da 20.342%.",
-   "valores": {
-    "votos": 1988,
-    "pct_onpe": 20.111,
-    "pct_calculado": 20.342
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 22.317% y el cálculo da 22.572%.",
-   "valores": {
-    "votos": 2206,
-    "pct_onpe": 22.317,
-    "pct_calculado": 22.572
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 22.317% y el cálculo da 22.572%.",
-   "valores": {
-    "votos": 2206,
-    "pct_onpe": 22.317,
-    "pct_calculado": 22.572
    }
   },
   {
