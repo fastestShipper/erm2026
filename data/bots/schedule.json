@@ -54,14 +54,32 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 92,
+   "estado": "activo",
+   "publicaciones": 88,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:29:23.900Z",
-   "ultimaPublicacion": "2026-10-05T06:29:23.900Z",
+   "ultimaActividad": "2026-10-05T06:38:58.661Z",
+   "ultimaPublicacion": "2026-10-05T06:38:57.361Z",
    "haciendo": {
-    "ts": "2026-10-05T06:29:23.900Z",
-    "texto": "I've checked and posted the 01:22 cut, which is now the starting point for comparisons. It puts gobernador at 41,289 % of actas and alcaldes at 38,257 %. First place can no longer change in 0 of 25 regions, 0 of 154 prov"
+    "ts": "2026-10-05T06:38:57.361Z",
+    "texto": "[DATO ONPE] Corte ONPE de las 01:26. En Huaraz (Áncash), alcalde provincial, el primer lugar parcial pasa de País para Todos a Podemos Perú (Jabico Prudencio Robles Blacido). Es el primer cambio en esta contienda. Es un "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 20,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:38:48.585Z",
+   "ultimaPublicacion": "2026-10-05T06:38:48.585Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:38:48.585Z",
+    "texto": "Le respondí a Norma: sin novedad a las 01:30. Maritza no trae nada (X sin créditos) y no llegó pieza nueva de Jorge ni de Kike para verificar."
    },
    "silencioMaximoMin": 75
   },
@@ -72,34 +90,16 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 42,
+   "estado": "activo",
+   "publicaciones": 43,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:28:53.148Z",
-   "ultimaPublicacion": "2026-10-05T06:28:53.148Z",
+   "ultimaActividad": "2026-10-05T06:38:43.797Z",
+   "ultimaPublicacion": "2026-10-05T06:38:43.797Z",
    "haciendo": {
-    "ts": "2026-10-05T06:28:53.148Z",
-    "texto": "A Norma le pasé, sin publicar, tres cortes nuevos de la ONPE: los de las 01:12, 01:16 y 01:22 (hora Lima). El último lleva 26 253 de 63 584 actas de gobernador regional contabilizadas.\n\nEn Huancané y Yauyos se revirtió e"
+    "ts": "2026-10-05T06:38:43.797Z",
+    "texto": "Le pasé a Norma, sin publicar, el corte de las 01:26: ya van 26 555 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en Huaura y Huaraz.\n\nEl portal de la ONPE no cargó (se agotó el tiempo) y "
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 18,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:05:00.127Z",
-   "ultimaPublicacion": "2026-10-05T06:05:00.127Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:05:00.127Z",
-    "texto": "Norma ya cerró Gestión 00:17 como [ENGAÑOSO] y no publica Panamericana 475303 porque repite la 475304. Le pasé las cuatro URL de El Comercio que le faltaban; la base nueva es el corte de las 00:56."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Jorge",
@@ -108,16 +108,34 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 39,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:04:47.433Z",
-   "ultimaPublicacion": "2026-10-05T06:04:47.433Z",
+   "ultimaActividad": "2026-10-05T06:38:32.471Z",
+   "ultimaPublicacion": "2026-10-05T06:38:32.471Z",
    "haciendo": {
-    "ts": "2026-10-05T06:04:47.433Z",
-    "texto": "Listo: le pasé a Norma las cuatro URL con hora —Puno 00:30, Ica 00:35, Huánuco 00:42 y Loreto 00:45— para que cierre la serie. Gestión 00:17 ya quedó [ENGAÑOSO]; la 475303 no la publica."
+    "ts": "2026-10-05T06:38:32.471Z",
+    "texto": "Corte ONPE de las 01:26 (marca [número]). Sigo con el barrido de medios."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 62,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:38:22.737Z",
+   "ultimaPublicacion": "2026-10-05T06:38:22.737Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:38:22.737Z",
+    "texto": "Le respondí a Norma que no hay novedad a las 01:30 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista ni pasarle nada a Rosita."
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Beto",
@@ -156,34 +174,16 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "programado",
-   "publicaciones": 62,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:01:13.520Z",
-   "ultimaPublicacion": "2026-10-05T06:01:13.520Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:01:13.520Z",
-    "texto": "Le respondí a Norma que no hay novedad a las 01:00 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:04:53.949Z",
+   "ultimaActividad": "2026-10-05T06:38:06.202Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
    "haciendo": {
     "ts": "2026-10-05T04:42:13.186Z",
@@ -198,10 +198,10 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:01:51.935Z",
+   "ultimaActividad": "2026-10-05T06:38:37.946Z",
    "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
    "haciendo": {
     "ts": "2026-10-05T04:03:32.500Z",
