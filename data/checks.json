@@ -1,46 +1,24 @@
 {
- "total": 66,
+ "total": 64,
  "items": [
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · AREQUIPA",
+   "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (837,838) no coincide con totalVotosValidos (837,464). Diferencia: +374.",
+   "detalle": "La suma de votos de las organizaciones (308,808) no coincide con totalVotosValidos (308,372). Diferencia: +436.",
    "valores": {
-    "suma_participantes": 837838,
-    "totalVotosValidos": 837464
+    "suma_participantes": 308808,
+    "totalVotosValidos": 308372
    }
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · AYACUCHO",
+   "ambito": "Elecciones Regionales · ÁNCASH",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (308,372) no coincide con totalVotosValidos (307,638). Diferencia: +734.",
+   "detalle": "La suma de votos de las organizaciones (603,428) no coincide con totalVotosValidos (603,619). Diferencia: -191.",
    "valores": {
-    "suma_participantes": 308372,
-    "totalVotosValidos": 307638
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · AYACUCHO",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 32.936% y el cálculo da 33.015%.",
-   "valores": {
-    "votos": 101566,
-    "pct_onpe": 32.936,
-    "pct_calculado": 33.015
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · AYACUCHO",
-   "severidad": "revisar",
-   "detalle": "LIBERTAD POPULAR: ONPE publica 35.59% y el cálculo da 35.675%.",
-   "valores": {
-    "votos": 109750,
-    "pct_onpe": 35.59,
-    "pct_calculado": 35.675
+    "suma_participantes": 603428,
+    "totalVotosValidos": 603619
    }
   },
   {
