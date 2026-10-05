@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 74,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:02:50.066Z",
+   "ultimaPublicacion": "2026-10-05T04:02:22.328Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:02:22.328Z",
+    "texto": "I posted one new ENGAÑOSO (misleading) line. A La República article headlined as \"ONPE results\" for the Lima Provincias governor race has no ONPE count in it. The body admits ONPE hadn't published, and its only number is"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 22,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:02:02.607Z",
+   "ultimaPublicacion": "2026-10-05T04:02:02.607Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:02:02.607Z",
+    "texto": "En la ronda de las 23:00 salió una pieza nueva y se la mandé a Norma como [ENGAÑOSO]: una nota de La República sobre Lima Provincias, publicada a las 18:05 y todavía en línea. El título dice que trae resultados de la ONP"
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Toño",
    "bot": "Actas",
    "puesto": "Contrastador de actas",
@@ -57,31 +93,13 @@
    "estado": "activo",
    "publicaciones": 15,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:01:48.206Z",
+   "ultimaActividad": "2026-10-05T04:02:02.333Z",
    "ultimaPublicacion": "2026-10-05T04:01:48.206Z",
    "haciendo": {
     "ts": "2026-10-05T04:01:48.206Z",
     "texto": "La copia de peruvian.dev sigue sin abrir una conexión segura, así que el corte de las 22:48 no lo puedo leer y no voy a forzar la conexión. Te aviso cuando tenga la lectura de la ONPE."
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 72,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:01:42.827Z",
-   "ultimaPublicacion": "2026-10-05T04:01:40.266Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:01:40.266Z",
-    "texto": "I checked the 22:56 cut against the bulletin and published it. Toño counted are now 25.494% for regional governor and 15.303% for both mayor races. In the governor races, Loreto and Huancavelica both went back to the par"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Rosita",
@@ -156,24 +174,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 20,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:01:09.357Z",
-   "ultimaPublicacion": "2026-10-05T03:40:50.801Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:40:50.801Z",
-    "texto": "En la ronda de las 22:30 salió una pieza nueva y se la pasé a Norma: una nota de Evidencia.pe, con veredicto propuesto [ENGAÑOSO]. El título da por hechos los gobernadores regionales y las segundas vueltas en seis region"
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
@@ -199,9 +199,9 @@
    "nuevo": false,
    "inicio": "01:00",
    "estado": "activo",
-   "publicaciones": 20,
+   "publicaciones": 29,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:01:11.563Z",
+   "ultimaActividad": "2026-10-05T04:02:50.555Z",
    "ultimaPublicacion": "2026-10-05T03:03:01.683Z",
    "haciendo": {
     "ts": "2026-10-05T03:03:01.683Z",
