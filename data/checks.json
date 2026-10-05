@@ -1,6 +1,112 @@
 {
- "total": 414,
+ "total": 403,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (739,911) no coincide con totalVotosValidos (732,430). Diferencia: +7,481.",
+   "valores": {
+    "suma_participantes": 739911,
+    "totalVotosValidos": 732430
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 9.39% y el cálculo da 9.485%.",
+   "valores": {
+    "votos": 69474,
+    "pct_onpe": 9.39,
+    "pct_calculado": 9.485
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 10.491% y el cálculo da 10.598%.",
+   "valores": {
+    "votos": 77626,
+    "pct_onpe": 10.491,
+    "pct_calculado": 10.598
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 16.522% y el cálculo da 16.690%.",
+   "valores": {
+    "votos": 122245,
+    "pct_onpe": 16.522,
+    "pct_calculado": 16.69
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 18.069% y el cálculo da 18.253%.",
+   "valores": {
+    "votos": 133694,
+    "pct_onpe": 18.069,
+    "pct_calculado": 18.253
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.257% y el cálculo da 22.484%.",
+   "valores": {
+    "votos": 164683,
+    "pct_onpe": 22.257,
+    "pct_calculado": 22.484
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PUNO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (668,150) no coincide con totalVotosValidos (667,636). Diferencia: +514.",
+   "valores": {
+    "suma_participantes": 668150,
+    "totalVotosValidos": 667636
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (419,440) no coincide con totalVotosValidos (418,502). Diferencia: +938.",
+   "valores": {
+    "suma_participantes": 419440,
+    "totalVotosValidos": 418502
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 31.285% y el cálculo da 31.355%.",
+   "valores": {
+    "votos": 131221,
+    "pct_onpe": 31.285,
+    "pct_calculado": 31.355
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · TACNA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (215,812) no coincide con totalVotosValidos (215,603). Diferencia: +209.",
+   "valores": {
+    "suma_participantes": 215812,
+    "totalVotosValidos": 215603
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / CHOTA / CHALAMARCA",
@@ -1314,71 +1420,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / JULCÁN",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (14,265) no coincide con totalVotosValidos (14,088). Diferencia: +177.",
-   "valores": {
-    "suma_participantes": 14265,
-    "totalVotosValidos": 14088
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / JULCÁN",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 5.391% y el cálculo da 5.459%.",
-   "valores": {
-    "votos": 769,
-    "pct_onpe": 5.391,
-    "pct_calculado": 5.459
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / JULCÁN",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 9.443% y el cálculo da 9.561%.",
-   "valores": {
-    "votos": 1347,
-    "pct_onpe": 9.443,
-    "pct_calculado": 9.561
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / JULCÁN",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 11.42% y el cálculo da 11.563%.",
-   "valores": {
-    "votos": 1629,
-    "pct_onpe": 11.42,
-    "pct_calculado": 11.563
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / JULCÁN",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 34.855% y el cálculo da 35.292%.",
-   "valores": {
-    "votos": 4972,
-    "pct_onpe": 34.855,
-    "pct_calculado": 35.292
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / JULCÁN",
-   "severidad": "revisar",
-   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 38.892% y el cálculo da 39.381%.",
-   "valores": {
-    "votos": 5548,
-    "pct_onpe": 38.892,
-    "pct_calculado": 39.381
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / ASCOPE / CASA GRANDE",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (4,734) no coincide con totalVotosValidos (4,143). Diferencia: +591.",
@@ -2627,49 +2668,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / TARMA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (48,263) no coincide con totalVotosValidos (48,092). Diferencia: +171.",
-   "valores": {
-    "suma_participantes": 48263,
-    "totalVotosValidos": 48092
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / TARMA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 19.657% y el cálculo da 19.727%.",
-   "valores": {
-    "votos": 9487,
-    "pct_onpe": 19.657,
-    "pct_calculado": 19.727
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / TARMA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 26.869% y el cálculo da 26.965%.",
-   "valores": {
-    "votos": 12968,
-    "pct_onpe": 26.869,
-    "pct_calculado": 26.965
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / TARMA",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 27.51% y el cálculo da 27.608%.",
-   "valores": {
-    "votos": 13277,
-    "pct_onpe": 27.51,
-    "pct_calculado": 27.608
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · MOQUEGUA / GENERAL SÁNCHEZ CERRO",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (8,881) no coincide con totalVotosValidos (8,478). Diferencia: +403.",
@@ -3115,49 +3113,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN JUAN DE MIRAFLORES",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (209,783) no coincide con totalVotosValidos (208,534). Diferencia: +1,249.",
-   "valores": {
-    "suma_participantes": 209783,
-    "totalVotosValidos": 208534
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN JUAN DE MIRAFLORES",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 12.282% y el cálculo da 12.355%.",
-   "valores": {
-    "votos": 25765,
-    "pct_onpe": 12.282,
-    "pct_calculado": 12.355
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN JUAN DE MIRAFLORES",
-   "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 19.558% y el cálculo da 19.675%.",
-   "valores": {
-    "votos": 41030,
-    "pct_onpe": 19.558,
-    "pct_calculado": 19.675
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN JUAN DE MIRAFLORES",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 29.589% y el cálculo da 29.766%.",
-   "valores": {
-    "votos": 62073,
-    "pct_onpe": 29.589,
-    "pct_calculado": 29.766
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / CHALLHUAHUACHO",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (1,555) no coincide con totalVotosValidos (611). Diferencia: +944.",
@@ -3230,82 +3185,6 @@
     "votos": 440,
     "pct_onpe": 28.296,
     "pct_calculado": 72.013
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (25,573) no coincide con totalVotosValidos (23,485). Diferencia: +2,088.",
-   "valores": {
-    "suma_participantes": 25573,
-    "totalVotosValidos": 23485
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 1.787% y el cálculo da 1.946%.",
-   "valores": {
-    "votos": 457,
-    "pct_onpe": 1.787,
-    "pct_calculado": 1.946
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 2.698% y el cálculo da 2.938%.",
-   "valores": {
-    "votos": 690,
-    "pct_onpe": 2.698,
-    "pct_calculado": 2.938
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 13.757% y el cálculo da 14.980%.",
-   "valores": {
-    "votos": 3518,
-    "pct_onpe": 13.757,
-    "pct_calculado": 14.98
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 18.817% y el cálculo da 20.490%.",
-   "valores": {
-    "votos": 4812,
-    "pct_onpe": 18.817,
-    "pct_calculado": 20.49
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 23.806% y el cálculo da 25.923%.",
-   "valores": {
-    "votos": 6088,
-    "pct_onpe": 23.806,
-    "pct_calculado": 25.923
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 39.135% y el cálculo da 42.614%.",
-   "valores": {
-    "votos": 10008,
-    "pct_onpe": 39.135,
-    "pct_calculado": 42.614
    }
   },
   {
