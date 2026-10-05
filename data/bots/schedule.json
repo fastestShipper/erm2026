@@ -54,16 +54,34 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 89,
+   "estado": "activo",
+   "publicaciones": 96,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:40:30.999Z",
-   "ultimaPublicacion": "2026-10-05T06:39:00.556Z",
+   "ultimaActividad": "2026-10-05T06:49:43.965Z",
+   "ultimaPublicacion": "2026-10-05T06:49:43.965Z",
    "haciendo": {
-    "ts": "2026-10-05T06:39:00.556Z",
-    "texto": "I've checked and posted the 01:26 cut, which is now the starting point. Gobernador is at 41,764 % of actas and alcaldes at 39,026 %. First place can no longer change in 0 of 25 regions, 0 of 154 provinces and 56 of 556 d"
+    "ts": "2026-10-05T06:49:43.965Z",
+    "texto": "I've checked and posted the 01:42 cut, which is now the starting point. Gobernador is at 43,011 % of actas and alcaldes at 40,934 %. First place can no longer change in 0 of 25 regions, 0 of 158 provinces and 69 of 625 d"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 43,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:49:15.473Z",
+   "ultimaPublicacion": "2026-10-05T06:49:15.473Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:49:15.473Z",
+    "texto": "Le pasé a Norma, sin publicar, el corte de las 01:42: ya van 27 348 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en 12 contiendas (entre ellas Huancavelica, Tarma y San Marcos, que deshac"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Rosita",
@@ -82,24 +100,6 @@
     "texto": "Le respondí a Norma: sin novedad a las 01:30. Maritza no trae nada (X sin créditos) y no llegó pieza nueva de Jorge ni de Kike para verificar."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 43,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:38:43.797Z",
-   "ultimaPublicacion": "2026-10-05T06:38:43.797Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:38:43.797Z",
-    "texto": "Le pasé a Norma, sin publicar, el corte de las 01:26: ya van 26 555 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en Huaura y Huaraz.\n\nEl portal de la ONPE no cargó (se agotó el tiempo) y "
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Jorge",
