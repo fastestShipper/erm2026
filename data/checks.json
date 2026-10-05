@@ -1,5 +1,5 @@
 {
- "total": 493,
+ "total": 563,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -5328,10 +5328,43 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (94,959) no coincide con totalVotosValidos (94,768). Diferencia: +191.",
+   "detalle": "La suma de votos de las organizaciones (95,391) no coincide con totalVotosValidos (94,959). Diferencia: +432.",
    "valores": {
-    "suma_participantes": 94959,
-    "totalVotosValidos": 94768
+    "suma_participantes": 95391,
+    "totalVotosValidos": 94959
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO REGIONAL AREQUIPA AVANCEMOS: ONPE publica 16.169% y el cálculo da 16.243%.",
+   "valores": {
+    "votos": 15424,
+    "pct_onpe": 16.169,
+    "pct_calculado": 16.243
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 16.535% y el cálculo da 16.610%.",
+   "valores": {
+    "votos": 15773,
+    "pct_onpe": 16.535,
+    "pct_calculado": 16.61
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "FUERZA AREQUIPEÑA: ONPE publica 24.055% y el cálculo da 24.164%.",
+   "valores": {
+    "votos": 22946,
+    "pct_onpe": 24.055,
+    "pct_calculado": 24.164
    }
   },
   {
@@ -5342,6 +5375,732 @@
    "valores": {
     "suma_participantes": 161199,
     "totalVotosValidos": 160963
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / SANTA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (190,881) no coincide con totalVotosValidos (190,105). Diferencia: +776.",
+   "valores": {
+    "suma_participantes": 190881,
+    "totalVotosValidos": 190105
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / SANTA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 46.297% y el cálculo da 46.486%.",
+   "valores": {
+    "votos": 88373,
+    "pct_onpe": 46.297,
+    "pct_calculado": 46.486
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CAJABAMBA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (7,052) no coincide con totalVotosValidos (6,063). Diferencia: +989.",
+   "valores": {
+    "suma_participantes": 7052,
+    "totalVotosValidos": 6063
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CAJABAMBA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 0.681% y el cálculo da 0.792%.",
+   "valores": {
+    "votos": 48,
+    "pct_onpe": 0.681,
+    "pct_calculado": 0.792
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CAJABAMBA",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 2.893% y el cálculo da 3.365%.",
+   "valores": {
+    "votos": 204,
+    "pct_onpe": 2.893,
+    "pct_calculado": 3.365
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CAJABAMBA",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 13.542% y el cálculo da 15.751%.",
+   "valores": {
+    "votos": 955,
+    "pct_onpe": 13.542,
+    "pct_calculado": 15.751
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CAJABAMBA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 19.328% y el cálculo da 22.481%.",
+   "valores": {
+    "votos": 1363,
+    "pct_onpe": 19.328,
+    "pct_calculado": 22.481
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CAJABAMBA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 27.737% y el cálculo da 32.261%.",
+   "valores": {
+    "votos": 1956,
+    "pct_onpe": 27.737,
+    "pct_calculado": 32.261
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CAJABAMBA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 35.82% y el cálculo da 41.663%.",
+   "valores": {
+    "votos": 2526,
+    "pct_onpe": 35.82,
+    "pct_calculado": 41.663
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CELENDÍN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (27,283) no coincide con totalVotosValidos (26,724). Diferencia: +559.",
+   "valores": {
+    "suma_participantes": 27283,
+    "totalVotosValidos": 26724
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CELENDÍN",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 4.384% y el cálculo da 4.475%.",
+   "valores": {
+    "votos": 1196,
+    "pct_onpe": 4.384,
+    "pct_calculado": 4.475
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CELENDÍN",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 8.723% y el cálculo da 8.906%.",
+   "valores": {
+    "votos": 2380,
+    "pct_onpe": 8.723,
+    "pct_calculado": 8.906
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CELENDÍN",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 9.684% y el cálculo da 9.886%.",
+   "valores": {
+    "votos": 2642,
+    "pct_onpe": 9.684,
+    "pct_calculado": 9.886
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CELENDÍN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 12.495% y el cálculo da 12.756%.",
+   "valores": {
+    "votos": 3409,
+    "pct_onpe": 12.495,
+    "pct_calculado": 12.756
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CELENDÍN",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 18.22% y el cálculo da 18.601%.",
+   "valores": {
+    "votos": 4971,
+    "pct_onpe": 18.22,
+    "pct_calculado": 18.601
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CELENDÍN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 46.494% y el cálculo da 47.467%.",
+   "valores": {
+    "votos": 12685,
+    "pct_onpe": 46.494,
+    "pct_calculado": 47.467
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CUTERVO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (48,045) no coincide con totalVotosValidos (47,531). Diferencia: +514.",
+   "valores": {
+    "suma_participantes": 48045,
+    "totalVotosValidos": 47531
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CUTERVO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 18.961% y el cálculo da 19.166%.",
+   "valores": {
+    "votos": 9110,
+    "pct_onpe": 18.961,
+    "pct_calculado": 19.166
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CUTERVO",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 19.109% y el cálculo da 19.316%.",
+   "valores": {
+    "votos": 9181,
+    "pct_onpe": 19.109,
+    "pct_calculado": 19.316
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / CUTERVO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 52.037% y el cálculo da 52.599%.",
+   "valores": {
+    "votos": 25001,
+    "pct_onpe": 52.037,
+    "pct_calculado": 52.599
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / HUALGAYOC",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (36,040) no coincide con totalVotosValidos (35,918). Diferencia: +122.",
+   "valores": {
+    "suma_participantes": 36040,
+    "totalVotosValidos": 35918
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / HUALGAYOC",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 21.892% y el cálculo da 21.967%.",
+   "valores": {
+    "votos": 7890,
+    "pct_onpe": 21.892,
+    "pct_calculado": 21.967
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / HUALGAYOC",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 52.225% y el cálculo da 52.403%.",
+   "valores": {
+    "votos": 18822,
+    "pct_onpe": 52.225,
+    "pct_calculado": 52.403
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (159,561) no coincide con totalVotosValidos (154,970). Diferencia: +4,591.",
+   "valores": {
+    "suma_participantes": 159561,
+    "totalVotosValidos": 154970
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 2.458% y el cálculo da 2.531%.",
+   "valores": {
+    "votos": 3922,
+    "pct_onpe": 2.458,
+    "pct_calculado": 2.531
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 5.229% y el cálculo da 5.384%.",
+   "valores": {
+    "votos": 8343,
+    "pct_onpe": 5.229,
+    "pct_calculado": 5.384
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 5.723% y el cálculo da 5.893%.",
+   "valores": {
+    "votos": 9132,
+    "pct_onpe": 5.723,
+    "pct_calculado": 5.893
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 6.443% y el cálculo da 6.634%.",
+   "valores": {
+    "votos": 10281,
+    "pct_onpe": 6.443,
+    "pct_calculado": 6.634
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 6.662% y el cálculo da 6.859%.",
+   "valores": {
+    "votos": 10630,
+    "pct_onpe": 6.662,
+    "pct_calculado": 6.859
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 10.875% y el cálculo da 11.197%.",
+   "valores": {
+    "votos": 17352,
+    "pct_onpe": 10.875,
+    "pct_calculado": 11.197
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 13.164% y el cálculo da 13.554%.",
+   "valores": {
+    "votos": 21004,
+    "pct_onpe": 13.164,
+    "pct_calculado": 13.554
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 15.482% y el cálculo da 15.941%.",
+   "valores": {
+    "votos": 24704,
+    "pct_onpe": 15.482,
+    "pct_calculado": 15.941
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 29.193% y el cálculo da 30.057%.",
+   "valores": {
+    "votos": 46580,
+    "pct_onpe": 29.193,
+    "pct_calculado": 30.057
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (71,888) no coincide con totalVotosValidos (71,023). Diferencia: +865.",
+   "valores": {
+    "suma_participantes": 71888,
+    "totalVotosValidos": 71023
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMÓCRATA VERDE: ONPE publica 8.472% y el cálculo da 8.575%.",
+   "valores": {
+    "votos": 6090,
+    "pct_onpe": 8.472,
+    "pct_calculado": 8.575
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 12.55% y el cálculo da 12.703%.",
+   "valores": {
+    "votos": 9022,
+    "pct_onpe": 12.55,
+    "pct_calculado": 12.703
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 13.39% y el cálculo da 13.553%.",
+   "valores": {
+    "votos": 9626,
+    "pct_onpe": 13.39,
+    "pct_calculado": 13.553
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 20.04% y el cálculo da 20.284%.",
+   "valores": {
+    "votos": 14406,
+    "pct_onpe": 20.04,
+    "pct_calculado": 20.284
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 32.606% y el cálculo da 33.003%.",
+   "valores": {
+    "votos": 23440,
+    "pct_onpe": 32.606,
+    "pct_calculado": 33.003
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (15,575) no coincide con totalVotosValidos (15,098). Diferencia: +477.",
+   "valores": {
+    "suma_participantes": 15575,
+    "totalVotosValidos": 15098
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 2.774% y el cálculo da 2.861%.",
+   "valores": {
+    "votos": 432,
+    "pct_onpe": 2.774,
+    "pct_calculado": 2.861
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 15.384% y el cálculo da 15.870%.",
+   "valores": {
+    "votos": 2396,
+    "pct_onpe": 15.384,
+    "pct_calculado": 15.87
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 18.388% y el cálculo da 18.969%.",
+   "valores": {
+    "votos": 2864,
+    "pct_onpe": 18.388,
+    "pct_calculado": 18.969
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 24.925% y el cálculo da 25.712%.",
+   "valores": {
+    "votos": 3882,
+    "pct_onpe": 24.925,
+    "pct_calculado": 25.712
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 37.156% y el cálculo da 38.330%.",
+   "valores": {
+    "votos": 5787,
+    "pct_onpe": 37.156,
+    "pct_calculado": 38.33
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (470,038) no coincide con totalVotosValidos (466,946). Diferencia: +3,092.",
+   "valores": {
+    "suma_participantes": 470038,
+    "totalVotosValidos": 466946
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 13.576% y el cálculo da 13.666%.",
+   "valores": {
+    "votos": 63814,
+    "pct_onpe": 13.576,
+    "pct_calculado": 13.666
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 16.443% y el cálculo da 16.552%.",
+   "valores": {
+    "votos": 77290,
+    "pct_onpe": 16.443,
+    "pct_calculado": 16.552
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 56.482% y el cálculo da 56.856%.",
+   "valores": {
+    "votos": 265489,
+    "pct_onpe": 56.482,
+    "pct_calculado": 56.856
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (67,344) no coincide con totalVotosValidos (66,412). Diferencia: +932.",
+   "valores": {
+    "suma_participantes": 67344,
+    "totalVotosValidos": 66412
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 6.788% y el cálculo da 6.883%.",
+   "valores": {
+    "votos": 4571,
+    "pct_onpe": 6.788,
+    "pct_calculado": 6.883
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 8.543% y el cálculo da 8.663%.",
+   "valores": {
+    "votos": 5753,
+    "pct_onpe": 8.543,
+    "pct_calculado": 8.663
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 9.985% y el cálculo da 10.125%.",
+   "valores": {
+    "votos": 6724,
+    "pct_onpe": 9.985,
+    "pct_calculado": 10.125
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 10.85% y el cálculo da 11.003%.",
+   "valores": {
+    "votos": 7307,
+    "pct_onpe": 10.85,
+    "pct_calculado": 11.003
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 12.221% y el cálculo da 12.392%.",
+   "valores": {
+    "votos": 8230,
+    "pct_onpe": 12.221,
+    "pct_calculado": 12.392
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.256% y el cálculo da 22.568%.",
+   "valores": {
+    "votos": 14988,
+    "pct_onpe": 22.256,
+    "pct_calculado": 22.568
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 25.027% y el cálculo da 25.378%.",
+   "valores": {
+    "votos": 16854,
+    "pct_onpe": 25.027,
+    "pct_calculado": 25.378
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (76,331) no coincide con totalVotosValidos (73,342). Diferencia: +2,989.",
+   "valores": {
+    "suma_participantes": 76331,
+    "totalVotosValidos": 73342
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 2.328% y el cálculo da 2.423%.",
+   "valores": {
+    "votos": 1777,
+    "pct_onpe": 2.328,
+    "pct_calculado": 2.423
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 6.156% y el cálculo da 6.407%.",
+   "valores": {
+    "votos": 4699,
+    "pct_onpe": 6.156,
+    "pct_calculado": 6.407
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 6.283% y el cálculo da 6.539%.",
+   "valores": {
+    "votos": 4796,
+    "pct_onpe": 6.283,
+    "pct_calculado": 6.539
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 6.284% y el cálculo da 6.541%.",
+   "valores": {
+    "votos": 4797,
+    "pct_onpe": 6.284,
+    "pct_calculado": 6.541
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 8.229% y el cálculo da 8.564%.",
+   "valores": {
+    "votos": 6281,
+    "pct_onpe": 8.229,
+    "pct_calculado": 8.564
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 8.267% y el cálculo da 8.604%.",
+   "valores": {
+    "votos": 6310,
+    "pct_onpe": 8.267,
+    "pct_calculado": 8.604
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 12.858% y el cálculo da 13.383%.",
+   "valores": {
+    "votos": 9815,
+    "pct_onpe": 12.858,
+    "pct_calculado": 13.383
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 14.683% y el cálculo da 15.282%.",
+   "valores": {
+    "votos": 11208,
+    "pct_onpe": 14.683,
+    "pct_calculado": 15.282
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 30.672% y el cálculo da 31.922%.",
+   "valores": {
+    "votos": 23412,
+    "pct_onpe": 30.672,
+    "pct_calculado": 31.922
    }
   }
  ]
