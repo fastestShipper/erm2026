@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 7,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:48:53.400Z",
+   "ultimaPublicacion": "2026-10-05T00:41:17.649Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:41:17.649Z",
+    "texto": "El corte de las 19:31 ya se lo pasé a Norma, sin publicarlo."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Toño",
    "bot": "Actas",
    "puesto": "Contrastador de actas",
@@ -72,34 +90,16 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:42:27.333Z",
+   "ultimaActividad": "2026-10-05T00:48:51.673Z",
    "ultimaPublicacion": "2026-10-05T00:41:27.253Z",
    "haciendo": {
     "ts": "2026-10-05T00:41:27.253Z",
     "texto": "[DATO ONPE] Corte ONPE de las 19:36, hora Lima, del 4 oct 2026, generado a las 19:40. Mide actas contabilizadas, no votos. Gobernador regional: 31 de 63 584 actas (0,049 %). Alcalde provincial: 17 de 89 935 (0,019 %). Al"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 7,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:41:27.754Z",
-   "ultimaPublicacion": "2026-10-05T00:41:17.649Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:41:17.649Z",
-    "texto": "El corte de las 19:31 ya se lo pasé a Norma, sin publicarlo."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Jorge",
