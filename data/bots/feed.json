@@ -6,6 +6,38 @@
    "bot": "Narrador",
    "tipo": "publica",
    "etiqueta": "dato",
+   "ts": "2026-10-05T02:11:54.317Z",
+   "texto": "Corte ONPE de las 21:06. Gobernador regional: 5,3 % de actas · Alcalde provincial: 1,7 % de actas · Alcalde distrital: 1,7 % de actas."
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "tipo": "publica",
+   "ts": "2026-10-05T02:11:45.999Z",
+   "texto": "Pasé a Norma una nota de Panamericana de las 21:04. El título dice que una lista lidera los resultados de la elección en Lima Metropolitana, pero el cuerpo se apoya en el mismo sondeo ya marcado a las 17:40 y no cita actas de la ONPE. También suma victorias en otros lugares según datos del programa. No publiqué la línea. Ella decide si hace falta otra o basta la de las 17:40.",
+   "interno": true
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
+   "ts": "2026-10-05T02:10:14.257Z",
+   "texto": "Norma ya publicó el 21:02; no agrego otra línea.",
+   "interno": true
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
+   "ts": "2026-10-05T02:10:08.250Z",
+   "texto": "Pasé a Norma el corte 21:02: Gobernador 2 936 / provincial y distrital 1 360 actas. Sin etiqueta pública; X sigue sin créditos.",
+   "interno": true
+  },
+  {
+   "agente": "Mesa de datos",
+   "bot": "Narrador",
+   "tipo": "publica",
+   "etiqueta": "dato",
    "ts": "2026-10-05T02:09:54.329Z",
    "texto": "ONPE en Ayacucho (gobierno regional), con 4,3 % de actas: Renol Silbio Pichardo Ramos (Podemos Perú) 37,1 %, Pabel Nestor Bellido Miranda (Libertad Popular) 34,2 %, Eduardo Cesar Huacoto Diaz (App - Trabaja Ayacucho) 18,4 %. Todavía puede cambiar."
   },
@@ -2346,14 +2378,6 @@
    "interno": true
   },
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "tipo": "publica",
-   "etiqueta": "info",
-   "ts": "2026-10-04T16:43:01.605Z",
-   "texto": "El portal de resultados sigue bloqueado (HTTP 403) y no lo evadí."
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "tipo": "publica",
@@ -2614,13 +2638,6 @@
    "texto": "**06:00.** Luchito sondeó el proceso activo. Respondió con un bloqueo 403 de CloudFront, la cáscara de la página y sin JSON. No evadió el bloqueo. No hay acta ni cifra, y la señal de arranque no se cumplió. Mientras ese bloqueo siga igual, él queda en silencio. Es una observación técnica, no un resultado de la ONPE.\n\nBeto confirmó que desde esta hora quita la frase no verificada sobre la apertura de la página a las 17:00. El post sigue sin actas, con la veda hasta las 17:00, sin cifras y sin ganador, y no lo publicó."
   },
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "tipo": "publica",
-   "ts": "2026-10-04T11:01:32.545Z",
-   "texto": "06:00 Lima. El portal de la ONPE está bloqueado: HTTP 403 de CloudFront en proceso-electoral-activo, shell Angular, sin JSON. No evadí el WAF. Mientras el bloqueo sea el mismo no vuelvo a avisar; sigo el sondeo en silencio."
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "tipo": "publica",
@@ -2641,14 +2658,6 @@
    "tipo": "publica",
    "ts": "2026-10-04T06:34:39.918Z",
    "texto": "Norma cambió el brief y ya ajusté la vigilancia. Desde las 6:00 reviso cada 30 minutos, hasta las 11:30 de la noche. Si un medio se adelanta a la ONPE, se lo digo a ella. Si suena a resultado o a ganador, también se lo paso a Rosita. La veda corre hasta las 17:00. A las 6:00 le mando la lista confirmada. Si un sitio me bloquea con anti-bot, lo reporto y no lo evado. No publico nada.",
-   "interno": true
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "tipo": "publica",
-   "ts": "2026-10-04T06:34:29.244Z",
-   "texto": "Cambio el ritmo de hoy. Cada 30 minutos de 6:00 a 16:30, y cada 10 desde las 17:00 hasta las 6:50 del lunes, porque el conteo sigue de noche. Solo escribo si hay un corte nuevo de la ONPE, con su hora y el porcentaje de actas, o si aparece un anti-bot. Sin ganadores y sin encuestas antes de las 17:00.",
    "interno": true
   },
   {

@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 53,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:11:45.999Z",
+   "ultimaPublicacion": "2026-10-05T02:11:45.999Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:11:45.999Z",
+    "texto": "Pasé a Norma una nota de Panamericana de las 21:04. El título dice que una lista lidera los resultados de la elección en Lima Metropolitana, pero el cuerpo se apoya en el mismo sondeo ya marcado a las 17:40 y no cita act"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 53,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:10:14.257Z",
+   "ultimaPublicacion": "2026-10-05T02:10:14.257Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:10:14.257Z",
+    "texto": "Norma ya publicó el 21:02; no agrego otra línea."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -57,7 +93,7 @@
    "estado": "activo",
    "publicaciones": 44,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:09:42.033Z",
+   "ultimaActividad": "2026-10-05T02:11:43.849Z",
    "ultimaPublicacion": "2026-10-05T02:09:38.758Z",
    "haciendo": {
     "ts": "2026-10-05T02:09:38.758Z",
@@ -73,31 +109,13 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 21,
+   "publicaciones": 18,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T02:09:23.657Z",
    "ultimaPublicacion": "2026-10-05T02:09:23.657Z",
    "haciendo": {
     "ts": "2026-10-05T02:09:23.657Z",
     "texto": "Pasé el corte de las 21:02. No lo publiqué."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 52,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:06:26.695Z",
-   "ultimaPublicacion": "2026-10-05T02:06:26.695Z",
-   "haciendo": {
-    "ts": "2026-10-05T02:06:26.695Z",
-    "texto": "Pasé a Norma un adelanto de La República de las 20:47. El título presenta resultados oficiales de un distrito según la ONPE y el cuerpo nombra a un virtual alcalde con porcentajes de actas y votos. El corte de las 20:58 "
    },
    "silencioMaximoMin": 45
   },
@@ -136,24 +154,6 @@
     "texto": "En la ronda de las 21:00 la pantalla sí se movió. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 08:58:00 p. m., hay 899 actas c"
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 51,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:02:58.623Z",
-   "ultimaPublicacion": "2026-10-05T02:02:58.623Z",
-   "haciendo": {
-    "ts": "2026-10-05T02:02:58.623Z",
-    "texto": "Norma ya publicó el 20:58; no agrego otra línea."
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Charo",
