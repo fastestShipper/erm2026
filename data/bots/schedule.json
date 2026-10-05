@@ -54,50 +54,14 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 124,
+   "estado": "activo",
+   "publicaciones": 115,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:54:53.939Z",
+   "ultimaActividad": "2026-10-05T10:03:59.466Z",
    "ultimaPublicacion": "2026-10-05T09:54:53.939Z",
    "haciendo": {
     "ts": "2026-10-05T09:54:53.939Z",
     "texto": "Posted the 04:46 cut as the new baseline, plus the 04:42 shifts. Gobernador is at 67,585 % of actas and alcaldes at 70,479 %. First place can no longer change in 1 of 25 regions, 12 of 185 provinces and 511 of 1 199 dist"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 54,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:54:31.123Z",
-   "ultimaPublicacion": "2026-10-05T09:54:31.123Z",
-   "haciendo": {
-    "ts": "2026-10-05T09:54:31.123Z",
-    "texto": "Le pasé a Norma, sin publicar, el intermedio de las 04:42 y el corte de las 04:46: ya van 42 973 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en nueve contiendas en total (sugiero Huancay"
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 32,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:34:02.327Z",
-   "ultimaPublicacion": "2026-10-05T09:34:02.327Z",
-   "haciendo": {
-    "ts": "2026-10-05T09:34:02.327Z",
-    "texto": "Le respondí a Norma: sin novedad a las 04:30. Desde las 04:00 no llegó pieza nueva de Maritza, Jorge ni Kike. Base publicada: corte 03:42."
    },
    "silencioMaximoMin": 75
   },
@@ -108,16 +72,34 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "programado",
-   "publicaciones": 61,
+   "estado": "activo",
+   "publicaciones": 60,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:33:42.357Z",
-   "ultimaPublicacion": "2026-10-05T09:33:42.357Z",
+   "ultimaActividad": "2026-10-05T10:03:58.917Z",
+   "ultimaPublicacion": "2026-10-05T10:03:58.917Z",
    "haciendo": {
-    "ts": "2026-10-05T09:33:42.357Z",
-    "texto": "También le respondí a Rosita: sin novedad a las 04:30, porque X sigue sin créditos y no hay nada que verificar."
+    "ts": "2026-10-05T10:03:58.917Z",
+    "texto": "También le respondí a Rosita: sin novedad a las 05:00, porque X sigue sin créditos y no hay nada que verificar."
    },
    "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 55,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:03:55.232Z",
+   "ultimaPublicacion": "2026-10-05T10:03:55.232Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:03:55.232Z",
+    "texto": "Reviso boletines después del 04:46."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Beto",
@@ -126,14 +108,32 @@
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 48,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:07:38.588Z",
-   "ultimaPublicacion": "2026-10-05T09:07:38.588Z",
+   "ultimaActividad": "2026-10-05T10:03:48.715Z",
+   "ultimaPublicacion": "2026-10-05T10:03:48.715Z",
    "haciendo": {
-    "ts": "2026-10-05T09:07:38.588Z",
-    "texto": "La tarjeta de las 04:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 04:02, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 38 872 de 63 584 (61,135 %)."
+    "ts": "2026-10-05T10:03:48.715Z",
+    "texto": "Releo el boletín y armo la tarjeta de las 05:00 solo como [INTERNO], sin publicarla."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 33,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:03:54.663Z",
+   "ultimaPublicacion": "2026-10-05T10:03:47.702Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:03:47.702Z",
+    "texto": "Arranco la guardia 05:00: reviso piezas de Maritza, Jorge y Kike, y contrasto con el corte ONPE."
    },
    "silencioMaximoMin": 75
   },
@@ -144,14 +144,14 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 24,
+   "estado": "activo",
+   "publicaciones": 25,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:07:12.533Z",
-   "ultimaPublicacion": "2026-10-05T09:07:12.533Z",
+   "ultimaActividad": "2026-10-05T10:03:45.888Z",
+   "ultimaPublicacion": "2026-10-05T10:03:45.888Z",
    "haciendo": {
-    "ts": "2026-10-05T09:07:12.533Z",
-    "texto": "I sent Norma the unpublished draft of the 4:00 a.m. log. It runs from after 02:56 through the 03:56 count. At 03:56: 38 395 of 63 584 tallies for regional governor (60.385 %) and 56 155 of 89 935 for mayors (62.44 %). Pl"
+    "ts": "2026-10-05T10:03:45.888Z",
+    "texto": "Armando el borrador de las 05:00: leo los cortes después del 03:56."
    },
    "silencioMaximoMin": 75
   },
@@ -180,10 +180,10 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 39,
+   "estado": "activo",
+   "publicaciones": 38,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:33:52.992Z",
+   "ultimaActividad": "2026-10-05T10:03:56.039Z",
    "ultimaPublicacion": "2026-10-05T09:06:41.320Z",
    "haciendo": {
     "ts": "2026-10-05T09:06:41.320Z",
@@ -198,10 +198,10 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 20,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:34:26.660Z",
+   "ultimaActividad": "2026-10-05T10:03:38.664Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
    "haciendo": {
     "ts": "2026-10-05T04:42:13.186Z",
@@ -216,10 +216,10 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:33:47.153Z",
+   "ultimaActividad": "2026-10-05T10:03:41.381Z",
    "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
    "haciendo": {
     "ts": "2026-10-05T04:03:32.500Z",
