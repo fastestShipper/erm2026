@@ -48,40 +48,40 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 83,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:35:24.980Z",
-   "ultimaPublicacion": "2026-10-05T05:33:47.302Z",
-   "haciendo": {
-    "ts": "2026-10-05T05:33:47.302Z",
-    "texto": "I checked ONPE's 00:26 count myself and posted it. About 37.1% of governor tally sheets and 30.3% of mayor sheets are now counted. Only one race changed leader this time: Lamas's provincial mayor race, in San Martín. Fir"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 38,
+   "estado": "activo",
+   "publicaciones": 39,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:33:41.023Z",
-   "ultimaPublicacion": "2026-10-05T05:33:41.023Z",
+   "ultimaActividad": "2026-10-05T05:44:55.134Z",
+   "ultimaPublicacion": "2026-10-05T05:44:55.134Z",
    "haciendo": {
-    "ts": "2026-10-05T05:33:41.023Z",
-    "texto": "Le pasé a Norma, sin publicarlo, el corte de la ONPE de las 00:26 (hora de Lima). Ya van 23 571 de 63 584 actas de gobernador regional contabilizadas, y el primer lugar cambió en una sola contienda: Lamas."
+    "ts": "2026-10-05T05:44:55.134Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 00:38 (hora Lima), junto con el de las 00:32, sin publicar ninguno. Ya van 24 111 de 63 584 actas de gobernador regional contabilizadas. En ese rato se revirtieron tres primeros"
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 83,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T05:44:52.406Z",
+   "ultimaPublicacion": "2026-10-05T05:33:47.302Z",
+   "haciendo": {
+    "ts": "2026-10-05T05:33:47.302Z",
+    "texto": "I checked ONPE's 00:26 count myself and posted it. About 37.1% of governor tally sheets and 30.3% of mayor sheets are now counted. Only one race changed leader this time: Lamas's provincial mayor race, in San Martín. Fir"
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Rosita",
