@@ -5,6 +5,46 @@
    "agente": "Mesa de datos",
    "bot": "Narrador",
    "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T16:25:53.806Z",
+   "texto": "ONPE en Shilla, Shilla, Carhuaz, Áncash (alcaldía distrital), con 100,0 % de actas: Victor Alfredo Santillan Julca (Alianza Para el Progreso) 30,8 %, Juan Felix Puntillo Limas (Partido Político Perú Primero) 26,9 %, Andres Justino Dominguez Chispa (Partido País Para Todos) 21,5 %. Ese primer lugar ya no puede cambiar."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T16:25:17.360Z",
+   "texto": "Cambio de primer lugar al corte 10:22. Castilla (Arequipa), alcalde provincial: Fuerza Arequipeña → Progresemos Antonio Manuel Quispe Yauri. Toño contabilizadas, no votos. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T16:25:16.661Z",
+   "texto": "Corte ONPE de las 10:56. Toño contadas: Gobernador regional 92.934% (59091 de 63584; antes 92.835%) · Alcalde provincial 92.836% (83492 de 89935; antes 92.786%) · Alcalde distrital 91.521% (61524 de 67224; antes 91.487%). Firmes: el primer lugar ya no puede cambiar con las actas que faltan en 8 de 25 regiones, 108 de 193 provincias, 1255 de 1591 distritos. No es una proclamación; proclama el JNE. Toño contabilizadas, no votos. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-05T16:25:07.699Z",
+   "texto": "Checking the 10:56 cut and intermediate first-place changes after 10:12.",
+   "interno": true
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "tipo": "publica",
+   "ts": "2026-10-05T16:25:01.450Z",
+   "texto": "Tarjeta de las 11:00 lista para Norma, solo [INTERNO]; no la publiqué. Corte de las 10:56, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 59 091 de 63 584 (92,934 %). Alcalde provincial: 83 492 de 89 935 (92,836 %). Alcalde distrital: 61 524 de 67 224 (91,521 %). Firmes: 8 / 108 / 1 255. Entre 10:16 y 10:56 hubo un cambio de primer lugar en Castilla (Arequipa), alcalde provincial. Las 71 diferencias quedan solo en el texto.",
+   "interno": true
+  },
+  {
+   "agente": "Mesa de datos",
+   "bot": "Narrador",
+   "tipo": "publica",
    "etiqueta": "bocaurna",
    "ts": "2026-10-05T16:21:53.885Z",
    "texto": "Repaso de bocas de urna. Alcaldía distrital de La Molina: Juan Carlos Zurek (Somos Perú) 30,9 %, Sergio Castromonte (Avanza País) 26,5 %, Lizzi Sueldo (Renovación Popular) 21,4 % (Datum, Infobae). Estimación, no resultado oficial."
@@ -1816,54 +1856,6 @@
    "ts": "2026-10-05T11:35:34.915Z",
    "texto": "Published 06:26 as the new baseline (gob 79.607%, alc 82.053%; firmes 3/38/908 of 25/190/1498). Two cambios there: Casa Grande without name (same Moscoso as Ascope provincial), Paiján with name. Also posted the 06:22 cambios: Moquegua governor flips back to Acción Popular (reverts 06:12) and Virú provincial.",
    "interno": true
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T11:35:33.048Z",
-   "texto": "Corte ONPE de las 06:22. En Virú (La Libertad), alcalde provincial, el primer lugar parcial pasa de Partido Aprista Peruano a Somos Perú (Joselito Alejandro Afiler Horna). Es un cambio entre cortes, no un ganador. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T11:35:32.330Z",
-   "texto": "Corte ONPE de las 06:22. En Moquegua, gobernador regional, el primer lugar parcial pasa de Somos Perú a Acción Popular (Abraham Alejandro Cardenas Romero). Revierte el corte 06:12. Es un cambio entre cortes, no un ganador. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T11:35:31.684Z",
-   "texto": "Corte ONPE de las 06:26. En Paiján (Ascope), alcalde distrital, el primer lugar parcial pasa de Partido Aprista Peruano a Alianza para el Progreso (Baltasar Edgar Galarreta Lopez). Es un cambio entre cortes, no un ganador. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T11:35:31.025Z",
-   "texto": "Corte ONPE de las 06:26. En Casa Grande (Ascope), alcalde distrital, el primer lugar parcial pasa de Podemos Perú a Un Camino Diferente. Es un cambio entre cortes, no un ganador. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T11:35:30.383Z",
-   "texto": "Corte ONPE de las 06:26. El primer lugar ya no puede cambiar con las actas que faltan en 3 de 25 regiones, 38 de 190 provincias y 908 de 1 498 distritos. No es una proclamación; proclama el JNE. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-05T11:35:29.646Z",
-   "texto": "Corte ONPE de las 06:26. Toño contabilizadas (no son votos): gobernador regional 50 617 de 63 584 (79,607 %; antes 79,198 %); alcaldes 73 794 de 89 935 (82,053 %; antes 81,653 %). Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
   },
   {
    "agente": "Rosita",
@@ -5298,14 +5290,6 @@
    "texto": "Repaso de bocas de urna. Alcaldía distrital de La Molina: Juan Carlos Zurek (Somos Perú) 30,9 %, Sergio Castromonte (Avanza País) 26,5 %, Lizzi Sueldo (Renovación Popular) 21,4 % (Datum, Infobae). Estimación, no resultado oficial."
   },
   {
-   "agente": "Mesa de datos",
-   "bot": "Narrador",
-   "tipo": "publica",
-   "etiqueta": "dato",
-   "ts": "2026-10-04T23:36:54.144Z",
-   "texto": "Corte ONPE de las 18:30. Gobernador regional: 0,0 % de actas · Alcalde provincial: 0,0 % de actas · Alcalde distrital: 0,0 % de actas. La ONPE todavía no publica actas contadas; las mesas recién terminan el conteo y envían sus actas."
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "tipo": "publica",
@@ -5575,14 +5559,6 @@
    "tipo": "publica",
    "ts": "2026-10-04T18:02:28.795Z",
    "texto": "Norma cambió la cifra de las 13:00. Releo el aviso de las 12:54 y dejo de lado el 99,34%.",
-   "interno": true
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "tipo": "publica",
-   "ts": "2026-10-04T18:01:58.578Z",
-   "texto": "Leo el último aviso de @ONPE_oficial y armo la tarjeta de las 13:00. No se publica.",
    "interno": true
   },
   {
