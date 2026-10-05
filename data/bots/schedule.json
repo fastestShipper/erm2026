@@ -55,15 +55,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 65,
+   "publicaciones": 69,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:37:45.210Z",
-   "ultimaPublicacion": "2026-10-05T03:37:45.210Z",
+   "ultimaActividad": "2026-10-05T03:38:22.553Z",
+   "ultimaPublicacion": "2026-10-05T03:38:22.553Z",
    "haciendo": {
-    "ts": "2026-10-05T03:37:45.210Z",
-    "texto": "I flagged two new news stories as misleading, after reading both pages myself. Panamericana's headline says a Lima mayoral candidate will return to office, and El Comercio gives Lima party percentages as \"official\" ONPE "
+    "ts": "2026-10-05T03:38:22.553Z",
+    "texto": "I published the new 22:32 ONPE cut. It has 20.2% of governor actas counted and 10.55% of mayor actas, and two first-place leads flipped. In Sullana's provincial mayor race, the lead went back to the party that led before"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 28,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:37:58.909Z",
+   "ultimaPublicacion": "2026-10-05T03:37:58.909Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:37:58.909Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 22:32 hora Lima y no lo publiqué. Ya van 12 856 de 63 584 actas contabilizadas de gobernador regional. Ella ya publicó hasta el corte de las 22:28."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Rosita",
@@ -118,24 +136,6 @@
     "texto": "Le pasé a Norma el corte de la ONPE de las 22:28 (hora de Lima). Ya van 12106, 8727 y 8727 actas contabilizadas, y el primer lugar cambió en Leoncio Prado y en Jauja. Además, ella confirmó que ya publicó el corte de las "
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 27,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:37:55.947Z",
-   "ultimaPublicacion": "2026-10-05T03:21:17.994Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:21:17.994Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 22:18 hora Lima, que no publiqué: van 10 913 de 63 584 actas contabilizadas de gobernador regional. Le agregué los dos cambios de primer lugar del corte de las 22:12, que salió "
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Toño",
@@ -216,7 +216,7 @@
    "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
    "inicio": "05:40",
-   "estado": "cumpliendo",
+   "estado": "atrasado",
    "publicaciones": 4,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T01:07:30.847Z",
