@@ -1,5 +1,5 @@
 {
- "total": 81,
+ "total": 83,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -870,6 +870,27 @@
     "votos": 10496,
     "pct_onpe": 37.755,
     "pct_calculado": 37.941
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (454,717) no coincide con totalVotosValidos (453,264). Diferencia: +1,453.",
+   "valores": {
+    "suma_participantes": 454717,
+    "totalVotosValidos": 453264
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 32.809% y el cálculo da 32.914%.",
+   "valores": {
+    "votos": 149189,
+    "pct_onpe": 32.809,
+    "pct_calculado": 32.914
    }
   }
  ]
