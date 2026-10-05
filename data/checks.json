@@ -1,14 +1,199 @@
 {
- "total": 1,
+ "total": 18,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · LA LIBERTAD",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (426) no coincide con totalVotosValidos (0). Diferencia: +426.",
+   "detalle": "La suma de votos de las organizaciones (845) no coincide con totalVotosValidos (426). Diferencia: +419.",
    "valores": {
-    "suma_participantes": 426,
+    "suma_participantes": 845,
+    "totalVotosValidos": 426
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LA LIBERTAD",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 3.432% y el cálculo da 6.808%.",
+   "valores": {
+    "votos": 29,
+    "pct_onpe": 3.432,
+    "pct_calculado": 6.808
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LA LIBERTAD",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 3.905% y el cálculo da 7.746%.",
+   "valores": {
+    "votos": 33,
+    "pct_onpe": 3.905,
+    "pct_calculado": 7.746
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LA LIBERTAD",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 5.799% y el cálculo da 11.502%.",
+   "valores": {
+    "votos": 49,
+    "pct_onpe": 5.799,
+    "pct_calculado": 11.502
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LA LIBERTAD",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 9.822% y el cálculo da 19.484%.",
+   "valores": {
+    "votos": 83,
+    "pct_onpe": 9.822,
+    "pct_calculado": 19.484
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LA LIBERTAD",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 11.716% y el cálculo da 23.239%.",
+   "valores": {
+    "votos": 99,
+    "pct_onpe": 11.716,
+    "pct_calculado": 23.239
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LA LIBERTAD",
+   "severidad": "revisar",
+   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 11.953% y el cálculo da 23.709%.",
+   "valores": {
+    "votos": 101,
+    "pct_onpe": 11.953,
+    "pct_calculado": 23.709
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LA LIBERTAD",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 20.592% y el cálculo da 40.845%.",
+   "valores": {
+    "votos": 174,
+    "pct_onpe": 20.592,
+    "pct_calculado": 40.845
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LA LIBERTAD",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PATRIÓTICO DEL PERÚ: ONPE publica 32.781% y el cálculo da 65.023%.",
+   "valores": {
+    "votos": 277,
+    "pct_onpe": 32.781,
+    "pct_calculado": 65.023
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PUNO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (430) no coincide con totalVotosValidos (0). Diferencia: +430.",
+   "valores": {
+    "suma_participantes": 430,
     "totalVotosValidos": 0
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (357) no coincide con totalVotosValidos (177). Diferencia: +180.",
+   "valores": {
+    "suma_participantes": 357,
+    "totalVotosValidos": 177
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "UNION REGIONAL: ONPE publica 1.12% y el cálculo da 2.260%.",
+   "valores": {
+    "votos": 4,
+    "pct_onpe": 1.12,
+    "pct_calculado": 2.26
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 3.081% y el cálculo da 6.215%.",
+   "valores": {
+    "votos": 11,
+    "pct_onpe": 3.081,
+    "pct_calculado": 6.215
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 6.443% y el cálculo da 12.994%.",
+   "valores": {
+    "votos": 23,
+    "pct_onpe": 6.443,
+    "pct_calculado": 12.994
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 12.885% y el cálculo da 25.989%.",
+   "valores": {
+    "votos": 46,
+    "pct_onpe": 12.885,
+    "pct_calculado": 25.989
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 17.367% y el cálculo da 35.028%.",
+   "valores": {
+    "votos": 62,
+    "pct_onpe": 17.367,
+    "pct_calculado": 35.028
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 26.891% y el cálculo da 54.237%.",
+   "valores": {
+    "votos": 96,
+    "pct_onpe": 26.891,
+    "pct_calculado": 54.237
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 32.213% y el cálculo da 64.972%.",
+   "valores": {
+    "votos": 115,
+    "pct_onpe": 32.213,
+    "pct_calculado": 64.972
    }
   }
  ]
