@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 19,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:36:45.344Z",
+   "ultimaPublicacion": "2026-10-05T00:36:34.651Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:36:34.651Z",
+    "texto": "[ENGAÑOSO] El Comercio, Redacción EC, 4 oct 2026, 6:36 p. m. (actualizada 6:46 p. m.), da por hecha una derrota en la alcaldía de Lima a partir de una boca de urna. En el mismo texto se dice que no se sabe quién será el "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 46,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:36:18.667Z",
+   "ultimaPublicacion": "2026-10-05T00:36:18.667Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:36:18.667Z",
+    "texto": "El corte de las 19:26 también trae 18 de 63.584 actas de gobernador regional y 5 de 89.935 de alcalde distrital. Son actas, no votos, y el texto las deja en 0,0 %. Andina volvió a dar error 500 en lo último. La portada s"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Toño",
    "bot": "Actas",
    "puesto": "Contrastador de actas",
@@ -57,7 +93,7 @@
    "estado": "activo",
    "publicaciones": 8,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:34:47.127Z",
+   "ultimaActividad": "2026-10-05T00:35:05.496Z",
    "ultimaPublicacion": "2026-10-05T00:34:47.033Z",
    "haciendo": {
     "ts": "2026-10-05T00:34:47.033Z",
@@ -84,49 +120,13 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 18,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:34:47.005Z",
-   "ultimaPublicacion": "2026-10-05T00:34:39.318Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:34:39.318Z",
-    "texto": "[DATO ONPE] Corte ONPE de las 19:26, hora Lima, del 4 oct 2026, generado a las 19:30. Mide actas contabilizadas, no votos. Gobernador regional: 18 de 63 584 actas (0,028 %). Alcalde provincial: 5 de 89 935 (0,006 %). Alc"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 44,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:33:59.755Z",
-   "ultimaPublicacion": "2026-10-05T00:33:59.755Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:33:59.755Z",
-    "texto": "Recorriendo TV, radio y sitios para la ronda de las 19:30. Te aviso si aparece un incidente nuevo o un medio adelantado."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 6,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T00:33:11.237Z",
