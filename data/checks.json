@@ -1,5 +1,5 @@
 {
- "total": 82,
+ "total": 84,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -704,60 +704,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (94,997) no coincide con totalVotosValidos (94,324). Diferencia: +673.",
-   "valores": {
-    "suma_participantes": 94997,
-    "totalVotosValidos": 94324
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 13.64% y el cálculo da 13.738%.",
-   "valores": {
-    "votos": 12958,
-    "pct_onpe": 13.64,
-    "pct_calculado": 13.738
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 14.35% y el cálculo da 14.452%.",
-   "valores": {
-    "votos": 13632,
-    "pct_onpe": 14.35,
-    "pct_calculado": 14.452
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 19.109% y el cálculo da 19.245%.",
-   "valores": {
-    "votos": 18153,
-    "pct_onpe": 19.109,
-    "pct_calculado": 19.245
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 32.279% y el cálculo da 32.509%.",
-   "valores": {
-    "votos": 30664,
-    "pct_onpe": 32.279,
-    "pct_calculado": 32.509
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (10,722) no coincide con totalVotosValidos (10,573). Diferencia: +149.",
@@ -884,6 +830,82 @@
     "votos": 15609,
     "pct_onpe": 52.467,
     "pct_calculado": 56.352
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / SATIPO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (48,844) no coincide con totalVotosValidos (48,484). Diferencia: +360.",
+   "valores": {
+    "suma_participantes": 48844,
+    "totalVotosValidos": 48484
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / SATIPO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 8.718% y el cálculo da 8.782%.",
+   "valores": {
+    "votos": 4258,
+    "pct_onpe": 8.718,
+    "pct_calculado": 8.782
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / SATIPO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 9.303% y el cálculo da 9.372%.",
+   "valores": {
+    "votos": 4544,
+    "pct_onpe": 9.303,
+    "pct_calculado": 9.372
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / SATIPO",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 10.849% y el cálculo da 10.929%.",
+   "valores": {
+    "votos": 5299,
+    "pct_onpe": 10.849,
+    "pct_calculado": 10.929
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / SATIPO",
+   "severidad": "revisar",
+   "detalle": "BATALLA PERÚ: ONPE publica 14.929% y el cálculo da 15.040%.",
+   "valores": {
+    "votos": 7292,
+    "pct_onpe": 14.929,
+    "pct_calculado": 15.04
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / SATIPO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 19.722% y el cálculo da 19.868%.",
+   "valores": {
+    "votos": 9633,
+    "pct_onpe": 19.722,
+    "pct_calculado": 19.868
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / SATIPO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 31.394% y el cálculo da 31.627%.",
+   "valores": {
+    "votos": 15334,
+    "pct_onpe": 31.394,
+    "pct_calculado": 31.627
    }
   }
  ]
