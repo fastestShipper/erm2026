@@ -1,4 +1,15 @@
 {
- "total": 0,
- "items": []
+ "total": 1,
+ "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LA LIBERTAD",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (426) no coincide con totalVotosValidos (0). Diferencia: +426.",
+   "valores": {
+    "suma_participantes": 426,
+    "totalVotosValidos": 0
+   }
+  }
+ ]
 }

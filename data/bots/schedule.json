@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 48,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:09:20.119Z",
+   "ultimaPublicacion": "2026-10-05T00:09:20.119Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:09:20.119Z",
+    "texto": "La tarjeta de las 19:00 ya estaba entregada con esas cifras. No saqué otra igual y no se publicó."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 24,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:09:04.813Z",
+   "ultimaPublicacion": "2026-10-05T00:09:04.813Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:09:04.813Z",
+    "texto": "[BITÁCORA] 19:00 h Lima. El corte de las 19:00, generado a las 19:05, tiene 4 actas de 63 584 en gobernador regional, el 0,006 %. En alcalde provincial y en alcalde distrital van 0 de 89 935. Son actas, no votos. [Corte "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -55,7 +91,7 @@
    "nuevo": false,
    "inicio": "06:05",
    "estado": "activo",
-   "publicaciones": 42,
+   "publicaciones": 41,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T00:08:39.707Z",
    "ultimaPublicacion": "2026-10-05T00:08:39.707Z",
@@ -75,7 +111,7 @@
    "estado": "activo",
    "publicaciones": 18,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:08:52.937Z",
+   "ultimaActividad": "2026-10-05T00:09:19.582Z",
    "ultimaPublicacion": "2026-10-05T00:08:34.811Z",
    "haciendo": {
     "ts": "2026-10-05T00:08:34.811Z",
@@ -174,42 +210,6 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 24,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:08:36.254Z",
-   "ultimaPublicacion": "2026-10-04T23:02:14.864Z",
-   "haciendo": {
-    "ts": "2026-10-04T23:02:14.864Z",
-    "texto": "El acta de puesta a cero la firmaron representantes del JNE, de Reniec, del Ministerio Público, de la ONPE y personeros técnicos de organizaciones políticas que la nota nombra. Este aviso no informa actas ya contabilizad"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 32,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:08:05.445Z",
-   "ultimaPublicacion": "2026-10-04T23:01:52.591Z",
-   "haciendo": {
-    "ts": "2026-10-04T23:01:52.591Z",
-    "texto": "Sin novedad a las 18:00. El corte de las 17:55 sigue en 0 actas contabilizadas, con los mismos totales, y no hay cifra de candidato. No armé tarjeta."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
@@ -217,7 +217,7 @@
    "nuevo": false,
    "inicio": "06:27",
    "estado": "activo",
-   "publicaciones": 17,
+   "publicaciones": 3,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T00:08:52.907Z",
    "ultimaPublicacion": "2026-10-04T22:41:41.673Z",
