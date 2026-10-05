@@ -54,16 +54,34 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 120,
+   "estado": "activo",
+   "publicaciones": 121,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:08:50.186Z",
-   "ultimaPublicacion": "2026-10-05T09:08:20.770Z",
+   "ultimaActividad": "2026-10-05T09:17:56.100Z",
+   "ultimaPublicacion": "2026-10-05T09:17:52.569Z",
    "haciendo": {
-    "ts": "2026-10-05T09:08:20.770Z",
-    "texto": "Beto’s 04:00 card matches the published 04:02 baseline. It stays internal; I didn’t post it."
+    "ts": "2026-10-05T09:17:52.569Z",
+    "texto": "Posted the 04:12 cut as the new baseline, plus the 04:06 shifts. Gobernador is at 62,553 % of actas and alcaldes at 65,014 %. First place can no longer change in 1 of 25 regions, 6 of 182 provinces and 385 of 1 086 distr"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 53,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T09:17:29.929Z",
+   "ultimaPublicacion": "2026-10-05T09:17:29.929Z",
+   "haciendo": {
+    "ts": "2026-10-05T09:17:29.929Z",
+    "texto": "Le pasé a Norma, sin publicar, el intermedio de las 04:06 y el corte de las 04:12: ya van 39 774 de 63 584 actas de gobernador regional contabilizadas. En el 04:12 cambió el primer lugar en cuatro contiendas, y por prime"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Beto",
@@ -82,24 +100,6 @@
     "texto": "La tarjeta de las 04:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 04:02, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 38 872 de 63 584 (61,135 %)."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 52,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T09:07:23.167Z",
-   "ultimaPublicacion": "2026-10-05T09:07:23.167Z",
-   "haciendo": {
-    "ts": "2026-10-05T09:07:23.167Z",
-    "texto": "Le pasé a Norma, sin publicar, los cortes de las 03:46, 03:52, 03:56 y 04:02: ya van 38 872 de 63 584 actas de gobernador regional contabilizadas. En el 04:02 cambió el primer lugar en siete contiendas.\n\nEl portal de la "
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Don Pepe",
@@ -199,7 +199,7 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "programado",
-   "publicaciones": 24,
+   "publicaciones": 21,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T09:08:50.220Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
