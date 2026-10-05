@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 33,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T07:08:48.414Z",
+   "ultimaPublicacion": "2026-10-05T07:08:48.414Z",
+   "haciendo": {
+    "ts": "2026-10-05T07:08:48.414Z",
+    "texto": "I sent Norma the unpublished draft of the 2:00 a.m. log. It runs from after the 00:56 count through the 01:56 count. At 01:56, 28 141 of 63 584 tallies are counted for regional governor (44.258 %) and 38 629 of 89 935 fo"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -57,11 +75,11 @@
    "estado": "activo",
    "publicaciones": 102,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T07:07:56.852Z",
-   "ultimaPublicacion": "2026-10-05T07:05:54.576Z",
+   "ultimaActividad": "2026-10-05T07:08:47.325Z",
+   "ultimaPublicacion": "2026-10-05T07:08:47.325Z",
    "haciendo": {
-    "ts": "2026-10-05T07:05:54.576Z",
-    "texto": "I've checked and posted the 01:56 cut, which is now the starting point. Gobernador is at 44,258 % of actas and alcaldes at 42,952 %. First place can no longer change in 0 of 25 regions, 0 of 159 provinces and 79 of 671 d"
+    "ts": "2026-10-05T07:08:47.325Z",
+    "texto": "I've checked and posted the 02:02 cut, which is now the starting point. Gobernador is at 44,788 % of actas and alcaldes at 43,648 %. First place can no longer change in 0 of 25 regions, 1 of 159 provinces and 89 of 691 d"
    },
    "silencioMaximoMin": 75
   },
@@ -73,15 +91,33 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 44,
+   "publicaciones": 46,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T07:07:55.412Z",
-   "ultimaPublicacion": "2026-10-05T07:05:35.034Z",
+   "ultimaActividad": "2026-10-05T07:08:28.987Z",
+   "ultimaPublicacion": "2026-10-05T07:08:28.987Z",
    "haciendo": {
-    "ts": "2026-10-05T07:05:35.034Z",
-    "texto": "Le pasé a Norma, sin publicar, el corte de las 01:56: ya van 28 141 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en 6 contiendas; sugerí sin nombre en Santa María del Valle, Chinchao y Mi"
+    "ts": "2026-10-05T07:08:28.987Z",
+    "texto": "Le pasé a Norma, sin publicar, el corte de las 02:02: ya van 28 478 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en Moquegua (vuelve a Somos Perú), Acomayo, Vilcas Huamán y Huanca Sancos."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Charo",
+   "bot": "Tablero",
+   "puesto": "Diseñadora del tablero",
+   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
+   "nuevo": false,
+   "inicio": "05:40",
+   "estado": "activo",
+   "publicaciones": 6,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T07:08:54.987Z",
+   "ultimaPublicacion": "2026-10-05T07:08:27.841Z",
+   "haciendo": {
+    "ts": "2026-10-05T07:08:27.841Z",
+    "texto": "Checking the board against the 01:56 cut now."
+   },
+   "silencioMaximoMin": 150
   },
   {
    "agente": "Rosita",
@@ -90,14 +126,32 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 20,
+   "estado": "activo",
+   "publicaciones": 21,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:38:48.585Z",
-   "ultimaPublicacion": "2026-10-05T06:38:48.585Z",
+   "ultimaActividad": "2026-10-05T07:08:24.987Z",
+   "ultimaPublicacion": "2026-10-05T07:08:24.987Z",
    "haciendo": {
-    "ts": "2026-10-05T06:38:48.585Z",
-    "texto": "Le respondí a Norma: sin novedad a las 01:30. Maritza no trae nada (X sin créditos) y no llegó pieza nueva de Jorge ni de Kike para verificar."
+    "ts": "2026-10-05T07:08:24.987Z",
+    "texto": "Le respondí a Norma: sin novedad a las 02:00. En la media hora no llegó pieza nueva de Maritza, Jorge ni Kike para verificar."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 42,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T07:08:18.989Z",
+   "ultimaPublicacion": "2026-10-05T07:08:18.989Z",
+   "haciendo": {
+    "ts": "2026-10-05T07:08:18.989Z",
+    "texto": "Releo el boletín y armo la tarjeta de las 02:00 solo como [INTERNO], sin publicarla."
    },
    "silencioMaximoMin": 75
   },
@@ -108,14 +162,14 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 39,
+   "estado": "activo",
+   "publicaciones": 40,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:40:31.037Z",
-   "ultimaPublicacion": "2026-10-05T06:38:32.471Z",
+   "ultimaActividad": "2026-10-05T07:08:15.356Z",
+   "ultimaPublicacion": "2026-10-05T07:08:15.356Z",
    "haciendo": {
-    "ts": "2026-10-05T06:38:32.471Z",
-    "texto": "Corte ONPE de las 01:26 (marca [número]). Sigo con el barrido de medios."
+    "ts": "2026-10-05T07:08:15.356Z",
+    "texto": "Corte ONPE de las 02:02 (marca [número]). Sigo con el barrido de medios."
    },
    "silencioMaximoMin": 45
   },
@@ -126,52 +180,16 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 62,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:38:22.737Z",
-   "ultimaPublicacion": "2026-10-05T06:38:22.737Z",
+   "ultimaActividad": "2026-10-05T07:08:12.040Z",
+   "ultimaPublicacion": "2026-10-05T07:08:12.040Z",
    "haciendo": {
-    "ts": "2026-10-05T06:38:22.737Z",
-    "texto": "Le respondí a Norma que no hay novedad a las 01:30 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista ni pasarle nada a Rosita."
+    "ts": "2026-10-05T07:08:12.040Z",
+    "texto": "Le respondí a Norma que no hay novedad a las 02:00 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 42,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:02:13.859Z",
-   "ultimaPublicacion": "2026-10-05T06:02:13.859Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:02:13.859Z",
-    "texto": "La tarjeta de la 01:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 00:56, marca [número]. Es más nuevo que el de las 00:48 que pidió ella. Son actas contabilizadas, no votos. G"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 20,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:01:35.141Z",
-   "ultimaPublicacion": "2026-10-05T06:01:35.141Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:01:35.141Z",
-    "texto": "I sent Norma the unpublished draft of the 1:00 a.m. log. It covers the counts from 00:02 to 00:48, every figure taken straight from the count file, and names only places, not parties or candidates. At 00:48, 24 558 of 63"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Kike",
@@ -180,10 +198,10 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 21,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:40:30.592Z",
+   "ultimaActividad": "2026-10-05T07:07:57.936Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
    "haciendo": {
     "ts": "2026-10-05T04:42:13.186Z",
@@ -198,34 +216,16 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:38:37.946Z",
+   "ultimaActividad": "2026-10-05T07:08:33.850Z",
    "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
    "haciendo": {
     "ts": "2026-10-05T04:03:32.500Z",
     "texto": "Con la herramienta de lectura web la copia sí abre. No hay observaciones Importante: el archivo de anomalías está vacío y el último corte es el de las 22:56. Lo único nuevo es que el endpoint de observaciones ahora sí di"
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Charo",
-   "bot": "Tablero",
-   "puesto": "Diseñadora del tablero",
-   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
-   "nuevo": false,
-   "inicio": "05:40",
-   "estado": "programado",
-   "publicaciones": 4,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:07:30.847Z",
-   "ultimaPublicacion": "2026-10-05T01:07:13.837Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:07:13.837Z",
-    "texto": "[EN REVISIÓN] La tarjeta «Observaciones» de [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) muestra 138, que son las actas contabilizadas de gobernador regional (138 de 63584), no las 136 diferencias de los total"
-   },
-   "silencioMaximoMin": 150
   }
  ]
 }
