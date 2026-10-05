@@ -2,6 +2,98 @@
  "nota": "Boletines generados por programa con los datos oficiales de la ONPE (sin IA). No son proyecciones.",
  "items": [
   {
+   "corte": 1791183732088,
+   "hora": "02:02",
+   "generado": "2026-10-05T02:05:55-05:00",
+   "avance": [
+    {
+     "id": 1,
+     "eleccion": "Gobernador regional",
+     "actasPct": 44.788,
+     "contabilizadas": 28478,
+     "totalActas": 63584,
+     "participacion": 34.14,
+     "antesPct": 44.258
+    },
+    {
+     "id": 302,
+     "eleccion": "Alcalde provincial",
+     "actasPct": 43.648,
+     "contabilizadas": 39255,
+     "totalActas": 89935,
+     "participacion": 33.377,
+     "antesPct": 42.952
+    },
+    {
+     "id": 303,
+     "eleccion": "Alcalde distrital",
+     "actasPct": 43.648,
+     "contabilizadas": 39255,
+     "totalActas": 89935,
+     "participacion": 33.377,
+     "antesPct": 42.952
+    }
+   ],
+   "cambios": [
+    {
+     "eleccion": "Gobernador regional",
+     "lugar": "Moquegua",
+     "antes": "ACCIÓN POPULAR",
+     "ahora": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
+     "candidato": "JUAN LUIS HERRERA CHEJO"
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "lugar": "Acomayo (Cusco)",
+     "antes": "AHORA NACIÓN - AN",
+     "ahora": "PARTIDO POLÍTICO PERÚ PRIMERO",
+     "candidato": "GENARO NINA PUCHO"
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "lugar": "Vilcas Huamán (Ayacucho)",
+     "antes": "PODEMOS PERÚ",
+     "ahora": "APP - TRABAJA AYACUCHO",
+     "candidato": "EDGAR MENDOZA GAMBOA"
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "lugar": "Huanca Sancos (Ayacucho)",
+     "antes": "PARTIDO POLÍTICO PERÚ PRIMERO",
+     "ahora": "PODEMOS PERÚ",
+     "candidato": "BARTOLOME FERNANDEZ LOPEZ"
+    }
+   ],
+   "cambiosTotal": 4,
+   "firmes": [
+    {
+     "eleccion": "Gobernador regional",
+     "nivel": 1,
+     "firmes": 0,
+     "conDatos": 25
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "nivel": 2,
+     "firmes": 1,
+     "conDatos": 159
+    },
+    {
+     "eleccion": "Alcalde distrital",
+     "nivel": 3,
+     "firmes": 89,
+     "conDatos": 691
+    }
+   ],
+   "observaciones": {
+    "totales": 786,
+    "actasRevisadas": 0,
+    "actasImportantes": 0,
+    "actasRevisar": 0
+   },
+   "texto": "Corte ONPE de las 02:02. Actas contadas: Gobernador regional 44.8% (antes 44.3%) · Alcalde provincial 43.6% (antes 43.0%) · Alcalde distrital 43.6% (antes 43.0%). Cambió el primer lugar en 4 contiendas: Moquegua, gobernador regional; Acomayo (Cusco), alcalde provincial; Vilcas Huamán (Ayacucho), alcalde provincial; Huanca Sancos (Ayacucho), alcalde provincial. El primer lugar ya no puede cambiar con las actas que faltan en 1 de 159 provincias, 89 de 691 distritos. Revisión: 786 diferencias en los totales."
+  },
+  {
    "corte": 1791183374590,
    "hora": "01:56",
    "generado": "2026-10-05T02:00:43-05:00",
