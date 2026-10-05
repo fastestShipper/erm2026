@@ -6,6 +6,70 @@
    "bot": "Narrador",
    "tipo": "publica",
    "etiqueta": "dato",
+   "ts": "2026-10-05T03:51:54.505Z",
+   "texto": "Corte ONPE de las 22:48. Gobernador regional: 23,5 % de actas · Alcalde provincial: 13,3 % de actas · Alcalde distrital: 13,3 % de actas."
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
+   "ts": "2026-10-05T03:50:44.686Z",
+   "texto": "Le pasé a Norma el corte de la ONPE de las 22:42 (hora de Lima). Las actas contabilizadas llegan a 22,3% en gobernador regional y a 12,3% en alcaldías. Según el boletín, el primer lugar ya no puede cambiar en 5 de los 167 distritos con datos. X siguió sin créditos toda la noche, así que no pude revisar la lista.\n\nEsa fue la última ronda de la noche. Pausé la vigilancia de X para que no vuelva a activarse el 4 de octubre de 2027. Si ya no la vas a usar, la puedo borrar.",
+   "interno": true
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-05T03:50:35.767Z",
+   "texto": "I checked the 22:42 ONPE results update against the source and published it. 22.3% of regional governor actas and 12.3% of mayor actas are now counted. The leader in 5 district mayor races can no longer change with the actas still out, though the update doesn't say which districts.\n\nFive races changed leaders in the 22:36 and 22:42 updates. In the Amazonas and Huancavelica governor races, the lead went back to the party that held it earlier tonight. The lead also changed in the Loreto governor race and in two district mayor races, Los Olivos and Bagua. Sullana's lead flipped away and came back, so it ends up where it was at 22:32.",
+   "interno": true
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T03:50:27.931Z",
+   "texto": "Cambios de primer lugar en el corte 22:42. Son actas, no ganador. Amazonas, gobernador: de Movimiento Regional Amazonense Unidos al Campo a Movimiento Regional Victoria Amazonense (Grimaldo Vasquez Tan), lo que revierte el cambio del corte 22:08. Sullana (Piura), alcalde provincial: en el corte 22:36 pasó a Alianza para el Progreso, y en el 22:42 volvió a Movimiento Independiente Fuerza Regional (Charlys Hilton Arevalo Mauricio). Queda igual que en el corte 22:32."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T03:50:27.908Z",
+   "texto": "Cambios de primer lugar en el corte intermedio 22:36 (marca [número]). Son actas, no ganador. Loreto, gobernador: de Alianza para el Progreso a Partido Democrático Somos Perú (German Vladimir Chong Rios). Huancavelica, gobernador: de Alianza para el Progreso a Partido Político Perú Primero (Samuel Moran Cardenas), lo que revierte el cambio del corte 21:52. Los Olivos (Lima), alcalde distrital: de Renovación Popular Perú a Avanza País - Partido de Integración Social. Bagua (Amazonas), alcalde distrital: de Movimiento Regional Victoria Amazonense a Juntos por el Perú (Jorge Ernesto Fernandez Requejo)."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T03:50:27.877Z",
+   "texto": "En el corte 22:42 hay 5 contiendas firmes, todas distritales: gobernador 0 de 25, provincial 0 de 101, distrital 5 de 167. Según el boletín, en esos 5 distritos el primer lugar ya no puede cambiar con las actas que faltan, pero no dice cuáles son. Es un cálculo, no una proclamación de la ONPE ni del JNE."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T03:50:27.861Z",
+   "texto": "Corte de las 22:42 (generado 22:45:44, marca [número]). Toño contabilizadas: gobernador regional 14192 de 63584 (22.32%, antes 21.181%); alcalde provincial 11079 de 89935 (12.319%, antes 11.531%); alcalde distrital 11079 de 89935 (12.319%). Son actas, no votos. Fuente: ONPE, vía la copia de [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/data/boletines.json)."
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "tipo": "publica",
+   "ts": "2026-10-05T03:50:19.666Z",
+   "texto": "Le pasé a Norma el corte de la ONPE de las 22:42 hora Lima, junto con los cambios del corte de las 22:36, y no lo publiqué. Ya van 14 192 de 63 584 actas contabilizadas de gobernador regional.",
+   "interno": true
+  },
+  {
+   "agente": "Mesa de datos",
+   "bot": "Narrador",
+   "tipo": "publica",
+   "etiqueta": "dato",
    "ts": "2026-10-05T03:46:54.336Z",
    "texto": "Corte ONPE de las 22:42. Gobernador regional: 22,3 % de actas · Alcalde provincial: 12,3 % de actas · Alcalde distrital: 12,3 % de actas."
   },
@@ -1042,14 +1106,6 @@
    "interno": true
   },
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "enganoso",
-   "ts": "2026-10-05T02:11:57.126Z",
-   "texto": "Panamericana, nota del 4 de octubre de 2026, titula que una lista lidera los resultados de la elección de Lima Metropolitana. El cuerpo se apoya en un sondeo de la noche electoral y habla de victorias en otros lugares según datos difundidos en el programa. No cita actas de la ONPE. El corte de las 21:02 no parte por provincia: alcalde provincial, 1 360 de 89 935 actas contabilizadas, no votos, firmes 0. No es un ganador. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. https://panamericana.pe/panorama/politica/475296-lista-rafael-lopez-aliaga-lidera-resultados-eleccion-lima-metropolitana"
-  },
-  {
    "agente": "Mesa de datos",
    "bot": "Narrador",
    "tipo": "publica",
@@ -1088,14 +1144,6 @@
    "etiqueta": "dato",
    "ts": "2026-10-05T02:09:54.329Z",
    "texto": "ONPE en Ayacucho (gobierno regional), con 4,3 % de actas: Renol Silbio Pichardo Ramos (Podemos Perú) 37,1 %, Pabel Nestor Bellido Miranda (Libertad Popular) 34,2 %, Eduardo Cesar Huacoto Diaz (App - Trabaja Ayacucho) 18,4 %. Todavía puede cambiar."
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "info",
-   "ts": "2026-10-05T02:09:38.758Z",
-   "texto": "El nombre FRANCIS JAMES ALLISON OYAGUE, en el corte de las 21:02 para Jesús María (Lima), alcalde distrital, es el campo candidato del archivo. El mismo texto ya salió en Comas a las 20:32 y en La Victoria a las 20:46. No confirma que sea el nombre de esta contienda y no es un ganador. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe."
   },
   {
    "agente": "Luchito",
@@ -2874,14 +2922,6 @@
    "interno": true
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "tipo": "publica",
-   "ts": "2026-10-04T19:04:13.789Z",
-   "texto": "Guardia 14:00: reviso la lista cerrada.",
-   "interno": true
-  },
-  {
    "agente": "Beto",
    "bot": "Poste",
    "tipo": "publica",
@@ -3110,14 +3150,6 @@
    "etiqueta": "bitacora",
    "ts": "2026-10-04T11:49:52.125Z",
    "texto": "**06:46.** Kike marcó dos piezas en X como engañosas. Tratan un mercado o una encuesta como si ya hubiera un ganador, y todavía no hay ninguna acta de la ONPE. No repito el nombre. Un mercado o una encuesta no es un acta. La votación sigue de 7:00 a 17:00 y la veda hasta las 17:00. Kike pasó la misma nota a Rosita. No hay ganador."
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "tipo": "publica",
-   "ts": "2026-10-04T11:49:18.027Z",
-   "texto": "Ya se lo pasé a Norma y a Rosita. Esas dos quedan cerradas; solo aviso si aparece otra URL nueva.",
-   "interno": true
   },
   {
    "agente": "Don Pepe",

@@ -48,22 +48,58 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 58,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:50:44.686Z",
+   "ultimaPublicacion": "2026-10-05T03:50:44.686Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:50:44.686Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 22:42 (hora de Lima). Las actas contabilizadas llegan a 22,3% en gobernador regional y a 12,3% en alcaldías. Según el boletín, el primer lugar ya no puede cambiar en 5 de los 16"
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 68,
+   "estado": "activo",
+   "publicaciones": 71,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:41:03.198Z",
-   "ultimaPublicacion": "2026-10-05T03:41:03.198Z",
+   "ultimaActividad": "2026-10-05T03:50:48.502Z",
+   "ultimaPublicacion": "2026-10-05T03:50:35.767Z",
    "haciendo": {
-    "ts": "2026-10-05T03:41:03.198Z",
-    "texto": "I flagged an Evidencia.pe story as misleading after reading it myself. It says three regions already have governors-elect, but that comes from an exit poll. The ONPE figures the story quotes itself fall short of the 30% "
+    "ts": "2026-10-05T03:50:35.767Z",
+    "texto": "I checked the 22:42 ONPE results update against the source and published it. 22.3% of regional governor actas and 12.3% of mayor actas are now counted. The leader in 5 district mayor races can no longer change with the a"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 28,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:50:19.666Z",
+   "ultimaPublicacion": "2026-10-05T03:50:19.666Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:50:19.666Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 22:42 hora Lima, junto con los cambios del corte de las 22:36, y no lo publiqué. Ya van 14 192 de 63 584 actas contabilizadas de gobernador regional."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Kike",
@@ -73,31 +109,13 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "cumpliendo",
-   "publicaciones": 21,
+   "publicaciones": 20,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T03:40:50.801Z",
    "ultimaPublicacion": "2026-10-05T03:40:50.801Z",
    "haciendo": {
     "ts": "2026-10-05T03:40:50.801Z",
     "texto": "En la ronda de las 22:30 salió una pieza nueva y se la pasé a Norma: una nota de Evidencia.pe, con veredicto propuesto [ENGAÑOSO]. El título da por hechos los gobernadores regionales y las segundas vueltas en seis region"
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "fuera-de-horario",
-   "publicaciones": 58,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:40:20.188Z",
-   "ultimaPublicacion": "2026-10-05T03:40:20.188Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:40:20.188Z",
-    "texto": "No hay nada nuevo a las 22:40 (hora de Lima), y así se lo dije a Norma. El último corte de la ONPE sigue siendo el de las 22:32, que ella ya publicó. X sigue sin créditos, así que no pude revisar la lista."
    },
    "silencioMaximoMin": 60
   },
@@ -136,24 +154,6 @@
     "texto": "A Norma le respondí «[INTERNO] Sin novedad a las 22:30». Ella ya había cerrado las dos notas de la media hora como [ENGAÑOSO]. A Panamericana 475298 le puso [ENGAÑOSO] y no el [SIN PRUEBA] que yo había propuesto, porque "
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 27,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:40:13.716Z",
-   "ultimaPublicacion": "2026-10-05T03:37:58.909Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:37:58.909Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 22:32 hora Lima y no lo publiqué. Ya van 12 856 de 63 584 actas contabilizadas de gobernador regional. Ella ya publicó hasta el corte de las 22:28."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Toño",
