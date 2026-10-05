@@ -1,5 +1,5 @@
 {
- "total": 245,
+ "total": 250,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -2089,87 +2089,12 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (10,269) no coincide con totalVotosValidos (9,673). Diferencia: +596.",
-   "valores": {
-    "suma_participantes": 10269,
-    "totalVotosValidos": 9673
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 1.451% y el cálculo da 1.540%.",
-   "valores": {
-    "votos": 149,
-    "pct_onpe": 1.451,
-    "pct_calculado": 1.54
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 1.772% y el cálculo da 1.882%.",
-   "valores": {
-    "votos": 182,
-    "pct_onpe": 1.772,
-    "pct_calculado": 1.882
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 34.2% y el cálculo da 36.307%.",
-   "valores": {
-    "votos": 3512,
-    "pct_onpe": 34.2,
-    "pct_calculado": 36.307
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 61.028% y el cálculo da 64.789%.",
-   "valores": {
-    "votos": 6267,
-    "pct_onpe": 61.028,
-    "pct_calculado": 64.789
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / LAMBAYEQUE",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (174,004) no coincide con totalVotosValidos (173,823). Diferencia: +181.",
    "valores": {
     "suma_participantes": 174004,
     "totalVotosValidos": 173823
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / SATIPO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (30,503) no coincide con totalVotosValidos (30,432). Diferencia: +71.",
-   "valores": {
-    "suma_participantes": 30503,
-    "totalVotosValidos": 30432
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / SATIPO",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 31.895% y el cálculo da 31.970%.",
-   "valores": {
-    "votos": 9729,
-    "pct_onpe": 31.895,
-    "pct_calculado": 31.97
    }
   },
   {
@@ -2657,6 +2582,135 @@
     "votos": 8388,
     "pct_onpe": 45.987,
     "pct_calculado": 46.248
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (664,926) no coincide con totalVotosValidos (664,702). Diferencia: +224.",
+   "valores": {
+    "suma_participantes": 664926,
+    "totalVotosValidos": 664702
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (545,344) no coincide con totalVotosValidos (544,787). Diferencia: +557.",
+   "valores": {
+    "suma_participantes": 545344,
+    "totalVotosValidos": 544787
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (49,331) no coincide con totalVotosValidos (46,630). Diferencia: +2,701.",
+   "valores": {
+    "suma_participantes": 49331,
+    "totalVotosValidos": 46630
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO SICREO: ONPE publica 1.18% y el cálculo da 1.248%.",
+   "valores": {
+    "votos": 582,
+    "pct_onpe": 1.18,
+    "pct_calculado": 1.248
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 7.215% y el cálculo da 7.632%.",
+   "valores": {
+    "votos": 3559,
+    "pct_onpe": 7.215,
+    "pct_calculado": 7.632
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 8.923% y el cálculo da 9.440%.",
+   "valores": {
+    "votos": 4402,
+    "pct_onpe": 8.923,
+    "pct_calculado": 9.44
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 8.992% y el cálculo da 9.513%.",
+   "valores": {
+    "votos": 4436,
+    "pct_onpe": 8.992,
+    "pct_calculado": 9.513
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
+   "severidad": "revisar",
+   "detalle": "UN CAMINO DIFERENTE: ONPE publica 10.13% y el cálculo da 10.716%.",
+   "valores": {
+    "votos": 4997,
+    "pct_onpe": 10.13,
+    "pct_calculado": 10.716
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 13.395% y el cálculo da 14.171%.",
+   "valores": {
+    "votos": 6608,
+    "pct_onpe": 13.395,
+    "pct_calculado": 14.171
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 14.35% y el cálculo da 15.181%.",
+   "valores": {
+    "votos": 7079,
+    "pct_onpe": 14.35,
+    "pct_calculado": 15.181
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
+   "severidad": "revisar",
+   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 14.948% y el cálculo da 15.814%.",
+   "valores": {
+    "votos": 7374,
+    "pct_onpe": 14.948,
+    "pct_calculado": 15.814
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 20.867% y el cálculo da 22.076%.",
+   "valores": {
+    "votos": 10294,
+    "pct_onpe": 20.867,
+    "pct_calculado": 22.076
    }
   }
  ]
