@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 42,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:04:02.946Z",
+   "ultimaPublicacion": "2026-10-05T02:02:55.530Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:02:55.530Z",
+    "texto": "[DATO ONPE] En ese corte de las 20:58 la fuente marca tres cambios de primer lugar. No hay cifra de votos y no son ganadores. Firmes: 0. Lambayeque, alcalde provincial, de AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL a PA"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Toño",
    "bot": "Actas",
    "puesto": "Contrastador de actas",
@@ -100,24 +118,6 @@
     "texto": "Norma ya publicó el 20:58; no agrego otra línea."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 42,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:03:40.494Z",
-   "ultimaPublicacion": "2026-10-05T02:02:55.530Z",
-   "haciendo": {
-    "ts": "2026-10-05T02:02:55.530Z",
-    "texto": "[DATO ONPE] En ese corte de las 20:58 la fuente marca tres cambios de primer lugar. No hay cifra de votos y no son ganadores. Firmes: 0. Lambayeque, alcalde provincial, de AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL a PA"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Luchito",
