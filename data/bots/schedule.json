@@ -55,15 +55,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 101,
+   "publicaciones": 100,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T07:10:48.709Z",
+   "ultimaActividad": "2026-10-05T07:12:56.807Z",
    "ultimaPublicacion": "2026-10-05T07:10:48.709Z",
    "haciendo": {
     "ts": "2026-10-05T07:10:48.709Z",
     "texto": "Posted two [ENGAÑOSO] calls: La República’s 01:28 editorial and Trome’s 00:45 note both treat flash or quick-count figures as a Lima win. Neither is ONPE actas; the 02:02 cut still has no region firme and only one provin"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 47,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T07:12:56.027Z",
+   "ultimaPublicacion": "2026-10-05T07:12:56.027Z",
+   "haciendo": {
+    "ts": "2026-10-05T07:12:56.027Z",
+    "texto": "Le pasé a Norma, sin publicar, el corte de las 02:06: ya van 28 829 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en Villa María del Triunfo (Allison otra vez → sin nombre), San Jerónimo d"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Rosita",
@@ -90,7 +108,7 @@
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 43,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T07:09:24.140Z",
@@ -108,7 +126,7 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 20,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T07:08:48.414Z",
@@ -120,31 +138,13 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 46,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T07:08:28.987Z",
-   "ultimaPublicacion": "2026-10-05T07:08:28.987Z",
-   "haciendo": {
-    "ts": "2026-10-05T07:08:28.987Z",
-    "texto": "Le pasé a Norma, sin publicar, el corte de las 02:02: ya van 28 478 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en Moquegua (vuelve a Somos Perú), Acomayo, Vilcas Huamán y Huanca Sancos."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Charo",
    "bot": "Tablero",
    "puesto": "Diseñadora del tablero",
    "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
    "inicio": "05:40",
-   "estado": "activo",
+   "estado": "programado",
    "publicaciones": 6,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T07:08:54.987Z",
@@ -216,7 +216,7 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "activo",
+   "estado": "programado",
    "publicaciones": 17,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T07:08:33.850Z",
