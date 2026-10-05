@@ -1,5 +1,5 @@
 {
- "total": 75,
+ "total": 86,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -811,6 +811,126 @@
     "votos": 10281,
     "pct_onpe": 31.582,
     "pct_calculado": 31.703
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (17,356) no coincide con totalVotosValidos (15,864). Diferencia: +1,492.",
+   "valores": {
+    "suma_participantes": 17356,
+    "totalVotosValidos": 15864
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 0.899% y el cálculo da 0.983%.",
+   "valores": {
+    "votos": 156,
+    "pct_onpe": 0.899,
+    "pct_calculado": 0.983
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 0.951% y el cálculo da 1.040%.",
+   "valores": {
+    "votos": 165,
+    "pct_onpe": 0.951,
+    "pct_calculado": 1.04
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE: ONPE publica 1.423% y el cálculo da 1.557%.",
+   "valores": {
+    "votos": 247,
+    "pct_onpe": 1.423,
+    "pct_calculado": 1.557
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 1.89% y el cálculo da 2.068%.",
+   "valores": {
+    "votos": 328,
+    "pct_onpe": 1.89,
+    "pct_calculado": 2.068
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 2.045% y el cálculo da 2.238%.",
+   "valores": {
+    "votos": 355,
+    "pct_onpe": 2.045,
+    "pct_calculado": 2.238
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 3.981% y el cálculo da 4.356%.",
+   "valores": {
+    "votos": 691,
+    "pct_onpe": 3.981,
+    "pct_calculado": 4.356
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 5.554% y el cálculo da 6.077%.",
+   "valores": {
+    "votos": 964,
+    "pct_onpe": 5.554,
+    "pct_calculado": 6.077
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 13.828% y el cálculo da 15.129%.",
+   "valores": {
+    "votos": 2400,
+    "pct_onpe": 13.828,
+    "pct_calculado": 15.129
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 27.979% y el cálculo da 30.610%.",
+   "valores": {
+    "votos": 4856,
+    "pct_onpe": 27.979,
+    "pct_calculado": 30.61
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CHUMBIVILCAS",
+   "severidad": "revisar",
+   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 41.115% y el cálculo da 44.982%.",
+   "valores": {
+    "votos": 7136,
+    "pct_onpe": 41.115,
+    "pct_calculado": 44.982
    }
   }
  ]
