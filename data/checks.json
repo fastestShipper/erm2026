@@ -1,6 +1,80 @@
 {
- "total": 253,
+ "total": 245,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (120,592) no coincide con totalVotosValidos (120,440). Diferencia: +152.",
+   "valores": {
+    "suma_participantes": 120592,
+    "totalVotosValidos": 120440
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (821,742) no coincide con totalVotosValidos (819,293). Diferencia: +2,449.",
+   "valores": {
+    "suma_participantes": 821742,
+    "totalVotosValidos": 819293
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.491% y el cálculo da 22.558%.",
+   "valores": {
+    "votos": 184814,
+    "pct_onpe": 22.491,
+    "pct_calculado": 22.558
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (443,065) no coincide con totalVotosValidos (440,735). Diferencia: +2,330.",
+   "valores": {
+    "suma_participantes": 443065,
+    "totalVotosValidos": 440735
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 21.958% y el cálculo da 22.074%.",
+   "valores": {
+    "votos": 97287,
+    "pct_onpe": 21.958,
+    "pct_calculado": 22.074
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 22.716% y el cálculo da 22.836%.",
+   "valores": {
+    "votos": 100648,
+    "pct_onpe": 22.716,
+    "pct_calculado": 22.836
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · SAN MARTÍN",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 31.119% y el cálculo da 31.283%.",
+   "valores": {
+    "votos": 137877,
+    "pct_onpe": 31.119,
+    "pct_calculado": 31.283
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
@@ -119,158 +193,6 @@
     "votos": 7081,
     "pct_onpe": 27.288,
     "pct_calculado": 28.185
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (34,016) no coincide con totalVotosValidos (32,252). Diferencia: +1,764.",
-   "valores": {
-    "suma_participantes": 34016,
-    "totalVotosValidos": 32252
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 1.817% y el cálculo da 1.916%.",
-   "valores": {
-    "votos": 618,
-    "pct_onpe": 1.817,
-    "pct_calculado": 1.916
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 2.287% y el cálculo da 2.412%.",
-   "valores": {
-    "votos": 778,
-    "pct_onpe": 2.287,
-    "pct_calculado": 2.412
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 2.605% y el cálculo da 2.747%.",
-   "valores": {
-    "votos": 886,
-    "pct_onpe": 2.605,
-    "pct_calculado": 2.747
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 3.437% y el cálculo da 3.625%.",
-   "valores": {
-    "votos": 1169,
-    "pct_onpe": 3.437,
-    "pct_calculado": 3.625
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 4.768% y el cálculo da 5.029%.",
-   "valores": {
-    "votos": 1622,
-    "pct_onpe": 4.768,
-    "pct_calculado": 5.029
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 4.974% y el cálculo da 5.246%.",
-   "valores": {
-    "votos": 1692,
-    "pct_onpe": 4.974,
-    "pct_calculado": 5.246
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 5.027% y el cálculo da 5.302%.",
-   "valores": {
-    "votos": 1710,
-    "pct_onpe": 5.027,
-    "pct_calculado": 5.302
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 9.155% y el cálculo da 9.655%.",
-   "valores": {
-    "votos": 3114,
-    "pct_onpe": 9.155,
-    "pct_calculado": 9.655
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 11.683% y el cálculo da 12.322%.",
-   "valores": {
-    "votos": 3974,
-    "pct_onpe": 11.683,
-    "pct_calculado": 12.322
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 19.708% y el cálculo da 20.786%.",
-   "valores": {
-    "votos": 6704,
-    "pct_onpe": 19.708,
-    "pct_calculado": 20.786
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / MANANTAY",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 32.626% y el cálculo da 34.410%.",
-   "valores": {
-    "votos": 11098,
-    "pct_onpe": 32.626,
-    "pct_calculado": 34.41
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / YARINACOCHA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (43,456) no coincide con totalVotosValidos (43,302). Diferencia: +154.",
-   "valores": {
-    "suma_participantes": 43456,
-    "totalVotosValidos": 43302
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / YARINACOCHA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 28.141% y el cálculo da 28.241%.",
-   "valores": {
-    "votos": 12229,
-    "pct_onpe": 28.141,
-    "pct_calculado": 28.241
    }
   },
   {
@@ -2227,16 +2149,6 @@
    "valores": {
     "suma_participantes": 174004,
     "totalVotosValidos": 173823
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · HUÁNUCO / HUÁNUCO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (155,122) no coincide con totalVotosValidos (154,922). Diferencia: +200.",
-   "valores": {
-    "suma_participantes": 155122,
-    "totalVotosValidos": 154922
    }
   },
   {
