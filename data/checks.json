@@ -1,5 +1,5 @@
 {
- "total": 861,
+ "total": 906,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -4189,362 +4189,122 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (177,545) no coincide con totalVotosValidos (173,629). Diferencia: +3,916.",
-   "valores": {
-    "suma_participantes": 177545,
-    "totalVotosValidos": 173629
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 2.794% y el cálculo da 2.857%.",
-   "valores": {
-    "votos": 4961,
-    "pct_onpe": 2.794,
-    "pct_calculado": 2.857
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 3.239% y el cálculo da 3.312%.",
-   "valores": {
-    "votos": 5750,
-    "pct_onpe": 3.239,
-    "pct_calculado": 3.312
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 3.459% y el cálculo da 3.537%.",
-   "valores": {
-    "votos": 6141,
-    "pct_onpe": 3.459,
-    "pct_calculado": 3.537
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "AREQUIPA, TRADICIÓN Y FUTURO: ONPE publica 4.186% y el cálculo da 4.280%.",
-   "valores": {
-    "votos": 7432,
-    "pct_onpe": 4.186,
-    "pct_calculado": 4.28
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "YO AREQUIPA: ONPE publica 4.367% y el cálculo da 4.465%.",
-   "valores": {
-    "votos": 7753,
-    "pct_onpe": 4.367,
-    "pct_calculado": 4.465
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 4.592% y el cálculo da 4.696%.",
-   "valores": {
-    "votos": 8153,
-    "pct_onpe": 4.592,
-    "pct_calculado": 4.696
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 6.853% y el cálculo da 7.008%.",
-   "valores": {
-    "votos": 12168,
-    "pct_onpe": 6.853,
-    "pct_calculado": 7.008
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "PRIMERO LA GENTE - COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO: ONPE publica 7.915% y el cálculo da 8.094%.",
-   "valores": {
-    "votos": 14053,
-    "pct_onpe": 7.915,
-    "pct_calculado": 8.094
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO REGIONAL AREQUIPA AVANCEMOS: ONPE publica 9.247% y el cálculo da 9.455%.",
-   "valores": {
-    "votos": 16417,
-    "pct_onpe": 9.247,
-    "pct_calculado": 9.455
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 11.65% y el cálculo da 11.913%.",
-   "valores": {
-    "votos": 20684,
-    "pct_onpe": 11.65,
-    "pct_calculado": 11.913
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 15.861% y el cálculo da 16.218%.",
-   "valores": {
-    "votos": 28160,
-    "pct_onpe": 15.861,
-    "pct_calculado": 16.218
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "FUERZA AREQUIPEÑA: ONPE publica 19.222% y el cálculo da 19.655%.",
-   "valores": {
-    "votos": 34127,
-    "pct_onpe": 19.222,
-    "pct_calculado": 19.655
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (8,414) no coincide con totalVotosValidos (8,016). Diferencia: +398.",
-   "valores": {
-    "suma_participantes": 8414,
-    "totalVotosValidos": 8016
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 2.116% y el cálculo da 2.221%.",
-   "valores": {
-    "votos": 178,
-    "pct_onpe": 2.116,
-    "pct_calculado": 2.221
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 2.745% y el cálculo da 2.882%.",
-   "valores": {
-    "votos": 231,
-    "pct_onpe": 2.745,
-    "pct_calculado": 2.882
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 3.459% y el cálculo da 3.630%.",
-   "valores": {
-    "votos": 291,
-    "pct_onpe": 3.459,
-    "pct_calculado": 3.63
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "FUERZA AREQUIPEÑA: ONPE publica 4.362% y el cálculo da 4.578%.",
-   "valores": {
-    "votos": 367,
-    "pct_onpe": 4.362,
-    "pct_calculado": 4.578
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "YO AREQUIPA: ONPE publica 7.511% y el cálculo da 7.884%.",
-   "valores": {
-    "votos": 632,
-    "pct_onpe": 7.511,
-    "pct_calculado": 7.884
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 10.839% y el cálculo da 11.377%.",
-   "valores": {
-    "votos": 912,
-    "pct_onpe": 10.839,
-    "pct_calculado": 11.377
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 12.444% y el cálculo da 13.061%.",
-   "valores": {
-    "votos": 1047,
-    "pct_onpe": 12.444,
-    "pct_calculado": 13.061
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO REGIONAL AREQUIPA AVANCEMOS: ONPE publica 12.907% y el cálculo da 13.548%.",
-   "valores": {
-    "votos": 1086,
-    "pct_onpe": 12.907,
-    "pct_calculado": 13.548
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 16.865% y el cálculo da 17.702%.",
-   "valores": {
-    "votos": 1419,
-    "pct_onpe": 16.865,
-    "pct_calculado": 17.702
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CAMANÁ",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 25.244% y el cálculo da 26.497%.",
-   "valores": {
-    "votos": 2124,
-    "pct_onpe": 25.244,
-    "pct_calculado": 26.497
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (72,323) no coincide con totalVotosValidos (70,987). Diferencia: +1,336.",
+   "detalle": "La suma de votos de las organizaciones (75,895) no coincide con totalVotosValidos (72,323). Diferencia: +3,572.",
    "valores": {
-    "suma_participantes": 72323,
-    "totalVotosValidos": 70987
+    "suma_participantes": 75895,
+    "totalVotosValidos": 72323
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
    "severidad": "revisar",
-   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 4.798% y el cálculo da 4.888%.",
+   "detalle": "PARTIDO FRENTE DE LA ESPERANZA 2021: ONPE publica 1.547% y el cálculo da 1.623%.",
    "valores": {
-    "votos": 3470,
-    "pct_onpe": 4.798,
-    "pct_calculado": 4.888
+    "votos": 1174,
+    "pct_onpe": 1.547,
+    "pct_calculado": 1.623
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
    "severidad": "revisar",
-   "detalle": "PARTIDO CÍVICO OBRAS: ONPE publica 5.839% y el cálculo da 5.949%.",
+   "detalle": "PARTIDO POLÍTICO PUEBLO CONSCIENTE: ONPE publica 1.738% y el cálculo da 1.824%.",
    "valores": {
-    "votos": 4223,
-    "pct_onpe": 5.839,
-    "pct_calculado": 5.949
+    "votos": 1319,
+    "pct_onpe": 1.738,
+    "pct_calculado": 1.824
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
    "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 5.933% y el cálculo da 6.045%.",
+   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 4.849% y el cálculo da 5.088%.",
    "valores": {
-    "votos": 4291,
-    "pct_onpe": 5.933,
-    "pct_calculado": 6.045
+    "votos": 3680,
+    "pct_onpe": 4.849,
+    "pct_calculado": 5.088
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
    "severidad": "revisar",
-   "detalle": "SALVEMOS AL PERÚ: ONPE publica 6.718% y el cálculo da 6.845%.",
+   "detalle": "PARTIDO CÍVICO OBRAS: ONPE publica 5.829% y el cálculo da 6.117%.",
    "valores": {
-    "votos": 4859,
-    "pct_onpe": 6.718,
-    "pct_calculado": 6.845
+    "votos": 4424,
+    "pct_onpe": 5.829,
+    "pct_calculado": 6.117
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
    "severidad": "revisar",
-   "detalle": "ASI - JUNTOS POR EL PERÚ: ONPE publica 10.159% y el cálculo da 10.350%.",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 5.917% y el cálculo da 6.210%.",
    "valores": {
-    "votos": 7347,
-    "pct_onpe": 10.159,
-    "pct_calculado": 10.35
+    "votos": 4491,
+    "pct_onpe": 5.917,
+    "pct_calculado": 6.21
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
    "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 10.543% y el cálculo da 10.741%.",
+   "detalle": "SALVEMOS AL PERÚ: ONPE publica 6.721% y el cálculo da 7.053%.",
    "valores": {
-    "votos": 7625,
-    "pct_onpe": 10.543,
-    "pct_calculado": 10.741
+    "votos": 5101,
+    "pct_onpe": 6.721,
+    "pct_calculado": 7.053
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
    "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 22.26% y el cálculo da 22.679%.",
+   "detalle": "ASI - JUNTOS POR EL PERÚ: ONPE publica 10.168% y el cálculo da 10.670%.",
    "valores": {
-    "votos": 16099,
-    "pct_onpe": 22.26,
-    "pct_calculado": 22.679
+    "votos": 7717,
+    "pct_onpe": 10.168,
+    "pct_calculado": 10.67
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
    "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 29.305% y el cálculo da 29.856%.",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 10.594% y el cálculo da 11.117%.",
    "valores": {
-    "votos": 21194,
-    "pct_onpe": 29.305,
-    "pct_calculado": 29.856
+    "votos": 8040,
+    "pct_onpe": 10.594,
+    "pct_calculado": 11.117
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 22.196% y el cálculo da 23.293%.",
+   "valores": {
+    "votos": 16846,
+    "pct_onpe": 22.196,
+    "pct_calculado": 23.293
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PUNO / SAN ROMÁN / JULIACA",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 29.293% y el cálculo da 30.740%.",
+   "valores": {
+    "votos": 22232,
+    "pct_onpe": 29.293,
+    "pct_calculado": 30.74
    }
   },
   {
@@ -4878,76 +4638,65 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (230,799) no coincide con totalVotosValidos (224,795). Diferencia: +6,004.",
+   "detalle": "La suma de votos de las organizaciones (245,264) no coincide con totalVotosValidos (239,641). Diferencia: +5,623.",
    "valores": {
-    "suma_participantes": 230799,
-    "totalVotosValidos": 224795
+    "suma_participantes": 245264,
+    "totalVotosValidos": 239641
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
    "severidad": "revisar",
-   "detalle": "PARTIDO POPULAR CRISTIANO - PPC: ONPE publica 2.371% y el cálculo da 2.434%.",
+   "detalle": "ALIANZA REGIONAL POR EL PERÚ: ONPE publica 3.922% y el cálculo da 4.014%.",
    "valores": {
-    "votos": 5472,
-    "pct_onpe": 2.371,
-    "pct_calculado": 2.434
+    "votos": 9619,
+    "pct_onpe": 3.922,
+    "pct_calculado": 4.014
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
    "severidad": "revisar",
-   "detalle": "ALIANZA REGIONAL POR EL PERÚ: ONPE publica 4.076% y el cálculo da 4.185%.",
+   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 8.031% y el cálculo da 8.219%.",
    "valores": {
-    "votos": 9407,
-    "pct_onpe": 4.076,
-    "pct_calculado": 4.185
+    "votos": 19696,
+    "pct_onpe": 8.031,
+    "pct_calculado": 8.219
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 7.999% y el cálculo da 8.212%.",
+   "detalle": "FUERZA POPULAR: ONPE publica 13.488% y el cálculo da 13.804%.",
    "valores": {
-    "votos": 18461,
-    "pct_onpe": 7.999,
-    "pct_calculado": 8.212
+    "votos": 33080,
+    "pct_onpe": 13.488,
+    "pct_calculado": 13.804
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
    "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 13.455% y el cálculo da 13.814%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 15.893% y el cálculo da 16.266%.",
    "valores": {
-    "votos": 31053,
-    "pct_onpe": 13.455,
-    "pct_calculado": 13.814
+    "votos": 38979,
+    "pct_onpe": 15.893,
+    "pct_calculado": 16.266
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 15.808% y el cálculo da 16.230%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 56.3% y el cálculo da 57.621%.",
    "valores": {
-    "votos": 36484,
-    "pct_onpe": 15.808,
-    "pct_calculado": 16.23
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CALLAO / CALLAO",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 56.292% y el cálculo da 57.796%.",
-   "valores": {
-    "votos": 129922,
-    "pct_onpe": 56.292,
-    "pct_calculado": 57.796
+    "votos": 138084,
+    "pct_onpe": 56.3,
+    "pct_calculado": 57.621
    }
   },
   {
@@ -5508,109 +5257,142 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (190,220) no coincide con totalVotosValidos (185,725). Diferencia: +4,495.",
+   "detalle": "La suma de votos de las organizaciones (203,849) no coincide con totalVotosValidos (196,064). Diferencia: +7,785.",
    "valores": {
-    "suma_participantes": 190220,
-    "totalVotosValidos": 185725
+    "suma_participantes": 203849,
+    "totalVotosValidos": 196064
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
    "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 2.735% y el cálculo da 2.801%.",
+   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 1.863% y el cálculo da 1.937%.",
    "valores": {
-    "votos": 5202,
-    "pct_onpe": 2.735,
-    "pct_calculado": 2.801
+    "votos": 3798,
+    "pct_onpe": 1.863,
+    "pct_calculado": 1.937
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
    "severidad": "revisar",
-   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 2.946% y el cálculo da 3.017%.",
+   "detalle": "PARTIDO POPULAR CRISTIANO - PPC: ONPE publica 1.883% y el cálculo da 1.958%.",
    "valores": {
-    "votos": 5604,
-    "pct_onpe": 2.946,
-    "pct_calculado": 3.017
+    "votos": 3839,
+    "pct_onpe": 1.883,
+    "pct_calculado": 1.958
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 3.407% y el cálculo da 3.489%.",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 2.437% y el cálculo da 2.534%.",
    "valores": {
-    "votos": 6480,
+    "votos": 4968,
+    "pct_onpe": 2.437,
+    "pct_calculado": 2.534
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 2.702% y el cálculo da 2.809%.",
+   "valores": {
+    "votos": 5507,
+    "pct_onpe": 2.702,
+    "pct_calculado": 2.809
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 2.912% y el cálculo da 3.028%.",
+   "valores": {
+    "votos": 5937,
+    "pct_onpe": 2.912,
+    "pct_calculado": 3.028
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 3.407% y el cálculo da 3.543%.",
+   "valores": {
+    "votos": 6946,
     "pct_onpe": 3.407,
-    "pct_calculado": 3.489
+    "pct_calculado": 3.543
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
    "severidad": "revisar",
-   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 4.437% y el cálculo da 4.545%.",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 4.64% y el cálculo da 4.824%.",
    "valores": {
-    "votos": 8441,
-    "pct_onpe": 4.437,
-    "pct_calculado": 4.545
+    "votos": 9458,
+    "pct_onpe": 4.64,
+    "pct_calculado": 4.824
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
    "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 5.367% y el cálculo da 5.497%.",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 5.3% y el cálculo da 5.510%.",
    "valores": {
-    "votos": 10210,
-    "pct_onpe": 5.367,
-    "pct_calculado": 5.497
+    "votos": 10803,
+    "pct_onpe": 5.3,
+    "pct_calculado": 5.51
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
    "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 5.778% y el cálculo da 5.918%.",
+   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 5.752% y el cálculo da 5.981%.",
    "valores": {
-    "votos": 10991,
-    "pct_onpe": 5.778,
-    "pct_calculado": 5.918
+    "votos": 11726,
+    "pct_onpe": 5.752,
+    "pct_calculado": 5.981
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
    "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 13.666% y el cálculo da 13.997%.",
+   "detalle": "FUERZA POPULAR: ONPE publica 13.687% y el cálculo da 14.230%.",
    "valores": {
-    "votos": 25995,
-    "pct_onpe": 13.666,
-    "pct_calculado": 13.997
+    "votos": 27900,
+    "pct_onpe": 13.687,
+    "pct_calculado": 14.23
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 15.8% y el cálculo da 16.182%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 15.876% y el cálculo da 16.507%.",
    "valores": {
-    "votos": 30054,
-    "pct_onpe": 15.8,
-    "pct_calculado": 16.182
+    "votos": 32364,
+    "pct_onpe": 15.876,
+    "pct_calculado": 16.507
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LAMBAYEQUE / CHICLAYO",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 37.535% y el cálculo da 38.444%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 37.311% y el cálculo da 38.792%.",
    "valores": {
-    "votos": 71400,
-    "pct_onpe": 37.535,
-    "pct_calculado": 38.444
+    "votos": 76058,
+    "pct_onpe": 37.311,
+    "pct_calculado": 38.792
    }
   },
   {
@@ -5931,60 +5713,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · LIMA / LIMA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (4,022,408) no coincide con totalVotosValidos (3,980,086). Diferencia: +42,322.",
-   "valores": {
-    "suma_participantes": 4022408,
-    "totalVotosValidos": 3980086
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LIMA / LIMA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 7.688% y el cálculo da 7.770%.",
-   "valores": {
-    "votos": 309236,
-    "pct_onpe": 7.688,
-    "pct_calculado": 7.77
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LIMA / LIMA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 15.211% y el cálculo da 15.373%.",
-   "valores": {
-    "votos": 611865,
-    "pct_onpe": 15.211,
-    "pct_calculado": 15.373
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LIMA / LIMA",
-   "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 27.642% y el cálculo da 27.936%.",
-   "valores": {
-    "votos": 1111861,
-    "pct_onpe": 27.642,
-    "pct_calculado": 27.936
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LIMA / LIMA",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 28.125% y el cálculo da 28.424%.",
-   "valores": {
-    "votos": 1131301,
-    "pct_onpe": 28.125,
-    "pct_calculado": 28.424
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LORETO / UCAYALI",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (9,722) no coincide con totalVotosValidos (9,366). Diferencia: +356.",
@@ -6269,87 +5997,87 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHORRILLOS",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (156,755) no coincide con totalVotosValidos (154,622). Diferencia: +2,133.",
+   "detalle": "La suma de votos de las organizaciones (159,595) no coincide con totalVotosValidos (156,755). Diferencia: +2,840.",
    "valores": {
-    "suma_participantes": 156755,
-    "totalVotosValidos": 154622
+    "suma_participantes": 159595,
+    "totalVotosValidos": 156755
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHORRILLOS",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 4.765% y el cálculo da 4.831%.",
+   "detalle": "FUERZA POPULAR: ONPE publica 4.781% y el cálculo da 4.868%.",
    "valores": {
-    "votos": 7470,
-    "pct_onpe": 4.765,
-    "pct_calculado": 4.831
+    "votos": 7631,
+    "pct_onpe": 4.781,
+    "pct_calculado": 4.868
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHORRILLOS",
    "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 4.771% y el cálculo da 4.837%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 4.79% y el cálculo da 4.876%.",
    "valores": {
-    "votos": 7479,
-    "pct_onpe": 4.771,
-    "pct_calculado": 4.837
+    "votos": 7644,
+    "pct_onpe": 4.79,
+    "pct_calculado": 4.876
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHORRILLOS",
    "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 4.929% y el cálculo da 4.997%.",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 4.934% y el cálculo da 5.024%.",
    "valores": {
-    "votos": 7726,
-    "pct_onpe": 4.929,
-    "pct_calculado": 4.997
+    "votos": 7875,
+    "pct_onpe": 4.934,
+    "pct_calculado": 5.024
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHORRILLOS",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 5.652% y el cálculo da 5.730%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 5.676% y el cálculo da 5.778%.",
    "valores": {
-    "votos": 8860,
-    "pct_onpe": 5.652,
-    "pct_calculado": 5.73
+    "votos": 9058,
+    "pct_onpe": 5.676,
+    "pct_calculado": 5.778
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHORRILLOS",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 15.844% y el cálculo da 16.063%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 15.82% y el cálculo da 16.107%.",
    "valores": {
-    "votos": 24837,
-    "pct_onpe": 15.844,
-    "pct_calculado": 16.063
+    "votos": 25248,
+    "pct_onpe": 15.82,
+    "pct_calculado": 16.107
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHORRILLOS",
    "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 22.141% y el cálculo da 22.446%.",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 22.105% y el cálculo da 22.506%.",
    "valores": {
-    "votos": 34707,
-    "pct_onpe": 22.141,
-    "pct_calculado": 22.446
+    "votos": 35279,
+    "pct_onpe": 22.105,
+    "pct_calculado": 22.506
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHORRILLOS",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 30.622% y el cálculo da 31.044%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 30.591% y el cálculo da 31.145%.",
    "valores": {
-    "votos": 48001,
-    "pct_onpe": 30.622,
-    "pct_calculado": 31.044
+    "votos": 48822,
+    "pct_onpe": 30.591,
+    "pct_calculado": 31.145
    }
   },
   {
@@ -6463,93 +6191,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CARABAYLLO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (153,057) no coincide con totalVotosValidos (150,511). Diferencia: +2,546.",
-   "valores": {
-    "suma_participantes": 153057,
-    "totalVotosValidos": 150511
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CARABAYLLO",
-   "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 3.807% y el cálculo da 3.871%.",
-   "valores": {
-    "votos": 5827,
-    "pct_onpe": 3.807,
-    "pct_calculado": 3.871
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CARABAYLLO",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 6.281% y el cálculo da 6.387%.",
-   "valores": {
-    "votos": 9613,
-    "pct_onpe": 6.281,
-    "pct_calculado": 6.387
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CARABAYLLO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 8.937% y el cálculo da 9.088%.",
-   "valores": {
-    "votos": 13678,
-    "pct_onpe": 8.937,
-    "pct_calculado": 9.088
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CARABAYLLO",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 10.203% y el cálculo da 10.376%.",
-   "valores": {
-    "votos": 15617,
-    "pct_onpe": 10.203,
-    "pct_calculado": 10.376
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CARABAYLLO",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 11.09% y el cálculo da 11.278%.",
-   "valores": {
-    "votos": 16974,
-    "pct_onpe": 11.09,
-    "pct_calculado": 11.278
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CARABAYLLO",
-   "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 19.297% y el cálculo da 19.623%.",
-   "valores": {
-    "votos": 29535,
-    "pct_onpe": 19.297,
-    "pct_calculado": 19.623
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CARABAYLLO",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 27.539% y el cálculo da 28.005%.",
-   "valores": {
-    "votos": 42150,
-    "pct_onpe": 27.539,
-    "pct_calculado": 28.005
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / SÁNCHEZ CARRIÓN / SANAGORÁN",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (1,753) no coincide con totalVotosValidos (572). Diferencia: +1,181.",
@@ -6617,120 +6258,131 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (41,978) no coincide con totalVotosValidos (40,816). Diferencia: +1,162.",
+   "detalle": "La suma de votos de las organizaciones (46,396) no coincide con totalVotosValidos (41,978). Diferencia: +4,418.",
    "valores": {
-    "suma_participantes": 41978,
-    "totalVotosValidos": 40816
+    "suma_participantes": 46396,
+    "totalVotosValidos": 41978
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 3.03% y el cálculo da 3.116%.",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 1.953% y el cálculo da 2.158%.",
    "valores": {
-    "votos": 1272,
-    "pct_onpe": 3.03,
-    "pct_calculado": 3.116
+    "votos": 906,
+    "pct_onpe": 1.953,
+    "pct_calculado": 2.158
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 3.838% y el cálculo da 3.947%.",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 3.0% y el cálculo da 3.316%.",
    "valores": {
-    "votos": 1611,
-    "pct_onpe": 3.838,
-    "pct_calculado": 3.947
+    "votos": 1392,
+    "pct_onpe": 3.0,
+    "pct_calculado": 3.316
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "UN CAMINO DIFERENTE: ONPE publica 4.14% y el cálculo da 4.258%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 3.852% y el cálculo da 4.257%.",
    "valores": {
-    "votos": 1738,
-    "pct_onpe": 4.14,
-    "pct_calculado": 4.258
+    "votos": 1787,
+    "pct_onpe": 3.852,
+    "pct_calculado": 4.257
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 4.772% y el cálculo da 4.907%.",
+   "detalle": "UN CAMINO DIFERENTE: ONPE publica 4.084% y el cálculo da 4.514%.",
    "valores": {
-    "votos": 2003,
-    "pct_onpe": 4.772,
-    "pct_calculado": 4.907
+    "votos": 1895,
+    "pct_onpe": 4.084,
+    "pct_calculado": 4.514
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 5.412% y el cálculo da 5.566%.",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 4.744% y el cálculo da 5.243%.",
    "valores": {
-    "votos": 2272,
-    "pct_onpe": 5.412,
-    "pct_calculado": 5.566
+    "votos": 2201,
+    "pct_onpe": 4.744,
+    "pct_calculado": 5.243
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 8.321% y el cálculo da 8.558%.",
+   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 5.41% y el cálculo da 5.979%.",
    "valores": {
-    "votos": 3493,
-    "pct_onpe": 8.321,
-    "pct_calculado": 8.558
+    "votos": 2510,
+    "pct_onpe": 5.41,
+    "pct_calculado": 5.979
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 9.655% y el cálculo da 9.930%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 8.427% y el cálculo da 9.314%.",
    "valores": {
-    "votos": 4053,
-    "pct_onpe": 9.655,
-    "pct_calculado": 9.93
+    "votos": 3910,
+    "pct_onpe": 8.427,
+    "pct_calculado": 9.314
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 15.477% y el cálculo da 15.918%.",
+   "detalle": "FUERZA POPULAR: ONPE publica 9.706% y el cálculo da 10.727%.",
    "valores": {
-    "votos": 6497,
-    "pct_onpe": 15.477,
-    "pct_calculado": 15.918
+    "votos": 4503,
+    "pct_onpe": 9.706,
+    "pct_calculado": 10.727
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 16.871% y el cálculo da 17.351%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 15.454% y el cálculo da 17.080%.",
    "valores": {
-    "votos": 7082,
-    "pct_onpe": 16.871,
-    "pct_calculado": 17.351
+    "votos": 7170,
+    "pct_onpe": 15.454,
+    "pct_calculado": 17.08
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
    "severidad": "revisar",
-   "detalle": "PARTIDO PATRIÓTICO DEL PERÚ: ONPE publica 25.399% y el cálculo da 26.122%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 16.909% y el cálculo da 18.688%.",
    "valores": {
-    "votos": 10662,
-    "pct_onpe": 25.399,
-    "pct_calculado": 26.122
+    "votos": 7845,
+    "pct_onpe": 16.909,
+    "pct_calculado": 18.688
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / LA ESPERANZA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PATRIÓTICO DEL PERÚ: ONPE publica 25.315% y el cálculo da 27.979%.",
+   "valores": {
+    "votos": 11745,
+    "pct_onpe": 25.315,
+    "pct_calculado": 27.979
    }
   },
   {
@@ -7125,49 +6777,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (79,837) no coincide con totalVotosValidos (79,427). Diferencia: +410.",
-   "valores": {
-    "suma_participantes": 79837,
-    "totalVotosValidos": 79427
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 14.811% y el cálculo da 14.888%.",
-   "valores": {
-    "votos": 11825,
-    "pct_onpe": 14.811,
-    "pct_calculado": 14.888
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 24.132% y el cálculo da 24.256%.",
-   "valores": {
-    "votos": 19266,
-    "pct_onpe": 24.132,
-    "pct_calculado": 24.256
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUAMANGA",
-   "severidad": "revisar",
-   "detalle": "LIBERTAD POPULAR: ONPE publica 32.016% y el cálculo da 32.182%.",
-   "valores": {
-    "votos": 25561,
-    "pct_onpe": 32.016,
-    "pct_calculado": 32.182
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · PUNO / SAN ROMÁN",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (81,380) no coincide con totalVotosValidos (77,818). Diferencia: +3,562.",
@@ -7548,371 +7157,284 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA VICTORIA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (96,909) no coincide con totalVotosValidos (93,906). Diferencia: +3,003.",
-   "valores": {
-    "suma_participantes": 96909,
-    "totalVotosValidos": 93906
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA VICTORIA",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 2.166% y el cálculo da 2.235%.",
-   "valores": {
-    "votos": 2099,
-    "pct_onpe": 2.166,
-    "pct_calculado": 2.235
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA VICTORIA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 3.522% y el cálculo da 3.634%.",
-   "valores": {
-    "votos": 3413,
-    "pct_onpe": 3.522,
-    "pct_calculado": 3.634
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA VICTORIA",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 3.761% y el cálculo da 3.882%.",
-   "valores": {
-    "votos": 3645,
-    "pct_onpe": 3.761,
-    "pct_calculado": 3.882
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA VICTORIA",
-   "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 4.086% y el cálculo da 4.217%.",
-   "valores": {
-    "votos": 3960,
-    "pct_onpe": 4.086,
-    "pct_calculado": 4.217
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA VICTORIA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 7.649% y el cálculo da 7.894%.",
-   "valores": {
-    "votos": 7413,
-    "pct_onpe": 7.649,
-    "pct_calculado": 7.894
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA VICTORIA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 16.242% y el cálculo da 16.761%.",
-   "valores": {
-    "votos": 15740,
-    "pct_onpe": 16.242,
-    "pct_calculado": 16.761
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA VICTORIA",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 27.037% y el cálculo da 27.901%.",
-   "valores": {
-    "votos": 26201,
-    "pct_onpe": 27.037,
-    "pct_calculado": 27.901
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA VICTORIA",
-   "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 28.02% y el cálculo da 28.916%.",
-   "valores": {
-    "votos": 27154,
-    "pct_onpe": 28.02,
-    "pct_calculado": 28.916
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SANTA ANITA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (110,582) no coincide con totalVotosValidos (108,346). Diferencia: +2,236.",
+   "detalle": "La suma de votos de las organizaciones (112,783) no coincide con totalVotosValidos (110,582). Diferencia: +2,201.",
    "valores": {
-    "suma_participantes": 110582,
-    "totalVotosValidos": 108346
+    "suma_participantes": 112783,
+    "totalVotosValidos": 110582
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SANTA ANITA",
    "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 3.223% y el cálculo da 3.289%.",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 3.212% y el cálculo da 3.276%.",
    "valores": {
-    "votos": 3564,
-    "pct_onpe": 3.223,
-    "pct_calculado": 3.289
+    "votos": 3623,
+    "pct_onpe": 3.212,
+    "pct_calculado": 3.276
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SANTA ANITA",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 7.346% y el cálculo da 7.497%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 7.334% y el cálculo da 7.480%.",
    "valores": {
-    "votos": 8123,
-    "pct_onpe": 7.346,
-    "pct_calculado": 7.497
+    "votos": 8271,
+    "pct_onpe": 7.334,
+    "pct_calculado": 7.48
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SANTA ANITA",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 13.019% y el cálculo da 13.288%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 12.994% y el cálculo da 13.253%.",
    "valores": {
-    "votos": 14397,
-    "pct_onpe": 13.019,
-    "pct_calculado": 13.288
+    "votos": 14655,
+    "pct_onpe": 12.994,
+    "pct_calculado": 13.253
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SANTA ANITA",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 22.693% y el cálculo da 23.161%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 22.683% y el cálculo da 23.135%.",
    "valores": {
-    "votos": 25094,
-    "pct_onpe": 22.693,
-    "pct_calculado": 23.161
+    "votos": 25583,
+    "pct_onpe": 22.683,
+    "pct_calculado": 23.135
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SANTA ANITA",
    "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 38.387% y el cálculo da 39.179%.",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 38.414% y el cálculo da 39.178%.",
    "valores": {
-    "votos": 42449,
-    "pct_onpe": 38.387,
-    "pct_calculado": 39.179
+    "votos": 43324,
+    "pct_onpe": 38.414,
+    "pct_calculado": 39.178
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (54,938) no coincide con totalVotosValidos (54,317). Diferencia: +621.",
+   "detalle": "La suma de votos de las organizaciones (56,699) no coincide con totalVotosValidos (54,938). Diferencia: +1,761.",
    "valores": {
-    "suma_participantes": 54938,
-    "totalVotosValidos": 54317
+    "suma_participantes": 56699,
+    "totalVotosValidos": 54938
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
    "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 23.592% y el cálculo da 23.862%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 2.376% y el cálculo da 2.452%.",
    "valores": {
-    "votos": 12961,
-    "pct_onpe": 23.592,
-    "pct_calculado": 23.862
+    "votos": 1347,
+    "pct_onpe": 2.376,
+    "pct_calculado": 2.452
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 25.707% y el cálculo da 26.001%.",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 2.474% y el cálculo da 2.554%.",
    "valores": {
-    "votos": 14123,
-    "pct_onpe": 25.707,
-    "pct_calculado": 26.001
+    "votos": 1403,
+    "pct_onpe": 2.474,
+    "pct_calculado": 2.554
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 35.529% y el cálculo da 35.935%.",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 2.524% y el cálculo da 2.605%.",
    "valores": {
-    "votos": 19519,
-    "pct_onpe": 35.529,
-    "pct_calculado": 35.935
+    "votos": 1431,
+    "pct_onpe": 2.524,
+    "pct_calculado": 2.605
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 2.87% y el cálculo da 2.962%.",
+   "valores": {
+    "votos": 1627,
+    "pct_onpe": 2.87,
+    "pct_calculado": 2.962
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 23.63% y el cálculo da 24.387%.",
+   "valores": {
+    "votos": 13398,
+    "pct_onpe": 23.63,
+    "pct_calculado": 24.387
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 25.701% y el cálculo da 26.524%.",
+   "valores": {
+    "votos": 14572,
+    "pct_onpe": 25.701,
+    "pct_calculado": 26.524
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 35.512% y el cálculo da 36.650%.",
+   "valores": {
+    "votos": 20135,
+    "pct_onpe": 35.512,
+    "pct_calculado": 36.65
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / EL AGUSTINO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (87,759) no coincide con totalVotosValidos (86,650). Diferencia: +1,109.",
+   "detalle": "La suma de votos de las organizaciones (88,548) no coincide con totalVotosValidos (87,759). Diferencia: +789.",
    "valores": {
-    "suma_participantes": 87759,
-    "totalVotosValidos": 86650
+    "suma_participantes": 88548,
+    "totalVotosValidos": 87759
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / EL AGUSTINO",
    "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 4.811% y el cálculo da 4.872%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 8.059% y el cálculo da 8.131%.",
    "valores": {
-    "votos": 4222,
-    "pct_onpe": 4.811,
-    "pct_calculado": 4.872
+    "votos": 7136,
+    "pct_onpe": 8.059,
+    "pct_calculado": 8.131
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / EL AGUSTINO",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 5.945% y el cálculo da 6.021%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 19.919% y el cálculo da 20.098%.",
    "valores": {
-    "votos": 5217,
-    "pct_onpe": 5.945,
-    "pct_calculado": 6.021
+    "votos": 17638,
+    "pct_onpe": 19.919,
+    "pct_calculado": 20.098
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / EL AGUSTINO",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 8.07% y el cálculo da 8.173%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 20.363% y el cálculo da 20.546%.",
    "valores": {
-    "votos": 7082,
-    "pct_onpe": 8.07,
-    "pct_calculado": 8.173
+    "votos": 18031,
+    "pct_onpe": 20.363,
+    "pct_calculado": 20.546
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / EL AGUSTINO",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 19.916% y el cálculo da 20.171%.",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 24.779% y el cálculo da 25.001%.",
    "valores": {
-    "votos": 17478,
-    "pct_onpe": 19.916,
-    "pct_calculado": 20.171
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / EL AGUSTINO",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 20.372% y el cálculo da 20.632%.",
-   "valores": {
-    "votos": 17878,
-    "pct_onpe": 20.372,
-    "pct_calculado": 20.632
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / EL AGUSTINO",
-   "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 24.754% y el cálculo da 25.071%.",
-   "valores": {
-    "votos": 21724,
-    "pct_onpe": 24.754,
-    "pct_calculado": 25.071
+    "votos": 21941,
+    "pct_onpe": 24.779,
+    "pct_calculado": 25.001
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LURIGANCHO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (48,021) no coincide con totalVotosValidos (46,788). Diferencia: +1,233.",
+   "detalle": "La suma de votos de las organizaciones (48,564) no coincide con totalVotosValidos (48,021). Diferencia: +543.",
    "valores": {
-    "suma_participantes": 48021,
-    "totalVotosValidos": 46788
+    "suma_participantes": 48564,
+    "totalVotosValidos": 48021
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LURIGANCHO",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 4.673% y el cálculo da 4.796%.",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 6.863% y el cálculo da 6.941%.",
    "valores": {
-    "votos": 2244,
-    "pct_onpe": 4.673,
-    "pct_calculado": 4.796
+    "votos": 3333,
+    "pct_onpe": 6.863,
+    "pct_calculado": 6.941
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LURIGANCHO",
    "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 6.884% y el cálculo da 7.066%.",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 7.382% y el cálculo da 7.465%.",
    "valores": {
-    "votos": 3306,
-    "pct_onpe": 6.884,
-    "pct_calculado": 7.066
+    "votos": 3585,
+    "pct_onpe": 7.382,
+    "pct_calculado": 7.465
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LURIGANCHO",
    "severidad": "revisar",
-   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 7.378% y el cálculo da 7.572%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 8.311% y el cálculo da 8.405%.",
    "valores": {
-    "votos": 3543,
-    "pct_onpe": 7.378,
-    "pct_calculado": 7.572
+    "votos": 4036,
+    "pct_onpe": 8.311,
+    "pct_calculado": 8.405
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LURIGANCHO",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 8.326% y el cálculo da 8.545%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 8.811% y el cálculo da 8.911%.",
    "valores": {
-    "votos": 3998,
-    "pct_onpe": 8.326,
-    "pct_calculado": 8.545
+    "votos": 4279,
+    "pct_onpe": 8.811,
+    "pct_calculado": 8.911
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LURIGANCHO",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 8.854% y el cálculo da 9.088%.",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 20.698% y el cálculo da 20.933%.",
    "valores": {
-    "votos": 4252,
-    "pct_onpe": 8.854,
-    "pct_calculado": 9.088
+    "votos": 10052,
+    "pct_onpe": 20.698,
+    "pct_calculado": 20.933
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LURIGANCHO",
    "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 20.637% y el cálculo da 21.181%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 33.424% y el cálculo da 33.802%.",
    "valores": {
-    "votos": 9910,
-    "pct_onpe": 20.637,
-    "pct_calculado": 21.181
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LURIGANCHO",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 33.517% y el cálculo da 34.400%.",
-   "valores": {
-    "votos": 16095,
-    "pct_onpe": 33.517,
-    "pct_calculado": 34.4
+    "votos": 16232,
+    "pct_onpe": 33.424,
+    "pct_calculado": 33.802
    }
   },
   {
@@ -8314,49 +7836,6 @@
     "votos": 10368,
     "pct_onpe": 33.429,
     "pct_calculado": 33.889
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / CAJAMARCA / CAJAMARCA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (100,012) no coincide con totalVotosValidos (99,632). Diferencia: +380.",
-   "valores": {
-    "suma_participantes": 100012,
-    "totalVotosValidos": 99632
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / CAJAMARCA / CAJAMARCA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 19.494% y el cálculo da 19.568%.",
-   "valores": {
-    "votos": 19496,
-    "pct_onpe": 19.494,
-    "pct_calculado": 19.568
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / CAJAMARCA / CAJAMARCA",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 19.917% y el cálculo da 19.993%.",
-   "valores": {
-    "votos": 19919,
-    "pct_onpe": 19.917,
-    "pct_calculado": 19.993
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CAJAMARCA / CAJAMARCA / CAJAMARCA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 31.323% y el cálculo da 31.443%.",
-   "valores": {
-    "votos": 31327,
-    "pct_onpe": 31.323,
-    "pct_calculado": 31.443
    }
   },
   {
@@ -9104,261 +8583,1271 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN MIGUEL",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (100,611) no coincide con totalVotosValidos (99,017). Diferencia: +1,594.",
+   "detalle": "La suma de votos de las organizaciones (100,838) no coincide con totalVotosValidos (100,611). Diferencia: +227.",
    "valores": {
-    "suma_participantes": 100611,
-    "totalVotosValidos": 99017
+    "suma_participantes": 100838,
+    "totalVotosValidos": 100611
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN MIGUEL",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 14.724% y el cálculo da 14.961%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 33.748% y el cálculo da 33.824%.",
    "valores": {
-    "votos": 14814,
-    "pct_onpe": 14.724,
-    "pct_calculado": 14.961
+    "votos": 34031,
+    "pct_onpe": 33.748,
+    "pct_calculado": 33.824
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN MIGUEL",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 33.742% y el cálculo da 34.285%.",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 35.605% y el cálculo da 35.685%.",
    "valores": {
-    "votos": 33948,
-    "pct_onpe": 33.742,
-    "pct_calculado": 34.285
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / SAN MIGUEL",
-   "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 35.61% y el cálculo da 36.184%.",
-   "valores": {
-    "votos": 35828,
-    "pct_onpe": 35.61,
-    "pct_calculado": 36.184
+    "votos": 35903,
+    "pct_onpe": 35.605,
+    "pct_calculado": 35.685
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (50,155) no coincide con totalVotosValidos (46,406). Diferencia: +3,749.",
+   "detalle": "La suma de votos de las organizaciones (53,424) no coincide con totalVotosValidos (50,155). Diferencia: +3,269.",
    "valores": {
-    "suma_participantes": 50155,
-    "totalVotosValidos": 46406
+    "suma_participantes": 53424,
+    "totalVotosValidos": 50155
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 0.915% y el cálculo da 0.989%.",
+   "detalle": "PROGRESEMOS: ONPE publica 1.46% y el cálculo da 1.555%.",
    "valores": {
-    "votos": 459,
-    "pct_onpe": 0.915,
-    "pct_calculado": 0.989
+    "votos": 780,
+    "pct_onpe": 1.46,
+    "pct_calculado": 1.555
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 1.471% y el cálculo da 1.590%.",
+   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 1.567% y el cálculo da 1.669%.",
    "valores": {
-    "votos": 738,
-    "pct_onpe": 1.471,
-    "pct_calculado": 1.59
+    "votos": 837,
+    "pct_onpe": 1.567,
+    "pct_calculado": 1.669
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 1.569% y el cálculo da 1.696%.",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 2.619% y el cálculo da 2.789%.",
    "valores": {
-    "votos": 787,
-    "pct_onpe": 1.569,
-    "pct_calculado": 1.696
+    "votos": 1399,
+    "pct_onpe": 2.619,
+    "pct_calculado": 2.789
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 2.566% y el cálculo da 2.773%.",
+   "detalle": "PARTIDO POPULAR CRISTIANO - PPC: ONPE publica 4.64% y el cálculo da 4.943%.",
    "valores": {
-    "votos": 1287,
-    "pct_onpe": 2.566,
-    "pct_calculado": 2.773
+    "votos": 2479,
+    "pct_onpe": 4.64,
+    "pct_calculado": 4.943
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "PARTIDO POPULAR CRISTIANO - PPC: ONPE publica 4.654% y el cálculo da 5.030%.",
+   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 7.534% y el cálculo da 8.025%.",
    "valores": {
-    "votos": 2334,
-    "pct_onpe": 4.654,
-    "pct_calculado": 5.03
+    "votos": 4025,
+    "pct_onpe": 7.534,
+    "pct_calculado": 8.025
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 7.517% y el cálculo da 8.124%.",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 8.094% y el cálculo da 8.621%.",
    "valores": {
-    "votos": 3770,
-    "pct_onpe": 7.517,
-    "pct_calculado": 8.124
+    "votos": 4324,
+    "pct_onpe": 8.094,
+    "pct_calculado": 8.621
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 8.165% y el cálculo da 8.824%.",
+   "detalle": "FUERZA POPULAR: ONPE publica 8.18% y el cálculo da 8.713%.",
    "valores": {
-    "votos": 4095,
-    "pct_onpe": 8.165,
-    "pct_calculado": 8.824
+    "votos": 4370,
+    "pct_onpe": 8.18,
+    "pct_calculado": 8.713
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 8.223% y el cálculo da 8.887%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 17.404% y el cálculo da 18.539%.",
    "valores": {
-    "votos": 4124,
-    "pct_onpe": 8.223,
-    "pct_calculado": 8.887
+    "votos": 9298,
+    "pct_onpe": 17.404,
+    "pct_calculado": 18.539
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 17.504% y el cálculo da 18.918%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 20.266% y el cálculo da 21.587%.",
    "valores": {
-    "votos": 8779,
-    "pct_onpe": 17.504,
-    "pct_calculado": 18.918
+    "votos": 10827,
+    "pct_onpe": 20.266,
+    "pct_calculado": 21.587
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 20.251% y el cálculo da 21.887%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 26.114% y el cálculo da 27.816%.",
    "valores": {
-    "votos": 10157,
-    "pct_onpe": 20.251,
-    "pct_calculado": 21.887
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / PIURA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 26.001% y el cálculo da 28.102%.",
-   "valores": {
-    "votos": 13041,
-    "pct_onpe": 26.001,
-    "pct_calculado": 28.102
+    "votos": 13951,
+    "pct_onpe": 26.114,
+    "pct_calculado": 27.816
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (36,105) no coincide con totalVotosValidos (35,703). Diferencia: +402.",
+   "detalle": "La suma de votos de las organizaciones (36,528) no coincide con totalVotosValidos (36,105). Diferencia: +423.",
    "valores": {
-    "suma_participantes": 36105,
-    "totalVotosValidos": 35703
+    "suma_participantes": 36528,
+    "totalVotosValidos": 36105
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
    "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 6.489% y el cálculo da 6.562%.",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 6.477% y el cálculo da 6.553%.",
    "valores": {
-    "votos": 2343,
-    "pct_onpe": 6.489,
-    "pct_calculado": 6.562
+    "votos": 2366,
+    "pct_onpe": 6.477,
+    "pct_calculado": 6.553
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 8.553% y el cálculo da 8.649%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 8.555% y el cálculo da 8.655%.",
    "valores": {
-    "votos": 3088,
-    "pct_onpe": 8.553,
-    "pct_calculado": 8.649
+    "votos": 3125,
+    "pct_onpe": 8.555,
+    "pct_calculado": 8.655
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
    "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 9.663% y el cálculo da 9.772%.",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 9.631% y el cálculo da 9.744%.",
    "valores": {
-    "votos": 3489,
-    "pct_onpe": 9.663,
-    "pct_calculado": 9.772
+    "votos": 3518,
+    "pct_onpe": 9.631,
+    "pct_calculado": 9.744
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 10.89% y el cálculo da 11.013%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 10.97% y el cálculo da 11.098%.",
    "valores": {
-    "votos": 3932,
-    "pct_onpe": 10.89,
-    "pct_calculado": 11.013
+    "votos": 4007,
+    "pct_onpe": 10.97,
+    "pct_calculado": 11.098
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 12.367% y el cálculo da 12.506%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 12.382% y el cálculo da 12.527%.",
    "valores": {
-    "votos": 4465,
-    "pct_onpe": 12.367,
-    "pct_calculado": 12.506
+    "votos": 4523,
+    "pct_onpe": 12.382,
+    "pct_calculado": 12.527
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.099% y el cálculo da 22.348%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.013% y el cálculo da 22.271%.",
    "valores": {
-    "votos": 7979,
-    "pct_onpe": 22.099,
-    "pct_calculado": 22.348
+    "votos": 8041,
+    "pct_onpe": 22.013,
+    "pct_calculado": 22.271
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · PIURA / SULLANA / SULLANA",
    "severidad": "revisar",
-   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 25.658% y el cálculo da 25.947%.",
+   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 25.701% y el cálculo da 26.002%.",
+   "valores": {
+    "votos": 9388,
+    "pct_onpe": 25.701,
+    "pct_calculado": 26.002
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (968) no coincide con totalVotosValidos (730). Diferencia: +238.",
+   "valores": {
+    "suma_participantes": 968,
+    "totalVotosValidos": 730
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 0.207% y el cálculo da 0.274%.",
+   "valores": {
+    "votos": 2,
+    "pct_onpe": 0.207,
+    "pct_calculado": 0.274
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "FE EN EL PERÚ: ONPE publica 0.31% y el cálculo da 0.411%.",
+   "valores": {
+    "votos": 3,
+    "pct_onpe": 0.31,
+    "pct_calculado": 0.411
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "CONCERTACIÓN PARA EL DESARROLLO REGIONAL - LIMA: ONPE publica 0.31% y el cálculo da 0.411%.",
+   "valores": {
+    "votos": 3,
+    "pct_onpe": 0.31,
+    "pct_calculado": 0.411
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "APP - LA CHOLITA: ONPE publica 1.033% y el cálculo da 1.370%.",
+   "valores": {
+    "votos": 10,
+    "pct_onpe": 1.033,
+    "pct_calculado": 1.37
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 1.136% y el cálculo da 1.507%.",
+   "valores": {
+    "votos": 11,
+    "pct_onpe": 1.136,
+    "pct_calculado": 1.507
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 1.24% y el cálculo da 1.644%.",
+   "valores": {
+    "votos": 12,
+    "pct_onpe": 1.24,
+    "pct_calculado": 1.644
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 1.653% y el cálculo da 2.192%.",
+   "valores": {
+    "votos": 16,
+    "pct_onpe": 1.653,
+    "pct_calculado": 2.192
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "ALIANZA RENOVACIÓN POPULAR Y TORO: ONPE publica 1.653% y el cálculo da 2.192%.",
+   "valores": {
+    "votos": 16,
+    "pct_onpe": 1.653,
+    "pct_calculado": 2.192
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 2.893% y el cálculo da 3.836%.",
+   "valores": {
+    "votos": 28,
+    "pct_onpe": 2.893,
+    "pct_calculado": 3.836
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 12.707% y el cálculo da 16.849%.",
+   "valores": {
+    "votos": 123,
+    "pct_onpe": 12.707,
+    "pct_calculado": 16.849
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / HUAROCHIRÍ / SANTO DOMINGO DE LOS OLLEROS",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 76.86% y el cálculo da 101.918%.",
+   "valores": {
+    "votos": 744,
+    "pct_onpe": 76.86,
+    "pct_calculado": 101.918
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / ATE",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (340,364) no coincide con totalVotosValidos (340,164). Diferencia: +200.",
+   "valores": {
+    "suma_participantes": 340364,
+    "totalVotosValidos": 340164
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHACLACAYO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (12,785) no coincide con totalVotosValidos (12,361). Diferencia: +424.",
+   "valores": {
+    "suma_participantes": 12785,
+    "totalVotosValidos": 12361
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHACLACAYO",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 1.948% y el cálculo da 2.014%.",
+   "valores": {
+    "votos": 249,
+    "pct_onpe": 1.948,
+    "pct_calculado": 2.014
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHACLACAYO",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 2.167% y el cálculo da 2.241%.",
+   "valores": {
+    "votos": 277,
+    "pct_onpe": 2.167,
+    "pct_calculado": 2.241
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHACLACAYO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 2.472% y el cálculo da 2.556%.",
+   "valores": {
+    "votos": 316,
+    "pct_onpe": 2.472,
+    "pct_calculado": 2.556
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHACLACAYO",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 2.933% y el cálculo da 3.034%.",
+   "valores": {
+    "votos": 375,
+    "pct_onpe": 2.933,
+    "pct_calculado": 3.034
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHACLACAYO",
+   "severidad": "revisar",
+   "detalle": "FUERZA CIUDADANA: ONPE publica 3.152% y el cálculo da 3.260%.",
+   "valores": {
+    "votos": 403,
+    "pct_onpe": 3.152,
+    "pct_calculado": 3.26
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHACLACAYO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 6.179% y el cálculo da 6.391%.",
+   "valores": {
+    "votos": 790,
+    "pct_onpe": 6.179,
+    "pct_calculado": 6.391
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHACLACAYO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 8.932% y el cálculo da 9.239%.",
+   "valores": {
+    "votos": 1142,
+    "pct_onpe": 8.932,
+    "pct_calculado": 9.239
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHACLACAYO",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 24.709% y el cálculo da 25.556%.",
+   "valores": {
+    "votos": 3159,
+    "pct_onpe": 24.709,
+    "pct_calculado": 25.556
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CHACLACAYO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 40.735% y el cálculo da 42.133%.",
+   "valores": {
+    "votos": 5208,
+    "pct_onpe": 40.735,
+    "pct_calculado": 42.133
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (307,822) no coincide con totalVotosValidos (299,107). Diferencia: +8,715.",
+   "valores": {
+    "suma_participantes": 307822,
+    "totalVotosValidos": 299107
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 3.664% y el cálculo da 3.771%.",
+   "valores": {
+    "votos": 11279,
+    "pct_onpe": 3.664,
+    "pct_calculado": 3.771
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 3.94% y el cálculo da 4.055%.",
+   "valores": {
+    "votos": 12128,
+    "pct_onpe": 3.94,
+    "pct_calculado": 4.055
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 4.395% y el cálculo da 4.523%.",
+   "valores": {
+    "votos": 13530,
+    "pct_onpe": 4.395,
+    "pct_calculado": 4.523
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "UN CAMINO DIFERENTE: ONPE publica 4.489% y el cálculo da 4.620%.",
+   "valores": {
+    "votos": 13819,
+    "pct_onpe": 4.489,
+    "pct_calculado": 4.62
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 6.72% y el cálculo da 6.916%.",
+   "valores": {
+    "votos": 20685,
+    "pct_onpe": 6.72,
+    "pct_calculado": 6.916
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 9.326% y el cálculo da 9.598%.",
+   "valores": {
+    "votos": 28709,
+    "pct_onpe": 9.326,
+    "pct_calculado": 9.598
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 9.824% y el cálculo da 10.110%.",
+   "valores": {
+    "votos": 30239,
+    "pct_onpe": 9.824,
+    "pct_calculado": 10.11
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 10.041% y el cálculo da 10.333%.",
+   "valores": {
+    "votos": 30908,
+    "pct_onpe": 10.041,
+    "pct_calculado": 10.333
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 16.465% y el cálculo da 16.944%.",
+   "valores": {
+    "votos": 50682,
+    "pct_onpe": 16.465,
+    "pct_calculado": 16.944
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / TRUJILLO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PATRIÓTICO DEL PERÚ: ONPE publica 28.265% y el cálculo da 29.089%.",
+   "valores": {
+    "votos": 87006,
+    "pct_onpe": 28.265,
+    "pct_calculado": 29.089
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / CANGALLO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (5,662) no coincide con totalVotosValidos (5,297). Diferencia: +365.",
+   "valores": {
+    "suma_participantes": 5662,
+    "totalVotosValidos": 5297
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / CANGALLO",
+   "severidad": "revisar",
+   "detalle": "BATALLA PERÚ: ONPE publica 1.077% y el cálculo da 1.152%.",
+   "valores": {
+    "votos": 61,
+    "pct_onpe": 1.077,
+    "pct_calculado": 1.152
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / CANGALLO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 1.448% y el cálculo da 1.548%.",
+   "valores": {
+    "votos": 82,
+    "pct_onpe": 1.448,
+    "pct_calculado": 1.548
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / CANGALLO",
+   "severidad": "revisar",
+   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 6.093% y el cálculo da 6.513%.",
+   "valores": {
+    "votos": 345,
+    "pct_onpe": 6.093,
+    "pct_calculado": 6.513
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / CANGALLO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 33.292% y el cálculo da 35.586%.",
+   "valores": {
+    "votos": 1885,
+    "pct_onpe": 33.292,
+    "pct_calculado": 35.586
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / CANGALLO",
+   "severidad": "revisar",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 57.277% y el cálculo da 61.223%.",
+   "valores": {
+    "votos": 3243,
+    "pct_onpe": 57.277,
+    "pct_calculado": 61.223
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (22,940) no coincide con totalVotosValidos (20,894). Diferencia: +2,046.",
+   "valores": {
+    "suma_participantes": 22940,
+    "totalVotosValidos": 20894
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PATRIÓTICO DEL PERÚ: ONPE publica 0.894% y el cálculo da 0.981%.",
+   "valores": {
+    "votos": 205,
+    "pct_onpe": 0.894,
+    "pct_calculado": 0.981
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 0.946% y el cálculo da 1.039%.",
+   "valores": {
+    "votos": 217,
+    "pct_onpe": 0.946,
+    "pct_calculado": 1.039
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 1.199% y el cálculo da 1.316%.",
+   "valores": {
+    "votos": 275,
+    "pct_onpe": 1.199,
+    "pct_calculado": 1.316
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO FRENTE DE LA ESPERANZA 2021: ONPE publica 1.983% y el cálculo da 2.178%.",
+   "valores": {
+    "votos": 455,
+    "pct_onpe": 1.983,
+    "pct_calculado": 2.178
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 2.328% y el cálculo da 2.556%.",
+   "valores": {
+    "votos": 534,
+    "pct_onpe": 2.328,
+    "pct_calculado": 2.556
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 5.863% y el cálculo da 6.437%.",
+   "valores": {
+    "votos": 1345,
+    "pct_onpe": 5.863,
+    "pct_calculado": 6.437
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 6.696% y el cálculo da 7.351%.",
+   "valores": {
+    "votos": 1536,
+    "pct_onpe": 6.696,
+    "pct_calculado": 7.351
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 8.775% y el cálculo da 9.634%.",
+   "valores": {
+    "votos": 2013,
+    "pct_onpe": 8.775,
+    "pct_calculado": 9.634
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 31.351% y el cálculo da 34.421%.",
+   "valores": {
+    "votos": 7192,
+    "pct_onpe": 31.351,
+    "pct_calculado": 34.421
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / HUANTA",
+   "severidad": "revisar",
+   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 39.965% y el cálculo da 43.879%.",
+   "valores": {
+    "votos": 9168,
+    "pct_onpe": 39.965,
+    "pct_calculado": 43.879
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / LUCANAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (6,886) no coincide con totalVotosValidos (6,793). Diferencia: +93.",
+   "valores": {
+    "suma_participantes": 6886,
+    "totalVotosValidos": 6793
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / LUCANAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 6.448% y el cálculo da 6.536%.",
+   "valores": {
+    "votos": 444,
+    "pct_onpe": 6.448,
+    "pct_calculado": 6.536
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / LUCANAS",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 15.902% y el cálculo da 16.120%.",
+   "valores": {
+    "votos": 1095,
+    "pct_onpe": 15.902,
+    "pct_calculado": 16.12
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / LUCANAS",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 17.136% y el cálculo da 17.371%.",
+   "valores": {
+    "votos": 1180,
+    "pct_onpe": 17.136,
+    "pct_calculado": 17.371
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / LUCANAS",
+   "severidad": "revisar",
+   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 17.935% y el cálculo da 18.180%.",
+   "valores": {
+    "votos": 1235,
+    "pct_onpe": 17.935,
+    "pct_calculado": 18.18
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / LUCANAS",
+   "severidad": "revisar",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 19.59% y el cálculo da 19.859%.",
+   "valores": {
+    "votos": 1349,
+    "pct_onpe": 19.59,
+    "pct_calculado": 19.859
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / LUCANAS",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 22.495% y el cálculo da 22.803%.",
+   "valores": {
+    "votos": 1549,
+    "pct_onpe": 22.495,
+    "pct_calculado": 22.803
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / PARINACOCHAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (7,026) no coincide con totalVotosValidos (6,503). Diferencia: +523.",
+   "valores": {
+    "suma_participantes": 7026,
+    "totalVotosValidos": 6503
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / PARINACOCHAS",
+   "severidad": "revisar",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 17.606% y el cálculo da 19.022%.",
+   "valores": {
+    "votos": 1237,
+    "pct_onpe": 17.606,
+    "pct_calculado": 19.022
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / PARINACOCHAS",
+   "severidad": "revisar",
+   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 23.641% y el cálculo da 25.542%.",
+   "valores": {
+    "votos": 1661,
+    "pct_onpe": 23.641,
+    "pct_calculado": 25.542
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / PARINACOCHAS",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 28.679% y el cálculo da 30.986%.",
+   "valores": {
+    "votos": 2015,
+    "pct_onpe": 28.679,
+    "pct_calculado": 30.986
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · AYACUCHO / PARINACOCHAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 30.074% y el cálculo da 32.493%.",
+   "valores": {
+    "votos": 2113,
+    "pct_onpe": 30.074,
+    "pct_calculado": 32.493
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · ICA / ICA / ICA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (56,445) no coincide con totalVotosValidos (56,243). Diferencia: +202.",
+   "valores": {
+    "suma_participantes": 56445,
+    "totalVotosValidos": 56243
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ICA / ICA / ICA",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 18.471% y el cálculo da 18.537%.",
+   "valores": {
+    "votos": 10426,
+    "pct_onpe": 18.471,
+    "pct_calculado": 18.537
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ICA / ICA / ICA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 21.873% y el cálculo da 21.951%.",
+   "valores": {
+    "votos": 12346,
+    "pct_onpe": 21.873,
+    "pct_calculado": 21.951
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ICA / ICA / ICA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 23.616% y el cálculo da 23.701%.",
+   "valores": {
+    "votos": 13330,
+    "pct_onpe": 23.616,
+    "pct_calculado": 23.701
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (64,480) no coincide con totalVotosValidos (61,126). Diferencia: +3,354.",
+   "valores": {
+    "suma_participantes": 64480,
+    "totalVotosValidos": 61126
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 1.408% y el cálculo da 1.485%.",
+   "valores": {
+    "votos": 908,
+    "pct_onpe": 1.408,
+    "pct_calculado": 1.485
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
+   "severidad": "revisar",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 3.57% y el cálculo da 3.766%.",
+   "valores": {
+    "votos": 2302,
+    "pct_onpe": 3.57,
+    "pct_calculado": 3.766
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 5.434% y el cálculo da 5.732%.",
+   "valores": {
+    "votos": 3504,
+    "pct_onpe": 5.434,
+    "pct_calculado": 5.732
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 5.622% y el cálculo da 5.930%.",
+   "valores": {
+    "votos": 3625,
+    "pct_onpe": 5.622,
+    "pct_calculado": 5.93
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 5.782% y el cálculo da 6.099%.",
+   "valores": {
+    "votos": 3728,
+    "pct_onpe": 5.782,
+    "pct_calculado": 6.099
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
+   "severidad": "revisar",
+   "detalle": "BATALLA PERÚ: ONPE publica 7.253% y el cálculo da 7.651%.",
+   "valores": {
+    "votos": 4677,
+    "pct_onpe": 7.253,
+    "pct_calculado": 7.651
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 17.264% y el cálculo da 18.212%.",
+   "valores": {
+    "votos": 11132,
+    "pct_onpe": 17.264,
+    "pct_calculado": 18.212
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 19.935% y el cálculo da 21.029%.",
+   "valores": {
+    "votos": 12854,
+    "pct_onpe": 19.935,
+    "pct_calculado": 21.029
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · JUNÍN / HUANCAYO / EL TAMBO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 32.891% y el cálculo da 34.696%.",
+   "valores": {
+    "votos": 21208,
+    "pct_onpe": 32.891,
+    "pct_calculado": 34.696
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (38,215) no coincide con totalVotosValidos (38,034). Diferencia: +181.",
+   "valores": {
+    "suma_participantes": 38215,
+    "totalVotosValidos": 38034
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 14.989% y el cálculo da 15.060%.",
+   "valores": {
+    "votos": 5728,
+    "pct_onpe": 14.989,
+    "pct_calculado": 15.06
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 30.909% y el cálculo da 31.056%.",
+   "valores": {
+    "votos": 11812,
+    "pct_onpe": 30.909,
+    "pct_calculado": 31.056
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CIENEGUILLA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (9,431) no coincide con totalVotosValidos (9,218). Diferencia: +213.",
+   "valores": {
+    "suma_participantes": 9431,
+    "totalVotosValidos": 9218
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CIENEGUILLA",
+   "severidad": "revisar",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 4.103% y el cálculo da 4.198%.",
+   "valores": {
+    "votos": 387,
+    "pct_onpe": 4.103,
+    "pct_calculado": 4.198
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CIENEGUILLA",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 15.693% y el cálculo da 16.056%.",
+   "valores": {
+    "votos": 1480,
+    "pct_onpe": 15.693,
+    "pct_calculado": 16.056
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CIENEGUILLA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 17.421% y el cálculo da 17.824%.",
+   "valores": {
+    "votos": 1643,
+    "pct_onpe": 17.421,
+    "pct_calculado": 17.824
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CIENEGUILLA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 20.263% y el cálculo da 20.731%.",
+   "valores": {
+    "votos": 1911,
+    "pct_onpe": 20.263,
+    "pct_calculado": 20.731
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / CIENEGUILLA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 31.884% y el cálculo da 32.621%.",
+   "valores": {
+    "votos": 3007,
+    "pct_onpe": 31.884,
+    "pct_calculado": 32.621
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / COMAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (214,719) no coincide con totalVotosValidos (209,713). Diferencia: +5,006.",
+   "valores": {
+    "suma_participantes": 214719,
+    "totalVotosValidos": 209713
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / COMAS",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 2.799% y el cálculo da 2.866%.",
+   "valores": {
+    "votos": 6010,
+    "pct_onpe": 2.799,
+    "pct_calculado": 2.866
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / COMAS",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 3.7% y el cálculo da 3.789%.",
+   "valores": {
+    "votos": 7945,
+    "pct_onpe": 3.7,
+    "pct_calculado": 3.789
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / COMAS",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 4.314% y el cálculo da 4.417%.",
    "valores": {
     "votos": 9264,
-    "pct_onpe": 25.658,
-    "pct_calculado": 25.947
+    "pct_onpe": 4.314,
+    "pct_calculado": 4.417
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / COMAS",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 4.636% y el cálculo da 4.746%.",
+   "valores": {
+    "votos": 9954,
+    "pct_onpe": 4.636,
+    "pct_calculado": 4.746
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / COMAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 7.708% y el cálculo da 7.892%.",
+   "valores": {
+    "votos": 16551,
+    "pct_onpe": 7.708,
+    "pct_calculado": 7.892
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / COMAS",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 12.889% y el cálculo da 13.197%.",
+   "valores": {
+    "votos": 27675,
+    "pct_onpe": 12.889,
+    "pct_calculado": 13.197
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / COMAS",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 26.504% y el cálculo da 27.137%.",
+   "valores": {
+    "votos": 56909,
+    "pct_onpe": 26.504,
+    "pct_calculado": 27.137
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / COMAS",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 28.304% y el cálculo da 28.979%.",
+   "valores": {
+    "votos": 60773,
+    "pct_onpe": 28.304,
+    "pct_calculado": 28.979
    }
   }
  ]
