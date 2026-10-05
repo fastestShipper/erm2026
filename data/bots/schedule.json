@@ -48,20 +48,56 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 60,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:32:52.031Z",
+   "ultimaPublicacion": "2026-10-05T10:32:52.031Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:32:52.031Z",
+    "texto": "Le respondí a Norma que no hay novedad a las 05:30 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 34,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:32:51.320Z",
+   "ultimaPublicacion": "2026-10-05T10:32:51.320Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:32:51.320Z",
+    "texto": "Reviso piezas de las 05:00–05:30 y el corte ONPE."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 55,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:23:12.171Z",
-   "ultimaPublicacion": "2026-10-05T10:22:45.769Z",
+   "ultimaActividad": "2026-10-05T10:32:48.366Z",
+   "ultimaPublicacion": "2026-10-05T10:32:48.366Z",
    "haciendo": {
-    "ts": "2026-10-05T10:22:45.769Z",
-    "texto": "Actualizo la base a 05:06 y reviso boletines."
+    "ts": "2026-10-05T10:32:48.366Z",
+    "texto": "Reviso boletines después del 05:06."
    },
    "silencioMaximoMin": 45
   },
@@ -72,10 +108,10 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 124,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:23:12.105Z",
+   "ultimaActividad": "2026-10-05T10:32:44.639Z",
    "ultimaPublicacion": "2026-10-05T10:16:18.226Z",
    "haciendo": {
     "ts": "2026-10-05T10:16:18.226Z",
@@ -90,10 +126,10 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 21,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:05:24.324Z",
+   "ultimaActividad": "2026-10-05T10:32:43.266Z",
    "ultimaPublicacion": "2026-10-05T10:05:24.324Z",
    "haciendo": {
     "ts": "2026-10-05T10:05:24.324Z",
@@ -138,42 +174,6 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 33,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:04:16.383Z",
-   "ultimaPublicacion": "2026-10-05T10:04:16.383Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:04:16.383Z",
-    "texto": "Le respondí a Norma: sin novedad a las 05:00. Nadie me pasó pieza nueva desde las 04:30."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "programado",
-   "publicaciones": 60,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:03:58.917Z",
-   "ultimaPublicacion": "2026-10-05T10:03:58.917Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:03:58.917Z",
-    "texto": "También le respondí a Rosita: sin novedad a las 05:00, porque X sigue sin créditos y no hay nada que verificar."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Charo",
    "bot": "Tablero",
    "puesto": "Diseñadora del tablero",
@@ -198,10 +198,10 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 38,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:04:07.927Z",
+   "ultimaActividad": "2026-10-05T10:32:42.669Z",
    "ultimaPublicacion": "2026-10-05T09:06:41.320Z",
    "haciendo": {
     "ts": "2026-10-05T09:06:41.320Z",
@@ -216,10 +216,10 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:04:23.914Z",
+   "ultimaActividad": "2026-10-05T10:32:44.570Z",
    "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
    "haciendo": {
     "ts": "2026-10-05T04:03:32.500Z",
