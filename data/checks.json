@@ -1,35 +1,79 @@
 {
- "total": 66,
+ "total": 70,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · CUSCO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (672,264) no coincide con totalVotosValidos (672,118). Diferencia: +146.",
+   "detalle": "La suma de votos de las organizaciones (673,769) no coincide con totalVotosValidos (672,264). Diferencia: +1,505.",
    "valores": {
-    "suma_participantes": 672264,
-    "totalVotosValidos": 672118
+    "suma_participantes": 673769,
+    "totalVotosValidos": 672264
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · CUSCO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 31.115% y el cálculo da 31.185%.",
+   "valores": {
+    "votos": 209646,
+    "pct_onpe": 31.115,
+    "pct_calculado": 31.185
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · AMAZONAS",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (193,661) no coincide con totalVotosValidos (193,167). Diferencia: +494.",
+   "detalle": "La suma de votos de las organizaciones (194,971) no coincide con totalVotosValidos (193,661). Diferencia: +1,310.",
    "valores": {
-    "suma_participantes": 193661,
-    "totalVotosValidos": 193167
+    "suma_participantes": 194971,
+    "totalVotosValidos": 193661
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AMAZONAS",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 25.455% y el cálculo da 25.520%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.135% y el cálculo da 22.284%.",
    "valores": {
-    "votos": 49297,
-    "pct_onpe": 25.455,
-    "pct_calculado": 25.52
+    "votos": 43156,
+    "pct_onpe": 22.135,
+    "pct_calculado": 22.284
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO REGIONAL VICTORIA AMAZONENSE: ONPE publica 22.534% y el cálculo da 22.687%.",
+   "valores": {
+    "votos": 43935,
+    "pct_onpe": 22.534,
+    "pct_calculado": 22.687
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO REGIONAL AMAZONENSE UNIDOS AL CAMPO: ONPE publica 23.598% y el cálculo da 23.758%.",
+   "valores": {
+    "votos": 46010,
+    "pct_onpe": 23.598,
+    "pct_calculado": 23.758
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 25.518% y el cálculo da 25.690%.",
+   "valores": {
+    "votos": 49752,
+    "pct_onpe": 25.518,
+    "pct_calculado": 25.69
    }
   },
   {
