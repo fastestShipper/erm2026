@@ -1,5 +1,5 @@
 {
- "total": 273,
+ "total": 274,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -2056,71 +2056,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / MORROPÓN",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (86,866) no coincide con totalVotosValidos (85,866). Diferencia: +1,000.",
-   "valores": {
-    "suma_participantes": 86866,
-    "totalVotosValidos": 85866
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / MORROPÓN",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 6.495% y el cálculo da 6.571%.",
-   "valores": {
-    "votos": 5642,
-    "pct_onpe": 6.495,
-    "pct_calculado": 6.571
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / MORROPÓN",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 18.666% y el cálculo da 18.883%.",
-   "valores": {
-    "votos": 16214,
-    "pct_onpe": 18.666,
-    "pct_calculado": 18.883
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / MORROPÓN",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 20.216% y el cálculo da 20.452%.",
-   "valores": {
-    "votos": 17561,
-    "pct_onpe": 20.216,
-    "pct_calculado": 20.452
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / MORROPÓN",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 22.812% y el cálculo da 23.078%.",
-   "valores": {
-    "votos": 19816,
-    "pct_onpe": 22.812,
-    "pct_calculado": 23.078
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / MORROPÓN",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 25.619% y el cálculo da 25.917%.",
-   "valores": {
-    "votos": 22254,
-    "pct_onpe": 25.619,
-    "pct_calculado": 25.917
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · SAN MARTÍN / TOCACHE / SANTA LUCÍA",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (1,709) no coincide con totalVotosValidos (195). Diferencia: +1,514.",
@@ -2961,6 +2896,82 @@
     "votos": 17933,
     "pct_onpe": 38.845,
     "pct_calculado": 39.627
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / PALLASCA / CONCHUCOS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (2,577) no coincide con totalVotosValidos (2,459). Diferencia: +118.",
+   "valores": {
+    "suma_participantes": 2577,
+    "totalVotosValidos": 2459
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / PALLASCA / CONCHUCOS",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 2.716% y el cálculo da 2.847%.",
+   "valores": {
+    "votos": 70,
+    "pct_onpe": 2.716,
+    "pct_calculado": 2.847
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / PALLASCA / CONCHUCOS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 3.26% y el cálculo da 3.416%.",
+   "valores": {
+    "votos": 84,
+    "pct_onpe": 3.26,
+    "pct_calculado": 3.416
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / PALLASCA / CONCHUCOS",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 8.77% y el cálculo da 9.191%.",
+   "valores": {
+    "votos": 226,
+    "pct_onpe": 8.77,
+    "pct_calculado": 9.191
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / PALLASCA / CONCHUCOS",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 13.31% y el cálculo da 13.949%.",
+   "valores": {
+    "votos": 343,
+    "pct_onpe": 13.31,
+    "pct_calculado": 13.949
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / PALLASCA / CONCHUCOS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 23.283% y el cálculo da 24.400%.",
+   "valores": {
+    "votos": 600,
+    "pct_onpe": 23.283,
+    "pct_calculado": 24.4
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / PALLASCA / CONCHUCOS",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 48.118% y el cálculo da 50.427%.",
+   "valores": {
+    "votos": 1240,
+    "pct_onpe": 48.118,
+    "pct_calculado": 50.427
    }
   }
  ]
