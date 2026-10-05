@@ -1,67 +1,67 @@
 {
- "total": 79,
+ "total": 80,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (288,505) no coincide con totalVotosValidos (286,198). Diferencia: +2,307.",
+   "detalle": "La suma de votos de las organizaciones (292,740) no coincide con totalVotosValidos (291,123). Diferencia: +1,617.",
    "valores": {
-    "suma_participantes": 288505,
-    "totalVotosValidos": 286198
+    "suma_participantes": 292740,
+    "totalVotosValidos": 291123
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 19.811% y el cálculo da 19.971%.",
+   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 20.03% y el cálculo da 20.141%.",
    "valores": {
-    "votos": 57156,
-    "pct_onpe": 19.811,
-    "pct_calculado": 19.971
+    "votos": 58636,
+    "pct_onpe": 20.03,
+    "pct_calculado": 20.141
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 32.716% y el cálculo da 32.980%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 32.619% y el cálculo da 32.800%.",
    "valores": {
-    "votos": 94387,
-    "pct_onpe": 32.716,
-    "pct_calculado": 32.98
+    "votos": 95489,
+    "pct_onpe": 32.619,
+    "pct_calculado": 32.8
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "LIBERTAD POPULAR: ONPE publica 36.634% y el cálculo da 36.929%.",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 36.541% y el cálculo da 36.744%.",
    "valores": {
-    "votos": 105690,
-    "pct_onpe": 36.634,
-    "pct_calculado": 36.929
+    "votos": 106971,
+    "pct_onpe": 36.541,
+    "pct_calculado": 36.744
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · CAJAMARCA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (732,400) no coincide con totalVotosValidos (732,080). Diferencia: +320.",
+   "detalle": "La suma de votos de las organizaciones (732,720) no coincide con totalVotosValidos (732,554). Diferencia: +166.",
    "valores": {
-    "suma_participantes": 732400,
-    "totalVotosValidos": 732080
+    "suma_participantes": 732720,
+    "totalVotosValidos": 732554
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · CUSCO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (666,709) no coincide con totalVotosValidos (666,388). Diferencia: +321.",
+   "detalle": "La suma de votos de las organizaciones (667,587) no coincide con totalVotosValidos (667,110). Diferencia: +477.",
    "valores": {
-    "suma_participantes": 666709,
-    "totalVotosValidos": 666388
+    "suma_participantes": 667587,
+    "totalVotosValidos": 667110
    }
   },
   {
@@ -83,6 +83,16 @@
     "votos": 115657,
     "pct_onpe": 31.84,
     "pct_calculado": 31.921
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (190,833) no coincide con totalVotosValidos (190,618). Diferencia: +215.",
+   "valores": {
+    "suma_participantes": 190833,
+    "totalVotosValidos": 190618
    }
   },
   {
