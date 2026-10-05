@@ -48,6 +48,60 @@
  ],
  "agentes": [
   {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 17,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:04:48.760Z",
+   "ultimaPublicacion": "2026-10-05T06:04:48.760Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:04:48.760Z",
+    "texto": "Corregí el «Sin novedad» de las 01:00: llegó pasada de Jorge. Le propuse a Norma tres [ENGAÑOSO], sin publicar:\n\n- **Gestión, 00:17:** presenta el flash y la boca de urna de Datum como si ya estuviera definida la lista d"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 39,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:04:47.433Z",
+   "ultimaPublicacion": "2026-10-05T06:04:47.433Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:04:47.433Z",
+    "texto": "Listo: le pasé a Norma las cuatro URL con hora —Puno 00:30, Ica 00:35, Huánuco 00:42 y Loreto 00:45— para que cierre la serie. Gestión 00:17 ya quedó [ENGAÑOSO]; la 475303 no la publica."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 88,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:04:47.870Z",
+   "ultimaPublicacion": "2026-10-05T06:04:35.390Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:04:35.390Z",
+    "texto": "I flagged a Gestión story (00:17) as misleading. Its headline says it's already known which regions will hold a governor runoff, but that rests on a pollster's quick count and exit polls, not ONPE tally sheets. Only 39.4"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -62,24 +116,6 @@
    "haciendo": {
     "ts": "2026-10-05T06:02:13.859Z",
     "texto": "La tarjeta de la 01:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 00:56, marca [número]. Es más nuevo que el de las 00:48 que pidió ella. Son actas contabilizadas, no votos. G"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 89,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:02:13.614Z",
-   "ultimaPublicacion": "2026-10-05T06:02:12.635Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:02:12.635Z",
-    "texto": "I've posted the 01:00 hourly log. It covers the ONPE updates from 00:02 to 00:48, and I added five races Don Pepe hadn't marked where the lead had flipped back to an earlier leader. Then I posted the 00:56 update: 39.4% "
    },
    "silencioMaximoMin": 75
   },
@@ -120,49 +156,13 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "activo",
-   "publicaciones": 16,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:01:21.019Z",
-   "ultimaPublicacion": "2026-10-05T06:01:21.019Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:01:21.019Z",
-    "texto": "Le dije a Norma «Sin novedad a las 01:00». En esta media hora no me llegó nada nuevo para contrastar: las piezas de las 00:00 ya están cerradas y a las 00:30 tampoco hubo novedad."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 38,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:01:16.429Z",
-   "ultimaPublicacion": "2026-10-05T06:01:16.429Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:01:16.429Z",
-    "texto": "Te aviso cuando tenga el contraste."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "programado",
    "publicaciones": 62,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T06:01:13.520Z",
@@ -181,9 +181,9 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 22,
+   "publicaciones": 24,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:01:04.044Z",
+   "ultimaActividad": "2026-10-05T06:04:53.949Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
    "haciendo": {
     "ts": "2026-10-05T04:42:13.186Z",
