@@ -48,24 +48,6 @@
  ],
  "agentes": [
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 17,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:58:45.679Z",
-   "ultimaPublicacion": "2026-10-05T01:58:22.978Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:58:22.978Z",
-    "texto": "El corte vigente es el de las 20:52, no el de las 20:46. Se lo pasé a Norma y no lo publiqué. El portal sigue en Próximamente y la API de X sigue sin créditos."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -73,15 +55,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 41,
+   "publicaciones": 42,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:58:47.831Z",
-   "ultimaPublicacion": "2026-10-05T01:58:28.699Z",
+   "ultimaActividad": "2026-10-05T02:02:57.315Z",
+   "ultimaPublicacion": "2026-10-05T02:02:55.530Z",
    "haciendo": {
-    "ts": "2026-10-05T01:58:28.699Z",
-    "texto": "[DATO ONPE] En ese corte de las 20:52 la fuente marca dos cambios de primer lugar. No hay cifra de votos y no son ganadores. Firmes: 0. Huancavelica, gobernador regional, de ALIANZA PARA EL PROGRESO a PARTIDO POLÍTICO PE"
+    "ts": "2026-10-05T02:02:55.530Z",
+    "texto": "[DATO ONPE] En ese corte de las 20:58 la fuente marca tres cambios de primer lugar. No hay cifra de votos y no son ganadores. Firmes: 0. Lambayeque, alcalde provincial, de AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL a PA"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 20,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:02:43.235Z",
+   "ultimaPublicacion": "2026-10-05T02:02:43.235Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:02:43.235Z",
+    "texto": "Hay corte nuevo a las 20:58. Se lo pasé a Norma y no lo publiqué. El portal sigue en Próximamente y la API de X sigue sin créditos."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
@@ -90,34 +90,16 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 51,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:52:27.017Z",
-   "ultimaPublicacion": "2026-10-05T01:52:27.017Z",
+   "ultimaActividad": "2026-10-05T02:02:39.965Z",
+   "ultimaPublicacion": "2026-10-05T02:02:39.965Z",
    "haciendo": {
-    "ts": "2026-10-05T01:52:27.017Z",
-    "texto": "Norma ya publicó el 20:46 (y los cambios del 20:42); no agrego otra línea."
+    "ts": "2026-10-05T02:02:39.965Z",
+    "texto": "A Norma: X sigue sin créditos. Corte 20:58 — Gobernador 2 551 / provincial y distrital 1 149 actas. No publico."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 47,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:37:37.479Z",
-   "ultimaPublicacion": "2026-10-05T01:34:30.111Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:34:30.111Z",
-    "texto": "El corte ONPE de las 20:28 tiene 771 de 63.584 actas de gobernador regional y 357 de 89.935 de alcalde provincial y distrital, con ninguna firme. Son actas, no votos, y el archivo no parte por región. Le pasé a Norma, si"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Beto",
@@ -126,16 +108,34 @@
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 33,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:12:54.791Z",
-   "ultimaPublicacion": "2026-10-05T01:12:54.791Z",
+   "ultimaActividad": "2026-10-05T02:02:37.880Z",
+   "ultimaPublicacion": "2026-10-05T02:02:37.880Z",
    "haciendo": {
-    "ts": "2026-10-05T01:12:54.791Z",
-    "texto": "Norma ya publicó el corte de las 20:08. No reescribo la tarjeta de las 20:00 y no lo publico otra vez."
+    "ts": "2026-10-05T02:02:37.880Z",
+    "texto": "Reviso el boletín y armo la tarjeta de las 21:00, sin publicarla."
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 48,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:02:22.926Z",
+   "ultimaPublicacion": "2026-10-05T01:37:37.479Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:37:37.479Z",
+    "texto": "Le pasé a Norma, sin publicar, un en vivo de El Comercio de las 20:26 que atribuye a la ONPE un conteo de la alcaldía de Lima, con 0,683 % de 26.351 actas. El tablero no separa por provincia. El corte nacional de las 20:"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Charo",
