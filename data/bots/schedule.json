@@ -54,104 +54,14 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 90,
+   "estado": "activo",
+   "publicaciones": 89,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:54:02.789Z",
-   "ultimaPublicacion": "2026-10-05T05:54:02.789Z",
+   "ultimaActividad": "2026-10-05T06:01:56.625Z",
+   "ultimaPublicacion": "2026-10-05T06:01:56.625Z",
    "haciendo": {
-    "ts": "2026-10-05T05:54:02.789Z",
-    "texto": "I checked the 00:48 cut against the ONPE file and it's posted. Counted actas are at 38.6% for regional governor and 33.3% for mayors, and first place can no longer change in 25 districts. All three first-place changes in"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 39,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:53:38.124Z",
-   "ultimaPublicacion": "2026-10-05T05:53:38.124Z",
-   "haciendo": {
-    "ts": "2026-10-05T05:53:38.124Z",
-    "texto": "Le pasé a Norma, sin publicarlos, los cortes de la ONPE de las 00:42 y 00:48 (hora Lima). Ya van 24 558 de 63 584 actas de gobernador regional contabilizadas. En el de las 00:48 se revirtieron tres primeros lugares: Lore"
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 15,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:33:36.160Z",
-   "ultimaPublicacion": "2026-10-05T05:33:36.160Z",
-   "haciendo": {
-    "ts": "2026-10-05T05:33:36.160Z",
-    "texto": "Le dije a Norma «Sin novedad a las 00:30». Las tres piezas de las 00:00 ya están publicadas como [ENGAÑOSO], y en esta media hora no me llegó nada nuevo de los demás. X sigue sin créditos."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 37,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:35:25.015Z",
-   "ultimaPublicacion": "2026-10-05T05:33:33.473Z",
-   "haciendo": {
-    "ts": "2026-10-05T05:33:33.473Z",
-    "texto": "Norma ya cerró como [ENGAÑOSO] las tres de Correo y Panamericana 475304; no las vuelvo a pasar. Te aviso cuando tenga el contraste de las 00:30."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "programado",
-   "publicaciones": 62,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:33:27.904Z",
-   "ultimaPublicacion": "2026-10-05T05:33:27.904Z",
-   "haciendo": {
-    "ts": "2026-10-05T05:33:27.904Z",
-    "texto": "Le respondí a Norma que no hay novedad a las 00:30 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "programado",
-   "publicaciones": 41,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:05:56.809Z",
-   "ultimaPublicacion": "2026-10-05T05:05:56.809Z",
-   "haciendo": {
-    "ts": "2026-10-05T05:05:56.809Z",
-    "texto": "La tarjeta de las 00:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 23:56, marca [número], que es el que ella pidió después y el más nuevo del archivo. Son actas contabilizadas"
+    "ts": "2026-10-05T06:01:56.625Z",
+    "texto": "[DATO ONPE] Corte ONPE de las 00:56, generado a las 01:00 hora Lima. Mide actas contabilizadas, no votos. Gobernador regional: 25 039 de 63 584 actas (39,379 %; antes 39,004 %). Alcalde provincial y distrital: 31 246 de "
    },
    "silencioMaximoMin": 75
   },
@@ -162,16 +72,106 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "programado",
-   "publicaciones": 20,
+   "estado": "activo",
+   "publicaciones": 32,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:05:28.949Z",
-   "ultimaPublicacion": "2026-10-05T05:05:28.949Z",
+   "ultimaActividad": "2026-10-05T06:01:35.141Z",
+   "ultimaPublicacion": "2026-10-05T06:01:35.141Z",
    "haciendo": {
-    "ts": "2026-10-05T05:05:28.949Z",
-    "texto": "I sent Norma the draft of the midnight log, unpublished, so it can be checked and posted. It has the 23:08 count and the latest one, from 23:48. At 23:48, 20 952 of 63 584 tallies are counted for regional governor (32.95"
+    "ts": "2026-10-05T06:01:35.141Z",
+    "texto": "I sent Norma the unpublished draft of the 1:00 a.m. log. It covers the counts from 00:02 to 00:48, every figure taken straight from the count file, and names only places, not parties or candidates. At 00:48, 24 558 of 63"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 41,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:01:33.937Z",
+   "ultimaPublicacion": "2026-10-05T06:01:33.937Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:01:33.937Z",
+    "texto": "Le pasé a Norma, sin publicarlos, los cortes de la ONPE de las 00:52 y 00:56 (hora Lima). Ya van 25 039 de 63 584 actas de gobernador regional contabilizadas. En el intermedio se revirtió Daniel Alcides Carrión (Pasco) y"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 16,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:01:21.019Z",
+   "ultimaPublicacion": "2026-10-05T06:01:21.019Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:01:21.019Z",
+    "texto": "Le dije a Norma «Sin novedad a las 01:00». En esta media hora no me llegó nada nuevo para contrastar: las piezas de las 00:00 ya están cerradas y a las 00:30 tampoco hubo novedad."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 38,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:01:16.429Z",
+   "ultimaPublicacion": "2026-10-05T06:01:16.429Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:01:16.429Z",
+    "texto": "Te aviso cuando tenga el contraste."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 41,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:01:14.059Z",
+   "ultimaPublicacion": "2026-10-05T06:01:14.059Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:01:14.059Z",
+    "texto": "Releo el boletín y armo la tarjeta de la 01:00 solo como [INTERNO], sin publicarla."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 62,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:01:13.520Z",
+   "ultimaPublicacion": "2026-10-05T06:01:13.520Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:01:13.520Z",
+    "texto": "Le respondí a Norma que no hay novedad a las 01:00 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Kike",
@@ -180,10 +180,10 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:35:17.097Z",
+   "ultimaActividad": "2026-10-05T06:01:04.044Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
    "haciendo": {
     "ts": "2026-10-05T04:42:13.186Z",
@@ -198,14 +198,14 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "programado",
-   "publicaciones": 15,
+   "estado": "activo",
+   "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:03:32.500Z",
-   "ultimaPublicacion": "2026-10-05T04:01:48.206Z",
+   "ultimaActividad": "2026-10-05T06:01:51.935Z",
+   "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
    "haciendo": {
-    "ts": "2026-10-05T04:01:48.206Z",
-    "texto": "La copia de peruvian.dev sigue sin abrir una conexión segura, así que el corte de las 22:48 no lo puedo leer y no voy a forzar la conexión. Te aviso cuando tenga la lectura de la ONPE."
+    "ts": "2026-10-05T04:03:32.500Z",
+    "texto": "Con la herramienta de lectura web la copia sí abre. No hay observaciones Importante: el archivo de anomalías está vacío y el último corte es el de las 22:56. Lo único nuevo es que el endpoint de observaciones ahora sí di"
    },
    "silencioMaximoMin": 30
   },
