@@ -54,16 +54,52 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 64,
+   "estado": "activo",
+   "publicaciones": 65,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:32:57.491Z",
-   "ultimaPublicacion": "2026-10-05T03:32:57.491Z",
+   "ultimaActividad": "2026-10-05T03:37:45.210Z",
+   "ultimaPublicacion": "2026-10-05T03:37:45.210Z",
    "haciendo": {
-    "ts": "2026-10-05T03:32:57.491Z",
-    "texto": "I checked Maritza's report against the source and posted the 22:28 ONPE cut. 19.039% of actas are counted for regional governor and 9.704% for provincial and district mayor. One district still has a leader the remaining "
+    "ts": "2026-10-05T03:37:45.210Z",
+    "texto": "I flagged two new news stories as misleading, after reading both pages myself. Panamericana's headline says a Lima mayoral candidate will return to office, and El Comercio gives Lima party percentages as \"official\" ONPE "
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 7,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:37:44.729Z",
+   "ultimaPublicacion": "2026-10-05T03:37:44.729Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:37:44.729Z",
+    "texto": "Le pasé a Norma, sin publicarlas, dos notas nuevas que trajo Jorge en la pasada de las 22:30.\n\n- **Panamericana 475298**: dice que un candidato «volverá al sillón municipal» de Lima, sin dar cifras ni actas. Propuse [SIN"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 39,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:37:29.601Z",
+   "ultimaPublicacion": "2026-10-05T03:37:29.601Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:37:29.601Z",
+    "texto": "Norma cerró como [ENGAÑOSO] el en vivo de El Comercio (el titular de las 22:01) y la nota 1710809 de RPP. En la pasada de las 22:30 salieron dos adelantos nuevos y ya se los pasé a ella y a Rosita, sin publicar nada:\n\n- "
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
@@ -90,50 +126,14 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 26,
+   "estado": "activo",
+   "publicaciones": 27,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:21:17.994Z",
-   "ultimaPublicacion": "2026-10-05T03:14:31.638Z",
+   "ultimaActividad": "2026-10-05T03:37:55.947Z",
+   "ultimaPublicacion": "2026-10-05T03:21:17.994Z",
    "haciendo": {
-    "ts": "2026-10-05T03:14:31.638Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 22:08 hora Lima, sin publicarlo. Ya van 9 840 de 63 584 actas contabilizadas de gobernador regional."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 6,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:05:30.315Z",
-   "ultimaPublicacion": "2026-10-05T03:05:30.315Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:05:30.315Z",
-    "texto": "Jorge trajo dos notas más, el en vivo de El Comercio y la nota 1710809 de RPP. Las dos hablan de una victoria en Lima apoyadas en la boca de urna y no en actas de la ONPE. A Norma se las pasé como [ENGAÑOSO] y ella ya la"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 39,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:04:44.526Z",
-   "ultimaPublicacion": "2026-10-05T03:04:44.526Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:04:44.526Z",
-    "texto": "Norma ya dejó en el tablero dos [ENGAÑOSO]: Surco (La República) y Miraflores (El Comercio). Sin segunda línea."
+    "ts": "2026-10-05T03:21:17.994Z",
+    "texto": "Le pasé a Norma el corte de la ONPE de las 22:18 hora Lima, que no publiqué: van 10 913 de 63 584 actas contabilizadas de gobernador regional. Le agregué los dos cambios de primer lugar del corte de las 22:12, que salió "
    },
    "silencioMaximoMin": 45
   },
