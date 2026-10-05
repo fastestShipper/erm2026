@@ -1,6 +1,135 @@
 {
- "total": 86,
+ "total": 77,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (126,088) no coincide con totalVotosValidos (125,806). Diferencia: +282.",
+   "valores": {
+    "suma_participantes": 126088,
+    "totalVotosValidos": 125806
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO FRENTE DE LA ESPERANZA 2021: ONPE publica 28.805% y el cálculo da 28.870%.",
+   "valores": {
+    "votos": 36320,
+    "pct_onpe": 28.805,
+    "pct_calculado": 28.87
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (846,828) no coincide con totalVotosValidos (842,717). Diferencia: +4,111.",
+   "valores": {
+    "suma_participantes": 846828,
+    "totalVotosValidos": 842717
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 16.982% y el cálculo da 17.065%.",
+   "valores": {
+    "votos": 143810,
+    "pct_onpe": 16.982,
+    "pct_calculado": 17.065
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 18.185% y el cálculo da 18.273%.",
+   "valores": {
+    "votos": 153992,
+    "pct_onpe": 18.185,
+    "pct_calculado": 18.273
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.532% y el cálculo da 22.642%.",
+   "valores": {
+    "votos": 190811,
+    "pct_onpe": 22.532,
+    "pct_calculado": 22.642
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (196,368) no coincide con totalVotosValidos (194,534). Diferencia: +1,834.",
+   "valores": {
+    "suma_participantes": 196368,
+    "totalVotosValidos": 194534
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 10.814% y el cálculo da 10.916%.",
+   "valores": {
+    "votos": 21235,
+    "pct_onpe": 10.814,
+    "pct_calculado": 10.916
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 11.244% y el cálculo da 11.350%.",
+   "valores": {
+    "votos": 22080,
+    "pct_onpe": 11.244,
+    "pct_calculado": 11.35
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 16.56% y el cálculo da 16.716%.",
+   "valores": {
+    "votos": 32518,
+    "pct_onpe": 16.56,
+    "pct_calculado": 16.716
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 20.574% y el cálculo da 20.768%.",
+   "valores": {
+    "votos": 40400,
+    "pct_onpe": 20.574,
+    "pct_calculado": 20.768
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.284% y el cálculo da 35.616%.",
+   "valores": {
+    "votos": 69286,
+    "pct_onpe": 35.284,
+    "pct_calculado": 35.616
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
@@ -97,158 +226,6 @@
     "votos": 12048,
     "pct_onpe": 20.419,
     "pct_calculado": 21.084
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PASCO / OXAPAMPA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (41,299) no coincide con totalVotosValidos (39,801). Diferencia: +1,498.",
-   "valores": {
-    "suma_participantes": 41299,
-    "totalVotosValidos": 39801
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PASCO / OXAPAMPA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 2.121% y el cálculo da 2.201%.",
-   "valores": {
-    "votos": 876,
-    "pct_onpe": 2.121,
-    "pct_calculado": 2.201
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PASCO / OXAPAMPA",
-   "severidad": "revisar",
-   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 8.373% y el cálculo da 8.688%.",
-   "valores": {
-    "votos": 3458,
-    "pct_onpe": 8.373,
-    "pct_calculado": 8.688
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PASCO / OXAPAMPA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 12.477% y el cálculo da 12.947%.",
-   "valores": {
-    "votos": 5153,
-    "pct_onpe": 12.477,
-    "pct_calculado": 12.947
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PASCO / OXAPAMPA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO FRENTE DE LA ESPERANZA 2021: ONPE publica 12.889% y el cálculo da 13.374%.",
-   "valores": {
-    "votos": 5323,
-    "pct_onpe": 12.889,
-    "pct_calculado": 13.374
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PASCO / OXAPAMPA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA REGIONAL POR EL PERÚ: ONPE publica 19.879% y el cálculo da 20.628%.",
-   "valores": {
-    "votos": 8210,
-    "pct_onpe": 19.879,
-    "pct_calculado": 20.628
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PASCO / OXAPAMPA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 21.289% y el cálculo da 22.090%.",
-   "valores": {
-    "votos": 8792,
-    "pct_onpe": 21.289,
-    "pct_calculado": 22.09
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PASCO / OXAPAMPA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 22.972% y el cálculo da 23.836%.",
-   "valores": {
-    "votos": 9487,
-    "pct_onpe": 22.972,
-    "pct_calculado": 23.836
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (46,166) no coincide con totalVotosValidos (45,255). Diferencia: +911.",
-   "valores": {
-    "suma_participantes": 46166,
-    "totalVotosValidos": 45255
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 5.87% y el cálculo da 5.988%.",
-   "valores": {
-    "votos": 2710,
-    "pct_onpe": 5.87,
-    "pct_calculado": 5.988
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 6.028% y el cálculo da 6.150%.",
-   "valores": {
-    "votos": 2783,
-    "pct_onpe": 6.028,
-    "pct_calculado": 6.15
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 12.884% y el cálculo da 13.143%.",
-   "valores": {
-    "votos": 5948,
-    "pct_onpe": 12.884,
-    "pct_calculado": 13.143
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 34.987% y el cálculo da 35.691%.",
-   "valores": {
-    "votos": 16152,
-    "pct_onpe": 34.987,
-    "pct_calculado": 35.691
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 38.845% y el cálculo da 39.627%.",
-   "valores": {
-    "votos": 17933,
-    "pct_onpe": 38.845,
-    "pct_calculado": 39.627
    }
   },
   {
@@ -586,82 +563,6 @@
     "votos": 7136,
     "pct_onpe": 41.115,
     "pct_calculado": 44.982
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (16,643) no coincide con totalVotosValidos (12,663). Diferencia: +3,980.",
-   "valores": {
-    "suma_participantes": 16643,
-    "totalVotosValidos": 12663
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 1.592% y el cálculo da 2.093%.",
-   "valores": {
-    "votos": 265,
-    "pct_onpe": 1.592,
-    "pct_calculado": 2.093
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 1.899% y el cálculo da 2.495%.",
-   "valores": {
-    "votos": 316,
-    "pct_onpe": 1.899,
-    "pct_calculado": 2.495
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 5.432% y el cálculo da 7.139%.",
-   "valores": {
-    "votos": 904,
-    "pct_onpe": 5.432,
-    "pct_calculado": 7.139
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 10.233% y el cálculo da 13.449%.",
-   "valores": {
-    "votos": 1703,
-    "pct_onpe": 10.233,
-    "pct_calculado": 13.449
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 29.033% y el cálculo da 38.158%.",
-   "valores": {
-    "votos": 4832,
-    "pct_onpe": 29.033,
-    "pct_calculado": 38.158
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 51.812% y el cálculo da 68.096%.",
-   "valores": {
-    "votos": 8623,
-    "pct_onpe": 51.812,
-    "pct_calculado": 68.096
    }
   },
   {
