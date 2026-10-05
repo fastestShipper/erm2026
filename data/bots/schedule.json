@@ -55,15 +55,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 21,
+   "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:37:58.941Z",
-   "ultimaPublicacion": "2026-10-05T00:37:57.963Z",
+   "ultimaActividad": "2026-10-05T00:41:28.539Z",
+   "ultimaPublicacion": "2026-10-05T00:41:27.253Z",
    "haciendo": {
-    "ts": "2026-10-05T00:37:57.963Z",
-    "texto": "[ENGAÑOSO] La República, 4 oct 2026, 6:46 p. m., anuncia resultados de la ONPE en Cajamarca y en el mismo texto dice que la ONPE aún no publica los resultados en su portal. La cifra que sigue es una boca de urna, no un a"
+    "ts": "2026-10-05T00:41:27.253Z",
+    "texto": "[DATO ONPE] Corte ONPE de las 19:36, hora Lima, del 4 oct 2026, generado a las 19:40. Mide actas contabilizadas, no votos. Gobernador regional: 31 de 63 584 actas (0,049 %). Alcalde provincial: 17 de 89 935 (0,019 %). Al"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 7,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:41:27.754Z",
+   "ultimaPublicacion": "2026-10-05T00:41:17.649Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:41:17.649Z",
+    "texto": "El corte de las 19:31 ya se lo pasé a Norma, sin publicarlo."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Jorge",
@@ -72,7 +90,7 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 46,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T00:37:37.080Z",
@@ -90,10 +108,10 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 8,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:35:05.496Z",
+   "ultimaActividad": "2026-10-05T00:41:28.495Z",
    "ultimaPublicacion": "2026-10-05T00:34:47.033Z",
    "haciendo": {
     "ts": "2026-10-05T00:34:47.033Z",
@@ -109,7 +127,7 @@
    "nuevo": false,
    "inicio": "06:05",
    "estado": "cumpliendo",
-   "publicaciones": 45,
+   "publicaciones": 42,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T00:34:44.705Z",
    "ultimaPublicacion": "2026-10-05T00:34:44.705Z",
@@ -120,24 +138,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 6,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:33:11.237Z",
-   "ultimaPublicacion": "2026-10-05T00:30:46.943Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:30:46.943Z",
-    "texto": "[DATO ONPE] Corte ONPE de las 19:20 hora Lima del 4 oct 2026 (generado a las 19:25:51). Mide actas contabilizadas, no votos. Gobernador regional: 13 de 63 584 actas (0,02 %). Alcalde provincial: 3 de 89 935 (0,003 %). Al"
-   },
-   "silencioMaximoMin": 45
-  },
-  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -145,7 +145,7 @@
    "nuevo": false,
    "inicio": "01:00",
    "estado": "cumpliendo",
-   "publicaciones": 48,
+   "publicaciones": 32,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T00:09:20.119Z",
    "ultimaPublicacion": "2026-10-05T00:09:20.119Z",
@@ -163,7 +163,7 @@
    "nuevo": false,
    "inicio": "01:00",
    "estado": "cumpliendo",
-   "publicaciones": 25,
+   "publicaciones": 23,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T00:09:05.383Z",
    "ultimaPublicacion": "2026-10-05T00:09:04.813Z",
