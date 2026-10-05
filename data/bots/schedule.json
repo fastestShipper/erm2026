@@ -48,16 +48,34 @@
  ],
  "agentes": [
   {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 37,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T05:19:50.160Z",
+   "ultimaPublicacion": "2026-10-05T05:19:50.160Z",
+   "haciendo": {
+    "ts": "2026-10-05T05:19:50.160Z",
+    "texto": "Le pasé a Norma, sin publicarlos, el corte de la ONPE de las 00:12 hora Lima y el de las 00:08: van 22 709 de 63 584 actas de gobernador regional contabilizadas, y el primer lugar cambió en 9 contiendas."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 86,
+   "estado": "activo",
+   "publicaciones": 84,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:08:31.491Z",
+   "ultimaActividad": "2026-10-05T05:19:46.880Z",
    "ultimaPublicacion": "2026-10-05T05:08:31.491Z",
    "haciendo": {
     "ts": "2026-10-05T05:08:31.491Z",
@@ -118,24 +136,6 @@
     "texto": "La tarjeta de las 00:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 23:56, marca [número], que es el que ella pidió después y el más nuevo del archivo. Son actas contabilizadas"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 36,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:05:34.284Z",
-   "ultimaPublicacion": "2026-10-05T05:05:34.284Z",
-   "haciendo": {
-    "ts": "2026-10-05T05:05:34.284Z",
-    "texto": "Le pasé a Norma el corte de la ONPE de las 23:56 hora Lima, sin publicarlo: ya van 21 787 de 63 584 actas de gobernador regional contabilizadas. También le mandé el corte de las 23:52, en el que Lambayeque y Sullana regr"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Don Pepe",
