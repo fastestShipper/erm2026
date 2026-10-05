@@ -1,5 +1,5 @@
 {
- "total": 268,
+ "total": 277,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -2909,6 +2909,104 @@
     "votos": 6754,
     "pct_onpe": 30.835,
     "pct_calculado": 31.353
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (77,287) no coincide con totalVotosValidos (74,357). Diferencia: +2,930.",
+   "valores": {
+    "suma_participantes": 77287,
+    "totalVotosValidos": 74357
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE: ONPE publica 2.119% y el cálculo da 2.203%.",
+   "valores": {
+    "votos": 1638,
+    "pct_onpe": 2.119,
+    "pct_calculado": 2.203
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 2.405% y el cálculo da 2.500%.",
+   "valores": {
+    "votos": 1859,
+    "pct_onpe": 2.405,
+    "pct_calculado": 2.5
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 4.561% y el cálculo da 4.741%.",
+   "valores": {
+    "votos": 3525,
+    "pct_onpe": 4.561,
+    "pct_calculado": 4.741
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMÓCRATA VERDE: ONPE publica 8.501% y el cálculo da 8.836%.",
+   "valores": {
+    "votos": 6570,
+    "pct_onpe": 8.501,
+    "pct_calculado": 8.836
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 13.156% y el cálculo da 13.675%.",
+   "valores": {
+    "votos": 10168,
+    "pct_onpe": 13.156,
+    "pct_calculado": 13.675
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 13.261% y el cálculo da 13.784%.",
+   "valores": {
+    "votos": 10249,
+    "pct_onpe": 13.261,
+    "pct_calculado": 13.784
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 19.948% y el cálculo da 20.734%.",
+   "valores": {
+    "votos": 15417,
+    "pct_onpe": 19.948,
+    "pct_calculado": 20.734
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 32.309% y el cálculo da 33.583%.",
+   "valores": {
+    "votos": 24971,
+    "pct_onpe": 32.309,
+    "pct_calculado": 33.583
    }
   }
  ]
