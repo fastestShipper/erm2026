@@ -54,14 +54,14 @@
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 85,
+   "estado": "activo",
+   "publicaciones": 83,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:28:19.005Z",
-   "ultimaPublicacion": "2026-10-05T05:28:19.005Z",
+   "ultimaActividad": "2026-10-05T05:33:47.302Z",
+   "ultimaPublicacion": "2026-10-05T05:33:47.302Z",
    "haciendo": {
-    "ts": "2026-10-05T05:28:19.005Z",
-    "texto": "I posted ONPE's 00:22 count and the 00:16 update before it, after checking both against ONPE's data myself. About 36.7% of the governor tally sheets and 29.4% of the mayor ones are counted. In 23 districts, first place c"
+    "ts": "2026-10-05T05:33:47.302Z",
+    "texto": "I checked ONPE's 00:26 count myself and posted it. About 37.1% of governor tally sheets and 30.3% of mayor sheets are now counted. Only one race changed leader this time: Lamas's provincial mayor race, in San Martín. Fir"
    },
    "silencioMaximoMin": 75
   },
@@ -72,14 +72,14 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 38,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:28:04.996Z",
-   "ultimaPublicacion": "2026-10-05T05:28:04.996Z",
+   "ultimaActividad": "2026-10-05T05:33:41.023Z",
+   "ultimaPublicacion": "2026-10-05T05:33:41.023Z",
    "haciendo": {
-    "ts": "2026-10-05T05:28:04.996Z",
-    "texto": "Le pasé a Norma, sin publicarlos, los cortes de la ONPE de las 00:16 y las 00:22 hora Lima: ya van 23 321 de 63 584 actas de gobernador regional contabilizadas."
+    "ts": "2026-10-05T05:33:41.023Z",
+    "texto": "Le pasé a Norma, sin publicarlo, el corte de la ONPE de las 00:26 (hora de Lima). Ya van 23 571 de 63 584 actas de gobernador regional contabilizadas, y el primer lugar cambió en una sola contienda: Lamas."
    },
    "silencioMaximoMin": 45
   },
@@ -90,14 +90,14 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "programado",
-   "publicaciones": 14,
+   "estado": "activo",
+   "publicaciones": 15,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:08:17.317Z",
-   "ultimaPublicacion": "2026-10-05T05:08:17.317Z",
+   "ultimaActividad": "2026-10-05T05:33:36.160Z",
+   "ultimaPublicacion": "2026-10-05T05:33:36.160Z",
    "haciendo": {
-    "ts": "2026-10-05T05:08:17.317Z",
-    "texto": "Revisé las cuatro notas que trajo Jorge a la guardia de las 00:00 y le pasé a Norma tres [ENGAÑOSO], sin publicar:\n\n- **Diario Correo, 11:35 p. m.:** presenta el conteo rápido de Datum como «primeros resultados» y en el "
+    "ts": "2026-10-05T05:33:36.160Z",
+    "texto": "Le dije a Norma «Sin novedad a las 00:30». Las tres piezas de las 00:00 ya están publicadas como [ENGAÑOSO], y en esta media hora no me llegó nada nuevo de los demás. X sigue sin créditos."
    },
    "silencioMaximoMin": 75
   },
@@ -108,16 +108,34 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 36,
+   "estado": "activo",
+   "publicaciones": 37,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:07:56.652Z",
-   "ultimaPublicacion": "2026-10-05T05:07:56.652Z",
+   "ultimaActividad": "2026-10-05T05:33:33.473Z",
+   "ultimaPublicacion": "2026-10-05T05:33:33.473Z",
    "haciendo": {
-    "ts": "2026-10-05T05:07:56.652Z",
-    "texto": "Guardia 00:00: le pasé a Norma cuatro piezas nuevas, sin publicar. Correo presenta el conteo rápido como resultados; Panamericana 475304 habla de «virtual ganador» en Lima; RPP 1710820 titula «lidera resultados» al conte"
+    "ts": "2026-10-05T05:33:33.473Z",
+    "texto": "Norma ya cerró como [ENGAÑOSO] las tres de Correo y Panamericana 475304; no las vuelvo a pasar. Te aviso cuando tenga el contraste de las 00:30."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 62,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T05:33:27.904Z",
+   "ultimaPublicacion": "2026-10-05T05:33:27.904Z",
+   "haciendo": {
+    "ts": "2026-10-05T05:33:27.904Z",
+    "texto": "Le respondí a Norma que no hay novedad a las 00:30 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
+   },
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Beto",
@@ -156,34 +174,16 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "programado",
-   "publicaciones": 60,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:05:13.243Z",
-   "ultimaPublicacion": "2026-10-05T05:05:13.243Z",
-   "haciendo": {
-    "ts": "2026-10-05T05:05:13.243Z",
-    "texto": "Le respondí a Norma que no hay novedad a las 00:00 (hora de Lima). X sigue sin créditos, así que no pude revisar la lista."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 23,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:06:41.128Z",
+   "ultimaActividad": "2026-10-05T05:33:16.685Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
    "haciendo": {
     "ts": "2026-10-05T04:42:13.186Z",
