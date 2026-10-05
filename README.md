@@ -67,7 +67,7 @@ Los nombres de los campos son los de la ONPE: `actasContabilizadas` (porcentaje)
 
 Los votos en blanco, nulos e impugnados van aparte (`especial`) y nunca cuentan como primer lugar. Los archivos derivados no copian el DNI de los candidatos; sigue en las respuestas originales de la ONPE.
 
-Las provincias y los distritos (unos 2,100 lugares) los recorre un proceso aparte (`collect.py --ambitos`), en ronda y dando más turnos a los lugares con más actas. Cada lugar guarda la hora en que se consultó. Si la ONPE rechaza consultas, los recorridos largos se pausan solos; nunca se intenta saltar el bloqueo.
+Las provincias y los distritos (unos 1,900 lugares) los recorre un proceso aparte (`collect.py --ambitos`), en ronda y dando más turnos a los lugares con más actas. Cada lugar guarda la hora en que se consultó. Si la ONPE rechaza consultas, los recorridos largos se pausan solos; nunca se intenta saltar el bloqueo.
 
 ## Verificaciones automáticas
 

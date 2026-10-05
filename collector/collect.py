@@ -43,6 +43,9 @@ AMBITOS_STATE = 'crawl-ambitos.json'                              # estado del r
 LOWER_SECONDS = float(os.environ.get('ERM_AMBITOS_BUDGET', '100'))  # segundos por corrida de `--ambitos`
 LOWER_DELAY = float(os.environ.get('ERM_AMBITOS_DELAY', '0.5'))    # pausa entre pedidos: el corte nacional tiene prioridad
 PUSH = os.environ.get('ERM_PUSH', '1') == '1'
+# El portal de la ONPE consulta las municipales con dos ids: 3 = alcalde provincial, 4 = alcalde distrital.
+# Con el 3, un distrito devuelve la elección PROVINCIAL desglosada en ese distrito (fe de erratas, 5-oct-2026).
+ONPE_DISTRITAL = int(os.environ.get('ERM_ONPE_DISTRITAL', '4'))
 
 HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36',
@@ -499,9 +502,9 @@ def main():
         retrocesos.extend(back)
         nuevos.extend(back)
 
-    # La ONPE agrupa las municipales en una sola elección: por provincia trae al alcalde provincial y por
-    # distrito al alcalde distrital. Aquí se separan en dos contiendas (ids 302 y 303) que se consultan
-    # con el mismo id de la ONPE (idOnpe). Lo pedido una vez en esta corrida no se vuelve a pedir.
+    # El menú de la ONPE muestra las municipales como una sola elección, pero se consultan con dos ids:
+    # el del menú para el alcalde provincial y ONPE_DISTRITAL para el distrital. Aquí son dos contiendas
+    # (ids 302 y 303), cada una con su idOnpe. Lo pedido una vez en esta corrida no se vuelve a pedir.
     MENU = {'gobernador': 'Gobernador regional', 'consejeros': 'Consejeros regionales',
             'provincial': 'Alcalde provincial', 'distrital': 'Alcalde distrital'}
     logicas = []
@@ -512,7 +515,7 @@ def main():
         if lvl == 1 and 'municipal' in slug(txt):
             logicas.append({'id': onpe * 100 + 2, 'onpe': onpe, 'nivel': 2, 'tipo': 'provincial',
                             'nombre': 'Elecciones Municipales · alcalde provincial'})
-            logicas.append({'id': onpe * 100 + 3, 'onpe': onpe, 'nivel': 3, 'tipo': 'distrital',
+            logicas.append({'id': onpe * 100 + 3, 'onpe': ONPE_DISTRITAL, 'nivel': 3, 'tipo': 'distrital',
                             'nombre': 'Elecciones Municipales · alcalde distrital'})
         else:
             logicas.append({'id': onpe, 'onpe': onpe, 'nivel': lvl, 'tipo': kind_for(txt, lvl),
@@ -531,6 +534,17 @@ def main():
         eid, onpe, nombre, lvl, tipo = L['id'], L['onpe'], L['nombre'], L['nivel'], L['tipo']
         pre = f'onpe/eleccion-{onpe}/'
         prev = prev_by_id.get(eid, {})
+        # Si cambió el id con que se consulta esta contienda, lo anterior era otra elección: no se compara
+        # con ello ni se conserva su serie ni sus primeros lugares (evita falsos retrocesos y cambios).
+        moved = prev.get('idOnpe') not in (None, onpe)
+        if moved:
+            log(f'{nombre}: se consulta ahora con el id {onpe} de la ONPE (antes {prev.get("idOnpe")})')
+            crawl['_lideres'] = {k: v for k, v in (crawl.get('_lideres') or {}).items() if not k.startswith(f'{eid}:')}
+            crawl['_cambios'] = [x for x in crawl.get('_cambios') or [] if not str(x.get('clave', '')).startswith(f'{eid}:')]
+            series = os.path.join(DATA, 'series', f'eleccion-{eid}.csv')
+            if os.path.exists(series):
+                os.remove(series)
+            prev = {}
         try:
             t, p = scope(onpe, 0, prefix=pre + 'nacional-')
             ct = compact_totals(t)
@@ -682,6 +696,7 @@ def crawl_lower(eid, nombre, lvl, deps, manifest, crawl, on_checks, budget, dead
     for k, v in (('provincias', {}), ('distritos', {}), ('cola', []), ('todos', []), ('listado', 0), ('grande', 0)):
         st.setdefault(k, v)
     qid = onpe or eid                              # id con el que la ONPE conoce esta elección
+    st['qid'] = qid
     pre = f'onpe/eleccion-{qid}/'
     key = 'distritos' if lvl == 3 else 'provincias'
     store = st[key]
@@ -795,6 +810,15 @@ def wanted_codes(crawl, els):
     return {e['id']: (dist if e['nivel'] == 3 else prov) for e in els}
 
 
+def lower_ok(st, e):
+    """El recorrido guardado se hizo con el mismo id de la ONPE que hoy usa la contienda. Los recorridos
+    anteriores al 5-oct-2026 no anotaban el id: el provincial era correcto; el distrital usaba el del provincial."""
+    q = (st or {}).get('qid')
+    if q is None:
+        return e['nivel'] == 2
+    return q == (e.get('idOnpe') or e['id'])
+
+
 def lower_summary(st, lvl):
     st = st or {}
     todos = len(st.get('todos') or [])
@@ -821,10 +845,21 @@ def lower_main():
     els = [e for e in latest.get('elecciones', []) if e.get('nivel', 1) >= 2 and e.get('departamentos')]
     if not els:
         return
+    # El distrital se consulta con su propio id aunque el ciclo principal aún no haya rehecho latest.json.
+    els = [{**e, 'idOnpe': ONPE_DISTRITAL} if e.get('tipo') == 'distrital' else e for e in els]
     crawl = read_json(AMBITOS_STATE, {}) or {}
     manifest = read_json('manifest-ambitos.json', {}) or {}
     found = read_json('checks-ambitos.json', {}) or {}
     by_scope = found.get('porAmbito') or {}
+    for e in els:
+        if str(e['id']) in crawl and not lower_ok(crawl[str(e['id'])], e):
+            # Recorrido hecho con otro id de la ONPE: era otra elección. Se rehace desde la lista de lugares
+            # y se retiran sus observaciones y archivos por departamento para no mostrar datos de otra contienda.
+            log(f'ámbitos: {e["nombre"]} se rehace con el id {e.get("idOnpe")} de la ONPE')
+            crawl[str(e['id'])] = {}
+            for label in [k for k in by_scope if k.startswith(f'{e["nombre"]} · ')]:
+                del by_scope[label]
+            shutil.rmtree(os.path.join(DATA, 'ambitos', f'eleccion-{e["id"]}'), ignore_errors=True)
 
     def on_checks(label, items):
         if items:
@@ -885,6 +920,8 @@ def write_contest_summary(latest, crawl):
                                   d.get('participantes'), d.get('contienda')))
         elif tipo in ('provincial', 'distrital'):
             st = crawl.get(str(e['id'])) or {}
+            if not lower_ok(st, e):
+                continue
             store = (st.get('distritos') if tipo == 'distrital' else st.get('provincias')) or {}
             pendientes += max(0, len(st.get('todos') or []) - len(store))
             for code, v in store.items():
@@ -946,6 +983,8 @@ def races(latest, crawl):
                 yield e, f'{e["id"]}:{d["ubigeo"]}', nice(d['nombre']), d.get('totales') or {}, d.get('contienda')
         else:
             st = crawl.get(str(e['id']), {})
+            if not lower_ok(st, e):
+                continue
             for code, v in ((st.get('distritos') if e['nivel'] == 3 else st.get('provincias')) or {}).items():
                 names = [x.strip() for x in v['nombre'].split(' / ')]
                 # provincia (región) o distrito (provincia): muchos lugares comparten nombre
