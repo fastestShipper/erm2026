@@ -1,46 +1,66 @@
 {
- "total": 104,
+ "total": 101,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · PASCO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (129,022) no coincide con totalVotosValidos (128,605). Diferencia: +417.",
+   "detalle": "La suma de votos de las organizaciones (129,206) no coincide con totalVotosValidos (129,022). Diferencia: +184.",
    "valores": {
-    "suma_participantes": 129022,
-    "totalVotosValidos": 128605
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · PASCO",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 24.489% y el cálculo da 24.568%.",
-   "valores": {
-    "votos": 31596,
-    "pct_onpe": 24.489,
-    "pct_calculado": 24.568
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · PASCO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO FRENTE DE LA ESPERANZA 2021: ONPE publica 28.763% y el cálculo da 28.857%.",
-   "valores": {
-    "votos": 37111,
-    "pct_onpe": 28.763,
-    "pct_calculado": 28.857
+    "suma_participantes": 129206,
+    "totalVotosValidos": 129022
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · PIURA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (878,017) no coincide con totalVotosValidos (877,138). Diferencia: +879.",
+   "detalle": "La suma de votos de las organizaciones (879,584) no coincide con totalVotosValidos (878,017). Diferencia: +1,567.",
    "valores": {
-    "suma_participantes": 878017,
-    "totalVotosValidos": 877138
+    "suma_participantes": 879584,
+    "totalVotosValidos": 878017
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · MOQUEGUA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (113,593) no coincide con totalVotosValidos (113,359). Diferencia: +234.",
+   "valores": {
+    "suma_participantes": 113593,
+    "totalVotosValidos": 113359
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (203,322) no coincide con totalVotosValidos (202,665). Diferencia: +657.",
+   "valores": {
+    "suma_participantes": 203322,
+    "totalVotosValidos": 202665
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 20.889% y el cálculo da 20.957%.",
+   "valores": {
+    "votos": 42472,
+    "pct_onpe": 20.889,
+    "pct_calculado": 20.957
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.256% y el cálculo da 35.371%.",
+   "valores": {
+    "votos": 71684,
+    "pct_onpe": 35.256,
+    "pct_calculado": 35.371
    }
   },
   {
@@ -506,60 +526,6 @@
     "votos": 1622,
     "pct_onpe": 30.866,
     "pct_calculado": 32.874
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (33,662) no coincide con totalVotosValidos (33,487). Diferencia: +175.",
-   "valores": {
-    "suma_participantes": 33662,
-    "totalVotosValidos": 33487
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 14.536% y el cálculo da 14.612%.",
-   "valores": {
-    "votos": 4893,
-    "pct_onpe": 14.536,
-    "pct_calculado": 14.612
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 15.332% y el cálculo da 15.412%.",
-   "valores": {
-    "votos": 5161,
-    "pct_onpe": 15.332,
-    "pct_calculado": 15.412
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 29.092% y el cálculo da 29.244%.",
-   "valores": {
-    "votos": 9793,
-    "pct_onpe": 29.092,
-    "pct_calculado": 29.244
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 30.444% y el cálculo da 30.603%.",
-   "valores": {
-    "votos": 10248,
-    "pct_onpe": 30.444,
-    "pct_calculado": 30.603
    }
   },
   {
