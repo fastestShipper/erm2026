@@ -1,5 +1,5 @@
 {
- "total": 253,
+ "total": 264,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -286,130 +286,76 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / CHALLHUAHUACHO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (1,555) no coincide con totalVotosValidos (611). Diferencia: +944.",
+   "detalle": "La suma de votos de las organizaciones (6,337) no coincide con totalVotosValidos (5,755). Diferencia: +582.",
    "valores": {
-    "suma_participantes": 1555,
-    "totalVotosValidos": 611
+    "suma_participantes": 6337,
+    "totalVotosValidos": 5755
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / CHALLHUAHUACHO",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 7.01% y el cálculo da 17.840%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 6.438% y el cálculo da 7.089%.",
    "valores": {
-    "votos": 109,
-    "pct_onpe": 7.01,
-    "pct_calculado": 17.84
+    "votos": 408,
+    "pct_onpe": 6.438,
+    "pct_calculado": 7.089
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / CHALLHUAHUACHO",
    "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 9.453% y el cálculo da 24.059%.",
+   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 8.648% y el cálculo da 9.522%.",
    "valores": {
-    "votos": 147,
-    "pct_onpe": 9.453,
-    "pct_calculado": 24.059
+    "votos": 548,
+    "pct_onpe": 8.648,
+    "pct_calculado": 9.522
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / CHALLHUAHUACHO",
    "severidad": "revisar",
-   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 11.061% y el cálculo da 28.151%.",
+   "detalle": "PROGRESEMOS: ONPE publica 12.498% y el cálculo da 13.762%.",
    "valores": {
-    "votos": 172,
-    "pct_onpe": 11.061,
-    "pct_calculado": 28.151
+    "votos": 792,
+    "pct_onpe": 12.498,
+    "pct_calculado": 13.762
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / CHALLHUAHUACHO",
    "severidad": "revisar",
-   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 17.042% y el cálculo da 43.372%.",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 19.0% y el cálculo da 20.921%.",
    "valores": {
-    "votos": 265,
-    "pct_onpe": 17.042,
-    "pct_calculado": 43.372
+    "votos": 1204,
+    "pct_onpe": 19.0,
+    "pct_calculado": 20.921
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / CHALLHUAHUACHO",
    "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 27.138% y el cálculo da 69.067%.",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 24.838% y el cálculo da 27.350%.",
    "valores": {
-    "votos": 422,
-    "pct_onpe": 27.138,
-    "pct_calculado": 69.067
+    "votos": 1574,
+    "pct_onpe": 24.838,
+    "pct_calculado": 27.35
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / CHALLHUAHUACHO",
    "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 28.296% y el cálculo da 72.013%.",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 28.578% y el cálculo da 31.468%.",
    "valores": {
-    "votos": 440,
-    "pct_onpe": 28.296,
-    "pct_calculado": 72.013
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / GRAU / PROGRESO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (1,886) no coincide con totalVotosValidos (1,722). Diferencia: +164.",
-   "valores": {
-    "suma_participantes": 1886,
-    "totalVotosValidos": 1722
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / GRAU / PROGRESO",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 2.969% y el cálculo da 3.252%.",
-   "valores": {
-    "votos": 56,
-    "pct_onpe": 2.969,
-    "pct_calculado": 3.252
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / GRAU / PROGRESO",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 15.854% y el cálculo da 17.364%.",
-   "valores": {
-    "votos": 299,
-    "pct_onpe": 15.854,
-    "pct_calculado": 17.364
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / GRAU / PROGRESO",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 26.14% y el cálculo da 28.630%.",
-   "valores": {
-    "votos": 493,
-    "pct_onpe": 26.14,
-    "pct_calculado": 28.63
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / GRAU / PROGRESO",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 55.037% y el cálculo da 60.279%.",
-   "valores": {
-    "votos": 1038,
-    "pct_onpe": 55.037,
-    "pct_calculado": 60.279
+    "votos": 1811,
+    "pct_onpe": 28.578,
+    "pct_calculado": 31.468
    }
   },
   {
@@ -2746,6 +2692,178 @@
     "votos": 6204,
     "pct_onpe": 31.95,
     "pct_calculado": 32.255
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (1,833) no coincide con totalVotosValidos (1,511). Diferencia: +322.",
+   "valores": {
+    "suma_participantes": 1833,
+    "totalVotosValidos": 1511
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 1.637% y el cálculo da 1.985%.",
+   "valores": {
+    "votos": 30,
+    "pct_onpe": 1.637,
+    "pct_calculado": 1.985
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
+   "severidad": "revisar",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 3.601% y el cálculo da 4.368%.",
+   "valores": {
+    "votos": 66,
+    "pct_onpe": 3.601,
+    "pct_calculado": 4.368
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 12.275% y el cálculo da 14.891%.",
+   "valores": {
+    "votos": 225,
+    "pct_onpe": 12.275,
+    "pct_calculado": 14.891
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 20.404% y el cálculo da 24.752%.",
+   "valores": {
+    "votos": 374,
+    "pct_onpe": 20.404,
+    "pct_calculado": 24.752
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 61.975% y el cálculo da 75.182%.",
+   "valores": {
+    "votos": 1136,
+    "pct_onpe": 61.975,
+    "pct_calculado": 75.182
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / MARA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (3,151) no coincide con totalVotosValidos (2,560). Diferencia: +591.",
+   "valores": {
+    "suma_participantes": 3151,
+    "totalVotosValidos": 2560
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / MARA",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 1.047% y el cálculo da 1.289%.",
+   "valores": {
+    "votos": 33,
+    "pct_onpe": 1.047,
+    "pct_calculado": 1.289
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / MARA",
+   "severidad": "revisar",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 4.094% y el cálculo da 5.039%.",
+   "valores": {
+    "votos": 129,
+    "pct_onpe": 4.094,
+    "pct_calculado": 5.039
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / MARA",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 7.553% y el cálculo da 9.297%.",
+   "valores": {
+    "votos": 238,
+    "pct_onpe": 7.553,
+    "pct_calculado": 9.297
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / MARA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 23.326% y el cálculo da 28.711%.",
+   "valores": {
+    "votos": 735,
+    "pct_onpe": 23.326,
+    "pct_calculado": 28.711
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / MARA",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 63.758% y el cálculo da 78.477%.",
+   "valores": {
+    "votos": 2009,
+    "pct_onpe": 63.758,
+    "pct_calculado": 78.477
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (137,620) no coincide con totalVotosValidos (137,272). Diferencia: +348.",
+   "valores": {
+    "suma_participantes": 137620,
+    "totalVotosValidos": 137272
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 27.0% y el cálculo da 27.068%.",
+   "valores": {
+    "votos": 37157,
+    "pct_onpe": 27.0,
+    "pct_calculado": 27.068
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / CHIMBOTE",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (107,223) no coincide con totalVotosValidos (107,054). Diferencia: +169.",
+   "valores": {
+    "suma_participantes": 107223,
+    "totalVotosValidos": 107054
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / CHIMBOTE",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 54.264% y el cálculo da 54.349%.",
+   "valores": {
+    "votos": 58183,
+    "pct_onpe": 54.264,
+    "pct_calculado": 54.349
    }
   }
  ]
