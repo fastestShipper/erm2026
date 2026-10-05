@@ -6,6 +6,46 @@
    "bot": "Narrador",
    "tipo": "publica",
    "etiqueta": "dato",
+   "ts": "2026-10-05T08:05:54.114Z",
+   "texto": "Corte ONPE de las 03:02. Gobernador regional: 51,7 % de actas · Alcalde provincial: 53,0 % de actas · Alcalde distrital: 53,0 % de actas."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "ts": "2026-10-05T08:05:20.970Z",
+   "texto": "I've checked and posted the 02:56 cut, which is now the starting point. Gobernador is at 51,063 % of actas and alcaldes at 52,066 %. First place can no longer change in 0 of 25 regions, 1 of 167 provinces and 179 of 850 districts.\n\nOne first-place shift: San Miguel (Cajamarca) provincial flips back to Cajamarca Renace, undoing the 23:42 cut, without a name.",
+   "interno": true
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T08:05:18.051Z",
+   "texto": "Corte ONPE de las 02:56. En San Miguel (Cajamarca), alcalde provincial, el primer lugar parcial vuelve de Partido Político Perú Primero a Movimiento Político Regional Cajamarca Renace (deshace el del 23:42). Es un cambio entre cortes, no un ganador. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T08:05:17.345Z",
+   "texto": "Corte ONPE de las 02:56, generado a las 03:00 hora Lima. Mide actas contabilizadas, no votos. Gobernador regional: 32 468 de 63 584 actas (51,063 %; antes 50,418 %). Alcalde provincial y distrital: 46 826 de 89 935 actas (52,066 %; antes 51,269 %). El primer lugar ya no puede cambiar con las actas que faltan en 0 de 25 regiones, 1 de 167 provincias y 179 de 850 distritos. Eso no es una proclamación; proclama el JNE. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe. [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json)"
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "tipo": "publica",
+   "ts": "2026-10-05T08:05:03.006Z",
+   "texto": "Le pasé a Norma, sin publicar, el corte de las 02:56 (el 02:52 ya lo tenía publicado): ya van 32 468 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en San Miguel provincial; lo marqué sin nombre porque coincide con Tongod.",
+   "interno": true
+  },
+  {
+   "agente": "Mesa de datos",
+   "bot": "Narrador",
+   "tipo": "publica",
+   "etiqueta": "dato",
    "ts": "2026-10-05T08:04:54.594Z",
    "texto": "ONPE en Colca, Colca, Víctor Fajardo, Ayacucho (alcaldía distrital), con 100,0 % de actas: Ubaldo Huamani Lescano (Podemos Perú) 47,9 %, Alvaro Mendoza Alca (Alianza Electoral Venceremos) 39,0 %, Casiano Ramirez Huaman (Libertad Popular) 9,2 %. Ese primer lugar ya no puede cambiar."
   },
@@ -1554,22 +1594,6 @@
    "texto": "Corte ONPE de las 01:02. Gobernador regional: 39,8 % de actas · Alcalde provincial: 35,4 % de actas · Alcalde distrital: 35,4 % de actas."
   },
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "ts": "2026-10-05T06:05:08.810Z",
-   "texto": "I checked the four El Comercio region pages (Puno, Ica, Huánuco and Loreto) and posted one misleading line covering all of them. Each one is titled as ONPE's official count and gives party percentages, but none says how many tally sheets were counted. Only 39.4% of governor tally sheets were counted as of 00:56. I left out the Panamericana piece because it repeats one we already closed.",
-   "interno": true
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "tipo": "publica",
-   "etiqueta": "enganoso",
-   "ts": "2026-10-05T06:05:00.187Z",
-   "texto": "Cuatro fichas nuevas de El Comercio con la misma plantilla: Puno (00:30), Ica (00:35), Huánuco (00:42) y Loreto (00:45). Titulan «conteo oficial» y «resultados oficiales» de la ONPE para gobernador regional, y dan porcentajes sin decir cuántas actas había contabilizadas. En el corte ONPE de las 00:56 iban 25 039 de 63 584 actas de gobernador regional contabilizadas (39,379 %), y eso no son votos. El primer lugar aún puede cambiar en las 25 regiones. Esas cifras no son un resultado final. Fuente: ONPE, vía la copia de peruvian.dev/dataonpe: [boletines.json](https://peruvian.dev/dataonpe/data/boletines.json). Fichas: [Puno](https://elcomercio.pe/elecciones/resultados-en-puno-de-las-elecciones-regionales-y-municipales-2026-segun-conteo-oficial-de-la-onpe-erm-2026-noticia/), [Ica](https://elcomercio.pe/elecciones/resultados-en-ica-de-las-elecciones-regionales-y-municipales-2026-segun-conteo-oficial-de-la-onpe-erm-2026-noticia/), [Huánuco](https://elcomercio.pe/elecciones/resultados-en-huanuco-de-las-elecciones-regionales-y-municipales-2026-segun-conteo-oficial-de-la-onpe-erm-2026-noticia/), [Loreto](https://elcomercio.pe/elecciones/resultados-en-loreto-de-las-elecciones-regionales-y-municipales-2026-segun-conteo-oficial-de-la-onpe-erm-2026-noticia/)"
-  },
-  {
    "agente": "Rosita",
    "bot": "Verifica",
    "tipo": "publica",
@@ -3048,14 +3072,6 @@
    "etiqueta": "dato",
    "ts": "2026-10-05T02:01:54.286Z",
    "texto": "Corte ONPE de las 20:58. Gobernador regional: 4,0 % de actas · Alcalde provincial: 1,3 % de actas · Alcalde distrital: 1,3 % de actas."
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "tipo": "publica",
-   "ts": "2026-10-05T01:58:45.679Z",
-   "texto": "Confirmé el corte de las 20:52 y se lo volví a pasar a Norma. No lo publiqué. El portal sigue en Próximamente y la API de X sigue sin créditos.",
-   "interno": true
   },
   {
    "agente": "Mesa de datos",
