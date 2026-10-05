@@ -1,37 +1,6 @@
 {
- "total": 75,
+ "total": 72,
  "items": [
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · CUSCO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (667,587) no coincide con totalVotosValidos (667,110). Diferencia: +477.",
-   "valores": {
-    "suma_participantes": 667587,
-    "totalVotosValidos": 667110
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · HUÁNUCO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (363,245) no coincide con totalVotosValidos (362,320). Diferencia: +925.",
-   "valores": {
-    "suma_participantes": 363245,
-    "totalVotosValidos": 362320
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · HUÁNUCO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 31.84% y el cálculo da 31.921%.",
-   "valores": {
-    "votos": 115657,
-    "pct_onpe": 31.84,
-    "pct_calculado": 31.921
-   }
-  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · ÁNCASH",
