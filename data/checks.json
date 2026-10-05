@@ -1,5 +1,5 @@
 {
- "total": 96,
+ "total": 90,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -683,60 +683,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (51,988) no coincide con totalVotosValidos (51,613). Diferencia: +375.",
-   "valores": {
-    "suma_participantes": 51988,
-    "totalVotosValidos": 51613
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 12.888% y el cálculo da 12.981%.",
-   "valores": {
-    "votos": 6700,
-    "pct_onpe": 12.888,
-    "pct_calculado": 12.981
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 21.695% y el cálculo da 21.853%.",
-   "valores": {
-    "votos": 11279,
-    "pct_onpe": 21.695,
-    "pct_calculado": 21.853
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 24.561% y el cálculo da 24.740%.",
-   "valores": {
-    "votos": 12769,
-    "pct_onpe": 24.561,
-    "pct_calculado": 24.74
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 33.908% y el cálculo da 34.154%.",
-   "valores": {
-    "votos": 17628,
-    "pct_onpe": 33.908,
-    "pct_calculado": 34.154
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (27,800) no coincide con totalVotosValidos (27,664). Diferencia: +136.",
@@ -814,76 +760,65 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (19,926) no coincide con totalVotosValidos (19,041). Diferencia: +885.",
+   "detalle": "La suma de votos de las organizaciones (20,619) no coincide con totalVotosValidos (19,926). Diferencia: +693.",
    "valores": {
-    "suma_participantes": 19926,
-    "totalVotosValidos": 19041
+    "suma_participantes": 20619,
+    "totalVotosValidos": 19926
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
    "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 1.656% y el cálculo da 1.733%.",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 1.862% y el cálculo da 1.927%.",
    "valores": {
-    "votos": 330,
-    "pct_onpe": 1.656,
-    "pct_calculado": 1.733
+    "votos": 384,
+    "pct_onpe": 1.862,
+    "pct_calculado": 1.927
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
    "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 1.907% y el cálculo da 1.996%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 5.568% y el cálculo da 5.761%.",
    "valores": {
-    "votos": 380,
-    "pct_onpe": 1.907,
-    "pct_calculado": 1.996
+    "votos": 1148,
+    "pct_onpe": 5.568,
+    "pct_calculado": 5.761
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 5.751% y el cálculo da 6.019%.",
-   "valores": {
-    "votos": 1146,
-    "pct_onpe": 5.751,
-    "pct_calculado": 6.019
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 10.032% y el cálculo da 10.498%.",
+   "detalle": "PROGRESEMOS: ONPE publica 9.695% y el cálculo da 10.032%.",
    "valores": {
     "votos": 1999,
-    "pct_onpe": 10.032,
-    "pct_calculado": 10.498
+    "pct_onpe": 9.695,
+    "pct_calculado": 10.032
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 29.615% y el cálculo da 30.991%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 30.055% y el cálculo da 31.100%.",
    "valores": {
-    "votos": 5901,
-    "pct_onpe": 29.615,
-    "pct_calculado": 30.991
+    "votos": 6197,
+    "pct_onpe": 30.055,
+    "pct_calculado": 31.1
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · PIURA / AYABACA",
    "severidad": "revisar",
-   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 51.039% y el cálculo da 53.411%.",
+   "detalle": "MOVIMIENTO INDEPENDIENTE FUERZA REGIONAL: ONPE publica 51.215% y el cálculo da 52.996%.",
    "valores": {
-    "votos": 10170,
-    "pct_onpe": 51.039,
-    "pct_calculado": 53.411
+    "votos": 10560,
+    "pct_onpe": 51.215,
+    "pct_calculado": 52.996
    }
   },
   {
