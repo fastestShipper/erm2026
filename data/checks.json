@@ -1,45 +1,46 @@
 {
- "total": 110,
+ "total": 100,
  "items": [
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · LORETO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (278,355) no coincide con totalVotosValidos (278,195). Diferencia: +160.",
-   "valores": {
-    "suma_participantes": 278355,
-    "totalVotosValidos": 278195
-   }
-  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · PASCO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (128,605) no coincide con totalVotosValidos (128,348). Diferencia: +257.",
+   "detalle": "La suma de votos de las organizaciones (129,022) no coincide con totalVotosValidos (128,605). Diferencia: +417.",
    "valores": {
-    "suma_participantes": 128605,
-    "totalVotosValidos": 128348
+    "suma_participantes": 129022,
+    "totalVotosValidos": 128605
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 24.489% y el cálculo da 24.568%.",
+   "valores": {
+    "votos": 31596,
+    "pct_onpe": 24.489,
+    "pct_calculado": 24.568
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO FRENTE DE LA ESPERANZA 2021: ONPE publica 28.763% y el cálculo da 28.857%.",
+   "valores": {
+    "votos": 37111,
+    "pct_onpe": 28.763,
+    "pct_calculado": 28.857
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · PIURA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (877,138) no coincide con totalVotosValidos (874,552). Diferencia: +2,586.",
+   "detalle": "La suma de votos de las organizaciones (878,017) no coincide con totalVotosValidos (877,138). Diferencia: +879.",
    "valores": {
-    "suma_participantes": 877138,
-    "totalVotosValidos": 874552
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · PIURA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.535% y el cálculo da 22.601%.",
-   "valores": {
-    "votos": 197661,
-    "pct_onpe": 22.535,
-    "pct_calculado": 22.601
+    "suma_participantes": 878017,
+    "totalVotosValidos": 877138
    }
   },
   {
@@ -509,71 +510,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (54,212) no coincide con totalVotosValidos (50,548). Diferencia: +3,664.",
-   "valores": {
-    "suma_participantes": 54212,
-    "totalVotosValidos": 50548
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 5.707% y el cálculo da 6.121%.",
-   "valores": {
-    "votos": 3094,
-    "pct_onpe": 5.707,
-    "pct_calculado": 6.121
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 5.941% y el cálculo da 6.372%.",
-   "valores": {
-    "votos": 3221,
-    "pct_onpe": 5.941,
-    "pct_calculado": 6.372
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 12.119% y el cálculo da 12.998%.",
-   "valores": {
-    "votos": 6570,
-    "pct_onpe": 12.119,
-    "pct_calculado": 12.998
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 34.149% y el cálculo da 36.625%.",
-   "valores": {
-    "votos": 18513,
-    "pct_onpe": 34.149,
-    "pct_calculado": 36.625
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / HUANCABAMBA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 40.762% y el cálculo da 43.717%.",
-   "valores": {
-    "votos": 22098,
-    "pct_onpe": 40.762,
-    "pct_calculado": 43.717
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / PADRE ABAD",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (33,662) no coincide con totalVotosValidos (33,487). Diferencia: +175.",
@@ -911,97 +847,54 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (76,107) no coincide con totalVotosValidos (75,325). Diferencia: +782.",
+   "detalle": "La suma de votos de las organizaciones (76,687) no coincide con totalVotosValidos (76,107). Diferencia: +580.",
    "valores": {
-    "suma_participantes": 76107,
-    "totalVotosValidos": 75325
+    "suma_participantes": 76687,
+    "totalVotosValidos": 76107
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 6.416% y el cálculo da 6.483%.",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 8.995% y el cálculo da 9.064%.",
    "valores": {
-    "votos": 4883,
-    "pct_onpe": 6.416,
-    "pct_calculado": 6.483
+    "votos": 6898,
+    "pct_onpe": 8.995,
+    "pct_calculado": 9.064
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 8.994% y el cálculo da 9.087%.",
+   "detalle": "SOCIOS POR ANCASH: ONPE publica 18.776% y el cálculo da 18.919%.",
    "valores": {
-    "votos": 6845,
-    "pct_onpe": 8.994,
-    "pct_calculado": 9.087
+    "votos": 14399,
+    "pct_onpe": 18.776,
+    "pct_calculado": 18.919
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "SOCIOS POR ANCASH: ONPE publica 18.791% y el cálculo da 18.986%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 19.46% y el cálculo da 19.608%.",
    "valores": {
-    "votos": 14301,
-    "pct_onpe": 18.791,
-    "pct_calculado": 18.986
+    "votos": 14923,
+    "pct_onpe": 19.46,
+    "pct_calculado": 19.608
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 19.467% y el cálculo da 19.669%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 35.402% y el cálculo da 35.672%.",
    "valores": {
-    "votos": 14816,
-    "pct_onpe": 19.467,
-    "pct_calculado": 19.669
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 35.386% y el cálculo da 35.753%.",
-   "valores": {
-    "votos": 26931,
-    "pct_onpe": 35.386,
-    "pct_calculado": 35.753
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (58,230) no coincide con totalVotosValidos (58,051). Diferencia: +179.",
-   "valores": {
-    "suma_participantes": 58230,
-    "totalVotosValidos": 58051
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 21.465% y el cálculo da 21.531%.",
-   "valores": {
-    "votos": 12499,
-    "pct_onpe": 21.465,
-    "pct_calculado": 21.531
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 29.857% y el cálculo da 29.950%.",
-   "valores": {
-    "votos": 17386,
-    "pct_onpe": 29.857,
-    "pct_calculado": 29.95
+    "votos": 27149,
+    "pct_onpe": 35.402,
+    "pct_calculado": 35.672
    }
   },
   {
