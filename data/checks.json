@@ -1,5 +1,5 @@
 {
- "total": 263,
+ "total": 267,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -2688,60 +2688,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (37,420) no coincide con totalVotosValidos (37,152). Diferencia: +268.",
-   "valores": {
-    "suma_participantes": 37420,
-    "totalVotosValidos": 37152
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 12.13% y el cálculo da 12.217%.",
-   "valores": {
-    "votos": 4539,
-    "pct_onpe": 12.13,
-    "pct_calculado": 12.217
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 20.975% y el cálculo da 21.127%.",
-   "valores": {
-    "votos": 7849,
-    "pct_onpe": 20.975,
-    "pct_calculado": 21.127
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 23.552% y el cálculo da 23.721%.",
-   "valores": {
-    "votos": 8813,
-    "pct_onpe": 23.552,
-    "pct_calculado": 23.721
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN IGNACIO",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 37.183% y el cálculo da 37.452%.",
-   "valores": {
-    "votos": 13914,
-    "pct_onpe": 37.183,
-    "pct_calculado": 37.452
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / SAN MARCOS",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (25,528) no coincide con totalVotosValidos (25,313). Diferencia: +215.",
@@ -2857,6 +2803,104 @@
     "votos": 37036,
     "pct_onpe": 27.893,
     "pct_calculado": 28.108
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (105,202) no coincide con totalVotosValidos (103,551). Diferencia: +1,651.",
+   "valores": {
+    "suma_participantes": 105202,
+    "totalVotosValidos": 103551
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "YO AREQUIPA: ONPE publica 4.32% y el cálculo da 4.389%.",
+   "valores": {
+    "votos": 4545,
+    "pct_onpe": 4.32,
+    "pct_calculado": 4.389
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 4.346% y el cálculo da 4.415%.",
+   "valores": {
+    "votos": 4572,
+    "pct_onpe": 4.346,
+    "pct_calculado": 4.415
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 5.302% y el cálculo da 5.387%.",
+   "valores": {
+    "votos": 5578,
+    "pct_onpe": 5.302,
+    "pct_calculado": 5.387
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "PRIMERO LA GENTE - COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO: ONPE publica 6.301% y el cálculo da 6.402%.",
+   "valores": {
+    "votos": 6629,
+    "pct_onpe": 6.301,
+    "pct_calculado": 6.402
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 7.213% y el cálculo da 7.328%.",
+   "valores": {
+    "votos": 7588,
+    "pct_onpe": 7.213,
+    "pct_calculado": 7.328
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO REGIONAL AREQUIPA AVANCEMOS: ONPE publica 16.309% y el cálculo da 16.569%.",
+   "valores": {
+    "votos": 17157,
+    "pct_onpe": 16.309,
+    "pct_calculado": 16.569
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 16.593% y el cálculo da 16.857%.",
+   "valores": {
+    "votos": 17456,
+    "pct_onpe": 16.593,
+    "pct_calculado": 16.857
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "severidad": "revisar",
+   "detalle": "FUERZA AREQUIPEÑA: ONPE publica 24.108% y el cálculo da 24.492%.",
+   "valores": {
+    "votos": 25362,
+    "pct_onpe": 24.108,
+    "pct_calculado": 24.492
    }
   }
  ]
