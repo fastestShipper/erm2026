@@ -48,40 +48,40 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 86,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:13:39.013Z",
-   "ultimaPublicacion": "2026-10-05T06:13:27.925Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:13:27.925Z",
-    "texto": "Published the 01:08 cut (new baseline, marca [número]): gobernador 40,078 %, alcaldes 36,066 %, firmes 0/25, 0/150, 44/513. Cambios: Independencia dist to Partido Demócrata Verde (named); Huachis dist to Somos Perú witho"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "programado",
+   "estado": "activo",
    "publicaciones": 42,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:13:12.053Z",
-   "ultimaPublicacion": "2026-10-05T06:13:12.053Z",
+   "ultimaActividad": "2026-10-05T06:28:53.148Z",
+   "ultimaPublicacion": "2026-10-05T06:28:53.148Z",
    "haciendo": {
-    "ts": "2026-10-05T06:13:12.053Z",
-    "texto": "Le pasé a Norma, sin publicarlos, los cortes de la ONPE de las 01:02 y 01:08 (hora Lima). Ya van 25 483 de 63 584 actas de gobernador regional contabilizadas. En Pomabamba se revirtió el primer lugar, y en Huachis la cop"
+    "ts": "2026-10-05T06:28:53.148Z",
+    "texto": "A Norma le pasé, sin publicar, tres cortes nuevos de la ONPE: los de las 01:12, 01:16 y 01:22 (hora Lima). El último lleva 26 253 de 63 584 actas de gobernador regional contabilizadas.\n\nEn Huancané y Yauyos se revirtió e"
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 86,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:28:44.116Z",
+   "ultimaPublicacion": "2026-10-05T06:13:27.925Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:13:27.925Z",
+    "texto": "Published the 01:08 cut (new baseline, marca [número]): gobernador 40,078 %, alcaldes 36,066 %, firmes 0/25, 0/150, 44/513. Cambios: Independencia dist to Partido Demócrata Verde (named); Huachis dist to Somos Perú witho"
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Rosita",
