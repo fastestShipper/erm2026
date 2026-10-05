@@ -1,5 +1,5 @@
 {
- "total": 11,
+ "total": 12,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -116,6 +116,16 @@
    "detalle": "La suma de votos de las organizaciones (235) no coincide con totalVotosValidos (0). Diferencia: +235.",
    "valores": {
     "suma_participantes": 235,
+    "totalVotosValidos": 0
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · AMAZONAS / BAGUA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (213) no coincide con totalVotosValidos (0). Diferencia: +213.",
+   "valores": {
+    "suma_participantes": 213,
     "totalVotosValidos": 0
    }
   }
