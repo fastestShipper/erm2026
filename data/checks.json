@@ -1,6 +1,104 @@
 {
- "total": 679,
+ "total": 688,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (65,687) no coincide con totalVotosValidos (59,469). Diferencia: +6,218.",
+   "valores": {
+    "suma_participantes": 65687,
+    "totalVotosValidos": 59469
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "VISIÓN PERÚ: ONPE publica 0.799% y el cálculo da 0.883%.",
+   "valores": {
+    "votos": 525,
+    "pct_onpe": 0.799,
+    "pct_calculado": 0.883
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 1.748% y el cálculo da 1.930%.",
+   "valores": {
+    "votos": 1148,
+    "pct_onpe": 1.748,
+    "pct_calculado": 1.93
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 3.67% y el cálculo da 4.054%.",
+   "valores": {
+    "votos": 2411,
+    "pct_onpe": 3.67,
+    "pct_calculado": 4.054
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 8.359% y el cálculo da 9.233%.",
+   "valores": {
+    "votos": 5491,
+    "pct_onpe": 8.359,
+    "pct_calculado": 9.233
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 12.642% y el cálculo da 13.964%.",
+   "valores": {
+    "votos": 8304,
+    "pct_onpe": 12.642,
+    "pct_calculado": 13.964
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 16.758% y el cálculo da 18.510%.",
+   "valores": {
+    "votos": 11008,
+    "pct_onpe": 16.758,
+    "pct_calculado": 18.51
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 20.607% y el cálculo da 22.761%.",
+   "valores": {
+    "votos": 13536,
+    "pct_onpe": 20.607,
+    "pct_calculado": 22.761
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · UCAYALI",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.416% y el cálculo da 39.120%.",
+   "valores": {
+    "votos": 23264,
+    "pct_onpe": 35.416,
+    "pct_calculado": 39.12
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · AYACUCHO / HUAMANGA / AYACUCHO",
