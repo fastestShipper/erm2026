@@ -1,6 +1,49 @@
 {
- "total": 71,
+ "total": 75,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · AYACUCHO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (297,991) no coincide con totalVotosValidos (295,732). Diferencia: +2,259.",
+   "valores": {
+    "suma_participantes": 297991,
+    "totalVotosValidos": 295732
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AYACUCHO",
+   "severidad": "revisar",
+   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 20.132% y el cálculo da 20.286%.",
+   "valores": {
+    "votos": 59991,
+    "pct_onpe": 20.132,
+    "pct_calculado": 20.286
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AYACUCHO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 32.836% y el cálculo da 33.087%.",
+   "valores": {
+    "votos": 97848,
+    "pct_onpe": 32.836,
+    "pct_calculado": 33.087
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AYACUCHO",
+   "severidad": "revisar",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 36.327% y el cálculo da 36.604%.",
+   "valores": {
+    "votos": 108250,
+    "pct_onpe": 36.327,
+    "pct_calculado": 36.604
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
