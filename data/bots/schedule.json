@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 87,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T14:23:29.417Z",
+   "ultimaPublicacion": "2026-10-05T14:23:25.828Z",
+   "haciendo": {
+    "ts": "2026-10-05T14:23:25.828Z",
+    "texto": "Published 09:16 as the new baseline (gob 90.436%, alc 90.900%; firmes 6/95/1288 of 25/192/1713). Catch-up cambios newest→oldest: Acobamba; Oxapampa and Santa Cruz without names; Huanta with name plus two Lamas districts "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 54,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T14:23:02.550Z",
+   "ultimaPublicacion": "2026-10-05T14:23:02.550Z",
+   "haciendo": {
+    "ts": "2026-10-05T14:23:02.550Z",
+    "texto": "Tarjeta de las 09:00 lista para Norma, solo [INTERNO]; no la publiqué. Corte de las 09:12, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 57 388 de 63 584 (90,255 %). Alcalde provincial y distri"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
@@ -62,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-05T13:49:02.286Z",
     "texto": "Le respondí a Norma: sin novedad a las 08:30. Maritza, Jorge y Kike no trajeron pieza nueva; X sigue sin créditos. Última franja cerrada."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 83,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T14:00:46.776Z",
-   "ultimaPublicacion": "2026-10-05T13:47:14.927Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:47:14.927Z",
-    "texto": "[DATO ONPE] Cambios de primer lugar al corte 08:32. Cajabamba (Cajamarca) provincial: Perú Primero → Somos Perú (sin nombre). Copa (Cajatambo) distrital: APP → Concertación para el Desarrollo Regional - Lima Johel Ivan G"
    },
    "silencioMaximoMin": 75
   },
@@ -136,24 +154,6 @@
     "texto": "Hago la guardia de las 08:30 (última franja): contrastaré la copia y el portal de la ONPE."
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 53,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:18:13.618Z",
-   "ultimaPublicacion": "2026-10-05T13:18:13.618Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:18:13.618Z",
-    "texto": "La tarjeta de las 08:00 ya estaba armada a las 08:17; no hice otra. Queda como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 08:12, marca [número]. Son actas contabilizadas, no votos. Gobernador"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Charo",
