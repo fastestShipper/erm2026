@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 112,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T08:09:42.626Z",
+   "ultimaPublicacion": "2026-10-05T08:09:42.626Z",
+   "haciendo": {
+    "ts": "2026-10-05T08:09:42.626Z",
+    "texto": "I've posted the 03:00 bitácora covering the 02:02 through 02:56 cuts, places only, with reversions marked. The 03:02 cut stays out of that hour log."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -55,15 +73,69 @@
    "nuevo": false,
    "inicio": "01:00",
    "estado": "activo",
-   "publicaciones": 44,
+   "publicaciones": 45,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:08:49.814Z",
-   "ultimaPublicacion": "2026-10-05T08:08:49.814Z",
+   "ultimaActividad": "2026-10-05T08:09:20.434Z",
+   "ultimaPublicacion": "2026-10-05T08:09:20.434Z",
    "haciendo": {
-    "ts": "2026-10-05T08:08:49.814Z",
-    "texto": "Releo el boletín y armo la tarjeta de las 03:00 solo como [INTERNO], sin publicarla."
+    "ts": "2026-10-05T08:09:20.434Z",
+    "texto": "Había un archivo viejo de las 03:00, de antes de la votación. No es la tarjeta de esta noche. Sigo con el corte nuevo."
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 22,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T08:09:20.202Z",
+   "ultimaPublicacion": "2026-10-05T08:09:20.202Z",
+   "haciendo": {
+    "ts": "2026-10-05T08:09:20.202Z",
+    "texto": "I sent Norma the unpublished draft of the 3:00 a.m. log. It runs from after 01:56 through the 02:56 count (and includes 02:02). At 02:56: 32 468 of 63 584 tallies for regional governor (51.063 %) and 46 826 of 89 935 for"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 27,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T08:09:09.478Z",
+   "ultimaPublicacion": "2026-10-05T08:09:09.478Z",
+   "haciendo": {
+    "ts": "2026-10-05T08:09:09.478Z",
+    "texto": "Le respondí a Norma: sin novedad a las 03:00. Maritza sin créditos en X; no llegó pieza nueva de Jorge ni de Kike. Base publicada: corte 02:56."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 49,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T08:09:03.679Z",
+   "ultimaPublicacion": "2026-10-05T08:09:03.679Z",
+   "haciendo": {
+    "ts": "2026-10-05T08:09:03.679Z",
+    "texto": "Le pasé a Norma, sin publicar, el corte de las 03:02: ya van 32 865 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en Ascope provincial e Imaza distrital.\n\nEl portal de la ONPE no cargó y @"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
@@ -84,42 +156,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 21,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:08:47.934Z",
-   "ultimaPublicacion": "2026-10-05T08:08:47.934Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:08:47.934Z",
-    "texto": "Armando el borrador de las 03:00: leo los cortes desde después del 01:56 hasta el 02:56."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "activo",
-   "publicaciones": 26,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:08:46.049Z",
-   "ultimaPublicacion": "2026-10-05T08:08:46.049Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:08:46.049Z",
-    "texto": "Reviso la guardia 03:00: qué trajeron Maritza, Jorge y Kike."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
@@ -134,42 +170,6 @@
    "haciendo": {
     "ts": "2026-10-05T08:08:45.130Z",
     "texto": "Arranco la guardia 03:00: corto ONPE y barrido de incidentes y adelantos."
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 107,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:08:47.916Z",
-   "ultimaPublicacion": "2026-10-05T08:05:20.970Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:05:20.970Z",
-    "texto": "I've checked and posted the 02:56 cut, which is now the starting point. Gobernador is at 51,063 % of actas and alcaldes at 52,066 %. First place can no longer change in 0 of 25 regions, 1 of 167 provinces and 179 of 850 "
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 48,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:08:37.724Z",
-   "ultimaPublicacion": "2026-10-05T08:05:03.006Z",
-   "haciendo": {
-    "ts": "2026-10-05T08:05:03.006Z",
-    "texto": "Le pasé a Norma, sin publicar, el corte de las 02:56 (el 02:52 ya lo tenía publicado): ya van 32 468 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en San Miguel provincial; lo marqué sin n"
    },
    "silencioMaximoMin": 45
   },
@@ -219,7 +219,7 @@
    "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T08:08:42.559Z",
+   "ultimaActividad": "2026-10-05T08:09:11.153Z",
    "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
    "haciendo": {
     "ts": "2026-10-05T04:03:32.500Z",
