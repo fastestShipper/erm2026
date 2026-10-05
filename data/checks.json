@@ -1,69 +1,124 @@
 {
- "total": 267,
+ "total": 256,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (18,844) no coincide con totalVotosValidos (18,664). Diferencia: +180.",
+   "detalle": "La suma de votos de las organizaciones (25,949) no coincide con totalVotosValidos (25,123). Diferencia: +826.",
    "valores": {
-    "suma_participantes": 18844,
-    "totalVotosValidos": 18664
+    "suma_participantes": 25949,
+    "totalVotosValidos": 25123
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
    "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 8.156% y el cálculo da 8.235%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 2.069% y el cálculo da 2.137%.",
    "valores": {
-    "votos": 1537,
-    "pct_onpe": 8.156,
-    "pct_calculado": 8.235
+    "votos": 537,
+    "pct_onpe": 2.069,
+    "pct_calculado": 2.137
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
    "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 9.048% y el cálculo da 9.135%.",
+   "detalle": "FE EN EL PERÚ: ONPE publica 2.112% y el cálculo da 2.181%.",
    "valores": {
-    "votos": 1705,
-    "pct_onpe": 9.048,
-    "pct_calculado": 9.135
+    "votos": 548,
+    "pct_onpe": 2.112,
+    "pct_calculado": 2.181
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 19.837% y el cálculo da 20.028%.",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 2.116% y el cálculo da 2.185%.",
    "valores": {
-    "votos": 3738,
-    "pct_onpe": 19.837,
-    "pct_calculado": 20.028
+    "votos": 549,
+    "pct_onpe": 2.116,
+    "pct_calculado": 2.185
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 20.622% y el cálculo da 20.821%.",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 2.809% y el cálculo da 2.902%.",
    "valores": {
-    "votos": 3886,
-    "pct_onpe": 20.622,
-    "pct_calculado": 20.821
+    "votos": 729,
+    "pct_onpe": 2.809,
+    "pct_calculado": 2.902
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 27.531% y el cálculo da 27.797%.",
+   "detalle": "PERÚ MODERNO: ONPE publica 3.318% y el cálculo da 3.427%.",
    "valores": {
-    "votos": 5188,
-    "pct_onpe": 27.531,
-    "pct_calculado": 27.797
+    "votos": 861,
+    "pct_onpe": 3.318,
+    "pct_calculado": 3.427
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 8.027% y el cálculo da 8.291%.",
+   "valores": {
+    "votos": 2083,
+    "pct_onpe": 8.027,
+    "pct_calculado": 8.291
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 8.991% y el cálculo da 9.286%.",
+   "valores": {
+    "votos": 2333,
+    "pct_onpe": 8.991,
+    "pct_calculado": 9.286
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 20.201% y el cálculo da 20.865%.",
+   "valores": {
+    "votos": 5242,
+    "pct_onpe": 20.201,
+    "pct_calculado": 20.865
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 20.837% y el cálculo da 21.522%.",
+   "valores": {
+    "votos": 5407,
+    "pct_onpe": 20.837,
+    "pct_calculado": 21.522
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / BELÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 27.288% y el cálculo da 28.185%.",
+   "valores": {
+    "votos": 7081,
+    "pct_onpe": 27.288,
+    "pct_calculado": 28.185
    }
   },
   {
@@ -1771,180 +1826,6 @@
     "votos": 354,
     "pct_onpe": 27.023,
     "pct_calculado": 44.195
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (644,412) no coincide con totalVotosValidos (634,892). Diferencia: +9,520.",
-   "valores": {
-    "suma_participantes": 644412,
-    "totalVotosValidos": 634892
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "YO AREQUIPA: ONPE publica 4.152% y el cálculo da 4.214%.",
-   "valores": {
-    "votos": 26754,
-    "pct_onpe": 4.152,
-    "pct_calculado": 4.214
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "AREQUIPA, TRADICIÓN Y FUTURO: ONPE publica 4.466% y el cálculo da 4.533%.",
-   "valores": {
-    "votos": 28782,
-    "pct_onpe": 4.466,
-    "pct_calculado": 4.533
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 5.242% y el cálculo da 5.320%.",
-   "valores": {
-    "votos": 33779,
-    "pct_onpe": 5.242,
-    "pct_calculado": 5.32
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 6.531% y el cálculo da 6.629%.",
-   "valores": {
-    "votos": 42088,
-    "pct_onpe": 6.531,
-    "pct_calculado": 6.629
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "PRIMERO LA GENTE - COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO: ONPE publica 7.789% y el cálculo da 7.906%.",
-   "valores": {
-    "votos": 50195,
-    "pct_onpe": 7.789,
-    "pct_calculado": 7.906
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 9.754% y el cálculo da 9.900%.",
-   "valores": {
-    "votos": 62854,
-    "pct_onpe": 9.754,
-    "pct_calculado": 9.9
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO REGIONAL AREQUIPA AVANCEMOS: ONPE publica 11.054% y el cálculo da 11.220%.",
-   "valores": {
-    "votos": 71234,
-    "pct_onpe": 11.054,
-    "pct_calculado": 11.22
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 15.737% y el cálculo da 15.973%.",
-   "valores": {
-    "votos": 101410,
-    "pct_onpe": 15.737,
-    "pct_calculado": 15.973
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
-   "severidad": "revisar",
-   "detalle": "FUERZA AREQUIPEÑA: ONPE publica 19.329% y el cálculo da 19.619%.",
-   "valores": {
-    "votos": 124558,
-    "pct_onpe": 19.329,
-    "pct_calculado": 19.619
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (21,394) no coincide con totalVotosValidos (20,840). Diferencia: +554.",
-   "valores": {
-    "suma_participantes": 21394,
-    "totalVotosValidos": 20840
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 6.179% y el cálculo da 6.344%.",
-   "valores": {
-    "votos": 1322,
-    "pct_onpe": 6.179,
-    "pct_calculado": 6.344
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 13.382% y el cálculo da 13.738%.",
-   "valores": {
-    "votos": 2863,
-    "pct_onpe": 13.382,
-    "pct_calculado": 13.738
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 14.027% y el cálculo da 14.400%.",
-   "valores": {
-    "votos": 3001,
-    "pct_onpe": 14.027,
-    "pct_calculado": 14.4
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 27.442% y el cálculo da 28.172%.",
-   "valores": {
-    "votos": 5871,
-    "pct_onpe": 27.442,
-    "pct_calculado": 28.172
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / PATAZ",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 37.613% y el cálculo da 38.613%.",
-   "valores": {
-    "votos": 8047,
-    "pct_onpe": 37.613,
-    "pct_calculado": 38.613
    }
   },
   {
