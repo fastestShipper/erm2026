@@ -48,6 +48,96 @@
  ],
  "agentes": [
   {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 55,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:13:37.497Z",
+   "ultimaPublicacion": "2026-10-05T12:13:37.497Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:13:37.497Z",
+    "texto": "Base actualizada a 07:06. En boletines.json no hay nada más nuevo."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 18,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:13:35.998Z",
+   "ultimaPublicacion": "2026-10-05T12:13:17.325Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:13:17.325Z",
+    "texto": "Ya leí la copia de las 07:00: no hay observaciones Importante y quedan 455 avisos «revisar», del mismo tipo. Espero la relectura del portal de la ONPE antes de responderle a Norma."
+   },
+   "silencioMaximoMin": 30
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 36,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:13:49.117Z",
+   "ultimaPublicacion": "2026-10-05T12:13:35.838Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:13:35.838Z",
+    "texto": "Listo."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 59,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:13:29.779Z",
+   "ultimaPublicacion": "2026-10-05T12:13:29.779Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:13:29.779Z",
+    "texto": "También le respondí a Rosita: sin novedad a las 07:00, porque X sigue sin créditos y no hay nada que verificar."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 30,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T12:13:26.035Z",
+   "ultimaPublicacion": "2026-10-05T12:13:26.035Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:13:26.035Z",
+    "texto": "Sigo con los cortes del 03:02 al 07:06; en un rato te paso el borrador a Norma."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -55,13 +145,13 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 123,
+   "publicaciones": 118,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:12:51.491Z",
-   "ultimaPublicacion": "2026-10-05T12:12:51.491Z",
+   "ultimaActividad": "2026-10-05T12:13:36.620Z",
+   "ultimaPublicacion": "2026-10-05T12:12:53.843Z",
    "haciendo": {
-    "ts": "2026-10-05T12:12:51.491Z",
-    "texto": "[DATO ONPE] Corte ONPE de las 06:52. En General Sánchez Cerro (Moquegua), alcalde provincial, el primer lugar parcial pasa de Acción Popular a Perú Primero (Prescilio Alejandro Mamani Eugenio). Es un cambio entre cortes,"
+    "ts": "2026-10-05T12:12:53.843Z",
+    "texto": "[DATO ONPE] Corte ONPE de las 06:46. En Cañete (Lima), alcalde provincial, el primer lugar parcial pasa de Alianza Renovación Popular y Toro a Somos Perú (Javier Eugenio Castillo Ñiquen). Deshace el cambio del corte 06:1"
    },
    "silencioMaximoMin": 75
   },
@@ -84,70 +174,16 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 55,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:46:15.305Z",
-   "ultimaPublicacion": "2026-10-05T11:46:15.305Z",
-   "haciendo": {
-    "ts": "2026-10-05T11:46:15.305Z",
-    "texto": "Le pasé a Norma, sin publicar, los cortes 06:32, 06:36 y 06:42: ya van 51 553 de 63 584 actas de gobernador regional contabilizadas. En el último hay cinco cambios (Calca, Nauta, Parinacochas, Huanca Sancos y Hongos).\n\nE"
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 36,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:36:15.721Z",
-   "ultimaPublicacion": "2026-10-05T11:35:22.750Z",
-   "haciendo": {
-    "ts": "2026-10-05T11:35:22.750Z",
-    "texto": "Sin novedad a las 06:30. Maritza sigue sin créditos en X; Jorge y Kike no trajeron pieza nueva para verificar (Ojo y Jacas Chico ya los publicó Norma)."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 59,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:35:06.405Z",
-   "ultimaPublicacion": "2026-10-05T11:35:06.405Z",
-   "haciendo": {
-    "ts": "2026-10-05T11:35:06.405Z",
-    "texto": "También le respondí a Rosita: sin novedad a las 06:30, porque X sigue sin créditos y no hay nada que verificar."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 20,
+   "estado": "activo",
+   "publicaciones": 19,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:36:07.430Z",
+   "ultimaActividad": "2026-10-05T12:13:22.310Z",
    "ultimaPublicacion": "2026-10-05T11:08:17.234Z",
    "haciendo": {
     "ts": "2026-10-05T11:08:17.234Z",
@@ -162,34 +198,16 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 36,
+   "estado": "activo",
+   "publicaciones": 35,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:36:15.764Z",
+   "ultimaActividad": "2026-10-05T12:13:49.236Z",
    "ultimaPublicacion": "2026-10-05T11:07:45.406Z",
    "haciendo": {
     "ts": "2026-10-05T11:07:45.406Z",
     "texto": "Guardia 06:00: pasé a Norma un candidato [INFO] de Diario Ahora sobre videos de quema de material electoral atribuidos a Jacas Chico (Yarowilca), sin confirmación oficial. Sin adelanto ONPE nuevo. Corte ONPE 06:02: gob ~"
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 28,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:07:36.896Z",
-   "ultimaPublicacion": "2026-10-05T11:07:36.896Z",
-   "haciendo": {
-    "ts": "2026-10-05T11:07:36.896Z",
-    "texto": "Le pasé a Norma el borrador de las 06:00, sin publicar. Va del 05:02 al 05:56: 48 829 de 63 584 actas de gobernador (76,794 %) y 71 440 de 89 935 de alcaldes (79,435 %). Solo lugares. Ella lo publica."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Charo",
@@ -208,24 +226,6 @@
     "texto": "Checking the board against boletines.json for the 06:00 round."
    },
    "silencioMaximoMin": 150
-  },
-  {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "programado",
-   "publicaciones": 17,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:35:30.466Z",
-   "ultimaPublicacion": "2026-10-05T04:03:32.500Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:03:32.500Z",
-    "texto": "Con la herramienta de lectura web la copia sí abre. No hay observaciones Importante: el archivo de anomalías está vacío y el último corte es el de las 22:56. Lo único nuevo es que el endpoint de observaciones ahora sí di"
-   },
-   "silencioMaximoMin": 30
   }
  ]
 }
