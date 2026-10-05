@@ -1,5 +1,5 @@
 {
- "total": 87,
+ "total": 97,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -878,65 +878,172 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (75,325) no coincide con totalVotosValidos (74,530). Diferencia: +795.",
+   "detalle": "La suma de votos de las organizaciones (76,107) no coincide con totalVotosValidos (75,325). Diferencia: +782.",
    "valores": {
-    "suma_participantes": 75325,
-    "totalVotosValidos": 74530
+    "suma_participantes": 76107,
+    "totalVotosValidos": 75325
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 6.412% y el cálculo da 6.481%.",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 6.416% y el cálculo da 6.483%.",
    "valores": {
-    "votos": 4830,
-    "pct_onpe": 6.412,
-    "pct_calculado": 6.481
+    "votos": 4883,
+    "pct_onpe": 6.416,
+    "pct_calculado": 6.483
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 8.984% y el cálculo da 9.080%.",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 8.994% y el cálculo da 9.087%.",
    "valores": {
-    "votos": 6767,
-    "pct_onpe": 8.984,
-    "pct_calculado": 9.08
+    "votos": 6845,
+    "pct_onpe": 8.994,
+    "pct_calculado": 9.087
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "SOCIOS POR ANCASH: ONPE publica 18.8% y el cálculo da 19.000%.",
+   "detalle": "SOCIOS POR ANCASH: ONPE publica 18.791% y el cálculo da 18.986%.",
    "valores": {
-    "votos": 14161,
-    "pct_onpe": 18.8,
-    "pct_calculado": 19.0
+    "votos": 14301,
+    "pct_onpe": 18.791,
+    "pct_calculado": 18.986
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 19.465% y el cálculo da 19.673%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 19.467% y el cálculo da 19.669%.",
    "valores": {
-    "votos": 14662,
-    "pct_onpe": 19.465,
-    "pct_calculado": 19.673
+    "votos": 14816,
+    "pct_onpe": 19.467,
+    "pct_calculado": 19.669
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde distrital · ÁNCASH / SANTA / NUEVO CHIMBOTE",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 35.381% y el cálculo da 35.759%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 35.386% y el cálculo da 35.753%.",
    "valores": {
-    "votos": 26651,
-    "pct_onpe": 35.381,
-    "pct_calculado": 35.759
+    "votos": 26931,
+    "pct_onpe": 35.386,
+    "pct_calculado": 35.753
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / CASTILLA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (58,230) no coincide con totalVotosValidos (58,051). Diferencia: +179.",
+   "valores": {
+    "suma_participantes": 58230,
+    "totalVotosValidos": 58051
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / CASTILLA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 21.465% y el cálculo da 21.531%.",
+   "valores": {
+    "votos": 12499,
+    "pct_onpe": 21.465,
+    "pct_calculado": 21.531
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · PIURA / PIURA / CASTILLA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 29.857% y el cálculo da 29.950%.",
+   "valores": {
+    "votos": 17386,
+    "pct_onpe": 29.857,
+    "pct_calculado": 29.95
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / PUNO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (127,990) no coincide con totalVotosValidos (127,497). Diferencia: +493.",
+   "valores": {
+    "suma_participantes": 127990,
+    "totalVotosValidos": 127497
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / PUNO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 19.618% y el cálculo da 19.694%.",
+   "valores": {
+    "votos": 25109,
+    "pct_onpe": 19.618,
+    "pct_calculado": 19.694
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · PUNO / PUNO",
+   "severidad": "revisar",
+   "detalle": "ASI - JUNTOS POR EL PERÚ: ONPE publica 25.622% y el cálculo da 25.721%.",
+   "valores": {
+    "votos": 32794,
+    "pct_onpe": 25.622,
+    "pct_calculado": 25.721
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (42,835) no coincide con totalVotosValidos (42,472). Diferencia: +363.",
+   "valores": {
+    "suma_participantes": 42835,
+    "totalVotosValidos": 42472
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 13.526% y el cálculo da 13.642%.",
+   "valores": {
+    "votos": 5794,
+    "pct_onpe": 13.526,
+    "pct_calculado": 13.642
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 22.584% y el cálculo da 22.777%.",
+   "valores": {
+    "votos": 9674,
+    "pct_onpe": 22.584,
+    "pct_calculado": 22.777
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 50.267% y el cálculo da 50.697%.",
+   "valores": {
+    "votos": 21532,
+    "pct_onpe": 50.267,
+    "pct_calculado": 50.697
    }
   }
  ]
