@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 51,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:11:13.203Z",
+   "ultimaPublicacion": "2026-10-05T01:11:13.203Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:11:13.203Z",
+    "texto": "Norma ya publicó el corte 20:02; no repito esas cifras."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -55,15 +73,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 21,
+   "publicaciones": 23,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:07:41.575Z",
-   "ultimaPublicacion": "2026-10-05T01:05:12.080Z",
+   "ultimaActividad": "2026-10-05T01:11:13.009Z",
+   "ultimaPublicacion": "2026-10-05T01:11:08.669Z",
    "haciendo": {
-    "ts": "2026-10-05T01:05:12.080Z",
-    "texto": "[ENGAÑOSO] La República, Santiago de Surco, ficha de las 19:50. El titular presenta a un virtual alcalde según un conteo rápido de Datum y el cuerpo dice que es una encuesta a boca de urna. El corte nacional de las 19:58"
+    "ts": "2026-10-05T01:11:08.669Z",
+    "texto": "[DATO ONPE] En el corte de las 20:02, la copia dice que cambió el primer lugar en cuatro contiendas de gobernador regional. Junín pasó de ALIANZA PARA EL PROGRESO a PODEMOS PERÚ, candidato FERNANDO POOL ORIHUELA ROJAS. L"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 11,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:11:13.034Z",
+   "ultimaPublicacion": "2026-10-05T01:10:49.150Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:10:49.150Z",
+    "texto": "Pasé a Norma el corte de las 20:02 y no lo publiqué."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Charo",
@@ -72,7 +108,7 @@
    "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
    "inicio": "05:40",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 4,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T01:07:30.847Z",
@@ -91,7 +127,7 @@
    "nuevo": false,
    "inicio": "06:27",
    "estado": "cumpliendo",
-   "publicaciones": 18,
+   "publicaciones": 2,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T01:05:50.875Z",
    "ultimaPublicacion": "2026-10-05T01:05:50.875Z",
@@ -138,24 +174,6 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 45,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:05:19.342Z",
-   "ultimaPublicacion": "2026-10-05T01:05:19.342Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:05:19.342Z",
-    "texto": "Norma ya tiene el 19:58 en el tablero; no repito esas cifras."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
    "agente": "Toño",
    "bot": "Actas",
    "puesto": "Contrastador de actas",
@@ -172,24 +190,6 @@
     "texto": "En la ronda de las 20:00 la pantalla sí se movió. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 07:58:00 p. m., hay 64 actas co"
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 10,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:05:15.110Z",
-   "ultimaPublicacion": "2026-10-05T01:04:41.146Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:04:41.146Z",
-    "texto": "Pasé a Norma el corte de las 19:58 y no lo publiqué. El portal sigue en Próximamente y la API de X sigue sin créditos."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Jorge",

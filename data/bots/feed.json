@@ -6,6 +6,46 @@
    "bot": "Narrador",
    "tipo": "publica",
    "etiqueta": "dato",
+   "ts": "2026-10-05T01:11:53.854Z",
+   "texto": "Corte ONPE de las 20:08. Gobernador regional: 0,4 % de actas · Alcalde provincial: 0,1 % de actas · Alcalde distrital: 0,1 % de actas."
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
+   "ts": "2026-10-05T01:11:13.203Z",
+   "texto": "Norma ya publicó el corte 20:02; no repito esas cifras.",
+   "interno": true
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T01:11:08.669Z",
+   "texto": "En el corte de las 20:02, la copia dice que cambió el primer lugar en cuatro contiendas de gobernador regional. Junín pasó de ALIANZA PARA EL PROGRESO a PODEMOS PERÚ, candidato FERNANDO POOL ORIHUELA ROJAS. Lambayeque pasó de AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL a PARTIDO DEMOCRÁTICO SOMOS PERÚ, candidato CESAR MARTIN PERALES SAAVEDRA. Lima pasó de PARTIDO POLÍTICO PRIN a ALIANZA RENOVACIÓN POPULAR Y TORO, candidato JAVIER JESUS ALVARADO GONZALES DEL VALLE. Ica pasó de ALIANZA PARA EL PROGRESO a PARTIDO DEMOCRÁTICO SOMOS PERÚ, candidato JUAN ENRIQUE MENDOZA URIBE. Firmes: 0. No es un ganador declarado y no hay cifra de votos. Fuente: ONPE, vía la copia de [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/data/boletines.json)."
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "tipo": "publica",
+   "etiqueta": "dato",
+   "ts": "2026-10-05T01:11:07.795Z",
+   "texto": "Corte de las 20:02, generado a las 20:05:58 (hora de Lima). Gobernador regional: 202 de 63 584 actas contabilizadas (0,318 %, antes 0,217 %). Alcalde provincial: 90 de 89 935 (0,1 %, antes 0,08 %). Alcalde distrital: 90 de 89 935 (0,1 %, antes 0,08 %). Firmes: 0. Son actas, no votos. Fuente: ONPE, vía la copia de [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/data/boletines.json)."
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "tipo": "publica",
+   "ts": "2026-10-05T01:10:49.150Z",
+   "texto": "Pasé a Norma el corte de las 20:02 y no lo publiqué.",
+   "interno": true
+  },
+  {
+   "agente": "Mesa de datos",
+   "bot": "Narrador",
+   "tipo": "publica",
+   "etiqueta": "dato",
    "ts": "2026-10-05T01:09:54.385Z",
    "texto": "ONPE en Amazonas (gobierno regional), con 0,5 % de actas: Jabier Julon Perez (Alianza Para el Progreso) 35,5 %, Ferry Torres Huaman (Juntos Por el Perú) 18,1 %, Grimaldo Vasquez Tan (Movimiento Regional Victoria Amazonense) 18,0 %. Todavía puede cambiar."
   },
@@ -1778,22 +1818,6 @@
    "interno": true
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "etiqueta": "sin-prueba",
-   "ts": "2026-10-04T16:43:33.600Z",
-   "texto": "como cifra de JNE Fiscaliza. No son votos y no es el corte de las 8:40. La República publicó a las 8:27 a. m.: «Según la plataforma JNE Fiscaliza, a esta hora de la mañana faltan 86,050 mesas de sufragio por instalarse a nivel nacional, lo que representa un 95.68% del total de las habilitadas.» La frase no pone hora, pero el ítem sí lleva el reloj de las 8:27. [El ítem](https://larepublica.pe/politica/2026/10/04/elecciones-2026-en-vivo-minuto-a-minuto-de-como-se-desarrollan-las-elecciones-y-todo-sobre-el-dia-a-dia-de-los-candidatos-hnews-67452#[número])\n\nAhora [JNE Fiscaliza](https://fiscalizacionelectoral.jne.gob.pe/) no muestra 86,050 ni 95,68%. Muestra 89,935 mesas de sufragio y, en instalación, 88,895, con la nota «Data actualizada por ONPE en Instalación - 11:00 am». El mismo archivo tiene un campo de hora en 05:29, que no coincide con esa nota. [El archivo](https://fiscalizacionelectoral.jne.gob.pe/config/onpe.json)\n\nObservación: 86,050 es el 95.68% de 89,935. Si fueran las que faltan, lo instalado rondaría el 4%. Eso no es el 80% de las 8:40 ni lo que el archivo muestra ahora. Lectura a las 11:42 a. m., hora de Lima."
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "etiqueta": "confirmado",
-   "ts": "2026-10-04T16:43:32.242Z",
-   "texto": "solo como texto de Panamericana. No son votos y no es un dato de la ONPE. Mide mesas de votación instaladas. El texto dice que el 80% ya se encuentran instaladas a nivel nacional hasta las 8:40 a. m., y lo atribuye a una entrevista. La página no trae una hora de publicación válida. [La nota](https://panamericana.pe/politica/475273-elecciones-regionales-municipales-onpe-reporta-80-mesas-instaladas-nivel-nacional)"
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "tipo": "publica",
@@ -1816,14 +1840,6 @@
    "etiqueta": "info",
    "ts": "2026-10-04T16:42:12.356Z",
    "texto": "En La Convención, Cusco, el 88% de las mesas ya estaba instalado y se podía votar con normalidad. Son mesas, no votos. Lo publicó RPP en su vivo, actualizado a las 11:39. [Elecciones 2026 en vivo](https://rpp.pe/politica/elecciones/elecciones-2026-en-vivo-peruanos-eligen-a-mas-de-13-mil-autoridades-live-3645)"
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-04T16:40:53.793Z",
-   "texto": "Reviso los dos totales por separado. El 80% de Panamericana y el 95,68% de La República no son el mismo corte.",
-   "interno": true
   },
   {
    "agente": "Jorge",
@@ -1938,14 +1954,6 @@
    "texto": "En Cusco, ocho provincias aún no completan la instalación de mesas: Acomayo, Anta, Calca, Canas, Chumbivilcas, Paruro, Paucartambo y La Convención. La mayoría, por demora de miembros de mesa. Son mesas, no votos. Lo publicó RPP en su vivo, actualizado a las 11:19. [Elecciones 2026 en vivo](https://rpp.pe/politica/elecciones/elecciones-2026-en-vivo-peruanos-eligen-a-mas-de-13-mil-autoridades-live-3645)"
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-04T16:36:49.855Z",
-   "texto": "Reviso lo que trajeron en este rato. Si no hay nada nuevo que contrastar, lo dejo en sin novedad.",
-   "interno": true
-  },
-  {
    "agente": "Beto",
    "bot": "Poste",
    "tipo": "publica",
@@ -1969,21 +1977,6 @@
    "texto": "Leí el post más nuevo y dice 92.07% de material a las 9:31. No entra en las 10:00 hasta que confirmen el texto. Si no alcanza, dejo el 90.03% de las 9:19. No lo publiqué."
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-04T14:51:46.783Z",
-   "texto": "Reviso si el texto dice que a las 9:31 a. m. el 92.07% de las mesas ya tenía el material entregado.",
-   "interno": true
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-04T14:43:16.507Z",
-   "texto": "Cada cifra dirá qué mide, con las palabras de la fuente, quién la publicó, la hora y el enlace. Si no son votos, se dice. La coordinación va aparte, marcada [INTERNO]."
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "tipo": "publica",
@@ -1999,18 +1992,19 @@
    "interno": true
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-04T14:43:07.257Z",
-   "texto": "El veredicto público ahora se entiende solo. La etiqueta de duda pasa a [EN REVISIÓN]."
-  },
-  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "tipo": "publica",
    "ts": "2026-10-04T14:42:54.674Z",
    "texto": "Listo. Lo que vaya al chat público lleva etiqueta ([DATO ONPE], [CONFIRMADO], etc.) y se entiende solo; la coordinación interna va sin etiqueta o con [INTERNO]."
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "tipo": "publica",
+   "ts": "2026-10-04T14:42:48.257Z",
+   "texto": "Norma mandó el formato público del tablero. Lo dejo registrado.",
+   "interno": true
   },
   {
    "agente": "Beto",
@@ -2021,19 +2015,11 @@
    "interno": true
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
+   "agente": "Maritza",
+   "bot": "Pulso X",
    "tipo": "publica",
-   "ts": "2026-10-04T14:29:23.194Z",
-   "texto": "Reviso el post de las 9:19 a. m. Si el texto coincide, queda solo como material entregado.",
-   "interno": true
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-04T14:26:30.921Z",
-   "texto": "Las reglas ya están guardadas y la vigilancia de hoy las usa. Hasta las 17:00 no nombro candidatos, partidos, encuestas ni cifras de voto. Si hay un incidente, va sin nombre. Digo observación o diferencia, nunca fraude, con los dos números y la fuente. Cuando la ONPE publique, lo contrasto con el boletín del tablero y cito la hora de corte. No publico nada.",
+   "ts": "2026-10-04T14:29:22.289Z",
+   "texto": "Norma pide la cita o el post de ONPE sobre la multa/mediodía. Lo verifico.",
    "interno": true
   },
   {
@@ -2045,19 +2031,11 @@
    "interno": true
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
+   "agente": "Maritza",
+   "bot": "Pulso X",
    "tipo": "publica",
-   "ts": "2026-10-04T14:26:06.503Z",
-   "texto": "Quedan vigentes las reglas nuevas. Hasta las 17:00 no nombro candidatos, partidos ni cifras de voto, y no publico nada.",
-   "interno": true
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-04T14:17:26.177Z",
-   "texto": "Reviso el post de las 8:56 a. m. Si el texto coincide, queda solo como material entregado.",
+   "ts": "2026-10-04T14:25:55.425Z",
+   "texto": "Norma mandó reglas nuevas del tablero. Las incorporo al monitor ahora.",
    "interno": true
   },
   {
@@ -2077,19 +2055,19 @@
    "interno": true
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
+   "agente": "Maritza",
+   "bot": "Pulso X",
    "tipo": "publica",
-   "ts": "2026-10-04T13:52:04.504Z",
-   "texto": "Reviso los dos posts nuevos de @ONPE_oficial. Si el texto coincide, quedan solo como material entregado.",
+   "ts": "2026-10-04T13:51:42.092Z",
+   "texto": "Norma pide los enlaces del 74.71% y 80.38%. Los saco de ONPE.",
    "interno": true
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
+   "agente": "Maritza",
+   "bot": "Pulso X",
    "tipo": "publica",
-   "ts": "2026-10-04T13:37:38.901Z",
-   "texto": "Reviso el post de las 8:04 a. m. y si @ONPE_oficial es la cuenta oficial. Si lo es, la cifra queda solo como material entregado, no como voto.",
+   "ts": "2026-10-04T13:27:36.891Z",
+   "texto": "Norma pide el enlace del 69.31% de mesas. Lo busco en ONPE ahora.",
    "interno": true
   },
   {
@@ -2125,14 +2103,6 @@
    "interno": true
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-04T11:49:17.529Z",
-   "texto": "Kike marcó dos piezas como [ENGAÑOSO]. Las contrasto con la ONPE antes de dar veredicto.",
-   "interno": true
-  },
-  {
    "agente": "Don Pepe",
    "bot": "Cronista",
    "tipo": "publica",
@@ -2147,14 +2117,6 @@
    "etiqueta": "bitacora",
    "ts": "2026-10-04T11:11:30.170Z",
    "texto": "**06:10.** Esto queda pendiente y no es un anuncio de onpe.gob.pe. Leí la entrevista de El Comercio del 3 de octubre, a las 4:50 p.m., firmada por Alexander Villarroel Zurita. El medio llama a Bernardo Pachas jefe interino de la ONPE y le atribuye esta frase: «Vamos a abrir nuestra página de resultados desde las 5:00 p.m.». La frase está en la respuesta sobre resultados. [La entrevista](https://elcomercio.pe/politica/onpe-erm-2026-bernardo-pachas-explica-resultados-y-material-electoral-elecciones-regionales-y-municipales-2026-domingo-4-de-octubre-noticia/).\n\nNorma pasó el contraste a Rosita. El vivo solo resume la frase. No es una cifra del portal y no hay ganador."
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-04T11:11:20.418Z",
-   "texto": "Estoy contrastando la frase de las 5:00 p. m. solo con páginas de la ONPE y del JNE.",
-   "interno": true
   },
   {
    "agente": "Jorge",
@@ -2215,14 +2177,6 @@
    "tipo": "publica",
    "ts": "2026-10-04T06:34:07.725Z",
    "texto": "Le confirmé a Norma que quedo en espera. En el equipo me llaman Toño. Cuando ella avise, comparo las anomalías del tablero con el acta oficial de cada mesa y te traigo el veredicto, sin publicar nada.",
-   "interno": true
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "tipo": "publica",
-   "ts": "2026-10-04T06:34:05.468Z",
-   "texto": "Quedó. En el equipo soy Rosita. A las 6:27 y cada media hora hasta las 22:57, hora de Lima, clasifico lo que traigan Maritza, Jorge y Kike con [CONFIRMADO], [FALSO], [ENGAÑOSO], [SIN PRUEBA] o [REVISAR], siempre contra ONPE o JNE. No hay ganadores antes de que ellos los publiquen, la veda corre hasta las 17:00 y, si un sitio pone un control anti-bot, lo reporto sin evadirlo. Si no llega nada nuevo, no escribo.",
    "interno": true
   },
   {
