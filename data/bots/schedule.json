@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 38,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:03:44.615Z",
+   "ultimaPublicacion": "2026-10-05T03:03:44.615Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:03:44.615Z",
+    "texto": "La tarjeta de las 22:00 está lista como [INTERNO] y no la publiqué. Usa el corte de las 21:58, marca [número], con el boletín generado a las 22:00:45. Es más nuevo que el de las 21:52 y coincide con el que Norma pasó des"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -55,13 +73,49 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 58,
+   "publicaciones": 59,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:02:47.287Z",
-   "ultimaPublicacion": "2026-10-05T03:02:37.456Z",
+   "ultimaActividad": "2026-10-05T03:03:51.275Z",
+   "ultimaPublicacion": "2026-10-05T03:03:25.027Z",
    "haciendo": {
-    "ts": "2026-10-05T03:02:37.456Z",
-    "texto": "I checked the 21:58 cut against boletines.json and posted it. Gobernador regional is at 8592 of 63584 actas (13,513%). Alcalde provincial and alcalde distrital are each at 5256 of 89935 (5,844%). There is still one settl"
+    "ts": "2026-10-05T03:03:25.027Z",
+    "texto": "[ENGAÑOSO] Pulso Perú (actualizada ~21:00) titula resultados de Lima «según la ONPE» y anuncia «virtual alcalde». El cuerpo es boca de urna Datum, no cómputo de actas. En el corte ONPE de las 21:58 (marca [número]) el av"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 19,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:03:14.494Z",
+   "ultimaPublicacion": "2026-10-05T03:03:14.494Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:03:14.494Z",
+    "texto": "Guardia 22:00: una pieza nueva a Norma — Pulso Perú, veredicto propuesto [ENGAÑOSO] (título/lead como ONPE y «virtual alcalde»; cuerpo es Datum). No la publiqué."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 20,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T03:03:01.683Z",
+   "ultimaPublicacion": "2026-10-05T03:03:01.683Z",
+   "haciendo": {
+    "ts": "2026-10-05T03:03:01.683Z",
+    "texto": "[BITÁCORA] 22:00 h Lima, actualización. En el corte de la ONPE de las 21:58 hay 8 592 actas contabilizadas de 63 584 en gobernador regional, el 13,513 %. En alcalde provincial y en alcalde distrital van 5 256 de 89 935 c"
    },
    "silencioMaximoMin": 75
   },
@@ -73,7 +127,7 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 55,
+   "publicaciones": 38,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T03:02:28.689Z",
    "ultimaPublicacion": "2026-10-05T03:02:28.689Z",
@@ -82,24 +136,6 @@
     "texto": "Barrido de las 22:00 en marcha; te aviso si hay algo nuevo para Norma."
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 28,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:02:47.240Z",
-   "ultimaPublicacion": "2026-10-05T03:02:27.589Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:02:27.589Z",
-    "texto": "[BITÁCORA] 22:00 h Lima. En el corte de la ONPE de las 21:52 hay 8 034 actas contabilizadas de 63 584 en gobernador regional. En alcalde provincial y en alcalde distrital van 4 741 de 89 935. Ya hay 1 resultado firme en "
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Luchito",
@@ -156,24 +192,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 37,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T03:02:12.082Z",
-   "ultimaPublicacion": "2026-10-05T03:02:12.082Z",
-   "haciendo": {
-    "ts": "2026-10-05T03:02:12.082Z",
-    "texto": "Releo el boletín y armo la tarjeta de las 22:00 solo como [INTERNO], sin publicarla."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Toño",
    "bot": "Actas",
    "puesto": "Contrastador de actas",
@@ -208,24 +226,6 @@
     "texto": "[EN REVISIÓN] La tarjeta «Observaciones» de [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) muestra 138, que son las actas contabilizadas de gobernador regional (138 de 63584), no las 136 diferencias de los total"
    },
    "silencioMaximoMin": 150
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "atrasado",
-   "publicaciones": 19,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:08:19.375Z",
-   "ultimaPublicacion": "2026-10-05T00:08:19.375Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:08:19.375Z",
-    "texto": "Barrido 19:00 en marcha (solo web; X sin créditos)."
-   },
-   "silencioMaximoMin": 60
   }
  ]
 }
