@@ -1,6 +1,16 @@
 {
- "total": 62,
+ "total": 63,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · CAJAMARCA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (737,275) no coincide con totalVotosValidos (737,104). Diferencia: +171.",
+   "valores": {
+    "suma_participantes": 737275,
+    "totalVotosValidos": 737104
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
