@@ -1,5 +1,5 @@
 {
- "total": 371,
+ "total": 332,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -56,27 +56,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / CUSCO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (56,755) no coincide con totalVotosValidos (56,579). Diferencia: +176.",
-   "valores": {
-    "suma_participantes": 56755,
-    "totalVotosValidos": 56579
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CUSCO / CUSCO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 21.813% y el cálculo da 21.881%.",
-   "valores": {
-    "votos": 12380,
-    "pct_onpe": 21.813,
-    "pct_calculado": 21.881
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · ICA / PISCO / PISCO",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (38,113) no coincide con totalVotosValidos (37,513). Diferencia: +600.",
@@ -127,333 +106,6 @@
     "votos": 14248,
     "pct_onpe": 37.384,
     "pct_calculado": 37.981
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (779) no coincide con totalVotosValidos (622). Diferencia: +157.",
-   "valores": {
-    "suma_participantes": 779,
-    "totalVotosValidos": 622
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 0.257% y el cálculo da 0.322%.",
-   "valores": {
-    "votos": 2,
-    "pct_onpe": 0.257,
-    "pct_calculado": 0.322
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "LIBERTAD POPULAR: ONPE publica 0.257% y el cálculo da 0.322%.",
-   "valores": {
-    "votos": 2,
-    "pct_onpe": 0.257,
-    "pct_calculado": 0.322
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 0.642% y el cálculo da 0.804%.",
-   "valores": {
-    "votos": 5,
-    "pct_onpe": 0.642,
-    "pct_calculado": 0.804
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO NACIONAL PERÚ LIBRE: ONPE publica 0.77% y el cálculo da 0.965%.",
-   "valores": {
-    "votos": 6,
-    "pct_onpe": 0.77,
-    "pct_calculado": 0.965
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 2.696% y el cálculo da 3.376%.",
-   "valores": {
-    "votos": 21,
-    "pct_onpe": 2.696,
-    "pct_calculado": 3.376
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 4.75% y el cálculo da 5.949%.",
-   "valores": {
-    "votos": 37,
-    "pct_onpe": 4.75,
-    "pct_calculado": 5.949
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 5.52% y el cálculo da 6.913%.",
-   "valores": {
-    "votos": 43,
-    "pct_onpe": 5.52,
-    "pct_calculado": 6.913
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 8.986% y el cálculo da 11.254%.",
-   "valores": {
-    "votos": 70,
-    "pct_onpe": 8.986,
-    "pct_calculado": 11.254
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 25.931% y el cálculo da 32.476%.",
-   "valores": {
-    "votos": 202,
-    "pct_onpe": 25.931,
-    "pct_calculado": 32.476
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / CHUMBIVILCAS / LIVITACA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 50.193% y el cálculo da 62.862%.",
-   "valores": {
-    "votos": 391,
-    "pct_onpe": 50.193,
-    "pct_calculado": 62.862
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (2,120) no coincide con totalVotosValidos (1,684). Diferencia: +436.",
-   "valores": {
-    "suma_participantes": 2120,
-    "totalVotosValidos": 1684
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "SALVEMOS AL PERÚ: ONPE publica 0.991% y el cálculo da 1.247%.",
-   "valores": {
-    "votos": 21,
-    "pct_onpe": 0.991,
-    "pct_calculado": 1.247
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 1.274% y el cálculo da 1.603%.",
-   "valores": {
-    "votos": 27,
-    "pct_onpe": 1.274,
-    "pct_calculado": 1.603
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 1.981% y el cálculo da 2.494%.",
-   "valores": {
-    "votos": 42,
-    "pct_onpe": 1.981,
-    "pct_calculado": 2.494
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "FRENTE REGIONAL TÚPAC: ONPE publica 3.491% y el cálculo da 4.394%.",
-   "valores": {
-    "votos": 74,
-    "pct_onpe": 3.491,
-    "pct_calculado": 4.394
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 4.057% y el cálculo da 5.107%.",
-   "valores": {
-    "votos": 86,
-    "pct_onpe": 4.057,
-    "pct_calculado": 5.107
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 4.906% y el cálculo da 6.176%.",
-   "valores": {
-    "votos": 104,
-    "pct_onpe": 4.906,
-    "pct_calculado": 6.176
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 5.094% y el cálculo da 6.413%.",
-   "valores": {
-    "votos": 108,
-    "pct_onpe": 5.094,
-    "pct_calculado": 6.413
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 5.189% y el cálculo da 6.532%.",
-   "valores": {
-    "votos": 110,
-    "pct_onpe": 5.189,
-    "pct_calculado": 6.532
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "LIBERTAD POPULAR: ONPE publica 7.406% y el cálculo da 9.323%.",
-   "valores": {
-    "votos": 157,
-    "pct_onpe": 7.406,
-    "pct_calculado": 9.323
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 10.142% y el cálculo da 12.767%.",
-   "valores": {
-    "votos": 215,
-    "pct_onpe": 10.142,
-    "pct_calculado": 12.767
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 11.604% y el cálculo da 14.608%.",
-   "valores": {
-    "votos": 246,
-    "pct_onpe": 11.604,
-    "pct_calculado": 14.608
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 21.745% y el cálculo da 27.375%.",
-   "valores": {
-    "votos": 461,
-    "pct_onpe": 21.745,
-    "pct_calculado": 27.375
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / ESPINAR / SUYCKUTAMBO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 22.075% y el cálculo da 27.791%.",
-   "valores": {
-    "votos": 468,
-    "pct_onpe": 22.075,
-    "pct_calculado": 27.791
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / ECHARATE",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (9,835) no coincide con totalVotosValidos (9,699). Diferencia: +136.",
-   "valores": {
-    "suma_participantes": 9835,
-    "totalVotosValidos": 9699
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / ECHARATE",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 4.667% y el cálculo da 4.732%.",
-   "valores": {
-    "votos": 459,
-    "pct_onpe": 4.667,
-    "pct_calculado": 4.732
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / ECHARATE",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 15.76% y el cálculo da 15.981%.",
-   "valores": {
-    "votos": 1550,
-    "pct_onpe": 15.76,
-    "pct_calculado": 15.981
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / ECHARATE",
-   "severidad": "revisar",
-   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 36.248% y el cálculo da 36.756%.",
-   "valores": {
-    "votos": 3565,
-    "pct_onpe": 36.248,
-    "pct_calculado": 36.756
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · CUSCO / LA CONVENCIÓN / ECHARATE",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 38.79% y el cálculo da 39.334%.",
-   "valores": {
-    "votos": 3815,
-    "pct_onpe": 38.79,
-    "pct_calculado": 39.334
    }
   },
   {
@@ -2303,93 +1955,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (6,220) no coincide con totalVotosValidos (5,362). Diferencia: +858.",
-   "valores": {
-    "suma_participantes": 6220,
-    "totalVotosValidos": 5362
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMÓCRATA VERDE: ONPE publica 1.688% y el cálculo da 1.958%.",
-   "valores": {
-    "votos": 105,
-    "pct_onpe": 1.688,
-    "pct_calculado": 1.958
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 2.379% y el cálculo da 2.760%.",
-   "valores": {
-    "votos": 148,
-    "pct_onpe": 2.379,
-    "pct_calculado": 2.76
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 10.032% y el cálculo da 11.637%.",
-   "valores": {
-    "votos": 624,
-    "pct_onpe": 10.032,
-    "pct_calculado": 11.637
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 19.116% y el cálculo da 22.175%.",
-   "valores": {
-    "votos": 1189,
-    "pct_onpe": 19.116,
-    "pct_calculado": 22.175
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 19.695% y el cálculo da 22.846%.",
-   "valores": {
-    "votos": 1225,
-    "pct_onpe": 19.695,
-    "pct_calculado": 22.846
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 22.846% y el cálculo da 26.501%.",
-   "valores": {
-    "votos": 1421,
-    "pct_onpe": 22.846,
-    "pct_calculado": 26.501
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ÁNCASH / PALLASCA",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 24.244% y el cálculo da 28.124%.",
-   "valores": {
-    "votos": 1508,
-    "pct_onpe": 24.244,
-    "pct_calculado": 28.124
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / GRAU / PROGRESO",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (1,886) no coincide con totalVotosValidos (1,722). Diferencia: +164.",
@@ -3048,38 +2613,6 @@
     "votos": 5338,
     "pct_onpe": 24.98,
     "pct_calculado": 27.541
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · ICA / PISCO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (83,463) no coincide con totalVotosValidos (83,224). Diferencia: +239.",
-   "valores": {
-    "suma_participantes": 83463,
-    "totalVotosValidos": 83224
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ICA / PISCO",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 28.402% y el cálculo da 28.483%.",
-   "valores": {
-    "votos": 23705,
-    "pct_onpe": 28.402,
-    "pct_calculado": 28.483
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · ICA / PISCO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 34.001% y el cálculo da 34.098%.",
-   "valores": {
-    "votos": 28378,
-    "pct_onpe": 34.001,
-    "pct_calculado": 34.098
    }
   },
   {
@@ -4023,6 +3556,49 @@
     "votos": 18252,
     "pct_onpe": 32.77,
     "pct_calculado": 33.561
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (110,887) no coincide con totalVotosValidos (109,646). Diferencia: +1,241.",
+   "valores": {
+    "suma_participantes": 110887,
+    "totalVotosValidos": 109646
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 23.7% y el cálculo da 23.968%.",
+   "valores": {
+    "votos": 26280,
+    "pct_onpe": 23.7,
+    "pct_calculado": 23.968
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 25.046% y el cálculo da 25.330%.",
+   "valores": {
+    "votos": 27773,
+    "pct_onpe": 25.046,
+    "pct_calculado": 25.33
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / LA MOLINA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 35.766% y el cálculo da 36.171%.",
+   "valores": {
+    "votos": 39660,
+    "pct_onpe": 35.766,
+    "pct_calculado": 36.171
    }
   }
  ]
