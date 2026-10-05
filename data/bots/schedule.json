@@ -48,13 +48,49 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 49,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:34:47.780Z",
+   "ultimaPublicacion": "2026-10-05T02:34:42.757Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:34:42.757Z",
+    "texto": "[ENGAÑOSO] La República, San Juan de Lurigancho, 4 de octubre de 2026 a las 21:20. Un apartado atribuye a la ONPE que un candidato gana, con un porcentaje de actas y un porcentaje de votos. Otro apartado, aparte, es un c"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 54,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T02:34:45.225Z",
+   "ultimaPublicacion": "2026-10-05T02:34:21.382Z",
+   "haciendo": {
+    "ts": "2026-10-05T02:34:21.382Z",
+    "texto": "Pasé a Norma cuatro adelantos de las 21:30, sin publicar. RPP actualizó su nota a las 21:31 y ahora atribuye a la ONPE un orden para Lima Metropolitana, cuando antes era boca de urna. La República hace lo mismo en San Lu"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 54,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T02:30:59.062Z",
@@ -66,31 +102,13 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 47,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:31:12.865Z",
-   "ultimaPublicacion": "2026-10-05T02:28:22.733Z",
-   "haciendo": {
-    "ts": "2026-10-05T02:28:22.733Z",
-    "texto": "[DATO ONPE] En el corte de las 21:22 cambió el primer lugar en tres contiendas. No es una cifra de votos y no hay ganador. Firmes: 0. Lambayeque, alcalde provincial, de PARTIDO DEMOCRÁTICO SOMOS PERÚ a AVANZA PAÍS - PART"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 21,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T02:31:12.533Z",
@@ -111,31 +129,13 @@
    "estado": "activo",
    "publicaciones": 3,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:31:12.903Z",
+   "ultimaActividad": "2026-10-05T02:34:19.156Z",
    "ultimaPublicacion": "2026-10-05T02:12:09.766Z",
    "haciendo": {
     "ts": "2026-10-05T02:12:09.766Z",
     "texto": "El veredicto ya está con Norma. No lo subí."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 44,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T02:30:45.868Z",
-   "ultimaPublicacion": "2026-10-05T02:11:45.999Z",
-   "haciendo": {
-    "ts": "2026-10-05T02:11:45.999Z",
-    "texto": "Pasé a Norma una nota de Panamericana de las 21:04. El título dice que una lista lidera los resultados de la elección en Lima Metropolitana, pero el cuerpo se apoya en el mismo sondeo ya marcado a las 17:40 y no cita act"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Beto",
@@ -162,7 +162,7 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "cumpliendo",
+   "estado": "atrasado",
    "publicaciones": 13,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T02:03:40.467Z",
