@@ -1,47 +1,110 @@
 {
- "total": 75,
+ "total": 77,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (297,991) no coincide con totalVotosValidos (295,732). Diferencia: +2,259.",
+   "detalle": "La suma de votos de las organizaciones (299,602) no coincide con totalVotosValidos (297,991). Diferencia: +1,611.",
    "valores": {
-    "suma_participantes": 297991,
-    "totalVotosValidos": 295732
+    "suma_participantes": 299602,
+    "totalVotosValidos": 297991
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 20.132% y el cálculo da 20.286%.",
+   "detalle": "APP - TRABAJA AYACUCHO: ONPE publica 20.131% y el cálculo da 20.240%.",
    "valores": {
-    "votos": 59991,
-    "pct_onpe": 20.132,
-    "pct_calculado": 20.286
+    "votos": 60313,
+    "pct_onpe": 20.131,
+    "pct_calculado": 20.24
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "PODEMOS PERÚ: ONPE publica 32.836% y el cálculo da 33.087%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 32.962% y el cálculo da 33.140%.",
    "valores": {
-    "votos": 97848,
-    "pct_onpe": 32.836,
-    "pct_calculado": 33.087
+    "votos": 98754,
+    "pct_onpe": 32.962,
+    "pct_calculado": 33.14
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "LIBERTAD POPULAR: ONPE publica 36.327% y el cálculo da 36.604%.",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 36.223% y el cálculo da 36.419%.",
    "valores": {
-    "votos": 108250,
-    "pct_onpe": 36.327,
-    "pct_calculado": 36.604
+    "votos": 108525,
+    "pct_onpe": 36.223,
+    "pct_calculado": 36.419
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · APURÍMAC",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (219,751) no coincide con totalVotosValidos (219,187). Diferencia: +564.",
+   "valores": {
+    "suma_participantes": 219751,
+    "totalVotosValidos": 219187
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · APURÍMAC",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 24.946% y el cálculo da 25.010%.",
+   "valores": {
+    "votos": 54818,
+    "pct_onpe": 24.946,
+    "pct_calculado": 25.01
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · APURÍMAC",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 35.026% y el cálculo da 35.116%.",
+   "valores": {
+    "votos": 76970,
+    "pct_onpe": 35.026,
+    "pct_calculado": 35.116
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · APURÍMAC",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 37.807% y el cálculo da 37.905%.",
+   "valores": {
+    "votos": 83082,
+    "pct_onpe": 37.807,
+    "pct_calculado": 37.905
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · HUANCAVELICA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (226,354) no coincide con totalVotosValidos (226,001). Diferencia: +353.",
+   "valores": {
+    "suma_participantes": 226354,
+    "totalVotosValidos": 226001
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (315,570) no coincide con totalVotosValidos (315,348). Diferencia: +222.",
+   "valores": {
+    "suma_participantes": 315570,
+    "totalVotosValidos": 315348
    }
   },
   {
@@ -572,49 +635,6 @@
     "votos": 4381,
     "pct_onpe": 24.419,
     "pct_calculado": 24.658
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (42,835) no coincide con totalVotosValidos (42,472). Diferencia: +363.",
-   "valores": {
-    "suma_participantes": 42835,
-    "totalVotosValidos": 42472
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 13.526% y el cálculo da 13.642%.",
-   "valores": {
-    "votos": 5794,
-    "pct_onpe": 13.526,
-    "pct_calculado": 13.642
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 22.584% y el cálculo da 22.777%.",
-   "valores": {
-    "votos": 9674,
-    "pct_onpe": 22.584,
-    "pct_calculado": 22.777
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 50.267% y el cálculo da 50.697%.",
-   "valores": {
-    "votos": 21532,
-    "pct_onpe": 50.267,
-    "pct_calculado": 50.697
    }
   },
   {
