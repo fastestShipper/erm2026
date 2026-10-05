@@ -1,5 +1,5 @@
 {
- "total": 97,
+ "total": 110,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -846,32 +846,65 @@
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (178,129) no coincide con totalVotosValidos (177,316). Diferencia: +813.",
+   "detalle": "La suma de votos de las organizaciones (180,041) no coincide con totalVotosValidos (178,129). Diferencia: +1,912.",
    "valores": {
-    "suma_participantes": 178129,
-    "totalVotosValidos": 177316
+    "suma_participantes": 180041,
+    "totalVotosValidos": 178129
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 16.22% y el cálculo da 16.294%.",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 9.057% y el cálculo da 9.155%.",
    "valores": {
-    "votos": 28892,
-    "pct_onpe": 16.22,
-    "pct_calculado": 16.294
+    "votos": 16307,
+    "pct_onpe": 9.057,
+    "pct_calculado": 9.155
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 33.908% y el cálculo da 34.063%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 10.814% y el cálculo da 10.930%.",
    "valores": {
-    "votos": 60400,
-    "pct_onpe": 33.908,
-    "pct_calculado": 34.063
+    "votos": 19469,
+    "pct_onpe": 10.814,
+    "pct_calculado": 10.93
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 11.834% y el cálculo da 11.961%.",
+   "valores": {
+    "votos": 21306,
+    "pct_onpe": 11.834,
+    "pct_calculado": 11.961
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 16.38% y el cálculo da 16.556%.",
+   "valores": {
+    "votos": 29491,
+    "pct_onpe": 16.38,
+    "pct_calculado": 16.556
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 33.888% y el cálculo da 34.252%.",
+   "valores": {
+    "votos": 61012,
+    "pct_onpe": 33.888,
+    "pct_calculado": 34.252
    }
   },
   {
@@ -1044,6 +1077,114 @@
     "votos": 21532,
     "pct_onpe": 50.267,
     "pct_calculado": 50.697
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (94,997) no coincide con totalVotosValidos (94,324). Diferencia: +673.",
+   "valores": {
+    "suma_participantes": 94997,
+    "totalVotosValidos": 94324
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE: ONPE publica 13.64% y el cálculo da 13.738%.",
+   "valores": {
+    "votos": 12958,
+    "pct_onpe": 13.64,
+    "pct_calculado": 13.738
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 14.35% y el cálculo da 14.452%.",
+   "valores": {
+    "votos": 13632,
+    "pct_onpe": 14.35,
+    "pct_calculado": 14.452
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 19.109% y el cálculo da 19.245%.",
+   "valores": {
+    "votos": 18153,
+    "pct_onpe": 19.109,
+    "pct_calculado": 19.245
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 32.279% y el cálculo da 32.509%.",
+   "valores": {
+    "votos": 30664,
+    "pct_onpe": 32.279,
+    "pct_calculado": 32.509
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (10,722) no coincide con totalVotosValidos (10,573). Diferencia: +149.",
+   "valores": {
+    "suma_participantes": 10722,
+    "totalVotosValidos": 10573
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 4.663% y el cálculo da 4.729%.",
+   "valores": {
+    "votos": 500,
+    "pct_onpe": 4.663,
+    "pct_calculado": 4.729
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
+   "severidad": "revisar",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 24.464% y el cálculo da 24.808%.",
+   "valores": {
+    "votos": 2623,
+    "pct_onpe": 24.464,
+    "pct_calculado": 24.808
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 31.571% y el cálculo da 32.016%.",
+   "valores": {
+    "votos": 3385,
+    "pct_onpe": 31.571,
+    "pct_calculado": 32.016
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MARISCAL RAMÓN CASTILLA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 33.968% y el cálculo da 34.446%.",
+   "valores": {
+    "votos": 3642,
+    "pct_onpe": 33.968,
+    "pct_calculado": 34.446
    }
   }
  ]
