@@ -48,20 +48,20 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 103,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 36,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:50:36.721Z",
-   "ultimaPublicacion": "2026-10-05T12:50:32.952Z",
+   "ultimaActividad": "2026-10-05T13:17:49.157Z",
+   "ultimaPublicacion": "2026-10-05T13:17:49.157Z",
    "haciendo": {
-    "ts": "2026-10-05T12:50:32.952Z",
-    "texto": "[DATO ONPE] Cambios de primer lugar al corte 07:42. Satipo (Junín) provincial: Renovación Popular → APP, Ivan Roger Cisneros Quispe. Marañón (Huánuco) provincial: Perú Primero → País para Todos, Wilder Miguel Cervantes P"
+    "ts": "2026-10-05T13:17:49.157Z",
+    "texto": "Guardia 08:00 cerrada: Sin novedad a Norma. Sin pieza nueva de Maritza, Jorge ni Kike para verificar."
    },
    "silencioMaximoMin": 75
   },
@@ -72,52 +72,34 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 55,
+   "estado": "activo",
+   "publicaciones": 56,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:50:17.941Z",
-   "ultimaPublicacion": "2026-10-05T12:50:17.941Z",
+   "ultimaActividad": "2026-10-05T13:17:48.693Z",
+   "ultimaPublicacion": "2026-10-05T13:17:48.693Z",
    "haciendo": {
-    "ts": "2026-10-05T12:50:17.941Z",
-    "texto": "Le pasé a Norma, sin publicar, el corte 07:42: ya van 54 531 de 63 584 actas de gobernador regional contabilizadas. Cinco cambios (Satipo, Marañón, Vinchos, Pullo y Aucara). Portal timeout; X sin créditos."
+    "ts": "2026-10-05T13:17:48.693Z",
+    "texto": "El chequeo automático falló; lo retomo yo ahora."
    },
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "agente": "Charo",
+   "bot": "Tablero",
+   "puesto": "Diseñadora del tablero",
+   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
-   "inicio": "06:05",
-   "estado": "cumpliendo",
-   "publicaciones": 58,
+   "inicio": "05:40",
+   "estado": "activo",
+   "publicaciones": 9,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:41:03.145Z",
-   "ultimaPublicacion": "2026-10-05T12:41:03.145Z",
+   "ultimaActividad": "2026-10-05T13:17:40.662Z",
+   "ultimaPublicacion": "2026-10-05T13:17:40.662Z",
    "haciendo": {
-    "ts": "2026-10-05T12:41:03.145Z",
-    "texto": "También le respondí a Rosita: sin novedad a las 07:30, porque X sigue sin créditos y no hay nada que verificar."
+    "ts": "2026-10-05T13:17:40.662Z",
+    "texto": "boletines.json is readable; newest cut is 08:12. Waiting on the painted page in the browser to finish the contrast."
    },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 35,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:41:31.411Z",
-   "ultimaPublicacion": "2026-10-05T12:40:59.051Z",
-   "haciendo": {
-    "ts": "2026-10-05T12:40:59.051Z",
-    "texto": "[INTERNO] Sin novedad a las 07:30. Maritza sigue sin créditos en X; Jorge y Kike no trajeron pieza nueva para verificar en esta media hora. Corte fresco visto: 07:32."
-   },
-   "silencioMaximoMin": 75
+   "silencioMaximoMin": 150
   },
   {
    "agente": "Toño",
@@ -126,34 +108,34 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "programado",
-   "publicaciones": 20,
+   "estado": "activo",
+   "publicaciones": 21,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:40:53.016Z",
-   "ultimaPublicacion": "2026-10-05T12:40:53.016Z",
+   "ultimaActividad": "2026-10-05T13:17:34.658Z",
+   "ultimaPublicacion": "2026-10-05T13:17:23.528Z",
    "haciendo": {
-    "ts": "2026-10-05T12:40:53.016Z",
-    "texto": "Ya leí la copia de las 07:30. No hay observaciones Importante y quedan 437 avisos «revisar», del mismo tipo que en las guardias anteriores. Antes de responderle a Norma, espero la relectura del portal de la ONPE."
+    "ts": "2026-10-05T13:17:23.528Z",
+    "texto": "Hago la guardia de las 08:00: contrastaré la copia y revisaré si el portal de la ONPE ya abrió."
    },
    "silencioMaximoMin": 30
   },
   {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 32,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 58,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:23:22.473Z",
-   "ultimaPublicacion": "2026-10-05T12:23:22.473Z",
+   "ultimaActividad": "2026-10-05T13:17:30.109Z",
+   "ultimaPublicacion": "2026-10-05T13:17:30.109Z",
    "haciendo": {
-    "ts": "2026-10-05T12:23:22.473Z",
-    "texto": "Listo por ahora; espero su publicación."
+    "ts": "2026-10-05T13:17:30.109Z",
+    "texto": "También le respondí a Rosita: sin novedad a las 08:00, porque X sigue sin créditos y no hay nada que verificar."
    },
-   "silencioMaximoMin": 75
+   "silencioMaximoMin": 60
   },
   {
    "agente": "Beto",
@@ -162,14 +144,50 @@
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 52,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:12:18.146Z",
-   "ultimaPublicacion": "2026-10-05T12:12:18.146Z",
+   "ultimaActividad": "2026-10-05T13:17:22.852Z",
+   "ultimaPublicacion": "2026-10-05T13:17:22.852Z",
    "haciendo": {
-    "ts": "2026-10-05T12:12:18.146Z",
-    "texto": "La tarjeta de las 07:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 07:02, marca [número]. Son actas contabilizadas, no votos. Gobernador regional: 52 667 de 63 584 (82,831 %)."
+    "ts": "2026-10-05T13:17:22.852Z",
+    "texto": "Releo el boletín y armo la tarjeta de las 08:00 solo como [INTERNO], sin publicarla."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 96,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:17:50.072Z",
+   "ultimaPublicacion": "2026-10-05T12:50:32.952Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:50:32.952Z",
+    "texto": "[DATO ONPE] Cambios de primer lugar al corte 07:42. Satipo (Junín) provincial: Renovación Popular → APP, Ivan Roger Cisneros Quispe. Marañón (Huánuco) provincial: Perú Primero → País para Todos, Wilder Miguel Cervantes P"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 32,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:17:50.104Z",
+   "ultimaPublicacion": "2026-10-05T12:23:22.473Z",
+   "haciendo": {
+    "ts": "2026-10-05T12:23:22.473Z",
+    "texto": "Listo por ahora; espero su publicación."
    },
    "silencioMaximoMin": 75
   },
@@ -180,10 +198,10 @@
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:41:39.573Z",
+   "ultimaActividad": "2026-10-05T13:17:37.113Z",
    "ultimaPublicacion": "2026-10-05T11:08:17.234Z",
    "haciendo": {
     "ts": "2026-10-05T11:08:17.234Z",
@@ -198,34 +216,16 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "cumpliendo",
+   "estado": "activo",
    "publicaciones": 34,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T12:41:31.449Z",
+   "ultimaActividad": "2026-10-05T13:17:23.978Z",
    "ultimaPublicacion": "2026-10-05T11:07:45.406Z",
    "haciendo": {
     "ts": "2026-10-05T11:07:45.406Z",
     "texto": "Guardia 06:00: pasé a Norma un candidato [INFO] de Diario Ahora sobre videos de quema de material electoral atribuidos a Jacas Chico (Yarowilca), sin confirmación oficial. Sin adelanto ONPE nuevo. Corte ONPE 06:02: gob ~"
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Charo",
-   "bot": "Tablero",
-   "puesto": "Diseñadora del tablero",
-   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
-   "nuevo": false,
-   "inicio": "05:40",
-   "estado": "cumpliendo",
-   "publicaciones": 8,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T11:07:03.451Z",
-   "ultimaPublicacion": "2026-10-05T11:07:03.451Z",
-   "haciendo": {
-    "ts": "2026-10-05T11:07:03.451Z",
-    "texto": "Checking the board against boletines.json for the 06:00 round."
-   },
-   "silencioMaximoMin": 150
   }
  ]
 }
