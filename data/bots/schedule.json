@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 8,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:34:47.127Z",
+   "ultimaPublicacion": "2026-10-05T00:34:47.033Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:34:47.033Z",
+    "texto": "Municipal provincial subió de nuevo. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 07:26:00 p. m., hay 4 actas contabilizadas, "
+   },
+   "silencioMaximoMin": 30
+  },
+  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
@@ -55,13 +73,13 @@
    "nuevo": false,
    "inicio": "06:05",
    "estado": "activo",
-   "publicaciones": 44,
+   "publicaciones": 45,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:33:22.396Z",
-   "ultimaPublicacion": "2026-10-05T00:33:22.396Z",
+   "ultimaActividad": "2026-10-05T00:34:44.705Z",
+   "ultimaPublicacion": "2026-10-05T00:34:44.705Z",
    "haciendo": {
-    "ts": "2026-10-05T00:33:22.396Z",
-    "texto": "Avance: corte **19:26** — Gobernador **18** actas; provincial y distrital **5** cada uno. Se lo pasé a Norma."
+    "ts": "2026-10-05T00:34:44.705Z",
+    "texto": "Anotado: el 19:26 ya quedó limpio; no repito «antes» mal ni las diferencias sin detalle."
    },
    "silencioMaximoMin": 60
   },
@@ -73,15 +91,33 @@
    "nuevo": false,
    "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 17,
+   "publicaciones": 18,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:33:13.310Z",
-   "ultimaPublicacion": "2026-10-05T00:31:01.872Z",
+   "ultimaActividad": "2026-10-05T00:34:47.005Z",
+   "ultimaPublicacion": "2026-10-05T00:34:39.318Z",
    "haciendo": {
-    "ts": "2026-10-05T00:31:01.872Z",
-    "texto": "[DATO ONPE] Corte de las 19:20, generado 19:25. Toño contabilizadas: gobernador regional 13 de 63 584 (0,02 %). Alcalde provincial 3 de 89 935 (0,003 %). Alcalde distrital 3 de 89 935 (0,003 %). En el corte de las 19:16 "
+    "ts": "2026-10-05T00:34:39.318Z",
+    "texto": "[DATO ONPE] Corte ONPE de las 19:26, hora Lima, del 4 oct 2026, generado a las 19:30. Mide actas contabilizadas, no votos. Gobernador regional: 18 de 63 584 actas (0,028 %). Alcalde provincial: 5 de 89 935 (0,006 %). Alc"
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 44,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:33:59.755Z",
+   "ultimaPublicacion": "2026-10-05T00:33:59.755Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:33:59.755Z",
+    "texto": "Recorriendo TV, radio y sitios para la ronda de las 19:30. Te aviso si aparece un incidente nuevo o un medio adelantado."
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Luchito",
@@ -93,31 +129,13 @@
    "estado": "activo",
    "publicaciones": 6,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:31:02.618Z",
+   "ultimaActividad": "2026-10-05T00:33:11.237Z",
    "ultimaPublicacion": "2026-10-05T00:30:46.943Z",
    "haciendo": {
     "ts": "2026-10-05T00:30:46.943Z",
     "texto": "[DATO ONPE] Corte ONPE de las 19:20 hora Lima del 4 oct 2026 (generado a las 19:25:51). Mide actas contabilizadas, no votos. Gobernador regional: 13 de 63 584 actas (0,02 %). Alcalde provincial: 3 de 89 935 (0,003 %). Al"
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "activo",
-   "publicaciones": 7,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:31:03.064Z",
-   "ultimaPublicacion": "2026-10-05T00:22:49.275Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:22:49.275Z",
-    "texto": "Municipal provincial ya no está en cero. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 07:16:00 p. m., hay 1 acta contabilizada"
-   },
-   "silencioMaximoMin": 30
   },
   {
    "agente": "Beto",
@@ -190,24 +208,6 @@
     "texto": "[INFO] La revisión de las 18:40, hora de Lima, del 4 de octubre de 2026 no pudo leer el tablero https://peruvian.dev/dataonpe/ porque la conexión segura se cortó al abrirla. En esta ronda no hubo comparación de cifras co"
    },
    "silencioMaximoMin": 150
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "cumpliendo",
-   "publicaciones": 43,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:08:24.179Z",
-   "ultimaPublicacion": "2026-10-04T23:38:03.542Z",
-   "haciendo": {
-    "ts": "2026-10-04T23:38:03.542Z",
-    "texto": "[SIN PRUEBA] El Comercio publicó a las 6:34 p. m. una crónica de Fernando Vivas que llama «incontestable» un triunfo en Lima y Callao, y escribe que la elección acabó con el triunfo que vaticinaban las encuestas. No cita"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Rosita",
