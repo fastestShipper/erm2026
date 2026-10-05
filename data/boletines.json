@@ -2,6 +2,91 @@
  "nota": "Boletines generados por programa con los datos oficiales de la ONPE (sin IA). No son proyecciones.",
  "items": [
   {
+   "corte": 1791172080706,
+   "hora": "22:48",
+   "generado": "2026-10-04T22:50:56-05:00",
+   "avance": [
+    {
+     "id": 1,
+     "eleccion": "Gobernador regional",
+     "actasPct": 23.452,
+     "contabilizadas": 14912,
+     "totalActas": 63584,
+     "participacion": 18.096,
+     "antesPct": 22.32
+    },
+    {
+     "id": 302,
+     "eleccion": "Alcalde provincial",
+     "actasPct": 13.31,
+     "contabilizadas": 11970,
+     "totalActas": 89935,
+     "participacion": 10.172,
+     "antesPct": 12.319
+    },
+    {
+     "id": 303,
+     "eleccion": "Alcalde distrital",
+     "actasPct": 13.31,
+     "contabilizadas": 11970,
+     "totalActas": 89935,
+     "participacion": 10.172,
+     "antesPct": 12.319
+    }
+   ],
+   "cambios": [
+    {
+     "eleccion": "Gobernador regional",
+     "lugar": "Huancavelica",
+     "antes": "PARTIDO POLÍTICO PERÚ PRIMERO",
+     "ahora": "ALIANZA PARA EL PROGRESO",
+     "candidato": "JUAN CARLOS COMUN GAVILAN"
+    },
+    {
+     "eleccion": "Gobernador regional",
+     "lugar": "Amazonas",
+     "antes": "MOVIMIENTO REGIONAL VICTORIA AMAZONENSE",
+     "ahora": "MOVIMIENTO REGIONAL AMAZONENSE UNIDOS AL CAMPO",
+     "candidato": "SEGUNDO QUITERIO HERNANDEZ VASQUEZ"
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "lugar": "Lucanas (Ayacucho)",
+     "antes": "FUERZA POPULAR",
+     "ahora": "PODEMOS PERÚ",
+     "candidato": "GUILLERMO LOPEZ CANTORAL"
+    }
+   ],
+   "cambiosTotal": 3,
+   "firmes": [
+    {
+     "eleccion": "Gobernador regional",
+     "nivel": 1,
+     "firmes": 0,
+     "conDatos": 25
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "nivel": 2,
+     "firmes": 0,
+     "conDatos": 103
+    },
+    {
+     "eleccion": "Alcalde distrital",
+     "nivel": 3,
+     "firmes": 5,
+     "conDatos": 170
+    }
+   ],
+   "observaciones": {
+    "totales": 830,
+    "actasRevisadas": 0,
+    "actasImportantes": 0,
+    "actasRevisar": 0
+   },
+   "texto": "Corte ONPE de las 22:48. Actas contadas: Gobernador regional 23.5% (antes 22.3%) · Alcalde provincial 13.3% (antes 12.3%) · Alcalde distrital 13.3% (antes 12.3%). Cambió el primer lugar en 3 contiendas: Huancavelica, gobernador regional; Amazonas, gobernador regional; Lucanas (Ayacucho), alcalde provincial. El primer lugar ya no puede cambiar con las actas que faltan en 5 de 170 distritos. Revisión: 830 diferencias en los totales."
+  },
+  {
    "corte": 1791171730700,
    "hora": "22:42",
    "generado": "2026-10-04T22:45:44-05:00",
