@@ -1,5 +1,5 @@
 {
- "total": 74,
+ "total": 75,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -30,6 +30,16 @@
     "votos": 115657,
     "pct_onpe": 31.84,
     "pct_calculado": 31.921
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · ÁNCASH",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (601,388) no coincide con totalVotosValidos (600,989). Diferencia: +399.",
+   "valores": {
+    "suma_participantes": 601388,
+    "totalVotosValidos": 600989
    }
   },
   {
