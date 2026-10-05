@@ -1,66 +1,100 @@
 {
- "total": 88,
+ "total": 82,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · PASCO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (129,206) no coincide con totalVotosValidos (129,022). Diferencia: +184.",
+   "detalle": "La suma de votos de las organizaciones (129,748) no coincide con totalVotosValidos (129,206). Diferencia: +542.",
    "valores": {
-    "suma_participantes": 129206,
-    "totalVotosValidos": 129022
+    "suma_participantes": 129748,
+    "totalVotosValidos": 129206
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 18.326% y el cálculo da 18.403%.",
+   "valores": {
+    "votos": 23778,
+    "pct_onpe": 18.326,
+    "pct_calculado": 18.403
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 24.439% y el cálculo da 24.541%.",
+   "valores": {
+    "votos": 31709,
+    "pct_onpe": 24.439,
+    "pct_calculado": 24.541
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PASCO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO FRENTE DE LA ESPERANZA 2021: ONPE publica 28.655% y el cálculo da 28.775%.",
+   "valores": {
+    "votos": 37179,
+    "pct_onpe": 28.655,
+    "pct_calculado": 28.775
    }
   },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · PIURA",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (879,584) no coincide con totalVotosValidos (878,017). Diferencia: +1,567.",
+   "detalle": "La suma de votos de las organizaciones (884,150) no coincide con totalVotosValidos (879,584). Diferencia: +4,566.",
    "valores": {
-    "suma_participantes": 879584,
-    "totalVotosValidos": 878017
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · MOQUEGUA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (113,593) no coincide con totalVotosValidos (113,359). Diferencia: +234.",
-   "valores": {
-    "suma_participantes": 113593,
-    "totalVotosValidos": 113359
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · UCAYALI",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (203,322) no coincide con totalVotosValidos (202,665). Diferencia: +657.",
-   "valores": {
-    "suma_participantes": 203322,
-    "totalVotosValidos": 202665
+    "suma_participantes": 884150,
+    "totalVotosValidos": 879584
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · UCAYALI",
+   "ambito": "Elecciones Regionales · PIURA",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 20.889% y el cálculo da 20.957%.",
+   "detalle": "PODEMOS PERÚ: ONPE publica 17.187% y el cálculo da 17.276%.",
    "valores": {
-    "votos": 42472,
-    "pct_onpe": 20.889,
-    "pct_calculado": 20.957
+    "votos": 151960,
+    "pct_onpe": 17.187,
+    "pct_calculado": 17.276
    }
   },
   {
    "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 17.902% y el cálculo da 17.995%.",
+   "valores": {
+    "votos": 158282,
+    "pct_onpe": 17.902,
+    "pct_calculado": 17.995
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.435% y el cálculo da 22.552%.",
+   "valores": {
+    "votos": 198360,
+    "pct_onpe": 22.435,
+    "pct_calculado": 22.552
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · UCAYALI",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.256% y el cálculo da 35.371%.",
+   "detalle": "La suma de votos de las organizaciones (203,487) no coincide con totalVotosValidos (203,322). Diferencia: +165.",
    "valores": {
-    "votos": 71684,
-    "pct_onpe": 35.256,
-    "pct_calculado": 35.371
+    "suma_participantes": 203487,
+    "totalVotosValidos": 203322
    }
   },
   {
@@ -591,104 +625,6 @@
     "votos": 4381,
     "pct_onpe": 24.419,
     "pct_calculado": 24.658
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (16,078) no coincide con totalVotosValidos (15,640). Diferencia: +438.",
-   "valores": {
-    "suma_participantes": 16078,
-    "totalVotosValidos": 15640
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 3.079% y el cálculo da 3.165%.",
-   "valores": {
-    "votos": 495,
-    "pct_onpe": 3.079,
-    "pct_calculado": 3.165
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "MOVIMIENTO REGIONAL AREQUIPA AVANCEMOS: ONPE publica 3.166% y el cálculo da 3.254%.",
-   "valores": {
-    "votos": 509,
-    "pct_onpe": 3.166,
-    "pct_calculado": 3.254
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 6.848% y el cálculo da 7.040%.",
-   "valores": {
-    "votos": 1101,
-    "pct_onpe": 6.848,
-    "pct_calculado": 7.04
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 9.46% y el cálculo da 9.725%.",
-   "valores": {
-    "votos": 1521,
-    "pct_onpe": 9.46,
-    "pct_calculado": 9.725
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "AREQUIPA, TRADICIÓN Y FUTURO: ONPE publica 10.965% y el cálculo da 11.272%.",
-   "valores": {
-    "votos": 1763,
-    "pct_onpe": 10.965,
-    "pct_calculado": 11.272
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 13.061% y el cálculo da 13.427%.",
-   "valores": {
-    "votos": 2100,
-    "pct_onpe": 13.061,
-    "pct_calculado": 13.427
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "FUERZA AREQUIPEÑA: ONPE publica 25.961% y el cálculo da 26.688%.",
-   "valores": {
-    "votos": 4174,
-    "pct_onpe": 25.961,
-    "pct_calculado": 26.688
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / CASTILLA",
-   "severidad": "revisar",
-   "detalle": "PROGRESEMOS: ONPE publica 27.46% y el cálculo da 28.229%.",
-   "valores": {
-    "votos": 4415,
-    "pct_onpe": 27.46,
-    "pct_calculado": 28.229
    }
   },
   {
