@@ -1,14 +1,24 @@
 {
- "total": 72,
+ "total": 73,
  "items": [
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · ÁNCASH",
+   "ambito": "Elecciones Regionales · CUSCO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (601,388) no coincide con totalVotosValidos (600,989). Diferencia: +399.",
+   "detalle": "La suma de votos de las organizaciones (669,124) no coincide con totalVotosValidos (668,270). Diferencia: +854.",
    "valores": {
-    "suma_participantes": 601388,
-    "totalVotosValidos": 600989
+    "suma_participantes": 669124,
+    "totalVotosValidos": 668270
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (314,915) no coincide con totalVotosValidos (314,340). Diferencia: +575.",
+   "valores": {
+    "suma_participantes": 314915,
+    "totalVotosValidos": 314340
    }
   },
   {
