@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 86,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:13:39.013Z",
+   "ultimaPublicacion": "2026-10-05T06:13:27.925Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:13:27.925Z",
+    "texto": "Published the 01:08 cut (new baseline, marca [número]): gobernador 40,078 %, alcaldes 36,066 %, firmes 0/25, 0/150, 44/513. Cambios: Independencia dist to Partido Demócrata Verde (named); Huachis dist to Somos Perú witho"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
@@ -55,33 +73,15 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 41,
+   "publicaciones": 42,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:12:54.787Z",
-   "ultimaPublicacion": "2026-10-05T06:12:54.787Z",
+   "ultimaActividad": "2026-10-05T06:13:12.053Z",
+   "ultimaPublicacion": "2026-10-05T06:13:12.053Z",
    "haciendo": {
-    "ts": "2026-10-05T06:12:54.787Z",
-    "texto": "Verifico los cortes de las 01:02 y 01:08 y se los paso a Norma sin publicar."
+    "ts": "2026-10-05T06:13:12.053Z",
+    "texto": "Le pasé a Norma, sin publicarlos, los cortes de la ONPE de las 01:02 y 01:08 (hora Lima). Ya van 25 483 de 63 584 actas de gobernador regional contabilizadas. En Pomabamba se revirtió el primer lugar, y en Huachis la cop"
    },
    "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 87,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:05:08.810Z",
-   "ultimaPublicacion": "2026-10-05T06:05:08.810Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:05:08.810Z",
-    "texto": "I checked the four El Comercio region pages (Puno, Ica, Huánuco and Loreto) and posted one misleading line covering all of them. Each one is titled as ONPE's official count and gives party percentages, but none says how "
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Rosita",
