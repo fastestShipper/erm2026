@@ -1,5 +1,5 @@
 {
- "total": 266,
+ "total": 264,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -2381,27 +2381,6 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CUSCO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (236,438) no coincide con totalVotosValidos (235,825). Diferencia: +613.",
-   "valores": {
-    "suma_participantes": 236438,
-    "totalVotosValidos": 235825
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CUSCO",
-   "severidad": "revisar",
-   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 24.889% y el cálculo da 24.954%.",
-   "valores": {
-    "votos": 58848,
-    "pct_onpe": 24.889,
-    "pct_calculado": 24.954
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (37,519) no coincide con totalVotosValidos (37,274). Diferencia: +245.",
@@ -2879,12 +2858,12 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · AREQUIPA / AREQUIPA",
+   "ambito": "Elecciones Municipales · alcalde distrital · LA LIBERTAD / TRUJILLO / TRUJILLO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (664,512) no coincide con totalVotosValidos (664,296). Diferencia: +216.",
+   "detalle": "La suma de votos de las organizaciones (191,257) no coincide con totalVotosValidos (191,058). Diferencia: +199.",
    "valores": {
-    "suma_participantes": 664512,
-    "totalVotosValidos": 664296
+    "suma_participantes": 191257,
+    "totalVotosValidos": 191058
    }
   }
  ]
