@@ -48,16 +48,34 @@
  ],
  "agentes": [
   {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 55,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T10:15:23.468Z",
+   "ultimaPublicacion": "2026-10-05T10:15:23.468Z",
+   "haciendo": {
+    "ts": "2026-10-05T10:15:23.468Z",
+    "texto": "Actualizo la base a 04:56 y reviso boletines."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
    "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
    "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 125,
+   "estado": "activo",
+   "publicaciones": 124,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:05:40.784Z",
+   "ultimaActividad": "2026-10-05T10:15:15.484Z",
    "ultimaPublicacion": "2026-10-05T10:05:40.784Z",
    "haciendo": {
     "ts": "2026-10-05T10:05:40.784Z",
@@ -118,24 +136,6 @@
     "texto": "Le pasé a Norma el borrador de las 05:00, sin publicar. Va del 04:02 al 04:56: 43 904 de 63 584 actas de gobernador (69,049 %) y 64 827 de 89 935 de alcaldes (72,082 %). Solo lugares. Ella lo publica."
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 55,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T10:04:18.115Z",
-   "ultimaPublicacion": "2026-10-05T10:04:18.115Z",
-   "haciendo": {
-    "ts": "2026-10-05T10:04:18.115Z",
-    "texto": "Le pasé a Norma, sin publicar, el intermedio de las 04:52 y el corte de las 04:56: ya van 43 904 de 63 584 actas de gobernador regional contabilizadas. Cambió el primer lugar en once contiendas en total (sugiero Inchupal"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Rosita",
