@@ -1,69 +1,131 @@
 {
- "total": 107,
+ "total": 111,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · UCAYALI",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (202,002) no coincide con totalVotosValidos (198,802). Diferencia: +3,200.",
+   "detalle": "La suma de votos de las organizaciones (202,354) no coincide con totalVotosValidos (202,002). Diferencia: +352.",
    "valores": {
-    "suma_participantes": 202002,
-    "totalVotosValidos": 198802
+    "suma_participantes": 202354,
+    "totalVotosValidos": 202002
    }
   },
   {
    "tipo": "porcentaje",
    "ambito": "Elecciones Regionales · UCAYALI",
    "severidad": "revisar",
-   "detalle": "FUERZA POPULAR: ONPE publica 10.586% y el cálculo da 10.756%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.264% y el cálculo da 35.326%.",
    "valores": {
-    "votos": 21383,
-    "pct_onpe": 10.586,
-    "pct_calculado": 10.756
+    "votos": 71359,
+    "pct_onpe": 35.264,
+    "pct_calculado": 35.326
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (277,573) no coincide con totalVotosValidos (274,442). Diferencia: +3,131.",
+   "valores": {
+    "suma_participantes": 277573,
+    "totalVotosValidos": 274442
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · UCAYALI",
+   "ambito": "Elecciones Regionales · LORETO",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 11.515% y el cálculo da 11.701%.",
+   "detalle": "FUERZA POPULAR: ONPE publica 8.934% y el cálculo da 9.035%.",
    "valores": {
-    "votos": 23261,
-    "pct_onpe": 11.515,
-    "pct_calculado": 11.701
+    "votos": 24797,
+    "pct_onpe": 8.934,
+    "pct_calculado": 9.035
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · UCAYALI",
+   "ambito": "Elecciones Regionales · LORETO",
    "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 16.341% y el cálculo da 16.604%.",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 9.034% y el cálculo da 9.137%.",
    "valores": {
-    "votos": 33009,
-    "pct_onpe": 16.341,
-    "pct_calculado": 16.604
+    "votos": 25076,
+    "pct_onpe": 9.034,
+    "pct_calculado": 9.137
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · UCAYALI",
+   "ambito": "Elecciones Regionales · LORETO",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 20.866% y el cálculo da 21.202%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 15.227% y el cálculo da 15.400%.",
    "valores": {
-    "votos": 42150,
-    "pct_onpe": 20.866,
-    "pct_calculado": 21.202
+    "votos": 42265,
+    "pct_onpe": 15.227,
+    "pct_calculado": 15.4
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · UCAYALI",
+   "ambito": "Elecciones Regionales · LORETO",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.263% y el cálculo da 35.831%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 23.983% y el cálculo da 24.256%.",
    "valores": {
-    "votos": 71232,
-    "pct_onpe": 35.263,
-    "pct_calculado": 35.831
+    "votos": 66569,
+    "pct_onpe": 23.983,
+    "pct_calculado": 24.256
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 28.298% y el cálculo da 28.621%.",
+   "valores": {
+    "votos": 78548,
+    "pct_onpe": 28.298,
+    "pct_calculado": 28.621
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · MADRE DE DIOS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (69,057) no coincide con totalVotosValidos (68,911). Diferencia: +146.",
+   "valores": {
+    "suma_participantes": 69057,
+    "totalVotosValidos": 68911
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · MADRE DE DIOS",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 37.362% y el cálculo da 37.441%.",
+   "valores": {
+    "votos": 25801,
+    "pct_onpe": 37.362,
+    "pct_calculado": 37.441
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PIURA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (870,698) no coincide con totalVotosValidos (868,651). Diferencia: +2,047.",
+   "valores": {
+    "suma_participantes": 870698,
+    "totalVotosValidos": 868651
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · PUNO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (677,397) no coincide con totalVotosValidos (676,996). Diferencia: +401.",
+   "valores": {
+    "suma_participantes": 677397,
+    "totalVotosValidos": 676996
    }
   },
   {
@@ -453,27 +515,6 @@
     "votos": 2094,
     "pct_onpe": 37.832,
     "pct_calculado": 47.194
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (91,978) no coincide con totalVotosValidos (91,773). Diferencia: +205.",
-   "valores": {
-    "suma_participantes": 91978,
-    "totalVotosValidos": 91773
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · CAJAMARCA / JAÉN",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 32.178% y el cálculo da 32.250%.",
-   "valores": {
-    "votos": 29597,
-    "pct_onpe": 32.178,
-    "pct_calculado": 32.25
    }
   },
   {
