@@ -1,5 +1,5 @@
 {
- "total": 164,
+ "total": 176,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -1769,22 +1769,154 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / EL AGUSTINO",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (453) no coincide con totalVotosValidos (0). Diferencia: +453.",
-   "valores": {
-    "suma_participantes": 453,
-    "totalVotosValidos": 0
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
    "severidad": "revisar",
    "detalle": "La suma de votos de las organizaciones (186) no coincide con totalVotosValidos (0). Diferencia: +186.",
    "valores": {
     "suma_participantes": 186,
     "totalVotosValidos": 0
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (3,073) no coincide con totalVotosValidos (2,725). Diferencia: +348.",
+   "valores": {
+    "suma_participantes": 3073,
+    "totalVotosValidos": 2725
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POPULAR CRISTIANO - PPC: ONPE publica 0.488% y el cálculo da 0.550%.",
+   "valores": {
+    "votos": 15,
+    "pct_onpe": 0.488,
+    "pct_calculado": 0.55
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "JUNTOS POR EL PERÚ: ONPE publica 0.553% y el cálculo da 0.624%.",
+   "valores": {
+    "votos": 17,
+    "pct_onpe": 0.553,
+    "pct_calculado": 0.624
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "PARTIDO APRISTA PERUANO: ONPE publica 0.553% y el cálculo da 0.624%.",
+   "valores": {
+    "votos": 17,
+    "pct_onpe": 0.553,
+    "pct_calculado": 0.624
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 0.748% y el cálculo da 0.844%.",
+   "valores": {
+    "votos": 23,
+    "pct_onpe": 0.748,
+    "pct_calculado": 0.844
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "PARTIDO MORADO: ONPE publica 0.879% y el cálculo da 0.991%.",
+   "valores": {
+    "votos": 27,
+    "pct_onpe": 0.879,
+    "pct_calculado": 0.991
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 1.432% y el cálculo da 1.615%.",
+   "valores": {
+    "votos": 44,
+    "pct_onpe": 1.432,
+    "pct_calculado": 1.615
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 1.595% y el cálculo da 1.798%.",
+   "valores": {
+    "votos": 49,
+    "pct_onpe": 1.595,
+    "pct_calculado": 1.798
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 1.692% y el cálculo da 1.908%.",
+   "valores": {
+    "votos": 52,
+    "pct_onpe": 1.692,
+    "pct_calculado": 1.908
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 2.148% y el cálculo da 2.422%.",
+   "valores": {
+    "votos": 66,
+    "pct_onpe": 2.148,
+    "pct_calculado": 2.422
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL: ONPE publica 25.285% y el cálculo da 28.514%.",
+   "valores": {
+    "votos": 777,
+    "pct_onpe": 25.285,
+    "pct_calculado": 28.514
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 25.74% y el cálculo da 29.028%.",
+   "valores": {
+    "votos": 791,
+    "pct_onpe": 25.74,
+    "pct_calculado": 29.028
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LIMA / LIMA / MIRAFLORES",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 36.935% y el cálculo da 41.651%.",
+   "valores": {
+    "votos": 1135,
+    "pct_onpe": 36.935,
+    "pct_calculado": 41.651
    }
   }
  ]

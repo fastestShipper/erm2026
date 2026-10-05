@@ -48,110 +48,38 @@
  ],
  "agentes": [
   {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "agente": "Charo",
+   "bot": "Tablero",
+   "puesto": "Diseñadora del tablero",
+   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
-   "inicio": "06:00",
+   "inicio": "05:40",
    "estado": "activo",
-   "publicaciones": 10,
+   "publicaciones": 3,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:04:41.146Z",
-   "ultimaPublicacion": "2026-10-05T01:04:41.146Z",
+   "ultimaActividad": "2026-10-05T01:06:31.846Z",
+   "ultimaPublicacion": "2026-10-05T01:06:19.571Z",
    "haciendo": {
-    "ts": "2026-10-05T01:04:41.146Z",
-    "texto": "Pasé a Norma el corte de las 19:58 y no lo publiqué. El portal sigue en Próximamente y la API de X sigue sin créditos."
+    "ts": "2026-10-05T01:06:19.571Z",
+    "texto": "[INFO] A las 20:05, hora de Lima, el tablero [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) muestra el corte de la ONPE de las 19:58. La tarjeta «Observaciones» dice 138 diferencias por mirar y el boletín de esa"
    },
-   "silencioMaximoMin": 45
+   "silencioMaximoMin": 150
   },
   {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
-   "inicio": "06:05",
+   "inicio": "06:27",
    "estado": "activo",
-   "publicaciones": 48,
+   "publicaciones": 18,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:04:28.865Z",
-   "ultimaPublicacion": "2026-10-05T01:04:14.733Z",
+   "ultimaActividad": "2026-10-05T01:05:50.875Z",
+   "ultimaPublicacion": "2026-10-05T01:05:50.875Z",
    "haciendo": {
-    "ts": "2026-10-05T01:04:14.733Z",
-    "texto": "Reviso la lista cerrada de X y el corte ONPE para la ronda 20:00."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 48,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:04:08.899Z",
-   "ultimaPublicacion": "2026-10-05T01:04:08.899Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:04:08.899Z",
-    "texto": "Pasé a Norma, sin publicar, una nota de Panamericana de las 20:02 que da un gobernador virtual del Callao según resultados preliminares que no atribuye a nadie. El corte ONPE de las 19:58 tiene 138 de 63.584 actas de gob"
-   },
-   "silencioMaximoMin": 45
-  },
-  {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "activo",
-   "publicaciones": 11,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:04:15.555Z",
-   "ultimaPublicacion": "2026-10-05T00:53:22.827Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:53:22.827Z",
-    "texto": "Municipal provincial volvió a moverse. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 07:46:00 p. m., hay 34 actas contabilizada"
-   },
-   "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 23,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:04:18.862Z",
-   "ultimaPublicacion": "2026-10-05T00:52:41.526Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:52:41.526Z",
-    "texto": "[DATO ONPE] En el corte de las 19:46, la fuente dice: «Cambió el primer lugar en 1 contienda: San Martín, gobernador regional». El detalle pasa ese primer lugar a Avanza País, candidato Maximo Oscar Cabrera Cabrera. No t"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 32,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:09:20.119Z",
-   "ultimaPublicacion": "2026-10-05T00:09:20.119Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:09:20.119Z",
-    "texto": "La tarjeta de las 19:00 ya estaba entregada con esas cifras. No saqué otra igual y no se publicó."
+    "ts": "2026-10-05T01:05:50.875Z",
+    "texto": "La ronda de las 20:00 ya quedó con Norma: la nota de Panamericana no lleva otra línea y no hay incidente nuevo."
    },
    "silencioMaximoMin": 75
   },
@@ -162,16 +90,124 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "cumpliendo",
-   "publicaciones": 23,
+   "estado": "activo",
+   "publicaciones": 22,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:09:05.383Z",
-   "ultimaPublicacion": "2026-10-05T00:09:04.813Z",
+   "ultimaActividad": "2026-10-05T01:05:45.645Z",
+   "ultimaPublicacion": "2026-10-05T01:05:45.645Z",
    "haciendo": {
-    "ts": "2026-10-05T00:09:04.813Z",
-    "texto": "[BITÁCORA] 19:00 h Lima. El corte de las 19:00, generado a las 19:05, tiene 4 actas de 63 584 en gobernador regional, el 0,006 %. En alcalde provincial y en alcalde distrital van 0 de 89 935. Son actas, no votos. [Corte "
+    "ts": "2026-10-05T01:05:45.645Z",
+    "texto": "En el corte de las 19:51 cambió el primer lugar en Junín y en Ayacucho. No es un ganador y no hay cifra de votos."
    },
    "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 32,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:05:20.640Z",
+   "ultimaPublicacion": "2026-10-05T01:05:20.640Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:05:20.640Z",
+    "texto": "La tarjeta de las 20:00 ya estaba entregada con el corte de las 19:58. No saqué otra."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 45,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:05:19.342Z",
+   "ultimaPublicacion": "2026-10-05T01:05:19.342Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:05:19.342Z",
+    "texto": "Norma ya tiene el 19:58 en el tablero; no repito esas cifras."
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 21,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:06:31.872Z",
+   "ultimaPublicacion": "2026-10-05T01:05:12.080Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:05:12.080Z",
+    "texto": "[ENGAÑOSO] La República, Santiago de Surco, ficha de las 19:50. El titular presenta a un virtual alcalde según un conteo rápido de Datum y el cuerpo dice que es una encuesta a boca de urna. El corte nacional de las 19:58"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 12,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:04:56.496Z",
+   "ultimaPublicacion": "2026-10-05T01:04:56.496Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:04:56.496Z",
+    "texto": "En la ronda de las 20:00 la pantalla sí se movió. En [Toño de la ONPE](https://resultadoelectoral.onpe.gob.pe/main/actas), alcance LIMA / LIMA / DISTRITO, actualizado al 4 de octubre a las 07:58:00 p. m., hay 64 actas co"
+   },
+   "silencioMaximoMin": 30
+  },
+  {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 10,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:05:15.110Z",
+   "ultimaPublicacion": "2026-10-05T01:04:41.146Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:04:41.146Z",
+    "texto": "Pasé a Norma el corte de las 19:58 y no lo publiqué. El portal sigue en Próximamente y la API de X sigue sin créditos."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 46,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:05:12.929Z",
+   "ultimaPublicacion": "2026-10-05T01:04:08.899Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:04:08.899Z",
+    "texto": "Pasé a Norma, sin publicar, una nota de Panamericana de las 20:02 que da un gobernador virtual del Callao según resultados preliminares que no atribuye a nadie. El corte ONPE de las 19:58 tiene 138 de 63.584 actas de gob"
+   },
+   "silencioMaximoMin": 45
   },
   {
    "agente": "Kike",
@@ -190,42 +226,6 @@
     "texto": "Barrido 19:00 en marcha (solo web; X sin créditos)."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Charo",
-   "bot": "Tablero",
-   "puesto": "Diseñadora del tablero",
-   "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
-   "nuevo": false,
-   "inicio": "05:40",
-   "estado": "cumpliendo",
-   "publicaciones": 2,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-04T23:42:05.015Z",
-   "ultimaPublicacion": "2026-10-04T23:41:42.649Z",
-   "haciendo": {
-    "ts": "2026-10-04T23:41:42.649Z",
-    "texto": "[INFO] La revisión de las 18:40, hora de Lima, del 4 de octubre de 2026 no pudo leer el tablero https://peruvian.dev/dataonpe/ porque la conexión segura se cortó al abrirla. En esta ronda no hubo comparación de cifras co"
-   },
-   "silencioMaximoMin": 150
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "cumpliendo",
-   "publicaciones": 3,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:08:52.907Z",
-   "ultimaPublicacion": "2026-10-04T22:41:41.673Z",
-   "haciendo": {
-    "ts": "2026-10-04T22:41:41.673Z",
-    "texto": "La nota de Gestión de las 17:26 sale como [ENGAÑOSO]. La otra ya estaba cerrada y no se repite."
-   },
-   "silencioMaximoMin": 75
   }
  ]
 }
