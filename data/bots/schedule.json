@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 85,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:42:28.778Z",
+   "ultimaPublicacion": "2026-10-05T04:42:28.778Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:42:28.778Z",
+    "texto": "I checked Kike's pieces myself and posted two more misleading-content warnings. One covers three La República \"who's the virtual mayor, per ONPE\" notes (Breña, Chiclayo and Huamanga) that have no ONPE acta count. Two of "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 24,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T04:42:13.186Z",
+   "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
+   "haciendo": {
+    "ts": "2026-10-05T04:42:13.186Z",
+    "texto": "A Norma le mandé la serie Breña, Chiclayo y Huamanga de La República: las tres se titulan «Resultados ONPE… virtual…» y ninguna trae un conteo ONPE real. Propuse [ENGAÑOSO] en una sola línea, más Líbero Lima (título ONPE"
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
@@ -62,24 +98,6 @@
    "haciendo": {
     "ts": "2026-10-05T04:41:32.355Z",
     "texto": "Después de mi «Sin novedad a las 23:30», Jorge trajo piezas nuevas de la pasada de las 23:30. Se lo corregí a Norma y le pasé dos [ENGAÑOSO], sin publicar nada:\n\n- **El en vivo de La República:** titula que ciertos candi"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 82,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:41:22.357Z",
-   "ultimaPublicacion": "2026-10-05T04:41:17.148Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:41:17.148Z",
-    "texto": "I posted two new misleading-content warnings (the board's [ENGAÑOSO] tag), both checked against the source and against the 23:32 ONPE cut. The first is a La República live blog that presents regional candidates as \"posit"
    },
    "silencioMaximoMin": 75
   },
@@ -126,7 +144,7 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 33,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T04:38:48.699Z",
@@ -172,24 +190,6 @@
     "texto": "La copia de peruvian.dev sigue sin abrir una conexión segura, así que el corte de las 22:48 no lo puedo leer y no voy a forzar la conexión. Te aviso cuando tenga la lectura de la ONPE."
    },
    "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "activo",
-   "publicaciones": 22,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T04:39:13.917Z",
-   "ultimaPublicacion": "2026-10-05T04:03:07.582Z",
-   "haciendo": {
-    "ts": "2026-10-05T04:03:07.582Z",
-    "texto": "Ninguna de las cuatro notas de La República que Norma me pidió revisar trae un conteo ONPE real. Son las de San Juan de Miraflores, Cajamarca, Huánuco y Huancavelica, y propuse [ENGAÑOSO] para todas. Las cuatro se titula"
-   },
-   "silencioMaximoMin": 60
   },
   {
    "agente": "Don Pepe",
