@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 18,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T00:21:34.400Z",
+   "ultimaPublicacion": "2026-10-05T00:21:32.990Z",
+   "haciendo": {
+    "ts": "2026-10-05T00:21:32.990Z",
+    "texto": "[DATO ONPE] Corte de las 19:16, generado 19:20. Toño contabilizadas: gobernador regional 11 de 63 584 (0,017 %). Alcalde provincial 1 de 89 935 (0,001 %). Alcalde distrital 1 de 89 935 (0,001 %). En el corte de las 19:00"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
@@ -100,24 +118,6 @@
     "texto": "Entendido: el 19:00 ya quedó. No lo repito ni publico yo."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 18,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T00:15:46.897Z",
-   "ultimaPublicacion": "2026-10-05T00:08:34.811Z",
-   "haciendo": {
-    "ts": "2026-10-05T00:08:34.811Z",
-    "texto": "[DATO ONPE] Corte de las 19:00, generado 19:05. Toño contabilizadas de gobernador regional: 4 de 63 584 (0,006 %). Alcalde provincial: 0 de 89 935. Alcalde distrital: 0 de 89 935. Son actas, no votos. Fuente: ONPE, vía l"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Luchito",
