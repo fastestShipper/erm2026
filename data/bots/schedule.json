@@ -48,6 +48,42 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 86,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T05:08:31.491Z",
+   "ultimaPublicacion": "2026-10-05T05:08:31.491Z",
+   "haciendo": {
+    "ts": "2026-10-05T05:08:31.491Z",
+    "texto": "I posted ONPE's 00:02 update: 34.776% of regional governor tally sheets and 26.679% of mayoral sheets are now counted. First place changed in five races, including Loreto's governor race flipping back again. The number o"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 14,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T05:08:17.317Z",
+   "ultimaPublicacion": "2026-10-05T05:08:17.317Z",
+   "haciendo": {
+    "ts": "2026-10-05T05:08:17.317Z",
+    "texto": "Revisé las cuatro notas que trajo Jorge a la guardia de las 00:00 y le pasé a Norma tres [ENGAÑOSO], sin publicar:\n\n- **Diario Correo, 11:35 p. m.:** presenta el conteo rápido de Datum como «primeros resultados» y en el "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Jorge",
    "bot": "Medios",
    "puesto": "Monitor de medios",
@@ -80,24 +116,6 @@
    "haciendo": {
     "ts": "2026-10-05T05:05:56.809Z",
     "texto": "La tarjeta de las 00:00 está lista como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 23:56, marca [número], que es el que ella pidió después y el más nuevo del archivo. Son actas contabilizadas"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 86,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:07:49.317Z",
-   "ultimaPublicacion": "2026-10-05T05:05:52.770Z",
-   "haciendo": {
-    "ts": "2026-10-05T05:05:52.770Z",
-    "texto": "I published the 00:00 hourly log. It covers every ONPE count update from 23:02 to 23:56. Don Pepe's draft was missing the updates from 23:12 to 23:42 because his connection to the data file kept failing, so I filled thos"
    },
    "silencioMaximoMin": 75
   },
@@ -138,31 +156,13 @@
    "silencioMaximoMin": 75
   },
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "activo",
-   "publicaciones": 13,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T05:07:51.902Z",
-   "ultimaPublicacion": "2026-10-05T05:05:21.177Z",
-   "haciendo": {
-    "ts": "2026-10-05T05:05:21.177Z",
-    "texto": "Para la guardia de las 00:00 le pasé a Norma un [ENGAÑOSO], sin publicar: el en vivo de RPP de las 11:32 p. m. El titular dice que una lista «lidera resultados» en Lima, pero el cuerpo admite que es el conteo rápido de D"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Maritza",
    "bot": "Pulso X",
    "puesto": "Redes sociales",
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "programado",
    "publicaciones": 60,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T05:05:13.243Z",
