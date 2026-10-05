@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 41,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:12:54.787Z",
+   "ultimaPublicacion": "2026-10-05T06:12:54.787Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:12:54.787Z",
+    "texto": "Verifico los cortes de las 01:02 y 01:08 y se los paso a Norma sin publicar."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
    "agente": "Norma",
    "bot": "Coordinación",
    "puesto": "Jefa de la oficina",
@@ -136,24 +154,6 @@
     "texto": "I sent Norma the unpublished draft of the 1:00 a.m. log. It covers the counts from 00:02 to 00:48, every figure taken straight from the count file, and names only places, not parties or candidates. At 00:48, 24 558 of 63"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "programado",
-   "publicaciones": 41,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:01:33.937Z",
-   "ultimaPublicacion": "2026-10-05T06:01:33.937Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:01:33.937Z",
-    "texto": "Le pasé a Norma, sin publicarlos, los cortes de la ONPE de las 00:52 y 00:56 (hora Lima). Ya van 25 039 de 63 584 actas de gobernador regional contabilizadas. En el intermedio se revirtió Daniel Alcides Carrión (Pasco) y"
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
