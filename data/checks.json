@@ -1,5 +1,5 @@
 {
- "total": 256,
+ "total": 287,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -2688,100 +2688,433 @@
   },
   {
    "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "ambito": "Elecciones Municipales · alcalde provincial · JUNÍN / HUANCAYO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (105,202) no coincide con totalVotosValidos (103,551). Diferencia: +1,651.",
+   "detalle": "La suma de votos de las organizaciones (308,729) no coincide con totalVotosValidos (308,375). Diferencia: +354.",
    "valores": {
-    "suma_participantes": 105202,
-    "totalVotosValidos": 103551
+    "suma_participantes": 308729,
+    "totalVotosValidos": 308375
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (171,520) no coincide con totalVotosValidos (169,096). Diferencia: +2,424.",
+   "valores": {
+    "suma_participantes": 171520,
+    "totalVotosValidos": 169096
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
    "severidad": "revisar",
-   "detalle": "YO AREQUIPA: ONPE publica 4.32% y el cálculo da 4.389%.",
+   "detalle": "PERÚ MODERNO: ONPE publica 4.756% y el cálculo da 4.824%.",
    "valores": {
-    "votos": 4545,
-    "pct_onpe": 4.32,
-    "pct_calculado": 4.389
+    "votos": 8158,
+    "pct_onpe": 4.756,
+    "pct_calculado": 4.824
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
    "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 4.346% y el cálculo da 4.415%.",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 9.27% y el cálculo da 9.403%.",
    "valores": {
-    "votos": 4572,
-    "pct_onpe": 4.346,
-    "pct_calculado": 4.415
+    "votos": 15900,
+    "pct_onpe": 9.27,
+    "pct_calculado": 9.403
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
    "severidad": "revisar",
-   "detalle": "PARTIDO DEL BUEN GOBIERNO: ONPE publica 5.302% y el cálculo da 5.387%.",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 10.988% y el cálculo da 11.146%.",
    "valores": {
-    "votos": 5578,
-    "pct_onpe": 5.302,
-    "pct_calculado": 5.387
+    "votos": 18847,
+    "pct_onpe": 10.988,
+    "pct_calculado": 11.146
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
    "severidad": "revisar",
-   "detalle": "PRIMERO LA GENTE - COMUNIDAD, ECOLOGÍA, LIBERTAD Y PROGRESO: ONPE publica 6.301% y el cálculo da 6.402%.",
+   "detalle": "FUERZA POPULAR: ONPE publica 12.143% y el cálculo da 12.317%.",
    "valores": {
-    "votos": 6629,
-    "pct_onpe": 6.301,
-    "pct_calculado": 6.402
+    "votos": 20827,
+    "pct_onpe": 12.143,
+    "pct_calculado": 12.317
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
    "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 7.213% y el cálculo da 7.328%.",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 15.873% y el cálculo da 16.101%.",
    "valores": {
-    "votos": 7588,
-    "pct_onpe": 7.213,
-    "pct_calculado": 7.328
+    "votos": 27226,
+    "pct_onpe": 15.873,
+    "pct_calculado": 16.101
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / MAYNAS",
    "severidad": "revisar",
-   "detalle": "MOVIMIENTO REGIONAL AREQUIPA AVANCEMOS: ONPE publica 16.309% y el cálculo da 16.569%.",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 33.891% y el cálculo da 34.376%.",
    "valores": {
-    "votos": 17157,
-    "pct_onpe": 16.309,
-    "pct_calculado": 16.569
+    "votos": 58129,
+    "pct_onpe": 33.891,
+    "pct_calculado": 34.376
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / PUNCHANA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (32,428) no coincide con totalVotosValidos (31,291). Diferencia: +1,137.",
+   "valores": {
+    "suma_participantes": 32428,
+    "totalVotosValidos": 31291
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / PUNCHANA",
    "severidad": "revisar",
-   "detalle": "AHORA NACIÓN - AN: ONPE publica 16.593% y el cálculo da 16.857%.",
+   "detalle": "FE EN EL PERÚ: ONPE publica 1.903% y el cálculo da 1.972%.",
    "valores": {
-    "votos": 17456,
-    "pct_onpe": 16.593,
-    "pct_calculado": 16.857
+    "votos": 617,
+    "pct_onpe": 1.903,
+    "pct_calculado": 1.972
    }
   },
   {
    "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde distrital · AREQUIPA / AREQUIPA / CERRO COLORADO",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / PUNCHANA",
    "severidad": "revisar",
-   "detalle": "FUERZA AREQUIPEÑA: ONPE publica 24.108% y el cálculo da 24.492%.",
+   "detalle": "FRENTE POPULAR AGRÍCOLA FÍA DEL PERÚ: ONPE publica 3.768% y el cálculo da 3.905%.",
    "valores": {
-    "votos": 25362,
-    "pct_onpe": 24.108,
-    "pct_calculado": 24.492
+    "votos": 1222,
+    "pct_onpe": 3.768,
+    "pct_calculado": 3.905
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / PUNCHANA",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 4.243% y el cálculo da 4.397%.",
+   "valores": {
+    "votos": 1376,
+    "pct_onpe": 4.243,
+    "pct_calculado": 4.397
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / PUNCHANA",
+   "severidad": "revisar",
+   "detalle": "PERÚ MODERNO: ONPE publica 5.39% y el cálculo da 5.586%.",
+   "valores": {
+    "votos": 1748,
+    "pct_onpe": 5.39,
+    "pct_calculado": 5.586
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / PUNCHANA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 7.157% y el cálculo da 7.417%.",
+   "valores": {
+    "votos": 2321,
+    "pct_onpe": 7.157,
+    "pct_calculado": 7.417
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / PUNCHANA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 7.278% y el cálculo da 7.542%.",
+   "valores": {
+    "votos": 2360,
+    "pct_onpe": 7.278,
+    "pct_calculado": 7.542
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / PUNCHANA",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 14.515% y el cálculo da 15.043%.",
+   "valores": {
+    "votos": 4707,
+    "pct_onpe": 14.515,
+    "pct_calculado": 15.043
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / PUNCHANA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 16.708% y el cálculo da 17.315%.",
+   "valores": {
+    "votos": 5418,
+    "pct_onpe": 16.708,
+    "pct_calculado": 17.315
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / PUNCHANA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 34.816% y el cálculo da 36.081%.",
+   "valores": {
+    "votos": 11290,
+    "pct_onpe": 34.816,
+    "pct_calculado": 36.081
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / SAN JUAN BAUTISTA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (48,258) no coincide con totalVotosValidos (47,797). Diferencia: +461.",
+   "valores": {
+    "suma_participantes": 48258,
+    "totalVotosValidos": 47797
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / SAN JUAN BAUTISTA",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 6.457% y el cálculo da 6.519%.",
+   "valores": {
+    "votos": 3116,
+    "pct_onpe": 6.457,
+    "pct_calculado": 6.519
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / SAN JUAN BAUTISTA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO PAÍS PARA TODOS: ONPE publica 9.325% y el cálculo da 9.415%.",
+   "valores": {
+    "votos": 4500,
+    "pct_onpe": 9.325,
+    "pct_calculado": 9.415
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / SAN JUAN BAUTISTA",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 10.284% y el cálculo da 10.383%.",
+   "valores": {
+    "votos": 4963,
+    "pct_onpe": 10.284,
+    "pct_calculado": 10.383
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / SAN JUAN BAUTISTA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 14.277% y el cálculo da 14.415%.",
+   "valores": {
+    "votos": 6890,
+    "pct_onpe": 14.277,
+    "pct_calculado": 14.415
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · LORETO / MAYNAS / SAN JUAN BAUTISTA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 45.682% y el cálculo da 46.122%.",
+   "valores": {
+    "votos": 22045,
+    "pct_onpe": 45.682,
+    "pct_calculado": 46.122
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CUSCO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (236,438) no coincide con totalVotosValidos (235,825). Diferencia: +613.",
+   "valores": {
+    "suma_participantes": 236438,
+    "totalVotosValidos": 235825
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · CUSCO / CUSCO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PRIN: ONPE publica 24.889% y el cálculo da 24.954%.",
+   "valores": {
+    "votos": 58848,
+    "pct_onpe": 24.889,
+    "pct_calculado": 24.954
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · UCAYALI / CORONEL PORTILLO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (174,484) no coincide con totalVotosValidos (174,302). Diferencia: +182.",
+   "valores": {
+    "suma_participantes": 174484,
+    "totalVotosValidos": 174302
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (37,519) no coincide con totalVotosValidos (37,274). Diferencia: +245.",
+   "valores": {
+    "suma_participantes": 37519,
+    "totalVotosValidos": 37274
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 11.658% y el cálculo da 11.735%.",
+   "valores": {
+    "votos": 4374,
+    "pct_onpe": 11.658,
+    "pct_calculado": 11.735
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 24.262% y el cálculo da 24.422%.",
+   "valores": {
+    "votos": 9103,
+    "pct_onpe": 24.262,
+    "pct_calculado": 24.422
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / ALTO AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 50.764% y el cálculo da 51.097%.",
+   "valores": {
+    "votos": 19046,
+    "pct_onpe": 50.764,
+    "pct_calculado": 51.097
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / LORETO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (12,314) no coincide con totalVotosValidos (12,156). Diferencia: +158.",
+   "valores": {
+    "suma_participantes": 12314,
+    "totalVotosValidos": 12156
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / LORETO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO POLÍTICO PERÚ PRIMERO: ONPE publica 6.237% y el cálculo da 6.318%.",
+   "valores": {
+    "votos": 768,
+    "pct_onpe": 6.237,
+    "pct_calculado": 6.318
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / LORETO",
+   "severidad": "revisar",
+   "detalle": "PODEMOS PERÚ: ONPE publica 6.472% y el cálculo da 6.556%.",
+   "valores": {
+    "votos": 797,
+    "pct_onpe": 6.472,
+    "pct_calculado": 6.556
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / LORETO",
+   "severidad": "revisar",
+   "detalle": "FUERZA POPULAR: ONPE publica 6.635% y el cálculo da 6.721%.",
+   "valores": {
+    "votos": 817,
+    "pct_onpe": 6.635,
+    "pct_calculado": 6.721
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / LORETO",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 22.389% y el cálculo da 22.680%.",
+   "valores": {
+    "votos": 2757,
+    "pct_onpe": 22.389,
+    "pct_calculado": 22.68
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / LORETO",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 24.582% y el cálculo da 24.901%.",
+   "valores": {
+    "votos": 3027,
+    "pct_onpe": 24.582,
+    "pct_calculado": 24.901
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde provincial · LORETO / LORETO",
+   "severidad": "revisar",
+   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 28.821% y el cálculo da 29.195%.",
+   "valores": {
+    "votos": 3549,
+    "pct_onpe": 28.821,
+    "pct_calculado": 29.195
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (80,240) no coincide con totalVotosValidos (80,058). Diferencia: +182.",
+   "valores": {
+    "suma_participantes": 80240,
+    "totalVotosValidos": 80058
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · UCAYALI / CORONEL PORTILLO / CALLERIA",
+   "severidad": "revisar",
+   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 30.614% y el cálculo da 30.684%.",
+   "valores": {
+    "votos": 24565,
+    "pct_onpe": 30.614,
+    "pct_calculado": 30.684
    }
   }
  ]
