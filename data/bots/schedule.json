@@ -48,20 +48,20 @@
  ],
  "agentes": [
   {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
-   "inicio": "06:27",
+   "inicio": "00:00",
    "estado": "activo",
-   "publicaciones": 36,
+   "publicaciones": 100,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:49.157Z",
-   "ultimaPublicacion": "2026-10-05T13:17:49.157Z",
+   "ultimaActividad": "2026-10-05T13:18:52.286Z",
+   "ultimaPublicacion": "2026-10-05T13:18:48.125Z",
    "haciendo": {
-    "ts": "2026-10-05T13:17:49.157Z",
-    "texto": "Guardia 08:00 cerrada: Sin novedad a Norma. Sin pieza nueva de Maritza, Jorge ni Kike para verificar."
+    "ts": "2026-10-05T13:18:48.125Z",
+    "texto": "08:12 and the bitácora are up."
    },
    "silencioMaximoMin": 75
   },
@@ -75,13 +75,31 @@
    "estado": "activo",
    "publicaciones": 56,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:48.693Z",
-   "ultimaPublicacion": "2026-10-05T13:17:48.693Z",
+   "ultimaActividad": "2026-10-05T13:18:27.946Z",
+   "ultimaPublicacion": "2026-10-05T13:18:27.946Z",
    "haciendo": {
-    "ts": "2026-10-05T13:17:48.693Z",
-    "texto": "El chequeo automático falló; lo retomo yo ahora."
+    "ts": "2026-10-05T13:18:27.946Z",
+    "texto": "Listo: material en manos de Norma; espero su FYI de base."
    },
    "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 53,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:18:13.618Z",
+   "ultimaPublicacion": "2026-10-05T13:18:13.618Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:18:13.618Z",
+    "texto": "La tarjeta de las 08:00 ya estaba armada a las 08:17; no hice otra. Queda como [INTERNO], no la publiqué y ya se la mandé a Norma. Usa el corte de las 08:12, marca [número]. Son actas contabilizadas, no votos. Gobernador"
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Charo",
@@ -93,13 +111,49 @@
    "estado": "activo",
    "publicaciones": 9,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:40.662Z",
+   "ultimaActividad": "2026-10-05T13:18:05.948Z",
    "ultimaPublicacion": "2026-10-05T13:17:40.662Z",
    "haciendo": {
     "ts": "2026-10-05T13:17:40.662Z",
     "texto": "boletines.json is readable; newest cut is 08:12. Waiting on the painted page in the browser to finish the contrast."
    },
    "silencioMaximoMin": 150
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 36,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:18:02.981Z",
+   "ultimaPublicacion": "2026-10-05T13:18:00.040Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:18:00.040Z",
+    "texto": "Confirmado: Maritza sin piezas y Kike aún barre; si llega algo lo verifico."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 33,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T13:17:55.447Z",
+   "ultimaPublicacion": "2026-10-05T13:17:55.447Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:17:55.447Z",
+    "texto": "Listo por ahora; espero su publicación."
+   },
+   "silencioMaximoMin": 75
   },
   {
    "agente": "Toño",
@@ -138,60 +192,6 @@
    "silencioMaximoMin": 60
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 52,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:22.852Z",
-   "ultimaPublicacion": "2026-10-05T13:17:22.852Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:17:22.852Z",
-    "texto": "Releo el boletín y armo la tarjeta de las 08:00 solo como [INTERNO], sin publicarla."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 96,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:50.072Z",
-   "ultimaPublicacion": "2026-10-05T12:50:32.952Z",
-   "haciendo": {
-    "ts": "2026-10-05T12:50:32.952Z",
-    "texto": "[DATO ONPE] Cambios de primer lugar al corte 07:42. Satipo (Junín) provincial: Renovación Popular → APP, Ivan Roger Cisneros Quispe. Marañón (Huánuco) provincial: Perú Primero → País para Todos, Wilder Miguel Cervantes P"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 32,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:50.104Z",
-   "ultimaPublicacion": "2026-10-05T12:23:22.473Z",
-   "haciendo": {
-    "ts": "2026-10-05T12:23:22.473Z",
-    "texto": "Listo por ahora; espero su publicación."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
@@ -201,7 +201,7 @@
    "estado": "activo",
    "publicaciones": 17,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:37.113Z",
+   "ultimaActividad": "2026-10-05T13:18:52.784Z",
    "ultimaPublicacion": "2026-10-05T11:08:17.234Z",
    "haciendo": {
     "ts": "2026-10-05T11:08:17.234Z",
@@ -217,9 +217,9 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 34,
+   "publicaciones": 33,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:23.978Z",
+   "ultimaActividad": "2026-10-05T13:18:04.213Z",
    "ultimaPublicacion": "2026-10-05T11:07:45.406Z",
    "haciendo": {
     "ts": "2026-10-05T11:07:45.406Z",
