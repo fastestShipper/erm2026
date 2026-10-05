@@ -1,59 +1,6 @@
 {
- "total": 67,
+ "total": 72,
  "items": [
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · PIURA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (840,877) no coincide con totalVotosValidos (840,518). Diferencia: +359.",
-   "valores": {
-    "suma_participantes": 840877,
-    "totalVotosValidos": 840518
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · UCAYALI",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (192,183) no coincide con totalVotosValidos (191,391). Diferencia: +792.",
-   "valores": {
-    "suma_participantes": 192183,
-    "totalVotosValidos": 191391
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · UCAYALI",
-   "severidad": "revisar",
-   "detalle": "ACCIÓN POPULAR: ONPE publica 16.74% y el cálculo da 16.810%.",
-   "valores": {
-    "votos": 32172,
-    "pct_onpe": 16.74,
-    "pct_calculado": 16.81
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · UCAYALI",
-   "severidad": "revisar",
-   "detalle": "RENOVACIÓN POPULAR PERÚ: ONPE publica 20.415% y el cálculo da 20.500%.",
-   "valores": {
-    "votos": 39235,
-    "pct_onpe": 20.415,
-    "pct_calculado": 20.5
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · UCAYALI",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 35.267% y el cálculo da 35.413%.",
-   "valores": {
-    "votos": 67777,
-    "pct_onpe": 35.267,
-    "pct_calculado": 35.413
-   }
-  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde provincial · LA LIBERTAD / ASCOPE",
@@ -724,6 +671,114 @@
    "valores": {
     "suma_participantes": 309182,
     "totalVotosValidos": 308986
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (4,130) no coincide con totalVotosValidos (3,738). Diferencia: +392.",
+   "valores": {
+    "suma_participantes": 4130,
+    "totalVotosValidos": 3738
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 18.136% y el cálculo da 20.037%.",
+   "valores": {
+    "votos": 749,
+    "pct_onpe": 18.136,
+    "pct_calculado": 20.037
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 26.368% y el cálculo da 29.133%.",
+   "valores": {
+    "votos": 1089,
+    "pct_onpe": 26.368,
+    "pct_calculado": 29.133
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 55.496% y el cálculo da 61.316%.",
+   "valores": {
+    "votos": 2292,
+    "pct_onpe": 55.496,
+    "pct_calculado": 61.316
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / HAQUIRA",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (3,088) no coincide con totalVotosValidos (1,345). Diferencia: +1,743.",
+   "valores": {
+    "suma_participantes": 3088,
+    "totalVotosValidos": 1345
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / HAQUIRA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA ELECTORAL VENCEREMOS: ONPE publica 2.947% y el cálculo da 6.766%.",
+   "valores": {
+    "votos": 91,
+    "pct_onpe": 2.947,
+    "pct_calculado": 6.766
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / HAQUIRA",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 6.703% y el cálculo da 15.390%.",
+   "valores": {
+    "votos": 207,
+    "pct_onpe": 6.703,
+    "pct_calculado": 15.39
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / HAQUIRA",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 21.794% y el cálculo da 50.037%.",
+   "valores": {
+    "votos": 673,
+    "pct_onpe": 21.794,
+    "pct_calculado": 50.037
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / HAQUIRA",
+   "severidad": "revisar",
+   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 23.867% y el cálculo da 54.796%.",
+   "valores": {
+    "votos": 737,
+    "pct_onpe": 23.867,
+    "pct_calculado": 54.796
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / HAQUIRA",
+   "severidad": "revisar",
+   "detalle": "ACCIÓN POPULAR: ONPE publica 44.689% y el cálculo da 102.602%.",
+   "valores": {
+    "votos": 1380,
+    "pct_onpe": 44.689,
+    "pct_calculado": 102.602
    }
   }
  ]
