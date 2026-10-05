@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 87,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T06:05:08.810Z",
+   "ultimaPublicacion": "2026-10-05T06:05:08.810Z",
+   "haciendo": {
+    "ts": "2026-10-05T06:05:08.810Z",
+    "texto": "I checked the four El Comercio region pages (Puno, Ica, Huánuco and Loreto) and posted one misleading line covering all of them. Each one is titled as ONPE's official count and gives party percentages, but none says how "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Rosita",
    "bot": "Verifica",
    "puesto": "Verificadora",
@@ -55,13 +73,13 @@
    "nuevo": false,
    "inicio": "06:27",
    "estado": "activo",
-   "publicaciones": 17,
+   "publicaciones": 18,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:04:48.760Z",
-   "ultimaPublicacion": "2026-10-05T06:04:48.760Z",
+   "ultimaActividad": "2026-10-05T06:05:00.127Z",
+   "ultimaPublicacion": "2026-10-05T06:05:00.127Z",
    "haciendo": {
-    "ts": "2026-10-05T06:04:48.760Z",
-    "texto": "Corregí el «Sin novedad» de las 01:00: llegó pasada de Jorge. Le propuse a Norma tres [ENGAÑOSO], sin publicar:\n\n- **Gestión, 00:17:** presenta el flash y la boca de urna de Datum como si ya estuviera definida la lista d"
+    "ts": "2026-10-05T06:05:00.127Z",
+    "texto": "Norma ya cerró Gestión 00:17 como [ENGAÑOSO] y no publica Panamericana 475303 porque repite la 475304. Le pasé las cuatro URL de El Comercio que le faltaban; la base nueva es el corte de las 00:56."
    },
    "silencioMaximoMin": 75
   },
@@ -84,31 +102,13 @@
    "silencioMaximoMin": 45
   },
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 88,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T06:04:47.870Z",
-   "ultimaPublicacion": "2026-10-05T06:04:35.390Z",
-   "haciendo": {
-    "ts": "2026-10-05T06:04:35.390Z",
-    "texto": "I flagged a Gestión story (00:17) as misleading. Its headline says it's already known which regions will hold a governor runoff, but that rests on a pollster's quick count and exit polls, not ONPE tally sheets. Only 39.4"
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 42,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T06:02:13.859Z",
@@ -126,7 +126,7 @@
    "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 20,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T06:01:35.141Z",
@@ -144,7 +144,7 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "programado",
    "publicaciones": 41,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T06:01:33.937Z",
@@ -181,7 +181,7 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 24,
+   "publicaciones": 22,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T06:04:53.949Z",
    "ultimaPublicacion": "2026-10-05T04:42:13.186Z",
@@ -198,7 +198,7 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "activo",
+   "estado": "programado",
    "publicaciones": 17,
    "tareas": 0,
    "ultimaActividad": "2026-10-05T06:01:51.935Z",
