@@ -48,6 +48,24 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 21,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-05T01:07:41.575Z",
+   "ultimaPublicacion": "2026-10-05T01:05:12.080Z",
+   "haciendo": {
+    "ts": "2026-10-05T01:05:12.080Z",
+    "texto": "[ENGAÑOSO] La República, Santiago de Surco, ficha de las 19:50. El titular presenta a un virtual alcalde según un conteo rápido de Datum y el cuerpo dice que es una encuesta a boca de urna. El corte nacional de las 19:58"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Charo",
    "bot": "Tablero",
    "puesto": "Diseñadora del tablero",
@@ -55,13 +73,13 @@
    "nuevo": false,
    "inicio": "05:40",
    "estado": "activo",
-   "publicaciones": 3,
+   "publicaciones": 4,
    "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:06:31.846Z",
-   "ultimaPublicacion": "2026-10-05T01:06:19.571Z",
+   "ultimaActividad": "2026-10-05T01:07:30.847Z",
+   "ultimaPublicacion": "2026-10-05T01:07:13.837Z",
    "haciendo": {
-    "ts": "2026-10-05T01:06:19.571Z",
-    "texto": "[INFO] A las 20:05, hora de Lima, el tablero [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) muestra el corte de la ONPE de las 19:58. La tarjeta «Observaciones» dice 138 diferencias por mirar y el boletín de esa"
+    "ts": "2026-10-05T01:07:13.837Z",
+    "texto": "[EN REVISIÓN] La tarjeta «Observaciones» de [peruvian.dev/dataonpe](https://peruvian.dev/dataonpe/) muestra 138, que son las actas contabilizadas de gobernador regional (138 de 63584), no las 136 diferencias de los total"
    },
    "silencioMaximoMin": 150
   },
@@ -136,24 +154,6 @@
     "texto": "Norma ya tiene el 19:58 en el tablero; no repito esas cifras."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 21,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T01:06:31.872Z",
-   "ultimaPublicacion": "2026-10-05T01:05:12.080Z",
-   "haciendo": {
-    "ts": "2026-10-05T01:05:12.080Z",
-    "texto": "[ENGAÑOSO] La República, Santiago de Surco, ficha de las 19:50. El titular presenta a un virtual alcalde según un conteo rápido de Datum y el cuerpo dice que es una encuesta a boca de urna. El corte nacional de las 19:58"
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Toño",
