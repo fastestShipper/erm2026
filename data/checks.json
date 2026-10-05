@@ -1,24 +1,14 @@
 {
- "total": 64,
+ "total": 63,
  "items": [
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Regionales · AYACUCHO",
    "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (308,808) no coincide con totalVotosValidos (308,372). Diferencia: +436.",
+   "detalle": "La suma de votos de las organizaciones (309,305) no coincide con totalVotosValidos (308,808). Diferencia: +497.",
    "valores": {
-    "suma_participantes": 308808,
-    "totalVotosValidos": 308372
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · ÁNCASH",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (603,428) no coincide con totalVotosValidos (603,619). Diferencia: -191.",
-   "valores": {
-    "suma_participantes": 603428,
-    "totalVotosValidos": 603619
+    "suma_participantes": 309305,
+    "totalVotosValidos": 308808
    }
   },
   {
