@@ -1,5 +1,5 @@
 {
- "total": 63,
+ "total": 66,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -9,6 +9,38 @@
    "valores": {
     "suma_participantes": 326828,
     "totalVotosValidos": 326639
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · APURÍMAC",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (220,664) no coincide con totalVotosValidos (220,271). Diferencia: +393.",
+   "valores": {
+    "suma_participantes": 220664,
+    "totalVotosValidos": 220271
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · APURÍMAC",
+   "severidad": "revisar",
+   "detalle": "PROGRESEMOS: ONPE publica 34.984% y el cálculo da 35.047%.",
+   "valores": {
+    "votos": 77198,
+    "pct_onpe": 34.984,
+    "pct_calculado": 35.047
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · APURÍMAC",
+   "severidad": "revisar",
+   "detalle": "AHORA NACIÓN - AN: ONPE publica 37.784% y el cálculo da 37.852%.",
+   "valores": {
+    "votos": 83376,
+    "pct_onpe": 37.784,
+    "pct_calculado": 37.852
    }
   },
   {
