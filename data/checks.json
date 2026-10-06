@@ -1,6 +1,16 @@
 {
- "total": 62,
+ "total": 63,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (198,230) no coincide con totalVotosValidos (198,049). Diferencia: +181.",
+   "valores": {
+    "suma_participantes": 198230,
+    "totalVotosValidos": 198049
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
