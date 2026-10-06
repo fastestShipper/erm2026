@@ -1,5 +1,5 @@
 {
- "total": 63,
+ "total": 64,
  "items": [
   {
    "tipo": "suma-votos-validos",
@@ -9,6 +9,16 @@
    "valores": {
     "suma_participantes": 326828,
     "totalVotosValidos": 326639
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · AMAZONAS",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (197,457) no coincide con totalVotosValidos (197,365). Diferencia: +92.",
+   "valores": {
+    "suma_participantes": 197457,
+    "totalVotosValidos": 197365
    }
   },
   {
