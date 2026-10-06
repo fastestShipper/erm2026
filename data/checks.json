@@ -1,6 +1,16 @@
 {
- "total": 62,
+ "total": 63,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · JUNÍN",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (667,588) no coincide con totalVotosValidos (666,819). Diferencia: +769.",
+   "valores": {
+    "suma_participantes": 667588,
+    "totalVotosValidos": 666819
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
