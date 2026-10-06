@@ -1,6 +1,27 @@
 {
- "total": 62,
+ "total": 64,
  "items": [
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · AYACUCHO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (312,929) no coincide con totalVotosValidos (312,366). Diferencia: +563.",
+   "valores": {
+    "suma_participantes": 312929,
+    "totalVotosValidos": 312366
+   }
+  },
+  {
+   "tipo": "porcentaje",
+   "ambito": "Elecciones Regionales · AYACUCHO",
+   "severidad": "revisar",
+   "detalle": "LIBERTAD POPULAR: ONPE publica 35.29% y el cálculo da 35.353%.",
+   "valores": {
+    "votos": 110432,
+    "pct_onpe": 35.29,
+    "pct_calculado": 35.353
+   }
+  },
   {
    "tipo": "suma-votos-validos",
    "ambito": "Elecciones Municipales · alcalde distrital · APURÍMAC / COTABAMBAS / COYLLURQUI",
