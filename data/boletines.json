@@ -2,6 +2,69 @@
  "nota": "Boletines generados por programa con los datos oficiales de la ONPE (sin IA). No son proyecciones.",
  "items": [
   {
+   "corte": 1791380161009,
+   "hora": "08:36",
+   "generado": "2026-10-07T08:41:08-05:00",
+   "avance": [
+    {
+     "id": 1,
+     "eleccion": "Gobernador regional",
+     "actasPct": 97.547,
+     "contabilizadas": 62024,
+     "totalActas": 63584,
+     "participacion": 72.683,
+     "antesPct": 97.547
+    },
+    {
+     "id": 302,
+     "eleccion": "Alcalde provincial",
+     "actasPct": 96.05,
+     "contabilizadas": 86383,
+     "totalActas": 89935,
+     "participacion": 72.285,
+     "antesPct": 96.05
+    },
+    {
+     "id": 303,
+     "eleccion": "Alcalde distrital",
+     "actasPct": 95.241,
+     "contabilizadas": 64025,
+     "totalActas": 67224,
+     "participacion": 72.37,
+     "antesPct": 95.241
+    }
+   ],
+   "cambios": [],
+   "cambiosTotal": 0,
+   "firmes": [
+    {
+     "eleccion": "Gobernador regional",
+     "nivel": 1,
+     "firmes": 17,
+     "conDatos": 25
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "nivel": 2,
+     "firmes": 140,
+     "conDatos": 196
+    },
+    {
+     "eleccion": "Alcalde distrital",
+     "nivel": 3,
+     "firmes": 1401,
+     "conDatos": 1689
+    }
+   ],
+   "observaciones": {
+    "totales": 6,
+    "actasRevisadas": 0,
+    "actasImportantes": 0,
+    "actasRevisar": 0
+   },
+   "texto": "Corte ONPE de las 08:36. Actas contadas: Gobernador regional 97.5% · Alcalde provincial 96.0% · Alcalde distrital 95.2%. El primer lugar ya no puede cambiar con las actas que faltan en 17 de 25 regiones, 140 de 196 provincias, 1,401 de 1,689 distritos. Revisión: 6 diferencias en los totales."
+  },
+  {
    "corte": 1791379834480,
    "hora": "08:30",
    "generado": "2026-10-07T08:36:09-05:00",
@@ -22798,57 +22861,6 @@
     "actasRevisar": 0
    },
    "texto": "Corte ONPE de las 19:06. Actas contadas: Gobernador regional 0.0% · Alcalde provincial 0.0% · Alcalde distrital 0.0%. Revisión: una diferencia en los totales."
-  },
-  {
-   "corte": 1791158414875,
-   "hora": "19:00",
-   "generado": "2026-10-04T19:05:45-05:00",
-   "avance": [
-    {
-     "id": 1,
-     "eleccion": "Gobernador regional",
-     "actasPct": 0.006,
-     "contabilizadas": 4,
-     "totalActas": 63584,
-     "participacion": 0.005,
-     "antesPct": 0.0
-    },
-    {
-     "id": 302,
-     "eleccion": "Alcalde provincial",
-     "actasPct": 0.0,
-     "contabilizadas": 0,
-     "totalActas": 89935,
-     "participacion": 0.0,
-     "antesPct": 0.0
-    },
-    {
-     "id": 303,
-     "eleccion": "Alcalde distrital",
-     "actasPct": 0.0,
-     "contabilizadas": 0,
-     "totalActas": 89935,
-     "participacion": 0.0,
-     "antesPct": 0.0
-    }
-   ],
-   "cambios": [],
-   "cambiosTotal": 0,
-   "firmes": [
-    {
-     "eleccion": "Gobernador regional",
-     "nivel": 1,
-     "firmes": 0,
-     "conDatos": 3
-    }
-   ],
-   "observaciones": {
-    "totales": 0,
-    "actasRevisadas": 0,
-    "actasImportantes": 0,
-    "actasRevisar": 0
-   },
-   "texto": "Corte ONPE de las 19:00. Actas contadas: Gobernador regional 0.0% (antes 0.0%) · Alcalde provincial 0.0% · Alcalde distrital 0.0%. Revisión: los totales cuadran."
   }
  ]
 }
