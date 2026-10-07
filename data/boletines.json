@@ -2,6 +2,69 @@
  "nota": "Boletines generados por programa con los datos oficiales de la ONPE (sin IA). No son proyecciones.",
  "items": [
   {
+   "corte": 1791397920930,
+   "hora": "13:32",
+   "generado": "2026-10-07T13:36:08-05:00",
+   "avance": [
+    {
+     "id": 1,
+     "eleccion": "Gobernador regional",
+     "actasPct": 97.584,
+     "contabilizadas": 62048,
+     "totalActas": 63584,
+     "participacion": 72.705,
+     "antesPct": 97.583
+    },
+    {
+     "id": 302,
+     "eleccion": "Alcalde provincial",
+     "actasPct": 96.082,
+     "contabilizadas": 86411,
+     "totalActas": 89935,
+     "participacion": 72.303,
+     "antesPct": 96.082
+    },
+    {
+     "id": 303,
+     "eleccion": "Alcalde distrital",
+     "actasPct": 95.277,
+     "contabilizadas": 64049,
+     "totalActas": 67224,
+     "participacion": 72.391,
+     "antesPct": 95.277
+    }
+   ],
+   "cambios": [],
+   "cambiosTotal": 0,
+   "firmes": [
+    {
+     "eleccion": "Gobernador regional",
+     "nivel": 1,
+     "firmes": 18,
+     "conDatos": 25
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "nivel": 2,
+     "firmes": 141,
+     "conDatos": 196
+    },
+    {
+     "eleccion": "Alcalde distrital",
+     "nivel": 3,
+     "firmes": 1402,
+     "conDatos": 1689
+    }
+   ],
+   "observaciones": {
+    "totales": 6,
+    "actasRevisadas": 0,
+    "actasImportantes": 0,
+    "actasRevisar": 0
+   },
+   "texto": "Corte ONPE de las 13:32. Actas contadas: Gobernador regional 97.6% (antes 97.6%) · Alcalde provincial 96.1% · Alcalde distrital 95.3%. El primer lugar ya no puede cambiar con las actas que faltan en 18 de 25 regiones, 141 de 196 provincias, 1,402 de 1,689 distritos. Revisión: 6 diferencias en los totales."
+  },
+  {
    "corte": 1791397560608,
    "hora": "13:26",
    "generado": "2026-10-07T13:31:09-05:00",
@@ -21870,105 +21933,6 @@
     "actasRevisar": 0
    },
    "texto": "Corte ONPE de las 00:08. Actas contadas: Gobernador regional 35.2% (antes 34.8%) · Alcalde provincial 27.4% (antes 26.7%) · Alcalde distrital 27.4% (antes 26.7%). Cambió el primer lugar en 2 contiendas: Villa María del Triunfo (Lima), alcalde distrital; Chota (Cajamarca), alcalde provincial. El primer lugar ya no puede cambiar con las actas que faltan en 19 de 360 distritos. Revisión: 674 diferencias en los totales."
-  },
-  {
-   "corte": 1791176529261,
-   "hora": "00:02",
-   "generado": "2026-10-05T00:05:45-05:00",
-   "avance": [
-    {
-     "id": 1,
-     "eleccion": "Gobernador regional",
-     "actasPct": 34.776,
-     "contabilizadas": 22112,
-     "totalActas": 63584,
-     "participacion": 26.749,
-     "antesPct": 34.265
-    },
-    {
-     "id": 302,
-     "eleccion": "Alcalde provincial",
-     "actasPct": 26.679,
-     "contabilizadas": 23994,
-     "totalActas": 89935,
-     "participacion": 20.461,
-     "antesPct": 25.788
-    },
-    {
-     "id": 303,
-     "eleccion": "Alcalde distrital",
-     "actasPct": 26.679,
-     "contabilizadas": 23994,
-     "totalActas": 89935,
-     "participacion": 20.461,
-     "antesPct": 25.788
-    }
-   ],
-   "cambios": [
-    {
-     "eleccion": "Gobernador regional",
-     "lugar": "Loreto",
-     "antes": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-     "ahora": "ALIANZA PARA EL PROGRESO",
-     "candidato": "FERNANDO MELENDEZ CELIS"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Bagua (Amazonas)",
-     "antes": "JUNTOS POR EL PERÚ",
-     "ahora": "ALIANZA PARA EL PROGRESO",
-     "candidato": "NILTON RAMOS BECERRA"
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "lugar": "Sapallanga (Huancayo)",
-     "antes": "ALIANZA PARA EL PROGRESO",
-     "ahora": "PODEMOS PERÚ",
-     "candidato": "EMERSON NOLASCO DELGADO"
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "lugar": "Quilcas (Huancayo)",
-     "antes": "ALIANZA PARA EL PROGRESO",
-     "ahora": "PROGRESEMOS",
-     "candidato": "PAULO CESAR BELTRAN PONCE"
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "lugar": "Huaricolca (Tarma)",
-     "antes": "ALIANZA PARA EL PROGRESO",
-     "ahora": "RENOVACIÓN POPULAR PERÚ",
-     "candidato": "JOSE LUIS DAMIAN ZARATE"
-    }
-   ],
-   "cambiosTotal": 5,
-   "firmes": [
-    {
-     "eleccion": "Gobernador regional",
-     "nivel": 1,
-     "firmes": 0,
-     "conDatos": 25
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "nivel": 2,
-     "firmes": 0,
-     "conDatos": 129
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "nivel": 3,
-     "firmes": 18,
-     "conDatos": 352
-    }
-   ],
-   "observaciones": {
-    "totales": 767,
-    "actasRevisadas": 0,
-    "actasImportantes": 0,
-    "actasRevisar": 0
-   },
-   "texto": "Corte ONPE de las 00:02. Actas contadas: Gobernador regional 34.8% (antes 34.3%) · Alcalde provincial 26.7% (antes 25.8%) · Alcalde distrital 26.7% (antes 25.8%). Cambió el primer lugar en 5 contiendas: Loreto, gobernador regional; Bagua (Amazonas), alcalde provincial; Sapallanga (Huancayo), alcalde distrital; Quilcas (Huancayo), alcalde distrital; y 1 más. El primer lugar ya no puede cambiar con las actas que faltan en 18 de 352 distritos. Revisión: 767 diferencias en los totales."
   }
  ]
 }
