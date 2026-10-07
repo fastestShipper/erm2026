@@ -2,6 +2,69 @@
  "nota": "Boletines generados por programa con los datos oficiales de la ONPE (sin IA). No son proyecciones.",
  "items": [
   {
+   "corte": 1791403320247,
+   "hora": "15:02",
+   "generado": "2026-10-07T15:06:06-05:00",
+   "avance": [
+    {
+     "id": 1,
+     "eleccion": "Gobernador regional",
+     "actasPct": 97.586,
+     "contabilizadas": 62049,
+     "totalActas": 63584,
+     "participacion": 72.707,
+     "antesPct": 97.586
+    },
+    {
+     "id": 302,
+     "eleccion": "Alcalde provincial",
+     "actasPct": 96.082,
+     "contabilizadas": 86411,
+     "totalActas": 89935,
+     "participacion": 72.303,
+     "antesPct": 96.082
+    },
+    {
+     "id": 303,
+     "eleccion": "Alcalde distrital",
+     "actasPct": 95.277,
+     "contabilizadas": 64049,
+     "totalActas": 67224,
+     "participacion": 72.391,
+     "antesPct": 95.277
+    }
+   ],
+   "cambios": [],
+   "cambiosTotal": 0,
+   "firmes": [
+    {
+     "eleccion": "Gobernador regional",
+     "nivel": 1,
+     "firmes": 18,
+     "conDatos": 25
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "nivel": 2,
+     "firmes": 141,
+     "conDatos": 196
+    },
+    {
+     "eleccion": "Alcalde distrital",
+     "nivel": 3,
+     "firmes": 1402,
+     "conDatos": 1689
+    }
+   ],
+   "observaciones": {
+    "totales": 6,
+    "actasRevisadas": 0,
+    "actasImportantes": 0,
+    "actasRevisar": 0
+   },
+   "texto": "Corte ONPE de las 15:02. Actas contadas: Gobernador regional 97.6% · Alcalde provincial 96.1% · Alcalde distrital 95.3%. El primer lugar ya no puede cambiar con las actas que faltan en 18 de 25 regiones, 141 de 196 provincias, 1,402 de 1,689 distritos. Revisión: 6 diferencias en los totales."
+  },
+  {
    "corte": 1791402960318,
    "hora": "14:56",
    "generado": "2026-10-07T15:01:07-05:00",
@@ -21411,154 +21474,6 @@
     "actasRevisar": 0
    },
    "texto": "Corte ONPE de las 01:46. Actas contadas: Gobernador regional 43.4% (antes 43.0%) · Alcalde provincial 41.6% (antes 40.9%) · Alcalde distrital 41.6% (antes 40.9%). Cambió el primer lugar en 3 contiendas: Oxapampa (Pasco), alcalde provincial; Lampa (Puno), alcalde provincial; Anta (Acobamba), alcalde distrital. El primer lugar ya no puede cambiar con las actas que faltan en 76 de 640 distritos. Revisión: 720 diferencias en los totales."
-  },
-  {
-   "corte": 1791182526654,
-   "hora": "01:42",
-   "generado": "2026-10-05T01:45:55-05:00",
-   "avance": [
-    {
-     "id": 1,
-     "eleccion": "Gobernador regional",
-     "actasPct": 43.011,
-     "contabilizadas": 27348,
-     "totalActas": 63584,
-     "participacion": 32.816,
-     "antesPct": 41.764
-    },
-    {
-     "id": 302,
-     "eleccion": "Alcalde provincial",
-     "actasPct": 40.934,
-     "contabilizadas": 36814,
-     "totalActas": 89935,
-     "participacion": 31.32,
-     "antesPct": 39.026
-    },
-    {
-     "id": 303,
-     "eleccion": "Alcalde distrital",
-     "actasPct": 40.934,
-     "contabilizadas": 36814,
-     "totalActas": 89935,
-     "participacion": 31.32,
-     "antesPct": 39.026
-    }
-   ],
-   "cambios": [
-    {
-     "eleccion": "Gobernador regional",
-     "lugar": "Huancavelica",
-     "antes": "PARTIDO POLÍTICO PERÚ PRIMERO",
-     "ahora": "ALIANZA PARA EL PROGRESO",
-     "candidato": "JUAN CARLOS COMUN GAVILAN"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Huarochirí (Lima)",
-     "antes": "ACCIÓN POPULAR",
-     "ahora": "APP - LA CHOLITA",
-     "candidato": "RAFAEL GABRIEL TOLENTINO CARLOS"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Tarma (Junín)",
-     "antes": "RENOVACIÓN POPULAR PERÚ",
-     "ahora": "PODEMOS PERÚ",
-     "candidato": "JOSE CARLOS AGUILAR BERNARDILLO"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "San Marcos (Cajamarca)",
-     "antes": "PARTIDO POLÍTICO PERÚ PRIMERO",
-     "ahora": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-     "candidato": "CARLOS WILLAN ACOSTA ENCO"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Santiago de Chuco (La Libertad)",
-     "antes": "PODEMOS PERÚ",
-     "ahora": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-     "candidato": "JUAN ALBERTO GABRIEL ALIPIO"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Santa Cruz (Cajamarca)",
-     "antes": "ALIANZA PARA EL PROGRESO",
-     "ahora": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-     "candidato": "PEPE ALARCON VASQUEZ"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Dos de Mayo (Huánuco)",
-     "antes": "PARTIDO POLÍTICO PERÚ PRIMERO",
-     "ahora": "PARTIDO PAÍS PARA TODOS",
-     "candidato": "LUCIO PAJUELO GODOY"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Oyón (Lima)",
-     "antes": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-     "ahora": "PARTIDO APRISTA PERUANO",
-     "candidato": "EDGARDO HUARAZ UGARTE"
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "lugar": "Llapa (San Miguel)",
-     "antes": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-     "ahora": "PARTIDO POLÍTICO PERÚ PRIMERO",
-     "candidato": "EMILIO JAMES CUEVA MENDOZA"
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "lugar": "Tongod (San Miguel)",
-     "antes": "ALIANZA PARA EL PROGRESO",
-     "ahora": "MOVIMIENTO POLITICO REGIONAL CAJAMARCA RENACE",
-     "candidato": "NIXON HENRY HOYOS GALLARDO"
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "lugar": "San Pedro (Lucanas)",
-     "antes": "APP - TRABAJA AYACUCHO",
-     "ahora": "LIBERTAD POPULAR",
-     "candidato": "IVAN ERASMO GARCIA ROJAS"
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "lugar": "Lucanas (Lucanas)",
-     "antes": "APP - TRABAJA AYACUCHO",
-     "ahora": "AHORA NACIÓN - AN",
-     "candidato": "WALTER VICTOR CHIPANA BAUTISTA"
-    }
-   ],
-   "cambiosTotal": 12,
-   "firmes": [
-    {
-     "eleccion": "Gobernador regional",
-     "nivel": 1,
-     "firmes": 0,
-     "conDatos": 25
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "nivel": 2,
-     "firmes": 0,
-     "conDatos": 158
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "nivel": 3,
-     "firmes": 69,
-     "conDatos": 625
-    }
-   ],
-   "observaciones": {
-    "totales": 728,
-    "actasRevisadas": 0,
-    "actasImportantes": 0,
-    "actasRevisar": 0
-   },
-   "texto": "Corte ONPE de las 01:42. Actas contadas: Gobernador regional 43.0% (antes 41.8%) · Alcalde provincial 40.9% (antes 39.0%) · Alcalde distrital 40.9% (antes 39.0%). Cambió el primer lugar en 12 contiendas: Huancavelica, gobernador regional; Huarochirí (Lima), alcalde provincial; Tarma (Junín), alcalde provincial; San Marcos (Cajamarca), alcalde provincial; y 8 más. El primer lugar ya no puede cambiar con las actas que faltan en 69 de 625 distritos. Revisión: 728 diferencias en los totales."
   }
  ]
 }
