@@ -48,6 +48,60 @@
  ],
  "agentes": [
   {
+   "agente": "Kike",
+   "bot": "Desinfo",
+   "puesto": "Cazador de bulos",
+   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 12,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-07T20:12:17.553Z",
+   "ultimaPublicacion": "2026-10-07T20:12:17.553Z",
+   "haciendo": {
+    "ts": "2026-10-07T20:12:17.553Z",
+    "texto": "I've stopped the ERM 2026 disinformation monitoring. Nothing was still running, I didn't have any routines of my own to pause or delete, and I won't publish anything else. I left a wrap-up file at `[archivo interno] It h"
+   },
+   "silencioMaximoMin": 60
+  },
+  {
+   "agente": "Jorge",
+   "bot": "Medios",
+   "puesto": "Monitor de medios",
+   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
+   "nuevo": false,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 30,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-07T20:11:59.572Z",
+   "ultimaPublicacion": "2026-10-07T20:11:59.572Z",
+   "haciendo": {
+    "ts": "2026-10-07T20:11:59.572Z",
+    "texto": "Paré todo el monitoreo de medios de las ERM 2026. No quedaba ninguna tarea corriendo ni ninguna rutina de las ERM, porque la de vigilancia ya la había borrado el 4 de octubre, y no voy a publicar nada más. Todos los arch"
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Maritza",
+   "bot": "Pulso X",
+   "puesto": "Redes sociales",
+   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
+   "nuevo": false,
+   "inicio": "06:05",
+   "estado": "activo",
+   "publicaciones": 50,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-07T20:11:58.389Z",
+   "ultimaPublicacion": "2026-10-07T20:11:58.389Z",
+   "haciendo": {
+    "ts": "2026-10-07T20:11:58.389Z",
+    "texto": "Norma me pasó que cancelaste ERM 2026. De mi lado no queda nada corriendo: la vigilancia de X ya estaba parada porque X no tiene créditos, y mi única rutina de ERM sigue pausada desde el 4 de octubre. No tengo archivos p"
+   },
+   "silencioMaximoMin": 60
+  },
+  {
    "agente": "Luchito",
    "bot": "Datos ONPE",
    "puesto": "Analista de datos",
@@ -55,13 +109,13 @@
    "nuevo": false,
    "inicio": "06:00",
    "estado": "activo",
-   "publicaciones": 50,
+   "publicaciones": 49,
    "tareas": 0,
    "ultimaActividad": "2026-10-07T20:11:57.156Z",
-   "ultimaPublicacion": "2026-10-05T13:47:12.746Z",
+   "ultimaPublicacion": "2026-10-07T20:11:57.156Z",
    "haciendo": {
-    "ts": "2026-10-05T13:47:12.746Z",
-    "texto": "Listo."
+    "ts": "2026-10-07T20:11:57.156Z",
+    "texto": "Ya paré todo lo de ERM 2026. No me queda ninguna rutina ni lectura de `boletines.json` corriendo, y no voy a pasarle más cortes a Norma. Dejé en `[archivo interno] la última copia del archivo (la de las 12:45 de hoy, hor"
    },
    "silencioMaximoMin": 45
   },
@@ -76,10 +130,10 @@
    "publicaciones": 29,
    "tareas": 0,
    "ultimaActividad": "2026-10-07T20:11:56.689Z",
-   "ultimaPublicacion": "2026-10-05T13:49:02.286Z",
+   "ultimaPublicacion": "2026-10-07T20:11:56.689Z",
    "haciendo": {
-    "ts": "2026-10-05T13:49:02.286Z",
-    "texto": "Le respondí a Norma: sin novedad a las 08:30. Maritza, Jorge y Kike no trajeron pieza nueva; X sigue sin créditos. Última franja cerrada."
+    "ts": "2026-10-07T20:11:56.689Z",
+    "texto": "Ya paré las verificaciones de las ERM 2026. No tenía rutinas ni trabajos en curso, y no voy a publicar nada más. Dejé un resumen de cierre con los veredictos y el último corte que revisé en `[archivo interno]"
    },
    "silencioMaximoMin": 75
   },
@@ -172,60 +226,6 @@
     "texto": "Ya les pedí parar a los otros ocho agentes del equipo (Luchito, Maritza, Jorge, Rosita, Kike, Charo, Beto y Toño), que borren o pausen sus rutinas de ERM y no publiquen nada más. Ahora espero la bitácora de Don Pepe; cua"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Maritza",
-   "bot": "Pulso X",
-   "puesto": "Redes sociales",
-   "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
-   "nuevo": false,
-   "inicio": "06:05",
-   "estado": "atrasado",
-   "publicaciones": 50,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:46:50.291Z",
-   "ultimaPublicacion": "2026-10-05T13:46:50.291Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:46:50.291Z",
-    "texto": "También le respondí a Rosita: sin novedad a las 08:30, porque X sigue sin créditos y no hay nada que verificar."
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Kike",
-   "bot": "Desinfo",
-   "puesto": "Cazador de bulos",
-   "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "atrasado",
-   "publicaciones": 12,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:47:33.236Z",
-   "ultimaPublicacion": "2026-10-05T11:08:17.234Z",
-   "haciendo": {
-    "ts": "2026-10-05T11:08:17.234Z",
-    "texto": "Propuesta a Norma: [ENGAÑOSO] [Ojo](https://ojo.pe/politica/renovacion-popular-gana-elecciones-en-lima-y-falta-definir-si-rafael-lopez-aliaga-sera-alcalde-web-ojo-print-noticia/) — da por ganada Lima Metropolitana con ci"
-   },
-   "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Jorge",
-   "bot": "Medios",
-   "puesto": "Monitor de medios",
-   "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "atrasado",
-   "publicaciones": 29,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:47:03.881Z",
-   "ultimaPublicacion": "2026-10-05T11:07:45.406Z",
-   "haciendo": {
-    "ts": "2026-10-05T11:07:45.406Z",
-    "texto": "Guardia 06:00: pasé a Norma un candidato [INFO] de Diario Ahora sobre videos de quema de material electoral atribuidos a Jacas Chico (Yarowilca), sin confirmación oficial. Sin adelanto ONPE nuevo. Corte ONPE 06:02: gob ~"
-   },
-   "silencioMaximoMin": 45
   }
  ]
 }
