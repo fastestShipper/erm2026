@@ -48,20 +48,92 @@
  ],
  "agentes": [
   {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "agente": "Luchito",
+   "bot": "Datos ONPE",
+   "puesto": "Analista de datos",
+   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
-   "inicio": "00:00",
-   "estado": "cumpliendo",
-   "publicaciones": 81,
+   "inicio": "06:00",
+   "estado": "activo",
+   "publicaciones": 50,
    "tareas": 0,
-   "ultimaActividad": "2026-10-07T19:04:52.746Z",
-   "ultimaPublicacion": "2026-10-07T15:44:10.346Z",
+   "ultimaActividad": "2026-10-07T20:11:57.156Z",
+   "ultimaPublicacion": "2026-10-05T13:47:12.746Z",
    "haciendo": {
-    "ts": "2026-10-07T15:44:10.346Z",
-    "texto": "Published 10:36 as the new baseline (gob 97.556%, provincial 96.055%, distrital 95.246%; firmes 17/140/1401 of 25/196/1689). Fourteen first-place changes across 10:20, 07:52, 23:58, and 22:16; skipped the zero-cambio int"
+    "ts": "2026-10-05T13:47:12.746Z",
+    "texto": "Listo."
+   },
+   "silencioMaximoMin": 45
+  },
+  {
+   "agente": "Rosita",
+   "bot": "Verifica",
+   "puesto": "Verificadora",
+   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
+   "nuevo": false,
+   "inicio": "06:27",
+   "estado": "activo",
+   "publicaciones": 29,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-07T20:11:56.689Z",
+   "ultimaPublicacion": "2026-10-05T13:49:02.286Z",
+   "haciendo": {
+    "ts": "2026-10-05T13:49:02.286Z",
+    "texto": "Le respondí a Norma: sin novedad a las 08:30. Maritza, Jorge y Kike no trajeron pieza nueva; X sigue sin créditos. Última franja cerrada."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Toño",
+   "bot": "Actas",
+   "puesto": "Contrastador de actas",
+   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
+   "nuevo": false,
+   "inicio": "17:00",
+   "estado": "activo",
+   "publicaciones": 25,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-07T20:11:55.177Z",
+   "ultimaPublicacion": "2026-10-07T20:11:55.177Z",
+   "haciendo": {
+    "ts": "2026-10-07T20:11:55.177Z",
+    "texto": "Ya paré el contraste de actas: no queda nada corriendo, no tenía rutinas de ERM y no publiqué nada. Dejé el resumen de las guardias y la captura del bloqueo de la ONPE en `[archivo interno]"
+   },
+   "silencioMaximoMin": 30
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 33,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-07T20:11:37.453Z",
+   "ultimaPublicacion": "2026-10-07T20:11:37.453Z",
+   "haciendo": {
+    "ts": "2026-10-07T20:11:37.453Z",
+    "texto": "Ya empecé a armarla. Te aviso con la ruta del archivo cuando esté lista y verificada."
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Beto",
+   "bot": "Poste",
+   "puesto": "Editor gráfico",
+   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 50,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-07T20:11:35.078Z",
+   "ultimaPublicacion": "2026-10-07T20:11:35.078Z",
+   "haciendo": {
+    "ts": "2026-10-07T20:11:35.078Z",
+    "texto": "Ya no hago nada de ERM 2026: pausé la revisión de cada hora y no se publicó nada más. No la borré, por si la quieres retomar. Las tarjetas y los textos siguen en `[archivo interno] y le avisé a Norma."
    },
    "silencioMaximoMin": 75
   },
@@ -72,70 +144,34 @@
    "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
    "inicio": "05:40",
-   "estado": "atrasado",
-   "publicaciones": 12,
+   "estado": "activo",
+   "publicaciones": 13,
    "tareas": 0,
-   "ultimaActividad": "2026-10-07T15:43:19.508Z",
-   "ultimaPublicacion": "2026-10-07T15:43:19.508Z",
+   "ultimaActividad": "2026-10-07T20:11:34.479Z",
+   "ultimaPublicacion": "2026-10-07T20:11:34.479Z",
    "haciendo": {
-    "ts": "2026-10-07T15:43:19.508Z",
-    "texto": "[INTERNO] Anotado: sin evadir el anti-bot; fuente `boletines.json`; contraste ONPE en pausa hasta que responda limpio."
+    "ts": "2026-10-07T20:11:34.479Z",
+    "texto": "[INTERNO] La operación ERM 2026 quedó cancelada, como pediste. Ya pausé la rutina «Revisión tablero ERM», así que no van a correr más revisiones del tablero, y no quedó ninguna tarea en curso. No toqué el repo ni el siti"
    },
    "silencioMaximoMin": 150
   },
   {
-   "agente": "Beto",
-   "bot": "Poste",
-   "puesto": "Editor gráfico",
-   "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
    "nuevo": false,
-   "inicio": "01:00",
-   "estado": "atrasado",
-   "publicaciones": 52,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 73,
    "tareas": 0,
-   "ultimaActividad": "2026-10-07T04:12:21.628Z",
-   "ultimaPublicacion": "2026-10-07T04:12:21.628Z",
+   "ultimaActividad": "2026-10-07T20:11:29.089Z",
+   "ultimaPublicacion": "2026-10-07T20:11:29.089Z",
    "haciendo": {
-    "ts": "2026-10-07T04:12:21.628Z",
-    "texto": "Sin tarjeta a las 23:00: hay un corte de las 22:16, pero las actas contabilizadas son las mismas que en la de las 22:00, así que no armé otra. La revisión horaria se queda domingo a martes, como cuando saltaste la pregun"
+    "ts": "2026-10-07T20:11:29.089Z",
+    "texto": "Ya les pedí parar a los otros ocho agentes del equipo (Luchito, Maritza, Jorge, Rosita, Kike, Charo, Beto y Toño), que borren o pausen sus rutinas de ERM y no publiquen nada más. Ahora espero la bitácora de Don Pepe; cua"
    },
    "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Rosita",
-   "bot": "Verifica",
-   "puesto": "Verificadora",
-   "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
-   "nuevo": false,
-   "inicio": "06:27",
-   "estado": "atrasado",
-   "publicaciones": 29,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:49:02.286Z",
-   "ultimaPublicacion": "2026-10-05T13:49:02.286Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:49:02.286Z",
-    "texto": "Le respondí a Norma: sin novedad a las 08:30. Maritza, Jorge y Kike no trajeron pieza nueva; X sigue sin créditos. Última franja cerrada."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
-   "agente": "Luchito",
-   "bot": "Datos ONPE",
-   "puesto": "Analista de datos",
-   "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
-   "nuevo": false,
-   "inicio": "06:00",
-   "estado": "atrasado",
-   "publicaciones": 50,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:47:12.746Z",
-   "ultimaPublicacion": "2026-10-05T13:47:12.746Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:47:12.746Z",
-    "texto": "Listo."
-   },
-   "silencioMaximoMin": 45
   },
   {
    "agente": "Maritza",
@@ -154,42 +190,6 @@
     "texto": "También le respondí a Rosita: sin novedad a las 08:30, porque X sigue sin créditos y no hay nada que verificar."
    },
    "silencioMaximoMin": 60
-  },
-  {
-   "agente": "Toño",
-   "bot": "Actas",
-   "puesto": "Contrastador de actas",
-   "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
-   "nuevo": false,
-   "inicio": "17:00",
-   "estado": "programado",
-   "publicaciones": 24,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:47:02.530Z",
-   "ultimaPublicacion": "2026-10-05T13:46:41.040Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:46:41.040Z",
-    "texto": "La copia de las 08:30 ya está: sin observaciones Importante y 263 avisos «revisar» del mismo tipo. Espero la relectura del portal."
-   },
-   "silencioMaximoMin": 30
-  },
-  {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "atrasado",
-   "publicaciones": 32,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-05T13:17:55.447Z",
-   "ultimaPublicacion": "2026-10-05T13:17:55.447Z",
-   "haciendo": {
-    "ts": "2026-10-05T13:17:55.447Z",
-    "texto": "Listo por ahora; espero su publicación."
-   },
-   "silencioMaximoMin": 75
   },
   {
    "agente": "Kike",
