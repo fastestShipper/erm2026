@@ -48,13 +48,49 @@
  ],
  "agentes": [
   {
+   "agente": "Norma",
+   "bot": "Coordinación",
+   "puesto": "Jefa de la oficina",
+   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
+   "nuevo": false,
+   "inicio": "00:00",
+   "estado": "activo",
+   "publicaciones": 74,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-07T20:16:01.003Z",
+   "ultimaPublicacion": "2026-10-07T20:16:01.003Z",
+   "haciendo": {
+    "ts": "2026-10-07T20:16:01.003Z",
+    "texto": "Estoy armando el PDF con la bitácora de Don Pepe, los cierres de Rosita, Kike, Toño y Jorge, y como anexo los paquetes horarios de Beto con sus tarjetas. Te lo mando apenas esté listo. Las rutinas de Beto, Charo y Maritz"
+   },
+   "silencioMaximoMin": 75
+  },
+  {
+   "agente": "Don Pepe",
+   "bot": "Cronista",
+   "puesto": "Cronista",
+   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
+   "nuevo": false,
+   "inicio": "01:00",
+   "estado": "activo",
+   "publicaciones": 33,
+   "tareas": 0,
+   "ultimaActividad": "2026-10-07T20:15:55.179Z",
+   "ultimaPublicacion": "2026-10-07T20:15:55.179Z",
+   "haciendo": {
+    "ts": "2026-10-07T20:15:55.179Z",
+    "texto": "La bitácora final está lista en `[archivo interno] y ya le pasé la ruta a Norma. Va desde la preparación del 4 de octubre hasta el corte de las 10:36 del miércoles 7, y revisé sus 349 cortes uno por uno contra los datos "
+   },
+   "silencioMaximoMin": 75
+  },
+  {
    "agente": "Kike",
    "bot": "Desinfo",
    "puesto": "Cazador de bulos",
    "rol": "Detecta piezas falsas que se vuelven virales: capturas, audios, actas trucadas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 12,
    "tareas": 0,
    "ultimaActividad": "2026-10-07T20:12:17.553Z",
@@ -72,7 +108,7 @@
    "rol": "Mira la televisión, escucha la radio y lee los portales de noticias.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 30,
    "tareas": 0,
    "ultimaActividad": "2026-10-07T20:11:59.572Z",
@@ -90,7 +126,7 @@
    "rol": "Sigue en X a la ONPE, al JNE y a los medios nacionales.",
    "nuevo": false,
    "inicio": "06:05",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 50,
    "tareas": 0,
    "ultimaActividad": "2026-10-07T20:11:58.389Z",
@@ -108,7 +144,7 @@
    "rol": "Vigila el portal de la ONPE: cada corte oficial, con su hora y el % de actas.",
    "nuevo": false,
    "inicio": "06:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 49,
    "tareas": 0,
    "ultimaActividad": "2026-10-07T20:11:57.156Z",
@@ -126,7 +162,7 @@
    "rol": "Contrasta cada afirmación con la ONPE o el JNE antes de darla por cierta.",
    "nuevo": false,
    "inicio": "06:27",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 29,
    "tareas": 0,
    "ultimaActividad": "2026-10-07T20:11:56.689Z",
@@ -144,7 +180,7 @@
    "rol": "Revisa acta por acta: compara lo que publica la ONPE con el acta escaneada y con la suma de cada distrito.",
    "nuevo": false,
    "inicio": "17:00",
-   "estado": "activo",
+   "estado": "programado",
    "publicaciones": 25,
    "tareas": 0,
    "ultimaActividad": "2026-10-07T20:11:55.177Z",
@@ -156,31 +192,13 @@
    "silencioMaximoMin": 30
   },
   {
-   "agente": "Don Pepe",
-   "bot": "Cronista",
-   "puesto": "Cronista",
-   "rol": "Lleva la bitácora: qué hizo cada uno, a qué hora y con qué fuente.",
-   "nuevo": false,
-   "inicio": "01:00",
-   "estado": "activo",
-   "publicaciones": 33,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-07T20:11:37.453Z",
-   "ultimaPublicacion": "2026-10-07T20:11:37.453Z",
-   "haciendo": {
-    "ts": "2026-10-07T20:11:37.453Z",
-    "texto": "Ya empecé a armarla. Te aviso con la ruta del archivo cuando esté lista y verificada."
-   },
-   "silencioMaximoMin": 75
-  },
-  {
    "agente": "Beto",
    "bot": "Poste",
    "puesto": "Editor gráfico",
    "rol": "Prepara el resumen de cada hora con imagen, solo con datos verificados.",
    "nuevo": false,
    "inicio": "01:00",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 50,
    "tareas": 0,
    "ultimaActividad": "2026-10-07T20:11:35.078Z",
@@ -198,7 +216,7 @@
    "rol": "Revisa el tablero cada 2 horas: que las cifras coincidan con la ONPE y todo se entienda.",
    "nuevo": false,
    "inicio": "05:40",
-   "estado": "activo",
+   "estado": "cumpliendo",
    "publicaciones": 13,
    "tareas": 0,
    "ultimaActividad": "2026-10-07T20:11:34.479Z",
@@ -208,24 +226,6 @@
     "texto": "[INTERNO] La operación ERM 2026 quedó cancelada, como pediste. Ya pausé la rutina «Revisión tablero ERM», así que no van a correr más revisiones del tablero, y no quedó ninguna tarea en curso. No toqué el repo ni el siti"
    },
    "silencioMaximoMin": 150
-  },
-  {
-   "agente": "Norma",
-   "bot": "Coordinación",
-   "puesto": "Jefa de la oficina",
-   "rol": "Reparte el trabajo, junta lo que encuentra cada uno y decide qué se publica.",
-   "nuevo": false,
-   "inicio": "00:00",
-   "estado": "activo",
-   "publicaciones": 73,
-   "tareas": 0,
-   "ultimaActividad": "2026-10-07T20:11:29.089Z",
-   "ultimaPublicacion": "2026-10-07T20:11:29.089Z",
-   "haciendo": {
-    "ts": "2026-10-07T20:11:29.089Z",
-    "texto": "Ya les pedí parar a los otros ocho agentes del equipo (Luchito, Maritza, Jorge, Rosita, Kike, Charo, Beto y Toño), que borren o pausen sus rutinas de ERM y no publiquen nada más. Ahora espero la bitácora de Don Pepe; cua"
-   },
-   "silencioMaximoMin": 75
   }
  ]
 }
