@@ -1,5 +1,5 @@
 {
- "total": 6,
+ "total": 7,
  "items": [
   {
    "tipo": "retroceso",
@@ -71,6 +71,16 @@
     "despues": 12559023,
     "fecha_antes": 1791339960761,
     "fecha_despues": 1791340320190
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · TUMBES",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (114,586) no coincide con totalVotosValidos (114,405). Diferencia: +181.",
+   "valores": {
+    "suma_participantes": 114586,
+    "totalVotosValidos": 114405
    }
   }
  ]
