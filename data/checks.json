@@ -1,5 +1,5 @@
 {
- "total": 7,
+ "total": 8,
  "items": [
   {
    "tipo": "retroceso",
@@ -71,6 +71,16 @@
     "despues": 12559023,
     "fecha_antes": 1791339960761,
     "fecha_despues": 1791340320190
+   }
+  },
+  {
+   "tipo": "suma-votos-validos",
+   "ambito": "Elecciones Regionales · LORETO",
+   "severidad": "revisar",
+   "detalle": "La suma de votos de las organizaciones (380,450) no coincide con totalVotosValidos (380,272). Diferencia: +178.",
+   "valores": {
+    "suma_participantes": 380450,
+    "totalVotosValidos": 380272
    }
   },
   {
