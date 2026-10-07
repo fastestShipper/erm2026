@@ -2,6 +2,69 @@
  "nota": "Boletines generados por programa con los datos oficiales de la ONPE (sin IA). No son proyecciones.",
  "items": [
   {
+   "corte": 1791398520283,
+   "hora": "13:42",
+   "generado": "2026-10-07T13:46:06-05:00",
+   "avance": [
+    {
+     "id": 1,
+     "eleccion": "Gobernador regional",
+     "actasPct": 97.584,
+     "contabilizadas": 62048,
+     "totalActas": 63584,
+     "participacion": 72.705,
+     "antesPct": 97.584
+    },
+    {
+     "id": 302,
+     "eleccion": "Alcalde provincial",
+     "actasPct": 96.082,
+     "contabilizadas": 86411,
+     "totalActas": 89935,
+     "participacion": 72.303,
+     "antesPct": 96.082
+    },
+    {
+     "id": 303,
+     "eleccion": "Alcalde distrital",
+     "actasPct": 95.277,
+     "contabilizadas": 64049,
+     "totalActas": 67224,
+     "participacion": 72.391,
+     "antesPct": 95.277
+    }
+   ],
+   "cambios": [],
+   "cambiosTotal": 0,
+   "firmes": [
+    {
+     "eleccion": "Gobernador regional",
+     "nivel": 1,
+     "firmes": 18,
+     "conDatos": 25
+    },
+    {
+     "eleccion": "Alcalde provincial",
+     "nivel": 2,
+     "firmes": 141,
+     "conDatos": 196
+    },
+    {
+     "eleccion": "Alcalde distrital",
+     "nivel": 3,
+     "firmes": 1402,
+     "conDatos": 1689
+    }
+   ],
+   "observaciones": {
+    "totales": 6,
+    "actasRevisadas": 0,
+    "actasImportantes": 0,
+    "actasRevisar": 0
+   },
+   "texto": "Corte ONPE de las 13:42. Actas contadas: Gobernador regional 97.6% · Alcalde provincial 96.1% · Alcalde distrital 95.3%. El primer lugar ya no puede cambiar con las actas que faltan en 18 de 25 regiones, 141 de 196 provincias, 1,402 de 1,689 distritos. Revisión: 6 diferencias en los totales."
+  },
+  {
    "corte": 1791398160703,
    "hora": "13:36",
    "generado": "2026-10-07T13:41:07-05:00",
@@ -21805,119 +21868,6 @@
     "actasRevisar": 0
    },
    "texto": "Corte ONPE de las 00:16. Actas contadas: Gobernador regional 36.2% (antes 35.7%) · Alcalde provincial 28.7% (antes 28.0%) · Alcalde distrital 28.7% (antes 28.0%). Cambió el primer lugar en 6 contiendas: Loreto, gobernador regional; Los Olivos (Lima), alcalde distrital; Ascope (La Libertad), alcalde provincial; Huacho (Huaura), alcalde distrital; y 2 más. El primer lugar ya no puede cambiar con las actas que faltan en 19 de 384 distritos. Revisión: 621 diferencias en los totales."
-  },
-  {
-   "corte": 1791177128157,
-   "hora": "00:12",
-   "generado": "2026-10-05T00:15:49-05:00",
-   "avance": [
-    {
-     "id": 1,
-     "eleccion": "Gobernador regional",
-     "actasPct": 35.715,
-     "contabilizadas": 22709,
-     "totalActas": 63584,
-     "participacion": 27.458,
-     "antesPct": 35.171
-    },
-    {
-     "id": 302,
-     "eleccion": "Alcalde provincial",
-     "actasPct": 28.02,
-     "contabilizadas": 25200,
-     "totalActas": 89935,
-     "participacion": 21.485,
-     "antesPct": 27.382
-    },
-    {
-     "id": 303,
-     "eleccion": "Alcalde distrital",
-     "actasPct": 28.02,
-     "contabilizadas": 25200,
-     "totalActas": 89935,
-     "participacion": 21.485,
-     "antesPct": 27.382
-    }
-   ],
-   "cambios": [
-    {
-     "eleccion": "Gobernador regional",
-     "lugar": "Loreto",
-     "antes": "ALIANZA PARA EL PROGRESO",
-     "ahora": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-     "candidato": "GERMAN VLADIMIR CHONG RIOS"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Canchis (Cusco)",
-     "antes": "PARTIDO POLÍTICO PRIN",
-     "ahora": "PARTIDO POLÍTICO PERÚ PRIMERO",
-     "candidato": "FRANKLIN BEJAR MIRANDA"
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "lugar": "Lambayeque (Lambayeque)",
-     "antes": "AVANZA PAÍS - PARTIDO DE INTEGRACIÓN SOCIAL",
-     "ahora": "PARTIDO DEMOCRÁTICO SOMOS PERÚ",
-     "candidato": "JOAQUIN TEODOMIRO CHAVEZ SIANCAS"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Paucartambo (Cusco)",
-     "antes": "ACCIÓN POPULAR",
-     "ahora": "AHORA NACIÓN - AN",
-     "candidato": "ALBERTO GONZALO CURASI"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Acobamba (Huancavelica)",
-     "antes": "PARTIDO POLÍTICO PERÚ PRIMERO",
-     "ahora": "ALIANZA PARA EL PROGRESO",
-     "candidato": "RAUL ALFONSO ZAMBRANO OCHOA"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Canas (Cusco)",
-     "antes": "AHORA NACIÓN - AN",
-     "ahora": "PARTIDO POLÍTICO PRIN",
-     "candidato": "VALERIO PACUALA HUILLCA"
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "lugar": "Víctor Fajardo (Ayacucho)",
-     "antes": "LIBERTAD POPULAR",
-     "ahora": "PODEMOS PERÚ",
-     "candidato": "UBALDO HUAMANI LESCANO"
-    }
-   ],
-   "cambiosTotal": 7,
-   "firmes": [
-    {
-     "eleccion": "Gobernador regional",
-     "nivel": 1,
-     "firmes": 0,
-     "conDatos": 25
-    },
-    {
-     "eleccion": "Alcalde provincial",
-     "nivel": 2,
-     "firmes": 0,
-     "conDatos": 133
-    },
-    {
-     "eleccion": "Alcalde distrital",
-     "nivel": 3,
-     "firmes": 19,
-     "conDatos": 380
-    }
-   ],
-   "observaciones": {
-    "totales": 502,
-    "actasRevisadas": 0,
-    "actasImportantes": 0,
-    "actasRevisar": 0
-   },
-   "texto": "Corte ONPE de las 00:12. Actas contadas: Gobernador regional 35.7% (antes 35.2%) · Alcalde provincial 28.0% (antes 27.4%) · Alcalde distrital 28.0% (antes 27.4%). Cambió el primer lugar en 7 contiendas: Loreto, gobernador regional; Canchis (Cusco), alcalde provincial; Lambayeque (Lambayeque), alcalde distrital; Paucartambo (Cusco), alcalde provincial; y 3 más. El primer lugar ya no puede cambiar con las actas que faltan en 19 de 380 distritos. Revisión: 502 diferencias en los totales."
   }
  ]
 }
