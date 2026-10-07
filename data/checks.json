@@ -1,5 +1,5 @@
 {
- "total": 9,
+ "total": 6,
  "items": [
   {
    "tipo": "retroceso",
@@ -71,38 +71,6 @@
     "despues": 12559023,
     "fecha_antes": 1791339960761,
     "fecha_despues": 1791340320190
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Regionales · TUMBES",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (114,949) no coincide con totalVotosValidos (114,586). Diferencia: +363.",
-   "valores": {
-    "suma_participantes": 114949,
-    "totalVotosValidos": 114586
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · TUMBES",
-   "severidad": "revisar",
-   "detalle": "PARTIDO DEMOCRÁTICO SOMOS PERÚ: ONPE publica 20.315% y el cálculo da 20.379%.",
-   "valores": {
-    "votos": 23352,
-    "pct_onpe": 20.315,
-    "pct_calculado": 20.379
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Regionales · TUMBES",
-   "severidad": "revisar",
-   "detalle": "FE EN EL PERÚ: ONPE publica 28.913% y el cálculo da 29.004%.",
-   "valores": {
-    "votos": 33235,
-    "pct_onpe": 28.913,
-    "pct_calculado": 29.004
    }
   }
  ]
