@@ -1,5 +1,5 @@
 {
- "total": 61,
+ "total": 59,
  "items": [
   {
    "tipo": "retroceso",
@@ -644,27 +644,6 @@
     "votos": 19345,
     "pct_onpe": 39.357,
     "pct_calculado": 39.61
-   }
-  },
-  {
-   "tipo": "suma-votos-validos",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
-   "severidad": "revisar",
-   "detalle": "La suma de votos de las organizaciones (156,364) no coincide con totalVotosValidos (155,937). Diferencia: +427.",
-   "valores": {
-    "suma_participantes": 156364,
-    "totalVotosValidos": 155937
-   }
-  },
-  {
-   "tipo": "porcentaje",
-   "ambito": "Elecciones Municipales · alcalde provincial · PIURA / SULLANA",
-   "severidad": "revisar",
-   "detalle": "ALIANZA PARA EL PROGRESO: ONPE publica 26.346% y el cálculo da 26.418%.",
-   "valores": {
-    "votos": 41195,
-    "pct_onpe": 26.346,
-    "pct_calculado": 26.418
    }
   }
  ]
